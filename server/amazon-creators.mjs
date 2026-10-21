@@ -5,7 +5,10 @@ const json = (body, status=200) => new Response(JSON.stringify(body), {status, h
 async function check(env) {
   const version=String(env.AMAZON_CREATORS_VERSION||'').replace(/^v/,'');
   const hosts={'3.1':'api.amazon.com','3.2':'api.amazon.co.uk','3.3':'api.amazon.co.jp'};
-  if(!env.AMAZON_CREATORS_CLIENT_ID || !env.AMAZON_CREATORS_CLIENT_SECRET || !env.AMAZON_PARTNER_TAG || !hosts[version]) return {ok:false,stage:'configuration',code:'MissingOrInvalidConfiguration'};
+  // Names only, never values: tells the owner which setting to fix in the hosting panel.
+  const missing=['AMAZON_CREATORS_CLIENT_ID','AMAZON_CREATORS_CLIENT_SECRET','AMAZON_PARTNER_TAG'].filter(name=>!env[name]);
+  if(!hosts[version])missing.push('AMAZON_CREATORS_VERSION');
+  if(missing.length) return {ok:false,stage:'configuration',code:'MissingOrInvalidConfiguration',missing};
   const {data}=await amazonApi('getItems',{itemIds:['B0DMT42CFL'],itemIdType:'ASIN',marketplace:'www.amazon.it',partnerTag:env.AMAZON_PARTNER_TAG,resources:['itemInfo.title']},env);
   const response={ok:true,status:200};
   const rawCode=data.errors?.[0]?.code || data.Errors?.[0]?.Code || data.code;
