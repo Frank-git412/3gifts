@@ -19,7 +19,7 @@ function syncBudget(changed){
 }
 budget.addEventListener("input",()=>syncBudget(budget));$("#minBudget").addEventListener("input",()=>syncBudget($("#minBudget")));syncBudget();
 $("#startQuestionnaire").addEventListener("click",event=>{event.preventDefault();$(".hero-concept").hidden=true;$(".finder").hidden=false;step=1;renderStep();$(".finder").scrollIntoView({behavior:motionBehavior(),block:"start"});track("questionnaire_started",{visible_steps:visibleSteps().length})});
-function syncPerspective(){const child=["earlyChild","child"].includes($('input[name="ageRange"]:checked')?.value);$("#interestsLegend").textContent=child?"Con cosa ama giocare o cosa ama scoprire?":currentMode==="giver"?"Cosa ti piace davvero?":"Cosa le piace davvero?";document.querySelector('.step[data-step-key="interests"] .hint').textContent=child?"Scegli fino a due categorie per bambini e fino a quattro sottocategorie in totale.":currentMode==="giver"?"Scegli fino a due aree che parlano di te e fino a quattro sottocategorie in totale.":"Scegli fino a due aree principali e fino a quattro sottocategorie in totale.";}
+function syncPerspective(){const child=["earlyChild","child"].includes($('input[name="ageRange"]:checked')?.value);$("#interestsLegend").textContent=child?"Con cosa ama giocare o cosa ama scoprire?":currentMode==="giver"?"Cosa ti piace davvero?":"Cosa ama davvero?";document.querySelector('.step[data-step-key="interests"] .hint').textContent=child?"Scegli fino a due categorie per bambini e fino a quattro sottocategorie in totale.":currentMode==="giver"?"Scegli fino a due aree che parlano di te e fino a quattro sottocategorie in totale.":"Scegli fino a due aree principali e fino a quattro sottocategorie in totale.";}
 function syncInterestFlow(){
   const age=$('input[name="ageRange"]:checked')?.value,audience=["earlyChild","child"].includes(age)?age:"general",stage=$('input[name="childStage"]:checked')?.value||"all";
   const stageAllowed=node=>audience!=="earlyChild"||stage==="all"||!node.dataset.stages||node.dataset.stages.split(" ").includes(stage);
@@ -339,24 +339,24 @@ function showZeroRecovery(profile,candidateCount,analysis=analyseNote(profile.no
 function renderProductCards(selected,profile,reasonIntro=""){
   displayedProducts=selected;
   $("#resultsTitle").textContent=selected.length===3?"Le nostre 3 proposte":"Le idee disponibili";
-  $("#resultsEyebrow").textContent=selected.some(p=>p.ageVerification==="required")?"Le proposte disponibili · alcune età da verificare":selected.length<3?"Le proposte disponibili":profile.allowUnverified?"Le 3 proposte più adatte · da verificare":"Le 3 offerte più adatte e verificate";
+  $("#resultsEyebrow").textContent=selected.some(p=>p.ageVerification==="required")?"Le proposte disponibili · alcune età da verificare":selected.length<3?"Le proposte disponibili":profile.allowUnverified?"Le 3 idee scelte per te":"Le 3 offerte più adatte e verificate";
   $("#resultGrid").innerHTML=selected.map((p,i)=>{
     const url=storeUrl(p),verified=RULES.verifiedOffer(p),price=verified?p.offer.total.amount:p.price;
     const priceText=`${verified?"Totale verificato: ":p.amazonPrice?"Prezzo Amazon: ":"Prezzo indicativo: "}${price.toLocaleString("it-IT",{style:"currency",currency:"EUR"})}`;
     const amazonNote=p.amazonPrice?`Amazon · ${new Date(p.amazonCheckedAt).toLocaleString(document.documentElement.lang==='en-US'?'en-GB':'it-IT',{dateStyle:'short',timeStyle:'short'})}. ${document.documentElement.lang==='en-US'?'Prices and availability may change. The price on Amazon at purchase applies. Shipping and delivery must be checked on Amazon.':'Prezzi e disponibilità possono cambiare. Fa fede il prezzo su Amazon al momento dell’acquisto. Spedizione e consegna da verificare su Amazon.'}`:"";
     const conditions=amazonNote|| (verified?"Variante e costi inclusi nella verifica; conferma sul venditore prima dell’acquisto.":"Totale da verificare: spedizione, variante e personalizzazione possono aumentare il costo.");
-    const delivery=profile.timing==="none"?"Nessuna scadenza richiesta":RULES.deliveryEligible(p,profile)?`Consegna verificata entro ${p.offer.delivery.by}`:"Consegna da verificare per la data richiesta";
+    const delivery=profile.timing==="none"?"":RULES.deliveryEligible(p,profile)?`Consegna verificata entro ${p.offer.delivery.by}`:"Controlla la consegna su Amazon";
     const reason=reasonIntro+(p.aiReason||(profile.mode==="giver"?giverReason(p,profile):displayText(p.why)));
     const storeClass=p.store.toLowerCase().replace(/[^a-z0-9]+/g,"-");
     const shortName=shortProductName(p),fullName=displayText(p.name);
     const ageReview=p.ageVerification==="required"?'<p class="age-review-notice"><strong>Età consigliata da verificare</strong><br>La scheda non indica chiaramente l’età consigliata. Controllala su Amazon o sul sito dell’editore prima dell’acquisto.</p>':"";
-    const details=shortName!==fullName?`<details class="product-details"><summary>Nome completo</summary><p>${esc(fullName)}</p></details>`:"";
-    return `<article class="gift-card" data-no-image="${!safeUrl(p.imageUrl,"")}"><div class="gift-visual">${productVisual(p,url)}</div><div class="gift-body"><div class="card-top"><span class="match">${esc(p.ageVerification==="required"?"Idea da verificare":["Più adatto","Molto adatto","Alternativa coerente"][i])}</span><span class="store-badge ${storeClass}">${esc(p.store)}</span></div><h3>${esc(shortName)}</h3>${ageReview}${details}<p>${esc(reason)}</p><p>${esc(conditions)}</p><div class="gift-meta"><strong>${esc(priceText)}</strong><span class="delivery">${esc(delivery)}</span></div><a href="${esc(url)}" target="_blank" rel="nofollow noopener noreferrer" data-product="${esc(fullName)}">${verified?"Verifica l’offerta sul venditore":"Verifica prezzo e opzioni"}</a>${p.imageUrl?"":'<span class="product-photo-note">Foto disponibili sulla pagina del venditore.</span>'}</div></article>`;
+    return `<article class="gift-card" data-no-image="${!safeUrl(p.imageUrl,"")}"><div class="gift-visual">${productVisual(p,url)}</div><div class="gift-body"><div class="card-top"><span class="match">${esc(p.ageVerification==="required"?"Idea da verificare":["La nostra scelta","Ottima alternativa","Un’idea diversa"][i])}</span><span class="store-badge ${storeClass}">${esc(p.store)}</span></div><h3 title="${esc(fullName)}">${esc(shortName)}</h3>${ageReview}<p>${esc(reason)}</p>${p.amazonPrice?"":`<p>${esc(conditions)}</p>`}<div class="gift-meta"><strong>${esc(priceText)}</strong>${p.amazonPrice?`<small class="price-time">${esc(priceTime(p))}</small>`:""}${delivery?`<span class="delivery">${esc(delivery)}</span>`:""}</div><a href="${esc(url)}" target="_blank" rel="nofollow noopener noreferrer" data-product="${esc(fullName)}">${verified?"Verifica l’offerta sul venditore":"Verifica prezzo e opzioni"}</a>${p.imageUrl?"":'<span class="product-photo-note">Foto disponibili sulla pagina del venditore.</span>'}</div></article>`;
   }).join("");bindProductImageFallbacks();
 }
+function priceTime(p){const en=document.documentElement.lang==='en-US';return (en?'Updated ':'Aggiornato ')+new Date(p.amazonCheckedAt).toLocaleString(en?'en-GB':'it-IT',{dateStyle:'short',timeStyle:'short'})}
 function setResultSummary(profile){
   if(profile.researchMethod){
-    $('#resultSummary').textContent=budgetDescription(profile)+' '+deliveryLabel(profile)+' Prezzo Amazon osservato; totale, variante e consegna da verificare prima dell’acquisto.';
+    $('#resultSummary').textContent=budgetDescription(profile)+' '+deliveryLabel(profile)+' I prezzi Amazon possono cambiare: fa fede il prezzo al momento dell’acquisto. Controlla anche la consegna.';
     if(profile.budget>=150)$('#resultSummary').textContent+=' Ricerca da '+Math.max(profile.minBudget||0,profile.budget*.5)+' € al massimale.';
     if((profile.interests||[]).some(a=>!(profile.excludedInterests||[]).includes(a)&&!displayedProducts.some(p=>p.tags.includes(a))))$('#resultSummary').textContent+=' Una categoria selezionata non ha prodotti compatibili disponibili.';
     return;
@@ -390,11 +390,11 @@ async function showResults(allowUnverified=false,allowTypeBroadening=false,allow
     if(!isCurrent())return;
     const resultProfile={...d,researchMethod:true,allowUnverified:true},selected=live.products;
     lastProfile=resultProfile;activeCatalogProducts=selected;
-    $('#recommendationStatus').textContent=live.partial?'Ricerca parziale: mostriamo i prodotti compatibili ricevuti da Amazon.':'Prodotti cercati su Amazon in base agli interessi e ai vincoli scelti. Recensioni non usate per l’ordinamento.';
+    $('#recommendationStatus').textContent=live.partial?'Ricerca parziale: mostriamo i prodotti compatibili ricevuti da Amazon.':'Scelti in base alle tue risposte.';
     track('questionnaire_completed');
     if(!selected.length){showResearchRecovery(resultProfile,analysis);return}
     $("#zeroRecovery").hidden=true;$("#refinementForm").hidden=true;
-    $("#resultsEyebrow").textContent=resultProfile.allowUnverified?"Le 3 proposte più adatte · da verificare":"Le 3 offerte più adatte e verificate";
+    $("#resultsEyebrow").textContent=resultProfile.allowUnverified?"Le 3 idee scelte per te":"Le 3 offerte più adatte e verificate";
     if(selected.length<3)$("#resultsEyebrow").textContent="Le proposte disponibili";
     renderProductCards(selected,resultProfile);setResultSummary(resultProfile);rememberProducts(selected);
     const exploring=resultProfile.journey==="explore";$("#categoryExploration").hidden=!exploring;$("#productSelection").hidden=exploring;$("#revealProducts").hidden=false;

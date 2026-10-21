@@ -281,3 +281,10 @@ Le proposte privilegiano la pertinenza e la varietà tra gli interessi seleziona
 idee più personali => more personal ideas
 Diamo priorità alle categorie scelte, senza il peso dell’occasione. => We prioritize your selected categories, without weighting the occasion.
 Con «Non sono convinto» puoi indicare un nuovo budget massimo. => Use “Not convinced” to enter a new maximum budget.
+Controlla la consegna su Amazon => Check delivery on Amazon
+La nostra scelta => Our pick
+Ottima alternativa => Great alternative
+Un’idea diversa => A different idea
+ I prezzi Amazon possono cambiare: fa fede il prezzo al momento dell’acquisto. Controlla anche la consegna. =>  Amazon prices may change: the price at purchase applies. Check delivery too.
+Scelti in base alle tue risposte. => Picked from your answers.
+Le 3 idee scelte per te => Your 3 picks

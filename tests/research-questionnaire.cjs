@@ -7,7 +7,7 @@ const item=(id,title='Romanzo di avventura')=>({asin:'B'+String(id).padStart(9,'
   const r=createRuntime(language);r.seed();r.set('interest',['culture']);r.set('subinterest',['books']);r.set('note','INTERNAL PRIVATE NOTE');
   const calls=[];r.c.fetch=async(url,options)=>{calls.push({url,data:JSON.parse(options.body)});return {ok:true,json:async()=>({method:'research-20261007',products:[item(calls.length*10+1),item(calls.length*10+2),item(calls.length*10+3)]})}};
   await r.a.showResults();assert.equal(calls.length,1);assert.equal(calls[0].url,'/api/amazon/recommend');assert.ok(!JSON.stringify(calls).includes('INTERNAL PRIVATE NOTE'));assert.ok(!('deadline' in calls[0].data.profile));assert.ok(!('note' in calls[0].data.profile));
-  assert.equal((r.el('#resultGrid').innerHTML.match(/class="gift-card"/g)||[]).length,3);assert.match(r.el('#resultGrid').innerHTML,/Prezzo Amazon|Amazon price/);assert.match(r.el('#recommendationStatus').textContent,language==='it'?/Recensioni non usate/:/Reviews are not used/);
+  assert.equal((r.el('#resultGrid').innerHTML.match(/class="gift-card"/g)||[]).length,3);assert.match(r.el('#resultGrid').innerHTML,/Prezzo Amazon|Amazon price/);assert.match(r.el('#recommendationStatus').textContent,language==='it'?/Scelti in base alle tue risposte/:/Picked from your answers/);
   if(language==='en')assert.ok(!r.el('#resultGrid').innerHTML.includes('Coerente con'));
   r.set('refineReason','owned');r.set('refineDirection','differentType');r.set('refineSurprise','balanced');
   const form=r.el('#refinementForm'),event={preventDefault(){},currentTarget:form};

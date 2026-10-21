@@ -38,8 +38,12 @@
 [data-privacy-preferences] { text-decoration: underline; text-underline-offset: 2px; }
 
 @media (max-width: 700px) {
-  .privacy-banner { bottom: 10px; padding: 17px; }
-  .privacy-banner__layout { grid-template-columns: 1fr; gap: 15px; }
-  .privacy-banner__actions { justify-content: stretch; }
-  .privacy-banner__button { flex: 1 1 145px; }
+  /* Compact bottom sheet: keeps the hero call to action visible on phones. */
+  .privacy-banner { right: 0; bottom: 0; left: 0; width: 100%; padding: 12px 16px calc(12px + env(safe-area-inset-bottom)); border-width: 1px 0 0; border-radius: 16px 16px 0 0; box-shadow: 0 -8px 30px rgba(23, 19, 47, .16); }
+  .privacy-banner__layout { grid-template-columns: 1fr; gap: 10px; }
+  .privacy-banner__title { display: none; }
+  .privacy-banner p { font-size: .82rem; line-height: 1.4; }
+  .privacy-banner__status { display: none; }
+  .privacy-banner__actions { justify-content: stretch; gap: 8px; }
+  .privacy-banner__button { flex: 1 1 0; min-height: 40px; padding: 8px 10px; font-size: .9rem; }
 }

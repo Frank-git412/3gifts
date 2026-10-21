@@ -51,12 +51,10 @@ function decorate(html,file,en) {
  const link='<a class="language-switch" href="'+other+'" hreflang="'+(en?"it":"en-US")+'" lang="'+(en?"it":"en")+'" title="'+(en?"Passa a Italiano":"Switch to English (United States)")+'"><span aria-hidden="true">'+(en?"🇮🇹":"🇺🇸")+'</span><span>'+(en?"IT":"EN")+'</span><span class="sr-only">'+(en?" — Italiano":" — English (United States)")+'</span></a>';
  if(file==="index.html") html=html.replace(/(<button class="quiet" id="howBtn"[^>]*>[\s\S]*?<\/button>)/,'<div class="topbar-actions">$1'+link+'</div>');
  else html=html.replace(/<span class="section-name">[^<]*<\/span>/,link);
- const it=path.posix.relative(path.posix.dirname((en?"en/":"")+file),file)||path.posix.basename(file);
- const english=path.posix.relative(path.posix.dirname((en?"en/":"")+file),"en/"+file)||path.posix.basename(file);
  const clean=file==="index.html"?"":file.replace(/\.html$/,"");
  const canonical="https://3gifts.it/"+(en?"en/":"")+clean;
  const domainRedirect='<script>(function(){if(location.hostname==="www.3gifts.it"){var u=new URL(location.href);u.hostname="3gifts.it";location.replace(u.href)}})();</script>';
- html=html.replace("</head>",domainRedirect+'<link rel="canonical" href="'+canonical+'"><link rel="stylesheet" href="'+asset+'language.css"><script defer src="'+asset+'language.js"></script><link rel="alternate" hreflang="it" href="'+it+'"><link rel="alternate" hreflang="en-US" href="'+english+'"></head>');
+ html=html.replace("</head>",domainRedirect+'<link rel="canonical" href="'+canonical+'"><link rel="stylesheet" href="'+asset+'language.css"><script defer src="'+asset+'language.js"></script>'+(en?'<meta name="robots" content="noindex">':'')+'</head>');
  if(en) {
   html=html.replace(/(<html\b[^>]*\s)lang="[^"]*"/i,'$1lang="en-US"');
   // Shared assets move up one level; HTML links stay within the selected language.
@@ -98,9 +96,10 @@ for(const file of files) {
  });
  write("en/"+file,decorate(english,file,true));
 }
+// English pages use the Italian Amazon catalog: available to visitors, excluded from the sitemap and from search results.
 const canonicalRoutes=files.flatMap(file=>{
  const clean=file==="index.html"?"":file.replace(/\.html$/,"");
- return [clean,"en/"+clean];
+ return [clean];
 });
 const sitemap='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+canonicalRoutes.map(route=>'  <url><loc>https://3gifts.it/'+route+'</loc></url>').join("\n")+'\n</urlset>\n';
 write("robots.txt","User-agent: *\nAllow: /\nSitemap: https://3gifts.it/sitemap.xml\n");
