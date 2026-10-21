@@ -1,0 +1,22 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
+import {PUBLIC_RULES} from '../server/research/public-rules.mjs';
+import {publicPlan} from '../server/research/public-adapter.mjs';
+import {pilotDictionaryInventory,PILOT_QUERY_SOURCES,PILOT_LEXICAL_ALIASES} from '../server/research/pilot-dictionary.mjs';
+const bytes=fs.readFileSync(new URL('../docs/m3-manifest-120-frozen.json',import.meta.url));
+const hash=crypto.createHash('sha256').update(bytes).digest('hex');
+assert.equal(hash,'e174c07bccdad0920dbf4d673a79f05c06736615b9b69d20b6e68c6e93daf499');
+const rows=JSON.parse(bytes).scenarios.map(s=>{
+ const constraints={...s.request.constraints,...PUBLIC_RULES.analyseNote(s.request.profile.note)};
+ const ctx=publicPlan({...s.request,constraints});
+ return {id:s.id,blocked:ctx.blocked,queries:ctx.plan.queries.length,fallback:ctx.plan.fallbackQueries.length,exclusions:constraints.exclusions,unclear:constraints.constraintReport.unclear};
+});
+assert.equal(rows.length,120);assert.deepEqual(rows.filter(r=>r.blocked).map(r=>r.id),['T32','T36']);
+const words=JSON.parse(fs.readFileSync(new URL('../docs/m3-lexical-review.json',import.meta.url))).words;
+const inventory=pilotDictionaryInventory();
+const result={revision:'20261009-m3-block4',method:'Local fixtures and unchanged frozen inputs; no live Amazon requests or M5 comparison',manifestSha256:hash,aliases:PILOT_LEXICAL_ALIASES,contextSources:Object.values(PILOT_QUERY_SOURCES).map(s=>s.termId),implementedRequirements:words.filter(w=>w.requirementKey).map(w=>({id:w.id,key:w.requirementKey})),pendingTerms:words.filter(w=>w.status==='Revisionata; implementazione pendente').map(w=>w.id),associations:inventory.reduce((n,f)=>n+f.keywordIds.length,0),families:inventory.length,coveredFamilies:inventory.filter(f=>f.rules.length).length,preflight:{total:120,planned:118,blocked:rows.filter(r=>r.blocked).map(r=>r.id)},rows};
+assert.equal(result.pendingTerms.length,22);assert.equal(result.implementedRequirements.length,5);
+assert.equal(result.associations,353);assert.equal(result.families,65);assert.equal(result.coveredFamilies,38);
+fs.writeFileSync(new URL('../docs/m3-block4-audit.json',import.meta.url),JSON.stringify(result,null,2)+'\n');
+console.log(JSON.stringify({aliases:4,contextLinks:5,propertyExpressions:5,properties:3,pending:22,preflight:result.preflight}));

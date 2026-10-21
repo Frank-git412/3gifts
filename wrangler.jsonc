@@ -1,0 +1,22 @@
+{
+  // Configurazione Cloudflare Workers per 3gifts.it.
+  // I segreti (AMAZON_CREATORS_CLIENT_ID, AMAZON_CREATORS_CLIENT_SECRET) si impostano
+  // con `wrangler secret put` o dal pannello Cloudflare, mai in questo file.
+  "name": "3gifts",
+  "main": "dist/server/index.js",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  "build": { "command": "node scripts/build-worker.mjs" },
+  "vars": {
+    "AMAZON_CREATORS_VERSION": "3.2",
+    "AMAZON_PARTNER_TAG": "3gifts-21"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "3gifts",
+      "database_id": "DA_CONFIGURARE",
+      "migrations_dir": "drizzle"
+    }
+  ]
+}

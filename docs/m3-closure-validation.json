@@ -1,0 +1,18 @@
+{
+  "revision": "20261009-m3-closure",
+  "date": "2026-10-09",
+  "server": {"command":"node --test tests/m3-closure.mjs tests/m3-block5.mjs tests/m3-block4.mjs tests/m3-block3.mjs tests/m3-block2.mjs tests/pilot-dictionary.mjs tests/pilot-context.mjs tests/research-quality-rules.mjs tests/research-public.mjs tests/research-primary-age.mjs tests/research-age-review.mjs tests/refinement-context.mjs tests/event-personal.mjs tests/selection-diagnostics.mjs","tests":666,"passed":666,"failed":0},
+  "workerToFrontend": {"tests":["tests/m3-block5-ui.cjs","tests/m3-closure-ui.cjs"],"scenarios":46,"refinements":46,"simulatedAmazonCalls":48,"realAmazonCalls":0,"status":"passed"},
+  "regressions": [
+    {"test":"tests/m3-block4-ui.cjs","scenarios":12,"status":"passed"},
+    {"test":"tests/natural-language-exclusions.cjs","assertions":100,"status":"passed"},
+    {"test":"tests/research-questionnaire.cjs","status":"passed","fixtureChange":"Separate works now have distinct titles and an author; same generic title with changing ASIN is no longer a valid model for independent books."},
+    {"test":"tests/localization.cjs","pages":42,"profiles":720,"assertions":3662,"errors":0},
+    {"test":"tests/worker-research.mjs","searches":12,"products":2,"httpStatus":200,"status":"passed"},
+    {"test":"tests/m3-closure-audit.mjs","frozenScenarios":120,"planned":118,"blocked":["T32","T36"],"status":"passed"}
+  ],
+  "realBrowserQA": false,
+  "liveAmazonEvaluation": false,
+  "M4": "partial; next milestone to complete",
+  "M5": "not run; frozen manifest retained"
+}

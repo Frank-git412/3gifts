@@ -1,0 +1,646 @@
+{
+  "date": "2026-09-16",
+  "status": "partial",
+  "requested": 94,
+  "resolved": 23,
+  "remaining": 71,
+  "browserLimitation": "Amazon.it non accessibile nel browser disponibile: URL policy block. Ricerca eseguita nell'indice web.",
+  "changes": [
+    {
+      "id": 1,
+      "originalName": "TP-Link Tapo P110",
+      "name": "TP-Link Tapo P110",
+      "asin": "B09BFT7NZJ",
+      "directUrl": "https://www.amazon.it/dp/B09BFT7NZJ",
+      "evidenceKind": "amazon-it-product-result",
+      "sourceUrl": "https://www.amazon.it/TP-Link-Intelligente-Monitoraggio-Tapo-P110/dp/B09BFT7NZJ",
+      "sourceReference": "turn121search0",
+      "linkCheckedAt": "2026-09-16",
+      "note": "Modello/edizione identificati nell'indice Amazon.it. Prezzo, disponibilità e consegna non verificati."
+    },
+    {
+      "id": 2,
+      "originalName": "Logitech G203 Lightsync",
+      "name": "Logitech G203 Lightsync, lilla",
+      "asin": "B07W6GFKXS",
+      "directUrl": "https://www.amazon.it/dp/B07W6GFKXS",
+      "evidenceKind": "amazon-it-product-result",
+      "sourceUrl": "https://www.amazon.it/Logitech-Illuminazione-Personalizzabile-Programmabili-Tracciamento/dp/B07W6GFKXS",
+      "sourceReference": "turn78search16",
+      "linkCheckedAt": "2026-09-16",
+      "note": "Modello/edizione identificati nell'indice Amazon.it. Prezzo, disponibilità e consegna non verificati."
+    },
+    {
+      "id": 3,
+      "originalName": "Echo Show 5",
+      "name": "Echo Show 5 (3ª generazione)",
+      "asin": "B09TPZSS9C",
+      "directUrl": "https://www.amazon.it/dp/B09TPZSS9C",
+      "evidenceKind": "amazon-it-product-result",
+      "sourceUrl": "https://www.amazon.it/echo-show-5-3a-generazione/dp/B09TPZSS9C",
+      "sourceReference": "turn146search6",
+      "linkCheckedAt": "2026-09-16",
+      "note": "Modello/edizione identificati nell'indice Amazon.it. Prezzo, disponibilità e consegna non verificati."
+    },
+    {
+      "id": 5,
+      "originalName": "Anker Nano Power Bank 10.000 mAh",
+      "name": "Anker Nano Power Bank 10.000 mAh, 30 W con cavo USB-C integrato",
+      "asin": "B0C9CJKCH3",
+      "directUrl": "https://www.amazon.it/dp/B0C9CJKCH3",
+      "evidenceKind": "amazon-it-product-result",
+      "sourceUrl": "https://www.amazon.it/Anker-Ricarica-integrato-potenza-compatibile/dp/B0C9CJKCH3",
+      "sourceReference": "turn89search8",
+      "linkCheckedAt": "2026-09-16",
+      "note": "Modello/edizione identificati nell'indice Amazon.it. Prezzo, disponibilità e consegna non verificati."
+    },
+    {
+      "id": 6,
+      "originalName": "Il Piccolo Principe illustrato",
+      "name": "Il Piccolo Principe. Il romanzo illustrato",
+      "asin": "8804657596",
+      "directUrl": "https://www.amazon.it/dp/8804657596",
+      "evidenceKind": "amazon-it-product-result",
+      "sourceUrl": "https://www.amazon.it/Piccolo-Principe-romanzo-illustrato-illustrata/dp/8804657596",
+      "sourceReference": "turn93search2",
+      "linkCheckedAt": "2026-09-16",
+      "note": "Modello/edizione identificati nell'indice Amazon.it. Prezzo, disponibilità e consegna non verificati.",
+      "variantPriceReviewRequired": true
+    },
+    {
+      "id": 7,
+      "originalName": "Maus",
+      "name": "Maus. Edizione del trentennale",
+      "asin": "8806273175",
+      "directUrl": "https://www.amazon.it/dp/8806273175",
+      "evidenceKind": "amazon-it-product-result",
+      "sourceUrl": "https://www.amazon.it/MAUS-Edizione-del-trentennale-Spiegelman/dp/8806273175",
+      "sourceReference": "turn95search3",
+      "linkCheckedAt": "2026-09-16",
+      "note": "Modello/edizione identificati nell'indice Amazon.it. Prezzo, disponibilità e consegna non verificati.",
+      "variantPriceReviewRequired": true
+    },
+    {
+      "id": 14,
+      "originalName": "Fire TV Stick 4K",
+      "name": "Fire TV Stick 4K Plus",
+      "asin": "B0F7ZFWVTC",
+      "directUrl": "https://www.amazon.it/dp/B0F7ZFWVTC",
+      "evidenceKind": "amazon-it-product-result",
+      "sourceUrl": "https://www.amazon.it/fire-tv-stick-4k-plus/dp/B0F7ZFWVTC",
+      "sourceReference": "turn92search7",
+      "linkCheckedAt": "2026-09-16",
+      "note": "Modello/edizione identificati nell'indice Amazon.it. Prezzo, disponibilità e consegna non verificati."
+    },
+    {
+      "id": 15,
+      "originalName": "Soundcore Anker 2",
+      "name": "Soundcore Anker 2",
+      "asin": "B09944VF6S",
+      "directUrl": "https://www.amazon.it/dp/B09944VF6S",
+      "evidenceKind": "amazon-it-product-result",
+      "sourceUrl": "https://www.amazon.it/AnkAnker-soundcore-Bluetooth-Portatile-Associazione/dp/B09944VF6S",
+      "sourceReference": "turn94search0",
+      "linkCheckedAt": "2026-09-16",
+      "note": "Modello/edizione identificati nell'indice Amazon.it. Prezzo, disponibilità e consegna non verificati."
+    },
+    {
+      "id": 19,
+      "originalName": "Flauno cavatappi elettrico 6-in-1",
+      "name": "Flauno cavatappi elettrico 6-in-1",
+      "asin": "B07S1X7TZB",
+      "directUrl": "https://www.amazon.it/dp/B07S1X7TZB",
+      "evidenceKind": "amazon-it-indexed-asin",
+      "sourceUrl": "https://www.amazon.it/",
+      "sourceReference": "turn141search6",
+      "linkCheckedAt": "2026-09-16",
+      "note": "ASIN associato al modello nel risultato indicizzato Amazon.it; URL canonico costruito dall'ASIN. Pagina, prezzo e disponibilità non verificati dal vivo."
+    },
+    {
+      "id": 21,
+      "originalName": "Amazon Basics bilancia per valigia",
+      "name": "Amazon Basics bilancia per valigia",
+      "asin": "B0186K8T9O",
+      "directUrl": "https://www.amazon.it/dp/B0186K8T9O",
+      "evidenceKind": "amazon-it-product-result",
+      "sourceUrl": "https://www.amazon.it/-/en/Amazon-Basics-Digital-Luggage-Scale/dp/B0186K8T9O",
+      "sourceReference": "turn73search20",
+      "linkCheckedAt": "2026-09-16",
+      "note": "Modello/edizione identificati nell'indice Amazon.it. Prezzo, disponibilità e consegna non verificati."
+    },
+    {
+      "id": 26,
+      "originalName": "Gritin fasce elastiche fitness",
+      "name": "Gritin fasce elastiche fitness, set da 5",
+      "asin": "B07L9WLKZQ",
+      "directUrl": "https://www.amazon.it/dp/B07L9WLKZQ",
+      "evidenceKind": "amazon-it-product-result",
+      "sourceUrl": "https://www.amazon.it/Gritin-Elastici-Elastica-Elastiche-Resistenza/dp/B07L9WLKZQ",
+      "sourceReference": "turn91search2",
+      "linkCheckedAt": "2026-09-16",
+      "note": "Modello/edizione identificati nell'indice Amazon.it. Prezzo, disponibilità e consegna non verificati."
+    },
+    {
+      "id": 35,
+      "originalName": "Canon SELPHY CP1500",
+      "name": "Canon SELPHY CP1500",
+      "asin": "B0BBMZR2QF",
+      "directUrl": "https://www.amazon.it/dp/B0BBMZR2QF",
+      "evidenceKind": "amazon-it-product-result",
+      "sourceUrl": "https://www.amazon.it/Canon-stampante-fotografica-sublimazione-wireless/dp/B0BBMZR2QF",
+      "sourceReference": "turn104search15",
+      "linkCheckedAt": "2026-09-16",
+      "note": "Modello/edizione identificati nell'indice Amazon.it. Prezzo, disponibilità e consegna non verificati."
+    },
+    {
+      "id": 38,
+      "originalName": "Click & Grow Smart Garden 3",
+      "name": "Click & Grow Smart Garden 3, con 3 capsule basilico",
+      "asin": "B06XC11QYG",
+      "directUrl": "https://www.amazon.it/dp/B06XC11QYG",
+      "evidenceKind": "amazon-it-product-result",
+      "sourceUrl": "https://www.amazon.it/Click-Grow-Intelligente-Garden-30x28x10/dp/B06XC11QYG",
+      "sourceReference": "turn157search1",
+      "linkCheckedAt": "2026-09-16",
+      "note": "Modello/edizione identificati nell'indice Amazon.it. Prezzo, disponibilità e consegna non verificati."
+    },
+    {
+      "id": 44,
+      "originalName": "Braun Silk-épil 9",
+      "name": "Braun Silk-épil 9 Flex 9-030 3D, bianco/rosa",
+      "asin": "B0CQRT4XD1",
+      "directUrl": "https://www.amazon.it/dp/B0CQRT4XD1",
+      "evidenceKind": "amazon-it-product-result",
+      "sourceUrl": "https://www.amazon.it/Braun-Depilatore-Flessibile-Epilazione-3D/dp/B0CQRT4XD1",
+      "sourceReference": "turn134search9",
+      "linkCheckedAt": "2026-09-16",
+      "note": "Modello/edizione identificati nell'indice Amazon.it. Prezzo, disponibilità e consegna non verificati.",
+      "variantPriceReviewRequired": true
+    },
+    {
+      "id": 49,
+      "originalName": "FURminator deShedding Tool",
+      "name": "FURminator deShedding Tool S, cani piccoli a pelo corto",
+      "asin": "B07NSL5JSW",
+      "directUrl": "https://www.amazon.it/dp/B07NSL5JSW",
+      "evidenceKind": "amazon-it-product-result",
+      "sourceUrl": "https://www.amazon.it/Furminator-Strumento-Premium-deShedding-Sottopelo/dp/B07NSL5JSW",
+      "sourceReference": "turn135search0",
+      "linkCheckedAt": "2026-09-16",
+      "note": "Modello/edizione identificati nell'indice Amazon.it. Prezzo, disponibilità e consegna non verificati."
+    },
+    {
+      "id": 249,
+      "originalName": "8BitDo Ultimate 2C Wired controller per Windows e Android",
+      "name": "8BitDo Ultimate 2C Wired controller per Windows e Android",
+      "asin": "B0D72WYT8Z",
+      "directUrl": "https://www.amazon.it/dp/B0D72WYT8Z",
+      "evidenceKind": "amazon-it-product-result",
+      "sourceUrl": "https://www.amazon.it/8Bitdo-Ultimate-Controller-Joysticks-Remappable/dp/B0D72WYT8Z",
+      "sourceReference": "turn159search23",
+      "linkCheckedAt": "2026-09-16",
+      "note": "Modello/edizione identificati nell'indice Amazon.it. Prezzo, disponibilità e consegna non verificati."
+    },
+    {
+      "id": 266,
+      "originalName": "Bialetti Tuttocrema montalatte manuale 3 tazze",
+      "name": "Bialetti Tuttocrema montalatte manuale 3 tazze",
+      "asin": "B06XKPK294",
+      "directUrl": "https://www.amazon.it/dp/B06XKPK294",
+      "evidenceKind": "amazon-it-product-result",
+      "sourceUrl": "https://www.amazon.it/Bialetti-Schiumalatte-tazze-schiuma-robusta/dp/B06XKPK294",
+      "sourceReference": "turn118search1",
+      "linkCheckedAt": "2026-09-16",
+      "note": "Modello/edizione identificati nell'indice Amazon.it. Prezzo, disponibilità e consegna non verificati."
+    },
+    {
+      "id": 270,
+      "originalName": "Victorinox SwissCard Classic",
+      "name": "Victorinox SwissCard Classic",
+      "asin": "B001U5042I",
+      "directUrl": "https://www.amazon.it/dp/B001U5042I",
+      "evidenceKind": "amazon-it-product-result",
+      "sourceUrl": "https://www.amazon.it/Victorinox-SwissCard-funzioni-stuzzicadenti-trasparente/dp/B001U5042I",
+      "sourceReference": "turn114search1",
+      "linkCheckedAt": "2026-09-16",
+      "note": "Modello/edizione identificati nell'indice Amazon.it. Prezzo, disponibilità e consegna non verificati."
+    },
+    {
+      "id": 280,
+      "originalName": "Staedtler Mars Lumograph 100 G6, set di 6 matite",
+      "name": "Staedtler Mars Lumograph 100 G6, set di 6 matite",
+      "asin": "B000X06LQE",
+      "directUrl": "https://www.amazon.it/dp/B000X06LQE",
+      "evidenceKind": "amazon-it-indexed-asin",
+      "sourceUrl": "https://www.amazon.it/",
+      "sourceReference": "turn136search8",
+      "linkCheckedAt": "2026-09-16",
+      "note": "ASIN associato al modello nel risultato indicizzato Amazon.it; URL canonico costruito dall'ASIN. Pagina, prezzo e disponibilità non verificati dal vivo."
+    },
+    {
+      "id": 286,
+      "originalName": "Real Techniques Miracle Complexion Sponge, 1 spugna",
+      "name": "Real Techniques Miracle Complexion Sponge, 1 spugna",
+      "asin": "B00EUBPHR6",
+      "directUrl": "https://www.amazon.it/dp/B00EUBPHR6",
+      "evidenceKind": "amazon-it-product-result",
+      "sourceUrl": "https://www.amazon.it/Real-Techniques-Miracle-Complexion-Sponge/dp/B00EUBPHR6",
+      "sourceReference": "turn129search30",
+      "linkCheckedAt": "2026-09-16",
+      "note": "Modello/edizione identificati nell'indice Amazon.it. Prezzo, disponibilità e consegna non verificati."
+    },
+    {
+      "id": 291,
+      "originalName": "dV Giochi The Mind DVG9346, edizione italiana",
+      "name": "dV Giochi The Mind DVG9346, edizione italiana",
+      "asin": "B07DQ66712",
+      "directUrl": "https://www.amazon.it/dp/B07DQ66712",
+      "evidenceKind": "amazon-it-indexed-asin",
+      "sourceUrl": "https://www.amazon.it/",
+      "sourceReference": "turn147search13",
+      "linkCheckedAt": "2026-09-16",
+      "note": "ASIN associato al modello nel risultato indicizzato Amazon.it; URL canonico costruito dall'ASIN. Pagina, prezzo e disponibilità non verificati dal vivo."
+    },
+    {
+      "id": 292,
+      "originalName": "Ghenos Games Hanabi, nuova edizione italiana",
+      "name": "Ghenos Games Hanabi, nuova edizione italiana",
+      "asin": "B0CVL88MZN",
+      "directUrl": "https://www.amazon.it/dp/B0CVL88MZN",
+      "evidenceKind": "amazon-it-product-result",
+      "sourceUrl": "https://www.amazon.it/Ghenos-Games-GHE269-Hanabi-edizione/dp/B0CVL88MZN",
+      "sourceReference": "turn117search0",
+      "linkCheckedAt": "2026-09-16",
+      "note": "Modello/edizione identificati nell'indice Amazon.it. Prezzo, disponibilità e consegna non verificati."
+    },
+    {
+      "id": 297,
+      "originalName": "Casio HL-820VER calcolatrice tascabile",
+      "name": "Casio HL-820VERA calcolatrice tascabile",
+      "asin": "B000ESJ4OQ",
+      "directUrl": "https://www.amazon.it/dp/B000ESJ4OQ",
+      "evidenceKind": "amazon-it-product-result",
+      "sourceUrl": "https://www.amazon.it/CASIO-HL-820VER-calcolatrice-tascabile-euroconvertitore/dp/B000ESJ4OQ",
+      "sourceReference": "turn158search5",
+      "linkCheckedAt": "2026-09-16",
+      "note": "Modello/edizione identificati nell'indice Amazon.it. Prezzo, disponibilità e consegna non verificati."
+    }
+  ],
+  "unresolved": [
+    {
+      "id": 4,
+      "name": "Echo Pop",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 8,
+      "name": "Cofanetto Harry Potter 7 volumi",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 9,
+      "name": "Rolife Book Nook",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 10,
+      "name": "Kindle Paperwhite 16 GB",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 11,
+      "name": "Soundcore P20i",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 12,
+      "name": "JBL Go 4",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 13,
+      "name": "Sony WH-CH720N",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 16,
+      "name": "Bialetti Moka Express",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 17,
+      "name": "AeroPress Original",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 18,
+      "name": "SodaStream Terra",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 20,
+      "name": "Ariete Cappuccinatore Vintage",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 22,
+      "name": "BAGAIL organizer per valigia",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 23,
+      "name": "Cabeau Evolution S3",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 24,
+      "name": "LifeStraw filtro personale",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 25,
+      "name": "Stanley AeroLight Transit Mug",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 27,
+      "name": "TriggerPoint Grid Foam Roller",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 28,
+      "name": "Fitbit Charge 6",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 29,
+      "name": "RENPHO pistola massaggiante",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 30,
+      "name": "Xiaomi Smart Band 10",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 31,
+      "name": "Winsor & Newton Cotman set acquerelli",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 32,
+      "name": "Faber-Castell Polychromos 24",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 33,
+      "name": "Fujifilm Instax Mini 12",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 34,
+      "name": "Cricut Joy",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 36,
+      "name": "Philips Hue Starter Kit",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 37,
+      "name": "LEGO Botanicals Orchidea",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 39,
+      "name": "Yankee Candle set regalo",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 40,
+      "name": "Kärcher WV 2",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 41,
+      "name": "Casio Vintage A168",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 42,
+      "name": "Remington Keratin Protect piastra",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 43,
+      "name": "Philips OneBlade",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 45,
+      "name": "Samsonite GuardIT 2.0 zaino",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 46,
+      "name": "Furbo 360° telecamera per cani",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 47,
+      "name": "Catit Senses 2.0 Flower Fountain",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 48,
+      "name": "KONG Classic",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 50,
+      "name": "National Geographic binocolo 10x42",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 51,
+      "name": "Catan",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 52,
+      "name": "LEGO Icons Bonsai",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 53,
+      "name": "Ravensburger puzzle 1000 pezzi",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 54,
+      "name": "Magic: The Gathering Starter Kit",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 55,
+      "name": "Funko Pop! Marvel",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 56,
+      "name": "Moleskine Smart Writing Set",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 57,
+      "name": "Rocketbook Core",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 58,
+      "name": "Logitech MX Keys Mini",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 59,
+      "name": "Kindle Scribe",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 60,
+      "name": "Logitech Pebble 2 M350s",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 244,
+      "name": "SanDisk Ultra Dual Drive Go 128 GB USB-C e USB-A",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 245,
+      "name": "Logitech G240 tappetino gaming in tessuto",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 246,
+      "name": "TP-Link UB500 adattatore Bluetooth USB",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 247,
+      "name": "Anker 511 Nano 3 caricatore USB-C 30 W",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 248,
+      "name": "UGREEN cavo USB-C a USB-C 100 W in nylon 2 m",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 252,
+      "name": "1984 — George Orwell, Mondadori, ISBN 9788804507451",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 253,
+      "name": "Il vecchio e il mare — Ernest Hemingway, ISBN 9788804613121",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 254,
+      "name": "Lo Hobbit — J.R.R. Tolkien, Bompiani, edizione italiana",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 256,
+      "name": "Panasonic RP-HJE125E-K auricolari con cavo",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 257,
+      "name": "JBL Tune 500 cuffie cablate",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 259,
+      "name": "Hohner Special 20 armonica in Do maggiore",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 260,
+      "name": "D'Addario EJ16 corde per chitarra acustica 12-53",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 263,
+      "name": "Hario V60 02 dripper in plastica trasparente VD-02T",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 264,
+      "name": "Bodum Brazil French Press 350 ml",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 265,
+      "name": "Vacu Vin Wine Saver pompa salvavino con due tappi",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 267,
+      "name": "Relaxdays tagliere in bambù e ardesia 30,6 × 25 cm",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 268,
+      "name": "Reisenthel Travelcosmetic beauty case da viaggio",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 269,
+      "name": "Sea to Summit Lightweight Dry Bag 3 L",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 272,
+      "name": "BUFF Original EcoStretch scaldacollo adulto",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 273,
+      "name": "Gaiam blocco yoga in schiuma EVA",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 274,
+      "name": "REEHUT cintura yoga 1,8 m con anelli a D",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 283,
+      "name": "LECHUZA Mini Deltini vaso con riserva d'acqua",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 285,
+      "name": "Tangle Teezer Original spazzola districante",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 287,
+      "name": "Chuckit! Ultra Ball Medium, confezione da 2",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 288,
+      "name": "Trixie Cat Activity Fun Board 4590",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    },
+    {
+      "id": 299,
+      "name": "Maped organizer da scrivania compatto 575400",
+      "reason": "Nessun collegamento Amazon.it con modello/variante sufficientemente confermati. La ricerca resta esplicitamente segnalata."
+    }
+  ]
+}

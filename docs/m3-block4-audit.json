@@ -1,0 +1,1069 @@
+{
+  "revision": "20261009-m3-block4",
+  "method": "Local fixtures and unchanged frozen inputs; no live Amazon requests or M5 comparison",
+  "manifestSha256": "e174c07bccdad0920dbf4d673a79f05c06736615b9b69d20b6e68c6e93daf499",
+  "aliases": [
+    {
+      "termId": "M3-K005",
+      "canonicalId": "culture:books:kw_d49eeaab5847",
+      "it": "romanzo di avventura",
+      "en": "adventure novel"
+    },
+    {
+      "termId": "M3-K006",
+      "canonicalId": "culture:books:kw_ac451ad1204b",
+      "it": "luce lettura con clip",
+      "en": "clip-on reading light"
+    },
+    {
+      "termId": "M3-K008",
+      "canonicalId": "culture:books:kw_7c06874214c4",
+      "it": "luce lettura ricaricabile USB",
+      "en": "USB rechargeable reading light"
+    },
+    {
+      "termId": "M3-K024",
+      "canonicalId": "techGaming:tech:kw_3508321dc38d",
+      "it": "hub USB-C Ethernet",
+      "en": "USB-C Ethernet hub"
+    }
+  ],
+  "contextSources": [
+    "M3-K001",
+    "M3-K002",
+    "M3-K007",
+    "M3-K018",
+    "M3-K021"
+  ],
+  "implementedRequirements": [
+    {
+      "id": "M3-K026",
+      "key": "fragranceFree"
+    },
+    {
+      "id": "M3-K029",
+      "key": "fragranceFree"
+    },
+    {
+      "id": "M3-K030",
+      "key": "noRinse"
+    },
+    {
+      "id": "M3-K033",
+      "key": "fragranceFree"
+    },
+    {
+      "id": "M3-K036",
+      "key": "nonGreasy"
+    }
+  ],
+  "pendingTerms": [
+    "M3-K003",
+    "M3-K004",
+    "M3-K009",
+    "M3-K010",
+    "M3-K011",
+    "M3-K012",
+    "M3-K013",
+    "M3-K014",
+    "M3-K015",
+    "M3-K016",
+    "M3-K017",
+    "M3-K019",
+    "M3-K020",
+    "M3-K022",
+    "M3-K023",
+    "M3-K025",
+    "M3-K027",
+    "M3-K028",
+    "M3-K031",
+    "M3-K032",
+    "M3-K034",
+    "M3-K035"
+  ],
+  "associations": 353,
+  "families": 65,
+  "coveredFamilies": 38,
+  "preflight": {
+    "total": 120,
+    "planned": 118,
+    "blocked": [
+      "T32",
+      "T36"
+    ]
+  },
+  "rows": [
+    {
+      "id": "L01",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L02",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L03",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L04",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L05",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L06",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L07",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L08",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L09",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L10",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L11",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L12",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L13",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L14",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L15",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L16",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L17",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L18",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L19",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L20",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L21",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L22",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L23",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L24",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L25",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L26",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L27",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L28",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L29",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L30",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L31",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [
+        "horror"
+      ],
+      "unclear": []
+    },
+    {
+      "id": "L32",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L33",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L34",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L35",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L36",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L37",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L38",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L39",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "L40",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T01",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T02",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T03",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T04",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T05",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T06",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T07",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T08",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T09",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T10",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T11",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T12",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T13",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T14",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T15",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T16",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T17",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T18",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T19",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T20",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T21",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T22",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T23",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T24",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T25",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T26",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T27",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T28",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T29",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T30",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T31",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T32",
+      "blocked": true,
+      "queries": 0,
+      "fallback": 0,
+      "exclusions": [],
+      "unclear": [
+        "vincolo_non_interpretato"
+      ]
+    },
+    {
+      "id": "T33",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [
+        "subscription"
+      ],
+      "unclear": []
+    },
+    {
+      "id": "T34",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T35",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T36",
+      "blocked": true,
+      "queries": 0,
+      "fallback": 0,
+      "exclusions": [],
+      "unclear": [
+        "vincolo_non_interpretato"
+      ]
+    },
+    {
+      "id": "T37",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T38",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T39",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "T40",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S01",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S02",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S03",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S04",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S05",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S06",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S07",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S08",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S09",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S10",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S11",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S12",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S13",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S14",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S15",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S16",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S17",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S18",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S19",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S20",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S21",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S22",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S23",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S24",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S25",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S26",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S27",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S28",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S29",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S30",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S31",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [
+        "fragranceFree"
+      ],
+      "unclear": []
+    },
+    {
+      "id": "S32",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [
+        "retinol"
+      ],
+      "unclear": []
+    },
+    {
+      "id": "S33",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S34",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S35",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S36",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S37",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S38",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S39",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    },
+    {
+      "id": "S40",
+      "blocked": false,
+      "queries": 6,
+      "fallback": 6,
+      "exclusions": [],
+      "unclear": []
+    }
+  ]
+}

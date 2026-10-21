@@ -1,0 +1,32 @@
+{
+  "products": 240,
+  "marketplaces": {
+    "Amazon": 120,
+    "Etsy": 120
+  },
+  "profiles": 4428,
+  "shortResults": 0,
+  "outsideSelectedMacro": 18,
+  "refinementRounds": 864,
+  "shortRefinements": 12,
+  "unavailableProfiles": 72,
+  "shortUnavailable": 0,
+  "strictExclusionProfiles": 48,
+  "lowBudget": {
+    "Tecnologia e gaming": 12,
+    "Libri, fumetti e cultura": 16,
+    "Musica, audio e intrattenimento": 12,
+    "Cucina e bevande": 11,
+    "Viaggi e outdoor": 12,
+    "Sport e benessere": 13,
+    "Creatività e fotografia": 14,
+    "Casa, design e giardino": 13,
+    "Moda, beauty e accessori": 10,
+    "Animali e natura": 15,
+    "Giochi, hobby e collezionismo": 15,
+    "Lavoro, studio e attualità": 13
+  },
+  "failures": [],
+  "validationMode": "explicit-unverified-exploration-not-commercial-offer-verification",
+  "failureCount": 0
+}

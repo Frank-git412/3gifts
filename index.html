@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Niente scroll infiniti: 3Gifts seleziona tre idee regalo in base a destinatario, budget e data.">
+  <meta name="theme-color" content="#15122b">
+  <title>3Gifts — Tre idee. Un regalo. Zero stress.</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='8' y='22' width='48' height='34' rx='8' fill='%23ffb37d' stroke='%2317132f' stroke-width='4'/%3E%3Cpath d='M32 22v34M8 34h48' stroke='%23fff' stroke-width='5'/%3E%3Cpath d='M32 22c-11 0-17-5-15-11 2-6 13-2 15 11Zm0 0c11 0 17-5 15-11-2-6-13-2-15 11Z' fill='none' stroke='%2317132f' stroke-width='4'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="additions.css">
+  <link rel="stylesheet" href="forms.css">
+  <link rel="stylesheet" href="journey.css">
+  <link rel="stylesheet" href="concept.css">
+  <link rel="stylesheet" href="image-cards.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="consent.css">
+  <script defer src="consent.js"></script>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/app-icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="3Regali">
+  <script defer src="/pwa.js"></script>
+</head>
+<body>
+  <noscript><p class="noscript-notice">Per usare il questionario attiva JavaScript nel browser. Puoi comunque <a href="guide.html">leggere le guide ai regali</a>.</p></noscript>
+  <header class="topbar">
+    <div class="menu-wrap">
+      <button class="menu-trigger" id="menuBtn" type="button" aria-label="Apri il menu" aria-expanded="false" aria-controls="siteMenu"><span>•••</span></button>
+      <nav class="site-menu" id="siteMenu" aria-label="Menu principale" hidden>
+        <a href="index.html"><strong>Trova un regalo</strong><small>Vai al questionario</small></a>
+        <a href="guide.html"><strong>Guide regalo</strong><small>Idee e consigli per scegliere meglio</small></a>
+        <button type="button" data-menu-how><strong>Come funziona</strong><small>Scopri il metodo di 3Gifts</small></button>
+      </nav>
+    </div>
+    <a class="brand" href="#" aria-label="3Gifts, torna all'inizio"><span>3</span> Gifts</a>
+    <button class="quiet" id="howBtn" type="button">Come funziona</button>
+  </header>
+
+  <main>
+    <section class="hero-concept" aria-labelledby="main-title">
+      <div class="intro">
+        <p class="eyebrow">3 idee, niente caos</p>
+        <h1 id="main-title">Tre idee.<br>Un regalo.<br><em>Zero stress.</em></h1>
+        <p>Niente scroll infiniti, niente dubbi. Dicci per chi è, quanto vuoi spendere e quando ti serve: pensiamo noi al resto.</p>
+        <div class="hero-actions">
+          <a class="hero-primary" id="startQuestionnaire" href="#questionnaire">Trova i 3 regali <span>→</span></a>
+          <a class="hero-secondary" href="guide.html">Esplora le idee regalo</a>
+        </div>
+        <div class="proof"><span>Gratis</span><span>Circa 2 minuti</span><span>Nessuna lista infinita</span></div>
+      </div>
+      <section class="gift-universe" id="giftUniverse" aria-labelledby="universe-title">
+        <div class="universe-copy">
+          <p class="eyebrow">Tante possibilità, zero caos</p>
+          <h2 id="universe-title">Un catalogo enorme.<br><em>Tre sole scelte.</em></h2>
+          <p>Cerchiamo insieme il regalo giusto.</p>
+        </div>
+        <div class="universe-grid" aria-label="Tipologie di regalo disponibili">
+          <span><b>✦</b> Fatti su misura</span><span><b>⌁</b> Da vivere</span>
+          <span><b>◫</b> Che durano nel tempo</span><span><b>↗</b> Corsa contro il tempo</span>
+          <span><b>♡</b> Che dicono qualcosa</span><span><b>◌</b> Da assaporare</span>
+          <span><b>＋</b> Un aiuto concreto</span><span><b>◇</b> Gift card</span>
+        </div>
+      </section>
+    </section>
+
+    <section class="finder" id="questionnaire" aria-label="Questionario trova regalo" hidden>
+      <div class="progress-wrap" aria-live="polite">
+        <div class="progress-meta"><span id="stepLabel">Domanda 1 di 7</span><span id="progressPct">14%</span></div>
+        <div class="progress" id="progressTrack" role="progressbar" aria-label="Avanzamento del questionario" aria-valuemin="0" aria-valuemax="100" aria-valuenow="14"><span id="progressBar"></span></div>
+      </div>
+
+      <form id="giftForm">
+        <fieldset class="step active" data-step="1" data-step-key="age">
+          <legend>Quanti anni ha chi riceve il regalo?</legend>
+          <p class="hint">Partiamo dall’età, per mostrarti un percorso adatto.</p>
+          <div class="choice-grid compact">
+            <label><input type="radio" name="ageRange" value="earlyChild" required><span>0–6 anni</span></label>
+            <label><input type="radio" name="ageRange" value="child"><span>7–12 anni</span></label>
+            <label><input type="radio" name="ageRange" value="teen"><span>13–17 anni</span></label>
+            <label><input type="radio" name="ageRange" value="youngAdult"><span>18–34 anni</span></label>
+            <label><input type="radio" name="ageRange" value="adult"><span>35–54 anni</span></label>
+            <label><input type="radio" name="ageRange" value="mature"><span>55+ anni</span></label>
+            <label><input type="radio" name="ageRange" value="unknown"><span>Preferisco non indicarla</span></label>
+          </div>
+          <div class="quick-question" id="childStageQuestion" role="radiogroup" aria-labelledby="childStageLabel" hidden>
+            <strong id="childStageLabel">In quale fase si trova?</strong>
+            <p class="hint">Facoltativo: ci aiuta a distinguere i primi mesi dall’età prescolare.</p>
+            <div class="choice-grid compact">
+              <label><input type="radio" name="childStage" value="infant" disabled><span>Meno di 1 anno</span></label>
+              <label><input type="radio" name="childStage" value="toddler" disabled><span>1–2 anni</span></label>
+              <label><input type="radio" name="childStage" value="preschool" disabled><span>3–6 anni</span></label>
+              <label><input type="radio" name="childStage" value="all" checked disabled><span>Non so con precisione</span></label>
+            </div>
+          </div>
+          <p class="hint catalog-age-notice" id="childCatalogNotice" hidden>Il catalogo bambini include prodotti Amazon con fascia d’età documentata. Per 0–6 indica la fase quando possibile: senza un’età più precisa manteniamo un filtro prudente.</p>
+          <div class="quick-question recipient-preference" role="radiogroup" aria-labelledby="recipientPreferenceLabel" aria-describedby="recipientPreferenceHint">
+            <strong id="recipientPreferenceLabel">Preferenza per gli articoli</strong>
+            <p class="hint" id="recipientPreferenceHint">Facoltativo. La scelta riguarda chi riceve il regalo. Gli articoli unisex sono sempre inclusi.</p>
+            <div class="choice-grid compact">
+              <label><input type="radio" name="recipientPreference" value="women"><span id="womenPreferenceText">Da donna</span></label>
+              <label><input type="radio" name="recipientPreference" value="men"><span id="menPreferenceText">Da uomo</span></label>
+              <label><input type="radio" name="recipientPreference" value="unisex" checked><span>Unisex / non so</span></label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-step="2" data-step-key="relation">
+          <legend>Per chi stai cercando?</legend>
+          <p class="hint">Ci aiuta a calibrare il tono del regalo.</p>
+          <div class="choice-grid compact">
+            <label><input type="radio" name="relation" value="partner" required><span>💞 Partner</span></label>
+            <label><input type="radio" name="relation" value="friend"><span>🤝 Amico/a</span></label>
+            <label><input type="radio" name="relation" value="family"><span>🏡 Familiare</span></label>
+            <label><input type="radio" name="relation" value="colleague"><span>💼 Collega</span></label>
+            <label><input type="radio" name="relation" value="couple"><span>💑 Una coppia</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-step="3" data-step-key="perspective">
+          <legend>Che prospettiva deve avere il regalo?</legend>
+          <p class="hint">Ora che sappiamo per chi è, scegli da quale punto di vista partire.</p>
+          <div class="choice-grid perspective-grid">
+            <label><input type="radio" name="perspective" value="recipient" required><span><b>🎯 Su misura per chi lo riceve</b><small>Partiamo da ciò che ama e dall’effetto che vuoi ottenere.</small></span></label>
+            <label><input type="radio" name="perspective" value="giver"><span><b>✍️ Deve parlare anche di me</b><small>Il regalo deve far pensare subito a chi lo ha scelto.</small></span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-step="4" data-step-key="occasion">
+          <legend>Qual è l’occasione?</legend>
+          <p class="hint">Il contesto cambia molto il tono del regalo.</p>
+          <div class="choice-grid compact">
+            <label><input type="radio" name="occasion" value="birthday" required><span>🎂 Compleanno</span></label>
+            <label id="occasion-anniversary"><input type="radio" name="occasion" value="anniversary"><span>💌 Anniversario</span></label>
+            <label><input type="radio" name="occasion" value="christmas"><span>🎄 Natale</span></label>
+            <label><input type="radio" name="occasion" value="thanks"><span>✨ Grazie / sorpresa</span></label>
+            <label id="occasion-graduation"><input type="radio" name="occasion" value="graduation"><span>🎓 Laurea</span></label>
+            <label id="occasion-newhome"><input type="radio" name="occasion" value="newhome"><span>🔑 Casa nuova</span></label>
+            <label id="occasion-wedding"><input type="radio" name="occasion" value="wedding"><span>💍 Matrimonio / convivenza</span></label>
+            <label id="occasion-newbaby"><input type="radio" name="occasion" value="newbaby"><span id="newbabyLabel">🍼 Nascita: regalo per un genitore</span></label>
+            <label><input type="radio" name="occasion" value="event"><span>🎟️ Altra ricorrenza</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-step="5" data-step-key="interests">
+          <legend id="interestsLegend">Cosa le piace davvero?</legend>
+          <p class="hint">Scegli fino a due aree principali e fino a quattro sottocategorie in totale.</p>
+          <p class="hint" id="childInterestHint" hidden>Le scelte cambiano con l’età. L’età indicata dal produttore resta decisiva per ogni singolo regalo.</p>
+          <div class="interest-groups">
+            <div class="interest-group" data-audience="earlyChild" data-stages="infant toddler" hidden><label><input type="checkbox" name="interest" value="earlySensory" disabled><span>🧸 Primi giochi e sensi</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="earlySensory_rattles" data-stages="infant" disabled>Sonagli e giochi da afferrare</label><label><input type="checkbox" name="subinterest" value="earlySensory_playMats" data-stages="infant" disabled>Tappeti e palestrine</label><label><input type="checkbox" name="subinterest" value="earlySensory_sensoryToys" data-stages="infant toddler" disabled>Giochi tattili e morbidi</label></div></div>
+            <div class="interest-group" data-audience="earlyChild" data-stages="toddler preschool" hidden><label><input type="checkbox" name="interest" value="earlyBuilding" disabled><span>🧱 Incastri e prime costruzioni</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="earlyBuilding_stacking" data-stages="toddler preschool" disabled>Impilabili e incastri</label><label><input type="checkbox" name="subinterest" value="earlyBuilding_largeBlocks" data-stages="toddler preschool" disabled>Costruzioni con pezzi grandi</label><label><input type="checkbox" name="subinterest" value="earlyBuilding_firstTracks" data-stages="toddler preschool" disabled>Trenini e prime piste</label></div></div>
+            <div class="interest-group" data-audience="earlyChild" data-stages="toddler preschool" hidden><label><input type="checkbox" name="interest" value="earlyPretend" disabled><span>🧑‍🍳 Giocare a fare finta</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="earlyPretend_dollsPlay" data-stages="toddler preschool" disabled>Bambole e peluche da gioco</label><label><input type="checkbox" name="subinterest" value="earlyPretend_playKitchen" data-stages="preschool" disabled>Cucina e mestieri giocattolo</label><label><input type="checkbox" name="subinterest" value="earlyPretend_dressUp" data-stages="preschool" disabled>Travestimenti e teatrini</label><label><input type="checkbox" name="subinterest" value="earlyPretend_toyAnimals" data-stages="toddler preschool" disabled>Animali e veicoli giocattolo</label></div></div>
+            <div class="interest-group" data-audience="earlyChild" data-stages="infant toddler preschool" hidden><label><input type="checkbox" name="interest" value="earlyBooks" disabled><span>📚 Primi libri e racconti</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="earlyBooks_softBooks" data-stages="infant toddler" disabled>Libri di stoffa e tattili</label><label><input type="checkbox" name="subinterest" value="earlyBooks_pictureBooks" data-stages="toddler preschool" disabled>Cartonati e albi illustrati</label><label><input type="checkbox" name="subinterest" value="earlyBooks_storytelling" data-stages="preschool" disabled>Fiabe e raccontastorie</label></div></div>
+            <div class="interest-group" data-audience="earlyChild" data-stages="preschool" hidden><label><input type="checkbox" name="interest" value="earlyCreative" disabled><span>🎨 Colori e manualità</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="earlyCreative_firstDrawing" data-stages="preschool" disabled>Disegnare e colorare</label><label><input type="checkbox" name="subinterest" value="earlyCreative_modellingDough" data-stages="preschool" disabled>Pasta da modellare per bambini</label><label><input type="checkbox" name="subinterest" value="earlyCreative_firstCrafts" data-stages="preschool" disabled>Lavoretti e collage</label></div></div>
+            <div class="interest-group" data-audience="earlyChild" data-stages="toddler preschool" hidden><label><input type="checkbox" name="interest" value="earlyMovement" disabled><span>🛴 Movimento e giochi all’aperto</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="earlyMovement_rideOns" data-stages="toddler" disabled>Cavalcabili e giochi da spingere</label><label><input type="checkbox" name="subinterest" value="earlyMovement_balanceBikes" data-stages="preschool" disabled>Bici senza pedali e monopattini</label><label><input type="checkbox" name="subinterest" value="earlyMovement_outdoorPlay" data-stages="toddler preschool" disabled>Palle, sabbia e giochi in giardino</label></div></div>
+            <div class="interest-group" data-audience="earlyChild" data-stages="infant toddler preschool" hidden><label><input type="checkbox" name="interest" value="earlyMusic" disabled><span>🎵 Musica e suoni</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="earlyMusic_babyMusic" data-stages="infant toddler" disabled>Carillon e primi giochi sonori</label><label><input type="checkbox" name="subinterest" value="earlyMusic_firstInstruments" data-stages="toddler preschool" disabled>Primi strumenti giocattolo</label><label><input type="checkbox" name="subinterest" value="earlyMusic_singAlong" data-stages="toddler preschool" disabled>Canzoncine e giochi ritmici</label></div></div>
+            <div class="interest-group" data-audience="earlyChild" data-stages="toddler preschool" hidden><label><input type="checkbox" name="interest" value="earlyLearning" disabled><span>🧩 Puzzle e prime scoperte</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="earlyLearning_firstPuzzles" data-stages="toddler preschool" disabled>Puzzle con pezzi grandi</label><label><input type="checkbox" name="subinterest" value="earlyLearning_memoryGames" data-stages="preschool" disabled>Memory e primi giochi insieme</label><label><input type="checkbox" name="subinterest" value="earlyLearning_lettersNumbers" data-stages="preschool" disabled>Forme, lettere e numeri</label></div></div>
+            <div class="interest-group" data-audience="child" hidden><label><input type="checkbox" name="interest" value="kidsBuilding" disabled><span>🧱 Costruzioni e veicoli</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="kidsBuilding_buildingSets" disabled>Set di costruzioni per bambini</label><label><input type="checkbox" name="subinterest" value="kidsBuilding_mechanicalModels" disabled>Modelli e meccanismi da montare</label><label><input type="checkbox" name="subinterest" value="kidsBuilding_vehicleTracks" disabled>Piste e veicoli giocattolo</label></div></div>
+            <div class="interest-group" data-audience="child" hidden><label><input type="checkbox" name="interest" value="kidsGames" disabled><span>🎲 Giochi da tavolo e puzzle</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="kidsGames_familyGames" disabled>Giochi per famiglia e amici</label><label><input type="checkbox" name="subinterest" value="kidsGames_kidsLogic" disabled>Logica e rompicapi per bambini</label><label><input type="checkbox" name="subinterest" value="kidsGames_kidsPuzzles" disabled>Puzzle per la sua età</label><label><input type="checkbox" name="subinterest" value="kidsGames_kidsCards" disabled>Giochi di carte per bambini</label></div></div>
+            <div class="interest-group" data-audience="child" hidden><label><input type="checkbox" name="interest" value="kidsScience" disabled><span>🔬 Scienza, natura e robotica</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="kidsScience_scienceKits" disabled>Esperimenti per bambini</label><label><input type="checkbox" name="subinterest" value="kidsScience_codingRobots" disabled>Robot e primi passi nel coding</label><label><input type="checkbox" name="subinterest" value="kidsScience_natureKits" disabled>Esplorazione della natura</label><label><input type="checkbox" name="subinterest" value="kidsScience_spaceDinosaurs" disabled>Spazio e dinosauri</label></div></div>
+            <div class="interest-group" data-audience="child" hidden><label><input type="checkbox" name="interest" value="kidsCreative" disabled><span>🎨 Arte e kit creativi</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="kidsCreative_kidsDrawing" disabled>Disegno e pittura per bambini</label><label><input type="checkbox" name="subinterest" value="kidsCreative_kidsCrafts" disabled>Origami, collage e modellazione</label><label><input type="checkbox" name="subinterest" value="kidsCreative_jewelleryMaking" disabled>Braccialetti e creazioni fai da te</label></div></div>
+            <div class="interest-group" data-audience="child" hidden><label><input type="checkbox" name="interest" value="kidsBooks" disabled><span>📚 Libri, fumetti e avventure</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="kidsBooks_kidsStories" disabled>Storie e romanzi per bambini</label><label><input type="checkbox" name="subinterest" value="kidsBooks_kidsComics" disabled>Fumetti adatti alla sua età</label><label><input type="checkbox" name="subinterest" value="kidsBooks_kidsKnowledge" disabled>Libri di curiosità e scoperte</label></div></div>
+            <div class="interest-group" data-audience="child" hidden><label><input type="checkbox" name="interest" value="kidsSport" disabled><span>⚽ Sport e gioco all’aperto</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="kidsSport_ballGames" disabled>Palloni e giochi di squadra</label><label><input type="checkbox" name="subinterest" value="kidsSport_kidsWheels" disabled>Bici, pattini e monopattini</label><label><input type="checkbox" name="subinterest" value="kidsSport_gardenGames" disabled>Giochi in giardino e al parco</label></div></div>
+            <div class="interest-group" data-audience="child" hidden><label><input type="checkbox" name="interest" value="kidsCharacters" disabled><span>🦸 Personaggi e mondi da inventare</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="kidsCharacters_figurePlaysets" disabled>Personaggi e scenari di gioco</label><label><input type="checkbox" name="subinterest" value="kidsCharacters_kidsPlush" disabled>Peluche e bambole</label><label><input type="checkbox" name="subinterest" value="kidsCharacters_kidsCostumes" disabled>Travestimenti e giochi di ruolo</label></div></div>
+            <div class="interest-group" data-audience="child" hidden><label><input type="checkbox" name="interest" value="kidsMusic" disabled><span>🎶 Musica e spettacolo</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="kidsMusic_kidsInstruments" disabled>Strumenti per iniziare</label><label><input type="checkbox" name="subinterest" value="kidsMusic_kidsKaraoke" disabled>Karaoke e canto</label><label><input type="checkbox" name="subinterest" value="kidsMusic_kidsMagic" disabled>Magia e piccoli spettacoli</label></div></div>
+            <div class="interest-group"><label><input type="checkbox" name="interest" value="techGaming"><span>💻 Tecnologia e gaming</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="tech">Tecnologia</label><label><input type="checkbox" name="subinterest" value="smartHome">Smart home</label><label><input type="checkbox" name="subinterest" value="gaming">Videogiochi</label></div></div>
+            <div class="interest-group"><label><input type="checkbox" name="interest" value="culture"><span>📚 Libri, fumetti e cultura</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="books">Libri</label><label><input type="checkbox" name="subinterest" value="comics">Fumetti e manga</label><label><input type="checkbox" name="subinterest" value="culture">Arte e musei</label></div></div>
+            <div class="interest-group"><label><input type="checkbox" name="interest" value="mediaAudio"><span>🎵 Musica, cinema e audio</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="music">Musica</label><label><input type="checkbox" name="subinterest" value="cinema">Cinema e serie</label><label><input type="checkbox" name="subinterest" value="audio">Podcast e audiolibri</label></div></div>
+            <div class="interest-group"><label><input type="checkbox" name="interest" value="foodDrink"><span>🍝 Cucina e degustazione</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="food">Cucina</label><label id="wineInterest"><input type="checkbox" name="subinterest" value="wine">Vino e birra</label><label><input type="checkbox" name="subinterest" value="coffeeTea">Caffè e tè</label></div></div>
+            <div class="interest-group"><label><input type="checkbox" name="interest" value="travelOutdoor"><span>✈️ Viaggi e outdoor</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="travel">Viaggi</label><label><input type="checkbox" name="subinterest" value="outdoor">Trekking e campeggio</label><label><input type="checkbox" name="subinterest" value="organization">Organizzazione e accessori</label></div></div>
+            <div class="interest-group"><label><input type="checkbox" name="interest" value="sportFitness"><span>⚽ Sport e fitness</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="fitness">Fitness</label><label><input type="checkbox" name="subinterest" value="recovery">Recupero e benessere</label><label><input type="checkbox" name="subinterest" value="wearable">Wearable sportivi</label></div></div>
+            <div class="interest-group"><label><input type="checkbox" name="interest" value="artPhoto"><span>🎨 Creatività e fotografia</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="creative">Arte e fai da te</label><label><input type="checkbox" name="subinterest" value="photo">Fotografia</label><label><input type="checkbox" name="subinterest" value="craft">Artigianato</label></div></div>
+            <div class="interest-group"><label><input type="checkbox" name="interest" value="homeGarden"><span>🏠 Casa, design e giardinaggio</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="home">Casa e design</label><label><input type="checkbox" name="subinterest" value="garden">Piante e giardino</label><label><input type="checkbox" name="subinterest" value="organization">Organizzazione</label></div></div>
+            <div class="interest-group"><label><input type="checkbox" name="interest" value="styleBeauty"><span>⌚ Moda, beauty e accessori</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="style">Moda e accessori</label><label><input type="checkbox" name="subinterest" value="beauty">Accessori beauty e trucco</label><label><input type="checkbox" name="subinterest" value="skincare">Creme e sieri</label><label><input type="checkbox" name="subinterest" value="jewelry">Gioielli e orologi</label></div></div>
+            <div class="interest-group"><label><input type="checkbox" name="interest" value="animalsNature"><span>🐾 Animali e natura</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="pets">Accessori per animali</label><label><input type="checkbox" name="subinterest" value="petCare">Cura dell’animale</label><label><input type="checkbox" name="subinterest" value="nature">Natura e osservazione</label></div></div>
+            <div class="interest-group"><label><input type="checkbox" name="interest" value="gamesCollecting"><span>🎲 Giochi, hobby e collezionismo</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="boardGames">Giochi da tavolo</label><label><input type="checkbox" name="subinterest" value="puzzle">Puzzle e modellismo</label><label><input type="checkbox" name="subinterest" value="collecting">Collezionismo</label></div></div>
+            <div class="interest-group"><label><input type="checkbox" name="interest" value="newsBusiness"><span>📰 Lavoro, studio e attualità</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="writing">Scrittura e note</label><label><input type="checkbox" name="subinterest" value="productivity">Produttività</label><label><input type="checkbox" name="subinterest" value="studyTech">Tecnologia per lo studio</label></div></div>
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-step="6" data-step-key="tone">
+          <legend>Che effetto vuoi ottenere?</legend>
+          <p class="hint">Scegli la reazione che vorresti vedere quando aprirà il regalo.</p>
+          <div class="choice-grid traits">
+            <label><input type="radio" name="tone" value="sentimental" required><span>💞 Emozionare</span></label>
+            <label><input type="radio" name="tone" value="useful"><span>🧰 Essere utile</span></label>
+            <label><input type="radio" name="tone" value="funny"><span>😄 Far sorridere</span></label>
+            <label><input type="radio" name="tone" value="surprising"><span>🎉 Sorprendere</span></label>
+            <label><input type="radio" name="tone" value="elegant"><span>✨ Essere elegante</span></label>
+            <label><input type="radio" name="tone" value="neutral"><span>🎁 Non so / nessuna preferenza</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-step="7" data-step-key="budget_timing_details">
+          <legend>Budget, tempi e ultimi dettagli</legend>
+          <p class="hint">Cerchiamo idee nella fascia di prezzo indicata. Prezzo finale, eventuali spese di spedizione e consegna vanno verificati su Amazon.</p>
+          <div class="quick-question" id="budgetQuestion">
+            <div class="budget-pair">
+              <div class="budget-control">
+                <div class="budget-display"><label for="minBudget">Budget minimo</label><strong><output id="minBudgetOut" for="minBudget">0</output> €</strong></div>
+                <input class="budget-slider" id="minBudget" name="minBudget" type="range" min="0" max="500" step="5" value="0" aria-label="Budget minimo" aria-describedby="minBudgetHint">
+                <div class="range-labels" aria-hidden="true"><span>0 €</span><span>500 €</span></div>
+              </div>
+              <div class="budget-control">
+                <div class="budget-display"><label for="budget">Budget massimo</label><strong><output id="budgetOut" for="budget">50</output> €</strong></div>
+                <input class="budget-slider" id="budget" name="budgetChoice" type="range" min="15" max="500" step="5" value="50" aria-label="Budget massimo" required>
+                <div class="range-labels" aria-hidden="true"><span>15 €</span><span>500 €</span></div>
+              </div>
+            </div>
+            <p class="hint" id="minBudgetHint">Lascia il minimo a 0 € se vuoi soltanto un tetto di spesa. Le due barre mantengono il minimo entro il massimo.</p>
+          </div>
+          <div class="quick-question" id="timingQuestion">
+            <strong>Quando ti serve?</strong>
+            <div class="choice-grid compact quick-grid">
+              <label><input type="radio" name="timing" value="urgent2" required><span>Entro 2 giorni</span></label>
+              <label><input type="radio" name="timing" value="week" checked><span>Entro una settimana</span></label>
+              <label><input type="radio" name="timing" value="month"><span>Entro un mese</span></label>
+              <label><input type="radio" name="timing" value="exact"><span>Ho una data precisa</span></label>
+              <label><input type="radio" name="timing" value="none"><span>Nessuna scadenza precisa</span></label>
+            </div>
+            <div class="conditional-panel compact-panel" id="exactDatePanel" hidden>
+              <label class="date-field">Data del regalo<input id="deadline" name="deadline" type="date"></label>
+            </div>
+          </div>
+          <details class="constraints-details">
+            <summary>Facoltativo: aggiungi gusti, passioni o cose da evitare</summary>
+            <div class="avoid-grid">
+              <label><input type="checkbox" name="avoid" value="bulky"><span>Oggetti ingombranti</span></label>
+              <label><input type="checkbox" name="avoid" value="sizes"><span>Taglie e misure</span></label>
+              <label><input type="checkbox" name="avoid" value="foodAlcohol"><span>Cibo o alcol</span></label>
+              <label><input type="checkbox" name="avoid" value="subscriptions"><span>Abbonamenti</span></label>
+              <label><input type="checkbox" name="avoid" value="experiences"><span>Esperienze</span></label>
+              <label><input type="checkbox" name="avoid" value="gadgets"><span>Gadget</span></label>
+            </div>
+          </details>
+          <label class="note-field">Un dettaglio che può fare la differenza <span>(facoltativo)</span><textarea name="note" maxlength="240" aria-describedby="noteHelp" placeholder="Es. colleziona vinili, ama il Giappone, ha poco spazio in casa, non usa profumi…"></textarea></label>
+          <p class="hint" id="noteHelp"><strong>Privacy:</strong> non inserire nomi, recapiti, dati sulla salute o altre informazioni personali o sensibili. Riconosciamo alcune preferenze ed esclusioni, non ogni vincolo scritto; verifica sempre con il venditore le esigenze di sicurezza.</p>
+          <div class="result-path">
+            <strong>Come vuoi vedere il risultato?</strong>
+            <div class="choice-grid compact">
+              <label><input type="radio" name="journey" value="direct" required checked><span>✨ Direttamente le 3 proposte</span></label>
+              <label><input type="radio" name="journey" value="explore"><span>🧭 Prima la categoria più adatta</span></label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="form-actions">
+          <button class="back" id="backBtn" type="button" hidden>Indietro</button>
+          <button class="primary" id="nextBtn" type="button">Continua <span>→</span></button>
+        </div>
+        <p class="form-error" id="formError" role="alert"></p>
+      </form>
+    </section>
+
+    <section class="results" id="results" hidden aria-live="polite">
+      <div class="results-head">
+        <div><p class="eyebrow" id="resultsEyebrow">La selezione è pronta</p><h2 id="resultsTitle">Le nostre 3 proposte</h2></div>
+        <button class="quiet" id="restartBtn" type="button">Rifai il test</button>
+      </div>
+      <p class="result-summary" id="resultSummary"></p>
+      <div class="recommendation-status" id="recommendationStatus"></div>
+      <section class="zero-recovery" id="zeroRecovery" hidden aria-labelledby="zeroRecoveryTitle">
+        <span class="zero-recovery-icon" aria-hidden="true">↻</span>
+        <div>
+          <h3 id="zeroRecoveryTitle">Con questi vincoli non abbiamo tre proposte affidabili.</h3>
+          <p id="zeroRecoveryText">Puoi rivedere i vincoli o esplorare idee con condizioni da verificare.</p>
+          <div class="zero-recovery-actions">
+            <button class="primary" id="checkDeliveryRecovery" type="button" hidden>Mostra le idee: controllerò la consegna sul venditore</button>
+            <button class="quiet" id="specifyAgeRecovery" type="button" hidden>Precisa l’età della bambina o del bambino</button>
+            <button class="primary" id="increaseBudgetRecovery" type="button">Aumenta leggermente il budget</button>
+            <button class="quiet" id="changeDateRecovery" type="button">Modifica la data</button>
+            <button class="quiet" id="editConstraintsRecovery" type="button">Rivedi dettagli e vincoli</button>
+            <button class="quiet" id="exploreUnverifiedRecovery" type="button">Esplora idee senza garanzia di budget o consegna</button>
+            <button class="quiet" id="broadenTypeRecovery" type="button" hidden>Includi anche oggetti coerenti</button>
+          </div>
+        </div>
+      </section>
+      <section class="category-exploration" id="categoryExploration" hidden>
+        <div class="category-spotlight"><span class="category-icon" id="categoryIcon">✦</span><div><span class="category-label">La direzione più promettente</span><h3 id="categoryTitle"></h3><p id="categoryReason"></p></div></div>
+        <div class="category-options" id="categoryOptions"></div>
+        <button class="primary reveal-products" id="revealProducts" type="button">Mostrami 3 prodotti <span>→</span></button>
+      </section>
+      <div class="product-selection" id="productSelection">
+        <div class="result-grid" id="resultGrid"></div>
+        <section class="refinement-box" id="refinementBox">
+          <div class="refinement-prompt">
+            <div><strong id="refinementTitle">Nessuno ti ha convinto?</strong><p id="refinementText">Aiutaci a capire meglio: bastano altre 2–3 domande.</p></div>
+            <button class="refine-trigger" id="refineBtn" type="button">Non sono convinto</button>
+          </div>
+          <form class="refinement-form" id="refinementForm" hidden>
+            <fieldset><legend id="refineReasonLabel">Cosa non ti convince?</legend><select id="refineReason" name="refineReason" aria-labelledby="refineReasonLabel" required><option value="">Scegli una risposta</option><option value="banal">Le idee sono troppo banali</option><option value="impersonal">Vorrei qualcosa di più personale</option><option value="price">Le proposte costano troppo</option><option value="unsuitable">Non sembrano adatte alla persona</option><option value="owned">Ha già qualcosa di simile</option><option value="oneCategory">Le proposte sono tutte della stessa categoria</option></select></fieldset>
+            <fieldset><legend id="refineDirectionLabel">Quale direzione preferisci?</legend><p class="refine-hint" id="refineDirectionHint">Scegli come correggere la prossima selezione.</p><select id="refineDirection" name="refineDirection" aria-labelledby="refineDirectionLabel" aria-describedby="refineDirectionHint" required><option value="">Scegli una direzione</option><option value="practical">Qualcosa di utile</option><option value="experience">Un’esperienza</option><option value="creative">Originale e personale</option><option value="funny">Qualcosa di divertente</option></select></fieldset>
+            <fieldset><legend id="refineSurpriseLabel">Quanto vuoi sorprendere?</legend><select name="refineSurprise" aria-labelledby="refineSurpriseLabel" required><option value="">Scegli un livello</option><option value="safe">Preferisco andare sul sicuro</option><option value="balanced">Abbastanza</option><option value="bold">Molto: voglio qualcosa di inatteso</option></select></fieldset>
+            <fieldset><legend id="refineBudgetLabel">Nuovo budget massimo <span id="refineBudgetOptional">(facoltativo)</span></legend><input id="refineBudget" name="refineBudget" aria-labelledby="refineBudgetLabel" type="number" min="15" max="500" step="5" placeholder="Es. 40 €"><p class="hint">La fascia di ricerca resta invariata. Per cercare prezzi inferiori, indica un nuovo massimo; il minimo che hai impostato resta valido.</p></fieldset>
+            <fieldset class="refine-detail"><legend id="refineDetailLabel">Cosa dobbiamo capire meglio? <span>(facoltativo)</span></legend><textarea name="refineDetail" aria-labelledby="refineDetailLabel" aria-describedby="refineDetailPrivacy" maxlength="180" placeholder="Es. niente oggetti per la casa, preferisce attività all’aperto…"></textarea><p class="refine-hint" id="refineDetailPrivacy">Non inserire nomi, recapiti o dati sensibili.</p></fieldset>
+            <p class="refinement-error" id="refinementError" role="alert"></p>
+            <button class="quiet" id="broadenExperience" type="button" hidden>Includi anche oggetti coerenti</button>
+            <div class="refinement-actions"><button class="quiet" id="cancelRefine" type="button">Annulla</button><button class="primary" type="submit">Cerca 3 alternative <span>✨</span></button></div>
+          </form>
+        </section>
+      </div>
+      <aside class="disclosure"><strong>Trasparenza prima di tutto.</strong> Alcuni collegamenti ad Amazon sono link affiliati: 3Gifts può ricevere una commissione senza costi aggiuntivi per te. In qualità di Affiliato Amazon io ricevo un guadagno dagli acquisti idonei. Prezzo, disponibilità e consegna vanno confermati sul sito del venditore.</aside>
+    </section>
+  </main>
+
+  <aside class="disclosure" aria-label="Lettura e ascolto">
+    <strong>Leggi con Kindle Unlimited o ascolta con Audible.</strong>
+    <p><a href="https://www.amazon.it/kindle-dbs/hz/subscribe/ku?tag=3gifts-21&amp;shoppingPortalEnabled=true" target="_blank" rel="sponsored noopener noreferrer">Scopri Kindle Unlimited</a> · <a href="https://www.amazon.it/hz/audible/arya/mlp?_encoding=UTF8&amp;purchaseType=DISC_MTRIAL&amp;SHOPPING_PORTAL_MODE=AUGMENTED&amp;linkCode=ll2&amp;tag=3gifts-21&amp;linkId=7f6c33e04bc46b8a76efe7f2d733354e&amp;ref_=as_li_ss_tl" target="_blank" rel="sponsored noopener noreferrer">Scopri Audible</a></p>
+    <p>Link affiliati. Consulta su Amazon prezzi, condizioni di iscrizione e rinnovo ed eventuali promozioni.</p>
+  </aside>
+
+  <footer><span>© 2026 3Gifts</span><a href="privacy.html">Privacy Policy</a><a href="cookie.html">Cookie Policy</a><a href="terms.html">Termini</a><a href="affiliate.html">Link e affiliazioni</a><button type="button" data-privacy-preferences>Preferenze privacy</button></footer>
+
+  <dialog id="infoDialog">
+    <button class="dialog-close" aria-label="Chiudi">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
+  <script src="config.js"></script>
+  <script src="catalog.js"></script>
+  <script src="catalog-health.js"></script>
+  <script src="recommendation-rules.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

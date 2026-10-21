@@ -1,0 +1,12 @@
+{
+  "reviewedOn": "2026-10-09",
+  "scope": "Bibliographic identity policy and one reading-accessory property; no Amazon offer validation",
+  "sources": [
+    {"url":"https://www.isbn-international.org/node/88","use":"ISBN identifies a publication/edition/binding. Different formats, languages or revisions may have different ISBNs; different ISBN does not establish a different work."},
+    {"url":"https://www.ifla.org/wp-content/uploads/2019/05/assets/cataloguing/frbr-lrm/ifla-lrm-august-2017.pdf","use":"IFLA LRM 2017 conceptual distinction of work, expression and manifestation; conceptual reference, not a claim to implement an authority catalogue or the latest revision."},
+    {"url":"https://affiliate-program.amazon.com/creatorsapi/docs/en-us/api-reference/resources/item-info","use":"Supported contributors, classifications/binding, edition/language and external ISBN identifiers. Missing fields remain unknown."},
+    {"url":"https://kikkerland.com/products/tablet-stand","use":"Easel stand can hold books and adjust the viewing angle. No universal fit, posture or clinical benefit inferred."}
+  ],
+  "policy": "Same work: normalized title and author heuristic; explicit original title may connect language variants. Narrative series is distinct from work and publisher collection. At most one known series volume is an editorial diversity choice. No title translation, unknown author or unspecified set contents is invented.",
+  "translationReview": {"associations":133,"families":24,"aliasesEN":45,"notes":["Pocket-sized does not mean paperback","Silver does not mean sterling silver","Italian does not guarantee publication language","Reading stand is restricted to book-reading context"]}
+}

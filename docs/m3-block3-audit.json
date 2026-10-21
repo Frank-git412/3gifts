@@ -1,0 +1,5145 @@
+{
+  "date": "2026-10-09",
+  "revision": "m3-block3",
+  "limits": "Editorial hypotheses with synthetic tests; no Amazon product or demand verification",
+  "counts": {
+    "newRules": 19,
+    "totalDictionaryRules": 31,
+    "relationEffectRules": 21,
+    "ordinaryOccasionRules": 10,
+    "families": 65,
+    "familiesWithRelationEffect": 33,
+    "familiesWithAnyContext": 38
+  },
+  "matrix": [
+    {
+      "area": "culture",
+      "signal": "relation",
+      "value": "family",
+      "rules": [
+        "books-family-story"
+      ],
+      "status": "conditional_rule",
+      "reason": null
+    },
+    {
+      "area": "culture",
+      "signal": "effect",
+      "value": "surprising",
+      "rules": [
+        "books-surprise-puzzles"
+      ],
+      "status": "conditional_rule",
+      "reason": null
+    },
+    {
+      "area": "culture",
+      "signal": "effect",
+      "value": "relax",
+      "rules": [
+        "books-relax-short"
+      ],
+      "status": "conditional_rule",
+      "reason": null
+    },
+    {
+      "area": "culture",
+      "signal": "occasion",
+      "value": "birthday",
+      "rules": [
+        "books-occasion-dedication"
+      ],
+      "status": "conditional_rule",
+      "reason": null
+    },
+    {
+      "area": "culture",
+      "signal": "occasion",
+      "value": "christmas",
+      "rules": [
+        "books-christmas-stories"
+      ],
+      "status": "conditional_rule",
+      "reason": null
+    },
+    {
+      "area": "culture",
+      "signal": "occasion",
+      "value": "thanks",
+      "rules": [
+        "books-occasion-dedication"
+      ],
+      "status": "conditional_rule",
+      "reason": null
+    },
+    {
+      "area": "culture",
+      "signal": "occasion",
+      "value": "graduation",
+      "rules": [
+        "books-graduation-interview"
+      ],
+      "status": "conditional_rule",
+      "reason": null
+    },
+    {
+      "area": "culture",
+      "signal": "occasion",
+      "value": "newhome",
+      "rules": [
+        "books-newhome-bookends"
+      ],
+      "status": "conditional_rule",
+      "reason": null
+    },
+    {
+      "area": "culture",
+      "signal": "occasion",
+      "value": "event",
+      "rules": [
+        "books-occasion-dedication"
+      ],
+      "status": "conditional_rule",
+      "reason": null
+    },
+    {
+      "area": "techGaming",
+      "signal": "relation",
+      "value": "family",
+      "rules": [
+        "tech-family-photos"
+      ],
+      "status": "conditional_rule",
+      "reason": null
+    },
+    {
+      "area": "techGaming",
+      "signal": "effect",
+      "value": "surprising",
+      "rules": [
+        "tech-surprise-colour"
+      ],
+      "status": "conditional_rule",
+      "reason": null
+    },
+    {
+      "area": "techGaming",
+      "signal": "effect",
+      "value": "relax",
+      "rules": [
+        "tech-relax-reading"
+      ],
+      "status": "conditional_rule",
+      "reason": null
+    },
+    {
+      "area": "techGaming",
+      "signal": "occasion",
+      "value": "birthday",
+      "rules": [
+        "tech-occasion-dedication"
+      ],
+      "status": "conditional_rule",
+      "reason": null
+    },
+    {
+      "area": "techGaming",
+      "signal": "occasion",
+      "value": "christmas",
+      "rules": [
+        "tech-christmas-card"
+      ],
+      "status": "conditional_rule",
+      "reason": null
+    },
+    {
+      "area": "techGaming",
+      "signal": "occasion",
+      "value": "thanks",
+      "rules": [
+        "tech-occasion-dedication"
+      ],
+      "status": "conditional_rule",
+      "reason": null
+    },
+    {
+      "area": "techGaming",
+      "signal": "occasion",
+      "value": "graduation",
+      "rules": [
+        "tech-graduation-calls"
+      ],
+      "status": "conditional_rule",
+      "reason": null
+    },
+    {
+      "area": "techGaming",
+      "signal": "occasion",
+      "value": "newhome",
+      "rules": [
+        "tech-newhome-frame"
+      ],
+      "status": "conditional_rule",
+      "reason": null
+    },
+    {
+      "area": "techGaming",
+      "signal": "occasion",
+      "value": "event",
+      "rules": [
+        "tech-occasion-dedication"
+      ],
+      "status": "conditional_rule",
+      "reason": null
+    },
+    {
+      "area": "styleBeauty",
+      "signal": "relation",
+      "value": "family",
+      "rules": [
+        "skin-family-individual"
+      ],
+      "status": "conditional_rule",
+      "reason": null
+    },
+    {
+      "area": "styleBeauty",
+      "signal": "effect",
+      "value": "surprising",
+      "rules": [
+        "skin-surprise-transform"
+      ],
+      "status": "conditional_rule",
+      "reason": null
+    },
+    {
+      "area": "styleBeauty",
+      "signal": "effect",
+      "value": "relax",
+      "rules": [
+        "skin-relax-massage"
+      ],
+      "status": "conditional_rule",
+      "reason": null
+    },
+    {
+      "area": "styleBeauty",
+      "signal": "occasion",
+      "value": "birthday",
+      "rules": [
+        "skin-occasion-dedication"
+      ],
+      "status": "conditional_rule",
+      "reason": null
+    },
+    {
+      "area": "styleBeauty",
+      "signal": "occasion",
+      "value": "christmas",
+      "rules": [
+        "skin-christmas-advent"
+      ],
+      "status": "conditional_rule",
+      "reason": null
+    },
+    {
+      "area": "styleBeauty",
+      "signal": "occasion",
+      "value": "thanks",
+      "rules": [
+        "skin-occasion-dedication"
+      ],
+      "status": "conditional_rule",
+      "reason": null
+    },
+    {
+      "area": "styleBeauty",
+      "signal": "occasion",
+      "value": "graduation",
+      "rules": [],
+      "status": "no_automatic_bonus",
+      "reason": "La laurea non stabilisce esigenze o preferenze cutanee; restano interesse e altri contesti espliciti."
+    },
+    {
+      "area": "styleBeauty",
+      "signal": "occasion",
+      "value": "newhome",
+      "rules": [],
+      "status": "no_automatic_bonus",
+      "reason": "Una casa nuova non stabilisce esigenze cosmetiche; restano interesse e altri contesti espliciti."
+    },
+    {
+      "area": "styleBeauty",
+      "signal": "occasion",
+      "value": "event",
+      "rules": [
+        "skin-occasion-dedication"
+      ],
+      "status": "conditional_rule",
+      "reason": null
+    }
+  ],
+  "inventory": [
+    {
+      "id": "m3:culture:books:narrativa",
+      "area": "culture",
+      "subId": "books",
+      "family": "narrativa",
+      "keywordIds": [
+        "culture:books:kw_a6196cfa8955",
+        "culture:books:kw_413eaec2e0a4",
+        "culture:books:kw_c55c436bea6d",
+        "culture:books:kw_d49eeaab5847",
+        "culture:books:kw_e417a34668ce"
+      ],
+      "synonymsIT": [
+        "romanzo",
+        "romanzo breve",
+        "romanzo amicizia",
+        "romanzo avventura",
+        "romanzo leggero e divertente"
+      ],
+      "baseQueries": [
+        "romanzo",
+        "romanzo breve",
+        "romanzo amicizia",
+        "romanzo avventura",
+        "romanzo leggero e divertente"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "books-friend-content",
+          "query": "romanzo amicizia"
+        },
+        {
+          "rule": "books-funny-content",
+          "query": "romanzo umoristico divertente"
+        },
+        {
+          "rule": "books-family-story",
+          "query": "romanzo saga familiare generazioni"
+        },
+        {
+          "rule": "books-relax-short",
+          "query": "romanzo racconti brevi lettura leggera"
+        },
+        {
+          "rule": "books-christmas-stories",
+          "query": "romanzo racconti natalizi"
+        }
+      ],
+      "properties": [
+        "Il contenuto tratta esplicitamente un legame di amicizia",
+        "Contenuto umoristico dichiarato",
+        "Contenuto narrativo familiare attraverso più generazioni",
+        "Racconti brevi e tono leggero entrambi dichiarati; nessuna promessa terapeutica",
+        "Contenuto esplicitamente natalizio"
+      ],
+      "rules": [
+        "books-friend-content",
+        "books-funny-content",
+        "books-family-story",
+        "books-relax-short",
+        "books-christmas-stories"
+      ],
+      "relations": [
+        "friend",
+        "family"
+      ],
+      "effects": [
+        "funny",
+        "relax"
+      ],
+      "occasions": [
+        "christmas"
+      ],
+      "incompatibilities": [
+        "Generi e argomenti dichiarati dal destinatario",
+        "Lingua e formato preferiti",
+        "Livello di approfondimento e tempo di lettura desiderati",
+        "Autori, titoli e volumi già posseduti",
+        "Idoneità del contenuto specifico per età"
+      ],
+      "diversityKey": "work_or_series_for_books; function_for_accessories",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:culture:books:romance",
+      "area": "culture",
+      "subId": "books",
+      "family": "romance",
+      "keywordIds": [
+        "culture:books:kw_c48c75c826bf",
+        "culture:books:kw_b2cf3109d47f",
+        "culture:books:kw_e48b5a71a96f",
+        "culture:books:kw_3839b40b23d3",
+        "culture:books:kw_f33a71bf6ffd",
+        "culture:books:kw_e99cb8e533da",
+        "culture:books:kw_3c3b9e0987e0",
+        "culture:books:kw_2006483fe150",
+        "culture:books:kw_9a0e66c207b8",
+        "culture:books:kw_5b295fdf5d21"
+      ],
+      "synonymsIT": [
+        "romanzo rosa",
+        "romanzo rosa storico",
+        "romanzo rosa contemporaneo",
+        "romanzo rosa divertente",
+        "romanzo rosa natalizio",
+        "libri romantici",
+        "libri romantici autoconclusivi",
+        "libri romantici classici",
+        "libri romantici storici",
+        "libri romantici enemies to lovers"
+      ],
+      "baseQueries": [
+        "romanzo rosa",
+        "romanzo rosa storico",
+        "romanzo rosa contemporaneo",
+        "romanzo rosa divertente",
+        "romanzo rosa natalizio",
+        "libri romantici",
+        "libri romantici autoconclusivi",
+        "libri romantici classici",
+        "libri romantici storici",
+        "libri romantici enemies to lovers"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "books-funny-content",
+          "query": "romanzo rosa umoristico divertente"
+        }
+      ],
+      "properties": [
+        "Contenuto umoristico dichiarato"
+      ],
+      "rules": [
+        "books-funny-content"
+      ],
+      "relations": [],
+      "effects": [
+        "funny"
+      ],
+      "occasions": [],
+      "incompatibilities": [
+        "Generi e argomenti dichiarati dal destinatario",
+        "Lingua e formato preferiti",
+        "Livello di approfondimento e tempo di lettura desiderati",
+        "Autori, titoli e volumi già posseduti",
+        "Idoneità del contenuto specifico per età"
+      ],
+      "diversityKey": "work_or_series_for_books; function_for_accessories",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:culture:books:narrativa_storica",
+      "area": "culture",
+      "subId": "books",
+      "family": "narrativa_storica",
+      "keywordIds": [
+        "culture:books:kw_b01fdc08f88a",
+        "culture:books:kw_93c8ceffc00e",
+        "culture:books:kw_0c3b70b9a6f3",
+        "culture:books:kw_e76b907117bd",
+        "culture:books:kw_6312a28a49c4"
+      ],
+      "synonymsIT": [
+        "romanzo storico",
+        "romanzo storico italiano",
+        "romanzo storico antica roma",
+        "romanzo storico medioevo",
+        "romanzo storico seconda guerra mondiale"
+      ],
+      "baseQueries": [
+        "romanzo storico",
+        "romanzo storico italiano",
+        "romanzo storico antica roma",
+        "romanzo storico medioevo",
+        "romanzo storico seconda guerra mondiale"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "books-funny-content",
+          "query": "romanzo storico umoristico divertente"
+        },
+        {
+          "rule": "books-family-story",
+          "query": "romanzo storico saga familiare generazioni"
+        }
+      ],
+      "properties": [
+        "Contenuto umoristico dichiarato",
+        "Contenuto narrativo familiare attraverso più generazioni"
+      ],
+      "rules": [
+        "books-funny-content",
+        "books-family-story"
+      ],
+      "relations": [
+        "family"
+      ],
+      "effects": [
+        "funny"
+      ],
+      "occasions": [],
+      "incompatibilities": [
+        "Generi e argomenti dichiarati dal destinatario",
+        "Lingua e formato preferiti",
+        "Livello di approfondimento e tempo di lettura desiderati",
+        "Autori, titoli e volumi già posseduti",
+        "Idoneità del contenuto specifico per età"
+      ],
+      "diversityKey": "work_or_series_for_books; function_for_accessories",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:culture:books:fantasy",
+      "area": "culture",
+      "subId": "books",
+      "family": "fantasy",
+      "keywordIds": [
+        "culture:books:kw_d8c884bf5aae",
+        "culture:books:kw_54438ff5d622",
+        "culture:books:kw_b1e2677ef28a",
+        "culture:books:kw_d2a79f87382b",
+        "culture:books:kw_237897045342"
+      ],
+      "synonymsIT": [
+        "romanzo fantasy",
+        "romanzo fantasy storico",
+        "romanzo fantasy epico",
+        "romanzo fantasy illustrato",
+        "romanzo fantasy italiano"
+      ],
+      "baseQueries": [
+        "romanzo fantasy",
+        "romanzo fantasy storico",
+        "romanzo fantasy epico",
+        "romanzo fantasy illustrato",
+        "romanzo fantasy italiano"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "books-funny-content",
+          "query": "romanzo fantasy umoristico divertente"
+        }
+      ],
+      "properties": [
+        "Contenuto umoristico dichiarato"
+      ],
+      "rules": [
+        "books-funny-content"
+      ],
+      "relations": [],
+      "effects": [
+        "funny"
+      ],
+      "occasions": [],
+      "incompatibilities": [
+        "Generi e argomenti dichiarati dal destinatario",
+        "Lingua e formato preferiti",
+        "Livello di approfondimento e tempo di lettura desiderati",
+        "Autori, titoli e volumi già posseduti",
+        "Idoneità del contenuto specifico per età"
+      ],
+      "diversityKey": "work_or_series_for_books; function_for_accessories",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:culture:books:gialli",
+      "area": "culture",
+      "subId": "books",
+      "family": "gialli",
+      "keywordIds": [
+        "culture:books:kw_04e37bd3d590",
+        "culture:books:kw_10c1eaea1ae0",
+        "culture:books:kw_5d8ec84b6781",
+        "culture:books:kw_51fbcdd9cd3d",
+        "culture:books:kw_0232ca62b99b"
+      ],
+      "synonymsIT": [
+        "romanzo giallo",
+        "romanzo giallo storico",
+        "romanzo giallo thriller",
+        "romanzo giallo cozy",
+        "romanzo giallo medievale"
+      ],
+      "baseQueries": [
+        "romanzo giallo",
+        "romanzo giallo storico",
+        "romanzo giallo thriller",
+        "romanzo giallo cozy",
+        "romanzo giallo medievale"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "books-funny-content",
+          "query": "romanzo giallo umoristico divertente"
+        },
+        {
+          "rule": "books-surprise-puzzles",
+          "query": "romanzo giallo enigmi da risolvere lettore"
+        }
+      ],
+      "properties": [
+        "Contenuto umoristico dichiarato",
+        "Partecipazione del lettore alla soluzione di enigmi"
+      ],
+      "rules": [
+        "books-funny-content",
+        "books-surprise-puzzles"
+      ],
+      "relations": [],
+      "effects": [
+        "funny",
+        "surprising"
+      ],
+      "occasions": [],
+      "incompatibilities": [
+        "Generi e argomenti dichiarati dal destinatario",
+        "Lingua e formato preferiti",
+        "Livello di approfondimento e tempo di lettura desiderati",
+        "Autori, titoli e volumi già posseduti",
+        "Idoneità del contenuto specifico per età"
+      ],
+      "diversityKey": "work_or_series_for_books; function_for_accessories",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:culture:books:thriller",
+      "area": "culture",
+      "subId": "books",
+      "family": "thriller",
+      "keywordIds": [
+        "culture:books:kw_060d91dcea37",
+        "culture:books:kw_e3b1fc4479b9",
+        "culture:books:kw_d7ea2d202278",
+        "culture:books:kw_6b12d7f15e3b",
+        "culture:books:kw_8e440bb56508"
+      ],
+      "synonymsIT": [
+        "libri thriller",
+        "libri thriller psicologici",
+        "libri thriller domestici",
+        "libri thriller storici",
+        "libri thriller tascabile"
+      ],
+      "baseQueries": [
+        "libri thriller",
+        "libri thriller psicologici",
+        "libri thriller domestici",
+        "libri thriller storici",
+        "libri thriller tascabile"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "books-funny-content",
+          "query": "libri thriller umoristico divertente"
+        },
+        {
+          "rule": "books-surprise-puzzles",
+          "query": "libri thriller enigmi da risolvere lettore"
+        }
+      ],
+      "properties": [
+        "Contenuto umoristico dichiarato",
+        "Partecipazione del lettore alla soluzione di enigmi"
+      ],
+      "rules": [
+        "books-funny-content",
+        "books-surprise-puzzles"
+      ],
+      "relations": [],
+      "effects": [
+        "funny",
+        "surprising"
+      ],
+      "occasions": [],
+      "incompatibilities": [
+        "Generi e argomenti dichiarati dal destinatario",
+        "Lingua e formato preferiti",
+        "Livello di approfondimento e tempo di lettura desiderati",
+        "Autori, titoli e volumi già posseduti",
+        "Idoneità del contenuto specifico per età"
+      ],
+      "diversityKey": "work_or_series_for_books; function_for_accessories",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:culture:books:fantascienza",
+      "area": "culture",
+      "subId": "books",
+      "family": "fantascienza",
+      "keywordIds": [
+        "culture:books:kw_74a9c99249be",
+        "culture:books:kw_ac343358acfc",
+        "culture:books:kw_4f331013530d",
+        "culture:books:kw_272d757ae46f",
+        "culture:books:kw_8cf08719dbbc"
+      ],
+      "synonymsIT": [
+        "libri fantascienza",
+        "libri fantascienza hard",
+        "libri fantascienza distopica",
+        "libri fantascienza classici",
+        "libri fantascienza space opera"
+      ],
+      "baseQueries": [
+        "libri fantascienza",
+        "libri fantascienza hard",
+        "libri fantascienza distopica",
+        "libri fantascienza classici",
+        "libri fantascienza space opera"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "books-funny-content",
+          "query": "libri fantascienza umoristico divertente"
+        }
+      ],
+      "properties": [
+        "Contenuto umoristico dichiarato"
+      ],
+      "rules": [
+        "books-funny-content"
+      ],
+      "relations": [],
+      "effects": [
+        "funny"
+      ],
+      "occasions": [],
+      "incompatibilities": [
+        "Generi e argomenti dichiarati dal destinatario",
+        "Lingua e formato preferiti",
+        "Livello di approfondimento e tempo di lettura desiderati",
+        "Autori, titoli e volumi già posseduti",
+        "Idoneità del contenuto specifico per età"
+      ],
+      "diversityKey": "work_or_series_for_books; function_for_accessories",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:culture:books:avventura",
+      "area": "culture",
+      "subId": "books",
+      "family": "avventura",
+      "keywordIds": [
+        "culture:books:kw_52c3cab563b6",
+        "culture:books:kw_6b0cd013f75c",
+        "culture:books:kw_3e69ea049cdb",
+        "culture:books:kw_94b44f524688",
+        "culture:books:kw_08e8bf4e4729"
+      ],
+      "synonymsIT": [
+        "libri avventura",
+        "libri avventura archeologia",
+        "libri classici avventura",
+        "libri avventura e viaggio",
+        "libri avventura e mistero"
+      ],
+      "baseQueries": [
+        "libri avventura",
+        "libri avventura archeologia",
+        "libri classici avventura",
+        "libri avventura e viaggio",
+        "libri avventura e mistero"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "books-funny-content",
+          "query": "libri avventura umoristico divertente"
+        }
+      ],
+      "properties": [
+        "Contenuto umoristico dichiarato"
+      ],
+      "rules": [
+        "books-funny-content"
+      ],
+      "relations": [],
+      "effects": [
+        "funny"
+      ],
+      "occasions": [],
+      "incompatibilities": [
+        "Generi e argomenti dichiarati dal destinatario",
+        "Lingua e formato preferiti",
+        "Livello di approfondimento e tempo di lettura desiderati",
+        "Autori, titoli e volumi già posseduti",
+        "Idoneità del contenuto specifico per età"
+      ],
+      "diversityKey": "work_or_series_for_books; function_for_accessories",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:culture:books:horror",
+      "area": "culture",
+      "subId": "books",
+      "family": "horror",
+      "keywordIds": [
+        "culture:books:kw_5f03b812fcc2",
+        "culture:books:kw_eb5501f2e7b4",
+        "culture:books:kw_ac435bc0932c",
+        "culture:books:kw_6de14c07de27",
+        "culture:books:kw_a4e8baa9a41b",
+        "culture:books:kw_10ba14010b0f"
+      ],
+      "synonymsIT": [
+        "libri horror",
+        "libri horror classici",
+        "libri horror case infestate",
+        "libri gotici horror",
+        "libri horror illustrati",
+        "libri horror da leggere"
+      ],
+      "baseQueries": [
+        "libri horror",
+        "libri horror classici",
+        "libri horror case infestate",
+        "libri gotici horror",
+        "libri horror illustrati",
+        "libri horror da leggere"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "books-funny-content",
+          "query": "libri horror umoristico divertente"
+        }
+      ],
+      "properties": [
+        "Contenuto umoristico dichiarato"
+      ],
+      "rules": [
+        "books-funny-content"
+      ],
+      "relations": [],
+      "effects": [
+        "funny"
+      ],
+      "occasions": [],
+      "incompatibilities": [
+        "Generi e argomenti dichiarati dal destinatario",
+        "Lingua e formato preferiti",
+        "Livello di approfondimento e tempo di lettura desiderati",
+        "Autori, titoli e volumi già posseduti",
+        "Idoneità del contenuto specifico per età"
+      ],
+      "diversityKey": "work_or_series_for_books; function_for_accessories",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:culture:books:poesia",
+      "area": "culture",
+      "subId": "books",
+      "family": "poesia",
+      "keywordIds": [
+        "culture:books:kw_cbdb1a01e71e",
+        "culture:books:kw_ee3e7afd27f9",
+        "culture:books:kw_98406c24626b",
+        "culture:books:kw_2ad30cbf86fa"
+      ],
+      "synonymsIT": [
+        "libri poesia",
+        "libri di poesia",
+        "libri poesia italiana",
+        "libri poesie racconti e pensieri"
+      ],
+      "baseQueries": [
+        "libri poesia",
+        "libri di poesia",
+        "libri poesia italiana",
+        "libri poesie racconti e pensieri"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "books-funny-content",
+          "query": "libri poesia umoristico divertente"
+        }
+      ],
+      "properties": [
+        "Contenuto umoristico dichiarato"
+      ],
+      "rules": [
+        "books-funny-content"
+      ],
+      "relations": [],
+      "effects": [
+        "funny"
+      ],
+      "occasions": [],
+      "incompatibilities": [
+        "Generi e argomenti dichiarati dal destinatario",
+        "Lingua e formato preferiti",
+        "Livello di approfondimento e tempo di lettura desiderati",
+        "Autori, titoli e volumi già posseduti",
+        "Idoneità del contenuto specifico per età"
+      ],
+      "diversityKey": "work_or_series_for_books; function_for_accessories",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:culture:books:filosofia",
+      "area": "culture",
+      "subId": "books",
+      "family": "filosofia",
+      "keywordIds": [
+        "culture:books:kw_2cd484f55baa",
+        "culture:books:kw_b2251a5f5731",
+        "culture:books:kw_6dc4c1dca5df",
+        "culture:books:kw_837331f7b163",
+        "culture:books:kw_d3490cc26bcf",
+        "culture:books:kw_3c13adc52be2"
+      ],
+      "synonymsIT": [
+        "libri filosofia",
+        "libri filosofia classici",
+        "libri filosofia giapponese",
+        "libri filosofia antica",
+        "libri di filosofia per principianti",
+        "libri filosofia da leggere"
+      ],
+      "baseQueries": [
+        "libri filosofia",
+        "libri filosofia classici",
+        "libri filosofia giapponese",
+        "libri filosofia antica",
+        "libri di filosofia per principianti",
+        "libri filosofia da leggere"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "books-funny-content",
+          "query": "libri filosofia umoristico divertente"
+        }
+      ],
+      "properties": [
+        "Contenuto umoristico dichiarato"
+      ],
+      "rules": [
+        "books-funny-content"
+      ],
+      "relations": [],
+      "effects": [
+        "funny"
+      ],
+      "occasions": [],
+      "incompatibilities": [
+        "Generi e argomenti dichiarati dal destinatario",
+        "Lingua e formato preferiti",
+        "Livello di approfondimento e tempo di lettura desiderati",
+        "Autori, titoli e volumi già posseduti",
+        "Idoneità del contenuto specifico per età"
+      ],
+      "diversityKey": "work_or_series_for_books; function_for_accessories",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:culture:books:storia",
+      "area": "culture",
+      "subId": "books",
+      "family": "storia",
+      "keywordIds": [
+        "culture:books:kw_b6153068f593",
+        "culture:books:kw_6bba2f015727",
+        "culture:books:kw_c37aebb0d8f2",
+        "culture:books:kw_5b926cc244e6",
+        "culture:books:kw_1bb2260f6b80"
+      ],
+      "synonymsIT": [
+        "libri storia",
+        "libri storia romana",
+        "libri storia contemporanea",
+        "libri storia militare",
+        "libri storia antica"
+      ],
+      "baseQueries": [
+        "libri storia",
+        "libri storia romana",
+        "libri storia contemporanea",
+        "libri storia militare",
+        "libri storia antica"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "books-funny-content",
+          "query": "libri storia umoristico divertente"
+        }
+      ],
+      "properties": [
+        "Contenuto umoristico dichiarato"
+      ],
+      "rules": [
+        "books-funny-content"
+      ],
+      "relations": [],
+      "effects": [
+        "funny"
+      ],
+      "occasions": [],
+      "incompatibilities": [
+        "Generi e argomenti dichiarati dal destinatario",
+        "Lingua e formato preferiti",
+        "Livello di approfondimento e tempo di lettura desiderati",
+        "Autori, titoli e volumi già posseduti",
+        "Idoneità del contenuto specifico per età"
+      ],
+      "diversityKey": "work_or_series_for_books; function_for_accessories",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:culture:books:biografie",
+      "area": "culture",
+      "subId": "books",
+      "family": "biografie",
+      "keywordIds": [
+        "culture:books:kw_a4031ff05513",
+        "culture:books:kw_eae3a616e972",
+        "culture:books:kw_0f94a7eeec94",
+        "culture:books:kw_1e53269af728",
+        "culture:books:kw_48bb0bf14f90",
+        "culture:books:kw_548cb8e01562",
+        "culture:books:kw_69d42e0cb965"
+      ],
+      "synonymsIT": [
+        "biografie",
+        "biografie storiche",
+        "biografie sportive",
+        "biografie musicisti",
+        "biografie artisti",
+        "biografie libri",
+        "biografie personaggi famosi"
+      ],
+      "baseQueries": [
+        "biografie",
+        "biografie storiche",
+        "biografie sportive",
+        "biografie musicisti",
+        "biografie artisti",
+        "biografie libri",
+        "biografie personaggi famosi"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "books-funny-content",
+          "query": "biografie umoristico divertente"
+        }
+      ],
+      "properties": [
+        "Contenuto umoristico dichiarato"
+      ],
+      "rules": [
+        "books-funny-content"
+      ],
+      "relations": [],
+      "effects": [
+        "funny"
+      ],
+      "occasions": [],
+      "incompatibilities": [
+        "Generi e argomenti dichiarati dal destinatario",
+        "Lingua e formato preferiti",
+        "Livello di approfondimento e tempo di lettura desiderati",
+        "Autori, titoli e volumi già posseduti",
+        "Idoneità del contenuto specifico per età"
+      ],
+      "diversityKey": "work_or_series_for_books; function_for_accessories",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:culture:books:psicologia",
+      "area": "culture",
+      "subId": "books",
+      "family": "psicologia",
+      "keywordIds": [
+        "culture:books:kw_b27237bdecba",
+        "culture:books:kw_6e12a557d101",
+        "culture:books:kw_70558716f43e",
+        "culture:books:kw_1108cc51a2e9",
+        "culture:books:kw_be011618251d",
+        "culture:books:kw_8348d0dbc90c"
+      ],
+      "synonymsIT": [
+        "libri psicologia",
+        "libri psicologia comportamentale",
+        "libri psicologia cognitiva",
+        "libri psicologia sociale",
+        "libri psicologia intelligenza emotiva",
+        "libri psicologia da leggere"
+      ],
+      "baseQueries": [
+        "libri psicologia",
+        "libri psicologia comportamentale",
+        "libri psicologia cognitiva",
+        "libri psicologia sociale",
+        "libri psicologia intelligenza emotiva",
+        "libri psicologia da leggere"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "books-funny-content",
+          "query": "libri psicologia umoristico divertente"
+        },
+        {
+          "rule": "books-graduation-interview",
+          "query": "libri psicologia colloqui di lavoro esercizi"
+        }
+      ],
+      "properties": [
+        "Contenuto umoristico dichiarato",
+        "Preparazione pratica ai colloqui, ipotesi editoriale e non obbligo di carriera"
+      ],
+      "rules": [
+        "books-funny-content",
+        "books-graduation-interview"
+      ],
+      "relations": [],
+      "effects": [
+        "funny"
+      ],
+      "occasions": [
+        "graduation"
+      ],
+      "incompatibilities": [
+        "Generi e argomenti dichiarati dal destinatario",
+        "Lingua e formato preferiti",
+        "Livello di approfondimento e tempo di lettura desiderati",
+        "Autori, titoli e volumi già posseduti",
+        "Idoneità del contenuto specifico per età"
+      ],
+      "diversityKey": "work_or_series_for_books; function_for_accessories",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:culture:books:letteratura_viaggio",
+      "area": "culture",
+      "subId": "books",
+      "family": "letteratura_viaggio",
+      "keywordIds": [
+        "culture:books:kw_d0b4a4ad5999",
+        "culture:books:kw_9ee7fcd47002",
+        "culture:books:kw_0c030cc78024",
+        "culture:books:kw_21402c6bd9b5",
+        "culture:books:kw_0ebf33b2e8c6"
+      ],
+      "synonymsIT": [
+        "libri viaggio",
+        "libri di viaggio narrativa",
+        "libri racconti di viaggio",
+        "libri di viaggio per il mondo",
+        "libri viaggio in bici"
+      ],
+      "baseQueries": [
+        "libri viaggio",
+        "libri di viaggio narrativa",
+        "libri racconti di viaggio",
+        "libri di viaggio per il mondo",
+        "libri viaggio in bici"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "books-funny-content",
+          "query": "libri viaggio umoristico divertente"
+        },
+        {
+          "rule": "books-relax-short",
+          "query": "libri viaggio racconti brevi lettura leggera"
+        }
+      ],
+      "properties": [
+        "Contenuto umoristico dichiarato",
+        "Racconti brevi e tono leggero entrambi dichiarati; nessuna promessa terapeutica"
+      ],
+      "rules": [
+        "books-funny-content",
+        "books-relax-short"
+      ],
+      "relations": [],
+      "effects": [
+        "funny",
+        "relax"
+      ],
+      "occasions": [],
+      "incompatibilities": [
+        "Generi e argomenti dichiarati dal destinatario",
+        "Lingua e formato preferiti",
+        "Livello di approfondimento e tempo di lettura desiderati",
+        "Autori, titoli e volumi già posseduti",
+        "Idoneità del contenuto specifico per età"
+      ],
+      "diversityKey": "work_or_series_for_books; function_for_accessories",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:culture:books:libri_fotografia",
+      "area": "culture",
+      "subId": "books",
+      "family": "libri_fotografia",
+      "keywordIds": [
+        "culture:books:kw_83e9c3a0492c",
+        "culture:books:kw_4ef5e6dfd296",
+        "culture:books:kw_4aa88866da1a",
+        "culture:books:kw_428f34becdd0",
+        "culture:books:kw_6fa6d6c74f69"
+      ],
+      "synonymsIT": [
+        "libri fotografia",
+        "libri fotografia da collezione",
+        "libri fotografia bianco e nero",
+        "libri fotografia ritratti",
+        "libri fotografia analogica"
+      ],
+      "baseQueries": [
+        "libri fotografia",
+        "libri fotografia da collezione",
+        "libri fotografia bianco e nero",
+        "libri fotografia ritratti",
+        "libri fotografia analogica"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "books-funny-content",
+          "query": "libri fotografia umoristico divertente"
+        }
+      ],
+      "properties": [
+        "Contenuto umoristico dichiarato"
+      ],
+      "rules": [
+        "books-funny-content"
+      ],
+      "relations": [],
+      "effects": [
+        "funny"
+      ],
+      "occasions": [],
+      "incompatibilities": [
+        "Generi e argomenti dichiarati dal destinatario",
+        "Lingua e formato preferiti",
+        "Livello di approfondimento e tempo di lettura desiderati",
+        "Autori, titoli e volumi già posseduti",
+        "Idoneità del contenuto specifico per età"
+      ],
+      "diversityKey": "work_or_series_for_books; function_for_accessories",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:culture:books:libri_cucina",
+      "area": "culture",
+      "subId": "books",
+      "family": "libri_cucina",
+      "keywordIds": [
+        "culture:books:kw_d7af1e7315e6",
+        "culture:books:kw_cfeb35b13d0b",
+        "culture:books:kw_a5d99fb45ce0",
+        "culture:books:kw_5f82f01133be",
+        "culture:books:kw_db8a0c3d9096",
+        "culture:books:kw_26abd11dfe79"
+      ],
+      "synonymsIT": [
+        "libri cucina",
+        "libri cucina professionale",
+        "libri cucina vegana",
+        "libri cucina italiana",
+        "libri cucina giapponese",
+        "libri cucina vegetariana"
+      ],
+      "baseQueries": [
+        "libri cucina",
+        "libri cucina professionale",
+        "libri cucina vegana",
+        "libri cucina italiana",
+        "libri cucina giapponese",
+        "libri cucina vegetariana"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "books-couple-recipes",
+          "query": "libri cucina ricette per due"
+        },
+        {
+          "rule": "books-funny-content",
+          "query": "libri cucina umoristico divertente"
+        }
+      ],
+      "properties": [
+        "Ricette pensate per cucinare in due",
+        "Contenuto umoristico dichiarato"
+      ],
+      "rules": [
+        "books-couple-recipes",
+        "books-funny-content"
+      ],
+      "relations": [
+        "partner",
+        "couple"
+      ],
+      "effects": [
+        "funny"
+      ],
+      "occasions": [],
+      "incompatibilities": [
+        "Generi e argomenti dichiarati dal destinatario",
+        "Lingua e formato preferiti",
+        "Livello di approfondimento e tempo di lettura desiderati",
+        "Autori, titoli e volumi già posseduti",
+        "Idoneità del contenuto specifico per età"
+      ],
+      "diversityKey": "work_or_series_for_books; function_for_accessories",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:culture:books:illustrati",
+      "area": "culture",
+      "subId": "books",
+      "family": "illustrati",
+      "keywordIds": [
+        "culture:books:kw_14338c841ec0",
+        "culture:books:kw_8568d29cd67a",
+        "culture:books:kw_2feaf0e34345",
+        "culture:books:kw_cac062cb9ed2",
+        "culture:books:kw_c3d3046cbdb5"
+      ],
+      "synonymsIT": [
+        "libri illustrati",
+        "libri illustrati adulti",
+        "libri illustrati da collezione",
+        "libri illustrati mitologia",
+        "libri illustrati senza parole"
+      ],
+      "baseQueries": [
+        "libri illustrati",
+        "libri illustrati adulti",
+        "libri illustrati da collezione",
+        "libri illustrati mitologia",
+        "libri illustrati senza parole"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "books-funny-content",
+          "query": "libri illustrati umoristico divertente"
+        },
+        {
+          "rule": "books-surprise-puzzles",
+          "query": "libri illustrati enigmi da risolvere lettore"
+        },
+        {
+          "rule": "books-christmas-stories",
+          "query": "libri illustrati racconti natalizi"
+        }
+      ],
+      "properties": [
+        "Contenuto umoristico dichiarato",
+        "Partecipazione del lettore alla soluzione di enigmi",
+        "Contenuto esplicitamente natalizio"
+      ],
+      "rules": [
+        "books-funny-content",
+        "books-surprise-puzzles",
+        "books-christmas-stories"
+      ],
+      "relations": [],
+      "effects": [
+        "funny",
+        "surprising"
+      ],
+      "occasions": [
+        "christmas"
+      ],
+      "incompatibilities": [
+        "Generi e argomenti dichiarati dal destinatario",
+        "Lingua e formato preferiti",
+        "Livello di approfondimento e tempo di lettura desiderati",
+        "Autori, titoli e volumi già posseduti",
+        "Idoneità del contenuto specifico per età"
+      ],
+      "diversityKey": "work_or_series_for_books; function_for_accessories",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:culture:books:divulgazione_scientifica",
+      "area": "culture",
+      "subId": "books",
+      "family": "divulgazione_scientifica",
+      "keywordIds": [
+        "culture:books:kw_18ca0374e2e0",
+        "culture:books:kw_05f7d1a7d55a",
+        "culture:books:kw_7be68287a5b6"
+      ],
+      "synonymsIT": [
+        "libri scienza",
+        "libri di scienza",
+        "libri di scienza per adulti"
+      ],
+      "baseQueries": [
+        "libri scienza",
+        "libri di scienza",
+        "libri di scienza per adulti"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "books-funny-content",
+          "query": "libri scienza umoristico divertente"
+        }
+      ],
+      "properties": [
+        "Contenuto umoristico dichiarato"
+      ],
+      "rules": [
+        "books-funny-content"
+      ],
+      "relations": [],
+      "effects": [
+        "funny"
+      ],
+      "occasions": [],
+      "incompatibilities": [
+        "Generi e argomenti dichiarati dal destinatario",
+        "Lingua e formato preferiti",
+        "Livello di approfondimento e tempo di lettura desiderati",
+        "Autori, titoli e volumi già posseduti",
+        "Idoneità del contenuto specifico per età"
+      ],
+      "diversityKey": "work_or_series_for_books; function_for_accessories",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:culture:books:segnalibri",
+      "area": "culture",
+      "subId": "books",
+      "family": "segnalibri",
+      "keywordIds": [
+        "culture:books:kw_80cbc9408222",
+        "culture:books:kw_9f7474698015",
+        "culture:books:kw_fadb4b47a3e6",
+        "culture:books:kw_f35e8bf0eee7",
+        "culture:books:kw_f26b723add6b",
+        "culture:books:kw_49f313f7e920",
+        "culture:books:kw_763b2028b56c"
+      ],
+      "synonymsIT": [
+        "segnalibro",
+        "segnalibro personalizzato",
+        "segnalibro magnetico",
+        "segnalibro legno",
+        "segnalibro argento",
+        "segnalibro da pollice",
+        "segnalibro magnetico personalizzato"
+      ],
+      "baseQueries": [
+        "segnalibro",
+        "segnalibro personalizzato",
+        "segnalibro magnetico",
+        "segnalibro legno",
+        "segnalibro argento",
+        "segnalibro da pollice",
+        "segnalibro magnetico personalizzato"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "books-occasion-dedication",
+          "query": "segnalibro biglietto incluso dedica personalizzabile"
+        }
+      ],
+      "properties": [
+        "Biglietto incluso con dedica personalizzabile; idoneità alla consegna come regalo, non gusto dedotto"
+      ],
+      "rules": [
+        "books-occasion-dedication"
+      ],
+      "relations": [],
+      "effects": [],
+      "occasions": [
+        "birthday",
+        "thanks",
+        "event"
+      ],
+      "incompatibilities": [
+        "Uso e abitudini di lettura",
+        "Dimensioni di libri e spazio disponibile",
+        "Materiali e stile desiderati"
+      ],
+      "diversityKey": "work_or_series_for_books; function_for_accessories",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:culture:books:illuminazione_lettura",
+      "area": "culture",
+      "subId": "books",
+      "family": "illuminazione_lettura",
+      "keywordIds": [
+        "culture:books:kw_1ffce380cd0b",
+        "culture:books:kw_7c06874214c4",
+        "culture:books:kw_ac451ad1204b",
+        "culture:books:kw_0b79fac86070",
+        "culture:books:kw_e70cb84624dd",
+        "culture:books:kw_96f5def182e1",
+        "culture:books:kw_3883e2e9dec1",
+        "culture:books:kw_fdc95dc5a06b"
+      ],
+      "synonymsIT": [
+        "lampada lettura",
+        "lampada lettura ricaricabile usb",
+        "lampada lettura clip libro",
+        "lampada lettura da collo",
+        "lampada lettura dimmerabile",
+        "lampada da lettura",
+        "lampada da lettura letto",
+        "lampade da lettura"
+      ],
+      "baseQueries": [
+        "lampada lettura",
+        "lampada lettura ricaricabile usb",
+        "lampada lettura clip libro",
+        "lampada lettura da collo",
+        "lampada lettura dimmerabile",
+        "lampada da lettura",
+        "lampada da lettura letto",
+        "lampade da lettura"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "books-useful-light",
+          "query": "lampada lettura lettura regolabile"
+        }
+      ],
+      "properties": [
+        "Luce da lettura regolabile"
+      ],
+      "rules": [
+        "books-useful-light"
+      ],
+      "relations": [],
+      "effects": [
+        "useful"
+      ],
+      "occasions": [],
+      "incompatibilities": [
+        "Uso e abitudini di lettura",
+        "Dimensioni di libri e spazio disponibile",
+        "Materiali e stile desiderati",
+        "Alimentazione, fissaggio e regolazione della luce"
+      ],
+      "diversityKey": "work_or_series_for_books; function_for_accessories",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:culture:books:supporti_lettura",
+      "area": "culture",
+      "subId": "books",
+      "family": "supporti_lettura",
+      "keywordIds": [
+        "culture:books:kw_2c545041f789",
+        "culture:books:kw_dbf494882226",
+        "culture:books:kw_eea92b9c5dda",
+        "culture:books:kw_41f8d6ee7b7a",
+        "culture:books:kw_6e4c62bd27a3"
+      ],
+      "synonymsIT": [
+        "leggio",
+        "leggio per libri",
+        "leggio da tavolo per libri",
+        "leggio da letto per libri",
+        "leggio in legno per libri"
+      ],
+      "baseQueries": [
+        "leggio per libri",
+        "leggio per libri",
+        "leggio da tavolo per libri",
+        "leggio da letto per libri",
+        "leggio in legno per libri"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Uso e abitudini di lettura",
+        "Dimensioni di libri e spazio disponibile",
+        "Materiali e stile desiderati"
+      ],
+      "diversityKey": "work_or_series_for_books; function_for_accessories",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:culture:books:fermalibri",
+      "area": "culture",
+      "subId": "books",
+      "family": "fermalibri",
+      "keywordIds": [
+        "culture:books:kw_d36350e2c998",
+        "culture:books:kw_432cfbba2645",
+        "culture:books:kw_dbadb90bc1b8",
+        "culture:books:kw_09f6b1c50669",
+        "culture:books:kw_c1d5fa2e9f5f"
+      ],
+      "synonymsIT": [
+        "fermalibri",
+        "fermalibri per mensole",
+        "fermalibri design",
+        "fermalibri in metallo",
+        "fermalibri antiscivolo pesanti"
+      ],
+      "baseQueries": [
+        "fermalibri",
+        "fermalibri per mensole",
+        "fermalibri design",
+        "fermalibri in metallo",
+        "fermalibri antiscivolo pesanti"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "books-newhome-bookends",
+          "query": "fermalibri coppia antiscivolo"
+        }
+      ],
+      "properties": [
+        "Coppia di fermalibri con base antiscivolo per sistemare i libri"
+      ],
+      "rules": [
+        "books-newhome-bookends"
+      ],
+      "relations": [],
+      "effects": [],
+      "occasions": [
+        "newhome"
+      ],
+      "incompatibilities": [
+        "Uso e abitudini di lettura",
+        "Dimensioni di libri e spazio disponibile",
+        "Materiali e stile desiderati"
+      ],
+      "diversityKey": "work_or_series_for_books; function_for_accessories",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:culture:books:protezioni_libri",
+      "area": "culture",
+      "subId": "books",
+      "family": "protezioni_libri",
+      "keywordIds": [
+        "culture:books:kw_49737808b33d",
+        "culture:books:kw_fa7854f1a7ff",
+        "culture:books:kw_cae443d285e2",
+        "culture:books:kw_7280ee85880b",
+        "culture:books:kw_03919ff96543"
+      ],
+      "synonymsIT": [
+        "custodia libro",
+        "custodia libro da lettura",
+        "custodia libro da viaggio",
+        "custodia libro stoffa",
+        "custodia libro con cerniera"
+      ],
+      "baseQueries": [
+        "custodia libro",
+        "custodia libro da lettura",
+        "custodia libro da viaggio",
+        "custodia libro stoffa",
+        "custodia libro con cerniera"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "books-occasion-dedication",
+          "query": "custodia libro biglietto incluso dedica personalizzabile"
+        }
+      ],
+      "properties": [
+        "Biglietto incluso con dedica personalizzabile; idoneità alla consegna come regalo, non gusto dedotto"
+      ],
+      "rules": [
+        "books-occasion-dedication"
+      ],
+      "relations": [],
+      "effects": [],
+      "occasions": [
+        "birthday",
+        "thanks",
+        "event"
+      ],
+      "incompatibilities": [
+        "Uso e abitudini di lettura",
+        "Dimensioni di libri e spazio disponibile",
+        "Materiali e stile desiderati"
+      ],
+      "diversityKey": "work_or_series_for_books; function_for_accessories",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:techGaming:tech:audio",
+      "area": "techGaming",
+      "subId": "tech",
+      "family": "audio",
+      "keywordIds": [
+        "techGaming:tech:kw_f627ce19583c",
+        "techGaming:tech:kw_3db3f357a7c5",
+        "techGaming:tech:kw_ccbf9cc40aa2",
+        "techGaming:tech:kw_e02403616878",
+        "techGaming:tech:kw_0a3599efcc79",
+        "techGaming:tech:kw_e005a6a1a7a6",
+        "techGaming:tech:kw_dc1dd89b94e6",
+        "techGaming:tech:kw_53b7e24a9324",
+        "techGaming:tech:kw_ad1cf6c5287c",
+        "techGaming:tech:kw_3766a2d0611d",
+        "techGaming:tech:kw_2d490f2753c4",
+        "techGaming:tech:kw_fc7fb3aa468c",
+        "techGaming:tech:kw_4b0c7dfa9179",
+        "techGaming:tech:kw_3d8e887baea4",
+        "techGaming:tech:kw_0cab2f668f2b",
+        "techGaming:tech:kw_97ef4c48ac4d",
+        "techGaming:tech:kw_23c7594414a6",
+        "techGaming:tech:kw_cdad10759d68",
+        "techGaming:tech:kw_13a7bdb3f4cc",
+        "techGaming:tech:kw_2a8dd9118531",
+        "techGaming:tech:kw_9df7b9c186f7",
+        "techGaming:tech:kw_1e26222c137d",
+        "techGaming:tech:kw_2e70c95a2dac",
+        "techGaming:tech:kw_9a8eb4cbb678",
+        "techGaming:tech:kw_b89bb3e569b7",
+        "techGaming:tech:kw_aed2e0fb5b76",
+        "techGaming:tech:kw_ab140b3f72f6"
+      ],
+      "synonymsIT": [
+        "cuffie bluetooth",
+        "cuffie bluetooth over ear",
+        "cuffie bluetooth sport",
+        "cuffie bluetooth cancellazione rumore",
+        "cuffie bluetooth cancellazione rumore attiva",
+        "cuffie bluetooth con microfono",
+        "auricolari bluetooth",
+        "auricolari bluetooth sport",
+        "auricolari bluetooth sportivi impermeabili",
+        "auricolari bluetooth anc",
+        "auricolari bluetooth con microfono",
+        "cuffie wireless",
+        "cuffie wireless gaming",
+        "cuffie wireless per tv",
+        "cuffie wireless con microfono",
+        "cuffie wireless piccole e leggere",
+        "speaker bluetooth",
+        "speaker bluetooth portatile",
+        "speaker bluetooth con microfono",
+        "speaker bluetooth impermeabile",
+        "cassa bluetooth",
+        "soundbar",
+        "soundbar tv",
+        "soundbar pc",
+        "soundbar compatta",
+        "soundbar con subwoofer integrato",
+        "soundbar hdmi arc"
+      ],
+      "baseQueries": [
+        "cuffie bluetooth",
+        "cuffie bluetooth over ear",
+        "cuffie bluetooth sport",
+        "cuffie bluetooth cancellazione rumore",
+        "cuffie bluetooth cancellazione rumore attiva",
+        "cuffie bluetooth con microfono",
+        "auricolari bluetooth",
+        "auricolari bluetooth sport",
+        "auricolari bluetooth sportivi impermeabili",
+        "auricolari bluetooth anc",
+        "auricolari bluetooth con microfono",
+        "cuffie wireless",
+        "cuffie wireless gaming",
+        "cuffie wireless per tv",
+        "cuffie wireless con microfono",
+        "cuffie wireless piccole e leggere",
+        "speaker bluetooth",
+        "speaker bluetooth portatile",
+        "speaker bluetooth con microfono",
+        "speaker bluetooth impermeabile",
+        "cassa bluetooth",
+        "soundbar",
+        "soundbar tv",
+        "soundbar pc",
+        "soundbar compatta",
+        "soundbar con subwoofer integrato",
+        "soundbar hdmi arc"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "tech-colleague-calls",
+          "query": "cuffie bluetooth microfono videochiamate"
+        }
+      ],
+      "properties": [
+        "Microfono e uso nelle chiamate documentati"
+      ],
+      "rules": [
+        "tech-colleague-calls"
+      ],
+      "relations": [
+        "colleague"
+      ],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Formato desiderato: cuffie, auricolari, altoparlante o soundbar",
+        "Dispositivo sorgente e collegamento supportato (Bluetooth, radio USB, jack o HDMI)",
+        "Uso previsto e necessità di microfono, isolamento o cancellazione attiva",
+        "Porte del televisore o PC",
+        "Spazio disponibile",
+        "Funzioni audio richieste"
+      ],
+      "diversityKey": "primary_function_and_parentASIN",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:techGaming:tech:telefonia",
+      "area": "techGaming",
+      "subId": "tech",
+      "family": "telefonia",
+      "keywordIds": [
+        "techGaming:tech:kw_358aea9928a7",
+        "techGaming:tech:kw_a67017135988",
+        "techGaming:tech:kw_c40bc3871d8a",
+        "techGaming:tech:kw_bd4d54389b76",
+        "techGaming:tech:kw_c278d355a8a8",
+        "techGaming:tech:kw_2deb682714d2",
+        "techGaming:tech:kw_adab10b6d366",
+        "techGaming:tech:kw_3a2cbc2a323c",
+        "techGaming:tech:kw_4764c543a410"
+      ],
+      "synonymsIT": [
+        "smartphone",
+        "smartphone 5g",
+        "smartphone android",
+        "smartphone batteria lunga durata",
+        "smartphone anziani",
+        "cellulare",
+        "cellulare per anziani",
+        "cellulare android",
+        "cellulare a conchiglia"
+      ],
+      "baseQueries": [
+        "smartphone",
+        "smartphone 5g",
+        "smartphone android",
+        "smartphone batteria lunga durata",
+        "smartphone anziani",
+        "cellulare",
+        "cellulare per anziani",
+        "cellulare android",
+        "cellulare a conchiglia"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Sistema operativo e funzioni desiderate",
+        "SIM, operatore e rete del destinatario",
+        "Dimensioni e modalità di interazione preferite; nessuna deduzione dalla sola età"
+      ],
+      "diversityKey": "primary_function_and_parentASIN",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:techGaming:tech:computer",
+      "area": "techGaming",
+      "subId": "tech",
+      "family": "computer",
+      "keywordIds": [
+        "techGaming:tech:kw_b53bcf919f24",
+        "techGaming:tech:kw_6a57c7c341b2",
+        "techGaming:tech:kw_6d6cee7e9178",
+        "techGaming:tech:kw_4de331cfd630",
+        "techGaming:tech:kw_f47bc9f1783c",
+        "techGaming:tech:kw_07f1d2544d99",
+        "techGaming:tech:kw_7383e7a9d5ae",
+        "techGaming:tech:kw_b5c98e7177d3",
+        "techGaming:tech:kw_67cc1f766fbd",
+        "techGaming:tech:kw_cced36d4d996"
+      ],
+      "synonymsIT": [
+        "notebook",
+        "notebook 14 pollici",
+        "notebook business",
+        "notebook ricondizionati",
+        "computer portatile",
+        "computer portatile gaming",
+        "mini pc",
+        "mini pc windows 11",
+        "mini pc 32gb ram",
+        "mini pc 16gb ram"
+      ],
+      "baseQueries": [
+        "computer portatile",
+        "notebook 14 pollici",
+        "notebook business",
+        "notebook ricondizionati",
+        "computer portatile",
+        "computer portatile gaming",
+        "mini pc",
+        "mini pc windows 11",
+        "mini pc 32gb ram",
+        "mini pc 16gb ram"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Uso previsto e programmi richiesti",
+        "Sistema operativo e prestazioni richieste",
+        "Dimensioni, porte e periferiche necessarie; condizione nuovo o ricondizionato esplicita"
+      ],
+      "diversityKey": "primary_function_and_parentASIN",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:techGaming:tech:tablet",
+      "area": "techGaming",
+      "subId": "tech",
+      "family": "tablet",
+      "keywordIds": [
+        "techGaming:tech:kw_5bed85bd69a5",
+        "techGaming:tech:kw_4f23a66cbb75",
+        "techGaming:tech:kw_dc81f397a1f7",
+        "techGaming:tech:kw_19c764879b0a",
+        "techGaming:tech:kw_31baae2c75ee"
+      ],
+      "synonymsIT": [
+        "tablet",
+        "tablet android",
+        "tablet con penna",
+        "tablet con tastiera e penna",
+        "tablet con sim telefonica e wifi"
+      ],
+      "baseQueries": [
+        "tablet",
+        "tablet android",
+        "tablet con penna",
+        "tablet con tastiera e penna",
+        "tablet con sim telefonica e wifi"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Sistema operativo e applicazioni richieste",
+        "Dimensioni e uso previsto",
+        "Necessità di SIM, penna e tastiera; accessori inclusi o separati"
+      ],
+      "diversityKey": "primary_function_and_parentASIN",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:techGaming:tech:indossabili",
+      "area": "techGaming",
+      "subId": "tech",
+      "family": "indossabili",
+      "keywordIds": [
+        "techGaming:tech:kw_ee8ad472e641",
+        "techGaming:tech:kw_4c54bbf67ece",
+        "techGaming:tech:kw_79593541a2c2",
+        "techGaming:tech:kw_6034446271ba",
+        "techGaming:tech:kw_c9332986d627",
+        "techGaming:tech:kw_a8a9222879a2",
+        "techGaming:tech:kw_5074529f7512",
+        "techGaming:tech:kw_9650a97c3f71",
+        "techGaming:tech:kw_1bad14e9d601"
+      ],
+      "synonymsIT": [
+        "smartwatch",
+        "smartwatch android",
+        "smartwatch impermeabile donna",
+        "smartband",
+        "smartband senza display",
+        "smartband senza schermo",
+        "smartband android",
+        "smartband con gps integrato",
+        "braccialetto fitness"
+      ],
+      "baseQueries": [
+        "smartwatch",
+        "smartwatch android",
+        "smartwatch impermeabile donna",
+        "smartband",
+        "smartband senza display",
+        "smartband senza schermo",
+        "smartband android",
+        "smartband con gps integrato",
+        "braccialetto fitness"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Smartphone e sistema operativo compatibile",
+        "Formato desiderato: orologio o braccialetto fitness",
+        "Funzioni richieste, dimensioni del polso e autonomia desiderata"
+      ],
+      "diversityKey": "primary_function_and_parentASIN",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:techGaming:tech:ricarica",
+      "area": "techGaming",
+      "subId": "tech",
+      "family": "ricarica",
+      "keywordIds": [
+        "techGaming:tech:kw_1fedac5539d8",
+        "techGaming:tech:kw_285286113e01",
+        "techGaming:tech:kw_acbcb501f877",
+        "techGaming:tech:kw_25a1246ead39",
+        "techGaming:tech:kw_74c4edea5d39",
+        "techGaming:tech:kw_00827518714d",
+        "techGaming:tech:kw_ca6f9003ab57",
+        "techGaming:tech:kw_042bbd109797",
+        "techGaming:tech:kw_cd87e4344d27",
+        "techGaming:tech:kw_19fd5ae2ff23",
+        "techGaming:tech:kw_cbc5a2ae6e29",
+        "techGaming:tech:kw_a8e9f439b5a1",
+        "techGaming:tech:kw_10484393518e",
+        "techGaming:tech:kw_de4dbec36651",
+        "techGaming:tech:kw_5a1dca85e383"
+      ],
+      "synonymsIT": [
+        "power bank",
+        "power bank magsafe",
+        "power bank 10000 mah",
+        "power bank usb c",
+        "power bank piccolo e leggero",
+        "power bank leggero e potente",
+        "caricatore wireless",
+        "caricatore wireless android",
+        "caricatore wireless portatile",
+        "caricatore wireless magsafe",
+        "caricatore usb-c",
+        "caricatore usb-c 65w",
+        "caricatore usb-c multiporta",
+        "caricatore usb c",
+        "caricatore usb c rapido"
+      ],
+      "baseQueries": [
+        "power bank",
+        "power bank magsafe",
+        "power bank 10000 mah",
+        "power bank usb c",
+        "power bank piccolo e leggero",
+        "power bank leggero e potente",
+        "caricatore wireless",
+        "caricatore wireless android",
+        "caricatore wireless portatile",
+        "caricatore wireless magsafe",
+        "caricatore usb-c",
+        "caricatore usb-c 65w",
+        "caricatore usb-c multiporta",
+        "caricatore usb c",
+        "caricatore usb c rapido"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "tech-useful-powerbank",
+          "query": "power bank ricarica USB-C"
+        }
+      ],
+      "properties": [
+        "Funzione di ricarica e connessione dichiarate; compatibilità da verificare"
+      ],
+      "rules": [
+        "tech-useful-powerbank"
+      ],
+      "relations": [],
+      "effects": [
+        "useful"
+      ],
+      "occasions": [],
+      "incompatibilities": [
+        "Modello del dispositivo da ricaricare",
+        "Connettore, protocollo e potenza di ricarica supportati",
+        "Capacità, peso e numero di dispositivi da alimentare desiderati"
+      ],
+      "diversityKey": "primary_function_and_parentASIN",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:techGaming:tech:collegamenti",
+      "area": "techGaming",
+      "subId": "tech",
+      "family": "collegamenti",
+      "keywordIds": [
+        "techGaming:tech:kw_689daf4e6e02",
+        "techGaming:tech:kw_d0b3c28358d2",
+        "techGaming:tech:kw_8f234ca09966",
+        "techGaming:tech:kw_977b58c6196f",
+        "techGaming:tech:kw_23ec0cfc02a2",
+        "techGaming:tech:kw_3508321dc38d",
+        "techGaming:tech:kw_a8d4a6840965",
+        "techGaming:tech:kw_c56ae845862c",
+        "techGaming:tech:kw_f5b79c6b65b7",
+        "techGaming:tech:kw_89d2d8f07608",
+        "techGaming:tech:kw_11296fb3c14c",
+        "techGaming:tech:kw_397dd3587d12",
+        "techGaming:tech:kw_4d54193e9fbf",
+        "techGaming:tech:kw_da5314743949",
+        "techGaming:tech:kw_d25c939020e6",
+        "techGaming:tech:kw_59ef98f01c48",
+        "techGaming:tech:kw_af1606397335"
+      ],
+      "synonymsIT": [
+        "hub usb-c",
+        "hub usb-c multiporta",
+        "hub usb-c con power delivery",
+        "hub usb-c hdmi",
+        "hub usb c",
+        "hub usb c ethernet",
+        "docking station",
+        "docking station usb c",
+        "docking station con alimentatore",
+        "docking station con ethernet",
+        "docking station usb c 2 hdmi",
+        "adattatore bluetooth",
+        "adattatore bluetooth per pc",
+        "adattatore bluetooth usb",
+        "adattatore bluetooth per tv",
+        "adattatore bluetooth aux",
+        "adattatore bluetooth aereo"
+      ],
+      "baseQueries": [
+        "hub usb-c",
+        "hub usb-c multiporta",
+        "hub usb-c con power delivery",
+        "hub usb-c hdmi",
+        "hub usb c",
+        "hub usb c ethernet",
+        "docking station",
+        "docking station usb c",
+        "docking station con alimentatore",
+        "docking station con ethernet",
+        "docking station usb c 2 hdmi",
+        "adattatore bluetooth",
+        "adattatore bluetooth per pc",
+        "adattatore bluetooth usb",
+        "adattatore bluetooth per tv",
+        "adattatore bluetooth aux",
+        "adattatore bluetooth aereo"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Modelli dei dispositivi da collegare e porte disponibili",
+        "Funzioni richieste: dati, video, rete o alimentazione",
+        "Sistema operativo, risoluzione video e potenza necessari",
+        "Dispositivi e porte da collegare",
+        "Ruolo trasmettitore/ricevitore",
+        "Sistema operativo, profili e codec necessari"
+      ],
+      "diversityKey": "primary_function_and_parentASIN",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:techGaming:tech:lettura_digitale",
+      "area": "techGaming",
+      "subId": "tech",
+      "family": "lettura_digitale",
+      "keywordIds": [
+        "techGaming:tech:kw_7aa48faa435c",
+        "techGaming:tech:kw_e6bd2b14600a",
+        "techGaming:tech:kw_6a8264de43f2",
+        "techGaming:tech:kw_606b53aa6525",
+        "techGaming:tech:kw_5df9e3a9d0d4",
+        "techGaming:tech:kw_2da343002be6"
+      ],
+      "synonymsIT": [
+        "lettore ebook",
+        "lettore ebook a colori",
+        "lettore ebook per anziani",
+        "lettore ebook 7 pollici",
+        "lettore ebook retroilluminato luce regolabile",
+        "ebook reader"
+      ],
+      "baseQueries": [
+        "lettore ebook",
+        "lettore ebook a colori",
+        "lettore ebook per anziani",
+        "lettore ebook 7 pollici",
+        "lettore ebook retroilluminato luce regolabile",
+        "ebook reader"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "tech-surprise-colour",
+          "query": "lettore ebook inchiostro elettronico a colori"
+        },
+        {
+          "rule": "tech-relax-reading",
+          "query": "lettore ebook lettura luce calda regolabile"
+        }
+      ],
+      "properties": [
+        "Display a inchiostro elettronico a colori, non colore della scocca",
+        "Luce di lettura calda regolabile; nessuna deduzione sul sonno"
+      ],
+      "rules": [
+        "tech-surprise-colour",
+        "tech-relax-reading"
+      ],
+      "relations": [],
+      "effects": [
+        "surprising",
+        "relax"
+      ],
+      "occasions": [],
+      "incompatibilities": [
+        "Formati dei libri e libreria digitale già utilizzata",
+        "Dimensioni dello schermo e modalità di lettura desiderate",
+        "Necessità di illuminazione regolabile, colore e funzioni di accessibilità"
+      ],
+      "diversityKey": "primary_function_and_parentASIN",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:techGaming:tech:foto_ricordi",
+      "area": "techGaming",
+      "subId": "tech",
+      "family": "foto_ricordi",
+      "keywordIds": [
+        "techGaming:tech:kw_43dbc2501dc2",
+        "techGaming:tech:kw_51dea9fc36f3",
+        "techGaming:tech:kw_f46f7e45bc66",
+        "techGaming:tech:kw_ad8c1f5df98e"
+      ],
+      "synonymsIT": [
+        "cornice digitale",
+        "cornice digitale wifi",
+        "cornice digitale a batteria",
+        "cornice digitale per foto"
+      ],
+      "baseQueries": [
+        "cornice digitale",
+        "cornice digitale wifi",
+        "cornice digitale a batteria",
+        "cornice digitale per foto"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "tech-sentimental-photos",
+          "query": "cornice digitale caricamento foto personali"
+        },
+        {
+          "rule": "tech-family-photos",
+          "query": "cornice digitale invio foto familiari"
+        },
+        {
+          "rule": "tech-occasion-dedication",
+          "query": "cornice digitale biglietto incluso dedica personalizzabile"
+        },
+        {
+          "rule": "tech-christmas-card",
+          "query": "cornice digitale biglietto natalizio incluso"
+        },
+        {
+          "rule": "tech-newhome-frame",
+          "query": "cornice digitale foto personali montaggio a parete"
+        }
+      ],
+      "properties": [
+        "Caricamento delle proprie fotografie",
+        "Invio di fotografie da parte di familiari dichiarato",
+        "Biglietto incluso con dedica personalizzabile; idoneità alla consegna come regalo, non gusto dedotto",
+        "Biglietto natalizio effettivamente incluso, non semplice destinazione pubblicitaria",
+        "Visualizzazione di fotografie personali e montaggio a parete dichiarati"
+      ],
+      "rules": [
+        "tech-sentimental-photos",
+        "tech-family-photos",
+        "tech-occasion-dedication",
+        "tech-christmas-card",
+        "tech-newhome-frame"
+      ],
+      "relations": [
+        "family"
+      ],
+      "effects": [
+        "sentimental"
+      ],
+      "occasions": [
+        "birthday",
+        "thanks",
+        "event",
+        "christmas",
+        "newhome"
+      ],
+      "incompatibilities": [
+        "Modalità di caricamento delle foto: Wi-Fi, memoria o collegamento diretto",
+        "Spazio, dimensioni dello schermo e alimentazione disponibili",
+        "Disponibilità a usare app o account e gestione della condivisione delle foto"
+      ],
+      "diversityKey": "primary_function_and_parentASIN",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:techGaming:tech:cinema",
+      "area": "techGaming",
+      "subId": "tech",
+      "family": "cinema",
+      "keywordIds": [
+        "techGaming:tech:kw_5b73ae7a9f8b",
+        "techGaming:tech:kw_da6e3feff8d0",
+        "techGaming:tech:kw_47f931368e2b",
+        "techGaming:tech:kw_6b7a49b6ce58"
+      ],
+      "synonymsIT": [
+        "mini proiettore",
+        "mini proiettore portatile",
+        "mini proiettore android tv",
+        "mini proiettore a batteria"
+      ],
+      "baseQueries": [
+        "mini proiettore",
+        "mini proiettore portatile",
+        "mini proiettore android tv",
+        "mini proiettore a batteria"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "tech-couple-cinema",
+          "query": "mini proiettore cinema condiviso"
+        }
+      ],
+      "properties": [
+        "Fruizione condivisa di film descritta"
+      ],
+      "rules": [
+        "tech-couple-cinema"
+      ],
+      "relations": [
+        "partner",
+        "couple"
+      ],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Spazio, distanza di proiezione e luce dell’ambiente",
+        "Dispositivo sorgente e collegamenti necessari",
+        "Risoluzione nativa, luminosità e alimentazione richieste"
+      ],
+      "diversityKey": "primary_function_and_parentASIN",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:techGaming:tech:periferiche",
+      "area": "techGaming",
+      "subId": "tech",
+      "family": "periferiche",
+      "keywordIds": [
+        "techGaming:tech:kw_2a13302bc5d2",
+        "techGaming:tech:kw_b6b472bdb762",
+        "techGaming:tech:kw_ceeaf85b6c58",
+        "techGaming:tech:kw_f64f5e44206d",
+        "techGaming:tech:kw_930b58e8d14c",
+        "techGaming:tech:kw_922fefcb7aab",
+        "techGaming:tech:kw_74fb07e9b2c1",
+        "techGaming:tech:kw_5ac90dbd4001",
+        "techGaming:tech:kw_5f0176b59e3f",
+        "techGaming:tech:kw_f64bf3544553",
+        "techGaming:tech:kw_6b5765a0dbf1",
+        "techGaming:tech:kw_2b3a1562ab07",
+        "techGaming:tech:kw_ccfec459143b"
+      ],
+      "synonymsIT": [
+        "mouse wireless",
+        "mouse wireless ricaricabile",
+        "mouse wireless ergonomico",
+        "mouse wireless silenzioso",
+        "mouse wireless bluetooth",
+        "mouse wireless con usb c",
+        "tastiera wireless",
+        "tastiera wireless retroilluminata",
+        "tastiera wireless ricaricabile",
+        "tastiera wireless bluetooth",
+        "tastiera wireless bianca italiana",
+        "mouse bluetooth",
+        "tastiera bluetooth"
+      ],
+      "baseQueries": [
+        "mouse wireless",
+        "mouse wireless ricaricabile",
+        "mouse wireless ergonomico",
+        "mouse wireless silenzioso",
+        "mouse wireless bluetooth",
+        "mouse wireless con usb c",
+        "tastiera wireless",
+        "tastiera wireless retroilluminata",
+        "tastiera wireless ricaricabile",
+        "tastiera wireless bluetooth",
+        "tastiera wireless bianca italiana",
+        "mouse bluetooth",
+        "tastiera bluetooth"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Dispositivo e sistema operativo da usare",
+        "Collegamento Bluetooth, ricevitore USB o cavo richiesto",
+        "Layout della tastiera o dimensioni e impugnatura del mouse desiderati"
+      ],
+      "diversityKey": "primary_function_and_parentASIN",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:techGaming:tech:archiviazione",
+      "area": "techGaming",
+      "subId": "tech",
+      "family": "archiviazione",
+      "keywordIds": [
+        "techGaming:tech:kw_8532a4f3867e",
+        "techGaming:tech:kw_baeffb2993af",
+        "techGaming:tech:kw_16ca812dd18c",
+        "techGaming:tech:kw_1c8280c7e57e",
+        "techGaming:tech:kw_ec00e1a2c0a9",
+        "techGaming:tech:kw_58161476d5d5",
+        "techGaming:tech:kw_f95adbd9d50c",
+        "techGaming:tech:kw_8cb0cc5ec08e",
+        "techGaming:tech:kw_2bb0d29b7dc4",
+        "techGaming:tech:kw_a9e7fcc17f32",
+        "techGaming:tech:kw_8fda6e85754b",
+        "techGaming:tech:kw_e33380724132",
+        "techGaming:tech:kw_60a7a0c5554a"
+      ],
+      "synonymsIT": [
+        "ssd esterno",
+        "ssd esterno 1tb",
+        "ssd esterno 2tb",
+        "ssd esterno per backup",
+        "ssd esterno compatto leggero",
+        "ssd esterno usb c",
+        "hard disk esterno",
+        "scheda micro sd",
+        "scheda micro sd 128 gb",
+        "scheda micro sd 256 gb",
+        "scheda micro sd 512 gb",
+        "scheda micro sd classe 10",
+        "scheda micro sd con adattatore"
+      ],
+      "baseQueries": [
+        "ssd esterno",
+        "ssd esterno 1tb",
+        "ssd esterno 2tb",
+        "ssd esterno per backup",
+        "ssd esterno compatto leggero",
+        "ssd esterno usb c",
+        "hard disk esterno",
+        "scheda micro sd",
+        "scheda micro sd 128 gb",
+        "scheda micro sd 256 gb",
+        "scheda micro sd 512 gb",
+        "scheda micro sd classe 10",
+        "scheda micro sd con adattatore"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Dispositivo e interfaccia compatibili",
+        "Capacità e uso previsto: backup, foto, applicazioni o registrazione",
+        "Velocità e formato richiesti dal dispositivo",
+        "Formato e standard accettati dal dispositivo",
+        "Capacità massima supportata",
+        "Classe di velocità richiesta"
+      ],
+      "diversityKey": "primary_function_and_parentASIN",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:techGaming:tech:videochiamate",
+      "area": "techGaming",
+      "subId": "tech",
+      "family": "videochiamate",
+      "keywordIds": [
+        "techGaming:tech:kw_9d1bfe39f8ce",
+        "techGaming:tech:kw_143fab5b2dcf",
+        "techGaming:tech:kw_1c94ec668354",
+        "techGaming:tech:kw_ae52a25f322e",
+        "techGaming:tech:kw_290e92d05e07",
+        "techGaming:tech:kw_24551d67e15c",
+        "techGaming:tech:kw_599c238ababa",
+        "techGaming:tech:kw_064a2e439e62",
+        "techGaming:tech:kw_4f6941cc62a5",
+        "techGaming:tech:kw_70d39eb0a16e",
+        "techGaming:tech:kw_62bb88ad3ff6"
+      ],
+      "synonymsIT": [
+        "webcam pc",
+        "webcam pc con microfono",
+        "webcam pc autofocus",
+        "webcam pc usb",
+        "webcam pc usb c",
+        "microfono usb",
+        "microfono usb per pc",
+        "microfono usb per registrazione",
+        "microfono usb da tavolo",
+        "microfono usb a condensatore",
+        "microfono dinamico usb"
+      ],
+      "baseQueries": [
+        "webcam pc",
+        "webcam pc con microfono",
+        "webcam pc autofocus",
+        "webcam pc usb",
+        "webcam pc usb c",
+        "microfono usb",
+        "microfono usb per pc",
+        "microfono usb per registrazione",
+        "microfono usb da tavolo",
+        "microfono usb a condensatore",
+        "microfono dinamico usb"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "tech-graduation-calls",
+          "query": "webcam pc microfono videochiamate otturatore privacy"
+        }
+      ],
+      "properties": [
+        "Videochiamate con microfono e chiusura fisica per la privacy; compatibilità resta obbligatoria"
+      ],
+      "rules": [
+        "tech-graduation-calls"
+      ],
+      "relations": [],
+      "effects": [],
+      "occasions": [
+        "graduation"
+      ],
+      "incompatibilities": [
+        "Sistema operativo e programmi con cui usare webcam o microfono",
+        "Porte e supporti disponibili",
+        "Uso previsto, inquadratura o ambiente di registrazione",
+        "Dispositivo e sistema operativo",
+        "Connettore e alimentazione",
+        "Uso di registrazione e ambiente"
+      ],
+      "diversityKey": "primary_function_and_parentASIN",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:techGaming:tech:oggetti_personali",
+      "area": "techGaming",
+      "subId": "tech",
+      "family": "oggetti_personali",
+      "keywordIds": [
+        "techGaming:tech:kw_ec3aed37f40e",
+        "techGaming:tech:kw_75f172267eec",
+        "techGaming:tech:kw_cc1c823dad07",
+        "techGaming:tech:kw_fee291b6f533",
+        "techGaming:tech:kw_9372c7de5f4c",
+        "techGaming:tech:kw_da96934ce612"
+      ],
+      "synonymsIT": [
+        "tracker bluetooth",
+        "tracker bluetooth portachiavi",
+        "tracker bluetooth portafoglio",
+        "tracker bluetooth per valigie",
+        "tracker bluetooth android chiavi",
+        "tracker bluetooth ios"
+      ],
+      "baseQueries": [
+        "tracker bluetooth",
+        "tracker bluetooth portachiavi",
+        "tracker bluetooth portafoglio",
+        "tracker bluetooth per valigie",
+        "tracker bluetooth android chiavi",
+        "tracker bluetooth ios"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Sistema operativo e rete di localizzazione compatibili",
+        "Oggetto da ritrovare e modalità di fissaggio",
+        "Accettazione di app, account e autorizzazioni necessarie"
+      ],
+      "diversityKey": "primary_function_and_parentASIN",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:techGaming:tech:postazione",
+      "area": "techGaming",
+      "subId": "tech",
+      "family": "postazione",
+      "keywordIds": [
+        "techGaming:tech:kw_377deae1f6cf",
+        "techGaming:tech:kw_f1bfe7c63ec3",
+        "techGaming:tech:kw_7bc6e4f32e72",
+        "techGaming:tech:kw_c9a582e8032f",
+        "techGaming:tech:kw_dcfbc57bbe17"
+      ],
+      "synonymsIT": [
+        "supporto notebook",
+        "supporto notebook scrivania",
+        "supporto notebook alluminio",
+        "supporto notebook verticale",
+        "supporto notebook con ventole"
+      ],
+      "baseQueries": [
+        "supporto notebook",
+        "supporto notebook scrivania",
+        "supporto notebook alluminio",
+        "supporto notebook verticale",
+        "supporto notebook con ventole"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Dimensioni e peso del computer",
+        "Spazio sulla postazione e posizione desiderata",
+        "Uso aperto o verticale del computer e necessità di ventilazione"
+      ],
+      "diversityKey": "primary_function_and_parentASIN",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:techGaming:tech:memorie_usb",
+      "area": "techGaming",
+      "subId": "tech",
+      "family": "memorie_usb",
+      "keywordIds": [
+        "techGaming:tech:kw_2cdafce0d988",
+        "techGaming:tech:kw_cbb15a5e009b",
+        "techGaming:tech:kw_569019073c1f",
+        "techGaming:tech:kw_fc0d03e21561",
+        "techGaming:tech:kw_073c2adcfa0e",
+        "techGaming:tech:kw_51f214eb416e"
+      ],
+      "synonymsIT": [
+        "chiavetta usb",
+        "chiavetta usb 128 gb",
+        "chiavetta usb 256gb",
+        "chiavetta usb type c",
+        "chiavetta usb doppia porta",
+        "chiavetta usb per foto e video"
+      ],
+      "baseQueries": [
+        "chiavetta usb",
+        "chiavetta usb 128 gb",
+        "chiavetta usb 256gb",
+        "chiavetta usb type c",
+        "chiavetta usb doppia porta",
+        "chiavetta usb per foto e video"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Connettori dei dispositivi",
+        "Capacità e formato file necessari",
+        "Uso desiderato"
+      ],
+      "diversityKey": "primary_function_and_parentASIN",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:techGaming:tech:cavi",
+      "area": "techGaming",
+      "subId": "tech",
+      "family": "cavi",
+      "keywordIds": [
+        "techGaming:tech:kw_d50875b9343f",
+        "techGaming:tech:kw_fb4b305abaf0",
+        "techGaming:tech:kw_70a676197de3",
+        "techGaming:tech:kw_5bffe7b2a37f",
+        "techGaming:tech:kw_8a3a5b3a7f31",
+        "techGaming:tech:kw_d420a6ca5127"
+      ],
+      "synonymsIT": [
+        "cavo usb c",
+        "cavo usb c ricarica rapida",
+        "cavo usb c 2 metri",
+        "cavo usb c a usb c",
+        "cavo usb c dati",
+        "cavo usb c intrecciato nylon"
+      ],
+      "baseQueries": [
+        "cavo usb c",
+        "cavo usb c ricarica rapida",
+        "cavo usb c 2 metri",
+        "cavo usb c a usb c",
+        "cavo usb c dati",
+        "cavo usb c intrecciato nylon"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Connettori alle due estremità",
+        "Potenza e protocolli di ricarica",
+        "Trasferimento dati/video e lunghezza necessari"
+      ],
+      "diversityKey": "primary_function_and_parentASIN",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:techGaming:tech:protezioni_smartphone",
+      "area": "techGaming",
+      "subId": "tech",
+      "family": "protezioni_smartphone",
+      "keywordIds": [
+        "techGaming:tech:kw_c3520196112f",
+        "techGaming:tech:kw_0c5ce8cc712c",
+        "techGaming:tech:kw_1d88fc03d999",
+        "techGaming:tech:kw_098a571bad64",
+        "techGaming:tech:kw_b08c21e2cf6f",
+        "techGaming:tech:kw_8f9cc0e43867"
+      ],
+      "synonymsIT": [
+        "cover smartphone",
+        "cover smartphone a libro",
+        "cover per smartphone con cordoncino",
+        "cover smartphone con porta carte",
+        "cover smartphone personalizzata",
+        "cover smartphone pelle"
+      ],
+      "baseQueries": [
+        "cover smartphone",
+        "cover smartphone a libro",
+        "cover per smartphone con cordoncino",
+        "cover smartphone con porta carte",
+        "cover smartphone personalizzata",
+        "cover smartphone pelle"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Modello esatto dello smartphone",
+        "Dimensioni e accesso a fotocamere e porte",
+        "Preferenze di materiale e stile"
+      ],
+      "diversityKey": "primary_function_and_parentASIN",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:techGaming:tech:supporti_smartphone",
+      "area": "techGaming",
+      "subId": "tech",
+      "family": "supporti_smartphone",
+      "keywordIds": [
+        "techGaming:tech:kw_bde24e12e200",
+        "techGaming:tech:kw_6f44f81fb01f",
+        "techGaming:tech:kw_726addb34752",
+        "techGaming:tech:kw_8e1440ff5e47",
+        "techGaming:tech:kw_27c0f41d4a9e",
+        "techGaming:tech:kw_f1cc0f56203c"
+      ],
+      "synonymsIT": [
+        "supporto smartphone",
+        "supporto smartphone auto",
+        "supporto smartphone moto",
+        "supporto smartphone bici",
+        "supporto smartphone scrivania",
+        "supporto smartphone per treppiede"
+      ],
+      "baseQueries": [
+        "supporto smartphone",
+        "supporto smartphone auto",
+        "supporto smartphone moto",
+        "supporto smartphone bici",
+        "supporto smartphone scrivania",
+        "supporto smartphone per treppiede"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Dimensioni e peso dello smartphone",
+        "Superficie e sistema di fissaggio",
+        "Uso desiderato"
+      ],
+      "diversityKey": "primary_function_and_parentASIN",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:techGaming:tech:schermi",
+      "area": "techGaming",
+      "subId": "tech",
+      "family": "schermi",
+      "keywordIds": [
+        "techGaming:tech:kw_2b953d0a4d70",
+        "techGaming:tech:kw_4cbbb30e0cdf",
+        "techGaming:tech:kw_6a113c1263cd",
+        "techGaming:tech:kw_78908a0a7916",
+        "techGaming:tech:kw_26cbf61440c2",
+        "techGaming:tech:kw_0c0ad8878a7e"
+      ],
+      "synonymsIT": [
+        "monitor pc",
+        "monitor pc 27 pollici",
+        "monitor pc 24 pollici",
+        "monitor pc 4k",
+        "monitor pc curvo",
+        "monitor pc portatile"
+      ],
+      "baseQueries": [
+        "monitor pc",
+        "monitor pc 27 pollici",
+        "monitor pc 24 pollici",
+        "monitor pc 4k",
+        "monitor pc curvo",
+        "monitor pc portatile"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Porte video e risoluzione supportate",
+        "Dimensioni disponibili",
+        "Uso e frequenza di aggiornamento richiesti"
+      ],
+      "diversityKey": "primary_function_and_parentASIN",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:techGaming:tech:rete",
+      "area": "techGaming",
+      "subId": "tech",
+      "family": "rete",
+      "keywordIds": [
+        "techGaming:tech:kw_cc9e5a107a4a",
+        "techGaming:tech:kw_83db1708bf7e",
+        "techGaming:tech:kw_da72c60df7e3",
+        "techGaming:tech:kw_5634ec0ca5f6",
+        "techGaming:tech:kw_35182c9d79a8",
+        "techGaming:tech:kw_8f1049edd54b"
+      ],
+      "synonymsIT": [
+        "router wifi",
+        "router wifi con sim",
+        "router wifi portatile",
+        "router wifi con sim 5g",
+        "router wifi mesh",
+        "router wifi access point"
+      ],
+      "baseQueries": [
+        "router wifi",
+        "router wifi con sim",
+        "router wifi portatile",
+        "router wifi con sim 5g",
+        "router wifi mesh",
+        "router wifi access point"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Connessione fissa o mobile e operatore",
+        "Compatibilità con rete e apparecchi esistenti",
+        "Copertura richiesta ed eventuale SIM/piano dati"
+      ],
+      "diversityKey": "primary_function_and_parentASIN",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:styleBeauty:skincare:creme_viso",
+      "area": "styleBeauty",
+      "subId": "skincare",
+      "family": "creme_viso",
+      "keywordIds": [
+        "styleBeauty:skincare:kw_6f23d7d65196"
+      ],
+      "synonymsIT": [
+        "crema viso"
+      ],
+      "baseQueries": [
+        "crema viso"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "skin-shared-routine",
+          "query": "crema viso routine condivisa per due"
+        },
+        {
+          "rule": "skin-useful-daily",
+          "query": "crema viso idratante uso quotidiano"
+        }
+      ],
+      "properties": [
+        "Routine espressamente proposta come condivisibile",
+        "Formato e uso quotidiano idratante dichiarati, senza promessa clinica"
+      ],
+      "rules": [
+        "skin-shared-routine",
+        "skin-useful-daily"
+      ],
+      "relations": [
+        "partner",
+        "couple"
+      ],
+      "effects": [
+        "useful"
+      ],
+      "occasions": [],
+      "incompatibilities": [
+        "Gusti e uso espressamente desiderati dal destinatario",
+        "Prodotti o accessori già posseduti",
+        "Materiali, misure, contenuto e istruzioni effettivi verificati separatamente",
+        "Preferenze e prodotti cosmetici espressamente desiderati o già utilizzati",
+        "Formulazione, ingredienti, concentrazioni e indicazioni effettive del prodotto",
+        "Eventuali vincoli dichiarati dal destinatario; nessuna deduzione da età, genere o diagnosi"
+      ],
+      "diversityKey": "function_and_application_area",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:styleBeauty:skincare:creme_idratanti",
+      "area": "styleBeauty",
+      "subId": "skincare",
+      "family": "creme_idratanti",
+      "keywordIds": [
+        "styleBeauty:skincare:kw_561564632a17",
+        "styleBeauty:skincare:kw_150273650457"
+      ],
+      "synonymsIT": [
+        "crema idratante",
+        "crema idratante viso"
+      ],
+      "baseQueries": [
+        "crema idratante",
+        "crema idratante viso"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "skin-shared-routine",
+          "query": "crema idratante routine condivisa per due"
+        },
+        {
+          "rule": "skin-useful-daily",
+          "query": "crema idratante idratante uso quotidiano"
+        }
+      ],
+      "properties": [
+        "Routine espressamente proposta come condivisibile",
+        "Formato e uso quotidiano idratante dichiarati, senza promessa clinica"
+      ],
+      "rules": [
+        "skin-shared-routine",
+        "skin-useful-daily"
+      ],
+      "relations": [
+        "partner",
+        "couple"
+      ],
+      "effects": [
+        "useful"
+      ],
+      "occasions": [],
+      "incompatibilities": [
+        "Gusti e uso espressamente desiderati dal destinatario",
+        "Prodotti o accessori già posseduti",
+        "Materiali, misure, contenuto e istruzioni effettivi verificati separatamente",
+        "Preferenze e prodotti cosmetici espressamente desiderati o già utilizzati",
+        "Formulazione, ingredienti, concentrazioni e indicazioni effettive del prodotto",
+        "Eventuali vincoli dichiarati dal destinatario; nessuna deduzione da età, genere o diagnosi"
+      ],
+      "diversityKey": "function_and_application_area",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:styleBeauty:skincare:creme_notte",
+      "area": "styleBeauty",
+      "subId": "skincare",
+      "family": "creme_notte",
+      "keywordIds": [
+        "styleBeauty:skincare:kw_bc920cf4ac92"
+      ],
+      "synonymsIT": [
+        "crema notte"
+      ],
+      "baseQueries": [
+        "crema notte"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Gusti e uso espressamente desiderati dal destinatario",
+        "Prodotti o accessori già posseduti",
+        "Materiali, misure, contenuto e istruzioni effettivi verificati separatamente",
+        "Preferenze e prodotti cosmetici espressamente desiderati o già utilizzati",
+        "Formulazione, ingredienti, concentrazioni e indicazioni effettive del prodotto",
+        "Eventuali vincoli dichiarati dal destinatario; nessuna deduzione da età, genere o diagnosi"
+      ],
+      "diversityKey": "function_and_application_area",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:styleBeauty:skincare:contorno_occhi",
+      "area": "styleBeauty",
+      "subId": "skincare",
+      "family": "contorno_occhi",
+      "keywordIds": [
+        "styleBeauty:skincare:kw_406083819826"
+      ],
+      "synonymsIT": [
+        "contorno occhi"
+      ],
+      "baseQueries": [
+        "contorno occhi"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Gusti e uso espressamente desiderati dal destinatario",
+        "Prodotti o accessori già posseduti",
+        "Materiali, misure, contenuto e istruzioni effettivi verificati separatamente",
+        "Preferenze e prodotti cosmetici espressamente desiderati o già utilizzati",
+        "Formulazione, ingredienti, concentrazioni e indicazioni effettive del prodotto",
+        "Eventuali vincoli dichiarati dal destinatario; nessuna deduzione da età, genere o diagnosi"
+      ],
+      "diversityKey": "function_and_application_area",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:styleBeauty:skincare:creme_mani",
+      "area": "styleBeauty",
+      "subId": "skincare",
+      "family": "creme_mani",
+      "keywordIds": [
+        "styleBeauty:skincare:kw_f28966972391"
+      ],
+      "synonymsIT": [
+        "crema mani"
+      ],
+      "baseQueries": [
+        "crema mani"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "skin-useful-daily",
+          "query": "crema mani idratante uso quotidiano"
+        },
+        {
+          "rule": "skin-family-individual",
+          "query": "crema mani confezioni individuali da condividere adulti"
+        },
+        {
+          "rule": "skin-occasion-dedication",
+          "query": "crema mani biglietto incluso dedica personalizzabile"
+        },
+        {
+          "rule": "skin-christmas-advent",
+          "query": "crema mani calendario avvento 24 skincare"
+        }
+      ],
+      "properties": [
+        "Formato e uso quotidiano idratante dichiarati, senza promessa clinica",
+        "Unità individuali condivisibili tra adulti; nessuna compatibilità cutanea presunta",
+        "Biglietto incluso con dedica personalizzabile; idoneità alla consegna come regalo, non gusto dedotto",
+        "Calendario con 24 unità e contenuti skincare espliciti"
+      ],
+      "rules": [
+        "skin-useful-daily",
+        "skin-family-individual",
+        "skin-occasion-dedication",
+        "skin-christmas-advent"
+      ],
+      "relations": [
+        "family"
+      ],
+      "effects": [
+        "useful"
+      ],
+      "occasions": [
+        "birthday",
+        "thanks",
+        "event",
+        "christmas"
+      ],
+      "incompatibilities": [
+        "Gusti e uso espressamente desiderati dal destinatario",
+        "Prodotti o accessori già posseduti",
+        "Materiali, misure, contenuto e istruzioni effettivi verificati separatamente",
+        "Preferenze e prodotti cosmetici espressamente desiderati o già utilizzati",
+        "Formulazione, ingredienti, concentrazioni e indicazioni effettive del prodotto",
+        "Eventuali vincoli dichiarati dal destinatario; nessuna deduzione da età, genere o diagnosi"
+      ],
+      "diversityKey": "function_and_application_area",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:styleBeauty:skincare:sieri_viso",
+      "area": "styleBeauty",
+      "subId": "skincare",
+      "family": "sieri_viso",
+      "keywordIds": [
+        "styleBeauty:skincare:kw_f54635dc7f97",
+        "styleBeauty:skincare:kw_e701ede7e5c1"
+      ],
+      "synonymsIT": [
+        "siero viso",
+        "siero per il viso"
+      ],
+      "baseQueries": [
+        "siero viso",
+        "siero per il viso"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "skin-shared-routine",
+          "query": "siero viso routine condivisa per due"
+        },
+        {
+          "rule": "skin-elegant-packaging",
+          "query": "siero viso flacone vetro satinato"
+        }
+      ],
+      "properties": [
+        "Routine espressamente proposta come condivisibile",
+        "Finitura in vetro satinato dichiarata, senza usare il prezzo come prova"
+      ],
+      "rules": [
+        "skin-shared-routine",
+        "skin-elegant-packaging"
+      ],
+      "relations": [
+        "partner",
+        "couple"
+      ],
+      "effects": [
+        "elegant"
+      ],
+      "occasions": [],
+      "incompatibilities": [
+        "Gusti e uso espressamente desiderati dal destinatario",
+        "Prodotti o accessori già posseduti",
+        "Materiali, misure, contenuto e istruzioni effettivi verificati separatamente",
+        "Preferenze e prodotti cosmetici espressamente desiderati o già utilizzati",
+        "Formulazione, ingredienti, concentrazioni e indicazioni effettive del prodotto",
+        "Eventuali vincoli dichiarati dal destinatario; nessuna deduzione da età, genere o diagnosi"
+      ],
+      "diversityKey": "function_and_application_area",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:styleBeauty:skincare:sieri_vitamina_c",
+      "area": "styleBeauty",
+      "subId": "skincare",
+      "family": "sieri_vitamina_c",
+      "keywordIds": [
+        "styleBeauty:skincare:kw_bf190d94ece1",
+        "styleBeauty:skincare:kw_567c1712bae4"
+      ],
+      "synonymsIT": [
+        "siero vitamina c",
+        "siero vitamina c e acido ialuronico"
+      ],
+      "baseQueries": [
+        "siero vitamina c",
+        "siero vitamina c e acido ialuronico"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Gusti e uso espressamente desiderati dal destinatario",
+        "Prodotti o accessori già posseduti",
+        "Materiali, misure, contenuto e istruzioni effettivi verificati separatamente",
+        "Preferenze e prodotti cosmetici espressamente desiderati o già utilizzati",
+        "Formulazione, ingredienti, concentrazioni e indicazioni effettive del prodotto",
+        "Eventuali vincoli dichiarati dal destinatario; nessuna deduzione da età, genere o diagnosi"
+      ],
+      "diversityKey": "function_and_application_area",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:styleBeauty:skincare:sieri_ialuronico",
+      "area": "styleBeauty",
+      "subId": "skincare",
+      "family": "sieri_ialuronico",
+      "keywordIds": [
+        "styleBeauty:skincare:kw_de93d46a3e3a"
+      ],
+      "synonymsIT": [
+        "siero acido ialuronico"
+      ],
+      "baseQueries": [
+        "siero acido ialuronico"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Gusti e uso espressamente desiderati dal destinatario",
+        "Prodotti o accessori già posseduti",
+        "Materiali, misure, contenuto e istruzioni effettivi verificati separatamente",
+        "Preferenze e prodotti cosmetici espressamente desiderati o già utilizzati",
+        "Formulazione, ingredienti, concentrazioni e indicazioni effettive del prodotto",
+        "Eventuali vincoli dichiarati dal destinatario; nessuna deduzione da età, genere o diagnosi"
+      ],
+      "diversityKey": "function_and_application_area",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:styleBeauty:skincare:sieri_niacinamide",
+      "area": "styleBeauty",
+      "subId": "skincare",
+      "family": "sieri_niacinamide",
+      "keywordIds": [
+        "styleBeauty:skincare:kw_d1e1711c51fc",
+        "styleBeauty:skincare:kw_a2edf19767a8"
+      ],
+      "synonymsIT": [
+        "siero niacinamide",
+        "siero niacinamide 5%"
+      ],
+      "baseQueries": [
+        "siero niacinamide",
+        "siero niacinamide 5%"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Gusti e uso espressamente desiderati dal destinatario",
+        "Prodotti o accessori già posseduti",
+        "Materiali, misure, contenuto e istruzioni effettivi verificati separatamente",
+        "Preferenze e prodotti cosmetici espressamente desiderati o già utilizzati",
+        "Formulazione, ingredienti, concentrazioni e indicazioni effettive del prodotto",
+        "Eventuali vincoli dichiarati dal destinatario; nessuna deduzione da età, genere o diagnosi"
+      ],
+      "diversityKey": "function_and_application_area",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:styleBeauty:skincare:sieri_retinolo",
+      "area": "styleBeauty",
+      "subId": "skincare",
+      "family": "sieri_retinolo",
+      "keywordIds": [
+        "styleBeauty:skincare:kw_90b5a7a3ef8e"
+      ],
+      "synonymsIT": [
+        "siero retinolo"
+      ],
+      "baseQueries": [
+        "siero retinolo"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Gusti e uso espressamente desiderati dal destinatario",
+        "Prodotti o accessori già posseduti",
+        "Materiali, misure, contenuto e istruzioni effettivi verificati separatamente",
+        "Preferenze e prodotti cosmetici espressamente desiderati o già utilizzati",
+        "Formulazione, ingredienti, concentrazioni e indicazioni effettive del prodotto",
+        "Eventuali vincoli dichiarati dal destinatario; nessuna deduzione da età, genere o diagnosi"
+      ],
+      "diversityKey": "function_and_application_area",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:styleBeauty:skincare:detergenti_viso",
+      "area": "styleBeauty",
+      "subId": "skincare",
+      "family": "detergenti_viso",
+      "keywordIds": [
+        "styleBeauty:skincare:kw_2e5f6600d4b1",
+        "styleBeauty:skincare:kw_71323a55c220",
+        "styleBeauty:skincare:kw_abe2b31fd0f5",
+        "styleBeauty:skincare:kw_d61d5755e123"
+      ],
+      "synonymsIT": [
+        "detergente viso",
+        "crema detergente viso",
+        "gel detergente viso",
+        "latte detergente viso"
+      ],
+      "baseQueries": [
+        "detergente viso",
+        "crema detergente viso",
+        "gel detergente viso",
+        "latte detergente viso"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Gusti e uso espressamente desiderati dal destinatario",
+        "Prodotti o accessori già posseduti",
+        "Materiali, misure, contenuto e istruzioni effettivi verificati separatamente",
+        "Preferenze e prodotti cosmetici espressamente desiderati o già utilizzati",
+        "Formulazione, ingredienti, concentrazioni e indicazioni effettive del prodotto",
+        "Eventuali vincoli dichiarati dal destinatario; nessuna deduzione da età, genere o diagnosi"
+      ],
+      "diversityKey": "function_and_application_area",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:styleBeauty:skincare:acque_micellari",
+      "area": "styleBeauty",
+      "subId": "skincare",
+      "family": "acque_micellari",
+      "keywordIds": [
+        "styleBeauty:skincare:kw_45946533bab2"
+      ],
+      "synonymsIT": [
+        "acqua micellare"
+      ],
+      "baseQueries": [
+        "acqua micellare"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Gusti e uso espressamente desiderati dal destinatario",
+        "Prodotti o accessori già posseduti",
+        "Materiali, misure, contenuto e istruzioni effettivi verificati separatamente",
+        "Preferenze e prodotti cosmetici espressamente desiderati o già utilizzati",
+        "Formulazione, ingredienti, concentrazioni e indicazioni effettive del prodotto",
+        "Eventuali vincoli dichiarati dal destinatario; nessuna deduzione da età, genere o diagnosi"
+      ],
+      "diversityKey": "function_and_application_area",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:styleBeauty:skincare:oli_struccanti",
+      "area": "styleBeauty",
+      "subId": "skincare",
+      "family": "oli_struccanti",
+      "keywordIds": [
+        "styleBeauty:skincare:kw_0ad232306014",
+        "styleBeauty:skincare:kw_d1a9e605d38d"
+      ],
+      "synonymsIT": [
+        "olio struccante",
+        "olio struccante viso"
+      ],
+      "baseQueries": [
+        "olio struccante",
+        "olio struccante viso"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "skin-surprise-transform",
+          "query": "olio struccante balsamo struccante si trasforma in olio"
+        }
+      ],
+      "properties": [
+        "Trasformazione della texture dichiarata; nessuna promessa di efficacia clinica"
+      ],
+      "rules": [
+        "skin-surprise-transform"
+      ],
+      "relations": [],
+      "effects": [
+        "surprising"
+      ],
+      "occasions": [],
+      "incompatibilities": [
+        "Gusti e uso espressamente desiderati dal destinatario",
+        "Prodotti o accessori già posseduti",
+        "Materiali, misure, contenuto e istruzioni effettivi verificati separatamente",
+        "Preferenze e prodotti cosmetici espressamente desiderati o già utilizzati",
+        "Formulazione, ingredienti, concentrazioni e indicazioni effettive del prodotto",
+        "Eventuali vincoli dichiarati dal destinatario; nessuna deduzione da età, genere o diagnosi"
+      ],
+      "diversityKey": "function_and_application_area",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:styleBeauty:skincare:tonici",
+      "area": "styleBeauty",
+      "subId": "skincare",
+      "family": "tonici",
+      "keywordIds": [
+        "styleBeauty:skincare:kw_185f132bed94"
+      ],
+      "synonymsIT": [
+        "tonico viso"
+      ],
+      "baseQueries": [
+        "tonico viso"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Gusti e uso espressamente desiderati dal destinatario",
+        "Prodotti o accessori già posseduti",
+        "Materiali, misure, contenuto e istruzioni effettivi verificati separatamente",
+        "Preferenze e prodotti cosmetici espressamente desiderati o già utilizzati",
+        "Formulazione, ingredienti, concentrazioni e indicazioni effettive del prodotto",
+        "Eventuali vincoli dichiarati dal destinatario; nessuna deduzione da età, genere o diagnosi"
+      ],
+      "diversityKey": "function_and_application_area",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:styleBeauty:skincare:balsami_labbra",
+      "area": "styleBeauty",
+      "subId": "skincare",
+      "family": "balsami_labbra",
+      "keywordIds": [
+        "styleBeauty:skincare:kw_07dd4a4c88c4",
+        "styleBeauty:skincare:kw_c0bbba9add35"
+      ],
+      "synonymsIT": [
+        "balsamo labbra",
+        "balsamo labbra colorato"
+      ],
+      "baseQueries": [
+        "balsamo labbra",
+        "balsamo labbra colorato"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "skin-christmas-advent",
+          "query": "balsamo labbra calendario avvento 24 skincare"
+        }
+      ],
+      "properties": [
+        "Calendario con 24 unità e contenuti skincare espliciti"
+      ],
+      "rules": [
+        "skin-christmas-advent"
+      ],
+      "relations": [],
+      "effects": [],
+      "occasions": [
+        "christmas"
+      ],
+      "incompatibilities": [
+        "Gusti e uso espressamente desiderati dal destinatario",
+        "Prodotti o accessori già posseduti",
+        "Materiali, misure, contenuto e istruzioni effettivi verificati separatamente",
+        "Preferenze e prodotti cosmetici espressamente desiderati o già utilizzati",
+        "Formulazione, ingredienti, concentrazioni e indicazioni effettive del prodotto",
+        "Eventuali vincoli dichiarati dal destinatario; nessuna deduzione da età, genere o diagnosi"
+      ],
+      "diversityKey": "function_and_application_area",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:styleBeauty:skincare:creme_corpo",
+      "area": "styleBeauty",
+      "subId": "skincare",
+      "family": "creme_corpo",
+      "keywordIds": [
+        "styleBeauty:skincare:kw_608009019364"
+      ],
+      "synonymsIT": [
+        "crema corpo"
+      ],
+      "baseQueries": [
+        "crema corpo"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "skin-relax-massage",
+          "query": "crema corpo massaggio rituale serale"
+        }
+      ],
+      "properties": [
+        "Applicazione con massaggio in un rituale serale dichiarato, senza effetto clinico"
+      ],
+      "rules": [
+        "skin-relax-massage"
+      ],
+      "relations": [],
+      "effects": [
+        "relax"
+      ],
+      "occasions": [],
+      "incompatibilities": [
+        "Gusti e uso espressamente desiderati dal destinatario",
+        "Prodotti o accessori già posseduti",
+        "Materiali, misure, contenuto e istruzioni effettivi verificati separatamente",
+        "Preferenze e prodotti cosmetici espressamente desiderati o già utilizzati",
+        "Formulazione, ingredienti, concentrazioni e indicazioni effettive del prodotto",
+        "Eventuali vincoli dichiarati dal destinatario; nessuna deduzione da età, genere o diagnosi"
+      ],
+      "diversityKey": "function_and_application_area",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:styleBeauty:skincare:burri_corpo",
+      "area": "styleBeauty",
+      "subId": "skincare",
+      "family": "burri_corpo",
+      "keywordIds": [
+        "styleBeauty:skincare:kw_8d9dea255ee7"
+      ],
+      "synonymsIT": [
+        "burro corpo"
+      ],
+      "baseQueries": [
+        "burro corpo"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "skin-relax-massage",
+          "query": "burro corpo massaggio rituale serale"
+        }
+      ],
+      "properties": [
+        "Applicazione con massaggio in un rituale serale dichiarato, senza effetto clinico"
+      ],
+      "rules": [
+        "skin-relax-massage"
+      ],
+      "relations": [],
+      "effects": [
+        "relax"
+      ],
+      "occasions": [],
+      "incompatibilities": [
+        "Gusti e uso espressamente desiderati dal destinatario",
+        "Prodotti o accessori già posseduti",
+        "Materiali, misure, contenuto e istruzioni effettivi verificati separatamente",
+        "Preferenze e prodotti cosmetici espressamente desiderati o già utilizzati",
+        "Formulazione, ingredienti, concentrazioni e indicazioni effettive del prodotto",
+        "Eventuali vincoli dichiarati dal destinatario; nessuna deduzione da età, genere o diagnosi"
+      ],
+      "diversityKey": "function_and_application_area",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:styleBeauty:skincare:scrub_corpo",
+      "area": "styleBeauty",
+      "subId": "skincare",
+      "family": "scrub_corpo",
+      "keywordIds": [
+        "styleBeauty:skincare:kw_b2ac1103827c",
+        "styleBeauty:skincare:kw_54cab22739d3"
+      ],
+      "synonymsIT": [
+        "scrub corpo",
+        "crema scrub corpo"
+      ],
+      "baseQueries": [
+        "scrub corpo",
+        "crema scrub corpo"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Gusti e uso espressamente desiderati dal destinatario",
+        "Prodotti o accessori già posseduti",
+        "Materiali, misure, contenuto e istruzioni effettivi verificati separatamente",
+        "Preferenze e prodotti cosmetici espressamente desiderati o già utilizzati",
+        "Formulazione, ingredienti, concentrazioni e indicazioni effettive del prodotto",
+        "Eventuali vincoli dichiarati dal destinatario; nessuna deduzione da età, genere o diagnosi"
+      ],
+      "diversityKey": "function_and_application_area",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    },
+    {
+      "id": "m3:styleBeauty:skincare:maschere_viso",
+      "area": "styleBeauty",
+      "subId": "skincare",
+      "family": "maschere_viso",
+      "keywordIds": [
+        "styleBeauty:skincare:kw_822a799a5829"
+      ],
+      "synonymsIT": [
+        "maschera viso"
+      ],
+      "baseQueries": [
+        "maschera viso"
+      ],
+      "contextualQueries": [
+        {
+          "rule": "skin-friend-masks",
+          "query": "maschera viso duo da condividere"
+        },
+        {
+          "rule": "skin-family-individual",
+          "query": "maschera viso confezioni individuali da condividere adulti"
+        },
+        {
+          "rule": "skin-occasion-dedication",
+          "query": "maschera viso biglietto incluso dedica personalizzabile"
+        },
+        {
+          "rule": "skin-christmas-advent",
+          "query": "maschera viso calendario avvento 24 skincare"
+        }
+      ],
+      "properties": [
+        "Due maschere individuali destinate a un uso condiviso",
+        "Unità individuali condivisibili tra adulti; nessuna compatibilità cutanea presunta",
+        "Biglietto incluso con dedica personalizzabile; idoneità alla consegna come regalo, non gusto dedotto",
+        "Calendario con 24 unità e contenuti skincare espliciti"
+      ],
+      "rules": [
+        "skin-friend-masks",
+        "skin-family-individual",
+        "skin-occasion-dedication",
+        "skin-christmas-advent"
+      ],
+      "relations": [
+        "friend",
+        "family"
+      ],
+      "effects": [],
+      "occasions": [
+        "birthday",
+        "thanks",
+        "event",
+        "christmas"
+      ],
+      "incompatibilities": [
+        "Gusti e uso espressamente desiderati dal destinatario",
+        "Prodotti o accessori già posseduti",
+        "Materiali, misure, contenuto e istruzioni effettivi verificati separatamente",
+        "Preferenze e prodotti cosmetici espressamente desiderati o già utilizzati",
+        "Formulazione, ingredienti, concentrazioni e indicazioni effettive del prodotto",
+        "Eventuali vincoli dichiarati dal destinatario; nessuna deduzione da età, genere o diagnosi"
+      ],
+      "diversityKey": "function_and_application_area",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "partial_synthetic",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending"
+      ]
+    },
+    {
+      "id": "m3:styleBeauty:skincare:maschere_labbra",
+      "area": "styleBeauty",
+      "subId": "skincare",
+      "family": "maschere_labbra",
+      "keywordIds": [
+        "styleBeauty:skincare:kw_1864553678fa"
+      ],
+      "synonymsIT": [
+        "maschera labbra"
+      ],
+      "baseQueries": [
+        "maschera labbra"
+      ],
+      "contextualQueries": [],
+      "properties": [],
+      "rules": [],
+      "relations": [],
+      "effects": [],
+      "occasions": [],
+      "incompatibilities": [
+        "Gusti e uso espressamente desiderati dal destinatario",
+        "Prodotti o accessori già posseduti",
+        "Materiali, misure, contenuto e istruzioni effettivi verificati separatamente",
+        "Preferenze e prodotti cosmetici espressamente desiderati o già utilizzati",
+        "Formulazione, ingredienti, concentrazioni e indicazioni effettive del prodotto",
+        "Eventuali vincoli dichiarati dal destinatario; nessuna deduzione da età, genere o diagnosi"
+      ],
+      "diversityKey": "function_and_application_area",
+      "source": "Existing RESEARCH_CATALOG + M2 v3; editorial mapping, not search volumes",
+      "verification": "mapping_pending",
+      "gaps": [
+        "English synonym inventory pending",
+        "Full family/context coverage pending",
+        "Commercial and editorial validation M5 pending",
+        "Relationship and effect mapping pending"
+      ]
+    }
+  ],
+  "preflight": {
+    "manifestSha256": "e174c07bccdad0920dbf4d673a79f05c06736615b9b69d20b6e68c6e93daf499",
+    "total": 120,
+    "planned": 118,
+    "blocked": [
+      "T32",
+      "T36"
+    ],
+    "rows": [
+      {
+        "id": "L01",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-friend-content",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L02",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-friend-content",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L03",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-friend-content",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L04",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-friend-content",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L05",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-friend-content",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L06",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-relax-short",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L07",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-friend-content",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L08",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-friend-content",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L09",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-friend-content",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L10",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": []
+      },
+      {
+        "id": "L11",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-friend-content",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L12",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": []
+      },
+      {
+        "id": "L13",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-friend-content",
+          "books-christmas-stories"
+        ]
+      },
+      {
+        "id": "L14",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-friend-content",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L15",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-friend-content",
+          "books-graduation-interview"
+        ]
+      },
+      {
+        "id": "L16",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-friend-content",
+          "books-newhome-bookends"
+        ]
+      },
+      {
+        "id": "L17",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": []
+      },
+      {
+        "id": "L18",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": []
+      },
+      {
+        "id": "L19",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-friend-content",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L20",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-couple-recipes",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L21",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-friend-content",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L22",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-family-story",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L23",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L24",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-couple-recipes",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L25",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-friend-content",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L26",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-useful-light",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L27",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-funny-content",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L28",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-surprise-puzzles",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L29",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-friend-content",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L30",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-friend-content",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L31",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-friend-content",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L32",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-friend-content",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L33",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-friend-content",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L34",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-friend-content",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L35",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-friend-content",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L36",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-friend-content",
+          "books-occasion-dedication"
+        ]
+      },
+      {
+        "id": "L37",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "books-friend-content"
+        ]
+      },
+      {
+        "id": "L38",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": []
+      },
+      {
+        "id": "L39",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": []
+      },
+      {
+        "id": "L40",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": []
+      },
+      {
+        "id": "T01",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T02",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T03",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T04",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T05",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T06",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-relax-reading",
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T07",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T08",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T09",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T10",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": []
+      },
+      {
+        "id": "T11",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T12",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": []
+      },
+      {
+        "id": "T13",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-christmas-card"
+        ]
+      },
+      {
+        "id": "T14",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T15",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-graduation-calls"
+        ]
+      },
+      {
+        "id": "T16",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-newhome-frame"
+        ]
+      },
+      {
+        "id": "T17",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": []
+      },
+      {
+        "id": "T18",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": []
+      },
+      {
+        "id": "T19",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T20",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-couple-cinema",
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T21",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T22",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-family-photos",
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T23",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T24",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-couple-cinema",
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T25",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-sentimental-photos",
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T26",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T27",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T28",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-surprise-colour",
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T29",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T30",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T31",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T32",
+        "blocked": true,
+        "queries": 0,
+        "contextRules": []
+      },
+      {
+        "id": "T33",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T34",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T35",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "tech-occasion-dedication"
+        ]
+      },
+      {
+        "id": "T36",
+        "blocked": true,
+        "queries": 0,
+        "contextRules": []
+      },
+      {
+        "id": "T37",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": []
+      },
+      {
+        "id": "T38",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": []
+      },
+      {
+        "id": "T39",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": []
+      },
+      {
+        "id": "T40",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": []
+      },
+      {
+        "id": "S01",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-friend-masks",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S02",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-friend-masks",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S03",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-friend-masks",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S04",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-friend-masks",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S05",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-friend-masks",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S06",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-relax-massage",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S07",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-friend-masks",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S08",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-friend-masks",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S09",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-friend-masks",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S10",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": []
+      },
+      {
+        "id": "S11",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-friend-masks",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S12",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": []
+      },
+      {
+        "id": "S13",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-friend-masks",
+          "skin-christmas-advent"
+        ]
+      },
+      {
+        "id": "S14",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-friend-masks",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S15",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-friend-masks"
+        ]
+      },
+      {
+        "id": "S16",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-friend-masks"
+        ]
+      },
+      {
+        "id": "S17",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": []
+      },
+      {
+        "id": "S18",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": []
+      },
+      {
+        "id": "S19",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-friend-masks",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S20",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-shared-routine",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S21",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-friend-masks",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S22",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-family-individual",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S23",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S24",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-shared-routine",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S25",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-friend-masks",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S26",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-useful-daily",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S27",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-friend-masks",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S28",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-surprise-transform",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S29",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-elegant-packaging",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S30",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-friend-masks",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S31",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-friend-masks",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S32",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-friend-masks",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S33",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-friend-masks",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S34",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-friend-masks",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S35",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-friend-masks",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S36",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-friend-masks",
+          "skin-occasion-dedication"
+        ]
+      },
+      {
+        "id": "S37",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": [
+          "skin-friend-masks"
+        ]
+      },
+      {
+        "id": "S38",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": []
+      },
+      {
+        "id": "S39",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": []
+      },
+      {
+        "id": "S40",
+        "blocked": false,
+        "queries": 6,
+        "contextRules": []
+      }
+    ]
+  },
+  "propertySources": [
+    {
+      "rules": [
+        "tech-surprise-colour"
+      ],
+      "url": "https://ereader.kobo.com/it-it/collections/colour-ereaders/products/kobo-clara-colour",
+      "observed": "2026-10-09",
+      "scope": "E Ink colour display only; surprise is an editorial hypothesis, not a manufacturer claim"
+    },
+    {
+      "rules": [
+        "tech-relax-reading"
+      ],
+      "url": "https://help.kobo.com/hc/it/articles/360017481174-Regola-ComfortLight-PRO-sul-tuo-eReader-Kobo",
+      "observed": "2026-10-09",
+      "scope": "Adjustable light colour on listed models only; no sleep or health claim copied"
+    },
+    {
+      "rules": [
+        "skin-surprise-transform"
+      ],
+      "url": "https://www.cliniqueitaly.it/product/take-the-day-off-cleansing-balm",
+      "observed": "2026-10-09",
+      "scope": "Solid balm to oil texture only; no clinical or individual tolerance claim copied"
+    }
+  ]
+}

@@ -1,0 +1,1128 @@
+{
+  "date": "2026-09-30",
+  "status": "review-pass-completed-with-unresolved-candidates",
+  "counts": {
+    "examined": 103,
+    "published": 7,
+    "existing": 6,
+    "excluded": 20,
+    "suspended": 70,
+    "notExamined": 0
+  },
+  "scope": "Solo i103candidati selezionati dalla versione5; altre177posizioni e152prodotti esistenti invariati. Sospeso non significa verifica completa.",
+  "groups": [
+    {
+      "group": 1,
+      "size": 10,
+      "newPublished": 4,
+      "workbookVersion": 6
+    },
+    {
+      "group": 2,
+      "size": 10,
+      "newPublished": 1,
+      "workbookVersion": 7
+    },
+    {
+      "group": 3,
+      "size": 10,
+      "newPublished": 1,
+      "workbookVersion": 8
+    },
+    {
+      "group": 4,
+      "size": 10,
+      "newPublished": 0,
+      "workbookVersion": 9
+    },
+    {
+      "group": 5,
+      "size": 10,
+      "newPublished": 0,
+      "workbookVersion": 10
+    },
+    {
+      "group": 6,
+      "size": 9,
+      "newPublished": 0,
+      "workbookVersion": 11
+    },
+    {
+      "group": 7,
+      "size": 9,
+      "newPublished": 0,
+      "workbookVersion": 12
+    },
+    {
+      "group": 8,
+      "size": 9,
+      "newPublished": 0,
+      "workbookVersion": 13
+    },
+    {
+      "group": 9,
+      "size": 9,
+      "newPublished": 1,
+      "workbookVersion": 14
+    },
+    {
+      "group": 10,
+      "size": 9,
+      "newPublished": 0,
+      "workbookVersion": 15
+    },
+    {
+      "group": 11,
+      "size": 8,
+      "newPublished": 0,
+      "workbookVersion": 16
+    }
+  ],
+  "successfulPublication": {
+    "versionNumber": 87,
+    "versionId": "appgprj_6aa080d83bec8191af0e5d4903634efa~appgver_bac24111a1fc8191a7c80cf5c75cfbb7",
+    "deploymentId": "appgdep_6abc47bdc80481919d73f8e7a718ee8e",
+    "status": "succeeded",
+    "catalogCount": 159
+  },
+  "validation": {
+    "all103Unique": true,
+    "existing152Unchanged": true,
+    "other177WorkbookRowsUnchanged": true,
+    "other4SheetsAndFormulasUnchanged": true,
+    "targetedRuntimeITandEN": "passed",
+    "browserVisualQA": false
+  },
+  "results": [
+    {
+      "position": "S042-1",
+      "outcome": "published",
+      "siteId": 432,
+      "cells": {
+        "G": "Pubblicato — prezzo indicativo",
+        "L": "ID sito 432. Scheda approvata con prezzo INDICATIVO 14.00 EUR. Riferimento esterno letto il 30/09/2026, non prezzo Amazon. Fonte: https://store.creativamente.eu/gioco/iq-puzzler-pro/. Identità e rating 4,7/5 (602 valutazioni) documentati su https://www.amazon.it/dp/B01G3PYWCW il 29/09/2026; non rileggibili il 30/09. Età 6+, fonte https://www.smartgames.eu/uk/one-player-games/iq-puzzler-pro-0. Nessuna verifica spedizioni.",
+        "O": "SÌ — scheda indicativa"
+      }
+    },
+    {
+      "position": "S037-2",
+      "outcome": "published",
+      "siteId": 433,
+      "cells": {
+        "G": "Pubblicato — prezzo indicativo",
+        "L": "ID sito 433. Scheda approvata con prezzo INDICATIVO 32.10 EUR. Riferimento storico del rivenditore (pagina con contenuto 2024), riletto il 30/09/2026, non quotazione corrente. Fonte: https://www.libreriascolastica.it/cancelleria/scientifiche/casio/4549526615757/calcolatrice-scientifica-fx-991cw.htm. Identità e rating 4,7/5 (1401 valutazioni) documentati su https://www.amazon.it/dp/B0C4YNQMFF il 29/09/2026; non rileggibili il 30/09. Nessuna verifica spedizioni.",
+        "O": "SÌ — scheda indicativa"
+      }
+    },
+    {
+      "position": "S009-2",
+      "outcome": "published",
+      "siteId": 434,
+      "cells": {
+        "G": "Pubblicato — prezzo indicativo",
+        "L": "ID sito 434. Scheda approvata con prezzo INDICATIVO 49.99 EUR. Riferimento esterno letto il 30/09/2026, non prezzo Amazon. Fonte: https://www.ankeritaly.com/products/q20i-a3004g11. Identità e rating 4,7/5 (74869 valutazioni) documentati su https://www.amazon.it/dp/B0C3HCD34R il 29/09/2026; non rileggibili il 30/09. Nessuna verifica spedizioni.",
+        "O": "SÌ — scheda indicativa"
+      }
+    },
+    {
+      "position": "S041-3",
+      "outcome": "published",
+      "siteId": 435,
+      "cells": {
+        "G": "Pubblicato — prezzo indicativo",
+        "L": "ID sito 435. Scheda approvata con prezzo INDICATIVO 31.99 EUR. Riferimento esterno letto il 30/09/2026, non prezzo Amazon. Fonte: https://www.ibs.it/ticket-to-ride-primo-viaggio-giocattolo-asmodee/e/0824968206270. Identità e rating 4,7/5 (403 valutazioni) documentati su https://www.amazon.it/dp/B0725JBGGP il 29/09/2026; non rileggibili il 30/09. Età 6+, fonte https://www.asmodee.it/gamme/ticket-to-ride/. Nessuna verifica spedizioni. Riferimento sotto la fascia obiettivo 35,01–50 EUR: scheda ammessa al budget effettivo 31,99 EUR, posizione di fascia NON coperta.",
+        "O": "SÌ — scheda indicativa"
+      }
+    },
+    {
+      "position": "S001-1",
+      "outcome": "existing",
+      "siteId": 247,
+      "cells": {
+        "G": "Già nel sito",
+        "L": "Confermato nel catalogo corrente: ID 247, Anker 511 Nano 3 caricatore USB-C 30 W. Solo link di ricerca: non selezionabile, nessun nuovo ASIN abilitato. Controllo di presenza del 30/09/2026; non nuova verifica commerciale.",
+        "O": "NO — link di ricerca"
+      }
+    },
+    {
+      "position": "S001-2",
+      "outcome": "existing",
+      "siteId": 5,
+      "cells": {
+        "G": "Già nel sito",
+        "L": "Confermato nel catalogo corrente: ID 5, Anker Nano Power Bank 10.000 mAh, 30 W con cavo USB-C integrato. ASIN sito B0C9CJKCH3. ASIN candidato diverso, stessa famiglia Anker Nano 10000/30W: nessuna variante duplicata. Controllo di presenza del 30/09/2026; non nuova verifica commerciale.",
+        "O": "GIÀ PRESENTE"
+      }
+    },
+    {
+      "position": "S002-1",
+      "outcome": "existing",
+      "siteId": 1,
+      "cells": {
+        "G": "Già nel sito",
+        "L": "Confermato nel catalogo corrente: ID 1, TP-Link Tapo P110. ASIN sito B09BFT7NZJ. Controllo di presenza del 30/09/2026; non nuova verifica commerciale.",
+        "O": "GIÀ PRESENTE"
+      }
+    },
+    {
+      "position": "S007-1",
+      "outcome": "existing",
+      "siteId": 12,
+      "cells": {
+        "G": "Già nel sito",
+        "L": "Confermato nel catalogo corrente: ID 12, JBL Go 4, altoparlante Bluetooth nero. ASIN sito B0CX5C6WP3. Controllo di presenza del 30/09/2026; non nuova verifica commerciale.",
+        "O": "GIÀ PRESENTE"
+      }
+    },
+    {
+      "position": "S030-2",
+      "outcome": "existing",
+      "siteId": 49,
+      "cells": {
+        "G": "Già nel sito",
+        "L": "Confermato nel catalogo corrente: ID 49, FURminator deShedding Tool S, cani piccoli a pelo corto. ASIN sito B07NSL5JSW. Controllo di presenza del 30/09/2026; non nuova verifica commerciale.",
+        "O": "GIÀ PRESENTE"
+      }
+    },
+    {
+      "position": "S037-1",
+      "outcome": "existing",
+      "siteId": 241,
+      "cells": {
+        "G": "Già nel sito",
+        "L": "Confermato nel catalogo corrente: ID 241, Logitech M185 mouse wireless grigio. ASIN sito B00552K0GM. Controllo di presenza del 30/09/2026; non nuova verifica commerciale.",
+        "O": "GIÀ PRESENTE"
+      }
+    },
+    {
+      "position": "S002-3",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026. La fonte Philips identifica una lampada da tavolo Hue Go (8719514404571), non dimostra il modello compatto previsto né ASIN Amazon.it e qualità. Modello/variante da risolvere. Nessuna nuova pubblicazione per questa posizione.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S003-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026. ASIN B096XY1G9X edizione italiana fisica già documentato; nuova pagina Amazon non leggibile. Manca rating con volume osservabile riferito alla stessa edizione; prezzo storico 32,09 EUR fuori fascia 15–30. Non trasferite valutazioni editoriali generiche. Nessuna nuova pubblicazione per questa posizione.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S003-2",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026. ASIN B07D9SB7XW fisico italiano documentato. Pagina Amazon non leggibile. Segnalazione esterna InfoOggi 4,7/5, 10936 recensioni, https://www.infooggi.it/offerte/deal/B07D9SB7XW (indice circa un mese prima), non confermata sulla fonte primaria. Mancano prezzo attendibile per la confezione e verifica requisiti piattaforma nel filtro. Nessuna nuova pubblicazione per questa posizione.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S003-3",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026. Fonte Nintendo conferma il gioco Switch; manca un ASIN Amazon.it della precisa edizione, qualità osservabile e prezzo documentato. Ricerca non conclusiva. Nessuna nuova pubblicazione per questa posizione.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S004-1",
+      "outcome": "excluded",
+      "siteId": null,
+      "cells": {
+        "G": "Escluso — duplicato o incompatibile",
+        "L": "30/09/2026. Stessa opera già in catalogo ID 6 (Mondadori illustrato, ASIN 8804657596). Non aggiunta una seconda edizione soltanto per aumentare il catalogo; dati Bompiani non trasferiti a Mondadori. Nessuna nuova pubblicazione per questa posizione.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S004-2",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026. ISBN 9788833572635 / 8833572633 confermato; prezzo indicizzato Macrolibrarsi 18,05 EUR (listino 19), https://www.macrolibrarsi.it/libri/__la-biblioteca-di-mezzanotte.php. Manca rating e volume leggibile attribuibile a questa edizione; pagine non accessibili. Non approvato per sola notorietà. Nessuna nuova pubblicazione per questa posizione.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S006-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026. ISBN 9783822805817 / 3822805815 identificato da Libreria Universitaria https://www.libreriauniversitaria.it/rousseau-taschen/libro/9783822805817. Pagina Amazon non leggibile; mancano prezzo documentato e rating / volume recensioni per questa edizione. Nessuna nuova pubblicazione per questa posizione.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S006-2",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026. Editore e rivenditori identificano ISBN italiano 9783836563796, Bibliotheca Universalis 2017. Fonte https://www.taschen.com/it/books/art/49314/michelangelo-disegni/. Prezzo indicizzato Libraccio 19 EUR, sotto obiettivo. Mancano pagina Amazon/ASIN reale e rating / volume recensioni. Nessuna nuova pubblicazione per questa posizione.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S006-3",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026. Fonte Taschen precedente identifica ISBN 9783836591881, edizione inglese/tedesca/francese, non 40th italiana. https://www.taschen.com/it/books/art/08144/hokusai/. Non trasferire identità/prezzo tra edizioni; mancano precisa edizione italiana, ASIN e qualità. Nessuna nuova pubblicazione per questa posizione.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S007-2",
+      "outcome": "published",
+      "siteId": 436,
+      "cells": {
+        "G": "Pubblicato — prezzo indicativo",
+        "L": "ID sito 436. Riferimento indicizzato 29,55 EUR per modello nero, non offerta Amazon. Qualità Amazon documentata il 29/09/2026. Identità Sony WH-CH520 confermata dal produttore https://www.sony.it/headphones/products/wh-ch520. Nessuna spedizione verificata. Fonte prezzo: https://www.trovaprezzi.it/prezzo_cuffie-microfoni_sony_wh-ch520_cuffie_wireless.aspx. Riferimento sotto fascia 40,01–80: posizione di fascia NON coperta. Filtrato a 29,55 EUR indicativi.",
+        "O": "SÌ — scheda indicativa"
+      }
+    },
+    {
+      "position": "S009-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026. Modello Sony MDR-ZX110AP cablato identificato dalla fonte Sony già raccolta. Ricerca trova recensioni editoriali e prezzi 11,99–12,99 EUR, ma non un ASIN Amazon.it confermato della variante AP con microfono. Non confuso con ZX110 privo di microfono.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S009-3",
+      "outcome": "published",
+      "siteId": 437,
+      "cells": {
+        "G": "Pubblicato — prezzo indicativo",
+        "L": "30/09/2026. ID sito 437. ASIN nero e modello Tune 770NC corroborati dall’indice MerchantWords https://www.merchantwords.com/asin/it/B09CYX92NB. Recensioni Amazon documentate il 29/09/2026. Prezzo indicativo 59,05 EUR da Idealo, non Amazon, sotto fascia obiettivo 80,01–150; posizione NON coperta. Nessuna spedizione verificata. Fonte prezzo: https://www.idealo.it/confronta-prezzi/202795419/jbl-tune-770nc-nero.html",
+        "O": "SÌ — scheda indicativa"
+      }
+    },
+    {
+      "position": "S011-1",
+      "outcome": "excluded",
+      "siteId": null,
+      "cells": {
+        "G": "Escluso — duplicato o incompatibile",
+        "L": "30/09/2026. Famiglia già in catalogo ID 265, Vacu Vin Wine Saver con due tappi. Il candidato con un tappo è una confezione alternativa, non nuova idea. Escluso come duplicato di famiglia; nessuna sostituzione della confezione esistente.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S013-3",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026. ASIN candidato B01195C4QW non correlato in modo sufficiente alla variante corrente. CABINZERO conferma Classic 28 L ma le pagine raccolte usano più generazioni/dimensioni. Mancano rating / volume e riferimento prezzo della variante esatta. Fonte https://www.cabinzero.com/products/classic-cabin-backpack-28l?variant=57003669193091.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S014-2",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026. Tikkina rossa B09ZNGN89C individuata. Desertcart riporta 4,2/5 e 1472 recensioni, ma senza conferma sulla fonte Amazon.it. Le ricerche di prezzo presentano generazioni Tikkina 300 E060AA/E060AB: non trasferito il prezzo da una revisione diversa. Mancano riscontro diretto qualità e corrispondenza generazione/prezzo. Fonte https://www.desertcart.ae/products/495377361-petzl-tikkina-headlamp-compact-easy-to-use-300-lumen-headlamp.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S015-3",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026. Fonte Osprey conferma set di tre organizer piccolo/medio/grande: https://www.osprey.com/it/osprey-ul-packing-cube-set-s23. Mancano ASIN Amazon.it della confezione da tre, prezzo documentato e rating / volume recensioni. Non confuso con singolo cubo.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S018-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026. Catalogo contiene già Xiaomi Smart Band 10 ID 30. Band 9 non è lo stesso modello: sospeso senza aggiungere una seconda generazione della famiglia. Risultati Amazon rilevati riguardano Band 9 Active, che è differente. Mancano ASIN Band 9 standard, qualità e prezzo corrispondenti.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S018-2",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026. Amazfit Bip 5 identificato dalla fonte ufficiale eu.amazfit.com già nel file. Le ricerche mischiano Bip 5 e Bip 5 Unity: ASIN Amazon.it e variante ancora non risolti, qualità e compatibilità app da documentare. Nessun dato trasferito dal modello Unity.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S018-3",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026. Garmin Forerunner 55 individuato su Amazon.es con ASIN B0953X73TP nero/B0953XKD13 bianco, ma non confermato su Amazon.it. Non convertito automaticamente il mercato. Mancano link italiano documentato e qualità/prezzo coerenti con la variante. Fonte italiana già raccolta conservata.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S019-2",
+      "outcome": "excluded",
+      "siteId": null,
+      "cells": {
+        "G": "Escluso — duplicato o incompatibile",
+        "L": "30/09/2026. Famiglia Cotman già in catalogo ID 31. Il formato Sketchers Pocket Box è una variante di confezione; non aggiunto per gonfiare il catalogo. Scheda esistente ancora con link di ricerca: esclusione per duplicato non equivale ad attivazione.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S020-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026. Fonte ufficiale Manfrotto conferma MTPIXIMII-B. I risultati mischiano treppiede solo e kit con supporto smartphone MCPIXI: mancano ASIN Amazon.it della confezione esatta e rating / volume recensioni; compatibilità fotocamera/supporto da fissare.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S022-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026. Umbra Prisma esiste in 10×15, 13×18 e 20×25 cm. Individuati indizi ASIN B00LVLUICC (13×18 nero) e B00LVLV6PU (20×25 nero) su aggregatori, non pagina Amazon verificabile. Mancano formato definitivo, qualità e prezzo della stessa variante. Fonte https://it.findthedeal.org/p/B00LVLUICC/.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S022-2",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026. La fonte Alessi raccolta riguarda finitura dorata; ricerche mostrano anche acciaio, rosso/verde e diametri 25/29 cm. Non incrociati prezzi di varianti differenti. Mancano variante esatta, ASIN Amazon.it e qualità. Fonte https://alessi.com/it/products/mediterraneo-fruit-holder-1.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S023-2",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026. Gardena identifica set balcone 8970-20, cassetta con quattro utensili; esiste anche 8970-30. Non è il trapiantatore singolo ID 282 già in catalogo. Mancano ASIN italiano, prezzo e rating / volume per il set preciso. Fonte https://www.gardena.com/it/prodotti/cura-del-suolo/attrezzi-da-giardino/set-da-balcone/967097001.html.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S025-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026. Eastpak Springer nero EK000074008 identificato. Indizi ASIN diversi B000NDGCCO e B0CR91X11D in mercati esteri, nessuna conferma Amazon.it. Mancano link italiano verificabile e qualità/prezzo attribuibili alla confezione. Fonte https://eu.eastpak.com/it-it/products/springer-ek000074008.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S025-2",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026. Reisenthel shopper e1 dots RJ7009 identificata dal produttore. Risultati di altri colori/mercati non trasferiti. Mancano ASIN Amazon.it e rating / volume recensioni della variante; nessun prezzo inventato. Fonte https://www.reisenthel.com/en/products/shopper-e1-dots-rj7009.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S028-2",
+      "outcome": "excluded",
+      "siteId": null,
+      "cells": {
+        "G": "Escluso — duplicato o incompatibile",
+        "L": "30/09/2026. Famiglia Casio Vintage A168 già nel catalogo ID 41. Non aggiunta A168WA come nuova idea. Scheda esistente ancora con link di ricerca; non conteggiata come nuova scheda selezionabile.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S029-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026. ASIN B001R82QJM documentato nel registro per asinello 24 cm. Pagina Amazon non rileggibile; ricerche non confermano rating / volume e prezzo per questo animale/formato. Non usati dati di scoiattolo o cane in peluche 24 cm.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S029-3",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026. ASIN B06XQ5C5V1 presente, ma taglia della cuccia non confermata. Pagina Amazon non leggibile: mancano dimensioni/peso cane compatibile, qualità e prezzo della taglia esatta. Sospeso per evitare una cuccia incompatibile.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S030-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026. Produttore conferma guanto 23132, 16×24 cm rosa/nero. Recensioni Miscota riguardano una vecchia variante e non sono trasferite. Mancano ASIN Amazon.it, rating / volume e prezzo del modello 23132. Fonte https://www.trixie.it/it/gatto/cura-igiene-e-pulizia/spazzole-e-pettini/guanto-per-la-cura-del-pelo-1001435887-1001451234?itemNo=23132.",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S030-3",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Fonte ufficiale conferma utensile per gatti M/L a pelo lungo; diverso dalla scheda cane S a pelo corto ID 49. Non identificato ASIN Amazon.it della taglia/confezione esatta; mancano rating / volume osservabili e riferimento prezzo corrispondente. Fonte di partenza: https://www.furminator.net/it-itfurminator/furminator-per-gatti/furminator-gatto-m/l-pelo-lungo",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S038-2",
+      "outcome": "excluded",
+      "siteId": null,
+      "cells": {
+        "G": "Escluso — duplicato o incompatibile",
+        "L": "30/09/2026 — Deduplica famiglia: scatola di mattoncini LEGO Classic già rappresentata dalla 10698, ID sito 408, ASIN B00NHQF6MG. La 10696 cambia dimensione/contenuto della scatola; non aggiunta per moltiplicare la stessa idea. Non trasferiti recensioni o prezzi fra i due set. Fonte di partenza: https://www.lego.com/it-it/product/lego-medium-creative-brick-box-10696",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S038-3",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — LEGO ufficiale 60419 conferma 7+ e prezzo di listino 99,99 EUR, osservato 30/09/2026; oltre obiettivo 45,01–70 EUR. Non forzata fascia. Mancano ASIN Amazon.it esatto e rating / volume; prezzo indicativo da solo non completa verifica. Fonte di partenza: https://www.lego.com/it-it/product/police-prison-island-60419",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S040-2",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Mattel identifica il modello Autolavaggio con tunnel HTN80; non confuso con HTN82 squalo. La fonte consultata riporta avvertenza sotto 36 mesi, che non documenta copertura 7–12. Mancano ASIN Amazon.it confermato, età consigliata completa, qualità e prezzo della confezione. https://shopping.mattel.com/it-it/products/hot-wheels-autolavaggio-con-tunnel-htn80-it-it Fonte di partenza: https://shopping.mattel.com/it-it/products/hot-wheels-autolavaggio-con-tunnel-htn80-it-it",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S041-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Asmodee attuale: 4+, 55 carte con oggetti/giocattoli. ASIN annotato B01IPDJ0KE è associato da fonti terze alla vecchia edizione 8231 con animali; non trasferiti dati della nuova edizione. Amazon.it non leggibile. Rating 4,4/4409 e 4,5/4354 su rivenditori esteri non confermati su Amazon.it; mancano qualità, prezzo e corrispondenza edizione. https://www.asmodee.it/product/dobble-kids/ Fonte di partenza: https://www.asmodee.it/product/dobble-kids/",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S041-2",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Ravensburger conferma Junior Labyrinth 20847 da 4 anni; non confuso con Labirinto Disney/Pokémon/3D presenti. Indicazione prezzo esterna indicizzata mese precedente 18,99 EUR (Idealo), sotto obiettivo 20,01–35, non prezzo Amazon corrente. Mancano ASIN italiano esatto e dati qualità. https://www.idealo.it/confronta-prezzi/201672993/ravensburger-junior-labyrinth-20847.html Fonte di partenza: https://www.ravensburger.it/it-IT/ravensburger/products/games/games-for-kids/labyrinth-junior-20847",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S042-3",
+      "outcome": "excluded",
+      "siteId": null,
+      "cells": {
+        "G": "Escluso — duplicato o incompatibile",
+        "L": "30/09/2026 — Incompatibilità fascia: Ravensburger/ThinkFun ufficiale 76433 dichiara 8+. Non copre bambini di 7 anni del percorso 7–12. Non ampliati artificialmente i limiti e non approvato. https://www.ravensburger.it/it-IT/ravensburger/products/games/logic-games/gravity-maze-76433 Fonte di partenza: https://www.ravensburger.it/it-IT/ravensburger/products/games/logic-games/gravity-maze-76433",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S043-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — ASIN B08S7HX7FN associato da fonti terze a Jungle Families/Jungle Animals 12970, 100 XXL, EAN 4005556129706. Amazon.it non leggibile; età 6+ non ancora riconciliata su produttore con metadati precedenti 36 mesi. Rating/volume differiscono tra fonti estere (4,7/698; 4,8/2597); non presentati come Amazon.it. Mancano conferma età, qualità e prezzo stesso articolo. https://www.amazon.it/dp/B08S7HX7FN Fonte di partenza: https://www.amazon.it/dp/B08S7HX7FN",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S043-2",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Produttore identifica globo 180 pezzi 12340. Fonti rivenditori discordanti 6+, 7+ e 8–11; non assunta copertura 7–12 senza riconciliazione primaria. Mancano ASIN Amazon.it, qualità e prezzo. https://www.ravensburger.it/it-IT/ravensburger/products/3d-puzzle/3d-puzzle-balls/kindererde-italienisch17-180p-12340 Fonte di partenza: https://www.ravensburger.it/it-IT/pdp/12340",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S045-1",
+      "outcome": "excluded",
+      "siteId": null,
+      "cells": {
+        "G": "Escluso — duplicato o incompatibile",
+        "L": "30/09/2026 — Incompatibilità fascia: Clementoni ufficiale SKU 19433 dichiara 8+, quindi non copre 7–12. Prezzo ufficiale 21,90 EUR osservato, oltre obiettivo 10–20; non usato prezzo inventato. https://it.clementoni.com/products/gioielli-di-cristallo Fonte di partenza: https://it.clementoni.com/products/gioielli-di-cristallo",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S045-3",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Learning Resources ufficiale: Primary Science Lab Set LER2784, 22 pezzi, 3+, distinto da Deluxe LER0826 45 pezzi. Listino USA 39,99 USD non convertito in presunto prezzo italiano. Mancano ASIN Amazon.it della confezione italiana, rating / volume e riferimento prezzo in EUR. Fonte di partenza: https://www.learningresources.com/item-primary-sciencetm-lab-set",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S046-2",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Produttore conferma Botley originale Activity Set 77 pezzi, da 5 anni, attività fino a 8–12; non usati dati Botley 2.0 o Classroom Set. Mancano ASIN Amazon.it e qualità/prezzo della stessa confezione. https://www.learningresources.com/item-botleyr-the-coding-robot-activity-set Fonte di partenza: https://www.learningresources.com/catalog/product/view/id/5870/s/item-botleyr-the-coding-robot-activity-set/category/3057/category-about-us/sustainability",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S049-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — ASIN B0BNC5S1W4 corroborato dalla pagina Amazon.co.uk come valigetta 65 pennarelli lavabili pastel: 4,4/64, dato estero indicizzato la settimana precedente, non Amazon.it. Pagina italiana non leggibile e scheda produttore non aperta. Mancano conferma età, riferimento prezzo italiano e qualità osservabile nel mercato richiesto. https://www.amazon.co.uk/CRAYOLA-SuperTips-Washable-Assorted-Activities/dp/B0BNC5S1W4 Fonte di partenza: https://www.crayola.com/it-it/products/markers/set-valigetta-pennarelli-lavabili-supertips-pastel-255239",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S049-2",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Confermato nome Giotto Art Lab Easy Painting su FILA e codice 581300/EAN 8000825023613 su CheGiochi. Fonte primaria non leggibile in apertura; età non confermata. Mancano ASIN Amazon.it, rating / volume e riferimento prezzo per esatta confezione. https://www.chegiochi.it/giocattoli/arte-mestieri/disegno-colori/fila/8000825023613/giotto-art-lab-easy-painting.htm Fonte di partenza: https://www.fila.it/it/it/prodotto/giotto-art-lab-easy-painting/",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S049-3",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Crayola ufficiale reindirizza a Inspiration Art Case 042532: 140 pezzi, 4+. Distinta dalla Celestial 040808 (5+); non trasferiti dati fra confezioni. Mancano ASIN Amazon.it, qualità e prezzo italiano. https://www.crayola.com/products/art-kits-and-easels/inspiration-art-case-042532 Fonte di partenza: https://shop.crayola.com/toys-and-activities/inspiration-art-case-0425320006.html",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S052-1",
+      "outcome": "excluded",
+      "siteId": null,
+      "cells": {
+        "G": "Escluso — duplicato o incompatibile",
+        "L": "30/09/2026 — Edizione Salani 2025 ISBN 9788831025843/8831025848: età di lettura da 8 anni concordante in IBS e Libreria Universitaria. Non copre fascia richiesta 7–12. Non trasferiti dati da altre edizioni. https://www.ibs.it/ggg-libro-roald-dahl/e/9788831025843 https://www.libreriauniversitaria.it/ggg-dahl-roald-salani/libro/9788831025843 Fonte di partenza: https://www.ibs.it/ggg-libro-roald-dahl/e/9788831025843",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S052-3",
+      "outcome": "excluded",
+      "siteId": null,
+      "cells": {
+        "G": "Escluso — duplicato o incompatibile",
+        "L": "30/09/2026 — Edizione illustrata Jim Kay Salani 2025 ISBN 9788831023474/8831023470, 256 pagine: Libreria Universitaria indica 9 anni; non copre fascia 7–12. IBS mostra 28,40 EUR/listino29,90, riferimenti esterni non prezzo Amazon; nessun dato di altra edizione utilizzato. https://www.ibs.it/harry-potter-pietra-filosofale-ediz-libro-j-k-rowling/e/9788831023474 Fonte di partenza: https://www.libreriauniversitaria.it/harry-potter-pietra-filosofale-ediz/libro/9788831023474",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S053-3",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — ISBN 882872742X/9788828727422 confermato Vol.1 italiano Panini 2023,312 pagine su Amazon.com; fonte iniziale Panini punta Vol.3, quindi non riutilizzata per Vol.1. Valutazione5,0/30 indicizzata circa1,3 anni fa su .com non confermata su Amazon.it (non leggibile). Mancano età documentata, qualità italiana e prezzo esatto. https://www.amazon.com/Asterix-omnibus-Vol-1-author/dp/882872742X Fonte di partenza: https://www.panini.it/shp_ita_it/asterix-omnibus-3-maspe016isbn-it08.html",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S056-2",
+      "outcome": "excluded",
+      "siteId": null,
+      "cells": {
+        "G": "Escluso — duplicato o incompatibile",
+        "L": "30/09/2026 — Globber ufficiale italiano riconferma 3–7 anni; altezza consigliata95–120cm, peso massimo50kg. Non copre intera fascia7–12. Non trattata la sovrapposizione a7 anni come copertura fino12. https://www.globber.com/it/product/primo-foldable-lights/ Fonte di partenza: https://www.globber.com/it/product/primo-foldable-lights/",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S058-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Schleich ufficiale conferma drago lava70138, un pezzo, età7–12. Riferimento europeo ufficiale24,99 EUR, non prezzo Amazon. Mancano ASIN italiano corrispondente e qualità/rating / volume. https://us.schleich-s.com/products/lava-dragon-70138 https://sk.schleich-s.com/en/products/lava-dragon-70138 Fonte di partenza: https://it.schleich-s.com/products/lava-dragon-70138",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S060-2",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Identificato costume veterinario Melissa&Doug9 pezzi, non il diverso Examine&Treat24 pezzi. Rivenditore indica3–6 anni, ma primaria non leggibile: copertura7–12 non dimostrata. Mancano taglia/età primaria, ASIN Amazon.it, qualità e prezzo. https://ebeanstalk.myshopify.com/products/veterinarian-role-play Fonte di partenza: https://www.melissaanddoug.com/products/veterinarian-role-play-costume-set?_pos=218&_sid=13749106a&_ss=r&bvstate=pg%3A2%2Fct%3Ar",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S062-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Fonte Lexibook reperita ma restituisce solo titolo generico; variante/licenza e codice prodotto non leggibili. Non confuso con Stitch o microfoni differenti. Mancano codice/ASIN, età, compatibilità audio/connessione, qualità e prezzo documentato. https://www.lexibook.com/it/product/microfono-karaoke-bluetooth-senza-fili Fonte di partenza: https://api.lexibook.com/it/product/microfono-karaoke-bluetooth-senza-fili",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S062-3",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Fonte italiana Kidi non leggibile. Identificato Kidi Super Star80-178500 su VTechUSA, distinto da SuperStarDJ; lingua/confezione italiana non confermate. Non trasferiti dati modelloestero. Mancano ASIN Amazon.it, età della varianteitaliana, qualità e prezzo. https://www.vtechkids.com/product/detail/18090/Kidi_Super_Star Fonte di partenza: https://www.vtech.it/i-nostri-marchi/kidi",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S063-3",
+      "outcome": "excluded",
+      "siteId": null,
+      "cells": {
+        "G": "Escluso — duplicato o incompatibile",
+        "L": "30/09/2026 — Melissa&Doug ufficiale Deluxe Magic Set1170,10 trucchi, in legno: 8+anni. Non copre intera fascia7–12. https://www.melissaanddoug.com/products/deluxe-magic-set?bvstate=pg%3A2%2Fct%3Ar Fonte di partenza: https://www.melissaanddoug.com/products/deluxe-magic-set?bvstate=pg%3A2%2Fct%3Ar",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S065-3",
+      "outcome": "excluded",
+      "siteId": null,
+      "cells": {
+        "G": "Escluso — duplicato o incompatibile",
+        "L": "30/09/2026 — Deduplica famiglia palestrina FisherPrice con pianoforte: già catalogoID401 (HWY58, B0CM3S3M52) e404 (BabyPiano4in1, B0C9WPLV61). Candidato HWY53 non aggiunto come altra variante della stessa famiglia. Nessuna equivalenza di ASIN/prezzo/recensioni dichiarata. Fonte di partenza: https://shopping.mattel.com/it-it/products/fisher-price-palestrina-baby-piano-hwy53-it-it",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S066-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Chicco ufficiale MySweetDoudou coniglietto00009609000000, EAN8058664097623: 0M+,14,90 EUR osservati. Non confuso con trillino00009616. Mancano ASIN Amazon.it esatto e qualità/rating / volume, non il prezzo. https://www.chicco.it/prodotti/gravidanza-e-nascita/nascita/primi-pupazzi-e-copertine/coniglietto-my-sweet-doudou-8058664097623-00009609000000.html Fonte di partenza: https://www.chicco.it/prodotti/giocattoli/giochi-per-la-nanna-e-il-relax/primi-pupazzi-e-copertine-giochi-per-la-nanna-e-il-relax/coniglietto-my-sweet-doudou-8058664097623-00009609000000.html",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S067-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Recuperati fonte ufficiale Clementoni17721,0+mesi e listino16,90 EUR (30/09), oltre obiettivo8–12; non escluso soltanto per prezzo. Amazon.it ASIN B09RSW78VJ non rileggibile e legame preciso SKU/confezione non riconfermato. Riutilizzabile osservazione precedente indicizzata circa3settimane: 4,4/18, campione limitato; non live. Non confuso con MyFunBook17720 da6 mesi. Mancano riconciliazione ASIN17721 e prova qualità più solida; sospeso, nessuna soglia numerica inventata. https://it.clementoni.com/products/disney-baby-morbido-libro Fonte di partenza: https://www.amazon.it/dp/B09RSW78VJ",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S068-3",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Chicco ufficiale Next2Dreams00007627000000, EAN8058664051946 conferma0M+. Occorre rispettare istruzioni di fissaggio e rimozione secondo sviluppo del bambino, non assumere utilizzo giostrina per l’intero primo anno. Mancano ASIN Amazon.it della variante, compatibilità, limite d’uso completo, qualità e riferimento prezzo. Fonte di partenza: https://www.chicco.it/prodotti/gravidanza-e-nascita/nascita/giostrine-nascita/next2dreams-giostrina-8058664051946-00007627000000.html",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S069-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Palla SoftClemmy identificata come17689/EAN8005125176892 su rivenditori; indicazione6–36 mesi secondaria, fonte primaria non leggibile. ToysCenter10,90 EUR indicizzato mese precedente; MammacheTest9,9/10 su5 recensioni è fonte esterna, non Amazon. Mancano ASIN italiano, età primaria e qualità Amazon. https://www.toyscenter.it/prodotto/soft-clemmy-palla-sensoriale/ https://www.larcobalenonline.it/it/sensory-ball-clemmy-clementoni-17689 Fonte di partenza: https://it.clementoni.com/products/soft-clemmy-palla-sensoriale",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S070-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Codice sorgente JLB81 risulta piramide con anelli a caduta9+mesi su comparatori; non automaticamente la classica piramide Rock-a-Stack. Primaria non leggibile. Mancano corrispondenza modello/variante, ASIN Amazon.it, età primaria, qualità e prezzo italiano. https://www.idealo.es/precios/211123570/fisher-price-piramide-de-aros-de-colores-jlb81.html Fonte di partenza: https://shopping.mattel.com/it-it/products/fisher-price-piramide-5-anelli-jlb81-it-it",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S070-3",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Hape ufficiale E0448 conferma12+mesi; distinto da E0448A non automaticamente equivalente. Mancano ASIN Amazon.it della confezione, qualità/rating / volume e prezzo documentato italiano. https://fr.hape.com/chien-puppy-arc-en-ciel-a-empiler-e0448 Fonte di partenza: https://it.hape.com/impilabile-pepe-arcobaleno-e0448",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S071-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Fonte Mattel CYP67 indica1–5 anni e saccaEco60 pezzi. ASIN B0083F2XDQ associato da fontiterze a DCH54/8417 rosa; corrispondenza tra vecchia/nuova confezione non risolta. Rating4,8/24635 su Desertcart non è osservazione Amazon.it; paginaAmazon non leggibile. Mancano conferma confezione, qualità e prezzo stesso ASIN. https://www.merchantwords.com/asin/uk/B0083F2XDQ Fonte di partenza: https://shopping.mattel.com/it-it/products/mega-bloks-first-builders-sacca-60-pezzi-cyp67-it-it",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S072-3",
+      "outcome": "excluded",
+      "siteId": null,
+      "cells": {
+        "G": "Escluso — duplicato o incompatibile",
+        "L": "30/09/2026 — BRIO/Ravensburger ufficiale MyFirstRailway33727,18 pezzi, da18 mesi. Non copre12–17 mesi nella fascia1–2 anni. Nessun arrotondamento a1anno. https://www.ravensburger.it/it-IT/brio/products/railway-toys/railway-sets/beginner-pack-63372700 Fonte di partenza: https://www.ravensburger.it/it-IT/brio/products/railway-toys/railway-sets/beginner-pack-63372700",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S073-3",
+      "outcome": "excluded",
+      "siteId": null,
+      "cells": {
+        "G": "Escluso — duplicato o incompatibile",
+        "L": "30/09/2026 — Corolle ufficiale BébéCalinMaria9000100630,30cm: da18 mesi. Non copre12–17 mesi nella fascia1–2 anni. https://shop.corolle.com/corolle_en/categories/baby-dolls/baby-dolls/corolle-calin-maria-9000100630-en.html Fonte di partenza: https://shop.corolle.com/corolle_en/categories/baby-dolls/baby-dolls/corolle-calin-maria-9000100630-en.html",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S074-3",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Mattel ufficiale FKX00 conferma1–5 anni, scuolabus con Emily/Eddie, luci/suoni/canzoni. Dato secondario1,5 anni non sostituisce primaria. Mancano ASIN Amazon.it della versione linguistica italiana, qualità e prezzo documentato. Fonte di partenza: https://shopping.mattel.com/it-it/products/fisher-price-little-people-scuolabus-sempre-con-te-fkx00-it-it",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S076-2",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Editore Mondadori conferma cartonato15,00 EUR, fascia editoriale0–5 anni; ISBN visualizzato978880432332 è tronco(12cifre), non trasformato arbitrariamente in ASIN. Mancano ISBN completo/edizione esatta, pagina Amazon.it e qualità/rating / volume. https://www.ragazzimondadori.it/libri/il-piccolo-bruco-maisazio-eric-carle/ Fonte di partenza: https://www.ragazzimondadori.it/libri/il-piccolo-bruco-maisazio-eric-carle/",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S077-3",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — CodiceHHX15 confermato su Yeppon come SmartStages multilingua6–36 mesi; fonteMattel non leggibile. Non usati dati del cagnolino peluche o altro walker. Mancano conferma primaria età/lingua, ASIN Amazon.it, qualità e prezzo della confezione. https://www.yeppon.it/products/fisher-price-cagnolino-primi-1155623?variant=62886595428701 Fonte di partenza: https://shopping.mattel.com/it-it/products/ridi-impara-smart-stages-cagnolino-primi-passi-hhx15-it-it",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S078-2",
+      "outcome": "excluded",
+      "siteId": null,
+      "cells": {
+        "G": "Escluso — duplicato o incompatibile",
+        "L": "30/09/2026 — Hape ufficiale E4053,5 pezzi,18+mesi. Non copre12–17 mesi del percorso1–2. https://global.hape.com/5-in-1-beach-set-2-pcs.-e4053 Fonte di partenza: https://it.hape.com/set-per-spiaggia-5-in-1-e4053-b2c",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S079-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Clementoni ufficiale BabyRadio17541,6+mesi, listino12,90 EUR osservato30/09. Non confusa con DisneyBabyRadio. Mancano ASIN Amazon.it della versioneitaliana e rating / volume della medesima scheda; prezzo disponibile non basta. Fonte di partenza: https://it.clementoni.com/products/baby-radio-1",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S080-2",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Hape ufficiale RainbowXylophoneE0606: 12+mesi,3 pezzi incluse2bacchette. Mancano ASIN Amazon.it della confezione, rating / volume e prezzo. Non trasferiti dati dal BancoE0305. https://global.hape.com/rainbow-xylophone-e0606 Fonte di partenza: https://it.hape.com/xilofono-arcobaleno-e0606",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S080-3",
+      "outcome": "published",
+      "siteId": 438,
+      "cells": {
+        "G": "Pubblicato — prezzo indicativo",
+        "L": "30/09/2026 — Pubblicato, ID sito 438: Hape Banco delle palline E0305 con xilofono; ASIN B00712O2D6. Prezzo INDICATIVO 32,99 EUR dal produttore Hape Italia, letto il 30/09/2026, coerente con l’obiettivo 30,01–45 EUR. Recensioni documentate nel registro il 29/09: 4,7/5 su 17.510 valutazioni, indice di circa un mese prima; non dati live né numero di acquisti. Hape attuale indica 10+ mesi; l’ASIN annotato indica 12+. Intervallo prudenziale di selezione 12–36 mesi, sostenuto anche da Scholar’s Choice: copre il percorso 1–2 anni, non neonati né tutta la fascia 3–6. Fonti: https://it.hape.com/banco-delle-palline-e0305 https://scholarschoice.ca/products/early-melodies-pound-tap-bench-by-hape https://device.report/hape/e0305 https://www.amazon.it/dp/B00712O2D6 . Amazon non rileggibile il 30/09; riusata identificazione già documentata. Link tag=3gifts-21, deduplica, categoria, età, budget e build superati; pubblicazione Sites versione 87 riuscita. Nessun controllo di spedizione.",
+        "O": "SÌ — scheda indicativa"
+      }
+    },
+    {
+      "position": "S081-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — FonteMattel JFD13 aperta ma dettagli tecnici assenti dal testo utile. Indizi secondari versione multilingua inglese/italiano/portoghese/spagnolo6–36 mesi, ASIN B0BXCK8YKW non validato su Amazon.it. Mancano età/lingua della confezione, ASINitaliano confermato, qualità e prezzo. Fonte di partenza: https://shopping.mattel.com/it-it/products/controller-gioca-e-impara-multilingua-jfd13-it-it",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S081-2",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — VTech ufficiale italiano conferma IlMioprimolibrointerattivo–Lemietenerecanzoncine6–36 mesi; manuale codice166779. Non confuso con libro100parole o Coccoleinrima. Mancano ASIN Amazon.it della lingua italiana, qualità e prezzo documentato. https://www.vtech.it/giocattoli-1-3-anni/libri-per-bambini Fonte di partenza: https://www.vtech.it/vtech-baby/Il-mio-primo-libro-interattivo-le-mie-tenere-canzoncine",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S082-2",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Fonte produttore Melissa&Doug identifica JumboKnobGeometricShapes8 pezzi,1+anni. Non confuso con varianti fattoria/veicoli. Mancano ASIN Amazon.it esatto, rating / volume e prezzo italiano. https://retailers.melissaanddoug.com/s/product/jumbo-knob-large-shapes-puzzle-8-pieces/01tVy000001dy2BIAQ Fonte di partenza: https://www.melissaanddoug.com/products/deluxe-jumbo-knob-wooden-puzzle-geometric-shapes-8-pcs?bvstate=pg%3A2%2Fct%3Ar&cgid=shop-by-age",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S084-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — LEGO ufficiale10954,23 pezzi,1,5+anni; non automaticamente escluso da3–6 per età minima inferiore, ma manca documentazione pertinenza interafascia e commerciale. Mancano ASIN Amazon.it, qualità e riferimento prezzo. https://www.lego.com/en-us/product/number-train-learn-to-count-10954?opt-out-modal=show Fonte di partenza: https://www.lego.com/it-it/product/number-train-learn-to-count-10954",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S084-2",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — LEGO ufficiale10914 conferma85 pezzi,1,5+anni, listino49,99 EUR letto30/09. Non trasferiti dati da Classic10698. Mancano ASIN Amazon.it, rating / volume e documentazione di pertinenza fino6 anni; non approvato sulla sola età minima. Fonte di partenza: https://www.lego.com/it-it/product/deluxe-brick-box-10914",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S084-3",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — LEGO ufficiale 10913: 65 pezzi, 18+ mesi, listino 29,99 EUR. ASIN B07W4KVGJM corroborato da MerchantWords Italia; iSpazio mostra 4,8/10.755 e 24,57 EUR indicizzati ieri, fonte secondaria non offerta Amazon osservata. Amazon.it non leggibile. Manca riconciliazione qualità primaria e pertinenza completa fino a 6 anni; non gonfiata famiglia con 10914. https://www.ispazio.net/offerte/B07W4KVGJM https://www.merchantwords.com/asin/it/B07W4KVGJM Fonte di partenza: https://www.lego.com/it-it/product/brick-box-10913",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S086-2",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — ASIN B0DL5ZK9QF associato al modello Corolle 9000100860/EAN4062013100869; produttore lo identifica Bébé Bain Calypso Baleine. Non confusa con Maria o altra Calypso. Amazon.it non leggibile; mancano qualità/rating / volume, prezzo nuovo italiano e copertura documentata fino a6 anni. https://www.corolle.com/fr_FR/poupon-bain-calypso-baleine-9000100860 https://www.odkarla.sk/babika-corolle-9000100860~p1976483 Fonte di partenza: https://www.amazon.it/Corolle-Premier-Calypso-giocattolo-9000100860/dp/B0DL5ZK9QF",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S086-3",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Fonte BabyAnnabell è una pagina di gamma Little36cm, con varianti LittleSweet/LittleAnnabell; 1+ riferito a LittleSweet non trasferito automaticamente. Mancano codice e confezione esatti, ASIN Amazon.it, età fino a6 anni, qualità e prezzo. https://www.baby-annabell.com/en/dolls/baby-annabell-little-36cm/baby-annabell-little-sweet-annabell-36cm/ Fonte di partenza: https://www.baby-annabell.com/en/dolls/baby-annabell-little-36cm/",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S087-2",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Smoby ufficiale Cherry7600310914: 3–6 anni,25 accessori, piano48,5cm; riferimento europeo56,99 EUR, non Amazon. Mancano ASIN Amazon.it della medesima revisione e qualità/rating / volume. Non trasferiti dati di Cherry più recenti con altro codice. https://www.smoby.com/smoby_en/categories/role-play-toys/toy-kitchens/cherry-kitchen-7600310914.html Fonte di partenza: https://it.smoby.com/it/prodotti/role-play/cucine-e-accessori/cucina-cherry-7600310914/",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S088-3",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Melissa&Doug ufficiale conferma costume chef taglia3–6 anni, giacca, cappello, guanto, utensili, misurini. Mancano ASIN Amazon.it della confezione, qualità/rating / volume e prezzo documentato italiano. https://www.melissaanddoug.com/products/chef-role-play-costume-set?_pos=137&_sid=0b2d42f77&_ss=r&bvstate=pg%3A2%2Fct%3Ar Fonte di partenza: https://www.melissaanddoug.com/collections/pretend-play-best-sellers/products/chef-role-play-costume-set?bvstate=pg%3A2%2Fct%3Ar",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S089-3",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — BRUDER ufficiale02108 conferma JohnDeere5115M CON rimorchio, scala1: 16,3+anni, listino37,95 EUR. Non usati dati del trattore solo02106 o pala02319 venduta separatamente. Mancano ASIN Amazon.it preciso e qualità/rating / volume. https://www.bruder.de/shop/en/john-deere-5115-m-with-tipping-trailer/02108 Fonte di partenza: https://www.bruder.de/shop/it/john-deere-5115-m-con-rimorchio-dotato-di-sponde/02108",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S090-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Identificata edizione Albumini Emme2015,32 pagine, brossura, ISBN9788867143337/8867143336,3+anni. Qualità esterna osservabile: Macrolibrarsi5,0/6 e Goodreads4,62/21 per edizione; campioni limitati, non Amazon. Amazon.it non leggibile. Mancano conferma scheda italiana e riferimento prezzo della stessa edizione. https://www.macrolibrarsi.it/libri/__il-gruffalo-julia-donaldson-axel-scheffler-libro.php https://www.libreriauniversitaria.it/gruffalo-ediz-colori-donaldson-julia/libro/9788867143337 Fonte di partenza: https://www.amazon.it/Gruffal%C3%B2-Ediz-illustrata-Julia-Donaldson/dp/8867143336",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S090-2",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Edizione Mondadori2015 cartonata36 pagine, ISBN9788804655435/8804655437, da3 anni confermata. LibreriaUniversitaria4/5 su5 recensioni, esterne e limitate; dati Goodreads aggregati non trasferiti. Amazon.it non leggibile. Mancano conferma scheda, qualità sufficiente e prezzo stesso articolo. https://www.libreriauniversitaria.it/caccia-orso-ediz-illustrata-rosen/libro/9788804655435 Fonte di partenza: https://www.amazon.it/caccia-dellOrso-Ediz-illustrata/dp/8804655437",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S091-1",
+      "outcome": "excluded",
+      "siteId": null,
+      "cells": {
+        "G": "Escluso — duplicato o incompatibile",
+        "L": "30/09/2026 — FABA ufficiale FFR14204/ISBN9788831279161: contenuto italiano circa45 minuti, fascia3–5 anni. Non copre intera3–6. Personaggio sonoro per sistemaFABA, non lettore autonomo; compatibilità non omessa. Listino14,90 EUR osservato daindice, non Amazon. https://www.myfaba.it/cappuccetto-rosso-e-altre-storie/ Fonte di partenza: https://www.myfaba.it/cappuccetto-rosso-e-altre-storie/",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S093-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Recuperata pagina Amazon.it indicizzata circa1,3 anni fa: ASIN B06WWR2XTB, modelloC3899EU4,8 vasetti da112g,2+anni, confezione/lingua francese,4,6/1123; prezzo storico28,85 EUR, non corrente. Le recensioni e10K+ordini del marchio non sono acquisti del prodotto. Offerte recenti8 vasetti da8,99–15 EUR non riconciliate per peso/codice (alcune confezioni680g). Mancano riconferma variante italiana/europea e qualità sufficientemente recente; non bloccato soltanto dal prezzo. https://www.amazon.it/Hasbro-Play-Doh-C3899EU4-modellabile-Confezione/dp/B06WWR2XTB Fonte di partenza: https://www.amazon.it/Hasbro-Play-Doh-C3899EU4-modellabile-Confezione/dp/B06WWR2XTB",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S095-3",
+      "outcome": "excluded",
+      "siteId": null,
+      "cells": {
+        "G": "Escluso — duplicato o incompatibile",
+        "L": "30/09/2026 — Chillafish ufficiale Charlie10 pollici: 18–48 mesi; sellino28–37cm, manubrio47,6–50,4cm. Non copre5–6 anni del percorso3–6. Listino ufficiale59,99 EUR osservato30/09, non prezzo Amazon. https://chillafish.com/products/charlie Fonte di partenza: https://chillafish.com/products/charlie?bvstate=pg%3A14%2Fct%3Ar&pr_prod_strat=collection_fallback&pr_rec_id=4d3b6e211&pr_rec_pid=4577322303576&pr_ref_pid=6655430230104&pr_seq=uniform",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S097-2",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Hape ufficiale E0600 ChitarraFiglideifiori: 3+anni. Non confusa con LagunaBluE0601: schedaIBS titola LagunaBlu ma codiceE0600, quindi non trasferito il prezzo. Mancano ASIN Amazon.it della versionecorretta, qualità/rating / volume e prezzo corrispondente. https://it.hape.com/chitarra-figli-dei-fiori-e0600 https://www.ibs.it/chitarra-laguna-blu-e0600-giocattolo-hape/e/6943478021853 Fonte di partenza: https://it.hape.com/chitarra-figli-dei-fiori-e0600",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S097-3",
+      "outcome": "excluded",
+      "siteId": null,
+      "cells": {
+        "G": "Escluso — duplicato o incompatibile",
+        "L": "30/09/2026 — Janod ufficiale riconferma PureTavolettaMusicaleJ05164: 1–3 anni. La sovrapposizione a3 anni non copre4–6 anni; non estesi i limiti nei filtri. https://www.janod.com/it/929-pure-tavoletta-musicale.html Fonte di partenza: https://www.janod.com/it/929-pure-tavoletta-musicale.html",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S098-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Chicco00011855000680/EAN8058664174928 identificato; primaria aperta ma dettagli età non leggibili nel testo estratto. FarmaciaLoreto/eFarma concordano2–5 anni: non dimostrata copertura fino6, non approvato. Prezzoesterno25,77 EUR indicizzato2 mesi fa non prezzo Amazon. Mancano conferma limite primario, ASIN italiano e qualità prodotto (747 recensioni sul negozio MisterToys non assunte come recensioni articolo). https://farmacialoreto.it/ch-gioco-tappeto-music https://www.efarma.com/chicco-gioco-tappero-musicale-interattivo-per-bambini-da-2-5-anni.html Fonte di partenza: https://www.chicco.it/prodotti/giocattoli/giochi-musicali/tappeto-musicale-8058664174928-00011855000680.html",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S098-3",
+      "outcome": "excluded",
+      "siteId": null,
+      "cells": {
+        "G": "Escluso — duplicato o incompatibile",
+        "L": "30/09/2026 — VTechitalia ufficiale riconferma KidiDJDrums6+, manuale572607. Non copre3–5 anni del percorso3–6. Non modificati artificialmente i filtri. https://www.vtech.it/kidi/kidi-dj-drums Fonte di partenza: https://www.vtech.it/kidi/kidi-dj-drums",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S099-1",
+      "outcome": "suspended",
+      "siteId": null,
+      "cells": {
+        "G": "Sospeso — dati mancanti",
+        "L": "30/09/2026 — Ravensburger ufficiale FamiglieAnimali07590 conferma2x12 pezzi,3+,12,99 EUR osservati daindice; diverso dal puzzle100XXL12970. Mancano ASIN Amazon.it e rating / volume per stesso prodotto; prezzo disponibile non completa verifica. https://www.ravensburger.it/it-IT/ravensburger/products/jigsaw-puzzles/kids-puzzles/farm-animals-07590 Fonte di partenza: https://www.ravensburger.it/it-IT/ravensburger/products/jigsaw-puzzles/kids-puzzles/farm-animals-07590",
+        "O": "NO"
+      }
+    },
+    {
+      "position": "S100-1",
+      "outcome": "excluded",
+      "siteId": null,
+      "cells": {
+        "G": "Escluso — duplicato o incompatibile",
+        "L": "30/09/2026 — Riconfermata distinzione: ASIN B01GJN7Z0O/codice21188,72tessere,4+ dalla documentazione precedente e rivenditori; fonte produttore20879 è altraedizione3+. Non trasferita età. La versione4+ non copre3 anni del percorso3–6; nessuna pubblicazione. https://www.neuropsicomotricista.it/shop/prodotto/ravensburger-21188-memory-versione-cuccioli-gioco-memory-72-tessere-eta-consigliata-4__trashed/ https://www.toysin.it/giocattoli/giochi-didattici-e-musicali/didattici/memory-animal-cuccioli.1.23.621.gp.194952.uw Fonte di partenza: https://www.ravensburger.it/it-IT/ravensburger/products/games/games-for-kids/animal-babies-large-memory-20879",
+        "O": "NO"
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+.mode-picker{width:min(880px,calc(100% - 32px));margin:0 auto 80px;background:rgba(255,255,255,.92);border:1px solid rgba(231,227,242,.9);border-radius:28px;padding:30px;box-shadow:var(--shadow);text-align:center}.mode-picker h2{font-family:Fraunces,serif;font-size:2rem;margin:0 0 24px}.mode-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.mode-grid button{border:1.5px solid var(--line);background:#fff;border-radius:20px;padding:24px;text-align:left;cursor:pointer;color:var(--ink);transition:.2s}.mode-grid button:hover,.mode-grid button:focus-visible{border-color:var(--violet);transform:translateY(-2px);box-shadow:0 12px 28px rgba(69,48,154,.11)}.mode-grid strong,.mode-grid small,.mode-grid b{display:block}.mode-grid strong{font-family:Fraunces,serif;font-size:1.35rem;margin:13px 0 7px}.mode-grid small{color:var(--muted);font-size:.9rem;line-height:1.5;min-height:44px}.mode-grid b{color:var(--violet2);font-size:.84rem;margin-top:18px}.mode-icon{font-size:2.1rem}.birthday-box{margin-top:26px;border-radius:20px;padding:24px;background:linear-gradient(145deg,#f0edff,#fff5ed);display:grid;grid-template-columns:.85fr 1.4fr;gap:28px;align-items:start}.birthday-box h3{font-family:Fraunces,serif;font-size:1.75rem;margin:0 0 8px}.birthday-box p{color:var(--muted);line-height:1.5;margin:0}.birthday-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}.birthday-fields label:last-child{grid-column:1/-1}.birthday-fields label{font-size:.84rem;font-weight:700}.birthday-fields input{display:block;width:100%;margin-top:6px;padding:11px;border:1.5px solid var(--line);border-radius:11px;background:#fff;color:var(--ink)}.consent{display:flex;gap:9px;margin:15px 0;font-size:.78rem;color:var(--muted);line-height:1.4}.consent input{margin-top:2px;accent-color:var(--violet)}.birthday-box .primary{margin:0}.reminder-status{font-size:.8rem;margin-top:9px!important}.reminder-status.error{color:#b42318}.reminder-status.success{color:#28734f}@media(max-width:750px){.mode-grid{grid-template-columns:1fr}.mode-grid small{min-height:0}.birthday-box{grid-template-columns:1fr}.birthday-fields{grid-template-columns:1fr}.birthday-fields label:last-child{grid-column:auto}}
+
+.gift-universe{width:min(1040px,calc(100% - 32px));margin:0 auto 80px;padding:34px;display:grid;grid-template-columns:.8fr 1.2fr;gap:42px;align-items:center;background:#17132f;color:#fff;border-radius:28px;box-shadow:var(--shadow)}
+.gift-universe[hidden]{display:none!important}
+.gift-universe h2{font-family:Fraunces,serif;font-size:clamp(2rem,4vw,3.1rem);line-height:1.03;letter-spacing:-.035em;margin:0 0 15px}.gift-universe h2 em{color:#b6a8ff;font-style:normal}.gift-universe .eyebrow{color:#ffbd8e}.gift-universe p:last-child{color:#c8c3da;line-height:1.55;margin:0;max-width:410px}.universe-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.universe-grid span{display:flex;align-items:center;gap:10px;min-height:54px;padding:11px 14px;background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.12);border-radius:14px;font-size:.9rem;font-weight:600}.universe-grid b{width:25px;color:#ffbd8e;font-size:1.05rem;text-align:center}
+@media(max-width:750px){.gift-universe{grid-template-columns:1fr;gap:24px;padding:25px;margin-bottom:55px}.universe-grid{grid-template-columns:1fr 1fr}.universe-grid span{font-size:.8rem;padding:9px}.gift-universe h2 br{display:none}}
+
+.topbar{display:grid;grid-template-columns:1fr auto 1fr;position:relative}.topbar>.brand{justify-self:center}.topbar>.quiet{justify-self:end}.menu-wrap{justify-self:start;position:relative}.menu-trigger{width:42px;height:42px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.86);color:var(--ink);cursor:pointer;display:grid;place-items:center;letter-spacing:2px;font-weight:700}.menu-trigger:hover,.menu-trigger:focus-visible{border-color:var(--violet);background:#fff}.site-menu{position:absolute;z-index:20;top:49px;left:0;width:min(290px,calc(100vw - 32px));padding:8px;background:#fff;border:1px solid var(--line);border-radius:17px;box-shadow:0 18px 48px rgba(26,20,61,.18)}.site-menu a,.site-menu button{display:block;width:100%;border:0;background:transparent;text-align:left;text-decoration:none;color:var(--ink);padding:12px 13px;border-radius:11px;cursor:pointer}.site-menu a:hover,.site-menu button:hover,.site-menu a:focus-visible,.site-menu button:focus-visible{background:#f3f0ff;outline:none}.site-menu strong,.site-menu small{display:block}.site-menu strong{font-size:.9rem}.site-menu small{font-size:.76rem;color:var(--muted);margin-top:3px;line-height:1.35}
+@media(max-width:560px){.topbar>.quiet{font-size:0}.topbar>.quiet:after{content:"?";font-size:.95rem;display:grid;place-items:center;width:32px;height:32px;border:1px solid var(--line);border-radius:50%}}
+.progress span{width:17%}
+
+/* Homepage hero - approved September 2026 */
+html{scroll-behavior:smooth}
+.intro{max-width:860px;margin:54px auto 58px}
+.intro h1{font-size:clamp(3.25rem,7vw,5.8rem);line-height:.9}
+.intro>p:not(.eyebrow){max-width:680px;margin:26px auto;line-height:1.6}
+.hero-actions{display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap;margin:8px 0 15px}
+.hero-primary,.hero-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 23px;border-radius:999px;text-decoration:none;font-weight:700;transition:.2s}
+.hero-primary{background:var(--violet);color:#fff;box-shadow:0 12px 26px rgba(105,82,232,.22)}
+.hero-primary span{margin-left:10px}
+.hero-primary:hover,.hero-primary:focus-visible{background:var(--violet2);transform:translateY(-2px)}
+.hero-secondary{color:var(--ink);background:#fff;border:1px solid var(--line)}
+.hero-secondary:hover,.hero-secondary:focus-visible{border-color:var(--violet);transform:translateY(-2px)}
+.intro .proof{gap:0;color:var(--muted)}
+.intro .proof span{background:transparent;border:0;padding:4px 0;font-size:.82rem;color:var(--muted)}
+.intro .proof span+span:before{content:"•";padding:0 10px;color:#aaa3b8}
+@media(max-width:750px){
+  .intro{margin:34px auto 48px}
+  .intro h1{font-size:clamp(3rem,15vw,4.35rem)}
+  .intro>p:not(.eyebrow){font-size:1rem}
+  .hero-actions{display:grid;grid-template-columns:1fr}
+  .hero-primary,.hero-secondary{width:100%}
+}

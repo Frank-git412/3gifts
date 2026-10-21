@@ -1,0 +1,149 @@
+{
+  "revision": "20261016-m5-reading-recovery",
+  "date": "2026-10-16",
+  "baseline": "v141",
+  "scope": "exposed_diagnostic_regression",
+  "changes": [
+    {
+      "id": "I-L18",
+      "before": 0,
+      "after": 3,
+      "blockedBefore": true,
+      "blockedAfter": false,
+      "products": [
+        {
+          "asin": "036688512X",
+          "title": "Le Avventure di Cherea e Calliroe: Romanzo (Classic Reprint)"
+        },
+        {
+          "asin": "1988770912",
+          "title": "L'Esecutore di Marte: Un Romanzo di Fantascienza"
+        },
+        {
+          "asin": "8890686510",
+          "title": "A doppia faccia; Romanzo giallo; Prima Edizione ottobre 2025; 329 Pagine; Agenda Editore"
+        }
+      ]
+    },
+    {
+      "id": "I-L19",
+      "before": 0,
+      "after": 1,
+      "blockedBefore": false,
+      "blockedAfter": false,
+      "products": [
+        {
+          "asin": "B07WNRN9WQ",
+          "title": "Glocusent Lampada da Lettura, LED luce del libro, Ricaricabile, 3 Colori, 6 Livelli di luminosità, Bracci pieghevoli, mani libere, Perfetta per Tejer, Estudiar, Dormir, Viajar"
+        }
+      ]
+    },
+    {
+      "id": "I-L24",
+      "before": 0,
+      "after": 3,
+      "blockedBefore": true,
+      "blockedAfter": false,
+      "products": [
+        {
+          "asin": "036688512X",
+          "title": "Le Avventure di Cherea e Calliroe: Romanzo (Classic Reprint)"
+        },
+        {
+          "asin": "B0D1NFP9P1",
+          "title": "Acque Rosse: Romanzo Giallo tra Ipnosi, Psicologia Nera e Realtà"
+        },
+        {
+          "asin": "B0GS8V2WN7",
+          "title": "L'Amante Perfetta: Romanzo Erotico di Fantascienza"
+        }
+      ]
+    }
+  ],
+  "emptyCaseReviewCounts": {
+    "unsupported_composite_note": 15,
+    "fixed": 3,
+    "retrieval_routing_review": 4,
+    "clarification_justified": 4,
+    "no_eligible_product_in_sample": 2
+  },
+  "editorialFlags": [
+    {
+      "id": "I-L24",
+      "asin": "B0GS8V2WN7",
+      "title": "L'Amante Perfetta: Romanzo Erotico di Fantascienza",
+      "status": "requires_editorial_review_not_accepted",
+      "reason": "Proposta a contenuto erotico in una richiesta con generi ignoti: il recupero tecnico del caso non dimostra adeguatezza del regalo. Serve definire e verificare il trattamento dei contenuti espliciti prima della prova finale."
+    }
+  ],
+  "coverageBefore": {
+    "requests": 114,
+    "coverage": {
+      "0": 28,
+      "1": 2,
+      "2": 0,
+      "3": 84
+    },
+    "proposals": 254,
+    "blocked": [
+      "I-L17",
+      "I-L18",
+      "I-L20",
+      "I-L21",
+      "I-L23",
+      "I-L24",
+      "I-T10",
+      "I-T17",
+      "I-T18",
+      "I-T19",
+      "I-T20",
+      "I-T21",
+      "I-T22",
+      "I-T23",
+      "I-T24",
+      "I-T34",
+      "I-S17",
+      "I-S18",
+      "I-S21",
+      "I-S22",
+      "I-S24"
+    ],
+    "basicViolations": []
+  },
+  "coverageAfter": {
+    "requests": 114,
+    "coverage": {
+      "0": 25,
+      "1": 3,
+      "2": 0,
+      "3": 86
+    },
+    "proposals": 261,
+    "blocked": [
+      "I-L17",
+      "I-L20",
+      "I-L21",
+      "I-L23",
+      "I-T10",
+      "I-T17",
+      "I-T18",
+      "I-T19",
+      "I-T20",
+      "I-T21",
+      "I-T22",
+      "I-T23",
+      "I-T24",
+      "I-T34",
+      "I-S17",
+      "I-S18",
+      "I-S21",
+      "I-S22",
+      "I-S24"
+    ],
+    "basicViolations": []
+  },
+  "realAmazonCalls": 0,
+  "newHumanVotes": 0,
+  "browserQA": false,
+  "M5Acceptance": false
+}

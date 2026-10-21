@@ -1,0 +1,1481 @@
+{
+  "date": "2026-10-02",
+  "sourceFile": "3Gifts_66_link_Amazon_da_completare(1).xlsx",
+  "sourceCommit": "3e98eb8972a0cf8a28215d162688507d8d0a1833",
+  "counts": {
+    "received": 66,
+    "imported": 50,
+    "pending": 16,
+    "totalCatalog": 199,
+    "distinctAsins": 182,
+    "withoutAsin": 17
+  },
+  "scope": "Importazione link con verifica di corrispondenza; non nuova verifica di offerte, prezzi, rating o spedizione.",
+  "accepted": [
+    {
+      "id": 9,
+      "name": "Rolife Book Nook",
+      "url": "https://www.amazon.it/Rolife-Sakura-Densya-Book-Nook/dp/B0B1JF55KS?dib=eyJ2IjoiMSJ9.b1Q3NC2mmmYXIQMLa28S_l1jSyB3sBrjrZxi8f8_9HAHJ8mQNIWzIgq8gl0Jnf1x6tg0bFuHNIc94isvTR4L6qN7eqio4bgU_oF_eCIiIKneO2bmDXhohZOaB1u01eBiGPdDepKXsrEYeFsIfeglxb4sGoGgLZTbrfgXT8D2uMBbDNEHTUb6Yl__hdc4IVnv6t4Nj1VAeg7TC26VRGxWBYrlE8104COVllrJyTcFv5H4RtJf4Gp22c0spG2lF2xZz3n5VMQFdv-_vD9fra4n5KLVoUF27haM6UWP0pXNU9Y.Gz8lrMyrNE0X-AlDhnSJsNxsiVSfjfeRnXxk_Lcnwp0&dib_tag=se&keywords=Rolife%2BBook%2BNook&qid=1790892810&sr=8-6&th=1&linkCode=ll2&tag=3gifts-21&linkId=6fb6ad1b2fcfe77ebade30892f1246c0&ref_=as_li_ss_tl",
+      "asin": "B0B1JF55KS",
+      "path": "/Rolife-Sakura-Densya-Book-Nook/dp/B0B1JF55KS",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0B1JF55KS?tag=3gifts-21",
+      "sources": [
+        {
+          "url": "https://www.amazon.it/-/en/Rolife-Sakura-Dollhouse-Teenagers-TGB01/dp/B0B1JF55KS",
+          "title": "Rolife Sakura Densya Book Nook TGB01"
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 10,
+      "name": "Kindle Paperwhite 16 GB",
+      "url": "https://www.amazon.it/kindle-paperwhite-2024/dp/B0CFPXBJ9Y?dib=eyJ2IjoiMSJ9.mgkUvEghpi7c8sSOEz75FYH8bQi01kwKvyCVIOPmevSJssl_fHuVJvf6vXFdw_lyYjaA2Xyn89ERXHBcQyofLP2AZMAAoi72w8IPKmv0cpYhPuJAU_vlOqPILDLUm8srT_BHva74TNHtPGkSCnml2pxw5seVvkDWSsUa-4KTt3lXvUx8A_jQDLWg_nPkrFXJpm34OJxuXWW7sTcikf4fYcoXzhRKHxMzcpBfd-FH9rpv-5YK_521cKrI_pjNpGJhTLqjqIT0UshKVy4tPguMOMPSm8ZIok4q3AqTb0fY-cQ.WlfyHQQdhJgx_5uiGL82R9fyOTUu2-2aDFNZ9wH7NPM&dib_tag=se&keywords=Kindle%2BPaperwhite%2B16%2BGB&qid=1790892969&sr=8-1&ufe=app_do%3Aamzn1.fos.7cf526d8-b33c-4cc8-8e05-b9df5480d46b&th=1&linkCode=ll2&tag=3gifts-21&linkId=945d00a4b87c366284a8df78a3d14bec&ref_=as_li_ss_tl",
+      "asin": "B0CFPXBJ9Y",
+      "path": "/kindle-paperwhite-2024/dp/B0CFPXBJ9Y",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0CFPXBJ9Y?tag=3gifts-21",
+      "sources": [
+        {
+          "url": "https://www.amazon.it/kindle-paperwhite-2024/dp/B0CFPXBJ9Y",
+          "title": "Kindle Paperwhite 16 GB"
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 11,
+      "name": "Soundcore P20i",
+      "url": "https://www.amazon.it/soundcore-Bluetooth-Auricolari-Riproduzione-Resistenza/dp/B0BTYCRJSS?dib=eyJ2IjoiMSJ9.deKpljq-zDtZfAXpd9JVRq0dTQnijh2_ik3O2_I5kpEcJpg05vSV1VNxPDMILML9IalQ3XGGpdemuich6gp-a8toRmexio7Fs3DqTc-NNbp0RT_ZUkU-8MPL3CQqXtSdWJEhiT9dArs3zJHA9ni0-hSMj4nffJZx9NTuD6P6xfQkUMfItUOes0l1tqn-1NML_PKiq2mrbEDY8E8GGpqGzVGn05aHov1UX95h8LdVWehP1PomNj2VWwOaCMIntNhReV744pFriUPE1CZFMQxhpN52EoC_iWfPbSnefyNyGk8.OKgwrXpWltv2NlpW80_Ej39Ke0a4Wtp84gjnm4WcRqo&dib_tag=se&keywords=Soundcore%2BP20i&qid=1790892985&sr=8-1&th=1&linkCode=ll2&tag=3gifts-21&linkId=7169d4e2ed89c2c5a5c7d3572b2f1dfe&ref_=as_li_ss_tl",
+      "asin": "B0BTYCRJSS",
+      "path": "/soundcore-Bluetooth-Auricolari-Riproduzione-Resistenza/dp/B0BTYCRJSS",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0BTYCRJSS?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B0BTYCRJSS",
+          "url": "https://www.amazon.it/soundcore-Bluetooth-Auricolari-Riproduzione-Resistenza/dp/B0BTYCRJSS",
+          "title": "soundcore di Anker P20i, Cuffie Bluetooth In Ear con Riduzione ..."
+        },
+        {
+          "asin": "B0BTYCRJSS",
+          "url": "https://www.amazon.it/-/en/Soundcore-Anker-Bluetooth-Headphones-Reduction/dp/B0BTYCRJSS",
+          "title": "Soundcore Anker P20i Bluetooth In-Ear Headphones with Noise ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 13,
+      "name": "Sony WH-CH720N",
+      "url": "https://www.amazon.it/Sony-WH-CH720N-Cancelling-Connessione-Multipoint/dp/B0BTDX26B2?dib=eyJ2IjoiMSJ9.tT-R6-WmJrwFtqzq0ejNsG08G1eWOY0b8A0FWj3xMrJndy4dGCmBg4k6LY0wO1_d74p5xrHW-qVOE0CpTfyAUm_T8WfWW7ERafJth0kLzaHoB8Ivo3ky1PgyWNiulHJP2lMpX4IMS_rcd178-0Tvo2uAp7H1-ysoO2B_tqJJ_vBDNVW0ZAxGUEmbs5pDe5bRit8s2xzmo-G_gYh1CulMNhYNNP-68QydfIMjftc-8r-dvpwlckXaRAMr1eq87lzSRGwqmQRrJGKBp023rGGVRVfYjxF6k3OAw0nBzpO9iyA.SG5OGzcCAOGPxc6TDFbKMSqKv_ec55e6EUmdXtgLpH8&dib_tag=se&keywords=Sony%2BWH-CH720N&qid=1790893011&sr=8-1&ufe=app_do%3Aamzn1.fos.f95648ba-9d41-4ef9-8db4-c5224b9750b7&th=1&linkCode=ll2&tag=3gifts-21&linkId=9bde73110596115e8e3b92edf008fc95&ref_=as_li_ss_tl",
+      "asin": "B0BTDX26B2",
+      "path": "/Sony-WH-CH720N-Cancelling-Connessione-Multipoint/dp/B0BTDX26B2",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0BTDX26B2?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B0BTDX26B2",
+          "url": "https://www.amazon.it/-/en/Sony-WH-CH720N-Headphones-Cancelling-Multipoint/dp/B0BTDX26B2",
+          "title": "Sony WH-CH720N | Wireless Headphones with Noise ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 20,
+      "name": "Ariete Cappuccinatore Vintage",
+      "url": "https://www.amazon.it/Ariete-2878-Cappuccinatore-Vintage-liofilizzati/dp/B01F8TY69I?dib=eyJ2IjoiMSJ9.iZ0X26ZE0bEyThNjSEBzRDMFvrykjTUpHLv3sGG7UjXZVhq57VsUqE-AbDE0eihOH7NGrFYQKDml6UzoZP4m-Dzp3CI7fynUNurf5iQulcE_KHMiEVZu1fRDAZwZmpGYuQ1-mzbmRAj1xJRHvyxqBY8xfMuIfD4j-PeB1feq7MK3I9IBIpy0NjMOh9i8UujtZDaGkrBwtQdEFFSdonkJ2NXYp-_VKFTR5ICSMPDkyRpOVCue-hSmf5PRY1GB4GY0YQzfxugPRrlEJrj9mQeMsSSdL345mWUnotks2OMvj2A.5tqycyZQut25HpmMiyb_wpjwgvYij90SyXIPARhIjfU&dib_tag=se&keywords=Ariete%2BCappuccinatore%2BVintage&qid=1790893275&sr=8-2&ufe=app_do%3Aamzn1.fos.8a1562af-dabe-4f1d-8eb5-1ded1ace4ef7&th=1&linkCode=ll2&tag=3gifts-21&linkId=5ea1a4bee5d8edfd25c5638b72fb1a6d&ref_=as_li_ss_tl",
+      "asin": "B01F8TY69I",
+      "path": "/Ariete-2878-Cappuccinatore-Vintage-liofilizzati/dp/B01F8TY69I",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B01F8TY69I?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B01F8TY69I",
+          "url": "https://www.amazon.it/-/en/Ariete-2878-Cappuccino-Electric-Chocolate/dp/B01F8TY69I",
+          "title": "Ariete Vintage 2878 Cappuccino Electric Milk Frother Retro ..."
+        },
+        {
+          "asin": "B01F8TY69I",
+          "url": "https://www.amazon.it/Ariete-2878-Cappuccinatore-Vintage-liofilizzati/dp/B01F8TY69I",
+          "title": "Ariete Cappuccinatore Vintage 2878, Montalatte Elettrico Stile ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 22,
+      "name": "BAGAIL organizer per valigia",
+      "url": "https://www.amazon.it/BAGAIL-Imballaggio-Valigia-Organizzatori-Accessori/dp/B08S3SMVYM?dib=eyJ2IjoiMSJ9.JiZMralLC7zTg-vClkf9gSFoc_HYssO-ZmhlV25aOe4gNRhaslyvcd1gmnIVq-sii7nHl1z2VTMbDIAh6iCOc3wGSH9XejodovT-Skhil6ENszms73AljdhvBj4EF1DRIhkMNg7Q28gXIc6pXf09nIllZO2ZQCpbH-k92ehCCsrXATYwPSjm7Oo3yQJv7W8YvuaAUm7Md7NVWvDhbo2JiHy4_PwUqw78FUT9s6oBq6HD3VtalGg1plzL7KmjviBel44x7y3tR8Ih_PPIpx4ZcXpzHXHWjfDQTFvJCzRozSk.ihL5jhG7oD3a9wKdBIl64vdbMqiknsLtKF_qVI1fPEA&dib_tag=se&keywords=BAGAIL%2Borganizer%2Bper%2Bvaligia&qid=1790893301&sr=8-1&th=1&linkCode=ll2&tag=3gifts-21&linkId=5bc2b2afe70e04366a1243704f362ec4&ref_=as_li_ss_tl",
+      "asin": "B08S3SMVYM",
+      "path": "/BAGAIL-Imballaggio-Valigia-Organizzatori-Accessori/dp/B08S3SMVYM",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B08S3SMVYM?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B08S3SMVYM",
+          "url": "https://www.amazon.com/clp/B08S3SMVYM",
+          "title": "BAGAIL 8 Set Packing Cubes Luggage ..."
+        },
+        {
+          "asin": "B08S3SMVYM",
+          "url": "https://www.amazon.it/BAGAIL-Imballaggio-Valigia-Organizzatori-Accessori/dp/B08S3SMVYM",
+          "title": "BAGAIL Cubi da Imballaggio per Valigia Set 8 Pezzi ..."
+        },
+        {
+          "asin": "B08S3SMVYM",
+          "url": "https://www.amazon.sa/-/en/BAGAIL-Suitcase-Lightweight-Organizers-Accessories/dp/B08S3SMVYM",
+          "title": "BAGAIL Packing Cubes for Suitcase 8 Set, Lightweight ..."
+        },
+        {
+          "asin": "B08S3SMVYM",
+          "url": "https://www.amazon.de/-/en/BAGAIL-Holidays-Suitcase-Organiser-Suitcases/dp/B08S3SMVYM",
+          "title": "BAGAIL 8-Piece Packing Cubes, Clothes Bags ..."
+        },
+        {
+          "asin": "B08S3SMVYM",
+          "url": "https://www.amazon.ae/BAGAIL-Packing-Organizers-Accessories-Black/dp/B08S3SMVYM",
+          "title": "BAGAIL 8 Set Packing Cubes Luggage ..."
+        },
+        {
+          "asin": "B08S3SMVYM",
+          "url": "https://www.amazon.com.au/BAGAIL-Packing-Lightweight-Organizers-Toiletry/dp/B08S3SMVYM",
+          "title": "BAGAIL 8 Set Packing Cubes, Lightweight Travel Luggage ..."
+        },
+        {
+          "asin": "B08S3SMVYM",
+          "url": "https://www.amazon.eg/-/en/BAGAIL-Suitcase-Lightweight-Organizers-Accessories/dp/B08S3SMVYM",
+          "title": "BAGAIL Packing Cubes for Suitcase 8 Set, Lightweight ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 23,
+      "name": "Cabeau Evolution S3",
+      "url": "https://www.amazon.it/Cabeau-Cuscino-Viaggio-Evolution-dellaeroplano/dp/B079X4ZR6X?dib=eyJ2IjoiMSJ9.kk4WJbj0ehGv8FA9U_Vr_kELbvuaxk9Nb6m3jU610GnbhBwszjm573fpXn3QjSRu4nl1TJdnvtnC2Spv4tALSi8JaC9p5TmBS6f6VEyFO4ftzoXKs7MVL6C-kBa5g0Yi9IeVF-c9vkmo3527Vj4cLO5ccuQ3uAQFT1Tpu2dpuxTTnr4xG0SwGCHRdWnjBoYBh1tD8bU08gZzkAhNz75uabu2Z-AqhlZcUE-pDjWnTRirQ9YZK_2Ws2a9fZ5oVqRdCHD1llSLW9E_wY92uoYbPJIYTPtVfgXMqPo9db_0YxA.CB9J_2xmSUjOkBdapF6NtcKPbSCXlsH1S9c8Y3dpKd0&dib_tag=se&keywords=Cabeau%2BEvolution%2BS3&qid=1790893331&sr=8-1&th=1&linkCode=ll2&tag=3gifts-21&linkId=b9b982bf779d65d7ef52ab43535b825b&ref_=as_li_ss_tl",
+      "asin": "B079X4ZR6X",
+      "path": "/Cabeau-Cuscino-Viaggio-Evolution-dellaeroplano/dp/B079X4ZR6X",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B079X4ZR6X?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B079X4ZR6X",
+          "url": "https://www.amazon.it/-/en/Cabeau-Evolution-S3-Travel-Pillow/dp/B079X4ZR6X",
+          "title": "Cabeau Evolution S3 Travel Pillow - Attaches to Airplane Seat ..."
+        },
+        {
+          "asin": "B079X4ZR6X",
+          "url": "https://www.amazon.it/Cabeau-Cuscino-Viaggio-Evolution-dellaeroplano/dp/B079X4ZR6X",
+          "title": "Cuscino da viaggio Cabeau Evolution S3 – Si aggancia al ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 24,
+      "name": "LifeStraw filtro personale",
+      "url": "https://www.amazon.it/LifeStraw%C2%AE-Personal-Filtro-dellacqua-personali/dp/B006QF3TW4?dib=eyJ2IjoiMSJ9.I2R3krw8HbUl2koEe5mW0TJksbpKF62jv3yuV0cwSz309ZrXYjiNVEqZsrel41kCILHE3L6VvFlAtmoqLwbPdB9IKdr3I1whjqlRFaW_uXFbDbSFUSuW6G-LMG0PtTlf5F3GljzvCrOna7WmOM9hLupHQzaRhmyrXgT_Sv8jWnmaVWgBPcZW3ZtaGeIuQrvXUOrvpZca_W0Ab-zOVUPDc6a_eM9AA1Ih0ZwVRXrEoGNlTBVACcypvf0xIlHIhk56ADKx6-Bu3klTn_HGZCNZFF7xEeW8gWvwATvq6OUOyEw.rXoRo4tjXoFvvuekYiZPefMtDpnU-BwEkjtu358sP2c&dib_tag=se&keywords=LifeStraw%2Bfiltro%2Bpersonale&qid=1790893346&sr=8-1&th=1&linkCode=ll2&tag=3gifts-21&linkId=a4179f92036c8d82f37c5d5a2f79fb9c&ref_=as_li_ss_tl",
+      "asin": "B006QF3TW4",
+      "path": "/LifeStraw®-Personal-Filtro-dellacqua-personali/dp/B006QF3TW4",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B006QF3TW4?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B006QF3TW4",
+          "url": "https://www.amazon.it/-/en/LifeStraw-Personal-Water-Filter-Piece/dp/B006QF3TW4",
+          "title": "LifeStraw Personal Personal Water Filter, Blue, 1 Piece"
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 25,
+      "name": "Stanley AeroLight Transit Mug",
+      "url": "https://www.amazon.it/Stanley-Aerolight-Transit-Tazza-Termica/dp/B0F5X3TN41?dib=eyJ2IjoiMSJ9.MQJnZDqVlVnd97xKmtMcT9QGJDjI5jSI6iPd_Z6CChX23zKDBGcInidAI-0uBgQhxJEbOp1CbVLg0Zj-hpF46i_5W6UgAejK0FFk2PvXgMhw1_zhCaz23-LcuN8TJ85o3qRpcgqT7TM0M4K5QcbeeU1EqGQLgSUE9i9MTuhZwDHKsFag9a2qtRmhReALhCiC0Ev-ErodDjkHSy9gp1ljMa-okDgxSAuvynRVMJHlawdXbyZQlIbbFupVtp4tsVuxrMV4XGRs6cLSn-pK0p0rX68QUiltIJdgzwVLDszS1-I.H9gbqfeCiwsnCn_hm7jIylsRDn1vG2K2M9N8qIiIFOY&dib_tag=se&keywords=Stanley%2BAeroLight%2BTransit%2BMug&qid=1790893362&sr=8-2&ufe=app_do%3Aamzn1.fos.8a1562af-dabe-4f1d-8eb5-1ded1ace4ef7&th=1&linkCode=ll2&tag=3gifts-21&linkId=7e149644a0633f673a7498498bc50b5f&ref_=as_li_ss_tl",
+      "asin": "B0F5X3TN41",
+      "path": "/Stanley-Aerolight-Transit-Tazza-Termica/dp/B0F5X3TN41",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0F5X3TN41?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B0F5X3TN41",
+          "url": "https://www.amazon.it/-/en/Stanley-1913-Aerolight-Transit-Thermal/dp/B0F5X3TN41",
+          "title": "Stanley 1913 Aerolight Transit Travel Mug 0.6L - Cream"
+        },
+        {
+          "asin": "B0F5X3TN41",
+          "url": "https://www.amazon.it/Stanley-Aerolight-Transit-Tazza-Termica/dp/B0F5X3TN41",
+          "title": "Stanley 1913 Aerolight Transit Tazza Termica - Mantiene Caldo ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 28,
+      "name": "Fitbit Charge 6",
+      "url": "https://www.amazon.it/gp/aw/d/B0CHN3W617?pd_rd_plhdr=t&hsa_cr_id=0&qid=1790893377&sr=1-1-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd&i=aps&aref=tgeBIbx86p&_encoding=UTF8&pf_rd_p=41e8a3c5-e87b-463e-a858-6f1bef3bbe93&pf_rd_r=TRKPD8V7RW2BR4BJFGD9&pd_rd_wg=TdEYJ&pd_rd_w=golzQ&content-id=amzn1.sym.41e8a3c5-e87b-463e-a858-6f1bef3bbe93%3Aamzn1.sym.41e8a3c5-e87b-463e-a858-6f1bef3bbe93&pd_rd_r=3b76322a-c389-4fcc-90e7-5feb5f21af8f&th=1&linkCode=ll2&tag=3gifts-21&linkId=07c65264eeac6e8adc2024d395bcd72f&ref_=as_li_ss_tl",
+      "asin": "B0CHN3W617",
+      "path": "/gp/aw/d/B0CHN3W617",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0CHN3W617?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B0CHN3W617",
+          "url": "https://www.amazon.it/Fitbit-Activity-tracker-abbonamento-batteria/dp/B0CHN3W617",
+          "title": "Google Fitbit Charge 6 Activity tracker con abbonamento ..."
+        },
+        {
+          "asin": "B0CHN3W617",
+          "url": "https://www.amazon.it/-/en/Fitbit-Activity-Membership-Included-Aluminium/dp/B0CHN3W617",
+          "title": "Google Fitbit Charge 6 Activity Tracker with 6 Month Premium ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 29,
+      "name": "RENPHO pistola massaggiante",
+      "url": "https://www.amazon.it/Staccabile-RENPHO-massaggianti-Massaggiatore-Percussione/dp/B0CFXHNMGH?dib=eyJ2IjoiMSJ9.XgyUokS4x6RYecZjYCHzVNzlfqQ-WipDcmOSzzzFcblXO8_3HA7nMNaHDssNJyJbeStzo5mUM6lwFxIkISLHD-ZyBcOM_JJayCvbwk_a8alSmGA_w__bHXPEUcS3nYmSd8jkY3EIx7Idb7PvtgFDTEZJwwPDwkYSWmtcqQawu2xKvsyCd4FZ-neFYAe8xurGTV-XBbKmMPgJReynV3j7-r7GsQM7YGZ4Z_hrhFUcvtApeGtd_y99laMmC5KSCYI1lCe6ZMQgjpfsNQZ3rp2yFYsk8Bnh8EwVJrvXxr54Bto.e-bl0puKQTwbw0CZigJ3SaeVO3ZuSRF7ZUjkDoMmhjA&dib_tag=se&keywords=RENPHO%2Bpistola%2Bmassaggiante&qid=1790893401&sr=8-6&ufe=app_do%3Aamzn1.fos.8a1562af-dabe-4f1d-8eb5-1ded1ace4ef7&th=1&linkCode=ll2&tag=3gifts-21&linkId=a92c8e1f194f64e00258f8d4cf0a848c&ref_=as_li_ss_tl",
+      "asin": "B0CFXHNMGH",
+      "path": "/Staccabile-RENPHO-massaggianti-Massaggiatore-Percussione/dp/B0CFXHNMGH",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0CFXHNMGH?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B0CFXHNMGH",
+          "url": "https://www.amazon.it/-/en/RENPHO-Muscle-Massage-Detachable-Handle/dp/B0CFXHNMGH",
+          "title": "RENPHO Reach Muscle Massage Gun with Detachable ..."
+        },
+        {
+          "asin": "B0CFXHNMGH",
+          "url": "https://www.amazon.it/Staccabile-RENPHO-massaggianti-Massaggiatore-Percussione/dp/B0CFXHNMGH",
+          "title": "RENPHO Reach Pistola Massaggio Muscolare con Manico ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 30,
+      "name": "Xiaomi Smart Band 10",
+      "url": "https://www.amazon.it/autonomia-ricarica-monitoraggio-benessere-resistente/dp/B0F2JHZCQQ?dib=eyJ2IjoiMSJ9.Rv89HemIgiJ9KjrnEnqELke0DpsFuh3jfQSeYy8JKuii-MOT1qbmqndHlflfAF678QSUWBBpMx00YbYeSVautb1LrScH0NnITRMoaW5tA31VJ7bq3bN_PSfAV2BxuA0j0IS4QaWbyYQTI1Mnc7iQWK4OoTnWB9mZ19ZdrwUVM-QfYpkN5En86WiU5doVhqdkwSHzL2JTSGhcAhU5GzyjxdeJd3WKUm9tMAETLjfbkaxt_g2WcqtR2GufawdDlGUq9G9r5fPPc93V_wsox1z45-YGX349x4Yl5IrMPIq8nXk.15miFd938vY4WrkNJw2GgIv7WjKgHVgNj7_mWHTY3hQ&dib_tag=se&keywords=Xiaomi%2BSmart%2BBand%2B10&qid=1790893422&sr=8-1-spons&aref=VYg2r46mmL&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll2&tag=3gifts-21&linkId=72da2400de33e2ad2efd5498a27b0be6&ref_=as_li_ss_tl",
+      "asin": "B0F2JHZCQQ",
+      "path": "/autonomia-ricarica-monitoraggio-benessere-resistente/dp/B0F2JHZCQQ",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0F2JHZCQQ?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B0F2JHZCQQ",
+          "url": "https://www.amazon.it/-/en/XIAOMI-Smart-Ceramic-Tracker-AMOLED/dp/B0F2JHZCQQ",
+          "title": "XIAOMI Smart Band 10 Ceramic Edition"
+        },
+        {
+          "asin": "B0F2JHZCQQ",
+          "url": "https://www.amazon.it/autonomia-ricarica-monitoraggio-benessere-resistente/dp/B0F2JHZCQQ",
+          "title": "XIAOMI Smart Band 10 Ceramic Edition"
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 31,
+      "name": "Winsor & Newton Cotman set acquerelli",
+      "url": "https://www.amazon.it/Winsor-Newton-acquerelli-confezione-tascabile/dp/B00004THXI?dib=eyJ2IjoiMSJ9.buRPBx897RBSzUO1Nr5SY1xrEs_ompVHjn0Ag6g_ujg_5uH-TKsPOkE5ncZXPkjpGQdNQHVxZvUtE9N5DFZAjAb2VaYMVbjZLBUc3AQL2Bro79bA_2w-bDQ2FfyuU7q2q4jTfQQcT1CwOQtmROMwimSjIS0NMztfQiwlscWSq-rApXUKaI5R0ARF0Vk1bE1lSO6Jd1VflWhs-s83v15TwqPbZilshl29qnxhJaoLArOc2XzwCV54U7Mzw8gJN1i8JgggSkMKl0C_2MQqBaT9b4gCYTWTjVyMe_54AdiZV_s.8MR8JCgfmLvv3yLEw6EHbj9G9X1xHh-ot4J1IewJCNY&dib_tag=se&keywords=Winsor%2B%26%2BNewton%2BCotman%2Bset%2Bacquerelli&qid=1790893443&sr=8-1&th=1&linkCode=ll2&tag=3gifts-21&linkId=c9909265539699e5c837620e9eed4210&ref_=as_li_ss_tl",
+      "asin": "B00004THXI",
+      "path": "/Winsor-Newton-acquerelli-confezione-tascabile/dp/B00004THXI",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B00004THXI?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B00004THXI",
+          "url": "https://www.amazon.it/Winsor-Newton-acquerelli-confezione-tascabile/dp/B00004THXI",
+          "title": "Winsor & Newton Set di Pittura Ad Acquerello, Confezione ..."
+        },
+        {
+          "asin": "B00004THXI",
+          "url": "https://www.amazon.it/-/en/Winsor-Newton-Watercolor-Sketchers-Multicoloured/dp/B00004THXI",
+          "title": "Newton Watercolor Paint Set, Pocket-Packed, Sketchers ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 32,
+      "name": "Faber-Castell Polychromos 24",
+      "url": "https://www.amazon.it/FABER-CASTELL-Matite-colorate-Polychromos-astuccio/dp/B0007OECK8?dib=eyJ2IjoiMSJ9.vjMZD9qyPKXU45rNSS1SN6TbbFjuPMC6qkLLQ1Ne6r_kyXJWBjJr0gco0eqQfHcqzifOZTlfupHkyNHyp6x2sQNOyZoHHWleQIjWeZbV0G8PuyBLAisDkLSJ52PfE-3tINdfI_siIabTEv2iBjIZ75vpyCTy6OPTlopw2aIYq-npVMegaDWi76EU-Xy8TEC-8kBPi7bRyX7S7tk9PaWhT58pDp0gGfCpd1jJeBr6NOhxxQDBYUq_d-hI_p9pNoWYV1iBzPCQH8lUt8iGVkJxMxbKkJuyuXd31E9Kx5wu9ng.kfRl-9xtUPubp3_TAT7pc4HQBPLrT039B8VqIZEVxtk&dib_tag=se&keywords=Faber-Castell%2BPolychromos%2B24&qid=1790893471&sr=8-1-spons&aref=RyZvLENYs2&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll2&tag=3gifts-21&linkId=dc855476b3eac7a996571849af9f1162&ref_=as_li_ss_tl",
+      "asin": "B0007OECK8",
+      "path": "/FABER-CASTELL-Matite-colorate-Polychromos-astuccio/dp/B0007OECK8",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0007OECK8?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B0007OECK8",
+          "url": "https://www.amazon.it/FABER-CASTELL-Matite-colorate-Polychromos-astuccio/dp/B0007OECK8",
+          "title": "FABER-CASTELL - Matite colorate Polychromos, set da 24 ..."
+        },
+        {
+          "asin": "B0007OECK8",
+          "url": "https://www.amazon.it/-/en/FABER-CASTELL-Polychromos-Coloured-Pencils-Colours/dp/B0007OECK8",
+          "title": "FABER-CASTELL Polychromos Coloured Pencils - Pencil Case"
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 34,
+      "name": "Cricut Joy",
+      "url": "https://www.amazon.it/Cricut-Bundle-Macchina-Progetti-Creativi/dp/B0GS6W8QQW?dib=eyJ2IjoiMSJ9.PaU9fc3ig7xsLPsPOxYFSEv-ddaHxgGpLxkkHaxgCcHR5bWuYKV3JKEHa50ojl3mVje1cSZiiH5wuy4ZNjoa6STCcof788kGBovShevM4LC2WHeUZv-70FsqP5j8oFgkrZfugHmDRuyB2Eay3GW3-k6qbqP--fuwaMvZxnOj9jFHSq1H861dUqJUxtNDteSsGc65FgpkWIvAA3Ri5sQ8IWetofVHCExsaXeZlwEV7MQT5BJyc0TOSFVpoPUaq5T_nZpqNbXtwb3YWX2K9rbsPCNarKEjothxtax_OlaCwJQ.IRC7u04nYZjNRCZZZsW8KTV01_4FJXVLRecSOA5HHqs&dib_tag=se&keywords=Cricut+Joy&qid=1790893499&sr=8-1&ufe=app_do%3Aamzn1.fos.f95648ba-9d41-4ef9-8db4-c5224b9750b7&linkCode=ll2&tag=3gifts-21&linkId=a470ce154aa0164ba16c588b3d853d8a&ref_=as_li_ss_tl",
+      "asin": "B0GS6W8QQW",
+      "path": "/Cricut-Bundle-Macchina-Progetti-Creativi/dp/B0GS6W8QQW",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0GS6W8QQW?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B0GS6W8QQW",
+          "url": "https://www.amazon.it/-/en/Cricut-Bundle-Cutting-Machine-Projects/dp/B0GS6W8QQW",
+          "title": "Cricut Joy Bundle Cutting Machine for Craft and DIY Projects ..."
+        },
+        {
+          "asin": "B0GS6W8QQW",
+          "url": "https://www.amazon.it/Cricut-Bundle-Macchina-Progetti-Creativi/dp/B0GS6W8QQW",
+          "title": "Cricut Joy Bundle, Macchina da Taglio per Progetti Creativi e ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 36,
+      "name": "Philips Hue Starter Kit",
+      "url": "https://www.amazon.it/Philips-Hue-lampadine-intelligenti-compatibili/dp/B0FJYGLGYC?dib=eyJ2IjoiMSJ9.waHqKBK5I84nXyML8iwAvwTD-Z4yf2ZQgP95cLkFbyOMwLdxnq7A_MVii0tPJawILrw26vIGY_KSRt2THgsZquSLnQl1PUJZQYcZ8ocprfaFjefM8etRF64PUU5gG22NtdemYEjTh4K7vIWtjqyFksF_7DFS-oSX85A2KoFObOZ5XoM-BQCDydMKhFdp81UtHpyWKNFbgRhsnm6to27gPUGkeDvZryGevv4PBimlkOsti_m_-Xqb-E4Oz1glUBLOP6eZOuH5nmmq1v_Oj1JGwrEtxNWe-8HZXN_ruiYhUgY.1nHhb6JYw0vUlju2LPJgGHFhw57w5wTefoyakrKnZRw&dib_tag=se&keywords=Philips%2BHue%2BStarter%2BKit&qid=1790893519&sr=8-6&ufe=app_do%3Aamzn1.fos.f95648ba-9d41-4ef9-8db4-c5224b9750b7&th=1&linkCode=ll2&tag=3gifts-21&linkId=cacd85913edaa9d2f3c029ca4424c45c&ref_=as_li_ss_tl",
+      "asin": "B0FJYGLGYC",
+      "path": "/Philips-Hue-lampadine-intelligenti-compatibili/dp/B0FJYGLGYC",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0FJYGLGYC?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B0FJYGLGYC",
+          "url": "https://www.amazon.it/-/en/Philips-Hue-Starter-Bridge-Button/dp/B0FJYGLGYC",
+          "title": "Philips Hue Starter Kit with Hub Bridge Pro, 3 x GU10 Smart Bulbs ..."
+        },
+        {
+          "asin": "B0FJYGLGYC",
+          "url": "https://www.amazon.it/-/en/Philips-Hue-Colorful-Compatible-Assistant/dp/B0FJYGLGYC",
+          "title": "Philips Hue Starter Kit with Hub Bridge Pro, 3 x GU10 Smart ..."
+        },
+        {
+          "asin": "B0FJYGLGYC",
+          "url": "https://www.amazon.it/Philips-Hue-lampadine-intelligenti-compatibili/dp/B0FJYGLGYC",
+          "title": "Philips Hue Starter Kit con Hub Bridge Pro, 3 lampadine smart ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 37,
+      "name": "LEGO Botanicals Orchidea",
+      "url": "https://www.amazon.it/LEGO-10311-tbd-5-2022/dp/B09BNV2Q49?dib=eyJ2IjoiMSJ9.lDLMY-b411hlpdyclNwekyr274yLsxMaQcf8-c1GJGPcbP6fIAg4YtFv4M31pQLCojuZufdh2SHYtXw9MMzChbosv6HBYG8COKoHhYqXXRcr3ZBiszLlveRGgnWS3XRHoHyyyYR3Up5tJjIGbuEcIpv_9WGoZYYCSKg2oHJ4zg2LACoh_LLiS3vaZLt4fgqRIsGI1Vtb2ngsqvaTOv1ipnieZkHXMsZcCk9Xwe-AAq5wcnXNr0Av4lNPcI5lmBf-TENXuxRx4YSOXNAr0kXa_iCagV0oBwozJCNl0c7Qauo.P1C9tC5N-bruTwXWa7s2pMTi0uTN1PAup_sf1KNIVUk&dib_tag=se&keywords=LEGO%2BBotanicals%2BOrchidea&qid=1790893537&sr=8-1&ufe=app_do%3Aamzn1.fos.8a1562af-dabe-4f1d-8eb5-1ded1ace4ef7&th=1&linkCode=ll2&tag=3gifts-21&linkId=930b874f07684612b8e4f04c4f358d23&ref_=as_li_ss_tl",
+      "asin": "B09BNV2Q49",
+      "path": "/LEGO-10311-tbd-5-2022/dp/B09BNV2Q49",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B09BNV2Q49?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B09BNV2Q49",
+          "url": "https://www.amazon.it/-/en/LEGO-Botanicals-Orchid-Artificial-Collectible/dp/B09BNV2Q49",
+          "title": "LEGO Botanicals Orchid 10311 | 608 Pcs Artificial Plant Pot ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 39,
+      "name": "Yankee Candle set regalo",
+      "url": "https://www.amazon.it/candele-profumate-Collezione-Inverno-perfetti/dp/B0H68SDQKP?dib=eyJ2IjoiMSJ9.Ol3Av0VA1LS-AHK8OHi-x8K5QfzpJnNWMD3ZC5qYLeVkZGZ_WQFLiZoDTQ1gbrI86JDlxwQnytvDGFo_ObA3Sl77Khwes5QAdvFzxkv7bJBMr4H-BKCQgZR7GNqijD0gSG21y-XA1dfLcP133pI2v7wRl2AiA1pd2hiLnF0r3WqbwbsH-k9efsc6we2Sv9Hheb9IHvEVZdPLn6AFBhGrct5pGxo6QyfIhfJcmyaEyE4Ksj0tbhN-PhPiYI81IIdqwf6-fMuvqXiVnZ1Mo2BjAgKeTGZsY8ikwDk4Kgb5wkI.DXXZ7fvXjPNPr2gyrdMAggG_8S93NRJDF-cQk3HMdeg&dib_tag=se&keywords=Yankee+Candle+set+regalo&qid=1790893558&sr=8-1-spons&aref=7oApeAwlyu&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&linkCode=ll2&tag=3gifts-21&linkId=2423a9cc2299355d89b1898ac6b758ca&ref_=as_li_ss_tl",
+      "asin": "B0H68SDQKP",
+      "path": "/candele-profumate-Collezione-Inverno-perfetti/dp/B0H68SDQKP",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0H68SDQKP?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B0H68SDQKP",
+          "url": "https://www.amazon.it/candele-profumate-Collezione-Inverno-perfetti/dp/B0H68SDQKP",
+          "title": "Yankee Candle Set regalo di candele profumate Natale | Collezione ..."
+        },
+        {
+          "asin": "B0H68SDQKP",
+          "url": "https://www.amazon.es/Yankee-Candle-Perfumadas-Colecci%C3%B3n-Perfectos/dp/B0H68SDQKP",
+          "title": "Yankee Candle Set de Velas Perfumadas de Navidad | Colección ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 40,
+      "name": "Kärcher WV 2",
+      "url": "https://www.amazon.it/Lavavetri-Aspiragocce-K%C3%A4rcher-Piastrelle-Induzione/dp/B075F78KDV?dib=eyJ2IjoiMSJ9.VMVY7sfNcGm_t48nGSgDA0pmDe1bYB4w7fhYPiGVUuGxqIvy54Gj3UaLxZDcYA3M6XtX02Gx7SK6q6zLuw-4HZt1Qgfy5l8iOxPaJHVxnRYma4i5ZsAl8MZaDiTNIsVwQGl0RSlZVqqQqIQp7X3xIMctL7SKdd75xHZ-uaMrvEKg3V4aD3G3vCbLxTQ8x9CS0NKDDgn6CNpn5Ug90RVy0pJs_rrQHAaHflZJR7NKvu0bYONlRHc9nkqriXs0tvemxCl0Rd_7ZHB082PG4yCu-OWMx8IaBYqRTRXsNqkKQj0.qDdaxGytvNq8XdRsdyONbN8aSc7QHagQR6mu8THy9qE&dib_tag=se&keywords=K%C3%A4rcher%2BWV%2B2&qid=1790893577&sr=8-1&ufe=app_do%3Aamzn1.fos.864f36ba-f2d2-48d5-beb3-144e2b968e56&th=1&linkCode=ll2&tag=3gifts-21&linkId=f5dab4db4687e37ae69223bd5ae52f14&ref_=as_li_ss_tl",
+      "asin": "B075F78KDV",
+      "path": "/Lavavetri-Aspiragocce-Kärcher-Piastrelle-Induzione/dp/B075F78KDV",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B075F78KDV?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B075F78KDV",
+          "url": "https://www.amazon.it/-/en/K%C3%84RCHER-Squeegee-Cleaning-Induction-Battery/dp/B075F78KDV",
+          "title": "KÄRCHER WV 2 Black Edition Squeegee for Cleaning Glass ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 41,
+      "name": "Casio Vintage A168",
+      "url": "https://www.amazon.it/Orologio-Uomo-Casio-Collection-A168WA-1YES/dp/B000LAKYW8?dib=eyJ2IjoiMSJ9.Zp_gheA0o54tt4tqf2oiNfdxSWSTpyR4DwIerrPBvXI7qgO0DZG2VWFp7v7arsyJ_2hgIs2jdHjCPc_Fgdo5FMPC7bs3D3juoogZeJPsPlu-tSmmbioFHYWNuyiLcbpuMxA7C3_o_ZrVRZ0u5b4oxaxVe7FoOla7fhD27utczCOkazkAoyKcgnvhiYWwvoPmAcUTB2Vm0ABQn8KW5ZwRxTgX52GnvTQeMBeHnJCkLjK8ahhlVPFOLWqqF9Sh_kWjk4l-zmoexKz_7y4pTCnh29obQKM0MG3xT4GbeDWeHwE.u5aCBDN2H5lz7wsT3H4Ps6mFFd1jLdPMw-9TXPK3rF4&dib_tag=se&keywords=Casio+Vintage+A168&qid=1790893598&sr=8-2&linkCode=ll2&tag=3gifts-21&linkId=454ad2c7dbd67b10757bc2e456632305&ref_=as_li_ss_tl",
+      "asin": "B000LAKYW8",
+      "path": "/Orologio-Uomo-Casio-Collection-A168WA-1YES/dp/B000LAKYW8",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B000LAKYW8?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B000LAKYW8",
+          "url": "https://www.amazon.it/Orologio-Uomo-Casio-Collection-A168WA-1YES/dp/B000LAKYW8",
+          "title": "Casio Collection Unisex Adults Watch A168WA - Amazon.it"
+        },
+        {
+          "asin": "B000LAKYW8",
+          "url": "https://www.amazon.it/-/en/Casio-A168WA-1YES-Unisex-Watch/dp/B000LAKYW8",
+          "title": "Casio Unisex Watch A168WA-1YES - Amazon.it"
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 42,
+      "name": "Remington Keratin Protect piastra",
+      "url": "https://www.amazon.it/Remington-Keratin-Ceramica-Cheratina-Mandorle/dp/B073ZGBKHW?dib=eyJ2IjoiMSJ9.eG9apntgWpZd4Kes5t4WBQueClWAyosA2LUl5UfyNm030a--R_ikF2qAmx13rhCP3u7NgmpoK4nGeCjftFHR-TTcITqd5AyFOyGMx7uHD-MFEjeJ0JG1JFCmi34QL_eBgVy6nEiKA6CBu3DKb0VSbHAwJdvrdrEleXOyybpLFq50Y52rzVWVbMLBT70g0DobVvq4eRSWK9tcShRXFPxHeVFkQ3SnsXDRr134Crt2LnSvPws00iu7kIgcEj1PXeOTA0s7SHapBgSkB_OSJWRCMadrCeOe3bR_BEUD5w_Kgrk.vK6G6_kyEEYdVeexwz01XGZYu__SzfzZ15IcZdx2tsc&dib_tag=se&keywords=Remington%2BKeratin%2BProtect%2Bpiastra&qid=1790893629&sr=8-6&ufe=app_do%3Aamzn1.fos.8a1562af-dabe-4f1d-8eb5-1ded1ace4ef7&th=1&linkCode=ll2&tag=3gifts-21&linkId=ff06e9b8cbce87b1912880e8a1c8eb28&ref_=as_li_ss_tl",
+      "asin": "B073ZGBKHW",
+      "path": "/Remington-Keratin-Ceramica-Cheratina-Mandorle/dp/B073ZGBKHW",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B073ZGBKHW?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B073ZGBKHW",
+          "url": "https://www.amazon.it/-/en/Remington-Keratin-Professional-Straightener-Protection/dp/B073ZGBKHW",
+          "title": "Remington Keratin Protect Professional Hair Straightener ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 43,
+      "name": "Philips OneBlade",
+      "url": "https://www.amazon.it/Regolabarba-lInnovativa-Regolabile-QP2734-30/dp/B0C815WY3Z/ref=sr_1_1?dib=eyJ2IjoiMSJ9.93GgUOWAYp5cj9FLLKxNdshmUEvpBtUvgWdT7rALBRXh4jEIzQvSDfcCfJ9DBRF3CBg3pOcf6law0YyhfyyGRAtNoHRtmW72VUMa3wk97pd0r8Fg905PAOLb_H0FjsxNrkV9P3k8th9NdkCD2y9u3O4TiX-vEMnBQuJzzMJ9tikP4dFJTrjohgNaYHr3KvwicurAlGFiyOpM0t7tolZ7YEO28U_zDWhgC67th6dWUc_mpz9DajRZEhC9cnuwmMROreasaR6Im-D9rGeM36TSUlaDfxe5YUnxkpcZeYsLjj8.xqG50hQAO5br-6vgde7WCH5hA8p3dSi72WeeL_3glC8&dib_tag=se&keywords=Philips+OneBlade&qid=1790893650&sr=8-1&ufe=app_do%3Aamzn1.fos.864f36ba-f2d2-48d5-beb3-144e2b968e56",
+      "asin": "B0C815WY3Z",
+      "path": "/Regolabarba-lInnovativa-Regolabile-QP2734-30/dp/B0C815WY3Z/ref=sr_1_1",
+      "tag": null,
+      "canonical": "https://www.amazon.it/dp/B0C815WY3Z?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B0C815WY3Z",
+          "url": "https://www.amazon.it/Regolabarba-lInnovativa-Regolabile-QP2734-30/dp/B0C815WY3Z",
+          "title": "Philips OneBlade 360 Face, Autentico Regolabarba e Rasoio ..."
+        },
+        {
+          "asin": "B0C815WY3Z",
+          "url": "https://www.amazon.it/-/en/Authentic-Innovative-Adjustable-QP2734-30/dp/B0C815WY3Z",
+          "title": "Philips OneBlade 360 Face, Authentic Electric Beard Trimmer and ..."
+        },
+        {
+          "asin": "B0C815WY3Z",
+          "url": "https://www.amazon.it/-/en/Regolabarba-lInnovativa-Regolabile-QP2734-30/dp/B0C815WY3Z/ref%3Dpd_aw_subss_m_sccl_1_3/000-0000000-0000000?pd_rd_i=B0C815WY3Z&pd_rd_r=25e465d4-d380-487d-9f92-b1de8ea2c609&pd_rd_w=Cm9cz&pd_rd_wg=C9KLy&psc=1",
+          "title": "Philips OneBlade 360 Face, Authentic Electric Beard Trimmer and ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": true
+    },
+    {
+      "id": 48,
+      "name": "KONG Classic",
+      "url": "https://www.amazon.it/KONG-resistente-Masticare-inseguire-riportare/dp/B0002AR15U?dib=eyJ2IjoiMSJ9.UsXc8ghsW6eKIeq7lZpMGLqK_0mOH6Xt3Edxu3-Tqa6TpOvflUNJ7zoGCs0_h67EbgH65QCBo8YgJ91MHULWT9bVQNXmeD8T0i0rP-5pazPy0DDzOBXy3FpQajz8ITW8B7e6UUO_iYQPDGDPBcusTDObsz-ui42PFfAi3N9vKOhdZ_e5SGpqa6luvZuXO1R6Nd-hUl2xDzMIf8ZPndcX7sZCX51Iqs2iQJr6ewxfp8aHSitcXxM7TTrOYgNQbm4AvoS0r6InpHetoyCXBwWPc2X5e2D5_k9P9SP_Fl_q1B8.NUuuRjzy_NlOFm7Zj6B6ytJuCHzSFbu48f7xoAgbpCg&dib_tag=se&keywords=KONG%2BClassic&qid=1790893742&sr=8-1&th=1&linkCode=ll2&tag=3gifts-21&linkId=4c4b3e244210a8fe5a4595d39d7c42be&ref_=as_li_ss_tl",
+      "asin": "B0002AR15U",
+      "path": "/KONG-resistente-Masticare-inseguire-riportare/dp/B0002AR15U",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0002AR15U?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B0002AR15U",
+          "url": "https://www.amazon.it/-/en/KONG-Classic-Chew-Dogs-Small/dp/B0002AR15U",
+          "title": "KONG Classic Chew Toy for Dogs, Small | Red Natural Rubber ..."
+        },
+        {
+          "asin": "B0002AR15U",
+          "url": "https://www.amazon.it/KONG-resistente-Masticare-inseguire-riportare/dp/B0002AR15U",
+          "title": "KONG Classic Giocattolo da Masticare Riempibile per Cani ..."
+        },
+        {
+          "asin": "B0002AR15U",
+          "url": "https://www.amazon.it/-/en/KONG-Classic-Stuffable-Dog-Toy/dp/B0002AR15U?content-id=amzn1.sym.4dca35fa-dfa3-4fcb-9ffe-1a5b1a54acf3&pd_rd_i=B0002AR15U&pd_rd_r=8275fd22-60c8-46cc-b204-91dd3d26b863&pd_rd_w=eSnKc&pd_rd_wg=Fzzho&pf_rd_p=4dca35fa-dfa3-4fcb-9ffe-1a5b1a54acf3&pf_rd_r=TW3KG2KNHQ0BEVE5MDYG&ref_=Oct_d_obs_d_13369983031_1",
+          "title": "KONG Classic Chew Toy for Dogs, Small | Red Natural Rubber ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 50,
+      "name": "National Geographic binocolo 10x42",
+      "url": "https://www.amazon.it/National-Geographic-Binocolo-filettatura-cavalletto/dp/B09LMD1XQL?dib=eyJ2IjoiMSJ9.gMaHKYhjBCUI4ZtDDcExZd87pJwYfCZwbihgxAbspYsStlTm2S8dbj5MnZcIyo9Hry7yeQiektYofJWQqBqas4EdOS2BOqBYb0EDoCxvOhNfxkD_zPXIyJvTYsjyxuAJX1Cn6P_wADxoAY58M4It06KDSja-faF9d_gDOvZJ5gN0-inHnRZfq2ikHiaBhnxwTgEeADuMKeRxdYrQU1JPQNfQYbj7MS6dskbSkgGC9sUqOPfJbnP3MSzaVnmwKXyigrCdcsxmt9yq26Jq-2gm-Am-cuMMt8lrQd0pwDWna1c.yqMphBvlxNEeI_R6x8-MOmuYgIh9nB7TYOeeuenmiTw&dib_tag=se&keywords=National+Geographic+binocolo+10x42&qid=1790893774&sr=8-1-spons&ufe=app_do%3Aamzn1.fos.fca66a76-6518-40f2-959f-2dca30e9c5d1&aref=konziXoil9&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&linkCode=ll2&tag=3gifts-21&linkId=2012d7403faca41f32b15636567659b6&ref_=as_li_ss_tl",
+      "asin": "B09LMD1XQL",
+      "path": "/National-Geographic-Binocolo-filettatura-cavalletto/dp/B09LMD1XQL",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B09LMD1XQL?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B09LMD1XQL",
+          "url": "https://www.amazon.it/National-Geographic-Binocolo-filettatura-cavalletto/dp/B09LMD1XQL",
+          "title": "National Geographic Binocolo 10 x 42 Explorer con custodia ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 51,
+      "name": "Catan",
+      "url": "https://www.amazon.it/Giochi-Uniti-Relaunch-Giocatori-Edizione/dp/B0FCSL3QS4?dib=eyJ2IjoiMSJ9.2Kuh2e6vyvJVQgx13fapdlciYi6YOUjQhSeIDBrQMdxn5lbCRgZUAlPzbrIMBrBiuyqye3_jUu36lYG808ztNucSDRyuij2QacXPUeMV-1guUEaiZCgufdB-Kzt1dfjCw0S8--Sk9GLCSecIgX77rqISsBhJnDoCNhWgDlA8e-ISxc1zespiR6O6d6107xiQ-6Z6XTwMt85lRk8tec_cPFRfB7uTjILf5q0j1_SAvsFC2po6Qn9f2TUSj2ZQBipcWAG_Ud_sGoW8ZdpRFyYHe75ppll2nO8OpHaq97ZXjwI.IQ9Cxa-k63BdVhATBgC7DAqsMG6AyvtAInICgqOUHhg&dib_tag=se&keywords=Catan&qid=1790893795&sr=8-1&ufe=app_do%3Aamzn1.fos.8a1562af-dabe-4f1d-8eb5-1ded1ace4ef7&th=1&linkCode=ll2&tag=3gifts-21&linkId=d43043d3b5e3f3f19e7e65389fb79dfa&ref_=as_li_ss_tl",
+      "asin": "B0FCSL3QS4",
+      "path": "/Giochi-Uniti-Relaunch-Giocatori-Edizione/dp/B0FCSL3QS4",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0FCSL3QS4?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B0FCSL3QS4",
+          "url": "https://www.amazon.it/-/en/Giochi-Uniti-Relaunch-Players-Italian/dp/B0FCSL3QS4",
+          "title": "Giochi Uniti - CATAN Relaunch: Base Game - Amazon.it"
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 52,
+      "name": "LEGO Icons Bonsai",
+      "url": "https://www.amazon.it/LEGO-Artificiali-Costruzione-Mattoncini-Decorazioni/dp/B08G4PCG8F?dib=eyJ2IjoiMSJ9.Thy22i4vpDXlGmQoZXmyCtGqvA_ZuLlMZot2DcuFlHGoX0SCx09XE2JtQjQhOmYbdPM6TVjv_-f_DjmgJkJJt_E2puZEdhBb4olSfoNg69fIKTi4WGapvZtY6e46gS5SYKa-E7Twx9tP_hRCtHURCju0UCg8dDckdgaH79IDuvYef3HXveuR1CnBCK1dz0UBqTWiIPrfTRAYGLqrazELhRj59VdYI4OVHirh7g2bBSXCfqUNSDwRPLvouUDztmJ91JlzRLoiavSpqoI_YdK5ZLGyuMuDKy6IG9S0mDjCHBU.-iHUVifZ0peyxvN76UvU8R0_XFIfk9WJUiJWmZMbgyk&dib_tag=se&keywords=LEGO%2BIcons%2BBonsai&qid=1790893816&sr=8-1&th=1&linkCode=ll2&tag=3gifts-21&linkId=eceee172e1a00089414683f4d034f8ed&ref_=as_li_ss_tl",
+      "asin": "B08G4PCG8F",
+      "path": "/LEGO-Artificiali-Costruzione-Mattoncini-Decorazioni/dp/B08G4PCG8F",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B08G4PCG8F?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B08G4PCG8F",
+          "url": "https://www.amazon.it/-/en/LEGO-Botanicals-Bonsai-Tree-Artificial/dp/B08G4PCG8F",
+          "title": "LEGO Botanicals Bonsai Tree 10281 | 878 Pieces Set for ..."
+        },
+        {
+          "asin": "B08G4PCG8F",
+          "url": "https://www.amazon.it/LEGO-Artificiali-Costruzione-Mattoncini-Decorazioni/dp/B08G4PCG8F",
+          "title": "LEGO Botanicals Albero Bonsai 10281 | Set per adulti, kit di ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 53,
+      "name": "Ravensburger puzzle 1000 pezzi",
+      "url": "https://www.amazon.it/Ravensburger-12000582-Ciliegi-puzzle-ragazzi/dp/B0CQ87ZST1?dib=eyJ2IjoiMSJ9.4MZDsvtoBeoFsXL_yY7arTUS5QLvpx2HpFjNx3u2UbBrqIKSGkpGB1tZViMzJ-gKqMcAeT7nW-ZUOm_FmSkTBUcCEKNx41j0rYLluVH3GVRrA185J2Zd-TIo3AFE7JErX6_3fpUu_z6RgGnQ72u99iDk1GSNUfvTUJ9bKqniLim7nOT6WfnO4XXwwwPfG99K6QS5LtyZ94op4lnHJFmOJiRqPmqoGCojoWC4JJT-u75B_diMnipn5HKV8ec5p5MzSgPieuQii7MEoKV1KFSb_nqf9Oqz_eq-fjmBEQ9bP48.pABupnfikMDB9KCU_foMaX9BjJTCDOpdLQdoRlMIUhI&dib_tag=se&keywords=Ravensburger%2Bpuzzle%2B1000%2Bpezzi&qid=1790893841&sr=8-1-spons&aref=HGcW6MT7Ha&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll2&tag=3gifts-21&linkId=21094f994e774f483df3a385340419ff&ref_=as_li_ss_tl",
+      "asin": "B0CQ87ZST1",
+      "path": "/Ravensburger-12000582-Ciliegi-puzzle-ragazzi/dp/B0CQ87ZST1",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0CQ87ZST1?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B0CQ87ZST1",
+          "url": "https://www.amazon.it/Ravensburger-12000582-Ciliegi-puzzle-ragazzi/dp/B0CQ87ZST1",
+          "title": "Puzzle 1000 pezzi foto, formato 70x50 cm, per adulti dai 14 ..."
+        },
+        {
+          "asin": "B0CQ87ZST1",
+          "url": "https://www.amazon.it/-/en/Ravensburger-Pieces-Cherry-Jigsaw-Puzzle/dp/B0CQ87ZST1",
+          "title": "1000 Pieces Cherry and Mount Fuji Jigsaw Puzzle for Adults 70 ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 55,
+      "name": "Funko Pop! Marvel",
+      "url": "https://www.amazon.it/Funko-Spider-Man-Day-Specificato-standard/dp/B0FPMXT2H1?dib=eyJ2IjoiMSJ9.Y9aFCnP-9w9_yQda2kjs1cAb1HTDAiWudzdfGCWliebGBdJ5OD1GZkEpVIqjpF2C32V0rrmU2m350HkDZdUZikEB9P70Rfff1SsWmpiMQaZ96VfbW1q8FJSyTStyCflX5XcOx36rGigzD-yxeQUB0h6FUFNyCeEGJQ0eNt-eI0HFtK4ij0aj4P-_Gqaag_1ONH1V7VN71-Ti9TzSD7FOPh1zF4owJdK4dCJcY1b8kBPglUFGjxC7DIfNrEtkYLtqHlbu2C_an2LrZ-k6PMtsLAlAK5XCxgmDAmtd2_kamU4.8_dlAZ1qu2GDzj_0pok-NDYzgoyhiR3Isx_EvDwVqHo&dib_tag=se&keywords=Funko+Pop%21+Marvel&qid=1790893931&sr=8-1&linkCode=ll2&tag=3gifts-21&linkId=e09c93aba2060efede42cd285d646eeb&ref_=as_li_ss_tl",
+      "asin": "B0FPMXT2H1",
+      "path": "/Funko-Spider-Man-Day-Specificato-standard/dp/B0FPMXT2H1",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0FPMXT2H1?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B0FPMXT2H1",
+          "url": "https://www.amazon.it/Funko-Spider-Man-Day-Specificato-standard/dp/B0FPMXT2H1",
+          "title": "Funko POP! Marvel: Spider-Man Brand New Day"
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 56,
+      "name": "Moleskine Smart Writing Set",
+      "url": "https://www.amazon.it/Moleskine-Writing-Notebook-Taccuino-Digitale/dp/B09T3HXC74?dib=eyJ2IjoiMSJ9.LYtlJoZALF7y7MBoch6OVUquUyyqrj7HqoqOFvaQLD0CL0TLDVMaZ6Fs5G2rQJeDwsU0_m41nQFNJGAKygATjkTkamzYUqk2doqeV1o51EXDUi2x-zPaU_bWHR6xShhtD33bgjJCJ-M-D513efd29TlwQgN4fM80f5x3qtqRY9unCnRfFfdXijaBlH-oijA8IlVjjQas__xj1fU-RDCituNC0wMb19WnybUkg0frLGx5K4STc-9fb4k3-0nvJ2cVLVtH9zRlw12qvPCzWNdqpdxMBaCgR1BPDkUKvNDduBc.KiEUPhBloYOuTTKVWbXmeE_NH-WqD0_Ghzi3w-EU0yQ&dib_tag=se&keywords=Moleskine%2BSmart%2BWriting%2BSet&qid=1790893950&sr=8-1&ufe=app_do%3Aamzn1.fos.f95648ba-9d41-4ef9-8db4-c5224b9750b7&th=1&linkCode=ll2&tag=3gifts-21&linkId=79ce8cbc298195fd0e655a2dcd81de99&ref_=as_li_ss_tl",
+      "asin": "B09T3HXC74",
+      "path": "/Moleskine-Writing-Notebook-Taccuino-Digitale/dp/B09T3HXC74",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B09T3HXC74?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B09T3HXC74",
+          "url": "https://www.amazon.it/Moleskine-Writing-Notebook-Taccuino-Digitale/dp/B09T3HXC74",
+          "title": "Moleskine Smart Writing Set, Smart Notebook con Smart Pen ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 57,
+      "name": "Rocketbook Core",
+      "url": "https://www.amazon.it/Rocketbook-Quaderno-Spirale-Riutilizzabile-Executive/dp/B0F74N1B5B?dib=eyJ2IjoiMSJ9.jLq5Bok884Y6C70rBlzK8cKPlLE01PiTB8dkZYYenwLhTHRaxlfV-0asqtv8ypM3ADZ-R62CbbwNf2j-I6NlPg9m9srQ6P2fFbmrv6hr5oF2LruNJWu9iIS7f3GNgT4OeQ6jD8w3iR_7kXq-bS1oU2i9p5e-r5GbZpUbDCMuXiPEyj5ZLmcgOw1ZlrU2u90gxgapsce5zmnmnsCkZiOcO0ZPllRPcCW9lOf_QPO40M9C87tiV3CSj3Yn29LzupgqhmpGnF-k8xPnaPrl6w83k3NoRAbia1VmFlI3BxuVILA.VCBHh82P13wZ3l0GiXbZO6GdeSK2mi0Lm_Dv_5DB-NU&dib_tag=se&keywords=Rocketbook%2BCore&qid=1790893975&sr=8-1&th=1&linkCode=ll2&tag=3gifts-21&linkId=1be2e415a8941c3aa904a26994897cd6&ref_=as_li_ss_tl",
+      "asin": "B0F74N1B5B",
+      "path": "/Rocketbook-Quaderno-Spirale-Riutilizzabile-Executive/dp/B0F74N1B5B",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0F74N1B5B?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B0F74N1B5B",
+          "url": "https://www.amazon.it/-/en/Rocketbook-Reusable-Spiral-Notebook-Executive/dp/B0F74N1B5B",
+          "title": "Rocketbook Core Reusable Spiral Notebook, Executive Format ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 59,
+      "name": "Kindle Scribe",
+      "url": "https://www.amazon.it/kindle-scribe-2024/dp/B0CZ9T8H8N?dib=eyJ2IjoiMSJ9.z3lvro3mr-YQtSadv7ZAhP9b-sQruX2QtYZGXy2nEVLSOGGfWGRQY-CjjoPCcoSXyPbVfAmFtpbHnzWn3h0yM5hFlF93NB6SI0YpaN0VVuuwTFmlvrBEqmGbUZTYxLy8BHLtwfn7CXXa3JLqdoyHob_8XytPGeQq_thqTIxIQCeTZGzCuxF7cgVmwPzkZXLyZlmtUGfgYB37bL265bIQHtkDcHAdR6nhBtyknJTV6JqT6Ks_ulmXYdS3_5qzxXJ8VpakYilgI3Av6poKPeAzNSR2UfZs3xiQVD-LEFUuNd0.NzYGZmUDwJoBkXsUxVeu4K2T6nWveE8DBHngDj30R4g&dib_tag=se&keywords=Kindle%2BScribe&qid=1790894021&sr=8-1&ufe=app_do%3Aamzn1.fos.7cf526d8-b33c-4cc8-8e05-b9df5480d46b&th=1&linkCode=ll2&tag=3gifts-21&linkId=a7ae387027c31a1cee3112cfb5f34461&ref_=as_li_ss_tl",
+      "asin": "B0CZ9T8H8N",
+      "path": "/kindle-scribe-2024/dp/B0CZ9T8H8N",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0CZ9T8H8N?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B0CZ9T8H8N",
+          "url": "https://www.amazon.it/-/en/New-Amazon-Kindle-Scribe-Redesigned/dp/B0CZ9T8H8N",
+          "title": "New Amazon Kindle Scribe"
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 244,
+      "name": "SanDisk Ultra Dual Drive Go 128 GB USB-C e USB-A",
+      "url": "https://www.amazon.it/SanDisk-reversible-connectors-smartphones-computers/dp/B07YYJRXQR?dib=eyJ2IjoiMSJ9.xa2Rgdjk2sc8JMa9JyriVxkxnueN35Q0LPheuLfil6BZlnYQa7-T32VWNpCbybX-o7uYHIr-qea0UuJDwB2yf-KrJd0Ih6L_AEYSaMjwapqQkCf3tyQwH8be9tmiunJawU65eCedXbJHUv7vNwBLqw.OhgHDNK9fff3gFQQ0m6gH1q67KasZr3_xEo4k6knpQc&dib_tag=se&keywords=SanDisk%2BUltra%2BDual%2BDrive%2BGo%2B128%2BGB%2BUSB-C%2Be%2BUSB-A&qid=1790894060&sr=8-1&ufe=app_do%3Aamzn1.fos.864f36ba-f2d2-48d5-beb3-144e2b968e56&th=1&linkCode=ll2&tag=3gifts-21&linkId=3fd43b16b41b13ce11041de7bddf1b03&ref_=as_li_ss_tl",
+      "asin": "B07YYJRXQR",
+      "path": "/SanDisk-reversible-connectors-smartphones-computers/dp/B07YYJRXQR",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B07YYJRXQR?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B07YYJRXQR",
+          "url": "https://www.amazon.it/SanDisk-reversible-connectors-smartphones-computers/dp/B07YYJRXQR",
+          "title": "SanDisk Ultra Dual Drive Go 128GB Unità Flash"
+        },
+        {
+          "asin": "B07YYJRXQR",
+          "url": "https://www.amazon.it/-/en/SanDisk-Reversible-Connectors-Smartphone-Computer/dp/B07YYJRXQR",
+          "title": "SanDisk Ultra Dual Drive Go 128GB Flash Drive ... - Amazon.it"
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 245,
+      "name": "Logitech G240 tappetino gaming in tessuto",
+      "url": "https://www.amazon.it/Logitech-Ottimizzato-Moderato-Antiscivolo-Accessori/dp/B07W6JPM9P?dib=eyJ2IjoiMSJ9.2F8-Ms2zZS5NDR2p6wuzAuCmvH3cfOu7JEV9ebHVbx4zylsaXjNLNoJOYqb5WT3Dd5UaUO7lnMNSnkrXOmmd5XMKfpX8J22PtWlzyeLq7wJPHEkkCnazR8_rkxlP2rFcgOrAXcQ9DCZD4lsJ5zJIoJ6nqLPNXqja1krCMPUt4RSjYrKn6fuUSo-qE-0y9Vhk57IOAaD7pNkHcA_dI0XJFKWg6xB91_BlysrWavU3jV7TqKSLjO8uqY-5ZvUiQR_65k1U61mIlFQnjiHwBkM5pC4YYko38MvOo3mup4Je2Es.CMv_4htxbfByK4FOYT24B6hDozcXKXe0j8CerYM0sos&dib_tag=se&keywords=Logitech%2BG240%2Btappetino%2Bgaming%2Bin%2Btessuto&qid=1790894080&sr=8-1&th=1&linkCode=ll2&tag=3gifts-21&linkId=c1292ff275d2244566cfae9f2872670d&ref_=as_li_ss_tl",
+      "asin": "B07W6JPM9P",
+      "path": "/Logitech-Ottimizzato-Moderato-Antiscivolo-Accessori/dp/B07W6JPM9P",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B07W6JPM9P?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B07W6JPM9P",
+          "url": "https://www.amazon.it/Logitech-Ottimizzato-Moderato-Antiscivolo-Accessori/dp/B07W6JPM9P",
+          "title": "Logitech G240 Gaming Mouse Pad in tessuto, morbida"
+        },
+        {
+          "asin": "B07W6JPM9P",
+          "url": "https://www.amazon.it/-/en/Logitech-Ottimizzato-Moderato-Antiscivolo-Accessori/dp/B07W6JPM9P/ref%3Dpd_aw_sim_m_sccl_3_2/000-0000000-0000000?content-id=amzn1.sym.f4789138-e493-48c7-8f36-1fa5cb88214f&pd_rd_i=B07W6JPM9P&pd_rd_r=16944a2c-1ab7-4ec9-88a1-d63de30c6afb&pd_rd_w=NX5u2&pd_rd_wg=JRHPf&pf_rd_p=f4789138-e493-48c7-8f36-1fa5cb88214f&pf_rd_r=1H3C7JJ4GKXRHDBDS09Y&psc=1",
+          "title": "Logitech G240 Gaming Mouse Pad, Fabric, Soft"
+        },
+        {
+          "asin": "B07W6JPM9P",
+          "url": "https://www.amazon.it/-/en/Logitech-G240-Gaming-Fabric-Mouse/dp/B07W6JPM9P",
+          "title": "Logitech G240 Gaming Mouse Pad, Fabric, Soft"
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 246,
+      "name": "TP-Link UB500 adattatore Bluetooth USB",
+      "url": "https://www.amazon.it/TP-Link-Adattatore-Trasferimento-Altoparlanti-Compatibile/dp/B098K3H92Z?dib=eyJ2IjoiMSJ9.ng50mDsmJz62SfGDE1xoi3qHtVsw7JckgkmsIKUhjq93lYXxyL3jbSs-MgSCXUI55ReHVGzmB1p0-S7cZOJLCNnVd27ImrNmLtdkGICUWL2c2NN9keJi7PH18OeQoLdsJxAjPJeVpvT9ewKbdsoo5jx2gk9R76qR310DRJNReeRnYYvPDkX_elmA-YpDN5NuySWhHkpZuXIisVkFJNx9dIgOqfZahF_kJ2VfKbP5hp3bFHjB31U09XI5yeGgySt7Mat4vu2HthgcXM58oaq7OwNEatkknZ3BiBGSfPn78Ws.rhFVM5ibvkLcpcIr9erg08mGe2nNLJd2NacW_NyulI0&dib_tag=se&keywords=TP-Link%2BUB500%2Badattatore%2BBluetooth%2BUSB&qid=1790894101&sr=8-1&th=1&linkCode=ll2&tag=3gifts-21&linkId=ea3593f24e306bb8c9bc96170e7254c7&ref_=as_li_ss_tl",
+      "asin": "B098K3H92Z",
+      "path": "/TP-Link-Adattatore-Trasferimento-Altoparlanti-Compatibile/dp/B098K3H92Z",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B098K3H92Z?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B098K3H92Z",
+          "url": "https://www.amazon.it/TP-Link-Adattatore-Trasferimento-Altoparlanti-Compatibile/dp/B098K3H92Z",
+          "title": "TP-Link UB500 Chiavetta Bluetooth per PC Adattatore USB 5.4 ..."
+        },
+        {
+          "asin": "B098K3H92Z",
+          "url": "https://www.amazon.it/-/en/TP-Link-UB500-Bluetooth-Wireless-Adapter/dp/B098K3H92Z",
+          "title": "TP-Link UB500 Bluetooth Flash Drive for PC USB 5.4 Nano ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 247,
+      "name": "Anker 511 Nano 3 caricatore USB-C 30 W",
+      "url": "https://www.amazon.it/Caricabatterie-Anker-rapido-iPhone-incluso/dp/B0B2VQ462Z/ref=sr_1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1W2SI4ZGKJ5PF&dib=eyJ2IjoiMSJ9.TJ2qtmVD9oyCKbIQiX6tVxON4tZEtb-IZAuhcEDbEZb4USkvJaDCSQC8F-DUjkL1IEXS-imCeTsoH92gCFwK4bmAS5yFcD1TQptOQg0kWGa2Gjx-7GKWAwJD4rp9jO-hT5k0aXWWm7B_LpSIcKhd0T3CztIp-JraipcGeMHWhbS2Y-rKeAy1wPUVXhq93p9_ukUDdJ-Ow-3AisUUGfcrqNVfjBGlHUPjTMpjiyTrkArOTY_ripEEo5kn6ejkDNiQk9EYrOQ7KY2mPxHKYSaWiSBjeF3Yn2JiDkhQmIrxavU.kZkKf6sb6uUW2plv0OFffaoRwRCxOOI53vuh6OS5UmI&dib_tag=se&keywords=Anker%2B511%2BNano%2B3%2Bcaricatore%2BUSB-C%2B30%2BW&qid=1790894182&sprefix=anker%2B511%2Bnano%2B3%2Bcaricatore%2Busb-c%2B30%2Bw%2Caps%2C196&sr=8-1&th=1",
+      "asin": "B0B2VQ462Z",
+      "path": "/Caricabatterie-Anker-rapido-iPhone-incluso/dp/B0B2VQ462Z/ref=sr_1_1",
+      "tag": null,
+      "canonical": "https://www.amazon.it/dp/B0B2VQ462Z?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B0B2VQ462Z",
+          "url": "https://www.amazon.it/Caricabatterie-Anker-rapido-iPhone-incluso/dp/B0B2VQ462Z",
+          "title": "Anker Caricatore iPhone USB C GaN 30W 511"
+        },
+        {
+          "asin": "B0B2VQ462Z",
+          "url": "https://www.amazon.it/-/en/Anker-USB-iPhone-Charger-Nano/dp/B0B2VQ462Z",
+          "title": "Anker USB C GaN 30W 511 iPhone Charger"
+        },
+        {
+          "asin": "B0B2VQ462Z",
+          "url": "https://www.amazon.it/-/en/Caricabatterie-Anker-rapido-iPhone-incluso/dp/B0B2VQ462Z/ref%3Dpd_aw_subss_m_sccl_1_1/000-0000000-0000000?pd_rd_i=B0B2VQ462Z&pd_rd_r=95228160-d4be-45ae-9080-2499bfe69366&pd_rd_w=MXBNT&pd_rd_wg=Br9BZ&psc=1",
+          "title": "Anker USB C GaN 30W 511"
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": true
+    },
+    {
+      "id": 248,
+      "name": "UGREEN cavo USB-C a USB-C 100 W in nylon 2 m",
+      "url": "https://www.amazon.it/UGREEN-Ricarica-Compatible-MacBook-Dispositivi/dp/B07V7MY46W?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2G0S14HKQG8QU&dib=eyJ2IjoiMSJ9.0udxr-Y9wNoiORhx3bd1gezdhXqaCLvjqgMjSRo9iz15VScp5aqFN5FkOdZdaNAecInHQUu1DoiQiJc1fw4s-M5Pl-ZUgGfoRehSpoe13UqoUZp0ixWmgVfBq1kvtrAtbBcso22fPSGv_RZpZiji6cowG0bHX0b0PcZtqUO7zqrIvNTNrjBejDQ2Nh3HJODKgJ8ApR_pYsUSuP1gI2QglJxivVWAmFw8kjkhTAr0gv0CWy4W7ztln8pcZGT8Z0xZa8wp1dSC_9WHmFbmwDyGqpM1o5T6EeGBPJLZww-owOQ.-U4ytBOkfOudgyTFA526WJYEhmEFdNjpWxJj1uckBpI&dib_tag=se&keywords=UGREEN%2Bcavo%2BUSB-C%2Ba%2BUSB-C%2B100%2BW%2Bin%2Bnylon%2B2%2Bm&qid=1790894215&sprefix=ugreen%2Bcavo%2Busb-c%2Ba%2Busb-c%2B100%2Bw%2Bin%2Bnylon%2B2%2Bm%2Caps%2C169&sr=8-1&th=1&linkCode=ll2&tag=3gifts-21&linkId=50ee1b0d59b4669ae5ddd851a6f31941&ref_=as_li_ss_tl",
+      "asin": "B07V7MY46W",
+      "path": "/UGREEN-Ricarica-Compatible-MacBook-Dispositivi/dp/B07V7MY46W",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B07V7MY46W?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B07V7MY46W",
+          "url": "https://www.amazon.co.uk/UGREEN-Braided-Delivery-Compatible-MacBook/dp/B07V7MY46W",
+          "title": "UGREEN USB C to USB C 100W Braided Charging Cable, 2M"
+        },
+        {
+          "asin": "B07V7MY46W",
+          "url": "https://www.amazon.ca/UGREEN-Delivery-Ladekabel-Schnellladekabel-kompatibel/dp/B07V7MY46W",
+          "title": "UGREEN USB C auf USB C Kabel 100W Power Delivery Ladekabel ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 253,
+      "name": "Il vecchio e il mare — Ernest Hemingway, ISBN 9788804613121",
+      "url": "https://www.amazon.it/vecchio-mare-Ernest-Hemingway/dp/8804613122?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2PQ5V5GJ5QIAZ&dib=eyJ2IjoiMSJ9.zRsWwc6irR17FADKydzDWA.Xvy5fbwj5I1k46VKZAdeCBb0dTM7vqcBScyQlE_Ztk4&dib_tag=se&keywords=Il+vecchio+e+il+mare+%E2%80%94+Ernest+Hemingway%2C+ISBN+9788804613121&qid=1790894269&sprefix=il+vecchio+e+il+mare+ernest+hemingway%2C+isbn+9788804613121%2Caps%2C189&sr=8-1&linkCode=ll2&tag=3gifts-21&linkId=53012a1570f5fb08cd7572983426b6b8&ref_=as_li_ss_tl",
+      "asin": "8804613122",
+      "path": "/vecchio-mare-Ernest-Hemingway/dp/8804613122",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/8804613122?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "8804613122",
+          "url": "https://www.amazon.it/vecchio-mare-Ernest-Hemingway/dp/8804613122",
+          "title": "Il vecchio e il mare : Hemingway, Ernest, Pivano ... - Amazon.it"
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 254,
+      "name": "Lo Hobbit — J.R.R. Tolkien, Bompiani, edizione italiana",
+      "url": "https://www.amazon.it/Hobbit-viaggio-inaspettato-John-Tolkien/dp/8845268349?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3GY0PVKTX98J6&dib=eyJ2IjoiMSJ9.QhLMqR3GtxnLueCpeV7dBWANKl0gMtzYrSY7gTaKpbi9JRP5sv1XQ9gaRGRrGkyG8ctFNEiT_OGxurea0mCnoAWrycWRjXSNetxgQdFJZIsf4gyfIng_8NGP2eZfflQkx9P3odMKMTpFrvKzRAT1frThJpsrwtNgtVuVPIXDHUb2dULnieQB_DUatOeMjcExdUY61zjuUq9sOL2Cpg4B4fX0ZS6yWG5Lk2Ic7eVRY7rTcQfNeS1T_QnjzwviD9flaBAOSXF46_gABMfRgSD5EjO2apudEHUvqCpHDOMPfxg.u1FHXFyWI2qrwXOfLoMDB1EDDnX2Fml_9mmOeZlFNGs&dib_tag=se&keywords=Lo+Hobbit+%E2%80%94+J.R.R.+Tolkien%2C+Bompiani%2C+edizione+italiana&qid=1790894303&refinements=p_n_feature_browse-bin%3A15422327031&rnid=509815031&sprefix=lo+hobbit+j.r.r.+tolkien%2C+bompiani%2C+edizione+italiana%2Caps%2C174&sr=8-1&linkCode=ll2&tag=3gifts-21&linkId=b1f7cf060c4e0cdfc6d8c8f413cbfde4&ref_=as_li_ss_tl",
+      "asin": "8845268349",
+      "path": "/Hobbit-viaggio-inaspettato-John-Tolkien/dp/8845268349",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/8845268349?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "8845268349",
+          "url": "https://www.amazon.it/-/en/Hobbit-viaggio-inaspettato-John-Tolkien/dp/8845268349/ref%3Dpd_aw_sbs_m_sccl_3_1/000-0000000-0000000?content-id=amzn1.sym.4a0a76e2-622b-433d-9837-c23e2b78df66&pd_rd_i=8845268349&pd_rd_r=9701119b-53ee-4f32-adf5-fbdd75501da5&pd_rd_w=2Eia8&pd_rd_wg=BQaPz&pf_rd_p=4a0a76e2-622b-433d-9837-c23e2b78df66&pf_rd_r=M2N6PB94H6J83GDCKPJ1&psc=1",
+          "title": "Lo Hobbit. Un viaggio inaspettato : Tolkien, John R. R., Lee, Alan ..."
+        },
+        {
+          "asin": "8845268349",
+          "url": "https://www.amazon.it/-/en/Hobbit-viaggio-inaspettato-John-Tolkien/dp/8845268349",
+          "title": "Lo Hobbit. Un viaggio inaspettato - Amazon.it"
+        },
+        {
+          "asin": "8845268349",
+          "url": "https://www.amazon.it/Hobbit-viaggio-inaspettato-John-Tolkien/dp/8845268349",
+          "title": "Lo Hobbit. Un viaggio inaspettato - Amazon.it"
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 256,
+      "name": "Panasonic RP-HJE125E-K auricolari con cavo",
+      "url": "https://www.amazon.it/Panasonic-RP-HJE125-Auricolari-Intraurali-Nero/dp/B00CBU0IV8?dib=eyJ2IjoiMSJ9.gHhN9lTUF54UsgTL6WTzom5gWK97sIub_tKX4jZ3RqK72cMtRdw65XYIbVacS45u_4bygDoGnXh28FxaPTT844eXco4HIYO0UxZ4zmxsJ3gH4CvNXPeqFOVeMbtVjxRMSHP-enMhL3LWXnwRuWG4SfDYoGxhhqpqMOnWIt0Tp2ZhP5CyUt3q-jIjkOMZ4PE0wESPKhsDg7ofaL2znKkrtA3occTjKiXNNXeIfFGknG5eDMXO-ZGvRo7UwMQ9ULHVGT8_VkpFvTzPFgpn8_Iz564AYcHhtayouC1G_CNwV_M.HI2U10xX0LCvu66XI88y3bc4Kdd_GaYNDbu_qLhzyqY&dib_tag=se&keywords=Panasonic%2BRP-HJE125E-K%2Bauricolari%2Bcon%2Bcavo&qid=1790894321&sr=8-1&th=1&linkCode=ll2&tag=3gifts-21&linkId=a766ae5f3a15d471e5632a244a71b5fe&ref_=as_li_ss_tl",
+      "asin": "B00CBU0IV8",
+      "path": "/Panasonic-RP-HJE125-Auricolari-Intraurali-Nero/dp/B00CBU0IV8",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B00CBU0IV8?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B00CBU0IV8",
+          "url": "https://www.amazon.it/-/en/Panasonic-RP-HJE125E-K-Earphones-ErgoFit-Headphones/dp/B00CBU0IV8",
+          "title": "Panasonic RP-HJE125E-K Earphones with ErgoFit Cable, In ..."
+        },
+        {
+          "asin": "B00CBU0IV8",
+          "url": "https://www.amazon.it/Panasonic-RP-HJE125-Auricolari-Intraurali-Nero/dp/B00CBU0IV8",
+          "title": "Panasonic RP-HJE125E-K Auricolari con Cavo ErgoFit, Cuffie ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 259,
+      "name": "Hohner Special 20 armonica in Do maggiore",
+      "url": "https://www.amazon.it/HOHNER-Special-20-Major-New/dp/B0F6NFRZTF?dib=eyJ2IjoiMSJ9.Pwkqtezf4J188gsBmdpG-aJXbvOzjjma9JdDjCay_-GhiSo30NceuX4v91CsnAW5VQfoslwBGPF9VORAIx4WoK6QdEobwXJAr6xS9mQ9Frnv4_2HBKBrr8cuSQvoP1XIioUmbddSs-jnJJ_2mdcIX_AF57ErbzcyIyxD2iIw-YgrV6dixWBPdb8H8kiIYmCHO7IrGwyX5U5Q151Ah6DeCmMQndUjvruEnOLMOhDlkOpC7LT5f6aZIM_3RCdz6bAnZvjAz0Ji5m6Nty3a2pjr2XtWDeUOe6xcIRX0yezY-RQ.Qp0wKtJrZCb55pzsYEBpMsig2RQ7Hsn_Vub1QV939gY&dib_tag=se&keywords=Hohner+Special+20+armonica+in+Do+maggiore&qid=1790894387&sr=8-2&linkCode=ll2&tag=3gifts-21&linkId=88697d1faed694378f39d4bc5619e914&ref_=as_li_ss_tl",
+      "asin": "B0F6NFRZTF",
+      "path": "/HOHNER-Special-20-Major-New/dp/B0F6NFRZTF",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0F6NFRZTF?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B0F6NFRZTF",
+          "url": "https://www.amazon.it/HOHNER-Special-20-Major-New/dp/B0F6NFRZTF",
+          "title": "HOHNER Special 20 Armonica C : Amazon.it: Strumenti Musicali"
+        },
+        {
+          "asin": "B0F6NFRZTF",
+          "url": "https://www.amazon.it/-/en/HOHNER-Special-20-Harmonica-C/dp/B0F6NFRZTF",
+          "title": "HOHNER Special 20 Harmonica C - Amazon.it"
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 260,
+      "name": "D'Addario EJ16 corde per chitarra acustica 12-53",
+      "url": "https://www.amazon.it/DAddario-EJ16-Corde-Acustica-Phosphor/dp/B000EEJ8CS?dib=eyJ2IjoiMSJ9.qcfSoLkyt2SYFUESNIsT6ICgw8QJnfkjGQ0n37Ob-b8J7Ac1uJsTnOzow6hOUX9uS_Wnx5p0J-TLbwMt_8cJihO1iW_S4psLS46Z2zULbYdBKh7Jqi8fpdYR_Mtbi0f6MAGB71BMJ_X_t6AyegdB1f20DxIYTXR4xK6xtbxZwZ_6qrCp6ZDQlD0ynv89Ys-5WjvY2P953up8_hFrHmy9ZxZ_KU0LS1riRq4pWd2CvvrdtFI5p7cG-sfqhHTVaOQftIcGKCx_qdw8tBGxg_lk7LbuW25qGKwawcc5-NiceqM.F6OQrlrn67DFpUrxlu3usfscZcr2qOkyjCWGQfUGJLc&dib_tag=se&keywords=D%27Addario%2BEJ16%2Bcorde%2Bper%2Bchitarra%2Bacustica%2B12-53&qid=1790894408&sr=8-1&th=1&linkCode=ll2&tag=3gifts-21&linkId=055b03535e403e7d7409d41157c0d76b&ref_=as_li_ss_tl",
+      "asin": "B000EEJ8CS",
+      "path": "/DAddario-EJ16-Corde-Acustica-Phosphor/dp/B000EEJ8CS",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B000EEJ8CS?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B000EEJ8CS",
+          "url": "https://www.amazon.it/DAddario-EJ16-Corde-Acustica-Phosphor/dp/B000EEJ8CS",
+          "title": "EJ16 Set Corde Acustica EJ Phosphor BRZ RND WND, 12-53"
+        },
+        {
+          "asin": "B000EEJ8CS",
+          "url": "https://www.amazon.com.be/-/en/DAddario-EJ16-Phosphor-akoestische-gitaarsnaren/dp/B000EEJ8CS",
+          "title": "D'Addario EJ16 Phosphor Bronze akoestische gitaarsnaren ..."
+        },
+        {
+          "asin": "B000EEJ8CS",
+          "url": "https://www.amazon.it/-/en/DAddario-Chitarra-Acustica-EJ16-Phosphor/dp/B000EEJ8CS",
+          "title": "D'Addario Corde Chitarra Acustica | Corde per Chitarra Acustica ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 263,
+      "name": "Hario V60 02 dripper in plastica trasparente VD-02T",
+      "url": "https://www.amazon.it/HARIO-Gocciolatore-trasparente-acrilonitrile-stirene-polipropilene/dp/B001RBTSMM?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2I4V2RF7JO0XI&dib=eyJ2IjoiMSJ9.vc0rrSwNoZf3CIdPsAqdmqa3WrVt014Bncyytn4e21pA0WTtzkClZtfnyBXtbDTb5Rw1PPAdCj2F2faaoa7_vdEYVLHMU0uqICfl2OTDrCeOEfAMNldY4hoqHpKuY0zQgoiobr70-qMGgvMdTW-2U-fLPQpX5PwpXe3TeaX9NMt2D4Wukl3X_Pf2HybNREIA4vit-eaF9N-P-z8kT7rXz8fi5ZCxuTVCpQIoaMFkgHA-0R8wfznlPZEMVOh77JJHZfMaLfleDNQjH4OWXzHOqWUe5CEiJKKx0PapPam3_qU.OxTCBS70C19rR3XvBcUbjNYR1bgtX8wLj4j2_nG22VM&dib_tag=se&keywords=Hario%2BV60%2B02%2Bdripper%2Bin%2Bplastica%2Btrasparente%2BVD-02T&qid=1790894446&sprefix=hario%2Bv60%2B02%2Bdripper%2Bin%2Bplastica%2Btrasparente%2Bvd-02t%2Caps%2C155&sr=8-2&th=1&linkCode=ll2&tag=3gifts-21&linkId=6d1acce58e3dd7186ff992f4eca360d5&ref_=as_li_ss_tl",
+      "asin": "B001RBTSMM",
+      "path": "/HARIO-Gocciolatore-trasparente-acrilonitrile-stirene-polipropilene/dp/B001RBTSMM",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B001RBTSMM?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B001RBTSMM",
+          "url": "https://www.amazon.it/HARIO-Gocciolatore-trasparente-acrilonitrile-stirene-polipropilene/dp/B001RBTSMM",
+          "title": "HARIO Gocciolatore di caffè a forma di V in plastica V60 con ..."
+        },
+        {
+          "asin": "B001RBTSMM",
+          "url": "https://www.amazon.it/-/en/HARIO-VDR-03-T-WSQ-0909-034/dp/B001RBTSMM",
+          "title": "WSQ-0909-034 : Amazon.it: Home & Kitchen"
+        },
+        {
+          "asin": "B001RBTSMM",
+          "url": "https://www.amazon.com.be/-/en/Hario-VD-02T-Coffee-Filter-Plastic/dp/B001RBTSMM",
+          "title": "Hario, VD-02T Coffee Filter AA8 Clear Plastic Size 2"
+        },
+        {
+          "asin": "B001RBTSMM",
+          "url": "https://www.amazon.com/-/he/%D7%98%D7%A4%D7%98%D7%A4%D7%AA-%D7%9E%D7%A4%D7%9C%D7%A1%D7%98%D7%99%D7%A7-HARIO-%D7%92%D7%95%D7%93%D7%9C-%D7%A9%D7%A7%D7%95%D7%A3/dp/B001RBTSMM",
+          "title": "טפטפת קפה מפלסטיק HARIO V60, גודל 02, שקוף : לבית ... - Amazon.com"
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 264,
+      "name": "Bodum Brazil French Press 350 ml",
+      "url": "https://www.amazon.it/Bodum-Caffettiera-Brazil-35-Nero/dp/B00264FVCA?dib=eyJ2IjoiMSJ9.Saj9Rwkjg8EMVsZHH3YmGLUd_-fS6Hfcj250sQWYa_jLOuhx94mNiZOXx0qTXbJDrrXrsaoVjul-NB2jPh9v_tfbtASiP4w4-Kaqben8Xm5Y17_0K26NbhPHQwaygcyKrgLieOTnplN8hdeuaqW7qosLE4ImwI5rxV4aD0GdZmUIPluVwABixJI30z0QJ0MbVi-urL0Py2hrin4AQpV79p-9qNPUMVvvytd2BoABJS-UrEspxc_j2QI0G6KszVZDrQWN4X_f0W6HZC0rhe95AK9hxVyi3wuIT_vtZBjkOEU.lUKO4wc3oV7EGlUKgbDgDFHiKbS_c_Rg-g-fX2gPExw&dib_tag=se&keywords=Bodum%2BBrazil%2BFrench%2BPress%2B350%2Bml&qid=1790894478&sr=8-1&ufe=app_do%3Aamzn1.fos.8a1562af-dabe-4f1d-8eb5-1ded1ace4ef7&th=1&linkCode=ll2&tag=3gifts-21&linkId=9ef6cf9cc29fbc6ceb5e3dcf0c667de9&ref_=as_li_ss_tl",
+      "asin": "B00264FVCA",
+      "path": "/Bodum-Caffettiera-Brazil-35-Nero/dp/B00264FVCA",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B00264FVCA?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B00264FVCA",
+          "url": "https://www.amazon.it/-/en/Brazil-Cup-Coffee-Maker-0-35L/dp/B00264FVCA",
+          "title": "Brazil 3 Cup Coffee Maker 0.35L : Amazon.it: Home & Kitchen"
+        },
+        {
+          "asin": "B00264FVCA",
+          "url": "https://www.amazon.it/Bodum-Caffettiera-Brazil-35-Nero/dp/B00264FVCA",
+          "title": "Brazil: caffettiera, 3 tazze, 0.35 l - Amazon.it"
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 265,
+      "name": "Vacu Vin Wine Saver pompa salvavino con due tappi",
+      "url": "https://www.amazon.it/Vacu-Vin-Concerto-Black-standard/dp/B08YY8PGVJ?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=I7HRYRLE66WL&dib=eyJ2IjoiMSJ9.oiG9dXkLedOv9SUkxi5Ms2Fi4PWBCC2fCAIQMvE6a8IQKYqaRJR3ZL-vDBlqmlfdj9UHGHNHWpiGf3t80IYd5-GSVYnCHDA0PhJiFmi1rCWya_bkBPxDeZcmZ2III4gm5TQP9OZ_o8yYzqSe1SBSTt0DKL29bRoExee45v0oAjpWcZR1_wL6EXU7zOQjjmvskbCdYtb8BJIHQq7ajLSPPJB9EZyCC7E7ggmFhReJd2TRdPI847AoH1FHfEvpTlEPD0dxDlmDr-0V9yRRLj4wZhWU5AlU_Dzj0ioyybK9X6A.vyMQLtc10rW-soustA72xykA-uDd_29QKXDa0B31p0s&dib_tag=se&keywords=Vacu%2BVin%2BWine%2BSaver%2Bpompa%2Bsalvavino%2Bcon%2Bdue%2Btappi&qid=1790894528&sprefix=vacu%2Bvin%2Bwine%2Bsaver%2Bpompa%2Bsalvavino%2Bcon%2Bdue%2Btappi%2Caps%2C143&sr=8-2-spons&aref=UF6545Qakt&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll2&tag=3gifts-21&linkId=57730a810afc1a128c72a59b4082f27a&ref_=as_li_ss_tl",
+      "asin": "B08YY8PGVJ",
+      "path": "/Vacu-Vin-Concerto-Black-standard/dp/B08YY8PGVJ",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B08YY8PGVJ?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B08YY8PGVJ",
+          "url": "https://www.amazon.it/-/en/Vacu-Vin-Concerto-Stoppers-Indicator/dp/B08YY8PGVJ",
+          "title": "Vacu Vin Wine Concerto with 2 Vacuum Stoppers, Premium ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 268,
+      "name": "Reisenthel Travelcosmetic beauty case da viaggio",
+      "url": "https://www.amazon.it/reisenthel-travelcosmetic-dots-cosmetici-idrorepellente/dp/B00JP8WI1C?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2NKGL46ZWEWWQ&dib=eyJ2IjoiMSJ9.BxGR6neMZHpw04a3poiJ-01G9GCWB-ec5hIBldrvyC5O46i1Xpexn3rJKDPtkWtKRG00XDBhtvPeqa6slOIIKGBhm8pgZaisCKLxle-KLX1avLE3w5_HNi5HeRbd4BUmmuTQm_aWNSgBQWb9uhyQuModx4v8is1gjEF_FKj4yLFmZPyKSdFpy2kO9f_q59EWutaoFfayIlABahLOHp58ZjmqsY-D8wYZn7herf2xZjsifXrlyGm9ANRRZD-qxv5WwJCcv0cfmdbrem-94l82IzdpdSStTq8tpR1mxwsrpFo.V8yjk4rl3GpCNYXaX8_9YgJCdbhPH6hw7juHcyjSaBo&dib_tag=se&keywords=Reisenthel%2BTravelcosmetic%2Bbeauty%2Bcase%2Bda%2Bviaggio&qid=1790894596&sprefix=reisenthel%2Btravelcosmetic%2Bbeauty%2Bcase%2Bda%2Bviaggio%2Caps%2C165&sr=8-1&th=1&linkCode=ll2&tag=3gifts-21&linkId=d3e95019c96059394b67531332ff5613&ref_=as_li_ss_tl",
+      "asin": "B00JP8WI1C",
+      "path": "/reisenthel-travelcosmetic-dots-cosmetici-idrorepellente/dp/B00JP8WI1C",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B00JP8WI1C?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B00JP8WI1C",
+          "url": "https://www.amazon.com/clp/B00JP8WI1C",
+          "title": "reisenthel travelcosmetic dots - strong sturdy and ... - Amazon.com"
+        },
+        {
+          "asin": "B00JP8WI1C",
+          "url": "https://www.amazon.com.be/reisenthel-travelcosmetic-toilette-pratique-imperm%C3%A9able/dp/B00JP8WI1C",
+          "title": "reisenthel travelcosmetic Trousse de toilette de voyage robuste ..."
+        },
+        {
+          "asin": "B00JP8WI1C",
+          "url": "https://www.amazon.com/-/he/reisenthel-%D7%A8%D7%97%D7%A6%D7%94-%D7%9C%D7%92%D7%91%D7%A8%D7%99%D7%9D-%D7%A0%D7%A7%D7%95%D7%93%D7%95%D7%AA-%D7%90%D7%97%D7%99%D7%93%D7%94/dp/B00JP8WI1C",
+          "title": "reisenthel תיק רחצה לגברים, 26 ס\"מ, נקודות, מידה אחידה ... - Amazon.com"
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 269,
+      "name": "Sea to Summit Lightweight Dry Bag 3 L",
+      "url": "https://www.amazon.it/SUMMIT-Saco-estanco-LIGHTWEIGHT-rojo/dp/B0BVWGCKZF?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1ZKJ3ZM8M8UG0&dib=eyJ2IjoiMSJ9.i_AyMahDhLrA1Vm1SFJYK1xaFr3t-a1UnOVm6a4iP5l_l6BBFogxQmsPNj7fa61uUxBNOwlKr31Qq_ilKG_4GbGL0k3qwOWABu7CayDdEY3wR4U1ypg7GtFdpA3rd8-2-rEjS5kYvRb-RTWfOnDdTU8jX7Nz-G6oZ1D5hMSNVwzAOMR6BNdt9Il3bFs6JC0a-1d701l3ohcbtwUzFhaaZrbSw4cC34sW59Q_mdTm-OFzQdrN4sgB5mmbEfafFTx2qXDnPqu0WkuxxGEAK7VrdFlz5YIdcu-PRK-3hBpZBEY.OCCUYw0MEuVaL6vuQVfoFjIIIPTIyGEZiCy4zMJNzdQ&dib_tag=se&keywords=Sea%2Bto%2BSummit%2BLightweight%2BDry%2BBag%2B3%2BL&qid=1790894618&sprefix=sea%2Bto%2Bsummit%2Blightweight%2Bdry%2Bbag%2B3%2Bl%2Caps%2C146&sr=8-1&th=1&linkCode=ll2&tag=3gifts-21&linkId=f528a08450439c64dcc708723c99e48e&ref_=as_li_ss_tl",
+      "asin": "B0BVWGCKZF",
+      "path": "/SUMMIT-Saco-estanco-LIGHTWEIGHT-rojo/dp/B0BVWGCKZF",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0BVWGCKZF?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B0BVWGCKZF",
+          "url": "https://www.amazon.it/SUMMIT-Saco-estanco-LIGHTWEIGHT-rojo/dp/B0BVWGCKZF",
+          "title": "Sea to Summit Borsa impermeabile leggera, multiuso - Amazon.it"
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 272,
+      "name": "BUFF Original EcoStretch scaldacollo adulto",
+      "url": "https://www.amazon.it/Buff-Solid-Scaldacollo-Original-Unisex/dp/B07FKD5FVW?dib=eyJ2IjoiMSJ9.cVsh8owwKlu8Q_I_Xk9hf43WKiTFBcILoZzIRGf7maW5Am5cIP01Yd6DFdSctEk3lLS_2D7P0g8rT_mxc_raKeCI8VII22F90bGXlgNWp6HpxU8_rNaI9aXgeys13cZhVLlsVd5J6s_0WEtiqdDiydM9wAa_dNtWzSfwZ3G7k8FjbXY2vs5WWYDD_bFVqhxXmIOsBYv02qH1mlILYc9DTHs6lrisadAw16ZlI3HruD5-llIcycI2L0lTntwakyZSPjzWI9Un6hCALJJqFbGA5vfxZeIz3z2edUIQHU3kZJE.hk7T8bQ6EWF9qxros9wXrh8PvoQ9U8uh09yt6KGQM74&dib_tag=se&keywords=BUFF%2BOriginal%2BEcoStretch%2Bscaldacollo%2Badulto&qid=1790894634&sr=8-1-spons&aref=05DyMttx3v&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll2&tag=3gifts-21&linkId=e054a694f14fa1ed9f353cb8ee672a64&ref_=as_li_ss_tl",
+      "asin": "B07FKD5FVW",
+      "path": "/Buff-Solid-Scaldacollo-Original-Unisex/dp/B07FKD5FVW",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B07FKD5FVW?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B07FKD5FVW",
+          "url": "https://www.amazon.it/Buff-Solid-Scaldacollo-Original-Unisex/dp/B07FKD5FVW",
+          "title": "Buff® | Original EcoStretch Scaldacollo Nero per Uomo Donna ..."
+        },
+        {
+          "asin": "B07FKD5FVW",
+          "url": "https://www.amazon.it/-/en/Original-EcoStretch-Multifunctional-Sustainable-Lightweight/dp/B07FKD5FVW",
+          "title": "Buff® | Original EcoStretch Black Neck Warmer for Men and ..."
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 283,
+      "name": "LECHUZA Mini Deltini vaso con riserva d'acqua",
+      "url": "https://www.amazon.it/LECHUZA-MINI-DELTINI-BIANCO-14950/dp/B00I5R3F7K?dib=eyJ2IjoiMSJ9.dlh99lq_1uqwaCIdfz8AwG6tuwruDEdynFmvdwnCKuMgauZc7PDw2ZBssUL1wHBRDS3mfi-Pr5OlnE17Zp-ld39f-vokOUNYAbIiMxo-i_la-2X4bz4czOP4TYWhxufSY03vv_c6FZBMcGBJYnk-Y5YCYdaa-hRkaEj9Q802oiw1NRPXiM9RY3p7fuY0h4p9rAPjq1-MfR1FGIdSNG8Hn9q5HgaqE3bWM6ivGW0VQwVxgOmvZSMiW5vF-AbISagULp2ITKGKFeo54v5C-g6AyWd11jLtDIge21_trrm6oig._sNAtGJ8h9ZV9VMEFrDgOGwZHeM0SeeCAlVwRg_Ms2E&dib_tag=se&keywords=LECHUZA%2BMini%2BDeltini%2Bvaso%2Bcon%2Briserva%2Bd%27acqua&qid=1790894706&sr=8-1&ufe=app_do%3Aamzn1.fos.8a1562af-dabe-4f1d-8eb5-1ded1ace4ef7&th=1&linkCode=ll2&tag=3gifts-21&linkId=643f07d0a591e66027b3883bddbd4559&ref_=as_li_ss_tl",
+      "asin": "B00I5R3F7K",
+      "path": "/LECHUZA-MINI-DELTINI-BIANCO-14950/dp/B00I5R3F7K",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B00I5R3F7K?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B00I5R3F7K",
+          "url": "https://www.amazon.it/-/en/LECHUZA-Mini-Deltini-White-14950/dp/B00I5R3F7K",
+          "title": "LECHUZA Mini Deltini White 14950 - Amazon.it"
+        },
+        {
+          "asin": "B00I5R3F7K",
+          "url": "https://www.amazon.it/LECHUZA-MINI-DELTINI-BIANCO-14950/dp/B00I5R3F7K",
+          "title": "LECHUZA MINI DELTINI BIANCO 14950 - Amazon.it"
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 285,
+      "name": "Tangle Teezer Original spazzola districante",
+      "url": "https://www.amazon.it/Tangle-Teezer-Spazzola-Capelli-Donna/dp/B00JJ7T2V8?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2XHJL067K0OO6&dib=eyJ2IjoiMSJ9.xPktZnDn-tmoHsHGtu8LEdboSWuDU2t43Xtwd-ksW3iVzGiH-GHKTUrge92A3j9Pn1v75qkWfxqHMcDJMUKNw2xidAfP4d0ccQ1lnmU_8BEHpfkk-tPS9mlXcVCFAD48Z0eMuXMdt6HOp2vSsIhsx76uCGqrWKzS1VHMD0WT-Q0wn7jl_bQA5lhblUSEx752h_hgchmQhU63xnjPL9OTTfP8wsQPmdGxxoni_TXHf1qrSYEjLJ08a0KxDeYsmQA4EX539xrWSsJxv8h11TzjspExaCLCXR4Dklkcb7DysoM.iqNFsed95bYe05B7aPEPxIEY9vYLS7BBXsF0blVRv7s&dib_tag=se&keywords=Tangle%2BTeezer%2BOriginal%2Bspazzola%2Bdistricante&qid=1790894735&sprefix=tangle%2Bteezer%2Boriginal%2Bspazzola%2Bdistricante%2Caps%2C191&sr=8-2&th=1&linkCode=ll2&tag=3gifts-21&linkId=cabc3b14520ad4a47221357a7e1cc8c9&ref_=as_li_ss_tl",
+      "asin": "B00JJ7T2V8",
+      "path": "/Tangle-Teezer-Spazzola-Capelli-Donna/dp/B00JJ7T2V8",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B00JJ7T2V8?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B00JJ7T2V8",
+          "url": "https://www.amazon.it/-/en/Tangle-Teezer-Original-Spazzola-Districante/dp/B00JJ7T2V8",
+          "title": "Tangle Teezer The Original Spazzola per Capelli Districante ..."
+        },
+        {
+          "asin": "B00JJ7T2V8",
+          "url": "https://www.amazon.it/Tangle-Teezer-Spazzola-Capelli-Donna/dp/B00JJ7T2V8",
+          "title": "Tangle Teezer Original Detangling Hairbrush - Amazon.it"
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    },
+    {
+      "id": 287,
+      "name": "Chuckit! Ultra Ball Medium, confezione da 2",
+      "url": "https://www.amazon.it/Chuckit-17001-Ultra-Ball-Compatibili/dp/B000F4AVPA?dib=eyJ2IjoiMSJ9.a4g_Z7vR8QTxmNXCU9fuOlLIs-8g_ctqpVIR0l49PqVO_zu_6kBnPLEBh2O1Gb73XwlT3Krmgrcxa9dzX4OCURGEqYTuWEFC4ROuHhSuAxo9AIdA0BBgsoDEUTCcA63-cgnpb2KyWeKdId6EDl4o9qLLI-LjzrZm61zKZ7KRgPXU2bMFavS2jpwQfnAZnz-EY87dvCCi5Cz0l3hjgxtm76BajJ7NjGxHvPWeX0dykxSo4xXcZQbdrGddAS3f_3jZQY-NRTsi2BL68Pz40RctSTIPXCLcoD82HCoq6c3RYQc.3PexfK6SqP0UspI0mU3ifdlMQSE_9cOSiy-V0IY1U1Y&dib_tag=se&keywords=chuckit%21%2Bultra%2Bball%2Bmedium%2Bconfezione%2Bda%2B2&qid=1790894754&sr=8-1-spons&aref=RIkWBCRlwS&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll2&tag=3gifts-21&linkId=fc3448b7110be3d4486ec856dd286b54&ref_=as_li_ss_tl",
+      "asin": "B000F4AVPA",
+      "path": "/Chuckit-17001-Ultra-Ball-Compatibili/dp/B000F4AVPA",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B000F4AVPA?tag=3gifts-21",
+      "sources": [
+        {
+          "asin": "B000F4AVPA",
+          "url": "https://www.amazon.it/Chuckit-17001-Ultra-Ball-Compatibili/dp/B000F4AVPA",
+          "title": "Chuckit Ultra Ball Cane, Palla Multicolore, M - Amazon.it"
+        },
+        {
+          "asin": "B000F4AVPA",
+          "url": "https://www.amazon.it/-/en/Chuckit-Ultra-Ball-Dog-Multicolour/dp/B000F4AVPA",
+          "title": "Chuckit Ultra Ball Dog, Multicolour Ball, M - Amazon.it"
+        }
+      ],
+      "status": "imported",
+      "trackingAdded": false
+    }
+  ],
+  "pending": [
+    {
+      "id": 4,
+      "name": "Echo Pop",
+      "url": "https://www.amazon.it/echo-dot-2022/dp/B09B8X9RGM?crid=1UMA59GN5NEGW&dib=eyJ2IjoiMSJ9.axLJupR_-uZQf4HesYGqhdt4N9OBdmk3sfcpZHxnqw8JgE7xdeEGd7gINUt0vF1xGWog9xRR2cwEFJLqHKw0UjZ3Kwz7f5wYS_jWsvie0jG1rX_VZVuIWsthIHC1oZN98tqXaUBehDgGu4O2yZtfFY7QUoV5rRpn3ZwipAfsNrrVcS4ph94Qxhun-sDv4IKGmL0igfSiRlPHE4fscXQR5k5F-_GdijlMRwlWM_MQv-unFpl9MZybh_A42kNNYDbq6SMpPHlViJqqmOLDo2JjRaueW0iJb8y93umlRYEjwck.udo3hXkOJXqBe6mIo-BBiwWNtzq3RvmlZF_XmrONxg4&dib_tag=se&keywords=echo%2Bpop%2Balexa&qid=1790892669&sprefix=Echo%2BPop%2Caps%2C129&sr=8-1&ufe=app_do%3Aamzn1.fos.7cf526d8-b33c-4cc8-8e05-b9df5480d46b&th=1&linkCode=ll2&tag=3gifts-21&linkId=a8681bf0f8a422c7d7b6f74f4fe1e50a&ref_=as_li_ss_tl",
+      "asin": "B09B8X9RGM",
+      "path": "/echo-dot-2022/dp/B09B8X9RGM",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B09B8X9RGM?tag=3gifts-21",
+      "linkedProduct": "Echo Dot, 5ª generazione",
+      "reason": "Il link identifica Echo Dot, mentre la scheda è Echo Pop.",
+      "status": "needs-owner-choice"
+    },
+    {
+      "id": 8,
+      "name": "Cofanetto Harry Potter 7 volumi",
+      "url": "https://www.amazon.it/Rowling-Potter-Collection-Bundle-Philosophers/dp/B0182QEEQ4?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=26TY0Z8Q3L4OF&dib=eyJ2IjoiMSJ9.mBFJvGOs3lm46MP7WGOrYTxPYvXINDErSDhZW7ket4WQpwIi_MdBgxKWtASNTh8nrTazeZcbiBEgA-imdG-Qfd2ze0Xh7gQDguRC4u9YZpLYrrDOE2KinKwHeJPJ63MFfDJ-_jBqA28TLRmwoEF3dqoHm3l0fx3XM9nhoAAIWAtJ_bEMU6iazw5v0ImGz9z492CHHbuRNUvfho63PxkefmtWiA_3DFrlogEmiqQe_YSW6HLxtX2Dum5sQUAX42jf1m0qElC5Fl-JYZguL4qPrg_CVUlQLqYLPyWMtaMa47w.bonHN5FK2bjpfA4FT3LuNJzHbWyWz0C7ZnGzAGModCs&dib_tag=se&keywords=Cofanetto+Harry+Potter+7+volumi+italiano&qid=1790892776&sprefix=cofanetto+harry+potter+7+volumi+italiano%2Caps%2C114&sr=8-4&linkCode=ll2&tag=3gifts-21&linkId=1774bba6dbabed598f60d3aa61820425&ref_=as_li_ss_tl",
+      "asin": "B0182QEEQ4",
+      "path": "/Rowling-Potter-Collection-Bundle-Philosophers/dp/B0182QEEQ4",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0182QEEQ4?tag=3gifts-21",
+      "linkedProduct": "Harry Potter, 7 volumi in inglese",
+      "reason": "Edizione in inglese: serve confermare la lingua desiderata oppure fornire il cofanetto italiano.",
+      "status": "needs-owner-choice"
+    },
+    {
+      "id": 17,
+      "name": "AeroPress Original",
+      "url": "https://www.amazon.it/AeroPress-pour-over-infusione-portatile-campeggio/dp/B0CZ64WK41?dib=eyJ2IjoiMSJ9.MZaIE7HJQoLIGy3HL_EBSZa9PpFUNvflMqvvRc8EnV9FFhWYwJnds6puaQzeb2YkPLHLam5vks9gwAhcEcQXw-rFF2McyVDEYCfjh8Dk9ns2xP135Zd08LSAz9govT2ejvMPA5si-9qZRG2w4a_4l0PTMTHmuRqLm9HPCQip7b_nmYnW5HSSTjGDwjUBZfhXbgF_VTOjrW-jgVpheJJNE-piY5RNzXjqweVGc58kBvGkdsOBk2jbDqcfqtVXfP-Cb0uB86BSuPzPwr9tCSCcmu_3kYQOrYbrRExu9kuX2MA.3Rq1WIvjc-6iDXJh2M5TB-dioAy2FS9F4UYHDXCgaZg&dib_tag=se&keywords=AeroPress%2BOriginal&qid=1790893031&sr=8-2-spons&aref=MzkefEEmcm&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll2&tag=3gifts-21&linkId=d8719d533b6b28bd06a690ea6b82acb4&ref_=as_li_ss_tl",
+      "asin": "B0CZ64WK41",
+      "path": "/AeroPress-pour-over-infusione-portatile-campeggio/dp/B0CZ64WK41",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0CZ64WK41?tag=3gifts-21",
+      "linkedProduct": "AeroPress Clear Blue",
+      "reason": "La variante è Clear Blue, diversa da AeroPress Original.",
+      "status": "needs-owner-choice"
+    },
+    {
+      "id": 18,
+      "name": "SodaStream Terra",
+      "url": "https://www.amazon.it/AeroPress-pour-over-infusione-portatile-campeggio/dp/B0CZ64WK41?dib=eyJ2IjoiMSJ9.MZaIE7HJQoLIGy3HL_EBSZa9PpFUNvflMqvvRc8EnV9FFhWYwJnds6puaQzeb2YkPLHLam5vks9gwAhcEcQXw-rFF2McyVDEYCfjh8Dk9ns2xP135Zd08LSAz9govT2ejvMPA5si-9qZRG2w4a_4l0PTMTHmuRqLm9HPCQip7b_nmYnW5HSSTjGDwjUBZfhXbgF_VTOjrW-jgVpheJJNE-piY5RNzXjqweVGc58kBvGkdsOBk2jbDqcfqtVXfP-Cb0uB86BSuPzPwr9tCSCcmu_3kYQOrYbrRExu9kuX2MA.3Rq1WIvjc-6iDXJh2M5TB-dioAy2FS9F4UYHDXCgaZg&dib_tag=se&keywords=AeroPress%2BOriginal&qid=1790893031&sr=8-2-spons&aref=MzkefEEmcm&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll2&tag=3gifts-21&linkId=d8719d533b6b28bd06a690ea6b82acb4&ref_=as_li_ss_tl",
+      "asin": "B0CZ64WK41",
+      "path": "/AeroPress-pour-over-infusione-portatile-campeggio/dp/B0CZ64WK41",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0CZ64WK41?tag=3gifts-21",
+      "linkedProduct": "AeroPress Clear Blue",
+      "reason": "È lo stesso link dell’AeroPress della riga 17; non identifica SodaStream Terra.",
+      "status": "needs-owner-choice"
+    },
+    {
+      "id": 45,
+      "name": "Samsonite GuardIT 2.0 zaino",
+      "url": "https://www.amazon.it/Samsonite-Guardit-Classy-2-0-portabottiglia/dp/B0FR54NNJY?dib=eyJ2IjoiMSJ9.RbSCHtJM5EqZXjnrqLbJnMFpRO6YL8LnKVvxywz6Lw32uXNckp3TIWnYkLdZgcD-SrGF96ZWzistU-cl_gz4NQLmecoAS_uyUoXDindiK8QXHPhCTpaptOKO8nsoWR8jr-dctv2uTKPH8N8tlbcsFnCiUXO2Zw-HJ-cefF4m-gnQ8SzAUVNLv0XZRZfG4N-HDhOMtoyfOEeCI6ssClxTQ1FNaqo-2owbp123ICPS92_gOBeL9ks90xNUvfXS1B7TdhbXCBUY1aZfC7DJLktsXm9bOjavKG_Uuc2UZ203w6I.W1A-y_X4ej8E6I3ODjjdYEMHROsxUPiQOtMpkCboqB4&dib_tag=se&keywords=Samsonite%2BGuardIT%2B2.0%2Bzaino&qid=1790893698&sr=8-1&ufe=app_do%3Aamzn1.fos.8a1562af-dabe-4f1d-8eb5-1ded1ace4ef7&th=1&linkCode=ll2&tag=3gifts-21&linkId=407c7db787a743dfe07173475dc315e7&ref_=as_li_ss_tl",
+      "asin": "B0FR54NNJY",
+      "path": "/Samsonite-Guardit-Classy-2-0-portabottiglia/dp/B0FR54NNJY",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0FR54NNJY?tag=3gifts-21",
+      "linkedProduct": "Samsonite Guardit Classy 2.0",
+      "reason": "Linea Guardit Classy 2.0 da donna, diversa da GuardIT 2.0.",
+      "status": "needs-owner-choice"
+    },
+    {
+      "id": 46,
+      "name": "Furbo 360° telecamera per cani",
+      "url": "https://www.amazon.it/Furbo-360%C2%B0-Cat-camera-Subscription/dp/B0CFGQBCDX?dib=eyJ2IjoiMSJ9.rnZyE5WINYjJfHQPbnJC_XMvrY3RDL1qbWFzQa1bHWIYzMGjfGYVkadR-_ud5m8tPJkCXijFih8hi8g6H-3dOMiHSTrh1BMk5VCmKMr6ZYyBUkCdGdIwZW82AzTTqeexznUPjd3Z4xArtHDu-RwlmeQE-nX3-oKorpHA7jALQXAIoVR9v9_ICFmAK_XZOplOSdqzEhDqon5hnOrR48Ln_JqwTcpIf8WVO2Qy-VqVpa4zcS13qJyfrJdUHs1GE_vSpT4Tq6pSs9I3WQxjTgDRannDYpxZqZ6MhhKbxapiPgI.Y_5jeVgaNerEZrLTxX5D3q0vXAWd0Zfxlxdm1XTc1a4&dib_tag=se&keywords=Furbo%2B360%C2%B0%2Btelecamera%2Bper%2Bcani&qid=1790893721&sr=8-1-spons&ufe=app_do%3Aamzn1.fos.fca66a76-6518-40f2-959f-2dca30e9c5d1&aref=4yFdhUKAVD&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll2&tag=3gifts-21&linkId=a1d1ea7d1b8ae2284b875f137af6f672&ref_=as_li_ss_tl",
+      "asin": "B0CFGQBCDX",
+      "path": "/Furbo-360°-Cat-camera-Subscription/dp/B0CFGQBCDX",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0CFGQBCDX?tag=3gifts-21",
+      "linkedProduct": "Furbo 360° Cat Camera, con piano a pagamento",
+      "reason": "Il link è per gatti, non per cani; richiede inoltre un abbonamento per l’attivazione.",
+      "status": "needs-owner-choice"
+    },
+    {
+      "id": 54,
+      "name": "Magic: The Gathering Starter Kit",
+      "url": "https://www.amazon.it/Magic-The-Gathering-Multicolore-D3434105/dp/B0CV6YZ1L1?dib=eyJ2IjoiMSJ9.j6O19RqFS2oX9xSFsu9xc1_xMiUPW7o_0ZiueGn_OIlltMEc52hXMdz0Ct1z8QFDQcBQyArABdS7F-6_YtSxFdpO0vv5PS7qdLvpWvGjgK6H8kOoaHX2skkmd1V9ZR-_QBJ8eyDXCxUjgQkqapFffmzpsiGRP8cuIGE6IpW_9LleWtdGaJtKFzyqMFrH9lGaaCxdfYfpavLanDA_fFVn7LOuWbGDfgZFzwvfwYuaf8orzSOfYClinKLFSxvTBkZ3U9_NBldbCN7-MT1kQWtyGymlk8n2dWc39iB4qGhH49M.Z4slBFYP3Hgfa9hNNfMYHHmrpkpTfsu9zyf2lTe7KkA&dib_tag=se&keywords=Magic%3A+The+Gathering+Starter+Kit&qid=1790893867&sr=8-2-spons&aref=XElCBgkWoJ&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&linkCode=ll2&tag=3gifts-21&linkId=f0b9ceafebb8081d1b369b8a0618f87a&ref_=as_li_ss_tl",
+      "asin": "B0CV6YZ1L1",
+      "path": "/Magic-The-Gathering-Multicolore-D3434105/dp/B0CV6YZ1L1",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0CV6YZ1L1?tag=3gifts-21",
+      "linkedProduct": "Magic Bloomburrow Starter Kit, versione spagnola",
+      "reason": "Le carte sono in spagnolo: occorre confermare la lingua o indicare il kit italiano.",
+      "status": "needs-owner-choice"
+    },
+    {
+      "id": 58,
+      "name": "Logitech MX Keys Mini",
+      "url": "https://www.amazon.it/Logitech-MXKEYS-Mini-ILLUMINATA-Graphite/dp/B07W6HLJJT?dib=eyJ2IjoiMSJ9.Ci9pvI_tkd8qYW2l4JoXU7Rlm5wIfvMC1Ep8oCYcR0xc3gSN2b1qifGYC_G5YeyauIHojwxB7dOANbPP0C26TymvrU1U6TK0u_Mn1_FVR7KSZRwPHQJSAFsZfXxqExHZVBX8XBjRqiCb8ssFNxzYJlFq4s_HzR9rACa7qmmiHncOP9yIaXRe7SgGGJs1o_VXwlStTZ7iljMi45k2KQl6TMu1hfoCz1uOYG_R8UiZlw9dV4ocURZgizoxt4jSkcUHbL5rGUFW0Za1qaU2zeoGdHacPwm1FswRX5iREqMdx4g.fMCcyxGln_Rig9UgUjohBnNDqedzwdF5TOVcttFBYJ0&dib_tag=se&keywords=Logitech+MX+Keys+Mini&qid=1790893990&sr=8-2&ufe=app_do%3Aamzn1.fos.f95648ba-9d41-4ef9-8db4-c5224b9750b7&linkCode=ll2&tag=3gifts-21&linkId=2391a47ee49b18d0a61150f68b1a9f53&ref_=as_li_ss_tl",
+      "asin": "B07W6HLJJT",
+      "path": "/Logitech-MXKEYS-Mini-ILLUMINATA-Graphite/dp/B07W6HLJJT",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B07W6HLJJT?tag=3gifts-21",
+      "linkedProduct": "Logitech MX Keys Mini, layout US International",
+      "reason": "La tastiera ha layout US International QWERTY: serve conferma o link alla versione italiana.",
+      "status": "needs-owner-choice"
+    },
+    {
+      "id": 60,
+      "name": "Logitech Pebble 2 M350s",
+      "url": "https://www.amazon.it/Logitech-910-005718-Pebble-Mouse-Wireless/dp/B07VFJVPBR?dib=eyJ2IjoiMSJ9.cQBzXBvcBaH7zBsAcpv_Xri_s08wZWpdro2vEUWsg6vVnF1qWU2NJmbDkHg1Kt24a-QmgTzpxbNvqahaQEN7UyW6HHRSZpBRUei1IUZM_47rF2LVxzTHgWyEyA_O5wZxAaji7L5pH5GL6vW_QK8o66EKOivBbK00CahSY0VEixEtqzhMEZ0ctgrOuW1QbX1hInzM__l3Y-pOTjDM7kZ-CC7QbhdleF_b4jBYUYGhGMQxeTv1NR8SIHY1YoCw-Uuv8EVDXrSPzmmeEGJJe-pzaXKfgW0YTU_-oyKHC4KoDJ0.iKBmqRZBuy-QSwde7CTTWonAlAFDio1BeXpYJyaP3fk&dib_tag=se&keywords=Logitech%2BPebble%2B2%2BM350s&qid=1790894041&sr=8-1&th=1&linkCode=ll2&tag=3gifts-21&linkId=95c9870db395cd04e84dbd661a0955ec&ref_=as_li_ss_tl",
+      "asin": "B07VFJVPBR",
+      "path": "/Logitech-910-005718-Pebble-Mouse-Wireless/dp/B07VFJVPBR",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B07VFJVPBR?tag=3gifts-21",
+      "linkedProduct": "Logitech Pebble M350",
+      "reason": "Il modello è M350, diverso da Pebble 2 M350s.",
+      "status": "needs-owner-choice"
+    },
+    {
+      "id": 252,
+      "name": "1984 — George Orwell, Mondadori, ISBN 9788804507451",
+      "url": "https://www.amazon.it/1984-George-Orwell/dp/8867584200?keywords=1984+%E2%80%94+George+Orwell%2C+Mondadori%2C+ISBN+9788804507451&qid=1790894238&sr=8-1-spons&aref=hHNBR49EiS&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&linkCode=ll2&tag=3gifts-21&linkId=7126b915156fad34c44dc9bd0297b425&ref_=as_li_ss_tl",
+      "asin": "8867584200",
+      "path": "/1984-George-Orwell/dp/8867584200",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/8867584200?tag=3gifts-21",
+      "linkedProduct": "1984, ISBN 9788867584208",
+      "reason": "Il link non corrisponde all’edizione Mondadori ISBN 9788804507451 indicata nella scheda.",
+      "status": "needs-owner-choice"
+    },
+    {
+      "id": 257,
+      "name": "JBL Tune 500 cuffie cablate",
+      "url": "https://www.amazon.it/JBL-Tune-520BT-Wireless-Kopfh%C3%B6rer/dp/B0BYWMLVG1?dib=eyJ2IjoiMSJ9.xtcOquHBZru80zz7N_e7uAZZ3AxiqdqaZTTsbu88DUAvO-Cb9zZqp9uqOHkzvCTHftOXSp1lWcPxhbrhLbhnHf1SaN9NCUQKM-1d_Pjv7O4BpiNUFC1-Xqf41NciYb4aC4nIIn7gLkspVh9vgDaFKI8gatSUYZXurx3xZpOI62NRhevtYOsvEb1J45pU8sp6-y5owGvLtSqGwSNvmq9vG2IczYoUoAI1JkERpGX-varLh0x9f9V6mUV6sIZffJeRwUdGcO1xwCOD2quYNBLBdRya1NHy9biFaTrxd0Gt7RI.pWjtebYMZxkXmMMx12e46Ovt78gbTxeK4QK6pjY2vqM&dib_tag=se&keywords=JBL%2BTune%2B500%2Bcuffie%2Bcablate&qid=1790894345&sr=8-1&th=1&linkCode=ll2&tag=3gifts-21&linkId=9ac8fe9e51add921656439eb4bc54965&ref_=as_li_ss_tl",
+      "asin": "B0BYWMLVG1",
+      "path": "/JBL-Tune-520BT-Wireless-Kopfhörer/dp/B0BYWMLVG1",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0BYWMLVG1?tag=3gifts-21",
+      "linkedProduct": "JBL Tune 520BT, cuffie wireless",
+      "reason": "Il modello è 520BT Bluetooth, diverso dalle Tune 500 cablate.",
+      "status": "needs-owner-choice"
+    },
+    {
+      "id": 267,
+      "name": "Relaxdays tagliere in bambù e ardesia 30,6 × 25 cm",
+      "url": "https://www.amazon.it/relaxdays-10028842-Antiscivolo-Scanalature-Antibatterico/dp/B084JFC46B?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1VZIWK47414WB&dib=eyJ2IjoiMSJ9.YZWsRIMFnnNb3motci6VLT6eEZNnVDu8caOW9lz1sL_287Bmu1fs8THVSpzEolRe5Yy33Zyl9IINpU1Zx8z4N8W1-mqhHhOftY66O1PrMolC03gw0CHlc3Nup1MgxRkX9KDOHTeJJrPsLeiNf_mzgZS2r7anj3Zix6plFo44IBmDdw2g9xgqB0CIkwtyPz2prABTvODR7gKOMS3oHtarQ1gI9KGQM5vFlhnKgBFH3D075xokaVPEA--dq44y4vZ_YBqPQLejAMKKBMjie8t02Oz_e3zZQDbUUlq4r07ZuwE.viMPLtfPWBTAs7CffClWlbFfi5Q1ypQ61T-yt9d7dUw&dib_tag=se&keywords=Relaxdays+tagliere+in+bamb%C3%B9+e+ardesia+30%2C6+%C3%97+25+cm&qid=1790894569&sprefix=relaxdays+tagliere+in+bamb%C3%B9+e+ardesia+30%2C6+25+cm%2Caps%2C215&sr=8-1-spons&ufe=app_do%3Aamzn1.fos.8a1562af-dabe-4f1d-8eb5-1ded1ace4ef7&aref=hAMizTeMGa&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&linkCode=ll2&tag=3gifts-21&linkId=0c7c99a6c35ccad64f5a51e74a8c7084&ref_=as_li_ss_tl",
+      "asin": "B084JFC46B",
+      "path": "/relaxdays-10028842-Antiscivolo-Scanalature-Antibatterico/dp/B084JFC46B",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B084JFC46B?tag=3gifts-21",
+      "linkedProduct": "Relaxdays tagliere in bambù 45 × 35 cm",
+      "reason": "Materiale e dimensioni diversi dal tagliere in bambù e ardesia 30,6 × 25 cm.",
+      "status": "needs-owner-choice"
+    },
+    {
+      "id": 273,
+      "name": "Gaiam blocco yoga in schiuma EVA",
+      "url": "https://www.amazon.it/VlFit-Pezzi-Blocchi-Yoga-Stretching/dp/B078KDSL3L?dib=eyJ2IjoiMSJ9.vd8Dlb30Yhi_L2kvYU4pj6v16ASukljADGJgv6NdjC8oTc4JIGdElPJ72mhgp5eql_qRVfeOhINLQ4_xdBIIrmxNfndI5emcn0VWN-WDyVMxC4EF5vZw1yWI8htC2m430lEy0Hutbqrd3OYyJUM3WfrG-KIUqpLE6sOJjafqiPwpLiHBCux0zyqck5mVE4sFoTTNOiShMETaWm0nrglJGg2v121MiugUg_kRGRz6j80jZRjRDO_JU8Y1XmIjhFQrpDVpVksww28sEyafvILM30f16WI0hEmjob-j9oREv5M.s-jfQeebLzHPtTKIWA08oAeFKJ-CrjyjxO56MSRJ9zE&dib_tag=se&keywords=Gaiam%2Bblocco%2Byoga%2Bin%2Bschiuma%2BEVA&qid=1790894653&sr=8-1&th=1&linkCode=ll2&tag=3gifts-21&linkId=9d524afc4ba2ebeddef037834692792b&ref_=as_li_ss_tl",
+      "asin": "B078KDSL3L",
+      "path": "/VlFit-Pezzi-Blocchi-Yoga-Stretching/dp/B078KDSL3L",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B078KDSL3L?tag=3gifts-21",
+      "linkedProduct": "VLFit, 2 blocchi yoga in EVA",
+      "reason": "Marca e confezione diverse dal blocco Gaiam indicato.",
+      "status": "needs-owner-choice"
+    },
+    {
+      "id": 274,
+      "name": "REEHUT cintura yoga 1,8 m con anelli a D",
+      "url": "https://www.amazon.it/BODYMATE-Cintura-Naturale-allungamento-Stretching/dp/B09DL2RSY2?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&content-id=amzn1.sym.9e749b1e-ede2-4197-8534-6bd6e33c94e1%3Aamzn1.sym.9e749b1e-ede2-4197-8534-6bd6e33c94e1&crid=3LDGXT65RVY90&cv_ct_cx=reehut%2Bcintura%2Byoga%2B1%2C8%2Bm%2Bcon%2Banelli%2Ba&keywords=reehut%2Bcintura%2Byoga%2B1%2C8%2Bm%2Bcon%2Banelli%2Ba&pd_rd_i=B09DL2RSY2&pd_rd_r=5494e512-4639-440c-8af6-fa3b48dca22d&pd_rd_w=aTWQr&pd_rd_wg=xPj98&pf_rd_p=9e749b1e-ede2-4197-8534-6bd6e33c94e1&pf_rd_r=25M7YETQVW106KS1S3WZ&qid=1790894678&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=reehut%2Bcintura%2Byoga%2B1%2C8%2Bm%2Bcon%2Banelli%2Ba%2Bd%2Caps%2C275&sr=1-1-606b9024-e7f3-4ea5-8e94-e09e6bc2f45f-spons&aref=gBkKYZFzvj&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&linkCode=ll2&tag=3gifts-21&linkId=b598186125d94c6479df1e69f35dbb6e&ref_=as_li_ss_tl",
+      "asin": "B09DL2RSY2",
+      "path": "/BODYMATE-Cintura-Naturale-allungamento-Stretching/dp/B09DL2RSY2",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B09DL2RSY2?tag=3gifts-21",
+      "linkedProduct": "BODYMATE cintura yoga 250 cm",
+      "reason": "Marca e lunghezza diverse dalla cintura REEHUT 180 cm.",
+      "status": "needs-owner-choice"
+    },
+    {
+      "id": 288,
+      "name": "Trixie Cat Activity Fun Board 4590",
+      "url": "https://www.amazon.it/Trixie-4591-Turn-Around/dp/B003TOO5PA?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2PER8X5KZ6870&dib=eyJ2IjoiMSJ9.hbgXKW1seYWFs5MFvug_5-Agldo7zt2-W1NF1WDxkf-hSMG2NTG_KwdLD9ChXzm71W62BoIqcJIOs-fxOkOgPGVLtcj-cpfbqyRptcbV4kZkM2CwNKSZ3z5zG4oAflrI_Chils_bPFoR2cAapaLkKnneV6zCk9hX5UFxYw7fVwWX-FaoV9mo2W90arCmig_xNmvwdDNUnQz9lt5YiKVjNyYBv4HrsvIP_WG-pZuKXs9XDLohDUVLKZfi84EQGNABrgRwiSf1V2plrSYniXeDpYAxcdeYRLSekDgEF9kCtFI.gecUne3EHIQYjVxIxHniJzjUCNYno68GzkC-B3R3PJE&dib_tag=se&keywords=Trixie%2BCat%2BActivity%2BFun%2BBoard%2B4590&qid=1790894777&sprefix=trixie%2Bcat%2Bactivity%2Bfun%2Bboard%2B4590%2Caps%2C183&sr=8-6&th=1&linkCode=ll2&tag=3gifts-21&linkId=7ed0526e574c29a3497afef6905e5666&ref_=as_li_ss_tl",
+      "asin": "B003TOO5PA",
+      "path": "/Trixie-4591-Turn-Around/dp/B003TOO5PA",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B003TOO5PA?tag=3gifts-21",
+      "linkedProduct": "Trixie Turn Around 4591",
+      "reason": "Il modello è Turn Around 4591, diverso da Fun Board 4590.",
+      "status": "needs-owner-choice"
+    },
+    {
+      "id": 299,
+      "name": "Maped organizer da scrivania compatto 575400",
+      "url": "https://www.amazon.it/KINGFOM-Organizer-scrivania-Multifunzione-portapenne/dp/B0CH89SBG9?content-id=amzn1.sym.43cf52d1-5f0f-40a1-83a1-485f5bb968ae%3Aamzn1.sym.43cf52d1-5f0f-40a1-83a1-485f5bb968ae&cv_ct_cx=Maped%2Borganizer%2Bda%2Bscrivania%2Bcompatto%2B575400&keywords=Maped%2Borganizer%2Bda%2Bscrivania%2Bcompatto%2B575400&pd_rd_i=B0CH89SBG9&pd_rd_r=fcdfe003-cf2a-48f8-b0b2-04926bdac2ff&pd_rd_w=8Hde8&pd_rd_wg=dg9AH&pf_rd_p=43cf52d1-5f0f-40a1-83a1-485f5bb968ae&pf_rd_r=GZ5ANCAPFADHA7DZ9NZS&qid=1790894829&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-2-ca22f3c3-0606-4173-afab-fb32ddc038f9-spons&aref=jKKnXCvTVQ&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&linkCode=ll2&tag=3gifts-21&linkId=1a6dbd935ae311177078844e4bd5be33&ref_=as_li_ss_tl",
+      "asin": "B0CH89SBG9",
+      "path": "/KINGFOM-Organizer-scrivania-Multifunzione-portapenne/dp/B0CH89SBG9",
+      "tag": [
+        "3gifts-21"
+      ],
+      "canonical": "https://www.amazon.it/dp/B0CH89SBG9?tag=3gifts-21",
+      "linkedProduct": "KINGFOM organizer da scrivania, 5 scomparti",
+      "reason": "Marca e modello diversi da Maped 575400.",
+      "status": "needs-owner-choice"
+    }
+  ]
+}

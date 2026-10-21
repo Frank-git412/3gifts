@@ -1,0 +1,4531 @@
+{
+  "terms": [
+    {
+      "id": "techGaming:smartHome:kw_3c6623ae8caf",
+      "family": "illuminazione_smart",
+      "it": "lampadina smart",
+      "en": "smart bulb",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_293d21e61f09",
+      "family": "illuminazione_smart",
+      "it": "lampadina smart e27",
+      "en": "E27 smart bulb",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_eaea254f9074",
+      "family": "illuminazione_smart",
+      "it": "lampadina smart e14",
+      "en": "E14 smart bulb",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_fb489480e621",
+      "family": "illuminazione_smart",
+      "it": "lampadina smart alexa",
+      "en": "Alexa smart bulb",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_4e0434fefac2",
+      "family": "illuminazione_smart",
+      "it": "lampadina smart bluetooth",
+      "en": "Bluetooth smart bulb",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_dcd0ac5d2d46",
+      "family": "prese_connesse",
+      "it": "presa smart",
+      "en": "smart plug",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_b44f38cb7ac5",
+      "family": "prese_connesse",
+      "it": "presa smart wifi",
+      "en": "Wi-Fi smart plug",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_9da20987f1b7",
+      "family": "prese_connesse",
+      "it": "presa smart italiana",
+      "en": "Italian smart plug",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_eb7b9283db3d",
+      "family": "prese_connesse",
+      "it": "presa smart zigbee",
+      "en": "Zigbee smart plug",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_48408a9474e4",
+      "family": "prese_connesse",
+      "it": "presa smart apple homekit",
+      "en": "Apple HomeKit smart plug",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_a71d7fdfa378",
+      "family": "climatizzazione_smart",
+      "it": "termostato smart",
+      "en": "smart thermostat",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_966f34b01625",
+      "family": "climatizzazione_smart",
+      "it": "termostato smart wifi",
+      "en": "Wi-Fi smart thermostat",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_90da97741da9",
+      "family": "climatizzazione_smart",
+      "it": "termostato smart a batteria",
+      "en": "battery-powered smart thermostat",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_df812a359715",
+      "family": "climatizzazione_smart",
+      "it": "termostato smart caldaia",
+      "en": "boiler smart thermostat",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_30327e7f82b1",
+      "family": "climatizzazione_smart",
+      "it": "termostato smart alexa",
+      "en": "Alexa smart thermostat",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_72cd5c9afc2c",
+      "family": "videocitofonia",
+      "it": "videocitofono wifi",
+      "en": "Wi-Fi video intercom",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_0a9ae698472c",
+      "family": "videocitofonia",
+      "it": "videocitofono wifi senza fili da esterno",
+      "en": "outdoor wireless Wi-Fi video intercom",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_c1b8831cb92a",
+      "family": "videocitofonia",
+      "it": "videocitofono wifi 2 fili",
+      "en": "2-wire Wi-Fi video intercom",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_e575ad1ccda4",
+      "family": "videocitofonia",
+      "it": "videocitofono wifi bifamiliare",
+      "en": "two-household Wi-Fi video intercom",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_7b40e9a72938",
+      "family": "videocitofonia",
+      "it": "videocitofono wifi a batteria",
+      "en": "battery-powered Wi-Fi video intercom",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_4e07dfa18131",
+      "family": "telecamere",
+      "it": "telecamera wifi",
+      "en": "Wi-Fi camera",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_a5d2e4e48c88",
+      "family": "telecamere",
+      "it": "telecamera wifi interno",
+      "en": "indoor Wi-Fi camera",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_0ca87bd29fa1",
+      "family": "telecamere",
+      "it": "telecamera wifi esterno",
+      "en": "outdoor Wi-Fi camera",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_d3a54cea836b",
+      "family": "telecamere",
+      "it": "telecamera wifi a batteria",
+      "en": "battery-powered Wi-Fi camera",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_9bd4b2e30bd2",
+      "family": "telecamere",
+      "it": "telecamera wifi alexa",
+      "en": "Alexa Wi-Fi camera",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_9a3e79e06021",
+      "family": "illuminazione_smart",
+      "it": "striscia led smart",
+      "en": "smart LED strip",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_8b23f50720b4",
+      "family": "illuminazione_smart",
+      "it": "striscia led smart alexa",
+      "en": "Alexa smart LED strip",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_6e7f0a82650b",
+      "family": "illuminazione_smart",
+      "it": "striscia led smart 2 metri",
+      "en": "2 metre smart LED strip",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_3706723bd1d4",
+      "family": "illuminazione_smart",
+      "it": "striscia led smart 5 metri",
+      "en": "5 metre smart LED strip",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_7bc6fbe3a63b",
+      "family": "illuminazione_smart",
+      "it": "striscia led smart rgbic",
+      "en": "RGBIC smart LED strip",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_a138dd9fbeb5",
+      "family": "assistenti_vocali",
+      "it": "smart speaker",
+      "en": "smart speaker",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_5f48a6eb7d3e",
+      "family": "assistenti_vocali",
+      "it": "smart speaker google",
+      "en": "Google smart speaker",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_ee9088514721",
+      "family": "assistenti_vocali",
+      "it": "smart speaker wifi",
+      "en": "Wi-Fi smart speaker",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_e98d377f7b86",
+      "family": "assistenti_vocali",
+      "it": "smart speaker alexa",
+      "en": "Alexa smart speaker",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_a7c25bee68a0",
+      "family": "assistenti_vocali",
+      "it": "smart speaker amazon echo",
+      "en": "Amazon Echo smart speaker",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_8c6e03e1f01b",
+      "family": "display_domestici",
+      "it": "echo show",
+      "en": "Echo Show",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_0125dcaae389",
+      "family": "display_domestici",
+      "it": "echo show 10",
+      "en": "Echo Show 10",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_7b460881fd11",
+      "family": "display_domestici",
+      "it": "echo show 15",
+      "en": "Echo Show 15",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_80dd1c868d06",
+      "family": "display_domestici",
+      "it": "echo show 21",
+      "en": "Echo Show 21",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_6a864169e0c7",
+      "family": "display_domestici",
+      "it": "echo show alexa",
+      "en": "Alexa Echo Show",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_ecfacbc019be",
+      "family": "hub_domotici",
+      "it": "hub zigbee",
+      "en": "Zigbee hub",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_8ffde687b955",
+      "family": "hub_domotici",
+      "it": "hub zigbee 3.0",
+      "en": "Zigbee 3.0 hub",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_a65ce15b3f65",
+      "family": "hub_domotici",
+      "it": "hub zigbee matter",
+      "en": "Zigbee Matter hub",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_2df119bb8e74",
+      "family": "hub_domotici",
+      "it": "hub zigbee alexa",
+      "en": "Alexa Zigbee hub",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_87a8019b9fbe",
+      "family": "climatizzazione_smart",
+      "it": "valvola termostatica wifi",
+      "en": "Wi-Fi thermostatic valve",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_2901379dcdf1",
+      "family": "climatizzazione_smart",
+      "it": "valvola termostatica per termosifoni wifi",
+      "en": "Wi-Fi radiator thermostatic valve",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_ced1a5ab673a",
+      "family": "climatizzazione_smart",
+      "it": "valvola termostatica wifi intelligente",
+      "en": "smart Wi-Fi thermostatic valve",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_fe2898e81ffa",
+      "family": "sensori_movimento",
+      "it": "sensore movimento smart",
+      "en": "smart motion sensor",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_c941aeb8e602",
+      "family": "sensori_movimento",
+      "it": "sensore di movimento smart",
+      "en": "smart motion sensor",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_063ba3e67ad8",
+      "family": "sensori_movimento",
+      "it": "sensore movimento smart home",
+      "en": "smart home motion sensor",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_b54087b9b8e5",
+      "family": "sensori_movimento",
+      "it": "sensore movimento allarme smart life",
+      "en": "Smart Life alarm motion sensor",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_eb2a15d53df9",
+      "family": "sensori_apertura",
+      "it": "sensore porta wifi",
+      "en": "Wi-Fi door sensor",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_68289427d85a",
+      "family": "sensori_apertura",
+      "it": "sensore porta wifi senza hub",
+      "en": "Wi-Fi door sensor without hub",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_6996d49d9fe9",
+      "family": "sensori_apertura",
+      "it": "sensore porta wifi con sirena",
+      "en": "Wi-Fi door sensor with siren",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_9fbea6cf8f5f",
+      "family": "sensori_apertura",
+      "it": "sensore apertura porta wifi",
+      "en": "Wi-Fi door opening sensor",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_8ab0a2aca803",
+      "family": "sensori_apertura",
+      "it": "sensore porta wifi alexa",
+      "en": "Alexa Wi-Fi door sensor",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_0062099b2039",
+      "family": "sensori_ambiente",
+      "it": "sensore temperatura wifi",
+      "en": "Wi-Fi temperature sensor",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_57ff5b17661b",
+      "family": "sensori_ambiente",
+      "it": "sensore temperatura wifi esterno",
+      "en": "outdoor Wi-Fi temperature sensor",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_3372bb0efe21",
+      "family": "sensori_ambiente",
+      "it": "sensore temperatura wifi con sonda",
+      "en": "Wi-Fi temperature sensor with probe",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_955b8ac2dd3b",
+      "family": "sensori_ambiente",
+      "it": "sensore temperatura wifi alexa",
+      "en": "Alexa Wi-Fi temperature sensor",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_f9622ea212eb",
+      "family": "sensori_ambiente",
+      "it": "sensore temperatura e umidità wifi",
+      "en": "Wi-Fi temperature and humidity sensor",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_777f21a1959e",
+      "family": "sensori_allagamento",
+      "it": "sensore allagamento wifi",
+      "en": "Wi-Fi water leak sensor",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_39d6d693b5fe",
+      "family": "sensori_allagamento",
+      "it": "sensore allagamento wifi con filo",
+      "en": "wired Wi-Fi water leak sensor",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_7dbf97291f10",
+      "family": "sensori_allagamento",
+      "it": "sensore di allagamento wifi",
+      "en": "Wi-Fi water leak sensor",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_f90135636d5d",
+      "family": "accessi",
+      "it": "serratura smart",
+      "en": "smart lock",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_f56363864a3a",
+      "family": "accessi",
+      "it": "serratura smart porta blindata",
+      "en": "armoured door smart lock",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_e5c21c9489e7",
+      "family": "accessi",
+      "it": "serratura smart porta interna",
+      "en": "interior door smart lock",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_01b3cb4d6b26",
+      "family": "accessi",
+      "it": "serratura smart alexa",
+      "en": "Alexa smart lock",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_2945e47c55eb",
+      "family": "comandi_smart",
+      "it": "interruttore smart",
+      "en": "smart switch",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_01b3cdfa03ef",
+      "family": "comandi_smart",
+      "it": "interruttore smart wifi",
+      "en": "Wi-Fi smart switch",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_625cea81fe9e",
+      "family": "comandi_smart",
+      "it": "interruttore smart alexa",
+      "en": "Alexa smart switch",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_6c7e59e1e35d",
+      "family": "comandi_smart",
+      "it": "interruttore smart a batteria",
+      "en": "battery-powered smart switch",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_f5a83a2b58a8",
+      "family": "comandi_smart",
+      "it": "interruttore smart alexa per luci",
+      "en": "Alexa smart light switch",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_9d2858172549",
+      "family": "automazioni_tapparelle",
+      "it": "tapparella smart",
+      "en": "smart roller shutter",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_96322515837c",
+      "family": "automazioni_tapparelle",
+      "it": "interruttore tapparella smart",
+      "en": "smart roller shutter switch",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_6bcc2c6e3202",
+      "family": "automazioni_tapparelle",
+      "it": "motore tapparella smart",
+      "en": "smart roller shutter motor",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:smartHome:kw_934ae778e712",
+      "family": "automazioni_tapparelle",
+      "it": "avvolgitore tapparella smart",
+      "en": "smart roller shutter belt winder",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_5d5f43858f3a",
+      "family": "console_portatili",
+      "it": "console portatile",
+      "en": "handheld console",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_6c441a98c353",
+      "family": "console_portatili",
+      "it": "console portatile retrogaming",
+      "en": "retrogaming handheld console",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_daba1d5283c2",
+      "family": "console_portatili",
+      "it": "console portatile gaming",
+      "en": "handheld gaming console",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_6d4df0ff2a57",
+      "family": "console_portatili",
+      "it": "console portatile android",
+      "en": "Android handheld console",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_d2882518d60c",
+      "family": "console_fisse",
+      "it": "ps5",
+      "en": "PS5",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_a4a8d50fae10",
+      "family": "console_fisse",
+      "it": "ps5 pro",
+      "en": "PS5 Pro",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_79726221f6ef",
+      "family": "console_fisse",
+      "it": "ps5 slim",
+      "en": "PS5 Slim",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_5ade3baa2107",
+      "family": "console_ibride",
+      "it": "nintendo switch 2",
+      "en": "Nintendo Switch 2",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_69261a4b4a83",
+      "family": "console_ibride",
+      "it": "nintendo switch 2 console",
+      "en": "Nintendo Switch 2 console",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_1696618120c3",
+      "family": "console_fisse",
+      "it": "xbox series x",
+      "en": "Xbox Series X",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_9a86cf637269",
+      "family": "console_fisse",
+      "it": "xbox series x console",
+      "en": "Xbox Series X console",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_ee9b87d25724",
+      "family": "console_fisse",
+      "it": "xbox series x 2tb",
+      "en": "Xbox Series X 2TB",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_aa1e874a118c",
+      "family": "console_fisse",
+      "it": "xbox series x all digital",
+      "en": "Xbox Series X all digital",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_16cc2b92e374",
+      "family": "realta_virtuale",
+      "it": "visore vr",
+      "en": "VR headset",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_cfa98e960a5f",
+      "family": "realta_virtuale",
+      "it": "visore vr pc",
+      "en": "PC VR headset",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_b47ffce9a767",
+      "family": "realta_virtuale",
+      "it": "visore vr ps5",
+      "en": "PS5 VR headset",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_02b71bd74a2e",
+      "family": "realta_virtuale",
+      "it": "visore vr smartphone",
+      "en": "smartphone VR headset",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_0546e87a46ff",
+      "family": "realta_virtuale",
+      "it": "visore vr all-in-one",
+      "en": "all-in-one VR headset",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_381cedd4d845",
+      "family": "periferiche_gaming",
+      "it": "mouse gaming",
+      "en": "gaming mouse",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_ada02686fa49",
+      "family": "periferiche_gaming",
+      "it": "mouse gaming wireless",
+      "en": "wireless gaming mouse",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_c04d1af8bce3",
+      "family": "periferiche_gaming",
+      "it": "mouse gaming con filo",
+      "en": "wired gaming mouse",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_4d027d03c7f6",
+      "family": "periferiche_gaming",
+      "it": "mouse gaming bianco",
+      "en": "white gaming mouse",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_ef1fc28ae201",
+      "family": "periferiche_gaming",
+      "it": "tastiera gaming",
+      "en": "gaming keyboard",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_500de56164ea",
+      "family": "audio_gaming",
+      "it": "cuffie gaming",
+      "en": "gaming headphones",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_25dc18d8cddd",
+      "family": "controller",
+      "it": "controller pc",
+      "en": "PC controller",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_8d6bb9bd7210",
+      "family": "postazione_gaming",
+      "it": "tappetino mouse gaming",
+      "en": "gaming mouse pad",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_6c0bf54bff91",
+      "family": "simulazione_guida",
+      "it": "volante gaming",
+      "en": "gaming steering wheel",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_2ea23f63bd2b",
+      "family": "postazione_gaming",
+      "it": "sedia gaming",
+      "en": "gaming chair",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_5d7dba36f6b8",
+      "family": "streaming",
+      "it": "microfono gaming",
+      "en": "gaming microphone",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_c00ffeeba027",
+      "family": "streaming",
+      "it": "stream deck",
+      "en": "Stream Deck",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_6250b0118f10",
+      "family": "giochi_playstation",
+      "it": "giochi ps5",
+      "en": "PS5 games",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_c76838139628",
+      "family": "giochi_switch",
+      "it": "giochi nintendo switch",
+      "en": "Nintendo Switch games",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_60c962c25122",
+      "family": "giochi_switch2",
+      "it": "giochi nintendo switch 2",
+      "en": "Nintendo Switch 2 games",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_11f67a258492",
+      "family": "giochi_xbox",
+      "it": "giochi xbox",
+      "en": "Xbox games",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_c22bf91572b1",
+      "family": "giochi_pc",
+      "it": "giochi pc",
+      "en": "PC games",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_acc77d75b381",
+      "family": "periferiche_gaming",
+      "it": "tastiera gaming wireless",
+      "en": "wireless gaming keyboard",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_794dc3ba3e6f",
+      "family": "periferiche_gaming",
+      "it": "tastiera gaming meccanica",
+      "en": "mechanical gaming keyboard",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_fd8cdb3320f9",
+      "family": "periferiche_gaming",
+      "it": "tastiera gaming layout italiano",
+      "en": "Italian layout gaming keyboard",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_2aee36025bac",
+      "family": "periferiche_gaming",
+      "it": "tastiera gaming meccanica wireless",
+      "en": "wireless mechanical gaming keyboard",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_6c6f2352a746",
+      "family": "periferiche_gaming",
+      "it": "tastiera gaming bluetooth",
+      "en": "Bluetooth gaming keyboard",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_a354dff3cd13",
+      "family": "audio_gaming",
+      "it": "cuffie gaming wireless",
+      "en": "wireless gaming headphones",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_129943428f2b",
+      "family": "audio_gaming",
+      "it": "cuffie gaming ps5",
+      "en": "PS5 gaming headphones",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_f62c8257c69f",
+      "family": "audio_gaming",
+      "it": "cuffie gaming pc",
+      "en": "PC gaming headphones",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_1de115c83dad",
+      "family": "audio_gaming",
+      "it": "cuffie gaming con cavo",
+      "en": "wired gaming headphones",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_63e0b5328e6e",
+      "family": "audio_gaming",
+      "it": "cuffie gaming con microfono",
+      "en": "gaming headphones with microphone",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_1429ba4708b1",
+      "family": "controller",
+      "it": "controller pc wireless",
+      "en": "wireless PC controller",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_5caf7e67e0bd",
+      "family": "controller",
+      "it": "controller pc cablato",
+      "en": "wired PC controller",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_4530e4fc788f",
+      "family": "controller",
+      "it": "controller pc bluetooth",
+      "en": "Bluetooth PC controller",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_680fdc3181a5",
+      "family": "controller",
+      "it": "controller pc con base di ricarica",
+      "en": "PC controller with charging dock",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_3b5146485494",
+      "family": "controller",
+      "it": "controller pc bluetooth ricaricabile",
+      "en": "rechargeable Bluetooth PC controller",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_776c8a069c8a",
+      "family": "postazione_gaming",
+      "it": "tappetino mouse gaming xxl",
+      "en": "XXL gaming mouse pad",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_0b78aa2427f7",
+      "family": "postazione_gaming",
+      "it": "tappetino mouse gaming antiscivolo",
+      "en": "non-slip gaming mouse pad",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_e75b87093b14",
+      "family": "postazione_gaming",
+      "it": "tappetino mouse gaming rgb",
+      "en": "RGB gaming mouse pad",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_2bdab3acae16",
+      "family": "postazione_gaming",
+      "it": "tappetino mouse gaming in vetro",
+      "en": "glass gaming mouse pad",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_abea48054c7b",
+      "family": "postazione_gaming",
+      "it": "tappetino mouse gaming tessuto",
+      "en": "fabric gaming mouse pad",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_e14d1f88a3d9",
+      "family": "simulazione_guida",
+      "it": "volante gaming per pc",
+      "en": "PC gaming steering wheel",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_52bbd0942f19",
+      "family": "simulazione_guida",
+      "it": "volante gaming ps5",
+      "en": "PS5 gaming steering wheel",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_f1d829e41c14",
+      "family": "simulazione_guida",
+      "it": "volante gaming con cambio",
+      "en": "gaming steering wheel with shifter",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_2ec571b43d91",
+      "family": "simulazione_guida",
+      "it": "volante gaming force feedback",
+      "en": "force feedback gaming steering wheel",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_a030fa44fd11",
+      "family": "simulazione_guida",
+      "it": "volante gaming xbox series x",
+      "en": "Xbox Series X gaming steering wheel",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_968afca3aa8a",
+      "family": "postazione_gaming",
+      "it": "sedia gaming ergonomica",
+      "en": "ergonomic gaming chair",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_928814de2010",
+      "family": "postazione_gaming",
+      "it": "sedia gaming tessuto",
+      "en": "fabric gaming chair",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_1f523b8a53ff",
+      "family": "postazione_gaming",
+      "it": "sedia gaming braccioli regolabili",
+      "en": "gaming chair with adjustable armrests",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_8820abd86697",
+      "family": "postazione_gaming",
+      "it": "sedia gaming con poggiapiedi",
+      "en": "gaming chair with footrest",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_4d9e571d8299",
+      "family": "postazione_gaming",
+      "it": "sedia gaming bianca",
+      "en": "white gaming chair",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_275bdd702298",
+      "family": "streaming",
+      "it": "microfono gaming pc",
+      "en": "PC gaming microphone",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_3f3a95422eaf",
+      "family": "streaming",
+      "it": "microfono gaming con asta",
+      "en": "gaming microphone with stand",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_98c365d60d97",
+      "family": "streaming",
+      "it": "microfono gaming ps5",
+      "en": "PS5 gaming microphone",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_64dd247189e6",
+      "family": "streaming",
+      "it": "microfono gaming con braccio",
+      "en": "gaming microphone with arm",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_31ad80215049",
+      "family": "streaming",
+      "it": "microfono gaming cardioide streaming",
+      "en": "cardioid gaming streaming microphone",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_c68b580ee70c",
+      "family": "streaming",
+      "it": "stream deck mini",
+      "en": "Stream Deck Mini",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_6dde40e03982",
+      "family": "streaming",
+      "it": "stream deck xl",
+      "en": "Stream Deck XL",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_60e1010909c5",
+      "family": "streaming",
+      "it": "stream deck plus",
+      "en": "Stream Deck Plus",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_19061d58c060",
+      "family": "streaming",
+      "it": "stream deck mk.2",
+      "en": "Stream Deck MK.2",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_c5cd4e4d87fe",
+      "family": "streaming",
+      "it": "stream deck 15 tasti",
+      "en": "15-key Stream Deck",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_4060eeac1f03",
+      "family": "giochi_playstation",
+      "it": "giochi ps5 avventura",
+      "en": "PS5 adventure games",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_06058da2c7a5",
+      "family": "giochi_playstation",
+      "it": "giochi ps5 azione",
+      "en": "PS5 action games",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_6822d615091f",
+      "family": "giochi_playstation",
+      "it": "giochi ps5 cooperativi",
+      "en": "PS5 cooperative games",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_de275fa05c49",
+      "family": "giochi_playstation",
+      "it": "giochi ps5 corse auto",
+      "en": "PS5 car racing games",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_ee33023a9530",
+      "family": "giochi_playstation",
+      "it": "giochi ps5 multiplayer locale",
+      "en": "PS5 local multiplayer games",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_0d0319e28570",
+      "family": "giochi_switch",
+      "it": "giochi nintendo switch azione",
+      "en": "Nintendo Switch action games",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_020c67a8400b",
+      "family": "giochi_switch",
+      "it": "giochi nintendo switch gdr",
+      "en": "Nintendo Switch role-playing games",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_e0345ad0fd6c",
+      "family": "giochi_switch",
+      "it": "giochi nintendo switch indie",
+      "en": "Nintendo Switch indie games",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_bec2cfdc0422",
+      "family": "giochi_switch",
+      "it": "giochi nintendo switch per 2 giocatori",
+      "en": "Nintendo Switch games for 2 players",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_f1882fb3cd1b",
+      "family": "giochi_switch",
+      "it": "giochi nintendo switch quiz",
+      "en": "Nintendo Switch quiz games",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_134a6cc41dc3",
+      "family": "giochi_switch2",
+      "it": "giochi nintendo switch 2 sport",
+      "en": "Nintendo Switch 2 sports games",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_f9efb36b65d3",
+      "family": "giochi_switch2",
+      "it": "giochi nintendo switch 2 azione",
+      "en": "Nintendo Switch 2 action games",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_3c3c248bd7bc",
+      "family": "giochi_switch2",
+      "it": "giochi nintendo switch 2 auto",
+      "en": "Nintendo Switch 2 car games",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_8953ee4014ec",
+      "family": "giochi_switch2",
+      "it": "giochi nintendo switch 2 per due giocatori",
+      "en": "Nintendo Switch 2 games for two players",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_73f8d378aa63",
+      "family": "giochi_switch2",
+      "it": "giochi nintendo switch 2 italiano",
+      "en": "Italian Nintendo Switch 2 games",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_fe20a8588ae2",
+      "family": "giochi_xbox",
+      "it": "giochi xbox series x",
+      "en": "Xbox Series X games",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_2e41979befc5",
+      "family": "giochi_xbox",
+      "it": "giochi xbox series s",
+      "en": "Xbox Series S games",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_acf69a4d60fd",
+      "family": "giochi_xbox",
+      "it": "giochi xbox one",
+      "en": "Xbox One games",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_e9e58f4943a6",
+      "family": "giochi_xbox",
+      "it": "giochi xbox codice download",
+      "en": "Xbox game download code",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_609514fe513f",
+      "family": "giochi_xbox",
+      "it": "giochi xbox one multiplayer locale",
+      "en": "Xbox One local multiplayer games",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_a32f0877f44d",
+      "family": "giochi_pc",
+      "it": "giochi pc strategia",
+      "en": "PC strategy games",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_1150d5467971",
+      "family": "giochi_pc",
+      "it": "giochi pc simulazione",
+      "en": "PC simulation games",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_46fa58cc9e9f",
+      "family": "giochi_pc",
+      "it": "giochi pc rpg",
+      "en": "PC RPG games",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_ed7881398537",
+      "family": "giochi_pc",
+      "it": "giochi pc codice download steam",
+      "en": "PC Steam game download code",
+      "aliasesEN": []
+    },
+    {
+      "id": "techGaming:gaming:kw_7089f3d52ee7",
+      "family": "giochi_pc",
+      "it": "giochi pc italiano",
+      "en": "Italian PC games",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_58917f999e32",
+      "family": "vinili",
+      "it": "vinile",
+      "en": "vinyl record",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_695bfa1be300",
+      "family": "vinili",
+      "it": "dischi vinile",
+      "en": "vinyl records",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_873fdcbd5eb2",
+      "family": "giradischi",
+      "it": "giradischi",
+      "en": "turntable",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_d10470567295",
+      "family": "lettori_cd",
+      "it": "lettore cd",
+      "en": "CD player",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_05c0f45732b0",
+      "family": "cd_musicali",
+      "it": "cd musica",
+      "en": "music CDs",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_7f5b57482c91",
+      "family": "chitarre",
+      "it": "chitarra acustica",
+      "en": "acoustic guitar",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_aa9231d96c8c",
+      "family": "chitarre",
+      "it": "chitarra elettrica",
+      "en": "electric guitar",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_9e7fd41a199c",
+      "family": "tastiere",
+      "it": "tastiera musicale",
+      "en": "musical keyboard",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_66714d1cd3b4",
+      "family": "ukulele",
+      "it": "ukulele",
+      "en": "ukulele",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_388db4658117",
+      "family": "armoniche",
+      "it": "armonica",
+      "en": "harmonica",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_db87885e496d",
+      "family": "accordatori",
+      "it": "accordatore chitarra",
+      "en": "guitar tuner",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_6fb289e07b7a",
+      "family": "capotasti",
+      "it": "capotasto chitarra",
+      "en": "guitar capo",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_390ba61fa426",
+      "family": "plettri",
+      "it": "plettri chitarra",
+      "en": "guitar picks",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_16900afa6b78",
+      "family": "metronomi",
+      "it": "metronomo",
+      "en": "metronome",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_e14619ae4434",
+      "family": "leggii_musicali",
+      "it": "leggio musicale",
+      "en": "music stand",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:cinema:kw_9d4d03184129",
+      "family": "dvd",
+      "it": "dvd film",
+      "en": "DVD movies",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:cinema:kw_4e08ce79526a",
+      "family": "blu_ray",
+      "it": "blu ray",
+      "en": "Blu-ray",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:cinema:kw_4f306dead5b0",
+      "family": "blu_ray_4k",
+      "it": "blu ray 4k",
+      "en": "4K Blu-ray",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:cinema:kw_653d6d7b5a2d",
+      "family": "cofanetti_film",
+      "it": "cofanetto film",
+      "en": "movie box set",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:cinema:kw_5d909d9e411d",
+      "family": "cofanetti_serie",
+      "it": "cofanetto serie tv",
+      "en": "TV series box set",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:cinema:kw_3cb254c8a00a",
+      "family": "fantascienza",
+      "it": "film fantascienza dvd",
+      "en": "science fiction movies on DVD",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:cinema:kw_5e7bbbed796b",
+      "family": "horror",
+      "it": "film horror dvd",
+      "en": "horror movies on DVD",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:cinema:kw_300e7fe06e58",
+      "family": "animazione",
+      "it": "film animazione dvd",
+      "en": "animated movies on DVD",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:cinema:kw_546dcca1877f",
+      "family": "commedia",
+      "it": "film commedia dvd",
+      "en": "comedy movies on DVD",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:cinema:kw_2a6657f9ce91",
+      "family": "classici",
+      "it": "film classici dvd",
+      "en": "classic movies on DVD",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:audio:kw_1bc79482071c",
+      "family": "audiolibri",
+      "it": "audiolibri",
+      "en": "audiobooks",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:audio:kw_0c11aa667c92",
+      "family": "audiolibri",
+      "it": "audiolibro",
+      "en": "audiobook",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:audio:kw_961281ce5eac",
+      "family": "servizi_audiolibri",
+      "it": "audible",
+      "en": "Audible",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:audio:kw_4706017b570e",
+      "family": "abbonamenti_audiolibri",
+      "it": "abbonamento audible",
+      "en": "Audible subscription",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:audio:kw_fa3dae7a1295",
+      "family": "buoni_audiolibri",
+      "it": "buono audible",
+      "en": "Audible voucher",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:audio:kw_885857ceab9e",
+      "family": "audiolibri_romanzi",
+      "it": "audiolibri romanzi",
+      "en": "novel audiobooks",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:audio:kw_b7b9bb62662a",
+      "family": "audiolibri_thriller",
+      "it": "audiolibri thriller",
+      "en": "thriller audiobooks",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:audio:kw_325bfcb4da40",
+      "family": "audiolibri_fantasy",
+      "it": "audiolibri fantasy",
+      "en": "fantasy audiobooks",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:audio:kw_91694861d716",
+      "family": "audiolibri_italiano",
+      "it": "audiolibri italiano",
+      "en": "Italian audiobooks",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:audio:kw_aa3fe7c40638",
+      "family": "audiolibri_inglese",
+      "it": "audiolibri inglese",
+      "en": "English audiobooks",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_24e2a4903683",
+      "family": "vinili",
+      "it": "vinili",
+      "en": "vinyl records",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_bb578486da5e",
+      "family": "vinili_usati",
+      "it": "dischi vinile usati",
+      "en": "used vinyl records",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_621ad1bfba5b",
+      "family": "giradischi",
+      "it": "giradischi vinile",
+      "en": "vinyl turntable",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_9d4323d6ed33",
+      "family": "supporti_vinili",
+      "it": "porta dischi vinile",
+      "en": "vinyl record holder",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_afd32de5d253",
+      "family": "cd_classica",
+      "it": "cd musica classica",
+      "en": "classical music CDs",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_c8d29d23fb55",
+      "family": "ricambi_chitarra",
+      "it": "piroli chitarra acustica",
+      "en": "acoustic guitar pegs",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_ee210c220eae",
+      "family": "accessori_chitarra",
+      "it": "accessori chitarra elettrica",
+      "en": "electric guitar accessories",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_014a0ae0cfc1",
+      "family": "tastiere_usate",
+      "it": "tastiera musicale usata",
+      "en": "used musical keyboard",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_96fcdd688176",
+      "family": "capotasti",
+      "it": "capotasto chitarra acustica",
+      "en": "acoustic guitar capo",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_592187e4954d",
+      "family": "capotasti",
+      "it": "capotasto chitarra classica",
+      "en": "classical guitar capo",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:audio:kw_cd31aac61eee",
+      "family": "audiolibri_italiano",
+      "it": "audiolibri in italiano",
+      "en": "audiobooks in Italian",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:audio:kw_ca89c8e16ec7",
+      "family": "abbonamenti_audiolibri",
+      "it": "regalare abbonamento audible",
+      "en": "gift an Audible subscription",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:audio:kw_e26a977ecaf3",
+      "family": "microfoni_podcast",
+      "it": "microfono podcast",
+      "en": "podcast microphone",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:audio:kw_fbfef7039247",
+      "family": "kit_podcast",
+      "it": "kit podcast",
+      "en": "podcast kit",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:audio:kw_57cfeb6cc4e2",
+      "family": "cuffie",
+      "it": "cuffie podcast",
+      "en": "podcast headphones",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:audio:kw_3dd9b8bb1ee6",
+      "family": "registratori",
+      "it": "registratore vocale",
+      "en": "voice recorder",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:audio:kw_37b0492a218d",
+      "family": "lettori_mp3",
+      "it": "lettore mp3",
+      "en": "MP3 player",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_581fa8b4133d",
+      "family": "vinili_rock",
+      "it": "vinili rock",
+      "en": "rock vinyl records",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_bb930837bc23",
+      "family": "vinili_jazz",
+      "it": "vinili jazz",
+      "en": "jazz vinyl records",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_ad7a7b1442f0",
+      "family": "vinili_classica",
+      "it": "vinili musica classica",
+      "en": "classical music vinyl records",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_4f7f20ea300a",
+      "family": "vinili_pop",
+      "it": "vinili pop",
+      "en": "pop vinyl records",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:music:kw_4378daf1b4d1",
+      "family": "cofanetti_cd",
+      "it": "cofanetto cd",
+      "en": "CD box set",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:cinema:kw_8da693647627",
+      "family": "poster_cinema",
+      "it": "poster film",
+      "en": "movie poster",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:cinema:kw_da13ba084b66",
+      "family": "libri_cinema",
+      "it": "libri cinema",
+      "en": "cinema books",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:cinema:kw_2ddd99473bf7",
+      "family": "ciak",
+      "it": "ciak cinema",
+      "en": "film clapperboard",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:cinema:kw_23ec8197f592",
+      "family": "popcorn",
+      "it": "macchina popcorn",
+      "en": "popcorn machine",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:cinema:kw_5982852493dc",
+      "family": "proiettori",
+      "it": "proiettore portatile",
+      "en": "portable projector",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:cinema:kw_7a1e331deff1",
+      "family": "poster_cinema",
+      "it": "poster film vintage",
+      "en": "vintage movie poster",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:cinema:kw_d8d70857ff70",
+      "family": "proiettori",
+      "it": "video proiettore portatile",
+      "en": "portable video projector",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:cinema:kw_2e51ebe7e464",
+      "family": "proiettori",
+      "it": "videoproiettore portatile",
+      "en": "portable video projector",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:cinema:kw_da6e3feff8d0",
+      "family": "proiettori",
+      "it": "mini proiettore portatile",
+      "en": "portable mini projector",
+      "aliasesEN": []
+    },
+    {
+      "id": "mediaAudio:cinema:kw_5b73ae7a9f8b",
+      "family": "proiettori",
+      "it": "mini proiettore",
+      "en": "mini projector",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_d0b64c2681c4",
+      "family": "quaderno",
+      "it": "quaderno",
+      "en": "paper notebook",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_cad98855b450",
+      "family": "taccuino",
+      "it": "taccuino",
+      "en": "notebook",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_6fee3aed1689",
+      "family": "block_notes",
+      "it": "block notes",
+      "en": "notepad",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_2b890d50fdf6",
+      "family": "diario_personale",
+      "it": "diario personale",
+      "en": "personal diary",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_abc1aaee3a18",
+      "family": "bullet_journal",
+      "it": "bullet journal",
+      "en": "bullet journal",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_2513d51acb82",
+      "family": "penna_stilografica",
+      "it": "penna stilografica",
+      "en": "fountain pen",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_ccae657c8a50",
+      "family": "penna_roller",
+      "it": "penna roller",
+      "en": "rollerball pen",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_faf2bd47c3f3",
+      "family": "penna_a_sfera",
+      "it": "penna a sfera",
+      "en": "ballpoint pen",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_f58e69736686",
+      "family": "penna_gel",
+      "it": "penna gel",
+      "en": "gel pen",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_27c9c49f6e52",
+      "family": "portamine",
+      "it": "portamine",
+      "en": "mechanical pencil",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_de7c6844a0a0",
+      "family": "astuccio",
+      "it": "astuccio",
+      "en": "pencil case",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_6b52f2a5ca74",
+      "family": "portadocumenti",
+      "it": "portadocumenti",
+      "en": "document holder",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_ef1aecd75b4e",
+      "family": "cartella_portadocumenti",
+      "it": "cartella portadocumenti",
+      "en": "document folder",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_05a7f9f5ab61",
+      "family": "set_scrittura",
+      "it": "set scrittura",
+      "en": "writing set",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_a91e86b86dc0",
+      "family": "quaderno_puntinato",
+      "it": "quaderno puntinato",
+      "en": "dotted notebook",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_524d30468cbb",
+      "family": "quaderno_ad_anelli",
+      "it": "quaderno ad anelli",
+      "en": "ring binder notebook",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_eac23d5e8d5e",
+      "family": "quaderno_rilegato",
+      "it": "quaderno rilegato",
+      "en": "bound notebook",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_cc7a3cbbb37b",
+      "family": "ricarica_penna",
+      "it": "ricarica penna",
+      "en": "pen refill",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_42a8952c27a1",
+      "family": "inchiostro_stilografica",
+      "it": "inchiostro stilografica",
+      "en": "fountain pen ink",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_df71fb0bd94c",
+      "family": "agenda",
+      "it": "agenda",
+      "en": "planner",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_a4248d673f9c",
+      "family": "planner_settimanale",
+      "it": "planner settimanale",
+      "en": "weekly planner",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_e3456162a5e3",
+      "family": "calendario_da_tavolo",
+      "it": "calendario da tavolo",
+      "en": "desk calendar",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_78a0178d8b84",
+      "family": "lavagna_magnetica",
+      "it": "lavagna magnetica",
+      "en": "magnetic board",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_42ad5a697d7a",
+      "family": "lavagna_sughero",
+      "it": "lavagna sughero",
+      "en": "cork board",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_79768c841f2d",
+      "family": "timer_pomodoro",
+      "it": "timer pomodoro",
+      "en": "Pomodoro timer",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_edf79ee85448",
+      "family": "timer_da_scrivania",
+      "it": "timer da scrivania",
+      "en": "desk timer",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_0c18ff824218",
+      "family": "clessidra",
+      "it": "clessidra",
+      "en": "hourglass",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_9ec6fc28962e",
+      "family": "taccuino_riutilizzabile",
+      "it": "taccuino riutilizzabile",
+      "en": "reusable notebook",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_cf1a2235ae5f",
+      "family": "planner_giornaliero",
+      "it": "planner giornaliero",
+      "en": "daily planner",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_9eecc9ac0667",
+      "family": "sottomano_scrivania",
+      "it": "sottomano scrivania",
+      "en": "desk pad",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_1d74b46ae967",
+      "family": "porta_documenti_scrivania",
+      "it": "porta documenti scrivania",
+      "en": "desktop document holder",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_3afa142dcbe7",
+      "family": "supporto_monitor",
+      "it": "supporto monitor",
+      "en": "monitor stand",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_efe1a959d5dc",
+      "family": "poggiapiedi_scrivania",
+      "it": "poggiapiedi scrivania",
+      "en": "desk footrest",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_65b41c60c253",
+      "family": "cuscino_sedia_ufficio",
+      "it": "cuscino sedia ufficio",
+      "en": "office chair cushion",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_381aa47487bb",
+      "family": "porta_biglietti_da_visita",
+      "it": "porta biglietti da visita",
+      "en": "business card holder",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_ae286fe2572b",
+      "family": "taccuino_digitale",
+      "it": "taccuino digitale",
+      "en": "digital notebook",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_0230c7caac90",
+      "family": "penna_digitale",
+      "it": "penna digitale",
+      "en": "digital pen",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_bfdeabee0a5e",
+      "family": "calcolatrice_scientifica",
+      "it": "calcolatrice scientifica",
+      "en": "scientific calculator",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_8bc41831c022",
+      "family": "calcolatrice_grafica",
+      "it": "calcolatrice grafica",
+      "en": "graphing calculator",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_bd7ed2a03ecc",
+      "family": "microscopio_digitale",
+      "it": "microscopio digitale",
+      "en": "digital microscope",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_26c1ddd8a974",
+      "family": "scanner_portatile",
+      "it": "scanner portatile",
+      "en": "portable scanner",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_a91fa32916b3",
+      "family": "cuffie_con_microfono",
+      "it": "cuffie con microfono",
+      "en": "headphones with microphone",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_7c193e26d4ae",
+      "family": "tavoletta_grafica",
+      "it": "tavoletta grafica",
+      "en": "graphics tablet",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_2ab9cffe8db5",
+      "family": "quaderno",
+      "it": "quaderno scolastico",
+      "en": "school exercise book",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_27a6a35249cc",
+      "family": "block_notes",
+      "it": "block notes personalizzati",
+      "en": "personalised notepads",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_918da5089e41",
+      "family": "block_notes",
+      "it": "block notes a4",
+      "en": "A4 notepad",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_aa32748be30d",
+      "family": "block_notes",
+      "it": "block notes personalizzato",
+      "en": "personalised notepad",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_7e3db81db42a",
+      "family": "penna_stilografica",
+      "it": "penna stilografica personalizzata",
+      "en": "personalised fountain pen",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_e31f81fddd45",
+      "family": "penna_gel",
+      "it": "penna gel bianca",
+      "en": "white gel pen",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_a0b77793f612",
+      "family": "portamine",
+      "it": "portamine 0.5",
+      "en": "0.5 mechanical pencil",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_13b1cacbd60b",
+      "family": "portadocumenti",
+      "it": "faldoni portadocumenti",
+      "en": "document box files",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_aa7c4bba0b82",
+      "family": "cartella_portadocumenti",
+      "it": "cartella portadocumenti a4",
+      "en": "A4 document folder",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_3ee8ebefc18a",
+      "family": "quaderno_ad_anelli",
+      "it": "divisori quaderno ad anelli",
+      "en": "ring binder notebook dividers",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_29c96289f19b",
+      "family": "quaderno_ad_anelli",
+      "it": "quaderno ad anelli piccolo",
+      "en": "small ring binder notebook",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_f3cf4b91c7ee",
+      "family": "quaderno_ad_anelli",
+      "it": "fogli per quaderno ad anelli",
+      "en": "ring binder notebook paper",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_5231f575acdc",
+      "family": "quaderno_ad_anelli",
+      "it": "quaderno ad anelli grande",
+      "en": "large ring binder notebook",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_fa046a2c38da",
+      "family": "quaderno_ad_anelli",
+      "it": "quaderno ad anelli con divisori",
+      "en": "ring binder notebook with dividers",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_8ca61131f352",
+      "family": "calendario_da_tavolo",
+      "it": "calendario da tavolo con foto",
+      "en": "photo desk calendar",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_c0659fec1d6f",
+      "family": "lavagna_magnetica",
+      "it": "lavagna magnetica per calamite",
+      "en": "board for magnets",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_de41ab404886",
+      "family": "lavagna_magnetica",
+      "it": "lavagna magnetica bambini",
+      "en": "children's magnetic board",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_f43d041c8a34",
+      "family": "lavagna_magnetica",
+      "it": "lavagna magnetica per bambini",
+      "en": "magnetic board for children",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_31d949df9092",
+      "family": "timer_pomodoro",
+      "it": "timer pomodoro cube",
+      "en": "Pomodoro cube timer",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_c20395ccf290",
+      "family": "sottomano_scrivania",
+      "it": "sottomano scrivania personalizzato",
+      "en": "personalised desk pad",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_4aefabb375a2",
+      "family": "supporto_monitor",
+      "it": "supporto monitor scrivania",
+      "en": "desk monitor stand",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_43ab048770ea",
+      "family": "porta_biglietti_da_visita",
+      "it": "porta biglietti da visita da tavolo",
+      "en": "desktop business card holder",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_838122adf6cb",
+      "family": "porta_biglietti_da_visita",
+      "it": "porta biglietti da visita personalizzati",
+      "en": "personalised business card holders",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_4c505750a465",
+      "family": "calcolatrice_scientifica",
+      "it": "calcolatrice scientifica non programmabile",
+      "en": "non-programmable scientific calculator",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_cd005941b07c",
+      "family": "microscopio_digitale",
+      "it": "microscopio digitale portatile",
+      "en": "portable digital microscope",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_73a5b25b638a",
+      "family": "registratore_vocale",
+      "it": "micro registratore vocale",
+      "en": "micro voice recorder",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_e7fc66bb5ae4",
+      "family": "registratore_vocale",
+      "it": "registratore vocale digitale",
+      "en": "digital voice recorder",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_71d99a8eeec9",
+      "family": "cuffie_con_microfono",
+      "it": "cuffie con microfono bluetooth",
+      "en": "Bluetooth headphones with microphone",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_be1f90518074",
+      "family": "cuffie_con_microfono",
+      "it": "cuffie con microfono usb",
+      "en": "USB headphones with microphone",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_beb8452b094f",
+      "family": "cuffie_con_microfono",
+      "it": "cuffie con microfono per cellulare",
+      "en": "mobile phone headphones with microphone",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_61b74238b103",
+      "family": "tastiera_wireless",
+      "it": "mini tastiera wireless",
+      "en": "mini wireless keyboard",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_05ee4cf18222",
+      "family": "chiavetta_usb",
+      "it": "chiavetta usb per cellulare",
+      "en": "mobile phone USB flash drive",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_c7c16b4ebdce",
+      "family": "chiavetta_usb",
+      "it": "chiavetta usb 16 gb",
+      "en": "16 GB USB flash drive",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_18383b922a27",
+      "family": "hard_disk_esterno",
+      "it": "hard disk esterno 2 tb",
+      "en": "2 TB external hard drive",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_391f1e15df66",
+      "family": "portapenne",
+      "it": "portapenne",
+      "en": "pen holder",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_62c8278888cb",
+      "family": "organizer_scrivania",
+      "it": "organizer scrivania",
+      "en": "desk organiser",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_f1525e0cad77",
+      "family": "organizer_cavi",
+      "it": "organizer cavi",
+      "en": "cable organiser",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_d36350e2c998",
+      "family": "fermalibri",
+      "it": "fermalibri",
+      "en": "bookends",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:productivity:kw_377deae1f6cf",
+      "family": "supporto_notebook",
+      "it": "supporto notebook",
+      "en": "laptop stand",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_b53bcf919f24",
+      "family": "notebook",
+      "it": "notebook",
+      "en": "laptop",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_5bed85bd69a5",
+      "family": "tablet",
+      "it": "tablet",
+      "en": "tablet",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_7aa48faa435c",
+      "family": "lettore_ebook",
+      "it": "lettore ebook",
+      "en": "ebook reader",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_3dd9b8bb1ee6",
+      "family": "registratore_vocale",
+      "it": "registratore vocale",
+      "en": "voice recorder",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_1ffce380cd0b",
+      "family": "lampada_lettura",
+      "it": "lampada lettura",
+      "en": "reading lamp",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_dbf494882226",
+      "family": "leggio_per_libri",
+      "it": "leggio per libri",
+      "en": "book stand",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_9d1bfe39f8ce",
+      "family": "webcam_pc",
+      "it": "webcam pc",
+      "en": "PC webcam",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_689daf4e6e02",
+      "family": "hub_usb_c",
+      "it": "hub usb-c",
+      "en": "USB-C hub",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_74fb07e9b2c1",
+      "family": "tastiera_wireless",
+      "it": "tastiera wireless",
+      "en": "wireless keyboard",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_2a13302bc5d2",
+      "family": "mouse_wireless",
+      "it": "mouse wireless",
+      "en": "wireless mouse",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_2cdafce0d988",
+      "family": "chiavetta_usb",
+      "it": "chiavetta usb",
+      "en": "USB flash drive",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_f95adbd9d50c",
+      "family": "hard_disk_esterno",
+      "it": "hard disk esterno",
+      "en": "external hard drive",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_715df3fda766",
+      "family": "portapenne",
+      "it": "portapenne scrivania",
+      "en": "desk pen holder",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:writing:kw_1ea977321527",
+      "family": "portapenne",
+      "it": "portapenne da scrivania",
+      "en": "desk pen holder",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_96f5def182e1",
+      "family": "lampada_lettura",
+      "it": "lampada da lettura",
+      "en": "reading lamp",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_3883e2e9dec1",
+      "family": "lampada_lettura",
+      "it": "lampada da lettura letto",
+      "en": "bed reading lamp",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_fdc95dc5a06b",
+      "family": "lampada_lettura",
+      "it": "lampade da lettura",
+      "en": "reading lamps",
+      "aliasesEN": []
+    },
+    {
+      "id": "newsBusiness:studyTech:kw_5ac90dbd4001",
+      "family": "tastiera_wireless",
+      "it": "tastiera wireless retroilluminata",
+      "en": "backlit wireless keyboard",
+      "aliasesEN": []
+    }
+  ],
+  "familyReviews": [
+    {
+      "area": "techGaming",
+      "subId": "smartHome",
+      "family": "illuminazione_smart",
+      "neutralReason": "Lampadine e strisce non dimostrano luce calda, dimmerabilità o compatibilità del portalampada solo perché smart.",
+      "requirements": [
+        "Ecosistema e protocollo compatibili",
+        "Modello o attacco richiesto",
+        "Disponibilità a installazione e configurazione"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "smartHome",
+      "family": "prese_connesse",
+      "neutralReason": "La connessione non dimostra misura dei consumi, portata del carico o compatibilità della spina italiana.",
+      "requirements": [
+        "Ecosistema e protocollo compatibili",
+        "Modello o attacco richiesto",
+        "Disponibilità a installazione e configurazione"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "smartHome",
+      "family": "climatizzazione_smart",
+      "neutralReason": "Termostati e valvole richiedono impianto e attacco compatibili; non dedurre risparmio energetico o installazione semplice.",
+      "requirements": [
+        "Ecosistema e protocollo compatibili",
+        "Modello o attacco richiesto",
+        "Disponibilità a installazione e configurazione"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "smartHome",
+      "family": "videocitofonia",
+      "neutralReason": "Numero di utenze, cablaggio, alimentazione e posa esterna devono corrispondere all’abitazione; Wi-Fi non significa senza fili.",
+      "requirements": [
+        "Ecosistema e protocollo compatibili",
+        "Modello o attacco richiesto",
+        "Disponibilità a installazione e configurazione"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "smartHome",
+      "family": "telecamere",
+      "neutralReason": "Posa interna/esterna, alimentazione, registrazione e privacy domestica impediscono un bonus automatico di nuova casa o sicurezza.",
+      "requirements": [
+        "Ecosistema e protocollo compatibili",
+        "Modello o attacco richiesto",
+        "Disponibilità a installazione e configurazione"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "smartHome",
+      "family": "assistenti_vocali",
+      "neutralReason": "Assistente, account, servizi e rete richiesti non sono provati dalla relazione con il destinatario.",
+      "requirements": [
+        "Ecosistema e protocollo compatibili",
+        "Modello o attacco richiesto",
+        "Disponibilità a installazione e configurazione"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "smartHome",
+      "family": "display_domestici",
+      "neutralReason": "Un Echo Show non prova interesse alle videochiamate o condivisione foto; verificare generazione, account e rete.",
+      "requirements": [
+        "Ecosistema e protocollo compatibili",
+        "Modello o attacco richiesto",
+        "Disponibilità a installazione e configurazione"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "smartHome",
+      "family": "hub_domotici",
+      "neutralReason": "Un hub è un componente di ecosistema, non una casa smart completa; Zigbee e Matter non sono intercambiabili.",
+      "requirements": [
+        "Ecosistema e protocollo compatibili",
+        "Modello o attacco richiesto",
+        "Disponibilità a installazione e configurazione"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "smartHome",
+      "family": "sensori_movimento",
+      "neutralReason": "Rilevazione movimento non prova sistema di allarme completo, notifica remota o hub incluso.",
+      "requirements": [
+        "Ecosistema e protocollo compatibili",
+        "Modello o attacco richiesto",
+        "Disponibilità a installazione e configurazione"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "smartHome",
+      "family": "sensori_apertura",
+      "neutralReason": "Rilevazione porta aperta non prova sirena, notifiche o funzionamento senza hub.",
+      "requirements": [
+        "Ecosistema e protocollo compatibili",
+        "Modello o attacco richiesto",
+        "Disponibilità a installazione e configurazione"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "smartHome",
+      "family": "sensori_ambiente",
+      "neutralReason": "Misurare temperatura non prova regolazione climatica, impermeabilità o umidità inclusa.",
+      "requirements": [
+        "Ecosistema e protocollo compatibili",
+        "Modello o attacco richiesto",
+        "Disponibilità a installazione e configurazione"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "smartHome",
+      "family": "sensori_allagamento",
+      "neutralReason": "Il sensore rileva una condizione locale; non dedurre chiusura automatica dell’acqua o protezione universale.",
+      "requirements": [
+        "Ecosistema e protocollo compatibili",
+        "Modello o attacco richiesto",
+        "Disponibilità a installazione e configurazione"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "smartHome",
+      "family": "accessi",
+      "neutralReason": "Serratura e porta devono essere compatibili; non inferire maggior sicurezza, installabilità o accesso remoto.",
+      "requirements": [
+        "Ecosistema e protocollo compatibili",
+        "Modello o attacco richiesto",
+        "Disponibilità a installazione e configurazione"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "smartHome",
+      "family": "comandi_smart",
+      "neutralReason": "Installazione elettrica, neutro, carico e protocollo sono specifici; smart non basta per un regalo utile.",
+      "requirements": [
+        "Ecosistema e protocollo compatibili",
+        "Modello o attacco richiesto",
+        "Disponibilità a installazione e configurazione"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "smartHome",
+      "family": "automazioni_tapparelle",
+      "neutralReason": "Interruttore, motore e avvolgitore sono componenti distinti; adattamento meccanico/elettrico e posa non sono automatici.",
+      "requirements": [
+        "Ecosistema e protocollo compatibili",
+        "Modello o attacco richiesto",
+        "Disponibilità a installazione e configurazione"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "gaming",
+      "family": "console_portatili",
+      "neutralReason": "Portatile non prova autonomia, giochi inclusi o contenuti adatti all’età.",
+      "requirements": [
+        "Piattaforma e modello posseduti",
+        "Preferenze di gioco",
+        "Idoneità per età del prodotto specifico"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "gaming",
+      "family": "console_fisse",
+      "neutralReason": "Modello, lettore dischi e libreria posseduta devono corrispondere; una festa non determina piattaforma.",
+      "requirements": [
+        "Piattaforma e modello posseduti",
+        "Preferenze di gioco",
+        "Idoneità per età del prodotto specifico"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "gaming",
+      "family": "console_ibride",
+      "neutralReason": "La generazione Nintendo e i giochi supportati vanno verificati; ibrida non prova dotazione per due giocatori.",
+      "requirements": [
+        "Piattaforma e modello posseduti",
+        "Preferenze di gioco",
+        "Idoneità per età del prodotto specifico"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "gaming",
+      "family": "realta_virtuale",
+      "neutralReason": "Visore autonomo, per PC, PS5 o smartphone non sono sostituibili; verificare dispositivo e limiti d’uso.",
+      "requirements": [
+        "Piattaforma e modello posseduti",
+        "Preferenze di gioco",
+        "Idoneità per età del prodotto specifico"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "gaming",
+      "family": "periferiche_gaming",
+      "neutralReason": "Layout, connessione e switch vanno scelti per la postazione; RGB o gaming non provano comfort o utilità.",
+      "requirements": [
+        "Piattaforma e modello posseduti",
+        "Preferenze di gioco",
+        "Idoneità per età del prodotto specifico",
+        "Piattaforma e connessione",
+        "Layout italiano e formato desiderati",
+        "Preferenza per meccanica e tipo di switch"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "gaming",
+      "family": "audio_gaming",
+      "neutralReason": "Cuffia non implica microfono, ANC o compatibilità console; wireless non garantisce Bluetooth.",
+      "requirements": [
+        "Piattaforma e modello posseduti",
+        "Compatibilità della connessione audio e microfono",
+        "Formato e uso desiderati"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "gaming",
+      "family": "controller",
+      "neutralReason": "Giochi, sistema operativo, connessione e alimentazione condizionano l’uso; ricaricabile non prova dock incluso.",
+      "requirements": [
+        "Sistema operativo e giochi utilizzati",
+        "Compatibilità dei comandi e connessione",
+        "Alimentazione e ricarica"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "gaming",
+      "family": "postazione_gaming",
+      "neutralReason": "Sedie e tappetini hanno requisiti dimensionali diversi; ergonomica non prova beneficio clinico o adattamento alla persona.",
+      "requirements": [
+        "Dimensioni della scrivania",
+        "Materiale e scorrimento desiderati",
+        "Eventuale alimentazione per RGB",
+        "Misure e portata documentate del prodotto",
+        "Dimensioni della postazione",
+        "Regolazioni e materiale desiderati"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "gaming",
+      "family": "simulazione_guida",
+      "neutralReason": "Piattaforma, giochi, fissaggio e pedali/cambio effettivi sono necessari; force feedback non segue dalla parola volante.",
+      "requirements": [
+        "Piattaforma e giochi compatibili",
+        "Spazio e fissaggio",
+        "Pedali, cambio e feedback desiderati"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "gaming",
+      "family": "streaming",
+      "neutralReason": "Microfono e pannello comandi sono funzioni distinte; software, porte e dotazione non derivano da gaming o streaming.",
+      "requirements": [
+        "Piattaforma e modello posseduti",
+        "Connettori e compatibilità software",
+        "Uso streaming/chat e spazio per asta",
+        "Uso per comandi streaming/automazioni",
+        "Sistema operativo e applicazioni compatibili",
+        "Modello e numero di comandi desiderati"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "gaming",
+      "family": "giochi_playstation",
+      "neutralReason": "Piattaforma, generazione, titolo, PEGI, lingua, formato e modalità locale/online vanno verificati; cooperativo non prova multiplayer locale né un regalo per coppia.",
+      "requirements": [
+        "Piattaforma e modello posseduti",
+        "Generi e modalità di gioco preferiti",
+        "PEGI e idoneità del titolo specifico",
+        "Lingua e formato fisico/digitale",
+        "Titoli già posseduti e requisiti hardware/online"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "gaming",
+      "family": "giochi_switch",
+      "neutralReason": "Piattaforma, generazione, titolo, PEGI, lingua, formato e modalità locale/online vanno verificati; cooperativo non prova multiplayer locale né un regalo per coppia.",
+      "requirements": [
+        "Piattaforma e modello posseduti",
+        "Generi e modalità di gioco preferiti",
+        "PEGI e idoneità del titolo specifico",
+        "Lingua e formato fisico/digitale",
+        "Titoli già posseduti e requisiti hardware/online"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "gaming",
+      "family": "giochi_switch2",
+      "neutralReason": "Piattaforma, generazione, titolo, PEGI, lingua, formato e modalità locale/online vanno verificati; cooperativo non prova multiplayer locale né un regalo per coppia.",
+      "requirements": [
+        "Piattaforma e modello posseduti",
+        "Generi e modalità di gioco preferiti",
+        "PEGI e idoneità del titolo specifico",
+        "Lingua e formato fisico/digitale",
+        "Titoli già posseduti e requisiti hardware/online"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "gaming",
+      "family": "giochi_xbox",
+      "neutralReason": "Piattaforma, generazione, titolo, PEGI, lingua, formato e modalità locale/online vanno verificati; cooperativo non prova multiplayer locale né un regalo per coppia.",
+      "requirements": [
+        "Piattaforma e modello posseduti",
+        "Generi e modalità di gioco preferiti",
+        "PEGI e idoneità del titolo specifico",
+        "Lingua e formato fisico/digitale",
+        "Titoli già posseduti e requisiti hardware/online"
+      ]
+    },
+    {
+      "area": "techGaming",
+      "subId": "gaming",
+      "family": "giochi_pc",
+      "neutralReason": "Piattaforma, generazione, titolo, PEGI, lingua, formato e modalità locale/online vanno verificati; cooperativo non prova multiplayer locale né un regalo per coppia.",
+      "requirements": [
+        "Piattaforma e modello posseduti",
+        "Generi e modalità di gioco preferiti",
+        "PEGI e idoneità del titolo specifico",
+        "Lingua e formato fisico/digitale",
+        "Titoli già posseduti e requisiti hardware/online"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "music",
+      "family": "vinili",
+      "neutralReason": "Genere, artista o lingua del contenuto non garantiscono un effetto emotivo: verificare opera/edizione, preferenze dichiarate, lettore o servizio compatibile e titoli posseduti.",
+      "requirements": [
+        "Generi, artisti o strumenti dichiarati dal destinatario",
+        "Supporti, strumenti e accessori già posseduti",
+        "Compatibilità, dimensioni e configurazione dell’impianto o strumento",
+        "Esperienza e uso desiderato",
+        "Artista, titolo, edizione e formato desiderati",
+        "Titoli già posseduti"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "music",
+      "family": "giradischi",
+      "neutralReason": "Per giradischi vinile uso musicale, esperienza, formato e compatibilità con lo strumento o impianto posseduto sono determinanti; evento o relazione non dimostrano né preferenza né dotazione necessaria.",
+      "requirements": [
+        "Generi, artisti o strumenti dichiarati dal destinatario",
+        "Supporti, strumenti e accessori già posseduti",
+        "Compatibilità, dimensioni e configurazione dell’impianto o strumento",
+        "Esperienza e uso desiderato"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "music",
+      "family": "lettori_cd",
+      "neutralReason": "Per lettore cd uso musicale, esperienza, formato e compatibilità con lo strumento o impianto posseduto sono determinanti; evento o relazione non dimostrano né preferenza né dotazione necessaria.",
+      "requirements": [
+        "Generi, artisti o strumenti dichiarati dal destinatario",
+        "Supporti, strumenti e accessori già posseduti",
+        "Compatibilità, dimensioni e configurazione dell’impianto o strumento",
+        "Esperienza e uso desiderato"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "music",
+      "family": "cd_musicali",
+      "neutralReason": "Genere, artista o lingua del contenuto non garantiscono un effetto emotivo: verificare opera/edizione, preferenze dichiarate, lettore o servizio compatibile e titoli posseduti.",
+      "requirements": [
+        "Generi, artisti o strumenti dichiarati dal destinatario",
+        "Supporti, strumenti e accessori già posseduti",
+        "Compatibilità, dimensioni e configurazione dell’impianto o strumento",
+        "Esperienza e uso desiderato",
+        "Artista, titolo, edizione e formato desiderati",
+        "Titoli già posseduti"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "music",
+      "family": "chitarre",
+      "neutralReason": "Per chitarra elettrica uso musicale, esperienza, formato e compatibilità con lo strumento o impianto posseduto sono determinanti; evento o relazione non dimostrano né preferenza né dotazione necessaria.",
+      "requirements": [
+        "Generi, artisti o strumenti dichiarati dal destinatario",
+        "Supporti, strumenti e accessori già posseduti",
+        "Compatibilità, dimensioni e configurazione dell’impianto o strumento",
+        "Esperienza e uso desiderato"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "music",
+      "family": "tastiere",
+      "neutralReason": "Per tastiera musicale uso musicale, esperienza, formato e compatibilità con lo strumento o impianto posseduto sono determinanti; evento o relazione non dimostrano né preferenza né dotazione necessaria.",
+      "requirements": [
+        "Generi, artisti o strumenti dichiarati dal destinatario",
+        "Supporti, strumenti e accessori già posseduti",
+        "Compatibilità, dimensioni e configurazione dell’impianto o strumento",
+        "Esperienza e uso desiderato"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "music",
+      "family": "ukulele",
+      "neutralReason": "Per ukulele uso musicale, esperienza, formato e compatibilità con lo strumento o impianto posseduto sono determinanti; evento o relazione non dimostrano né preferenza né dotazione necessaria.",
+      "requirements": [
+        "Generi, artisti o strumenti dichiarati dal destinatario",
+        "Supporti, strumenti e accessori già posseduti",
+        "Compatibilità, dimensioni e configurazione dell’impianto o strumento",
+        "Esperienza e uso desiderato"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "music",
+      "family": "armoniche",
+      "neutralReason": "Per armonica uso musicale, esperienza, formato e compatibilità con lo strumento o impianto posseduto sono determinanti; evento o relazione non dimostrano né preferenza né dotazione necessaria.",
+      "requirements": [
+        "Generi, artisti o strumenti dichiarati dal destinatario",
+        "Supporti, strumenti e accessori già posseduti",
+        "Compatibilità, dimensioni e configurazione dell’impianto o strumento",
+        "Esperienza e uso desiderato"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "music",
+      "family": "accordatori",
+      "neutralReason": "Per accordatore chitarra uso musicale, esperienza, formato e compatibilità con lo strumento o impianto posseduto sono determinanti; evento o relazione non dimostrano né preferenza né dotazione necessaria.",
+      "requirements": [
+        "Generi, artisti o strumenti dichiarati dal destinatario",
+        "Supporti, strumenti e accessori già posseduti",
+        "Compatibilità, dimensioni e configurazione dell’impianto o strumento",
+        "Esperienza e uso desiderato"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "music",
+      "family": "capotasti",
+      "neutralReason": "Per capotasto chitarra classica uso musicale, esperienza, formato e compatibilità con lo strumento o impianto posseduto sono determinanti; evento o relazione non dimostrano né preferenza né dotazione necessaria.",
+      "requirements": [
+        "Generi, artisti o strumenti dichiarati dal destinatario",
+        "Supporti, strumenti e accessori già posseduti",
+        "Compatibilità, dimensioni e configurazione dell’impianto o strumento",
+        "Esperienza e uso desiderato",
+        "Tipo e modello di chitarra e compatibilità dell’accessorio"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "music",
+      "family": "plettri",
+      "neutralReason": "Per plettri chitarra uso musicale, esperienza, formato e compatibilità con lo strumento o impianto posseduto sono determinanti; evento o relazione non dimostrano né preferenza né dotazione necessaria.",
+      "requirements": [
+        "Generi, artisti o strumenti dichiarati dal destinatario",
+        "Supporti, strumenti e accessori già posseduti",
+        "Compatibilità, dimensioni e configurazione dell’impianto o strumento",
+        "Esperienza e uso desiderato",
+        "Tipo e modello di chitarra e compatibilità dell’accessorio"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "music",
+      "family": "metronomi",
+      "neutralReason": "Per metronomo uso musicale, esperienza, formato e compatibilità con lo strumento o impianto posseduto sono determinanti; evento o relazione non dimostrano né preferenza né dotazione necessaria.",
+      "requirements": [
+        "Generi, artisti o strumenti dichiarati dal destinatario",
+        "Supporti, strumenti e accessori già posseduti",
+        "Compatibilità, dimensioni e configurazione dell’impianto o strumento",
+        "Esperienza e uso desiderato"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "music",
+      "family": "leggii_musicali",
+      "neutralReason": "Leggio per spartiti distinto da supporto per libri; altezza e pieghevolezza richiedono evidenza, nessuna prestazione musicale presunta.",
+      "requirements": [
+        "Generi, artisti o strumenti dichiarati dal destinatario",
+        "Supporti, strumenti e accessori già posseduti",
+        "Compatibilità, dimensioni e configurazione dell’impianto o strumento",
+        "Esperienza e uso desiderato"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "cinema",
+      "family": "dvd",
+      "neutralReason": "Formato disco e genere non provano gradimento o effetto divertente/relax; titolo, stagione, regione, lingua e lettore compatibile determinano l’idoneità.",
+      "requirements": [
+        "Generi e titoli dichiarati dal destinatario",
+        "Titoli, stagioni e cofanetti già posseduti",
+        "Lettore compatibile con DVD, Blu-ray o UHD Blu-ray",
+        "Regione, lingua, sottotitoli e idoneità del contenuto specifico"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "cinema",
+      "family": "blu_ray",
+      "neutralReason": "Formato disco e genere non provano gradimento o effetto divertente/relax; titolo, stagione, regione, lingua e lettore compatibile determinano l’idoneità.",
+      "requirements": [
+        "Generi e titoli dichiarati dal destinatario",
+        "Titoli, stagioni e cofanetti già posseduti",
+        "Lettore compatibile con DVD, Blu-ray o UHD Blu-ray",
+        "Regione, lingua, sottotitoli e idoneità del contenuto specifico"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "cinema",
+      "family": "blu_ray_4k",
+      "neutralReason": "Formato disco e genere non provano gradimento o effetto divertente/relax; titolo, stagione, regione, lingua e lettore compatibile determinano l’idoneità.",
+      "requirements": [
+        "Generi e titoli dichiarati dal destinatario",
+        "Titoli, stagioni e cofanetti già posseduti",
+        "Lettore compatibile con DVD, Blu-ray o UHD Blu-ray",
+        "Regione, lingua, sottotitoli e idoneità del contenuto specifico"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "cinema",
+      "family": "cofanetti_film",
+      "neutralReason": "Formato disco e genere non provano gradimento o effetto divertente/relax; titolo, stagione, regione, lingua e lettore compatibile determinano l’idoneità.",
+      "requirements": [
+        "Generi e titoli dichiarati dal destinatario",
+        "Titoli, stagioni e cofanetti già posseduti",
+        "Lettore compatibile con DVD, Blu-ray o UHD Blu-ray",
+        "Regione, lingua, sottotitoli e idoneità del contenuto specifico"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "cinema",
+      "family": "cofanetti_serie",
+      "neutralReason": "Formato disco e genere non provano gradimento o effetto divertente/relax; titolo, stagione, regione, lingua e lettore compatibile determinano l’idoneità.",
+      "requirements": [
+        "Generi e titoli dichiarati dal destinatario",
+        "Titoli, stagioni e cofanetti già posseduti",
+        "Lettore compatibile con DVD, Blu-ray o UHD Blu-ray",
+        "Regione, lingua, sottotitoli e idoneità del contenuto specifico"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "cinema",
+      "family": "fantascienza",
+      "neutralReason": "Formato disco e genere non provano gradimento o effetto divertente/relax; titolo, stagione, regione, lingua e lettore compatibile determinano l’idoneità.",
+      "requirements": [
+        "Generi e titoli dichiarati dal destinatario",
+        "Titoli, stagioni e cofanetti già posseduti",
+        "Lettore compatibile con DVD, Blu-ray o UHD Blu-ray",
+        "Regione, lingua, sottotitoli e idoneità del contenuto specifico"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "cinema",
+      "family": "horror",
+      "neutralReason": "Formato disco e genere non provano gradimento o effetto divertente/relax; titolo, stagione, regione, lingua e lettore compatibile determinano l’idoneità.",
+      "requirements": [
+        "Generi e titoli dichiarati dal destinatario",
+        "Titoli, stagioni e cofanetti già posseduti",
+        "Lettore compatibile con DVD, Blu-ray o UHD Blu-ray",
+        "Regione, lingua, sottotitoli e idoneità del contenuto specifico"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "cinema",
+      "family": "animazione",
+      "neutralReason": "Formato disco e genere non provano gradimento o effetto divertente/relax; titolo, stagione, regione, lingua e lettore compatibile determinano l’idoneità.",
+      "requirements": [
+        "Generi e titoli dichiarati dal destinatario",
+        "Titoli, stagioni e cofanetti già posseduti",
+        "Lettore compatibile con DVD, Blu-ray o UHD Blu-ray",
+        "Regione, lingua, sottotitoli e idoneità del contenuto specifico"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "cinema",
+      "family": "commedia",
+      "neutralReason": "Formato disco e genere non provano gradimento o effetto divertente/relax; titolo, stagione, regione, lingua e lettore compatibile determinano l’idoneità.",
+      "requirements": [
+        "Generi e titoli dichiarati dal destinatario",
+        "Titoli, stagioni e cofanetti già posseduti",
+        "Lettore compatibile con DVD, Blu-ray o UHD Blu-ray",
+        "Regione, lingua, sottotitoli e idoneità del contenuto specifico"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "cinema",
+      "family": "classici",
+      "neutralReason": "Formato disco e genere non provano gradimento o effetto divertente/relax; titolo, stagione, regione, lingua e lettore compatibile determinano l’idoneità.",
+      "requirements": [
+        "Generi e titoli dichiarati dal destinatario",
+        "Titoli, stagioni e cofanetti già posseduti",
+        "Lettore compatibile con DVD, Blu-ray o UHD Blu-ray",
+        "Regione, lingua, sottotitoli e idoneità del contenuto specifico"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "audio",
+      "family": "audiolibri",
+      "neutralReason": "Genere, artista o lingua del contenuto non garantiscono un effetto emotivo: verificare opera/edizione, preferenze dichiarate, lettore o servizio compatibile e titoli posseduti.",
+      "requirements": [
+        "Interesse esplicito per l’ascolto di audiolibri",
+        "Lingua, genere, narratore e formato preferiti",
+        "Piattaforma e dispositivi compatibili",
+        "Titoli già ascoltati o posseduti e idoneità del contenuto"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "audio",
+      "family": "servizi_audiolibri",
+      "neutralReason": "Servizio, abbonamento e buono non sono prodotti fisici; offerta regalo in Italia, riscatto, account, durata e rinnovo richiedono verifica. La traduzione non riattiva intenti sospesi.",
+      "requirements": [
+        "Interesse esplicito per l’ascolto di audiolibri",
+        "Lingua, genere, narratore e formato preferiti",
+        "Piattaforma e dispositivi compatibili",
+        "Titoli già ascoltati o posseduti e idoneità del contenuto",
+        "Offerta regalo effettivamente disponibile in Italia presso il fornitore",
+        "Condizioni di riscatto, paese, account, durata e rinnovo verificati"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "audio",
+      "family": "abbonamenti_audiolibri",
+      "neutralReason": "Servizio, abbonamento e buono non sono prodotti fisici; offerta regalo in Italia, riscatto, account, durata e rinnovo richiedono verifica. La traduzione non riattiva intenti sospesi.",
+      "requirements": [
+        "Interesse esplicito per l’ascolto di audiolibri",
+        "Lingua, genere, narratore e formato preferiti",
+        "Piattaforma e dispositivi compatibili",
+        "Titoli già ascoltati o posseduti e idoneità del contenuto",
+        "Offerta regalo effettivamente disponibile in Italia presso il fornitore",
+        "Condizioni di riscatto, paese, account, durata e rinnovo verificati"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "audio",
+      "family": "buoni_audiolibri",
+      "neutralReason": "Servizio, abbonamento e buono non sono prodotti fisici; offerta regalo in Italia, riscatto, account, durata e rinnovo richiedono verifica. La traduzione non riattiva intenti sospesi.",
+      "requirements": [
+        "Interesse esplicito per l’ascolto di audiolibri",
+        "Lingua, genere, narratore e formato preferiti",
+        "Piattaforma e dispositivi compatibili",
+        "Titoli già ascoltati o posseduti e idoneità del contenuto",
+        "Offerta regalo effettivamente disponibile in Italia presso il fornitore",
+        "Condizioni di riscatto, paese, account, durata e rinnovo verificati"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "audio",
+      "family": "audiolibri_romanzi",
+      "neutralReason": "Genere, artista o lingua del contenuto non garantiscono un effetto emotivo: verificare opera/edizione, preferenze dichiarate, lettore o servizio compatibile e titoli posseduti.",
+      "requirements": [
+        "Interesse esplicito per l’ascolto di audiolibri",
+        "Lingua, genere, narratore e formato preferiti",
+        "Piattaforma e dispositivi compatibili",
+        "Titoli già ascoltati o posseduti e idoneità del contenuto"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "audio",
+      "family": "audiolibri_thriller",
+      "neutralReason": "Genere, artista o lingua del contenuto non garantiscono un effetto emotivo: verificare opera/edizione, preferenze dichiarate, lettore o servizio compatibile e titoli posseduti.",
+      "requirements": [
+        "Interesse esplicito per l’ascolto di audiolibri",
+        "Lingua, genere, narratore e formato preferiti",
+        "Piattaforma e dispositivi compatibili",
+        "Titoli già ascoltati o posseduti e idoneità del contenuto"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "audio",
+      "family": "audiolibri_fantasy",
+      "neutralReason": "Genere, artista o lingua del contenuto non garantiscono un effetto emotivo: verificare opera/edizione, preferenze dichiarate, lettore o servizio compatibile e titoli posseduti.",
+      "requirements": [
+        "Interesse esplicito per l’ascolto di audiolibri",
+        "Lingua, genere, narratore e formato preferiti",
+        "Piattaforma e dispositivi compatibili",
+        "Titoli già ascoltati o posseduti e idoneità del contenuto"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "audio",
+      "family": "audiolibri_italiano",
+      "neutralReason": "Genere, artista o lingua del contenuto non garantiscono un effetto emotivo: verificare opera/edizione, preferenze dichiarate, lettore o servizio compatibile e titoli posseduti.",
+      "requirements": [
+        "Interesse esplicito per l’ascolto di audiolibri",
+        "Lingua, genere, narratore e formato preferiti",
+        "Piattaforma e dispositivi compatibili",
+        "Titoli già ascoltati o posseduti e idoneità del contenuto"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "audio",
+      "family": "audiolibri_inglese",
+      "neutralReason": "Genere, artista o lingua del contenuto non garantiscono un effetto emotivo: verificare opera/edizione, preferenze dichiarate, lettore o servizio compatibile e titoli posseduti.",
+      "requirements": [
+        "Interesse esplicito per l’ascolto di audiolibri",
+        "Lingua, genere, narratore e formato preferiti",
+        "Piattaforma e dispositivi compatibili",
+        "Titoli già ascoltati o posseduti e idoneità del contenuto"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "music",
+      "family": "vinili_usati",
+      "neutralReason": "Usato richiede accettazione esplicita, condizione del disco e titoli non già posseduti.",
+      "requirements": [
+        "Generi, artisti o strumenti dichiarati dal destinatario",
+        "Supporti, strumenti e accessori già posseduti",
+        "Compatibilità, dimensioni e configurazione dell’impianto o strumento",
+        "Esperienza e uso desiderato",
+        "Accettazione esplicita di un regalo usato",
+        "Condizioni, completezza, funzionamento e reso verificati",
+        "Artista, titolo, edizione e formato desiderati",
+        "Titoli già posseduti"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "music",
+      "family": "supporti_vinili",
+      "neutralReason": "Per porta dischi vinile uso musicale, esperienza, formato e compatibilità con lo strumento o impianto posseduto sono determinanti; evento o relazione non dimostrano né preferenza né dotazione necessaria.",
+      "requirements": [
+        "Generi, artisti o strumenti dichiarati dal destinatario",
+        "Supporti, strumenti e accessori già posseduti",
+        "Compatibilità, dimensioni e configurazione dell’impianto o strumento",
+        "Esperienza e uso desiderato"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "music",
+      "family": "cd_classica",
+      "neutralReason": "Genere, artista o lingua del contenuto non garantiscono un effetto emotivo: verificare opera/edizione, preferenze dichiarate, lettore o servizio compatibile e titoli posseduti.",
+      "requirements": [
+        "Generi, artisti o strumenti dichiarati dal destinatario",
+        "Supporti, strumenti e accessori già posseduti",
+        "Compatibilità, dimensioni e configurazione dell’impianto o strumento",
+        "Esperienza e uso desiderato",
+        "Artista, titolo, edizione e formato desiderati",
+        "Titoli già posseduti"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "music",
+      "family": "ricambi_chitarra",
+      "neutralReason": "Piroli è lessicalmente ambiguo fra componenti: non tradurre imponendo ponte o meccaniche senza dettagli del prodotto.",
+      "requirements": [
+        "Generi, artisti o strumenti dichiarati dal destinatario",
+        "Supporti, strumenti e accessori già posseduti",
+        "Compatibilità, dimensioni e configurazione dell’impianto o strumento",
+        "Esperienza e uso desiderato",
+        "Tipo e modello di chitarra e compatibilità dell’accessorio"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "music",
+      "family": "accessori_chitarra",
+      "neutralReason": "Per accessori chitarra elettrica uso musicale, esperienza, formato e compatibilità con lo strumento o impianto posseduto sono determinanti; evento o relazione non dimostrano né preferenza né dotazione necessaria.",
+      "requirements": [
+        "Generi, artisti o strumenti dichiarati dal destinatario",
+        "Supporti, strumenti e accessori già posseduti",
+        "Compatibilità, dimensioni e configurazione dell’impianto o strumento",
+        "Esperienza e uso desiderato",
+        "Tipo e modello di chitarra e compatibilità dell’accessorio"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "music",
+      "family": "tastiere_usate",
+      "neutralReason": "Usato richiede accettazione esplicita e condizioni verificate; interesse musicale non è consenso all’usato.",
+      "requirements": [
+        "Generi, artisti o strumenti dichiarati dal destinatario",
+        "Supporti, strumenti e accessori già posseduti",
+        "Compatibilità, dimensioni e configurazione dell’impianto o strumento",
+        "Esperienza e uso desiderato",
+        "Accettazione esplicita di un regalo usato",
+        "Condizioni, completezza, funzionamento e reso verificati"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "audio",
+      "family": "microfoni_podcast",
+      "neutralReason": "Per microfono podcast registrazione o ascolto, connessione, formati, software e dotazione vanno distinti; podcast non garantisce una funzione o la compatibilità richiesta.",
+      "requirements": [
+        "Interesse esplicito per creare o registrare audio",
+        "Uso desiderato e livello di esperienza",
+        "Connessioni USB/XLR o altre interfacce compatibili",
+        "Dispositivi, software e attrezzatura già posseduti"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "audio",
+      "family": "kit_podcast",
+      "neutralReason": "Un kit non prova completezza: microfono, interfaccia, cuffie e software devono risultare inclusi.",
+      "requirements": [
+        "Interesse esplicito per creare o registrare audio",
+        "Uso desiderato e livello di esperienza",
+        "Connessioni USB/XLR o altre interfacce compatibili",
+        "Dispositivi, software e attrezzatura già posseduti"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "audio",
+      "family": "cuffie",
+      "neutralReason": "Per cuffie podcast registrazione o ascolto, connessione, formati, software e dotazione vanno distinti; podcast non garantisce una funzione o la compatibilità richiesta.",
+      "requirements": [
+        "Uso di ascolto o monitoraggio esplicitamente richiesto",
+        "Connessioni e dispositivi compatibili",
+        "Comfort, portabilità e isolamento desiderati",
+        "Cuffie già possedute"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "audio",
+      "family": "registratori",
+      "neutralReason": "Per registratore vocale registrazione o ascolto, connessione, formati, software e dotazione vanno distinti; podcast non garantisce una funzione o la compatibilità richiesta.",
+      "requirements": [
+        "Interesse esplicito per creare o registrare audio",
+        "Uso desiderato e livello di esperienza",
+        "Connessioni USB/XLR o altre interfacce compatibili",
+        "Dispositivi, software e attrezzatura già posseduti"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "audio",
+      "family": "lettori_mp3",
+      "neutralReason": "Per lettore mp3 registrazione o ascolto, connessione, formati, software e dotazione vanno distinti; podcast non garantisce una funzione o la compatibilità richiesta.",
+      "requirements": [
+        "Interesse esplicito per un lettore audio dedicato",
+        "Formati dei file e servizi supportati",
+        "Capacità, autonomia e connessioni richieste",
+        "Dispositivi già posseduti"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "music",
+      "family": "vinili_rock",
+      "neutralReason": "Genere, artista o lingua del contenuto non garantiscono un effetto emotivo: verificare opera/edizione, preferenze dichiarate, lettore o servizio compatibile e titoli posseduti.",
+      "requirements": [
+        "Generi e artisti dichiarati dal destinatario",
+        "Titolo, edizione, lingua e formato desiderati",
+        "Lettore compatibile e titoli già posseduti"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "music",
+      "family": "vinili_jazz",
+      "neutralReason": "Genere, artista o lingua del contenuto non garantiscono un effetto emotivo: verificare opera/edizione, preferenze dichiarate, lettore o servizio compatibile e titoli posseduti.",
+      "requirements": [
+        "Generi e artisti dichiarati dal destinatario",
+        "Titolo, edizione, lingua e formato desiderati",
+        "Lettore compatibile e titoli già posseduti"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "music",
+      "family": "vinili_classica",
+      "neutralReason": "Genere, artista o lingua del contenuto non garantiscono un effetto emotivo: verificare opera/edizione, preferenze dichiarate, lettore o servizio compatibile e titoli posseduti.",
+      "requirements": [
+        "Generi e artisti dichiarati dal destinatario",
+        "Titolo, edizione, lingua e formato desiderati",
+        "Lettore compatibile e titoli già posseduti"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "music",
+      "family": "vinili_pop",
+      "neutralReason": "Genere, artista o lingua del contenuto non garantiscono un effetto emotivo: verificare opera/edizione, preferenze dichiarate, lettore o servizio compatibile e titoli posseduti.",
+      "requirements": [
+        "Generi e artisti dichiarati dal destinatario",
+        "Titolo, edizione, lingua e formato desiderati",
+        "Lettore compatibile e titoli già posseduti"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "music",
+      "family": "cofanetti_cd",
+      "neutralReason": "Genere, artista o lingua del contenuto non garantiscono un effetto emotivo: verificare opera/edizione, preferenze dichiarate, lettore o servizio compatibile e titoli posseduti.",
+      "requirements": [
+        "Generi e artisti dichiarati dal destinatario",
+        "Titolo, edizione, lingua e formato desiderati",
+        "Lettore compatibile e titoli già posseduti"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "cinema",
+      "family": "poster_cinema",
+      "neutralReason": "Per poster film vintage tema, autore/film, formato, dimensioni e oggetti già posseduti vanno confermati; passione per il cinema non prova gusto estetico o valore sentimentale.",
+      "requirements": [
+        "Interesse esplicito per cinema, film o registi",
+        "Tema, lingua, dimensioni e uso desiderati",
+        "Oggetti e libri già posseduti"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "cinema",
+      "family": "libri_cinema",
+      "neutralReason": "Per libri cinema tema, autore/film, formato, dimensioni e oggetti già posseduti vanno confermati; passione per il cinema non prova gusto estetico o valore sentimentale.",
+      "requirements": [
+        "Interesse esplicito per cinema, film o registi",
+        "Tema, lingua, dimensioni e uso desiderati",
+        "Oggetti e libri già posseduti"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "cinema",
+      "family": "ciak",
+      "neutralReason": "Un ciak decorativo non è necessariamente uno strumento di produzione; uso, scrittura e dimensioni vanno verificati.",
+      "requirements": [
+        "Interesse esplicito per cinema, film o registi",
+        "Tema, lingua, dimensioni e uso desiderati",
+        "Oggetti e libri già posseduti"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "cinema",
+      "family": "popcorn",
+      "neutralReason": "Preparare popcorn richiede interesse, spazio e modalità compatibili; niente bonus relax o coppia ricavato dal solo alimento.",
+      "requirements": [
+        "Interesse esplicito per preparare popcorn",
+        "Spazio disponibile, capacità e facilità di pulizia",
+        "Compatibilità elettrica e modalità di preparazione"
+      ]
+    },
+    {
+      "area": "mediaAudio",
+      "subId": "cinema",
+      "family": "proiettori",
+      "neutralReason": "Portatile e mini non provano risoluzione nativa, lumen, batteria o servizi inclusi.",
+      "requirements": [
+        "Uso e ambiente di proiezione dichiarati",
+        "Distanza, dimensione immagine e luce ambientale",
+        "Ingressi, dispositivi, audio e servizi compatibili",
+        "Risoluzione e luminosità effettive verificate sulla scheda del prodotto",
+        "Spazio, distanza di proiezione e luce dell’ambiente",
+        "Dispositivo sorgente e collegamenti necessari",
+        "Risoluzione nativa, luminosità e alimentazione richieste"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "writing",
+      "family": "quaderno",
+      "neutralReason": "Per quaderno scolastico la scrittura manuale, il formato e il materiale desiderati non dipendono da evento o relazione. Formato, rigatura, grammatura, rilegatura, numero di pagine e compatibilità con il tipo di scrittura. La personalizzazione, se richiesta, deve essere realmente disponibile.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Preferenza per scrittura manuale, formato e stile degli strumenti",
+        "Formato, rigatura, grammatura, rilegatura, numero di pagine e compatibilità con il tipo di scrittura"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "writing",
+      "family": "taccuino",
+      "neutralReason": "Per taccuino la scrittura manuale, il formato e il materiale desiderati non dipendono da evento o relazione. Formato, rigatura, grammatura, rilegatura, numero di pagine e compatibilità con il tipo di scrittura. La personalizzazione, se richiesta, deve essere realmente disponibile.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Preferenza per scrittura manuale, formato e stile degli strumenti",
+        "Formato, rigatura, grammatura, rilegatura, numero di pagine e compatibilità con il tipo di scrittura"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "writing",
+      "family": "block_notes",
+      "neutralReason": "Per block notes personalizzato la scrittura manuale, il formato e il materiale desiderati non dipendono da evento o relazione. Testo o immagini desiderati e personalizzazione realmente disponibile. La personalizzazione, se richiesta, deve essere realmente disponibile.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Preferenza per scrittura manuale, formato e stile degli strumenti",
+        "Formato, rigatura, grammatura, rilegatura, numero di pagine e compatibilità con il tipo di scrittura",
+        "Testo o immagini desiderati e personalizzazione realmente disponibile"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "writing",
+      "family": "diario_personale",
+      "neutralReason": "Per diario personale la scrittura manuale, il formato e il materiale desiderati non dipendono da evento o relazione. Formato, rigatura, grammatura, rilegatura, numero di pagine e compatibilità con il tipo di scrittura. La personalizzazione, se richiesta, deve essere realmente disponibile.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Preferenza per scrittura manuale, formato e stile degli strumenti",
+        "Formato, rigatura, grammatura, rilegatura, numero di pagine e compatibilità con il tipo di scrittura"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "writing",
+      "family": "bullet_journal",
+      "neutralReason": "Per bullet journal la scrittura manuale, il formato e il materiale desiderati non dipendono da evento o relazione. Formato, rigatura, grammatura, rilegatura, numero di pagine e compatibilità con il tipo di scrittura. La personalizzazione, se richiesta, deve essere realmente disponibile.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Preferenza per scrittura manuale, formato e stile degli strumenti",
+        "Formato, rigatura, grammatura, rilegatura, numero di pagine e compatibilità con il tipo di scrittura"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "writing",
+      "family": "penna_stilografica",
+      "neutralReason": "Per penna stilografica personalizzata la scrittura manuale, il formato e il materiale desiderati non dipendono da evento o relazione. Testo o immagini desiderati e personalizzazione realmente disponibile. La personalizzazione, se richiesta, deve essere realmente disponibile.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Preferenza per scrittura manuale, formato e stile degli strumenti",
+        "Tipo e spessore della punta, colore, impugnatura, compatibilità di mine, inchiostri e ricariche",
+        "Testo o immagini desiderati e personalizzazione realmente disponibile"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "writing",
+      "family": "penna_roller",
+      "neutralReason": "Per penna roller la scrittura manuale, il formato e il materiale desiderati non dipendono da evento o relazione. Tipo e spessore della punta, colore, impugnatura, compatibilità di mine, inchiostri e ricariche. La personalizzazione, se richiesta, deve essere realmente disponibile.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Preferenza per scrittura manuale, formato e stile degli strumenti",
+        "Tipo e spessore della punta, colore, impugnatura, compatibilità di mine, inchiostri e ricariche"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "writing",
+      "family": "penna_a_sfera",
+      "neutralReason": "Per penna a sfera la scrittura manuale, il formato e il materiale desiderati non dipendono da evento o relazione. Tipo e spessore della punta, colore, impugnatura, compatibilità di mine, inchiostri e ricariche. La personalizzazione, se richiesta, deve essere realmente disponibile.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Preferenza per scrittura manuale, formato e stile degli strumenti",
+        "Tipo e spessore della punta, colore, impugnatura, compatibilità di mine, inchiostri e ricariche"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "writing",
+      "family": "penna_gel",
+      "neutralReason": "Per penna gel bianca la scrittura manuale, il formato e il materiale desiderati non dipendono da evento o relazione. Tipo e spessore della punta, colore, impugnatura, compatibilità di mine, inchiostri e ricariche. La personalizzazione, se richiesta, deve essere realmente disponibile.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Preferenza per scrittura manuale, formato e stile degli strumenti",
+        "Tipo e spessore della punta, colore, impugnatura, compatibilità di mine, inchiostri e ricariche"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "writing",
+      "family": "portamine",
+      "neutralReason": "Per portamine 0.5 la scrittura manuale, il formato e il materiale desiderati non dipendono da evento o relazione. Tipo e spessore della punta, colore, impugnatura, compatibilità di mine, inchiostri e ricariche. La personalizzazione, se richiesta, deve essere realmente disponibile.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Preferenza per scrittura manuale, formato e stile degli strumenti",
+        "Tipo e spessore della punta, colore, impugnatura, compatibilità di mine, inchiostri e ricariche"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "writing",
+      "family": "astuccio",
+      "neutralReason": "Per astuccio la scrittura manuale, il formato e il materiale desiderati non dipendono da evento o relazione. Capienza e formato degli oggetti o dei documenti da contenere. La personalizzazione, se richiesta, deve essere realmente disponibile.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Preferenza per scrittura manuale, formato e stile degli strumenti",
+        "Capienza e formato degli oggetti o dei documenti da contenere"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "writing",
+      "family": "portadocumenti",
+      "neutralReason": "Per faldoni portadocumenti la scrittura manuale, il formato e il materiale desiderati non dipendono da evento o relazione. Capienza e formato degli oggetti o dei documenti da contenere. La personalizzazione, se richiesta, deve essere realmente disponibile.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Preferenza per scrittura manuale, formato e stile degli strumenti",
+        "Capienza e formato degli oggetti o dei documenti da contenere"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "writing",
+      "family": "cartella_portadocumenti",
+      "neutralReason": "Per cartella portadocumenti a4 la scrittura manuale, il formato e il materiale desiderati non dipendono da evento o relazione. Capienza e formato degli oggetti o dei documenti da contenere. La personalizzazione, se richiesta, deve essere realmente disponibile.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Preferenza per scrittura manuale, formato e stile degli strumenti",
+        "Capienza e formato degli oggetti o dei documenti da contenere"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "writing",
+      "family": "set_scrittura",
+      "neutralReason": "Contenuto del set e compatibilità di strumenti e ricariche devono essere espliciti; confezione non equivale a eleganza.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Preferenza per scrittura manuale, formato e stile degli strumenti"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "writing",
+      "family": "quaderno_puntinato",
+      "neutralReason": "Per quaderno puntinato la scrittura manuale, il formato e il materiale desiderati non dipendono da evento o relazione. Formato, rigatura, grammatura, rilegatura, numero di pagine e compatibilità con il tipo di scrittura. La personalizzazione, se richiesta, deve essere realmente disponibile.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Preferenza per scrittura manuale, formato e stile degli strumenti",
+        "Formato, rigatura, grammatura, rilegatura, numero di pagine e compatibilità con il tipo di scrittura"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "writing",
+      "family": "quaderno_ad_anelli",
+      "neutralReason": "Per quaderno ad anelli con divisori la scrittura manuale, il formato e il materiale desiderati non dipendono da evento o relazione. Formato, rigatura, grammatura, rilegatura, numero di pagine e compatibilità con il tipo di scrittura. La personalizzazione, se richiesta, deve essere realmente disponibile.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Preferenza per scrittura manuale, formato e stile degli strumenti",
+        "Formato, rigatura, grammatura, rilegatura, numero di pagine e compatibilità con il tipo di scrittura"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "writing",
+      "family": "quaderno_rilegato",
+      "neutralReason": "Per quaderno rilegato la scrittura manuale, il formato e il materiale desiderati non dipendono da evento o relazione. Formato, rigatura, grammatura, rilegatura, numero di pagine e compatibilità con il tipo di scrittura. La personalizzazione, se richiesta, deve essere realmente disponibile.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Preferenza per scrittura manuale, formato e stile degli strumenti",
+        "Formato, rigatura, grammatura, rilegatura, numero di pagine e compatibilità con il tipo di scrittura"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "writing",
+      "family": "ricarica_penna",
+      "neutralReason": "Per ricarica penna la scrittura manuale, il formato e il materiale desiderati non dipendono da evento o relazione. Tipo e spessore della punta, colore, impugnatura, compatibilità di mine, inchiostri e ricariche. La personalizzazione, se richiesta, deve essere realmente disponibile.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Preferenza per scrittura manuale, formato e stile degli strumenti",
+        "Tipo e spessore della punta, colore, impugnatura, compatibilità di mine, inchiostri e ricariche"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "writing",
+      "family": "inchiostro_stilografica",
+      "neutralReason": "Per inchiostro stilografica la scrittura manuale, il formato e il materiale desiderati non dipendono da evento o relazione. Tipo e spessore della punta, colore, impugnatura, compatibilità di mine, inchiostri e ricariche. La personalizzazione, se richiesta, deve essere realmente disponibile.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Preferenza per scrittura manuale, formato e stile degli strumenti",
+        "Tipo e spessore della punta, colore, impugnatura, compatibilità di mine, inchiostri e ricariche"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "productivity",
+      "family": "agenda",
+      "neutralReason": "Per agenda abitudini reali, spazio e formato determinano l’uso. Formato cartaceo o digitale desiderato, impaginazione e periodo effettivo di utilizzo. Non attribuire prestazioni lavorative o benefici posturali al nome del prodotto.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Organizzazione e abitudini di lavoro espresse dalla persona; spazio disponibile",
+        "Formato cartaceo o digitale desiderato, impaginazione e periodo effettivo di utilizzo"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "productivity",
+      "family": "planner_settimanale",
+      "neutralReason": "Per planner settimanale abitudini reali, spazio e formato determinano l’uso. Formato cartaceo o digitale desiderato, impaginazione e periodo effettivo di utilizzo. Non attribuire prestazioni lavorative o benefici posturali al nome del prodotto.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Organizzazione e abitudini di lavoro espresse dalla persona; spazio disponibile",
+        "Formato cartaceo o digitale desiderato, impaginazione e periodo effettivo di utilizzo"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "productivity",
+      "family": "calendario_da_tavolo",
+      "neutralReason": "Per calendario da tavolo con foto abitudini reali, spazio e formato determinano l’uso. Formato cartaceo o digitale desiderato, impaginazione e periodo effettivo di utilizzo. Non attribuire prestazioni lavorative o benefici posturali al nome del prodotto.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Organizzazione e abitudini di lavoro espresse dalla persona; spazio disponibile",
+        "Formato cartaceo o digitale desiderato, impaginazione e periodo effettivo di utilizzo"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "productivity",
+      "family": "lavagna_magnetica",
+      "neutralReason": "Per lavagna magnetica per bambini abitudini reali, spazio e formato determinano l’uso. Età e condizioni d’uso effettive da verificare sul prodotto. Non attribuire prestazioni lavorative o benefici posturali al nome del prodotto.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Organizzazione e abitudini di lavoro espresse dalla persona; spazio disponibile",
+        "Superficie, dimensioni, fissaggio e accessori inclusi; magnetica non implica scrivibile",
+        "Età e condizioni d’uso effettive da verificare sul prodotto"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "productivity",
+      "family": "lavagna_sughero",
+      "neutralReason": "Per lavagna sughero abitudini reali, spazio e formato determinano l’uso. Superficie, dimensioni, fissaggio e accessori inclusi; magnetica non implica scrivibile. Non attribuire prestazioni lavorative o benefici posturali al nome del prodotto.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Organizzazione e abitudini di lavoro espresse dalla persona; spazio disponibile",
+        "Superficie, dimensioni, fissaggio e accessori inclusi; magnetica non implica scrivibile"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "productivity",
+      "family": "timer_pomodoro",
+      "neutralReason": "Per timer pomodoro cube abitudini reali, spazio e formato determinano l’uso. Preferenza per timer fisico o applicazione, segnali sonori e alimentazione. Non attribuire prestazioni lavorative o benefici posturali al nome del prodotto.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Organizzazione e abitudini di lavoro espresse dalla persona; spazio disponibile",
+        "Preferenza per timer fisico o applicazione, segnali sonori e alimentazione"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "productivity",
+      "family": "timer_da_scrivania",
+      "neutralReason": "Per timer da scrivania abitudini reali, spazio e formato determinano l’uso. Preferenza per timer fisico o applicazione, segnali sonori e alimentazione. Non attribuire prestazioni lavorative o benefici posturali al nome del prodotto.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Organizzazione e abitudini di lavoro espresse dalla persona; spazio disponibile",
+        "Preferenza per timer fisico o applicazione, segnali sonori e alimentazione"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "productivity",
+      "family": "clessidra",
+      "neutralReason": "Durata e leggibilità devono corrispondere all’uso; la misura del tempo non prova riduzione dello stress.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Organizzazione e abitudini di lavoro espresse dalla persona; spazio disponibile"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "productivity",
+      "family": "taccuino_riutilizzabile",
+      "neutralReason": "Riutilizzabile non significa cancellabile con acqua o compatibile con qualunque penna; nessun aumento di produttività presunto.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Organizzazione e abitudini di lavoro espresse dalla persona; spazio disponibile"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "productivity",
+      "family": "planner_giornaliero",
+      "neutralReason": "Per planner giornaliero abitudini reali, spazio e formato determinano l’uso. Formato cartaceo o digitale desiderato, impaginazione e periodo effettivo di utilizzo. Non attribuire prestazioni lavorative o benefici posturali al nome del prodotto.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Organizzazione e abitudini di lavoro espresse dalla persona; spazio disponibile",
+        "Formato cartaceo o digitale desiderato, impaginazione e periodo effettivo di utilizzo"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "productivity",
+      "family": "sottomano_scrivania",
+      "neutralReason": "Per sottomano scrivania personalizzato abitudini reali, spazio e formato determinano l’uso. Testo o immagini desiderati e personalizzazione realmente disponibile. Non attribuire prestazioni lavorative o benefici posturali al nome del prodotto.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Organizzazione e abitudini di lavoro espresse dalla persona; spazio disponibile",
+        "Testo o immagini desiderati e personalizzazione realmente disponibile"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "productivity",
+      "family": "porta_documenti_scrivania",
+      "neutralReason": "Formato e capienza devono adattarsi ai documenti e alla scrivania; l’occasione lavorativa non ne prova la necessità.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Organizzazione e abitudini di lavoro espresse dalla persona; spazio disponibile"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "productivity",
+      "family": "supporto_monitor",
+      "neutralReason": "Per supporto monitor scrivania abitudini reali, spazio e formato determinano l’uso. Misure, portata, regolazioni e compatibilità con la postazione effettiva. Non attribuire prestazioni lavorative o benefici posturali al nome del prodotto.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Organizzazione e abitudini di lavoro espresse dalla persona; spazio disponibile",
+        "Misure, portata, regolazioni e compatibilità con la postazione effettiva"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "productivity",
+      "family": "poggiapiedi_scrivania",
+      "neutralReason": "Per poggiapiedi scrivania abitudini reali, spazio e formato determinano l’uso. Misure, portata, regolazioni e compatibilità con la postazione effettiva. Non attribuire prestazioni lavorative o benefici posturali al nome del prodotto.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Organizzazione e abitudini di lavoro espresse dalla persona; spazio disponibile",
+        "Misure, portata, regolazioni e compatibilità con la postazione effettiva"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "productivity",
+      "family": "cuscino_sedia_ufficio",
+      "neutralReason": "Per cuscino sedia ufficio abitudini reali, spazio e formato determinano l’uso. Misure, portata, regolazioni e compatibilità con la postazione effettiva. Non attribuire prestazioni lavorative o benefici posturali al nome del prodotto.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Organizzazione e abitudini di lavoro espresse dalla persona; spazio disponibile",
+        "Misure, portata, regolazioni e compatibilità con la postazione effettiva"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "productivity",
+      "family": "porta_biglietti_da_visita",
+      "neutralReason": "Per porta biglietti da visita personalizzati abitudini reali, spazio e formato determinano l’uso. Testo o immagini desiderati e personalizzazione realmente disponibile. Non attribuire prestazioni lavorative o benefici posturali al nome del prodotto.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Organizzazione e abitudini di lavoro espresse dalla persona; spazio disponibile",
+        "Testo o immagini desiderati e personalizzazione realmente disponibile"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "studyTech",
+      "family": "taccuino_digitale",
+      "neutralReason": "Per taccuino digitale attività di studio, dispositivi posseduti e compatibilità determinano la scelta. Distinguere hardware, accessorio e software; compatibilità con penna, applicazioni e formati richiesti. Nessuna ammissibilità a esami, beneficio didattico o compatibilità universale dedotta dalla categoria.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Attività di studio e dispositivi già posseduti",
+        "Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive",
+        "Distinguere hardware, accessorio e software; compatibilità con penna, applicazioni e formati richiesti"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "studyTech",
+      "family": "penna_digitale",
+      "neutralReason": "Per penna digitale attività di studio, dispositivi posseduti e compatibilità determinano la scelta. Distinguere hardware, accessorio e software; compatibilità con penna, applicazioni e formati richiesti. Nessuna ammissibilità a esami, beneficio didattico o compatibilità universale dedotta dalla categoria.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Attività di studio e dispositivi già posseduti",
+        "Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive",
+        "Distinguere hardware, accessorio e software; compatibilità con penna, applicazioni e formati richiesti"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "studyTech",
+      "family": "calcolatrice_scientifica",
+      "neutralReason": "Per calcolatrice scientifica non programmabile attività di studio, dispositivi posseduti e compatibilità determinano la scelta. Funzioni necessarie e modello ammesso dall’istituto o dall’esame, da verificare separatamente. Nessuna ammissibilità a esami, beneficio didattico o compatibilità universale dedotta dalla categoria.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Attività di studio e dispositivi già posseduti",
+        "Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive",
+        "Funzioni necessarie e modello ammesso dall’istituto o dall’esame, da verificare separatamente"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "studyTech",
+      "family": "calcolatrice_grafica",
+      "neutralReason": "Per calcolatrice grafica attività di studio, dispositivi posseduti e compatibilità determinano la scelta. Funzioni necessarie e modello ammesso dall’istituto o dall’esame, da verificare separatamente. Nessuna ammissibilità a esami, beneficio didattico o compatibilità universale dedotta dalla categoria.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Attività di studio e dispositivi già posseduti",
+        "Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive",
+        "Funzioni necessarie e modello ammesso dall’istituto o dall’esame, da verificare separatamente"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "studyTech",
+      "family": "microscopio_digitale",
+      "neutralReason": "Per microscopio digitale portatile attività di studio, dispositivi posseduti e compatibilità determinano la scelta. Oggetti da osservare, ingrandimento e risoluzione reali; connessione e supporto necessari. Nessuna ammissibilità a esami, beneficio didattico o compatibilità universale dedotta dalla categoria.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Attività di studio e dispositivi già posseduti",
+        "Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive",
+        "Oggetti da osservare, ingrandimento e risoluzione reali; connessione e supporto necessari"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "studyTech",
+      "family": "scanner_portatile",
+      "neutralReason": "Per scanner portatile attività di studio, dispositivi posseduti e compatibilità determinano la scelta. Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive. Nessuna ammissibilità a esami, beneficio didattico o compatibilità universale dedotta dalla categoria.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Attività di studio e dispositivi già posseduti",
+        "Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "studyTech",
+      "family": "cuffie_con_microfono",
+      "neutralReason": "Per cuffie con microfono per cellulare attività di studio, dispositivi posseduti e compatibilità determinano la scelta. Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive. Nessuna ammissibilità a esami, beneficio didattico o compatibilità universale dedotta dalla categoria.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Attività di studio e dispositivi già posseduti",
+        "Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "studyTech",
+      "family": "tavoletta_grafica",
+      "neutralReason": "Per tavoletta grafica attività di studio, dispositivi posseduti e compatibilità determinano la scelta. Distinguere hardware, accessorio e software; compatibilità con penna, applicazioni e formati richiesti. Nessuna ammissibilità a esami, beneficio didattico o compatibilità universale dedotta dalla categoria.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Attività di studio e dispositivi già posseduti",
+        "Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive",
+        "Distinguere hardware, accessorio e software; compatibilità con penna, applicazioni e formati richiesti"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "studyTech",
+      "family": "registratore_vocale",
+      "neutralReason": "Per registratore vocale attività di studio, dispositivi posseduti e compatibilità determinano la scelta. Uso e contesto consentiti, formato audio, memoria e autonomia effettivi. Nessuna ammissibilità a esami, beneficio didattico o compatibilità universale dedotta dalla categoria.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Attività di studio e dispositivi già posseduti",
+        "Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive",
+        "Uso e contesto consentiti, formato audio, memoria e autonomia effettivi"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "studyTech",
+      "family": "tastiera_wireless",
+      "neutralReason": "Per tastiera wireless retroilluminata attività di studio, dispositivi posseduti e compatibilità determinano la scelta. Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive. Nessuna ammissibilità a esami, beneficio didattico o compatibilità universale dedotta dalla categoria.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Attività di studio e dispositivi già posseduti",
+        "Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "studyTech",
+      "family": "chiavetta_usb",
+      "neutralReason": "Per chiavetta usb attività di studio, dispositivi posseduti e compatibilità determinano la scelta. Capacità nominale, connettore, formato e compatibilità con i dispositivi di destinazione. Nessuna ammissibilità a esami, beneficio didattico o compatibilità universale dedotta dalla categoria.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Attività di studio e dispositivi già posseduti",
+        "Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive",
+        "Capacità nominale, connettore, formato e compatibilità con i dispositivi di destinazione"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "studyTech",
+      "family": "hard_disk_esterno",
+      "neutralReason": "Per hard disk esterno attività di studio, dispositivi posseduti e compatibilità determinano la scelta. Capacità nominale, connettore, formato e compatibilità con i dispositivi di destinazione. Nessuna ammissibilità a esami, beneficio didattico o compatibilità universale dedotta dalla categoria.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Attività di studio e dispositivi già posseduti",
+        "Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive",
+        "Capacità nominale, connettore, formato e compatibilità con i dispositivi di destinazione"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "writing",
+      "family": "portapenne",
+      "neutralReason": "Per portapenne da scrivania la scrittura manuale, il formato e il materiale desiderati non dipendono da evento o relazione. Capienza e formato degli oggetti o dei documenti da contenere. La personalizzazione, se richiesta, deve essere realmente disponibile.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Preferenza per scrittura manuale, formato e stile degli strumenti",
+        "Capienza e formato degli oggetti o dei documenti da contenere"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "productivity",
+      "family": "organizer_scrivania",
+      "neutralReason": "Scomparti e ingombri devono corrispondere agli oggetti della persona; organizzazione non implica miglioramento della produttività.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Organizzazione e abitudini di lavoro espresse dalla persona; spazio disponibile"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "productivity",
+      "family": "organizer_cavi",
+      "neutralReason": "Tipo, diametro e numero dei cavi e fissaggio devono essere compatibili; non è un hub o caricatore.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Organizzazione e abitudini di lavoro espresse dalla persona; spazio disponibile"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "productivity",
+      "family": "fermalibri",
+      "neutralReason": "Peso, base e dimensioni devono sostenere i volumi reali; il motivo decorativo non prova effetto sentimentale.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Organizzazione e abitudini di lavoro espresse dalla persona; spazio disponibile"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "productivity",
+      "family": "supporto_notebook",
+      "neutralReason": "Per supporto notebook abitudini reali, spazio e formato determinano l’uso. Misure, portata, regolazioni e compatibilità con la postazione effettiva. Non attribuire prestazioni lavorative o benefici posturali al nome del prodotto.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Organizzazione e abitudini di lavoro espresse dalla persona; spazio disponibile",
+        "Misure, portata, regolazioni e compatibilità con la postazione effettiva"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "studyTech",
+      "family": "notebook",
+      "neutralReason": "Per notebook attività di studio, dispositivi posseduti e compatibilità determinano la scelta. Distinguere hardware, accessorio e software; compatibilità con penna, applicazioni e formati richiesti. Nessuna ammissibilità a esami, beneficio didattico o compatibilità universale dedotta dalla categoria.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Attività di studio e dispositivi già posseduti",
+        "Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive",
+        "Distinguere hardware, accessorio e software; compatibilità con penna, applicazioni e formati richiesti"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "studyTech",
+      "family": "tablet",
+      "neutralReason": "Per tablet attività di studio, dispositivi posseduti e compatibilità determinano la scelta. Distinguere hardware, accessorio e software; compatibilità con penna, applicazioni e formati richiesti. Nessuna ammissibilità a esami, beneficio didattico o compatibilità universale dedotta dalla categoria.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Attività di studio e dispositivi già posseduti",
+        "Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive",
+        "Distinguere hardware, accessorio e software; compatibilità con penna, applicazioni e formati richiesti"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "studyTech",
+      "family": "lettore_ebook",
+      "neutralReason": "Per lettore ebook attività di studio, dispositivi posseduti e compatibilità determinano la scelta. Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive. Nessuna ammissibilità a esami, beneficio didattico o compatibilità universale dedotta dalla categoria.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Attività di studio e dispositivi già posseduti",
+        "Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "studyTech",
+      "family": "lampada_lettura",
+      "neutralReason": "Per lampade da lettura attività di studio, dispositivi posseduti e compatibilità determinano la scelta. Collocazione, luce desiderata, alimentazione e fissaggio. Nessuna ammissibilità a esami, beneficio didattico o compatibilità universale dedotta dalla categoria.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Attività di studio e dispositivi già posseduti",
+        "Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive",
+        "Collocazione, luce desiderata, alimentazione e fissaggio"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "studyTech",
+      "family": "leggio_per_libri",
+      "neutralReason": "Per leggio per libri attività di studio, dispositivi posseduti e compatibilità determinano la scelta. Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive. Nessuna ammissibilità a esami, beneficio didattico o compatibilità universale dedotta dalla categoria.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Attività di studio e dispositivi già posseduti",
+        "Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "studyTech",
+      "family": "webcam_pc",
+      "neutralReason": "Per webcam pc attività di studio, dispositivi posseduti e compatibilità determinano la scelta. Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive. Nessuna ammissibilità a esami, beneficio didattico o compatibilità universale dedotta dalla categoria.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Attività di studio e dispositivi già posseduti",
+        "Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "studyTech",
+      "family": "hub_usb_c",
+      "neutralReason": "Per hub usb-c attività di studio, dispositivi posseduti e compatibilità determinano la scelta. Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive. Nessuna ammissibilità a esami, beneficio didattico o compatibilità universale dedotta dalla categoria.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Attività di studio e dispositivi già posseduti",
+        "Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive"
+      ]
+    },
+    {
+      "area": "newsBusiness",
+      "subId": "studyTech",
+      "family": "mouse_wireless",
+      "neutralReason": "Per mouse wireless attività di studio, dispositivi posseduti e compatibilità determinano la scelta. Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive. Nessuna ammissibilità a esami, beneficio didattico o compatibilità universale dedotta dalla categoria.",
+      "requirements": [
+        "Interesse e uso desiderati esplicitamente dichiarati; oggetti già posseduti",
+        "Dimensioni, materiali, componenti e caratteristiche effettive da verificare sul prodotto",
+        "Attività di studio e dispositivi già posseduti",
+        "Modello, porte, sistema operativo, lingua, alimentazione e compatibilità effettive"
+      ]
+    }
+  ],
+  "proposedRules": [
+    {
+      "id": "full-smart-light-warm-dim",
+      "area": "techGaming",
+      "subId": "smartHome",
+      "family": "illuminazione_smart",
+      "signal": "effect",
+      "value": "relax",
+      "sourceIds": [
+        "full-tech-hue"
+      ],
+      "titleType": "lampadina smart / smart bulb",
+      "requiredProperties": [
+        "luce calda / warm white",
+        "luminosità regolabile / dimmable"
+      ],
+      "positiveIT": {
+        "title": "Lampadina smart E27",
+        "features": [
+          "Luce bianca calda",
+          "Luminosità regolabile"
+        ]
+      },
+      "positiveEN": {
+        "title": "E27 smart bulb",
+        "features": [
+          "Warm white light",
+          "Dimmable brightness"
+        ]
+      },
+      "negativeIT": {
+        "title": "Lampadina smart E27",
+        "features": [
+          "Luce bianca fredda",
+          "Luminosità regolabile"
+        ]
+      },
+      "negativeEN": {
+        "title": "E27 smart bulb",
+        "features": [
+          "Cool white light",
+          "Dimmable brightness"
+        ]
+      },
+      "caveat": "Bonus editoriale di illuminazione ambientale, non beneficio terapeutico. Portalampada, rete e protocollo restano vincoli.",
+      "titlePattern": "lampadin[ae] smart|smart (?:light )?bulb",
+      "properties": [
+        "luce (?:bianca )?calda|warm white(?: light)?",
+        "luminosit[aà] regolabile|dimmable(?: brightness)?"
+      ],
+      "query": "luce calda dimmerabile",
+      "subIds": [
+        "smartHome"
+      ],
+      "families": [
+        "illuminazione_smart"
+      ],
+      "values": [
+        "relax"
+      ],
+      "examples": {
+        "it": {
+          "title": "Lampadina smart E27",
+          "features": [
+            "Luce bianca calda",
+            "Luminosità regolabile"
+          ]
+        },
+        "en": {
+          "title": "E27 smart bulb",
+          "features": [
+            "Warm white light",
+            "Dimmable brightness"
+          ]
+        },
+        "negative": {
+          "title": "Lampadina smart E27",
+          "features": [
+            "Luce bianca fredda",
+            "Luminosità regolabile"
+          ]
+        },
+        "negativeEN": {
+          "title": "E27 smart bulb",
+          "features": [
+            "Cool white light",
+            "Dimmable brightness"
+          ]
+        }
+      },
+      "property": "luce calda / warm white; luminosità regolabile / dimmable"
+    },
+    {
+      "id": "full-streamdeck-custom-controls",
+      "area": "techGaming",
+      "subId": "gaming",
+      "family": "streaming",
+      "signal": "effect",
+      "value": "useful",
+      "sourceIds": [
+        "full-tech-streamdeck"
+      ],
+      "titleType": "Stream Deck / pannello comandi streaming / streaming control deck",
+      "requiredProperties": [
+        "tasti personalizzabili / customizable keys",
+        "azioni applicazioni / application actions"
+      ],
+      "positiveIT": {
+        "title": "Stream Deck pannello comandi",
+        "features": [
+          "Tasti LCD personalizzabili",
+          "Azioni per applicazioni compatibili"
+        ]
+      },
+      "positiveEN": {
+        "title": "Stream Deck control panel",
+        "features": [
+          "Customizable LCD keys",
+          "Actions for compatible applications"
+        ]
+      },
+      "negativeIT": {
+        "title": "Microfono gaming con asta",
+        "features": [
+          "Tasti LCD personalizzabili su pannello opzionale",
+          "Azioni per applicazioni tramite accessorio separato"
+        ]
+      },
+      "negativeEN": {
+        "title": "Gaming microphone with stand",
+        "features": [
+          "Customizable LCD keys on optional panel",
+          "Application actions through separate accessory"
+        ]
+      },
+      "caveat": "Non estendere ai microfoni della medesima famiglia streaming né promettere compatibilità software universale.",
+      "titlePattern": "stream deck|pannello comandi(?: streaming)?|streaming control (?:deck|panel)",
+      "properties": [
+        "tasti(?: lcd)? personalizzabili|customi[sz]able(?: lcd)? keys",
+        "azioni per applicazioni|actions for (?:compatible )?applications|application actions"
+      ],
+      "query": "tasti personalizzabili azioni applicazioni",
+      "subIds": [
+        "gaming"
+      ],
+      "families": [
+        "streaming"
+      ],
+      "values": [
+        "useful"
+      ],
+      "examples": {
+        "it": {
+          "title": "Stream Deck pannello comandi",
+          "features": [
+            "Tasti LCD personalizzabili",
+            "Azioni per applicazioni compatibili"
+          ]
+        },
+        "en": {
+          "title": "Stream Deck control panel",
+          "features": [
+            "Customizable LCD keys",
+            "Actions for compatible applications"
+          ]
+        },
+        "negative": {
+          "title": "Microfono gaming con asta",
+          "features": [
+            "Tasti LCD personalizzabili su pannello opzionale",
+            "Azioni per applicazioni tramite accessorio separato"
+          ]
+        },
+        "negativeEN": {
+          "title": "Gaming microphone with stand",
+          "features": [
+            "Customizable LCD keys on optional panel",
+            "Application actions through separate accessory"
+          ]
+        }
+      },
+      "property": "tasti personalizzabili / customizable keys; azioni applicazioni / application actions"
+    },
+    {
+      "id": "full-musicstand-adjustable-folding",
+      "area": "mediaAudio",
+      "subId": "music",
+      "family": "leggii_musicali",
+      "signal": "effect",
+      "value": "useful",
+      "sourceIds": [
+        "full-tech-musicstand"
+      ],
+      "titleType": "leggio musicale / music stand",
+      "requiredProperties": [
+        "altezza regolabile / height adjustable",
+        "pieghevole / foldable"
+      ],
+      "positiveIT": {
+        "title": "Leggio musicale",
+        "features": [
+          "Altezza regolabile",
+          "Struttura pieghevole"
+        ]
+      },
+      "positiveEN": {
+        "title": "Music stand",
+        "features": [
+          "Height adjustable",
+          "Foldable design"
+        ]
+      },
+      "negativeIT": {
+        "title": "Leggio musicale",
+        "features": [
+          "Altezza fissa",
+          "Struttura pieghevole"
+        ]
+      },
+      "negativeEN": {
+        "title": "Music stand",
+        "features": [
+          "Fixed height",
+          "Foldable design"
+        ]
+      },
+      "caveat": "Proprietà funzionali per collocazione/trasporto; nessun miglioramento musicale o ergonomico presunto.",
+      "titlePattern": "leggio musicale|music stand",
+      "properties": [
+        "altezza regolabile|height adjustable|adjustable height",
+        "pieghevole|foldable|folding"
+      ],
+      "query": "altezza regolabile pieghevole",
+      "subIds": [
+        "music"
+      ],
+      "families": [
+        "leggii_musicali"
+      ],
+      "values": [
+        "useful"
+      ],
+      "examples": {
+        "it": {
+          "title": "Leggio musicale",
+          "features": [
+            "Altezza regolabile",
+            "Struttura pieghevole"
+          ]
+        },
+        "en": {
+          "title": "Music stand",
+          "features": [
+            "Height adjustable",
+            "Foldable design"
+          ]
+        },
+        "negative": {
+          "title": "Leggio musicale",
+          "features": [
+            "Altezza fissa",
+            "Struttura pieghevole"
+          ]
+        },
+        "negativeEN": {
+          "title": "Music stand",
+          "features": [
+            "Fixed height",
+            "Foldable design"
+          ]
+        }
+      },
+      "property": "altezza regolabile / height adjustable; pieghevole / foldable"
+    },
+    {
+      "id": "full-reusable-notebook-water",
+      "area": "newsBusiness",
+      "subId": "productivity",
+      "family": "taccuino_riutilizzabile",
+      "signal": "effect",
+      "value": "useful",
+      "sourceIds": [
+        "full-tech-notebook"
+      ],
+      "titleType": "taccuino riutilizzabile / reusable notebook",
+      "requiredProperties": [
+        "pagine cancellabili con panno umido / pages erasable with damp cloth",
+        "penna compatibile inclusa / compatible pen included"
+      ],
+      "positiveIT": {
+        "title": "Taccuino riutilizzabile",
+        "features": [
+          "Pagine cancellabili con panno umido",
+          "Penna compatibile inclusa"
+        ]
+      },
+      "positiveEN": {
+        "title": "Reusable notebook",
+        "features": [
+          "Pages erasable with damp cloth",
+          "Compatible pen included"
+        ]
+      },
+      "negativeIT": {
+        "title": "Taccuino riutilizzabile",
+        "features": [
+          "Pagine cancellabili con panno umido",
+          "Penna compatibile venduta separatamente"
+        ]
+      },
+      "negativeEN": {
+        "title": "Reusable notebook",
+        "features": [
+          "Pages erasable with damp cloth",
+          "Compatible pen sold separately"
+        ]
+      },
+      "caveat": "Non promettere cloud incluso, penna universale, maggiore produttività o vantaggi ambientali quantificati.",
+      "titlePattern": "taccuino riutilizzabile|reusable notebook",
+      "properties": [
+        "pagine cancellabili con panno umido|pages erasable with (?:a )?damp cloth",
+        "penna compatibile inclusa|compatible pen included"
+      ],
+      "query": "pagine cancellabili panno umido penna inclusa",
+      "subIds": [
+        "productivity"
+      ],
+      "families": [
+        "taccuino_riutilizzabile"
+      ],
+      "values": [
+        "useful"
+      ],
+      "examples": {
+        "it": {
+          "title": "Taccuino riutilizzabile",
+          "features": [
+            "Pagine cancellabili con panno umido",
+            "Penna compatibile inclusa"
+          ]
+        },
+        "en": {
+          "title": "Reusable notebook",
+          "features": [
+            "Pages erasable with damp cloth",
+            "Compatible pen included"
+          ]
+        },
+        "negative": {
+          "title": "Taccuino riutilizzabile",
+          "features": [
+            "Pagine cancellabili con panno umido",
+            "Penna compatibile venduta separatamente"
+          ]
+        },
+        "negativeEN": {
+          "title": "Reusable notebook",
+          "features": [
+            "Pages erasable with damp cloth",
+            "Compatible pen sold separately"
+          ]
+        }
+      },
+      "property": "pagine cancellabili con panno umido / pages erasable with damp cloth; penna compatibile inclusa / compatible pen included"
+    }
+  ],
+  "sources": [
+    {
+      "id": "full-tech-hue",
+      "url": "https://www.philips-hue.com/it-it/p/hue-white-and-color-ambiance-essential-starter-kit-2-lampadine-connesse-e27-806-lm-dimmer-switch/8721103103659",
+      "fact": "Esempio di lampadine E27 con temperatura 2200–6500 K e luminosità regolabile; proprietà separate, non trasferibili a ogni lampadina smart."
+    },
+    {
+      "id": "full-tech-streamdeck",
+      "url": "https://www.elgato.com/it-IT/p/stream-deck",
+      "fact": "Il pannello dispone di tasti LCD personalizzabili e software PC/Mac per azioni e applicazioni; ciò non certifica supporto di qualunque software."
+    },
+    {
+      "id": "full-tech-musicstand",
+      "url": "https://www.k-m.de/en/music-stands-with-collapsible-desk/100-1-music-stand-black",
+      "fact": "Il leggio 100/1 ha altezza regolabile 480–1230 mm e struttura pieghevole. Non dedurre le stesse proprietà da leggio generico."
+    },
+    {
+      "id": "full-tech-notebook",
+      "url": "https://getrocketbook.com/products/new-rocketbook-core?variant=31416131534",
+      "fact": "Le pagine del Core sono cancellabili con panno umido; la confezione citata comprende penna Pilot FriXion e panno. Non è un notebook elettronico né compatibile con ogni penna."
+    }
+  ]
+}

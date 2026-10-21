@@ -1,0 +1,290 @@
+{
+  "scope": "new diagnostic cases, not acceptance holdout; declared before observing results",
+  "scenarios": [
+    {
+      "id": "N01",
+      "category": "Lettura",
+      "group": "Diagnostico nuovo",
+      "label": "Relax dichiarato",
+      "reference": "L01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "youngAdult",
+          "relation": "family",
+          "occasion": "christmas",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 35,
+          "minBudget": 10,
+          "recipientPreference": "unisex",
+          "note": "Cerco qualcosa di rilassante."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Cerco qualcosa di rilassante.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Usare il relax dichiarato senza inventare proprietà o cambiare categoria; un termine nella query non basta."
+    },
+    {
+      "id": "N02",
+      "category": "Lettura",
+      "group": "Diagnostico nuovo",
+      "label": "anniversary",
+      "reference": "L01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "mature",
+          "relation": "friend",
+          "occasion": "anniversary",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Ama la fotografia."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Priorità evento solo con evidenza. Il destinatario resta adulto; vietato forzare copertura con prodotti incongrui."
+    },
+    {
+      "id": "N03",
+      "category": "Tecnologia",
+      "group": "Diagnostico nuovo",
+      "label": "Relax dichiarato",
+      "reference": "T01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "colleague",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "useful",
+          "budget": 80,
+          "minBudget": 20,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Cerco qualcosa di rilassante.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Usare il relax dichiarato senza inventare proprietà o cambiare categoria; un termine nella query non basta."
+    },
+    {
+      "id": "N04",
+      "category": "Tecnologia",
+      "group": "Diagnostico nuovo",
+      "label": "anniversary",
+      "reference": "T01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "youngAdult",
+          "relation": "partner",
+          "occasion": "anniversary",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 100,
+          "minBudget": 30,
+          "recipientPreference": "unisex",
+          "note": "Il dispositivo supporta Bluetooth."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Priorità evento solo con evidenza. Il destinatario resta adulto; vietato forzare copertura con prodotti incongrui."
+    },
+    {
+      "id": "N05",
+      "category": "Misto",
+      "group": "Diagnostico nuovo",
+      "label": "Relax dichiarato",
+      "reference": "L01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "partner",
+          "occasion": "birthday",
+          "interests": [
+            "culture",
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "books",
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Cerco qualcosa di rilassante."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Cerco qualcosa di rilassante.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Usare il relax dichiarato senza inventare proprietà o cambiare categoria; un termine nella query non basta."
+    },
+    {
+      "id": "N06",
+      "category": "Tecnologia",
+      "group": "Diagnostico nuovo",
+      "label": "Relax dichiarato",
+      "reference": "T01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "mature",
+          "relation": "family",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 80,
+          "minBudget": 20,
+          "recipientPreference": "unisex",
+          "note": "Cerco qualcosa di rilassante.",
+          "searchPriority": "personal"
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Cerco qualcosa di rilassante.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Usare il relax dichiarato senza inventare proprietà o cambiare categoria; un termine nella query non basta."
+    }
+  ]
+}

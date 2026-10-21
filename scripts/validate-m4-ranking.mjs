@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+import {spawn} from 'node:child_process';
+import {RANKING_VERSION} from '../server/research/weighted-ranking.mjs';
+const suites=['m4-ranking','m3-full','m3-closure','m3-block5','m3-block4','m3-block3','m3-block2','pilot-dictionary','pilot-context','research-quality-rules','research-public','research-primary-age','research-age-review','research-child-coverage','research-live-regressions','refinement-context','event-personal','selection-diagnostics','amazon-efficiency','amazon-quota'];
+const commands=[['--test',...suites.map(s=>'tests/'+s+'.mjs')],...['m3-full-ui.cjs','m3-block5-ui.cjs','m3-closure-ui.cjs','m3-block4-ui.cjs','research-questionnaire.cjs','worker-research.mjs'].map(s=>['tests/'+s])];
+const run=args=>new Promise(resolve=>{const p=spawn(process.execPath,args,{stdio:['ignore','pipe','pipe']});let output='';p.stdout.on('data',b=>output+=b);p.stderr.on('data',b=>output+=b);p.on('close',code=>{const result={command:['node',...args],exitCode:code,tail:output.slice(-2500)};console.log(JSON.stringify(result));resolve(result);});});
+const results=[];
+for(let i=0;i<commands.length;i+=2)results.push(...await Promise.all(commands.slice(i,i+2).map(run)));
+fs.writeFileSync('docs/m4-ranking-validation.json',JSON.stringify({revision:RANKING_VERSION,generatedAt:new Date().toISOString(),passed:results.every(r=>r.exitCode===0),realAmazonCalls:0,browserQA:false,results,history:'Broad initial glob: 2963 passed and 2 historical snapshot audit generators failed (m3-block4-audit: expected 22 pending terms, now 0; m3-block5-audit: expected 38 contextual families, now 48). Neither touches ranking; expectations and historical reports retained. This runner uses current behavioral tests.'},null,2)+'\n');
+if(results.some(r=>r.exitCode!==0))process.exitCode=1;

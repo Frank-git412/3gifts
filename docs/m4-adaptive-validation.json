@@ -1,0 +1,45 @@
+{
+  "queryStrategy": "20261012-m4-adaptive",
+  "generatedAt": "2026-10-12T11:28:33.844309+00:00",
+  "passed": true,
+  "realAmazonCalls": 0,
+  "browserQA": false,
+  "testCount": 3023,
+  "comparison": {
+    "fixedCalls": 6,
+    "adaptiveCalls": 5,
+    "sameASINs": true,
+    "sameOrder": true,
+    "sameRankingEvidence": true,
+    "repeatCalls": 0,
+    "simulatedClock": true
+  },
+  "results": [
+    {
+      "command": [
+        "node",
+        "scripts/validate-m4-notes.mjs"
+      ],
+      "exitCode": 0,
+      "report": "docs/m4-notes-validation.json"
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests/m4-adaptive.mjs"
+      ],
+      "exitCode": 0,
+      "tail": "\u2714 Search the uncovered interest before another alternative for a covered interest (1.800809ms)\n\u2714 Query associations can cover a missing interest even when its primary area differs (0.327072ms)\n\u2714 Requested subcategory stays ahead of extra alternatives after interests are covered (0.142715ms)\n\u2714 Four requested subcategories do not create impossible three-card coverage (0.120091ms)\n\u2714 A stalled generic family is deferred but neither deleted nor blocked (0.221644ms)\n\u2714 Targeted query retains its order despite an earlier failed family {\"contextual\":true} (0.140681ms)\n\u2714 Targeted query retains its order despite an earlier failed family {\"optionalTermId\":\"m3:K003\"} (0.110046ms)\n\u2714 Targeted query retains its order despite an earlier failed family {\"lexicalTermIds\":[\"m3:K003\"]} (0.125018ms)\n\u2714 Targeted query retains its order despite an earlier failed family {\"requiredListingProperties\":[\"fragranceFree\"]} (0.153971ms)\n\u2714 When nothing succeeds all planned queries remain reachable exactly once (1.939477ms)\n\u2714 A later successful observation resets the family deferral (0.160071ms)\n\u2714 An empty occasion-specific search cannot demote its broader base query (0.434263ms)\n\u2714 M3 complete manifest stays bounded and retains the exact candidate query set (290.355515ms)\n{\"event\":\"amazon_recommendation\",\"durationMs\":18000,\"searched\":6,\"amazonCalls\":6,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"sufficient\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":15000,\"searched\":5,\"amazonCalls\":5,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"sufficient\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":0,\"searched\":5,\"amazonCalls\":0,\"cacheHits\":5,\"stopReason\":\"sufficient\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":21000,\"searched\":12,\"amazonCalls\":7,\"cacheHits\":5,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"adaptiveFixture\":{\"fixedCalls\":6,\"calls\":5,\"searched\":5,\"repeatCalls\":0,\"products\":[\"B000000100\",\"B000000122\",\"B000000101\"]}}\n\u2714 Compiled Worker reaches a missing interest with fewer catalogue calls and reuses its cache (644.196983ms)\n\u2139 tests 14\n\u2139 suites 0\n\u2139 pass 14\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 1126.247119\n"
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests/m4-shared-quota.mjs"
+      ],
+      "exitCode": 0,
+      "tail": "\u2714 Gateway fails closed without configuration or authentication; no catalogue traffic (9.661509ms)\n\u2714 Public transport and laboratory share quota; cached lab observations do not spend again (1106.298418ms)\n\u2714 Gateway constrains marketplace, partner, resource list and deadline (5.01794ms)\n{\"event\":\"amazon_recommendation\",\"durationMs\":1084,\"searched\":1,\"amazonCalls\":0,\"cacheHits\":0,\"stopReason\":\"upstream_error\",\"failureReasons\":[\"daily_quota_exhausted\"]}\n\u2714 Both built Workers use one counter; laboratory stops when the shared budget is exhausted (2388.522555ms)\n\u2139 tests 4\n\u2139 suites 0\n\u2139 pass 4\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 3605.983293\n"
+    }
+  ]
+}

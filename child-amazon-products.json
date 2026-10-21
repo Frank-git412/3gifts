@@ -1,0 +1,420 @@
+[
+  {
+    "id": 401,
+    "name": "Fisher-Price Palestrina Glow and Grow Kick & Play",
+    "emoji": "🎹",
+    "price": 45,
+    "priceStatus": "indicative",
+    "store": "Amazon",
+    "type": "product",
+    "instant": false,
+    "tags": [
+      "earlySensory",
+      "earlySensory_playMats",
+      "earlyMusic",
+      "earlyMusic_babyMusic",
+      "earlyMovement",
+      "earlyMovement_tummyTime"
+    ],
+    "why": "Una palestrina evolutiva per gioco a terra, musica e prime esplorazioni motorie.",
+    "query": "Fisher-Price HWY58 Glow and Grow Kick & Play",
+    "directUrl": "https://www.amazon.it/dp/B0CM3S3M52",
+    "asin": "B0CM3S3M52",
+    "macro": "Primi giochi e sensi",
+    "subcategory": "Palestrine e gioco sensoriale",
+    "conceptFamily": "baby-activity-gym",
+    "ageSuitability": {
+      "minYears": 0,
+      "maxYears": 3,
+      "verified": true,
+      "sourceUrl": "https://www.amazon.it/dp/B0CM3S3M52"
+    }
+  },
+  {
+    "id": 402,
+    "name": "Lamaze Freddie la Lucciola",
+    "emoji": "🦋",
+    "price": 18,
+    "priceStatus": "indicative",
+    "store": "Amazon",
+    "type": "product",
+    "instant": false,
+    "tags": [
+      "earlySensory",
+      "earlySensory_softToys",
+      "earlySensory_strollerToys",
+      "earlyDiscovery",
+      "earlyDiscovery_textures"
+    ],
+    "why": "Un gioco morbido da passeggino con texture, contrasti e attività da esplorare.",
+    "query": "Lamaze Freddie the Firefly",
+    "directUrl": "https://www.amazon.it/dp/B000I2Q0F4",
+    "asin": "B000I2Q0F4",
+    "macro": "Primi giochi e sensi",
+    "subcategory": "Giochi morbidi e da passeggino",
+    "conceptFamily": "soft-sensory-toy",
+    "ageSuitability": {
+      "minYears": 0,
+      "maxYears": 2,
+      "verified": true,
+      "sourceUrl": "https://www.amazon.com.au/dp/B000I2Q0F4"
+    }
+  },
+  {
+    "id": 403,
+    "name": "Baby Einstein Take Along Tunes",
+    "emoji": "🎵",
+    "price": 15,
+    "priceStatus": "indicative",
+    "store": "Amazon",
+    "type": "product",
+    "instant": false,
+    "tags": [
+      "earlyMusic",
+      "earlyMusic_babyMusic",
+      "earlySensory",
+      "earlySensory_lightsSounds",
+      "earlyDiscovery",
+      "earlyDiscovery_causeEffect"
+    ],
+    "why": "Un piccolo gioco musicale con pulsante grande, adatto alle prime relazioni causa-effetto.",
+    "query": "Baby Einstein Take Along Tunes 30704",
+    "directUrl": "https://www.amazon.it/dp/B000YDDF6O",
+    "asin": "B000YDDF6O",
+    "macro": "Musica e suoni",
+    "subcategory": "Primi giochi musicali",
+    "conceptFamily": "baby-music-player",
+    "ageSuitability": {
+      "minYears": 0,
+      "maxYears": 3,
+      "verified": true,
+      "sourceUrl": "https://www.amazon.ca/dp/B000YDDF6O"
+    }
+  },
+  {
+    "id": 404,
+    "name": "Fisher-Price Palestrina Baby Piano 4 in 1",
+    "emoji": "🧸",
+    "price": 55,
+    "priceStatus": "indicative",
+    "store": "Amazon",
+    "type": "product",
+    "instant": false,
+    "tags": [
+      "earlyMovement",
+      "earlyMovement_tummyTime",
+      "earlySensory",
+      "earlySensory_playMats",
+      "earlyMusic",
+      "earlyMusic_babyMusic"
+    ],
+    "why": "Una seconda direzione per chi cerca un tappeto attività che accompagni più fasi di gioco.",
+    "query": "Fisher-Price Palestrina Baby Piano 4 in 1",
+    "directUrl": "https://www.amazon.it/dp/B0C9WPLV61",
+    "asin": "B0C9WPLV61",
+    "macro": "Movimento e outdoor",
+    "subcategory": "Gioco a terra e primi movimenti",
+    "conceptFamily": "baby-piano-mat",
+    "ageSuitability": {
+      "minYears": 0,
+      "maxYears": 3,
+      "verified": true,
+      "sourceUrl": "https://www.amazon.it/dp/B0C9WPLV61"
+    }
+  },
+  {
+    "id": 405,
+    "name": "Crayola Color Wonder, set colori senza macchia",
+    "emoji": "🎨",
+    "price": 25,
+    "priceStatus": "indicative",
+    "store": "Amazon",
+    "type": "product",
+    "instant": false,
+    "tags": [
+      "earlyCreative",
+      "earlyCreative_firstDrawing",
+      "earlyCreative_firstCrafts",
+      "earlyDiscovery",
+      "earlyDiscovery_coloursShapes"
+    ],
+    "why": "Un set creativo 3+ pensato per colorare senza lasciare segni su pelle, abiti o superfici.",
+    "query": "Crayola Color Wonder 75-1843",
+    "directUrl": "https://www.amazon.it/dp/B00NB5A3BW",
+    "asin": "B00NB5A3BW",
+    "macro": "Colori e manualità",
+    "subcategory": "Disegno e colore 3+",
+    "conceptFamily": "mess-free-markers",
+    "ageSuitability": {
+      "minYears": 3,
+      "maxYears": 12,
+      "verified": true,
+      "sourceUrl": "https://www.amazon.it/dp/B00NB5A3BW"
+    }
+  },
+  {
+    "id": 406,
+    "name": "Crayola Washimals Pastel Pets",
+    "emoji": "🖌️",
+    "price": 20,
+    "priceStatus": "indicative",
+    "store": "Amazon",
+    "type": "product",
+    "instant": false,
+    "tags": [
+      "earlyCreative",
+      "earlyCreative_firstDrawing",
+      "earlyCreative_firstCrafts",
+      "earlyPretend",
+      "earlyPretend_animals"
+    ],
+    "why": "Cuccioli lavabili da colorare e ricominciare, adatti al gioco creativo dai 3 anni.",
+    "query": "Crayola Washimals Pastel Pets 74-7511",
+    "directUrl": "https://www.amazon.it/dp/B092QLL12G",
+    "asin": "B092QLL12G",
+    "macro": "Colori e manualità",
+    "subcategory": "Personaggi da colorare",
+    "conceptFamily": "washable-creative-pets",
+    "ageSuitability": {
+      "minYears": 3,
+      "maxYears": 12,
+      "verified": true,
+      "sourceUrl": "https://www.amazon.it/dp/B092QLL12G"
+    }
+  },
+  {
+    "id": 407,
+    "name": "Crayola Color Wonder Dinosauri",
+    "emoji": "🦕",
+    "price": 18,
+    "priceStatus": "indicative",
+    "store": "Amazon",
+    "type": "product",
+    "instant": false,
+    "tags": [
+      "earlyCreative",
+      "earlyCreative_firstDrawing",
+      "earlyBooks",
+      "earlyBooks_activityBooks",
+      "earlyDiscovery",
+      "earlyDiscovery_dinosaurs"
+    ],
+    "why": "Un album attività a tema dinosauri con colori che compaiono soltanto sulla carta dedicata.",
+    "query": "Crayola Color Wonder Dinosauri",
+    "directUrl": "https://www.amazon.it/dp/B0DYFB639N",
+    "asin": "B0DYFB639N",
+    "macro": "Puzzle e prime scoperte",
+    "subcategory": "Dinosauri e attività creative",
+    "conceptFamily": "dinosaur-activity-book",
+    "ageSuitability": {
+      "minYears": 3,
+      "maxYears": 12,
+      "verified": true,
+      "sourceUrl": "https://www.amazon.it/dp/B0DYFB639N"
+    }
+  },
+  {
+    "id": 408,
+    "name": "LEGO Classic Scatola grande di mattoncini creativi 10698",
+    "emoji": "🧱",
+    "price": 50,
+    "priceStatus": "indicative",
+    "store": "Amazon",
+    "type": "product",
+    "instant": false,
+    "tags": [
+      "kidsBuilding",
+      "kidsBuilding_buildingSets",
+      "kidsBuilding_mechanicalModels",
+      "kidsCreative",
+      "kidsCreative_kidsCrafts"
+    ],
+    "why": "Una scatola aperta di costruzioni per inventare modelli diversi senza seguire un solo tema.",
+    "query": "LEGO Classic 10698 scatola grande mattoncini creativi",
+    "directUrl": "https://www.amazon.it/dp/B00NHQF6MG",
+    "asin": "B00NHQF6MG",
+    "macro": "Costruzioni e veicoli",
+    "subcategory": "Costruzioni creative",
+    "conceptFamily": "open-building-bricks",
+    "ageSuitability": {
+      "minYears": 4,
+      "maxYears": 99,
+      "verified": true,
+      "sourceUrl": "https://www.lego.com/it-it/product/large-creative-brick-box-10698"
+    }
+  },
+  {
+    "id": 410,
+    "name": "Ravensburger Labirinto Disney Villains",
+    "emoji": "🧩",
+    "price": 30,
+    "priceStatus": "indicative",
+    "store": "Amazon",
+    "type": "product",
+    "instant": false,
+    "tags": [
+      "kidsGames",
+      "kidsGames_familyGames",
+      "kidsGames_kidsLogic",
+      "kidsGames_kidsPuzzles",
+      "kidsCharacters",
+      "kidsCharacters_storyWorlds"
+    ],
+    "why": "Un gioco di percorso e pianificazione indicato dai 7 anni, con partite familiari sempre diverse.",
+    "query": "Ravensburger Labirinto Disney Villains italiano",
+    "directUrl": "https://www.amazon.it/dp/B09F8ST9T4",
+    "asin": "B09F8ST9T4",
+    "macro": "Giochi da tavolo e puzzle",
+    "subcategory": "Logica e labirinti",
+    "conceptFamily": "moving-maze-board-game",
+    "ageSuitability": {
+      "minYears": 7,
+      "maxYears": 99,
+      "verified": true,
+      "sourceUrl": "https://www.amazon.it/dp/B09F8ST9T4"
+    }
+  },
+  {
+    "id": 411,
+    "name": "Ravensburger Labirinto 3D",
+    "emoji": "🧠",
+    "price": 35,
+    "priceStatus": "indicative",
+    "store": "Amazon",
+    "type": "product",
+    "instant": false,
+    "tags": [
+      "kidsGames",
+      "kidsGames_familyGames",
+      "kidsGames_kidsLogic",
+      "kidsGames_kidsPuzzles",
+      "kidsScience",
+      "kidsScience_mechanics"
+    ],
+    "why": "Una variante tridimensionale 7+ per chi ama percorsi, strategia e rompicapi visivi.",
+    "query": "Ravensburger Labirinto 3D 26113",
+    "directUrl": "https://www.amazon.it/dp/B07QH1VHK9",
+    "asin": "B07QH1VHK9",
+    "macro": "Giochi da tavolo e puzzle",
+    "subcategory": "Rompicapi tridimensionali",
+    "conceptFamily": "3d-maze-board-game",
+    "ageSuitability": {
+      "minYears": 7,
+      "maxYears": 99,
+      "verified": true,
+      "sourceUrl": "https://www.amazon.it/dp/B07QH1VHK9"
+    }
+  },
+  {
+    "id": 412,
+    "name": "Ravensburger Labirinto Pokémon",
+    "emoji": "⚡",
+    "price": 30,
+    "priceStatus": "indicative",
+    "store": "Amazon",
+    "type": "product",
+    "instant": false,
+    "tags": [
+      "kidsGames",
+      "kidsGames_familyGames",
+      "kidsGames_kidsLogic",
+      "kidsCharacters",
+      "kidsCharacters_storyWorlds",
+      "kidsCharacters_collecting"
+    ],
+    "why": "Un gioco 7+ che unisce il meccanismo del labirinto a un mondo narrativo molto riconoscibile.",
+    "query": "Ravensburger Labirinto Pokémon italiano",
+    "directUrl": "https://www.amazon.it/dp/B0C495WHTC",
+    "asin": "B0C495WHTC",
+    "macro": "Personaggi e mondi da inventare",
+    "subcategory": "Pokémon e giochi di percorso",
+    "conceptFamily": "licensed-maze-board-game",
+    "ageSuitability": {
+      "minYears": 7,
+      "maxYears": 99,
+      "verified": true,
+      "sourceUrl": "https://www.amazon.it/dp/B0C495WHTC"
+    }
+  },
+  {
+    "id": 413,
+    "name": "Crayola Ultimate Collection 152 colori",
+    "emoji": "🌈",
+    "price": 25,
+    "priceStatus": "indicative",
+    "store": "Amazon",
+    "type": "product",
+    "instant": false,
+    "tags": [
+      "kidsCreative",
+      "kidsCreative_kidsDrawing",
+      "kidsCreative_kidsCrafts",
+      "kidsArt",
+      "kidsArt_colouring"
+    ],
+    "why": "Un assortimento ampio per disegno libero, scuola e progetti creativi dai 7 anni in su.",
+    "query": "Crayola Ultimate Collection 152 colori 52-0030",
+    "directUrl": "https://www.amazon.it/dp/B00CI6J3HA",
+    "asin": "B00CI6J3HA",
+    "macro": "Arte e kit creativi",
+    "subcategory": "Disegno e colore",
+    "conceptFamily": "large-crayon-collection",
+    "ageSuitability": {
+      "minYears": 3,
+      "maxYears": 99,
+      "verified": true,
+      "sourceUrl": "https://www.crayola.com/products/crayons/ultimate-crayon-collection-152-count-520030"
+    }
+  },
+  {
+    "asin": "B005I5M2F8",
+    "availabilityStatus": "unknown",
+    "catalogStatus": "indexed-product",
+    "checkedAt": "2026-09-16",
+    "directUrl": "https://www.amazon.it/-/en/Mattel-Games-Card-Years-players/dp/B005I5M2F8",
+    "id": 289,
+    "instant": false,
+    "linkStatus": "direct-product-indexed",
+    "macro": "Giochi, hobby e collezionismo",
+    "name": "Mattel UNO classico W2087",
+    "price": 12,
+    "priceBasis": "planning-estimate-not-current-offer",
+    "priceStatus": "indicative",
+    "qualityStatus": "rating-not-verified",
+    "query": "Mattel UNO classico W2087",
+    "rating": 0,
+    "researchNote": "Ricerca del 16/09/2026. Esistenza/modello individuato; prezzo di fascia stimato, disponibilità e spedizione non confermate. Rating e acquisti non verificati. Pagina prodotto individuata. Deduplicazione 21/09/2026: scheda 409 accorpata; ASIN alternativo B00004TZY8 non contato come nuovo prodotto. Età 7+ riscontrata sul produttore.",
+    "researchPurchases": null,
+    "researchRating": null,
+    "researchReviewCount": null,
+    "researchSource": "https://www.amazon.it/-/en/Mattel-Games-Card-Years-players/dp/B005I5M2F8",
+    "reviewCount": 0,
+    "store": "Amazon",
+    "subcategory": "Giochi da tavolo",
+    "tags": [
+      "boardGames",
+      "games",
+      "social",
+      "funny",
+      "kidsGames",
+      "kidsGames_familyGames",
+      "kidsGames_kidsCards",
+      "kidsCharacters",
+      "kidsCharacters_familyPlay"
+    ],
+    "type": "product",
+    "why": "Un gioco di carte da condividere in famiglia o con gli amici.",
+    "ageSuitability": {
+      "minYears": 7,
+      "maxYears": 99,
+      "verified": true,
+      "sourceUrl": "https://shop.mattel.com/products/uno-card-game-w2087"
+    },
+    "recipientTarget": "unisex",
+    "conceptFamily": "uno-classic",
+    "emoji": "🃏",
+    "alternativeAsins": [
+      "B00004TZY8"
+    ]
+  }
+]

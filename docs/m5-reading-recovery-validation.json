@@ -1,0 +1,156 @@
+{
+  "revision": "20261016-m5-reading-recovery",
+  "generatedAt": "2026-10-16T20:34:12.025725+00:00",
+  "passed": true,
+  "realAmazonCalls": 0,
+  "browserQA": false,
+  "results": [
+    {
+      "command": [
+        "node",
+        "--test",
+        "--test-reporter=tap",
+        "tests/m5-reading-recovery.mjs",
+        "tests/m5-skincare-types.mjs",
+        "tests/m5-intent-retrieval.mjs",
+        "tests/m5-context-quality.mjs",
+        "tests/m5-note-defects.mjs",
+        "tests/m4-notes.mjs",
+        "tests/m4-ranking.mjs",
+        "tests/m4-adaptive.mjs",
+        "tests/m4-shared-quota.mjs",
+        "tests/m3-full.mjs",
+        "tests/m3-closure.mjs",
+        "tests/m3-block5.mjs",
+        "tests/m3-block4.mjs",
+        "tests/m3-block3.mjs",
+        "tests/m3-block2.mjs",
+        "tests/pilot-dictionary.mjs",
+        "tests/pilot-context.mjs",
+        "tests/research-quality-rules.mjs",
+        "tests/research-public.mjs",
+        "tests/research-primary-age.mjs",
+        "tests/research-age-review.mjs",
+        "tests/research-child-coverage.mjs",
+        "tests/research-live-regressions.mjs",
+        "tests/refinement-context.mjs",
+        "tests/event-personal.mjs",
+        "tests/selection-diagnostics.mjs",
+        "tests/amazon-efficiency.mjs",
+        "tests/amazon-quota.mjs"
+      ],
+      "exitCode": 0,
+      "tail": "\n  type: 'test'\n  ...\n# Subtest: Public endpoint validates origin, JSON, budget and method without upstream calls\nok 3168 - Public endpoint validates origin, JSON, budget and method without upstream calls\n  ---\n  duration_ms: 12.200218\n  type: 'test'\n  ...\n# {\"event\":\"amazon_recommendation\",\"durationMs\":12135,\"searched\":12,\"amazonCalls\":12,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n# Subtest: Search API returns fresh product cards, distinct ideas, affiliate URLs and no raw note transfer\nok 3169 - Search API returns fresh product cards, distinct ideas, affiliate URLs and no raw note transfer\n  ---\n  duration_ms: 12153.561531\n  type: 'test'\n  ...\n# Subtest: Recipient evidence uses features and variants, never search intent\nok 3170 - Recipient evidence uses features and variants, never search intent\n  ---\n  duration_ms: 3.325918\n  type: 'test'\n  ...\n# Subtest: Giver references do not change recipient; explicit unisex differs from missing data\nok 3171 - Giver references do not change recipient; explicit unisex differs from missing data\n  ---\n  duration_ms: 0.323276\n  type: 'test'\n  ...\n# Subtest: Raw Amazon normalization rejects description-only conflict and public adapter retains compatible evidence\nok 3172 - Raw Amazon normalization rejects description-only conflict and public adapter retains compatible evidence\n  ---\n  duration_ms: 20.032667\n  type: 'test'\n  ...\n# Subtest: Fashion scarf excludes observed juggling products but accepts fashion and explicit activity intent\nok 3173 - Fashion scarf excludes observed juggling products but accepts fashion and explicit activity intent\n  ---\n  duration_ms: 316.726676\n  type: 'test'\n  ...\n# Subtest: Books exclude school texts, blank recipe books and ebook bundles; intended textbooks remain possible\nok 3174 - Books exclude school texts, blank recipe books and ebook bundles; intended textbooks remain possible\n  ---\n  duration_ms: 308.35788\n  type: 'test'\n  ...\n# Subtest: Wallet and cardholder share one function across query families; scarf remains distinct\nok 3175 - Wallet and cardholder share one function across query families; scarf remains distinct\n  ---\n  duration_ms: 14.386348\n  type: 'test'\n  ...\n# Subtest: Two available selected interests are represented before filling a third idea\nok 3176 - Two available selected interests are represented before filling a third idea\n  ---\n  duration_ms: 26.516404\n  type: 'test'\n  ...\n# Subtest: Night and day face creams are equivalent; a skincare kit overlaps its declared serum and cream\nok 3177 - Night and day face creams are equivalent; a skincare kit overlaps its declared serum and cream\n  ---\n  duration_ms: 17.104682\n  type: 'test'\n  ...\n# Subtest: Live recovery cannot substitute commercial shopping bags, book-shaped vases or RPG manuals\nok 3178 - Live recovery cannot substitute commercial shopping bags, book-shaped vases or RPG manuals\n  ---\n  duration_ms: 3.011445\n  type: 'test'\n  ...\n# Subtest: English night cream overlaps the skincare kit, too\nok 3179 - English night cream overlaps the skincare kit, too\n  ---\n  duration_ms: 1.824702\n  type: 'test'\n  ...\n# Subtest: Equivalent puzzles and experiment kits cannot fill separate slots through different query families\nok 3180 - Equivalent puzzles and experiment kits cannot fill separate slots through different query families\n  ---\n  duration_ms: 3.048992\n  type: 'test'\n  ...\n# Subtest: A complete face kit also occupies the explicitly included eye-care function\nok 3181 - A complete face kit also occupies the explicitly included eye-care function\n  ---\n  duration_ms: 1.988678\n  type: 'test'\n  ...\n# Subtest: Every candidate receives a final decision, with concrete duplicates linked to the chosen ASIN\nok 3182 - Every candidate receives a final decision, with concrete duplicates linked to the chosen ASIN\n  ---\n  duration_ms: 72.175835\n  type: 'test'\n  ...\n1..3182\n# tests 3182\n# suites 0\n# pass 3182\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 16525.61886\n",
+      "failures": [],
+      "tests": 3182,
+      "passed": 3182,
+      "failed": 0
+    },
+    {
+      "command": [
+        "node",
+        "tests/m5-notes-ui.cjs"
+      ],
+      "exitCode": 0,
+      "tail": "2,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\nPASS it S23-new browser code → assembled Worker → product card\n{\"event\":\"amazon_recommendation\",\"durationMs\":4,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\nPASS it S34 browser code → assembled Worker → product card\n{\"event\":\"amazon_recommendation\",\"durationMs\":6,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\nPASS it S35 browser code → assembled Worker → product card\n{\"event\":\"amazon_recommendation\",\"durationMs\":12126,\"searched\":12,\"amazonCalls\":12,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":1092,\"searched\":12,\"amazonCalls\":1,\"cacheHits\":11,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\nPASS en L18-recovery browser code → assembled Worker → product card\n{\"event\":\"amazon_recommendation\",\"durationMs\":2,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\nPASS en L19-recovery browser code → assembled Worker → product card\n{\"event\":\"amazon_recommendation\",\"durationMs\":12123,\"searched\":12,\"amazonCalls\":12,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\nPASS en L24-recovery browser code → assembled Worker → product card\n{\"event\":\"amazon_recommendation\",\"durationMs\":12119,\"searched\":12,\"amazonCalls\":12,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":1098,\"searched\":12,\"amazonCalls\":1,\"cacheHits\":11,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\nPASS en L32 browser code → assembled Worker → product card\n{\"event\":\"amazon_recommendation\",\"durationMs\":12123,\"searched\":12,\"amazonCalls\":12,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":1104,\"searched\":12,\"amazonCalls\":1,\"cacheHits\":11,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\nPASS en L33 browser code → assembled Worker → product card\n{\"event\":\"amazon_recommendation\",\"durationMs\":2,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\nPASS en L34 browser code → assembled Worker → product card\n{\"event\":\"amazon_recommendation\",\"durationMs\":4,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\nPASS en L35 browser code → assembled Worker → product card\n{\"event\":\"amazon_recommendation\",\"durationMs\":4,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\nPASS en T34 browser code → assembled Worker → product card\n{\"event\":\"amazon_recommendation\",\"durationMs\":2,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\nPASS en T35 browser code → assembled Worker → product card\n{\"event\":\"amazon_recommendation\",\"durationMs\":1,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\nPASS en S19-new browser code → assembled Worker → product card\n{\"event\":\"amazon_recommendation\",\"durationMs\":2,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\nPASS en S23-new browser code → assembled Worker → product card\n{\"event\":\"amazon_recommendation\",\"durationMs\":3,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\nPASS en S34 browser code → assembled Worker → product card\n{\"event\":\"amazon_recommendation\",\"durationMs\":2,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\nPASS en S35 browser code → assembled Worker → product card\n{\"flows\":26,\"refinements\":8,\"clarifications\":4,\"simulatedCalls\":120,\"realAmazonCalls\":0,\"actualWorkerSerialization\":true,\"browserQA\":false}\n",
+      "failures": []
+    },
+    {
+      "command": [
+        "node",
+        "tests/m4-notes-ui.cjs"
+      ],
+      "exitCode": 0,
+      "tail": "PASS it note -> requirement refinement -> optional-property refinement; raw note remains local\nPASS en note -> requirement refinement -> optional-property refinement; raw note remains local\n{\"languages\":2,\"flows\":2,\"refinements\":4,\"actualFrontend\":true,\"realAmazonCalls\":0,\"browserQA\":false}\n",
+      "failures": []
+    },
+    {
+      "command": [
+        "node",
+        "tests/m3-full-ui.cjs"
+      ],
+      "exitCode": 0,
+      "tail": ":5500,\"searched\":7,\"amazonCalls\":5,\"cacheHits\":2,\"dailyLimit\":6912,\"stopReason\":\"sufficient\",\"failureReasons\":[]}\nPASS en earlyCreative\n{\"event\":\"amazon_recommendation\",\"durationMs\":3300,\"searched\":4,\"amazonCalls\":4,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"sufficient\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":6600,\"searched\":6,\"amazonCalls\":6,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"sufficient\",\"failureReasons\":[]}\nPASS en earlyMovement\n{\"event\":\"amazon_recommendation\",\"durationMs\":6600,\"searched\":7,\"amazonCalls\":7,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"sufficient\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":9900,\"searched\":12,\"amazonCalls\":9,\"cacheHits\":3,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\nPASS en earlyMusic\n{\"event\":\"amazon_recommendation\",\"durationMs\":12100,\"searched\":12,\"amazonCalls\":12,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":3300,\"searched\":12,\"amazonCalls\":3,\"cacheHits\":9,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\nPASS en earlyLearning\n{\"event\":\"amazon_recommendation\",\"durationMs\":8800,\"searched\":9,\"amazonCalls\":9,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"sufficient\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":7700,\"searched\":12,\"amazonCalls\":7,\"cacheHits\":5,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\nPASS en kidsBuilding\n{\"event\":\"amazon_recommendation\",\"durationMs\":3300,\"searched\":4,\"amazonCalls\":4,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"sufficient\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":4400,\"searched\":5,\"amazonCalls\":4,\"cacheHits\":1,\"dailyLimit\":6912,\"stopReason\":\"sufficient\",\"failureReasons\":[]}\nPASS en kidsGames\n{\"event\":\"amazon_recommendation\",\"durationMs\":3300,\"searched\":4,\"amazonCalls\":4,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"sufficient\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":6600,\"searched\":7,\"amazonCalls\":6,\"cacheHits\":1,\"dailyLimit\":6912,\"stopReason\":\"sufficient\",\"failureReasons\":[]}\nPASS en kidsScience\n{\"event\":\"amazon_recommendation\",\"durationMs\":3300,\"searched\":4,\"amazonCalls\":4,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"sufficient\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":6600,\"searched\":6,\"amazonCalls\":6,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"sufficient\",\"failureReasons\":[]}\nPASS en kidsCreative\n{\"event\":\"amazon_recommendation\",\"durationMs\":12100,\"searched\":12,\"amazonCalls\":12,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":1100,\"searched\":12,\"amazonCalls\":1,\"cacheHits\":11,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\nPASS en kidsBooks\n{\"event\":\"amazon_recommendation\",\"durationMs\":8800,\"searched\":9,\"amazonCalls\":9,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"sufficient\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":7700,\"searched\":12,\"amazonCalls\":7,\"cacheHits\":5,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\nPASS en kidsSport\n{\"event\":\"amazon_recommendation\",\"durationMs\":4400,\"searched\":5,\"amazonCalls\":5,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"sufficient\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":4400,\"searched\":6,\"amazonCalls\":4,\"cacheHits\":2,\"dailyLimit\":6912,\"stopReason\":\"sufficient\",\"failureReasons\":[]}\nPASS en kidsCharacters\n{\"event\":\"amazon_recommendation\",\"durationMs\":3300,\"searched\":4,\"amazonCalls\":4,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"sufficient\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":5500,\"searched\":5,\"amazonCalls\":5,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"sufficient\",\"failureReasons\":[]}\nPASS en kidsMusic\n{\"scenarios\":56,\"refinements\":56,\"simulatedAmazonCalls\":663,\"realAmazonCalls\":0,\"transportClock\":\"simulated\",\"actualWorkerAndFrontend\":true}\n",
+      "failures": []
+    },
+    {
+      "command": [
+        "node",
+        "tests/m3-block5-ui.cjs"
+      ],
+      "exitCode": 0,
+      "tail": "Reasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":7,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":1,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":2,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":2,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":1,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":2,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":5,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":1,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":1,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":4,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":2,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":1,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":1,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":2,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":1,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":1,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":3,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":2,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":2,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":1,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":1,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":1,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":8,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":1,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":2,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"scenarios\":44,\"simulatedCalls\":44,\"realAmazonCalls\":0,\"actualWorkerSerialization\":true,\"refinementChecks\":44}\n",
+      "failures": []
+    },
+    {
+      "command": [
+        "node",
+        "tests/m3-closure-ui.cjs"
+      ],
+      "exitCode": 0,
+      "tail": "{\"event\":\"amazon_recommendation\",\"durationMs\":31,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":1039,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":6,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"event\":\"amazon_recommendation\",\"durationMs\":1077,\"searched\":1,\"amazonCalls\":1,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"scenarios\":2,\"refinements\":2,\"simulatedAmazonCalls\":4,\"realAmazonCalls\":0,\"bibliographicMetadataPreserved\":true}\n",
+      "failures": []
+    },
+    {
+      "command": [
+        "node",
+        "tests/m3-block4-ui.cjs"
+      ],
+      "exitCode": 0,
+      "tail": "{\"scenarios\":12,\"langs\":[\"it\",\"en\"],\"featureOnlyEvidence\":true,\"refinementPreservesRequirements\":true,\"amazonCalls\":0}\n",
+      "failures": []
+    },
+    {
+      "command": [
+        "node",
+        "tests/research-questionnaire.cjs"
+      ],
+      "exitCode": 0,
+      "tail": "Public questionnaire IT/EN: selection, notes staying local, Amazon cards, refinement exclusions and failure handling passed.\n",
+      "failures": []
+    },
+    {
+      "command": [
+        "node",
+        "tests/worker-research.mjs"
+      ],
+      "exitCode": 0,
+      "tail": "{\"event\":\"amazon_recommendation\",\"durationMs\":12127,\"searched\":12,\"amazonCalls\":12,\"cacheHits\":0,\"dailyLimit\":6912,\"stopReason\":\"exhausted\",\"failureReasons\":[]}\n{\"bundledWorker\":true,\"searches\":12,\"products\":2,\"status\":200}\n",
+      "failures": []
+    },
+    {
+      "command": [
+        "node",
+        "tests/budget-continuity.cjs"
+      ],
+      "exitCode": 0,
+      "tail": "IT/EN: initial range, two refinements, explicit budget change, explicit minimum, honest delivery text passed.\n",
+      "failures": []
+    },
+    {
+      "command": [
+        "node",
+        "tests/natural-language-exclusions.cjs"
+      ],
+      "exitCode": 0,
+      "tail": "{\n  \"issue\": \"G3-NLP-004\",\n  \"assertions\": 100,\n  \"failures\": [],\n  \"errors\": 0,\n  \"browserQA\": false\n}\n",
+      "failures": []
+    },
+    {
+      "command": [
+        "node",
+        "tests/recipient-preference.cjs"
+      ],
+      "exitCode": 0,
+      "tail": "{\"checks\":264,\"languages\":2,\"errors\":0,\"browserQA\":false}\n",
+      "failures": []
+    }
+  ],
+  "validationNote": "Two old tests assumed that excluding books removes all reading queries. Replaced with checks that reading accessories remain possible while books and rejected products are still excluded; complete server suite rerun. Unchanged client/Worker suite results retained.",
+  "sourceHashes": {
+    "recommendation-rules.js": "fa133169cba11bdba8bf631c2d44c61d2a652bd6d4885dd88829bf0f82e54d90",
+    "server/research/public-adapter.mjs": "a1ddc62edf1a97f54464d1e591cd7bd16a036b89988559e4fbf722d52150b307",
+    "dist/server/index.js": "df20e7260749fcde1d7c43b8aab2aa358dcc82bd4a0a81b4242dac70659cc007",
+    "tests/m5-notes-ui.cjs": "19e04e0341fd54d61460933403410cf064b1078790d7e4663ffaeefac3955319"
+  }
+}

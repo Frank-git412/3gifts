@@ -1,0 +1,363 @@
+{
+  "scope": "exposed_diagnostic_regression_not_M5_acceptance",
+  "before": {
+    "main": {
+      "requests": 114,
+      "coverage": {
+        "0": 17,
+        "1": 6,
+        "2": 1,
+        "3": 90
+      },
+      "proposals": 278,
+      "blocked": [
+        "I-T17",
+        "I-T18",
+        "I-T19",
+        "I-T22",
+        "I-T24",
+        "I-S24"
+      ],
+      "basicViolations": []
+    },
+    "supplement": {
+      "requests": 6,
+      "coverage": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 6
+      },
+      "proposals": 18,
+      "blocked": [],
+      "basicViolations": []
+    },
+    "invalidInputs": [
+      "I-L35",
+      "I-L39",
+      "I-T35",
+      "I-T39",
+      "I-S35",
+      "I-S39"
+    ]
+  },
+  "after": {
+    "main": {
+      "requests": 114,
+      "coverage": {
+        "0": 17,
+        "1": 6,
+        "2": 3,
+        "3": 88
+      },
+      "proposals": 276,
+      "blocked": [
+        "I-T17",
+        "I-T18",
+        "I-T19",
+        "I-T22",
+        "I-T24",
+        "I-S24"
+      ],
+      "basicViolations": []
+    },
+    "supplement": {
+      "requests": 6,
+      "coverage": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 6
+      },
+      "proposals": 18,
+      "blocked": [],
+      "basicViolations": []
+    },
+    "invalidInputs": [
+      "I-L35",
+      "I-L39",
+      "I-T35",
+      "I-T39",
+      "I-S35",
+      "I-S39"
+    ]
+  },
+  "targets": {
+    "illustrated": [
+      "I-L04",
+      "I-L28"
+    ],
+    "biography": [
+      "I-L14",
+      "I-L38"
+    ],
+    "film": [
+      "I-T10",
+      "I-T34"
+    ]
+  },
+  "additionalFilmTargets": [
+    "I-T04",
+    "I-T28"
+  ],
+  "targetOutcomes": {
+    "illustrated": "corrected_in_frozen_replay",
+    "film": "first_result_supports_film_and_three_false_device_matches_removed",
+    "biography": "parser_retrieval_and_scoring_fixed_in_simulated_tests_but_frozen_outputs_remain_generic_no_eligible_supply"
+  },
+  "biographySupply": {
+    "uniqueListings": 161,
+    "supportedListings": 1,
+    "eligibleSupportedListings": 0,
+    "conclusion": "Only one listing documents a true story. Its price is inside budget but LEADTIME is excluded by the unchanged in-stock policy. No supplied biography/true-story listing can receive the preference bonus after normalization. Live targeted retrieval remains unverified.",
+    "cases": [
+      "I-L14",
+      "I-L38"
+    ]
+  },
+  "coverageDecreases": [
+    {
+      "id": "I-T13",
+      "note": "Porta spesso lo smartphone fuori casa. Usa un iPhone 15.",
+      "before": 3,
+      "after": 2,
+      "blockedBefore": false,
+      "blockedAfter": false,
+      "removed": [
+        {
+          "asin": "B00Y0G2L9I",
+          "title": "Logitech K400 Plus Tastiera Wireless Touch TV - Italiano QWERTY - Nero | Tastiera HTPC per TV, Touchpad Integrato, Controlli Multimediali, Windows, Android, Chrome OS, Laptop",
+          "newDecision": {
+            "asin": "B00Y0G2L9I",
+            "status": "rejected",
+            "reason": "product_query_mismatch"
+          }
+        }
+      ],
+      "products": [
+        {
+          "asin": "B0FNRKPB2L",
+          "title": "GUOMIS Cornice Digitale,1.5Pollici Cornice Digitale Foto,200 × 200 Cornici digitali per foto,Supporta il caricamento di foto, testo e contatti di emergenza (Nero corvino)",
+          "noteEvidence": {
+            "active": false,
+            "weight": 0,
+            "value": 0,
+            "contribution": 0,
+            "evidence": {
+              "status": "absent",
+              "evidence": []
+            }
+          }
+        },
+        {
+          "asin": "B0FXGLJ38Y",
+          "title": "Yuanpgky YT200 - Mini proiettore portatile per cellulare, proiettore compatto e leggero con connettività smartphone, ricarica 5 V 2 A, nero",
+          "noteEvidence": {
+            "active": false,
+            "weight": 0,
+            "value": 0,
+            "contribution": 0,
+            "evidence": {
+              "status": "absent",
+              "evidence": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "I-T37",
+      "note": "Porta spesso lo smartphone fuori casa. Usa un iPhone 15.",
+      "before": 3,
+      "after": 2,
+      "blockedBefore": false,
+      "blockedAfter": false,
+      "removed": [
+        {
+          "asin": "B00Y0G2L9I",
+          "title": "Logitech K400 Plus Tastiera Wireless Touch TV - Italiano QWERTY - Nero | Tastiera HTPC per TV, Touchpad Integrato, Controlli Multimediali, Windows, Android, Chrome OS, Laptop",
+          "newDecision": {
+            "asin": "B00Y0G2L9I",
+            "status": "rejected",
+            "reason": "product_query_mismatch"
+          }
+        }
+      ],
+      "products": [
+        {
+          "asin": "B0FNRKPB2L",
+          "title": "GUOMIS Cornice Digitale,1.5Pollici Cornice Digitale Foto,200 × 200 Cornici digitali per foto,Supporta il caricamento di foto, testo e contatti di emergenza (Nero corvino)",
+          "noteEvidence": {
+            "active": false,
+            "weight": 0,
+            "value": 0,
+            "contribution": 0,
+            "evidence": {
+              "status": "absent",
+              "evidence": []
+            }
+          }
+        },
+        {
+          "asin": "B0FXGLJ38Y",
+          "title": "Yuanpgky YT200 - Mini proiettore portatile per cellulare, proiettore compatto e leggero con connettività smartphone, ricarica 5 V 2 A, nero",
+          "noteEvidence": {
+            "active": false,
+            "weight": 0,
+            "value": 0,
+            "contribution": 0,
+            "evidence": {
+              "status": "absent",
+              "evidence": []
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "decreaseReview": {
+    "reviewedAt": "2026-10-18T21:06:58.228880+00:00",
+    "scope": "all_coverage_decreases_v143_to_candidate",
+    "cases": [
+      {
+        "id": "I-T13",
+        "before": 3,
+        "after": 2,
+        "removedAsins": [
+          "B00Y0G2L9I"
+        ],
+        "classification": "justified_removal_of_false_primary_type_match",
+        "reason": "Logitech K400 Plus è una tastiera, non il computer portatile a cui era associata. La terza proposta viene rimossa; il campione non contiene un terzo risultato distinto ammissibile dopo i filtri. Le due proposte rimanenti non ricevono una valutazione editoriale positiva automatica.",
+        "replacementAvailability": "live_retrieval_unverified"
+      },
+      {
+        "id": "I-T37",
+        "before": 3,
+        "after": 2,
+        "removedAsins": [
+          "B00Y0G2L9I"
+        ],
+        "classification": "justified_removal_of_false_primary_type_match",
+        "reason": "Logitech K400 Plus è una tastiera, non il computer portatile a cui era associata. La terza proposta viene rimossa; il campione non contiene un terzo risultato distinto ammissibile dopo i filtri. Le due proposte rimanenti non ricevono una valutazione editoriale positiva automatica.",
+        "replacementAvailability": "live_retrieval_unverified"
+      }
+    ]
+  },
+  "remainingEmpty": [
+    {
+      "id": "I-L20",
+      "note": "Un cofanetto di libri. Niente lampade e niente segnalibri.",
+      "blocked": false,
+      "reason": "limited_eligible_distinct_products_in_frozen_pool"
+    },
+    {
+      "id": "I-L23",
+      "note": "Luce da lettura calda. Niente luce fredda.",
+      "blocked": false,
+      "reason": "limited_eligible_distinct_products_in_frozen_pool"
+    },
+    {
+      "id": "I-T02",
+      "note": "Vorrei conservare e rivedere le foto di famiglia in casa.",
+      "blocked": false,
+      "reason": "limited_eligible_distinct_products_in_frozen_pool"
+    },
+    {
+      "id": "I-T08",
+      "note": "Vorrei un dispositivo per i ricordi dei nostri viaggi.",
+      "blocked": false,
+      "reason": "limited_eligible_distinct_products_in_frozen_pool"
+    },
+    {
+      "id": "I-T17",
+      "note": "Cuffie Bluetooth con microfono per un iPhone 15. Niente auricolari.",
+      "blocked": true,
+      "reason": "clarification_before_search"
+    },
+    {
+      "id": "I-T18",
+      "note": "Power bank USB-C per iPhone 15. Niente ricarica wireless.",
+      "blocked": true,
+      "reason": "clarification_before_search"
+    },
+    {
+      "id": "I-T19",
+      "note": "Hub USB-C con uscita HDMI; non conosco il modello del computer.",
+      "blocked": true,
+      "reason": "clarification_before_search"
+    },
+    {
+      "id": "I-T21",
+      "note": "Cornice digitale senza Wi-Fi e senza abbonamenti.",
+      "blocked": false,
+      "reason": "limited_eligible_distinct_products_in_frozen_pool"
+    },
+    {
+      "id": "I-T22",
+      "note": "Cuffie wireless senza Bluetooth e senza ricevitore USB.",
+      "blocked": true,
+      "reason": "clarification_before_search"
+    },
+    {
+      "id": "I-T24",
+      "note": "Vorrei un accessorio compatibile con il suo telefono, ma non so quale abbia.",
+      "blocked": true,
+      "reason": "clarification_before_search"
+    },
+    {
+      "id": "I-T26",
+      "note": "Vorrei conservare e rivedere le foto di famiglia in casa.",
+      "blocked": false,
+      "reason": "limited_eligible_distinct_products_in_frozen_pool"
+    },
+    {
+      "id": "I-T32",
+      "note": "Vorrei un dispositivo per i ricordi dei nostri viaggi.",
+      "blocked": false,
+      "reason": "limited_eligible_distinct_products_in_frozen_pool"
+    },
+    {
+      "id": "I-S17",
+      "note": "Crema viso senza profumo e senza retinolo.",
+      "blocked": false,
+      "reason": "limited_eligible_distinct_products_in_frozen_pool"
+    },
+    {
+      "id": "I-S19",
+      "note": "Solo crema mani senza profumo.",
+      "blocked": false,
+      "reason": "limited_eligible_distinct_products_in_frozen_pool"
+    },
+    {
+      "id": "I-S22",
+      "note": "Niente acidi esfolianti e niente retinolo.",
+      "blocked": false,
+      "reason": "limited_eligible_distinct_products_in_frozen_pool"
+    },
+    {
+      "id": "I-S23",
+      "note": "Detergente viso per pelle sensibile, senza profumo.",
+      "blocked": false,
+      "reason": "limited_eligible_distinct_products_in_frozen_pool"
+    },
+    {
+      "id": "I-S24",
+      "note": "Niente profumo, ma desidera un prodotto molto profumato.",
+      "blocked": true,
+      "reason": "clarification_before_search"
+    }
+  ],
+  "realAmazonCalls": 0,
+  "newHumanVotes": 0,
+  "browserQA": false,
+  "independentHoldout": false,
+  "fullConstraintsAcceptance": false,
+  "remainingGates": [
+    "Biography live retrieval and preference satisfaction remain unverified",
+    "Full V01–V08 and explanation review",
+    "Remaining empty and partial requests, live retrieval and supply",
+    "New frozen independent sample and human ratings",
+    "Desktop/mobile browser QA",
+    "Operations/load and personal Amazon TPS/TPD response"
+  ]
+}

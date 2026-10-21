@@ -1,0 +1,223 @@
+{
+  "date": "2026-10-01",
+  "reviewed": 8,
+  "approved": 4,
+  "published": 0,
+  "pending": 4,
+  "products": [
+    {
+      "id": 439,
+      "name": "Manfrotto PIXI MTPIXI-B, mini treppiede nero",
+      "asin": "B00D76RNLS",
+      "price": 27,
+      "emoji": "📷",
+      "tags": [
+        "artPhoto",
+        "photo"
+      ],
+      "macro": "Creatività e fotografia",
+      "subcategory": "Fotografia",
+      "why": "Mini treppiede per fotocamere con attacco da 1/4 di pollice e peso fino a 1 kg. Il morsetto per smartphone va acquistato separatamente.",
+      "query": "Manfrotto PIXI MTPIXI-B, mini treppiede nero",
+      "store": "Amazon",
+      "type": "product",
+      "instant": false,
+      "priceStatus": "indicative",
+      "priceBasis": "documented-external-reference-not-amazon-offer",
+      "priceSourceUrl": "https://www.juzaphoto.com/recensione.php?l=it&t=manfrotto_pixi",
+      "priceCheckedAt": "2026-10-01",
+      "priceEvidence": {
+        "amount": 27,
+        "currency": "EUR",
+        "sourceUrl": "https://www.juzaphoto.com/recensione.php?l=it&t=manfrotto_pixi",
+        "checkedAt": "2026-10-01",
+        "note": "Riferimento esterno documentato; non prezzo Amazon garantito."
+      },
+      "directUrl": "https://www.amazon.it/dp/B00D76RNLS?tag=3gifts-21",
+      "conceptFamily": "mini-camera-tripod",
+      "catalogStatus": "curated-product",
+      "rating": 0,
+      "reviewCount": 0,
+      "availabilityStatus": "unknown",
+      "recipientTarget": "unisex",
+      "linkStatus": "direct-product-identified",
+      "linkCheckedAt": "2026-10-01",
+      "researchPosition": "S020-1",
+      "identitySourceUrl": "https://www.manfrotto.com/global-it/treppiede-da-tavolo-pixi-nero-mtpixi-b/",
+      "qualityEvidence": {
+        "rating": 4.7,
+        "reviewCount": 20114,
+        "sourceUrl": "https://www.amazon.it/gp/product/B00D76RNLS/ref=as_li_ss_tl?camp=3370&creative=24114&creativeASIN=B00D76RNLS&ie=UTF8&linkCode=as2&tag=juzaphoto-21",
+        "observedAt": "2026-10-01",
+        "note": "Valutazioni osservate sulla scheda ASIN; Amazon può aggregare varianti. Non numero acquisti e non rating aggiornato in tempo reale."
+      },
+      "researchNote": "Identità, ASIN, pertinenza, recensioni e duplicati controllati il 01/10/2026. Prezzo indicativo esterno; nessuna verifica di spedizione o offerta completa.",
+      "adultOnly": true
+    },
+    {
+      "id": 440,
+      "name": "La biblioteca di mezzanotte — Matt Haig, edizione italiana",
+      "asin": "8833572633",
+      "price": 18.05,
+      "emoji": "📚",
+      "tags": [
+        "culture",
+        "books"
+      ],
+      "macro": "Libri, fumetti e cultura",
+      "subcategory": "Libri",
+      "why": "Un romanzo sulle possibilità e sulle scelte della vita, per chi ama le storie introspettive. Edizione italiana in brossura.",
+      "query": "La biblioteca di mezzanotte — Matt Haig, edizione italiana",
+      "store": "Amazon",
+      "type": "product",
+      "instant": false,
+      "priceStatus": "indicative",
+      "priceBasis": "documented-external-reference-not-amazon-offer",
+      "priceSourceUrl": "https://www.macrolibrarsi.it/libri/__la-biblioteca-di-mezzanotte.php",
+      "priceCheckedAt": "2026-10-01",
+      "priceEvidence": {
+        "amount": 18.05,
+        "currency": "EUR",
+        "sourceUrl": "https://www.macrolibrarsi.it/libri/__la-biblioteca-di-mezzanotte.php",
+        "checkedAt": "2026-10-01",
+        "note": "Riferimento esterno documentato; non prezzo Amazon garantito."
+      },
+      "directUrl": "https://www.amazon.it/dp/8833572633?tag=3gifts-21",
+      "conceptFamily": "midnight-library-book",
+      "catalogStatus": "curated-product",
+      "rating": 0,
+      "reviewCount": 0,
+      "availabilityStatus": "unknown",
+      "recipientTarget": "unisex",
+      "linkStatus": "direct-product-identified",
+      "linkCheckedAt": "2026-10-01",
+      "researchPosition": "S004-2",
+      "identitySourceUrl": "https://www.edizionieo.it/book/9788833572635/la-biblioteca-di-mezzanotte",
+      "qualityEvidence": {
+        "rating": 4.2,
+        "reviewCount": 1244,
+        "sourceUrl": "https://www.amazon.it/biblioteca-mezzanotte-Matt-Haig/dp/8833572633",
+        "observedAt": "2026-10-01",
+        "note": "Valutazioni osservate sulla scheda ASIN; Amazon può aggregare varianti. Non numero acquisti e non rating aggiornato in tempo reale."
+      },
+      "researchNote": "Identità, ASIN, pertinenza, recensioni e duplicati controllati il 01/10/2026. Prezzo indicativo esterno; nessuna verifica di spedizione o offerta completa.",
+      "adultOnly": true
+    },
+    {
+      "id": 441,
+      "name": "Il Gruffalò — Albumini Emme, edizione italiana",
+      "asin": "8867143336",
+      "price": 8.46,
+      "emoji": "📚",
+      "tags": [
+        "earlyBooks",
+        "earlyBooks_pictureBooks"
+      ],
+      "macro": "Primi libri e racconti",
+      "subcategory": "Cartonati e albi illustrati",
+      "why": "Un albo in rima da leggere insieme dai 3 anni. Edizione Albumini in brossura, 32 pagine.",
+      "query": "Il Gruffalò — Albumini Emme, edizione italiana",
+      "store": "Amazon",
+      "type": "product",
+      "instant": false,
+      "priceStatus": "indicative",
+      "priceBasis": "documented-external-reference-not-amazon-offer",
+      "priceSourceUrl": "https://www.ibs.it/gruffalo-ediz-a-colori-libro-julia-donaldson/e/9788867143337",
+      "priceCheckedAt": "2026-10-01",
+      "priceEvidence": {
+        "amount": 8.46,
+        "currency": "EUR",
+        "sourceUrl": "https://www.ibs.it/gruffalo-ediz-a-colori-libro-julia-donaldson/e/9788867143337",
+        "checkedAt": "2026-10-01",
+        "note": "Riferimento esterno documentato; non prezzo Amazon garantito."
+      },
+      "directUrl": "https://www.amazon.it/dp/8867143336?tag=3gifts-21",
+      "conceptFamily": "gruffalo-book",
+      "catalogStatus": "curated-product",
+      "rating": 0,
+      "reviewCount": 0,
+      "availabilityStatus": "unknown",
+      "recipientTarget": "unisex",
+      "linkStatus": "direct-product-identified",
+      "linkCheckedAt": "2026-10-01",
+      "researchPosition": "S090-1",
+      "identitySourceUrl": "https://www.ibs.it/gruffalo-ediz-a-colori-libro-julia-donaldson/e/9788867143337",
+      "qualityEvidence": {
+        "rating": 4.8,
+        "reviewCount": 3598,
+        "sourceUrl": "https://www.amazon.it/Gruffal%C3%B2-Ediz-illustrata-Julia-Donaldson/dp/8867143336",
+        "observedAt": "2026-10-01",
+        "note": "Valutazioni osservate sulla scheda ASIN; Amazon può aggregare varianti. Non numero acquisti e non rating aggiornato in tempo reale."
+      },
+      "researchNote": "Identità, ASIN, pertinenza, recensioni e duplicati controllati il 01/10/2026. Prezzo indicativo esterno; nessuna verifica di spedizione o offerta completa.",
+      "ageSuitability": {
+        "minYears": 3,
+        "maxYears": 6,
+        "verified": true,
+        "sourceUrl": "https://www.ibs.it/gruffalo-ediz-a-colori-libro-julia-donaldson/e/9788867143337",
+        "note": "Fonte indica da 3 anni. Massimo 6 scelto editorialmente per il percorso prescolare, non limite del produttore."
+      }
+    },
+    {
+      "id": 442,
+      "name": "A caccia dell’Orso — Mondadori, edizione italiana",
+      "asin": "8804655437",
+      "price": 11.4,
+      "emoji": "📚",
+      "tags": [
+        "earlyBooks",
+        "earlyBooks_pictureBooks"
+      ],
+      "macro": "Primi libri e racconti",
+      "subcategory": "Cartonati e albi illustrati",
+      "why": "Un’avventura da leggere ad alta voce dai 3 anni, con suoni e ripetizioni. Edizione italiana cartonata, 36 pagine.",
+      "query": "A caccia dell’Orso — Mondadori, edizione italiana",
+      "store": "Amazon",
+      "type": "product",
+      "instant": false,
+      "priceStatus": "indicative",
+      "priceBasis": "documented-external-reference-not-amazon-offer",
+      "priceSourceUrl": "https://www.lafeltrinelli.it/a-caccia-dell-orso-ediz-libro-michael-rosen-helen-oxenbury/e/9788804655435",
+      "priceCheckedAt": "2026-10-01",
+      "priceEvidence": {
+        "amount": 11.4,
+        "currency": "EUR",
+        "sourceUrl": "https://www.lafeltrinelli.it/a-caccia-dell-orso-ediz-libro-michael-rosen-helen-oxenbury/e/9788804655435",
+        "checkedAt": "2026-10-01",
+        "note": "Riferimento esterno documentato; non prezzo Amazon garantito."
+      },
+      "directUrl": "https://www.amazon.it/dp/8804655437?tag=3gifts-21",
+      "conceptFamily": "bear-hunt-book",
+      "catalogStatus": "curated-product",
+      "rating": 0,
+      "reviewCount": 0,
+      "availabilityStatus": "unknown",
+      "recipientTarget": "unisex",
+      "linkStatus": "direct-product-identified",
+      "linkCheckedAt": "2026-10-01",
+      "researchPosition": "S090-2",
+      "identitySourceUrl": "https://www.lafeltrinelli.it/a-caccia-dell-orso-ediz-libro-michael-rosen-helen-oxenbury/e/9788804655435",
+      "qualityEvidence": {
+        "rating": 4.7,
+        "reviewCount": 2294,
+        "sourceUrl": "https://www.amazon.it/caccia-dellOrso-Ediz-illustrata/dp/8804655437",
+        "observedAt": "2026-10-01",
+        "note": "Valutazioni osservate sulla scheda ASIN; Amazon può aggregare varianti. Non numero acquisti e non rating aggiornato in tempo reale."
+      },
+      "researchNote": "Identità, ASIN, pertinenza, recensioni e duplicati controllati il 01/10/2026. Prezzo indicativo esterno; nessuna verifica di spedizione o offerta completa. Prezzo 11,40 EUR sotto minimo obiettivo 12,01 EUR: fascia del piano non coperta.",
+      "ageSuitability": {
+        "minYears": 3,
+        "maxYears": 6,
+        "verified": true,
+        "sourceUrl": "https://www.lafeltrinelli.it/a-caccia-dell-orso-ediz-libro-michael-rosen-helen-oxenbury/e/9788804655435",
+        "note": "Fonte indica da 3 anni. Massimo 6 scelto editorialmente per il percorso prescolare, non limite del produttore."
+      }
+    }
+  ],
+  "pendingNotes": {
+    "S025-1": "01/10/2026: Springer nero EK000074008; prezzo esterno OfertitasTOP 19,90 EUR e rating aggregato 4,7/36477. ASIN B000NDGCCO noto all’estero, pagina italiana non leggibile. Non pubblicato: collegamento italiano non confermato. Fonte https://www.ofertitastop.com/it/product/eastpak-springer-marsupio-black-pratico-leggero",
+    "S009-1": "01/10/2026: Sony conferma MDR-ZX110AP con microfono e jack; prezzo trovato sotto fascia. Non pubblicato: manca ASIN italiano esatto. Fonte https://www.sony.it/electronics/cuffie-archetto/mdr-zx110-zx110a-zx110ap",
+    "S014-2": "01/10/2026: B09ZNGN89C identifica E060AA03 rosso, EAN3342540839090. Prezzi recenti E060AB03 sono altra revisione. Non pubblicato: prezzo stessa revisione e pagina italiana non confermati. Fonte https://www.desertcart.ae/products/495377361-petzl-tikkina-headlamp-compact-easy-to-use-300-lumen-headlamp",
+    "S029-1": "01/10/2026: pagina Amazon B001R82QJM non leggibile. ManoMano unisce recensioni di prodotti diversi (anche ciotole): dati scartati. Mancano qualità e prezzo specifici dell’asinello 24cm. Non pubblicato. Fonte https://www.manomano.it/p/12-dummy-drinker-rodent-250-ml-6728791?model_id=6727830"
+  }
+}

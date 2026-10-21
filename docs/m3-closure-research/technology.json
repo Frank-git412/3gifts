@@ -1,0 +1,300 @@
+{
+  "scope": "techGaming/tech; ricerca editoriale, nessun volume e nessuna offerta Amazon verificata",
+  "associationCount": 190,
+  "familyCount": 21,
+  "unmappedFamilyCount": 15,
+  "correction": "15 famiglie senza regole; videochiamate ha una regola occasione e non rientra in questo conteggio.",
+  "sources": [
+    {
+      "id": "TECH-S01",
+      "url": "https://www.logitech.com/en-eu/shop/p/m240-silent-bluetooth-mouse.910-007120",
+      "accessedOn": "2026-10-09",
+      "evidence": "M240 Silent: Bluetooth e clic silenzioso documentati; la pagina elenca i sistemi supportati. Proprietà del modello, non di tutti i mouse wireless."
+    },
+    {
+      "id": "TECH-S02",
+      "url": "https://www.twelvesouth.com/products/curve-flex-for-macbook",
+      "accessedOn": "2026-10-09",
+      "evidence": "Curve Flex: altezza e inclinazione regolabili, ripiegabile; larghezza minima e peso massimo del portatile espliciti. Non attribuire benefici clinici."
+    },
+    {
+      "id": "TECH-S03",
+      "url": "https://download.semiconductor.samsung.com/resources/user-manual/samsung_portable_ssd_t7_user_manual_italian.pdf",
+      "accessedOn": "2026-10-09",
+      "evidence": "T7: cavi USB-C/C e USB-C/A; compatibilità host da verificare, connessione e rimozione sicura. Il solo connettore non garantisce qualsiasi host."
+    },
+    {
+      "id": "TECH-S04",
+      "url": "https://support.apple.com/en-gb/guide/mac-help/mh15139/mac",
+      "accessedOn": "2026-10-09",
+      "evidence": "Time Machine richiede un supporto e un formato compatibili; unità USB/Thunderbolt ammesse. Il disco non equivale a backup automatico già configurato."
+    },
+    {
+      "id": "TECH-S05",
+      "url": "https://www.sandisk.com/products/usb-flash-drives/sandisk-ultra-dual-drive-go-usb-3-1-type-c",
+      "accessedOn": "2026-10-09",
+      "evidence": "Dual Drive Go: connettori USB-C e USB-A e trasferimento file dichiarati. Backup automatico vincolato all’app e alla compatibilità; prestazioni differiscono per capacità."
+    },
+    {
+      "id": "TECH-S06",
+      "url": "https://www.belkin.com/support-article/?articleNum=316641",
+      "accessedOn": "2026-10-09",
+      "evidence": "CAB004: ricarica fino a 60 W e trasferimento dati USB 2.0 480 Mbps dichiarati. USB-C non implica video o velocità Thunderbolt."
+    },
+    {
+      "id": "TECH-S07",
+      "url": "https://www.tp-link.com/us/support/faq/2798/",
+      "accessedOn": "2026-10-09",
+      "evidence": "La rete ospiti dispone di impostazioni separate per comunicazione tra ospiti e accesso alla LAN. Isolamento non automatico per qualunque router Wi-Fi."
+    },
+    {
+      "id": "TECH-S08",
+      "url": "https://www.belkin.com/support-article?articleNum=336269",
+      "accessedOn": "2026-10-09",
+      "evidence": "WIA008: inclinazione regolabile e compatibilità magnetica/Qi2 specifiche; è anche un caricatore. Non estendere ricarica o attacco magnetico a un supporto generico."
+    },
+    {
+      "id": "TECH-S09",
+      "url": "https://www.dell.com/en-gb/shop/monitors/apd/dell-27-plus-monitor-s2725hsm/s2725hsm/-",
+      "accessedOn": "2026-10-09",
+      "evidence": "S2725HSM: regolazione altezza, inclinazione, rotazione e pivot documentata; dimensioni e risoluzione specifiche del modello."
+    },
+    {
+      "id": "TECH-S10",
+      "url": "https://eu.ugreen.com/de/products/20435",
+      "accessedOn": "2026-10-09",
+      "evidence": "Supporto passivo UGREEN 20435: altezza e inclinazione regolabili, compatibilità dichiarata con dispositivi 4–7,9 pollici. Il passaggio per cavo non equivale a caricatore integrato."
+    }
+  ],
+  "decisions": [
+    {
+      "family": "telefonia",
+      "decision": "neutral",
+      "reason": "Smartphone o cellulare non determinano utilità per il destinatario, collega o condivisione. Occorrono uso, ecosistema, formato e necessità dichiarati. Le query anziani non autorizzano inferenze dalle fasce di età.",
+      "candidateProperty": null,
+      "sources": []
+    },
+    {
+      "family": "computer",
+      "decision": "neutral",
+      "reason": "Business, gaming, RAM o formato non determinano da soli il bisogno del destinatario. Nessun bonus collega basato sulla sola parola business; servono software e prestazioni richiesti.",
+      "candidateProperty": null,
+      "sources": []
+    },
+    {
+      "family": "tablet",
+      "decision": "neutral",
+      "reason": "Penna, tastiera o SIM sono proprietà verificabili ma non provano automaticamente effetto utile o condivisione. Accessori inclusi, rete e impiego richiesti devono essere espliciti.",
+      "candidateProperty": null,
+      "sources": []
+    },
+    {
+      "family": "indossabili",
+      "decision": "neutral",
+      "reason": "Nessun beneficio sanitario o sportivo dedotto da smartwatch/smartband. GPS integrato, autonomia e compatibilità restano requisiti se richiesti; non motivi automatici per relazione o effetto.",
+      "candidateProperty": null,
+      "sources": []
+    },
+    {
+      "family": "collegamenti",
+      "decision": "neutral_with_requirements",
+      "reason": "Hub, dock e adattatori hanno funzioni diverse. Un generico utile non giustifica HDMI/Ethernet o una specifica connessione; riusare i controlli di porte, protocolli e host delle espressioni già implementate.",
+      "candidateProperty": null,
+      "sources": [
+        "TECH-S03",
+        "TECH-S06"
+      ]
+    },
+    {
+      "family": "periferiche",
+      "decision": "candidate_context_rule",
+      "signal": "relation",
+      "value": "colleague",
+      "candidateProperty": "Mouse con clic silenziosi dichiarati; bonus editoriale per ridurre il rumore dei clic in ambiente di lavoro, solo dopo compatibilità host.",
+      "query": "mouse clic silenzioso",
+      "titleType": "mouse",
+      "mustProve": [
+        "Clic silenzioso o riduzione del rumore del clic",
+        "Connessione e compatibilità host"
+      ],
+      "negativeExamples": [
+        "Mouse regalo per collega",
+        "Mouse wireless privo di indicazioni sul rumore",
+        "Mouse silenzioso solo nel marketing della confezione senza corrispondente proprietà"
+      ],
+      "sources": [
+        "TECH-S01"
+      ],
+      "scopeNote": "Non estendere automaticamente la regola a tastiere o a rumore totale zero."
+    },
+    {
+      "family": "archiviazione",
+      "decision": "candidate_context_rule",
+      "signal": "effect",
+      "value": "useful",
+      "candidateProperty": "Unità esterna con uso per backup esplicito e compatibilità del destinatario verificata.",
+      "query": "ssd esterno per backup",
+      "titleType": "ssd esterno oppure hard disk esterno",
+      "mustProve": [
+        "Funzione per backup documentata",
+        "Capacità, collegamento e formato compatibili"
+      ],
+      "negativeExamples": [
+        "SSD regalo utile",
+        "Archiviazione generica senza indicazione backup",
+        "Scheda microSD non destinata al backup richiesto"
+      ],
+      "sources": [
+        "TECH-S03",
+        "TECH-S04"
+      ],
+      "scopeNote": "Non garantire backup automatico, protezione completa o recupero assicurato; non applicare in blocco a microSD."
+    },
+    {
+      "family": "oggetti_personali",
+      "decision": "neutral",
+      "reason": "Tracker non equivale a tracciamento GPS o in tempo reale. Senza ecosistema, oggetto e funzione desiderata non associare automaticamente a utilità; non inferire smemoratezza da età.",
+      "candidateProperty": null,
+      "sources": []
+    },
+    {
+      "family": "postazione",
+      "decision": "candidate_context_rule",
+      "signal": "effect",
+      "value": "useful",
+      "candidateProperty": "Supporto per portatile con altezza e inclinazione regolabili documentate.",
+      "query": "supporto notebook altezza inclinazione regolabili",
+      "titleType": "supporto notebook",
+      "mustProve": [
+        "Altezza regolabile",
+        "Inclinazione regolabile",
+        "Compatibilità dimensioni e peso"
+      ],
+      "negativeExamples": [
+        "Supporto notebook regalo utile",
+        "Supporto verticale fisso",
+        "Supporto con ventole senza regolazioni documentate"
+      ],
+      "sources": [
+        "TECH-S02"
+      ],
+      "scopeNote": "Nessuna promessa di prevenzione o cura di disturbi posturali."
+    },
+    {
+      "family": "memorie_usb",
+      "decision": "candidate_context_rule",
+      "signal": "effect",
+      "value": "useful",
+      "candidateProperty": "Chiavetta USB con trasferimento file tra dispositivi dichiarato e connettori compatibili.",
+      "query": "chiavetta USB trasferimento file",
+      "titleType": "chiavetta USB",
+      "mustProve": [
+        "Trasferimento file",
+        "Tipi di connettori e dispositivi supportati"
+      ],
+      "negativeExamples": [
+        "Chiavetta USB regalo utile",
+        "Connettore non verificato",
+        "Caricatore USB scambiato per memoria"
+      ],
+      "sources": [
+        "TECH-S05"
+      ],
+      "scopeNote": "Non presupporre doppio connettore, backup automatico o app gratuita nel prodotto generico."
+    },
+    {
+      "family": "cavi",
+      "decision": "candidate_context_rule",
+      "signal": "effect",
+      "value": "useful",
+      "candidateProperty": "Cavo USB-C con ricarica e trasferimento dati entrambi dichiarati.",
+      "query": "cavo USB-C ricarica trasferimento dati",
+      "titleType": "cavo USB-C",
+      "mustProve": [
+        "Ricarica",
+        "Trasferimento dati",
+        "Entrambe le estremità e limiti di potenza e velocità compatibili"
+      ],
+      "negativeExamples": [
+        "Cavo USB-C regalo utile",
+        "Cavo solo ricarica",
+        "Cavo solo dati",
+        "Ricarica 60 W usata come prova di trasferimento video"
+      ],
+      "sources": [
+        "TECH-S06"
+      ],
+      "scopeNote": "Nessuna equivalenza USB-C/Thunderbolt/uscita video."
+    },
+    {
+      "family": "protezioni_smartphone",
+      "decision": "neutral",
+      "reason": "Cover richiede modello esatto e preferenze materiali/formato. Porta carte, personalizzazione o cordoncino sono requisiti oggettivi se richiesti, ma non provano utilità o sentimento per ogni destinatario.",
+      "candidateProperty": null,
+      "sources": []
+    },
+    {
+      "family": "supporti_smartphone",
+      "decision": "candidate_context_rule",
+      "signal": "effect",
+      "value": "useful",
+      "candidateProperty": "Supporto da scrivania con inclinazione regolabile dichiarata.",
+      "query": "supporto smartphone scrivania inclinazione regolabile",
+      "titleType": "supporto smartphone da scrivania",
+      "mustProve": [
+        "Destinazione scrivania",
+        "Inclinazione regolabile",
+        "Dimensioni/peso/attacco compatibili"
+      ],
+      "negativeExamples": [
+        "Supporto smartphone regalo utile",
+        "Supporto auto non richiesto",
+        "Supporto con angolo fisso"
+      ],
+      "sources": [
+        "TECH-S10"
+      ],
+      "scopeNote": "Fonte di supporto passivo. Non attribuire ricarica, fissaggio magnetico o impiego veicolare dalla presenza di un supporto da scrivania."
+    },
+    {
+      "family": "schermi",
+      "decision": "candidate_context_rule",
+      "signal": "effect",
+      "value": "useful",
+      "candidateProperty": "Monitor con altezza regolabile dichiarata per la postazione.",
+      "query": "monitor PC altezza regolabile",
+      "titleType": "monitor PC",
+      "mustProve": [
+        "Regolazione in altezza",
+        "Collegamento video e dimensioni compatibili"
+      ],
+      "negativeExamples": [
+        "Monitor regalo utile",
+        "Regolazione della sola inclinazione",
+        "Braccio separato non incluso"
+      ],
+      "sources": [
+        "TECH-S09"
+      ],
+      "scopeNote": "Nessuna promessa clinica o aumento misurato della produttività."
+    },
+    {
+      "family": "rete",
+      "decision": "neutral",
+      "reason": "Rete ospiti e isolamento sono verificabili ma non derivano da regalo per famiglia/coppia/collega. Occorrono rete esistente, configurazione e necessità esplicite; non assegnare bonus condivisione perché il prodotto è un router.",
+      "candidateProperty": "Possibile requisito a richiesta: rete ospiti con impostazioni di isolamento esplicite",
+      "sources": [
+        "TECH-S07"
+      ]
+    }
+  ],
+  "lexiconNotes": [
+    "Le 190 traduzioni conservano ID e attributi delle query italiane; nessuna nuova associazione o query catalogo.",
+    "Wireless rimane distinto da Bluetooth; cancellazione rumore rimane distinta da cancellazione attiva; microfono distinto da ANC.",
+    "Waterproof traduce impermeabile; non costituisce verifica di IP o profondità. Verificare dichiarazioni tecniche nelle schede.",
+    "Backlit conserva la formulazione retroilluminato; non è alias di front-lit. Non trasferire automaticamente questa proprietà a tutti gli e-reader.",
+    "Android in smartwatch o caricatore resta ambiguo come nella query originale: non certifica sistema operativo o compatibilità.",
+    "Formulazioni per anziani/per donne restano dati lessicali esistenti; non autorizzano attribuzioni automatiche a fasce di età o genere.",
+    "Traduzioni e sinonimi editoriali non equivalgono a collaudo semantico completo del motore in inglese."
+  ]
+}

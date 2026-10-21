@@ -1,0 +1,305 @@
+{
+  "scope": "M3 skincare semantic lexicon and family mapping review",
+  "date": "2026-10-09",
+  "counts": {
+    "associations": 30,
+    "families": 20,
+    "existingConditionalFamilies": 9,
+    "proposedConditionalFamilies": 2,
+    "noBonusFamilies": 9
+  },
+  "method": "Traduzioni editoriali; nessun volume di ricerca stimato e nessuna offerta Amazon controllata. Regole nuove sono proposte, non codice implementato. Evidenze solo da pagine ufficiali indicate. No_bonus è decisione motivata, non requisito di inventare ulteriori associazioni.",
+  "evidence": [
+    {
+      "id": "SK-S01",
+      "url": "https://www.bioderma.it/i-nostri-prodotti/sensibio/h2o",
+      "retrieved": "2026-10-09",
+      "ref": "turn17view0",
+      "supports": [
+        "Acqua micellare per rimuovere il trucco da viso e occhi",
+        "Uso mattina e/o sera, sette giorni su sette",
+        "Non richiede risciacquo"
+      ],
+      "limits": [
+        "Proprietà del prodotto, non dell'intera famiglia",
+        "Nessuna promessa clinica viene usata nel bonus",
+        "La formula sulla confezione prevale su possibili versioni web"
+      ]
+    },
+    {
+      "id": "SK-S02",
+      "url": "https://www.cerave.it/tutti-i-prodotti/detergenti/detergente-crema-schiuma-idratante",
+      "retrieved": "2026-10-09",
+      "ref": "turn17view1",
+      "supports": [
+        "Crema detergente che si trasforma in schiuma con l'acqua",
+        "Rimozione make-up",
+        "Ceramidi e assenza di profumo dichiarate"
+      ],
+      "limits": [
+        "Risciacquo richiesto: non attribuire no-rinse",
+        "Precauzione: evitare contatto diretto con occhi; non trasferire automaticamente uso occhi",
+        "Nessuna prova di frequenza quotidiana nella sola scheda letta",
+        "Materiale flacone HDPE: nessun bonus vetro satinato"
+      ]
+    },
+    {
+      "id": "SK-S03",
+      "url": "https://www.cerave.it/tutti-i-prodotti/idratanti/crema-idratante",
+      "retrieved": "2026-10-09",
+      "ref": "turn17view2",
+      "supports": [
+        "Uso viso e corpo",
+        "Formula con ceramidi e acido ialuronico",
+        "Applicazione al bisogno"
+      ],
+      "limits": [
+        "Al bisogno non equivale ad ogni giorno",
+        "Il tipo di pelle non viene inferito da età o genere",
+        "Non applicare proprietà ingredienti indiscriminatamente a tutta la marca"
+      ]
+    },
+    {
+      "id": "SK-S04",
+      "url": "https://theordinary.com/it-it/niacinamide-5-face-body-serum-100661.html",
+      "retrieved": "2026-10-09",
+      "ref": "turn17view3",
+      "supports": [
+        "Niacinamide al 5%",
+        "Formato siero: emulsione",
+        "Destinazione viso e corpo"
+      ],
+      "limits": [
+        "Concentrazione 5% non intercambiabile con 10%",
+        "Il nome ingrediente non prova efficacia, idoneità personale o effetto regalo",
+        "Non trasferire condizioni del prodotto ad altri sieri"
+      ]
+    },
+    {
+      "id": "SK-S05",
+      "url": "https://int.laneige.com/products/lip-sleeping-mask",
+      "retrieved": "2026-10-09",
+      "ref": "turn17view4",
+      "supports": [
+        "Maschera labbra da lasciare durante la notte e rimuovere al mattino",
+        "Modifiche della confezione dichiarate nel tempo"
+      ],
+      "limits": [
+        "Nessuna deduzione di miglior sonno o relax",
+        "Non aggiungere 'overnight' alla traduzione generica maschera labbra",
+        "Applicatore incluso non comprovato nella pagina letta: non dedurlo da foto o altri pack"
+      ]
+    },
+    {
+      "id": "SK-S06",
+      "url": "https://www.clarins.it/skincare/viso/contorno-occhi-280/",
+      "retrieved": "2026-10-09",
+      "ref": "turn17view5",
+      "supports": [
+        "La categoria contorno occhi include creme, sieri e gel"
+      ],
+      "limits": [
+        "La traduzione generica non restringe a eye cream",
+        "Applicatore incluso o benefici clinici richiedono evidenza specifica della scheda"
+      ]
+    }
+  ],
+  "families": [
+    {
+      "family": "creme_viso",
+      "decision": "retain_conditional_rules",
+      "reason": "Uso quotidiano e routine condivisa restano condizioni esplicite della scheda; crema viso da sola non ottiene bonus.",
+      "sources": []
+    },
+    {
+      "family": "creme_idratanti",
+      "decision": "retain_conditional_rules",
+      "reason": "Idratazione e uso quotidiano devono essere dichiarati separatamente; uso al bisogno non soddisfa quotidiano.",
+      "sources": [
+        "SK-S03"
+      ]
+    },
+    {
+      "family": "creme_notte",
+      "decision": "no_bonus",
+      "reason": "L'orario notturno non prova relax, qualità del sonno, eleganza o particolare relazione. Mantiene selezione per interesse o richiesta esplicita.",
+      "permittedChecks": [
+        "Funzione, formato, zona d'uso e ingredienti espliciti della singola scheda",
+        "Richieste volontarie del destinatario; nessuna deduzione di età, genere o condizione"
+      ],
+      "sources": []
+    },
+    {
+      "family": "contorno_occhi",
+      "decision": "no_bonus",
+      "reason": "L'area d'applicazione non prova relazione, occasione o effetto regalo; non inferire rughe, età, stanchezza o necessità. Formato/applicatore restano verificabili solo se richiesti e dichiarati.",
+      "permittedChecks": [
+        "Funzione, formato, zona d'uso e ingredienti espliciti della singola scheda",
+        "Richieste volontarie del destinatario; nessuna deduzione di età, genere o condizione"
+      ],
+      "sources": [
+        "SK-S06"
+      ]
+    },
+    {
+      "family": "creme_mani",
+      "decision": "retain_conditional_rules",
+      "reason": "Mantiene regole esistenti su uso, confezioni individuali, dedica e calendario solo con prova del relativo formato.",
+      "sources": []
+    },
+    {
+      "family": "sieri_viso",
+      "decision": "retain_conditional_rules",
+      "reason": "Routine condivisa o vetro satinato restano proprietà di quella confezione; prezzo e ingrediente non provano eleganza.",
+      "sources": []
+    },
+    {
+      "family": "sieri_vitamina_c",
+      "decision": "no_bonus",
+      "reason": "Ingrediente e possibile concentrazione non identificano occasione, relazione o effetto regalo. Nessuna deduzione su bisogno cutaneo.",
+      "permittedChecks": [
+        "Funzione, formato, zona d'uso e ingredienti espliciti della singola scheda",
+        "Richieste volontarie del destinatario; nessuna deduzione di età, genere o condizione"
+      ],
+      "sources": []
+    },
+    {
+      "family": "sieri_ialuronico",
+      "decision": "no_bonus",
+      "reason": "Ingrediente non basta per attribuire utilità personale, relax o idoneità; restano validi interesse e specifica richiesta.",
+      "permittedChecks": [
+        "Funzione, formato, zona d'uso e ingredienti espliciti della singola scheda",
+        "Richieste volontarie del destinatario; nessuna deduzione di età, genere o condizione"
+      ],
+      "sources": []
+    },
+    {
+      "family": "sieri_niacinamide",
+      "decision": "no_bonus",
+      "reason": "Ingrediente e concentrazione non provano relazione o effetto regalo. Il 5% va conservato come requisito del prodotto, non usato per un bonus generico.",
+      "permittedChecks": [
+        "Funzione, formato, zona d'uso e ingredienti espliciti della singola scheda",
+        "Richieste volontarie del destinatario; nessuna deduzione di età, genere o condizione"
+      ],
+      "sources": [
+        "SK-S04"
+      ]
+    },
+    {
+      "family": "sieri_retinolo",
+      "decision": "no_bonus",
+      "reason": "Retinolo non autorizza deduzioni di età, condizione cutanea o desiderio anti-età; nessun bonus da effetto clinico presunto.",
+      "permittedChecks": [
+        "Funzione, formato, zona d'uso e ingredienti espliciti della singola scheda",
+        "Richieste volontarie del destinatario; nessuna deduzione di età, genere o condizione"
+      ],
+      "sources": []
+    },
+    {
+      "family": "detergenti_viso",
+      "decision": "proposed_conditional_rule",
+      "ruleId": "skin-surprise-cleanser-transform",
+      "signal": "effect",
+      "values": [
+        "surprising"
+      ],
+      "requiredListingEvidence": [
+        "Titolo identifica detergente viso",
+        "Texture crema iniziale",
+        "Trasformazione effettiva in schiuma a contatto con acqua"
+      ],
+      "query": "detergente viso crema si trasforma in schiuma",
+      "reason": "La trasformazione osservabile supporta la stessa logica editoriale già presente per oli trasformabili; nessuna promessa su pelle o benessere.",
+      "positiveIT": "Detergente viso in crema che si trasforma in schiuma a contatto con l'acqua",
+      "positiveEN": "Cream facial cleanser that transforms into foam with water",
+      "negative": "Set detergente crema e detergente schiuma; nessuna trasformazione dichiarata",
+      "sources": [
+        "SK-S02"
+      ]
+    },
+    {
+      "family": "acque_micellari",
+      "decision": "proposed_conditional_rule",
+      "ruleId": "skin-useful-micellar-daily",
+      "signal": "effect",
+      "values": [
+        "useful"
+      ],
+      "requiredListingEvidence": [
+        "Titolo identifica acqua micellare",
+        "Uso quotidiano esplicito",
+        "Senza risciacquo esplicito"
+      ],
+      "query": "acqua micellare uso quotidiano senza risciacquo",
+      "reason": "La praticità d'uso è fondata su frequenza e assenza di risciacquo dichiarate, senza attribuire benefici clinici o preferenze personali.",
+      "positiveIT": "Acqua micellare per uso quotidiano senza risciacquo",
+      "positiveEN": "Micellar water for daily use with no rinse required",
+      "negative": "Acqua micellare: applicare al bisogno e risciacquare",
+      "sources": [
+        "SK-S01"
+      ]
+    },
+    {
+      "family": "oli_struccanti",
+      "decision": "retain_conditional_rules",
+      "reason": "La trasformazione della texture va dichiarata; olio e risciacquo da soli non provano trasformazione in latte.",
+      "sources": []
+    },
+    {
+      "family": "tonici",
+      "decision": "no_bonus",
+      "reason": "La fase della routine e il nome tonico non provano relax, utilità personale o occasione. Frequenza e formula richiedono la scheda specifica.",
+      "permittedChecks": [
+        "Funzione, formato, zona d'uso e ingredienti espliciti della singola scheda",
+        "Richieste volontarie del destinatario; nessuna deduzione di età, genere o condizione"
+      ],
+      "sources": []
+    },
+    {
+      "family": "balsami_labbra",
+      "decision": "retain_conditional_rules",
+      "reason": "Il calendario dell'Avvento deve essere un formato effettivo; nessuna relazione o effetto inferito.",
+      "sources": []
+    },
+    {
+      "family": "creme_corpo",
+      "decision": "retain_conditional_rules",
+      "reason": "Uso come prodotto da massaggio deve essere esplicito; idratazione o gesto di applicazione non bastano per relax.",
+      "sources": []
+    },
+    {
+      "family": "burri_corpo",
+      "decision": "retain_conditional_rules",
+      "reason": "Uso massaggio deve essere esplicito; burro corpo non prova relax o effetto clinico.",
+      "sources": []
+    },
+    {
+      "family": "scrub_corpo",
+      "decision": "no_bonus",
+      "reason": "L'esfoliazione è una funzione; applicare massaggiando non prova destinazione massaggio-relax. Nessun bonus senza una proprietà distinta pertinente.",
+      "permittedChecks": [
+        "Funzione, formato, zona d'uso e ingredienti espliciti della singola scheda",
+        "Richieste volontarie del destinatario; nessuna deduzione di età, genere o condizione"
+      ],
+      "sources": []
+    },
+    {
+      "family": "maschere_viso",
+      "decision": "retain_conditional_rules",
+      "reason": "Unità individuali, condivisione, dedica e calendario devono essere reali proprietà della confezione.",
+      "sources": []
+    },
+    {
+      "family": "maschere_labbra",
+      "decision": "no_bonus",
+      "reason": "Maschera labbra non equivale a prodotto notturno o relax; accessorio incluso non verificato nelle fonti. Mantenere richieste esplicite senza bonus contestuale automatico.",
+      "permittedChecks": [
+        "Funzione, formato, zona d'uso e ingredienti espliciti della singola scheda",
+        "Richieste volontarie del destinatario; nessuna deduzione di età, genere o condizione"
+      ],
+      "sources": [
+        "SK-S05"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+:root {
+  --ink: #17132f;
+  --muted: #69657c;
+  --paper: #fbfaff;
+  --panel: #ffffff;
+  --violet: #6952e8;
+  --violet2: #4a35c7;
+  --peach: #ffb37d;
+  --line: #e7e3f2;
+  --shadow: 0 24px 70px rgba(42, 31, 91, .12);
+}
+
+body {
+  background:
+    radial-gradient(circle at 8% 18%, #ece6ff 0, transparent 28%),
+    radial-gradient(circle at 92% 8%, #ffe3d1 0, transparent 24%),
+    var(--paper);
+}
+
+.topbar {
+  max-width: 1320px;
+  height: 90px;
+  padding: 0 42px;
+}
+
+.brand {
+  font-size: 1.35rem;
+  color: var(--ink);
+}
+
+.brand span {
+  background: var(--peach);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+}
+
+.menu-trigger,
+.topbar > .quiet {
+  background: rgba(255,255,255,.72);
+  border-color: var(--line);
+}
+
+.hero-concept {
+  width: min(1280px, calc(100% - 64px));
+  min-height: 640px;
+  margin: 34px auto 66px;
+  display: grid;
+  grid-template-columns: minmax(0, .95fr) minmax(470px, 1.05fr);
+  gap: clamp(48px, 7vw, 104px);
+  align-items: center;
+}
+
+.hero-concept[hidden] {
+  display: none !important;
+}
+
+.hero-concept .intro {
+  max-width: 620px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.hero-concept .eyebrow {
+  display: inline-flex;
+  padding: 10px 16px;
+  margin-bottom: 28px;
+  border-radius: 999px;
+  background: #f0edff;
+  color: var(--violet);
+  letter-spacing: .1em;
+}
+
+.hero-concept .intro h1 {
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(4rem, 6.2vw, 6.25rem);
+  line-height: .96;
+  letter-spacing: -.065em;
+  color: var(--ink);
+}
+
+.hero-concept .intro h1 em {
+  color: var(--violet);
+  font-style: normal;
+}
+
+.hero-concept .intro > p:not(.eyebrow) {
+  max-width: 590px;
+  margin: 30px 0 28px;
+  font-size: 1.16rem;
+  line-height: 1.65;
+}
+
+.hero-concept .hero-actions {
+  justify-content: flex-start;
+}
+
+.hero-concept .hero-primary {
+  min-height: 62px;
+  padding-inline: 28px;
+  background: var(--violet);
+  box-shadow: 0 14px 30px rgba(105,82,232,.24);
+}
+
+.hero-concept .hero-primary:hover,
+.hero-concept .hero-primary:focus-visible {
+  background: var(--violet2);
+}
+
+.hero-concept .hero-secondary {
+  border-color: transparent;
+  background: transparent;
+}
+
+.hero-concept .proof {
+  justify-content: flex-start;
+  margin-top: 13px;
+}
+
+.hero-concept .gift-universe {
+  width: 100%;
+  min-height: 555px;
+  margin: 0;
+  padding: 44px;
+  border-radius: 36px;
+  box-shadow: var(--shadow);
+  grid-template-columns: 1fr;
+  gap: 30px;
+  align-content: center;
+}
+
+.hero-concept .gift-universe .eyebrow {
+  display: block;
+  padding: 0;
+  margin: 0 0 18px;
+  background: transparent;
+  color: #ffbd8e;
+}
+
+.hero-concept .gift-universe h2 {
+  font-size: clamp(2.75rem, 4.2vw, 4rem);
+}
+
+.hero-concept .universe-grid {
+  gap: 12px;
+}
+
+.hero-concept .universe-grid span {
+  min-height: 62px;
+  padding: 13px 16px;
+  font-size: .95rem;
+}
+
+.mode-picker {
+  width: min(1040px, calc(100% - 32px));
+}
+
+.primary {
+  background: var(--ink);
+}
+
+.primary:hover {
+  background: #263657;
+}
+
+.choice-grid input:checked + span {
+  border-color: var(--violet);
+  background: #f0edff;
+  color: var(--violet2);
+  box-shadow: 0 0 0 3px rgba(105,82,232,.1);
+}
+
+.progress span {
+  background: linear-gradient(90deg, var(--violet), #a07cff);
+}
+
+@media (max-width: 980px) {
+  .hero-concept {
+    grid-template-columns: 1fr;
+    width: min(720px, calc(100% - 40px));
+    gap: 46px;
+  }
+  .hero-concept .intro { max-width: none; }
+  .hero-concept .gift-universe { min-height: 520px; }
+}
+
+@media (max-width: 620px) {
+  .topbar { height: 68px; padding: 0 18px; }
+  .hero-concept { width: min(100% - 32px, 560px); margin-top: 28px; }
+  .hero-concept .intro h1 { font-size: clamp(3.25rem, 16vw, 4.6rem); }
+  .hero-concept .intro > p:not(.eyebrow) { font-size: 1rem; }
+  .hero-concept .hero-actions { display: grid; }
+  .hero-concept .gift-universe { min-height: auto; padding: 30px 24px; border-radius: 28px; }
+  .hero-concept .gift-universe h2 { font-size: clamp(2.35rem, 12vw, 3.4rem); }
+}

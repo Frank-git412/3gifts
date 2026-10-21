@@ -1,0 +1,163 @@
+{
+  "scope": "exposed_diagnostic_regression_not_M5_acceptance",
+  "before": {
+    "main": {
+      "requests": 114,
+      "coverage": {
+        "0": 25,
+        "1": 3,
+        "2": 0,
+        "3": 86
+      },
+      "proposals": 261,
+      "blocked": [
+        "I-L17",
+        "I-L20",
+        "I-L21",
+        "I-L23",
+        "I-T10",
+        "I-T17",
+        "I-T18",
+        "I-T19",
+        "I-T20",
+        "I-T21",
+        "I-T22",
+        "I-T23",
+        "I-T24",
+        "I-T34",
+        "I-S17",
+        "I-S18",
+        "I-S21",
+        "I-S22",
+        "I-S24"
+      ],
+      "basicViolations": []
+    },
+    "supplement": {
+      "requests": 6,
+      "coverage": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 6
+      },
+      "proposals": 18,
+      "blocked": [],
+      "basicViolations": []
+    },
+    "invalidInputs": [
+      "I-L35",
+      "I-L39",
+      "I-T35",
+      "I-T39",
+      "I-S35",
+      "I-S39"
+    ]
+  },
+  "after": {
+    "main": {
+      "requests": 114,
+      "coverage": {
+        "0": 17,
+        "1": 6,
+        "2": 1,
+        "3": 90
+      },
+      "proposals": 278,
+      "blocked": [
+        "I-T17",
+        "I-T18",
+        "I-T19",
+        "I-T22",
+        "I-T24",
+        "I-S24"
+      ],
+      "basicViolations": []
+    },
+    "supplement": {
+      "requests": 6,
+      "coverage": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 6
+      },
+      "proposals": 18,
+      "blocked": [],
+      "basicViolations": []
+    },
+    "invalidInputs": [
+      "I-L35",
+      "I-L39",
+      "I-T35",
+      "I-T39",
+      "I-S35",
+      "I-S39"
+    ]
+  },
+  "reviewCounts": {
+    "recovered": 8,
+    "no_eligible_product_in_sample": 7,
+    "retrieval_routing_review": 4,
+    "clarification_justified": 6
+  },
+  "compositeCasesRecognized": [
+    "I-L17",
+    "I-L20",
+    "I-L21",
+    "I-L23",
+    "I-T10",
+    "I-T17",
+    "I-T18",
+    "I-T20",
+    "I-T21",
+    "I-T23",
+    "I-T34",
+    "I-S17",
+    "I-S18",
+    "I-S21",
+    "I-S22"
+  ],
+  "editorialCorrection": {
+    "excludedAsin": "B0GS8V2WN7",
+    "adultExplicitPreferenceRequired": true,
+    "novelStudyRejected": "8800747558"
+  },
+  "editorialFlags": [
+    {
+      "ids": [
+        "I-T10",
+        "I-T34"
+      ],
+      "asin": "B092VM5CVF",
+      "reason": "Tavoletta grafica fra i suggerimenti per chi guarda film: pertinenza debole; recuperare prodotti non equivale a qualità sufficiente."
+    },
+    {
+      "ids": [
+        "I-L04",
+        "I-L28"
+      ],
+      "reason": "Richiesta di libro illustrato: la selezione include romanzi senza prova del formato illustrato. Da riesaminare il requisito e la sua evidenza."
+    },
+    {
+      "ids": [
+        "I-L14",
+        "I-L38"
+      ],
+      "reason": "Preferenza per biografie e storie vere: selezione di romanzi ancora poco aderente."
+    }
+  ],
+  "realAmazonCalls": 0,
+  "newHumanVotes": 0,
+  "browserQA": false,
+  "independentHoldout": false,
+  "fullConstraintsAcceptance": false,
+  "remainingGates": [
+    "Semantic request and preference adherence, including illustrated books and film use",
+    "Complete V01–V08 and explanation review",
+    "Live retrieval, empty/partial responses, latency and load",
+    "New frozen independent sample and human ratings",
+    "Desktop/mobile browser QA",
+    "Personal Amazon TPS/TPD response"
+  ]
+}

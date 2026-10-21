@@ -1,0 +1,33 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import crypto from 'node:crypto';
+import {fullDictionaryInventory,EXPANDED_RULES} from '../server/research/expanded-context.mjs';
+import {EXPANDED_SOURCES,EXPANDED_AMBIGUITIES} from '../server/research/expanded-data.mjs';
+import {publicPlan} from '../server/research/public-adapter.mjs';
+import {PUBLIC_RULES} from '../server/research/public-rules.mjs';
+import {queryContextChecks} from '../server/research/product-requirements.mjs';
+import {RESEARCH_CATALOG as C} from '../server/research/catalog-data.mjs';
+const inventory=fullDictionaryInventory(),cells=inventory.flatMap(r=>r.contextDecisions.map(d=>({family:r.id,...d})));
+const hash=crypto.createHash('sha256').update(fs.readFileSync('docs/m3-manifest-120-frozen.json')).digest('hex');
+assert.equal(hash,'e174c07bccdad0920dbf4d673a79f05c06736615b9b69d20b6e68c6e93daf499');
+const preflight=JSON.parse(fs.readFileSync('docs/m3-manifest-120-frozen.json')).scenarios.map(s=>{
+ const ctx=publicPlan({...s.request,constraints:{...s.request.constraints,...PUBLIC_RULES.analyseNote(s.request.profile.note)}});
+ assert.ok(ctx.plan.queries.length<=6&&ctx.plan.queries.length+ctx.plan.fallbackQueries.length<=12);
+ return {id:s.id,blocked:ctx.blocked};
+});
+assert.deepEqual(preflight.filter(x=>x.blocked).map(x=>x.id),['T32','T36']);
+const ruleReachability=EXPANDED_RULES.map(r=>{
+ const profile={ageRange:r.area.startsWith('early')?'earlyChild':r.area.startsWith('kids')?'child':'adult',childStage:r.area==='earlySensory'?'toddler':'preschool',interests:[r.area],subinterests:[r.subId],budget:100,minBudget:10,tone:r.signal==='effect'?r.values[0]:'neutral',[r.signal]:r.values[0]};
+ const ctx=publicPlan({profile,constraints:{recipientContext:{connections:['usb_c','usb_a','bluetooth','jack_35']}}});
+ const candidates=ctx.plan.candidateQueries.filter(q=>r.families.includes(q.family));
+ const catalog=C.associations.filter(k=>k.area===r.area&&k.subId===r.subId&&r.families.includes(k.family));
+ const needs=catalog.flatMap(k=>queryContextChecks({...k,keywords:k.queryKeywords}));
+ const state=candidates.length?'qualified_family_available':'held_by_existing_profile_or_compatibility_gate';
+ assert.ok(candidates.length||needs.some(n=>n.status==='unknown'),r.id+' must explain gate');
+ return {rule:r.id,state,qualifiedQueries:candidates.length,unknownRequirements:[...new Set(needs.filter(n=>n.status==='unknown').map(n=>n.kind))]};
+});
+const coverage={categories:new Set(inventory.map(r=>r.area)).size,subcategories:new Set(inventory.map(r=>r.area+':'+r.subId)).size,associations:inventory.flatMap(r=>r.keywordIds).length,scopedFamilies:inventory.length,contextCells:cells.length,conditionalCells:cells.filter(c=>c.rules.length).length,neutralCells:cells.filter(c=>!c.rules.length).length,newContextRules:EXPANDED_RULES.length,ordinaryRules:41+EXPANDED_RULES.length,specialEventRules:9,sourceRecords:EXPANDED_SOURCES.length};
+assert.equal(coverage.associations,2591);assert.equal(coverage.contextCells,30520);
+const audit={revision:'20261009-m3-full',status:'M3_complete_full_catalog',coverage,manifestSha256:hash,preflight,ruleReachability,inventory,ambiguities:EXPANDED_AMBIGUITIES,sources:EXPANDED_SOURCES,limits:['Scoped family keys are not distinct functional product types.','Neutral decisions are deliberate: category, relationship or occasion names do not prove a product benefit.','Only reviewed terms/aliases are translated; unrestricted natural language and native editorial certification are not claimed.','Age, compatibility, installation, fit, allergies and unsupported experiences retain existing blocking or manual verification requirements.','Translation and primary sources do not certify live offers or recipient suitability.','Actual bundled Worker and frontend tested with synthetic offers; no real Amazon quota or real browser verification.'],next:{milestone:'M4',status:'partial_to_complete',after:'M5 real-product editorial evaluation'}};
+fs.writeFileSync('docs/m3-full-audit.json',JSON.stringify(audit,null,2)+'\n');
+console.log(JSON.stringify({coverage,ruleReachability}));

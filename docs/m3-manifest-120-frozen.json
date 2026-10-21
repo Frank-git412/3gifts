@@ -1,0 +1,5747 @@
+{
+  "version": "M3-preparazione-20261009-r1",
+  "created": "2026-10-09",
+  "baselineOriginal": {
+    "version": 113,
+    "commit": "50bf6463eee478406c0367a086823a6b43e7d48a"
+  },
+  "checkpoint": {
+    "version": 117,
+    "commit": "b2f03b7157635a6b0b6f12949bef9af587aa6a6d"
+  },
+  "comparison": "Confronto finale v113 vs versione finale; v117 confronto incrementale opzionale. Pool prodotti identico e congelato per confronto offline; ancora da preparare.",
+  "scenarios": [
+    {
+      "id": "L01",
+      "category": "Lettura",
+      "group": "Base",
+      "label": "Riferimento adulto",
+      "reference": "",
+      "changed": "",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Risultati coerenti con la categoria e 15–60 €. Fino a 3 idee distinte; 0–2 ammesse con motivo."
+    },
+    {
+      "id": "L02",
+      "category": "Lettura",
+      "group": "Base",
+      "label": "Budget massimo 30 €",
+      "reference": "L01",
+      "changed": "budget",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 30,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Nessun prodotto fuori 15–30 €."
+    },
+    {
+      "id": "L03",
+      "category": "Lettura",
+      "group": "Base",
+      "label": "Budget massimo 100 €",
+      "reference": "L01",
+      "changed": "budget",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 100,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Nessun prodotto fuori 15–100 €."
+    },
+    {
+      "id": "L04",
+      "category": "Lettura",
+      "group": "Base",
+      "label": "Soglia premium 150 €",
+      "reference": "L01",
+      "changed": "budget",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 150,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Minimo effettivo 75 €, massimo 150 €; nessun aumento implicito del budget."
+    },
+    {
+      "id": "L05",
+      "category": "Lettura",
+      "group": "Base",
+      "label": "Minimo esplicito 40 €",
+      "reference": "L01",
+      "changed": "minBudget",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 40,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Mantenere intervallo 40–60 €."
+    },
+    {
+      "id": "L06",
+      "category": "Lettura",
+      "group": "Base",
+      "label": "Relax dichiarato",
+      "reference": "L01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Cerco qualcosa di rilassante."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Cerco qualcosa di rilassante.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Usare il relax dichiarato senza inventare proprietà o cambiare categoria; un termine nella query non basta."
+    },
+    {
+      "id": "L07",
+      "category": "Lettura",
+      "group": "Base",
+      "label": "Adulto maturo",
+      "reference": "L01",
+      "changed": "ageRange",
+      "request": {
+        "profile": {
+          "ageRange": "mature",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Nessuna inferenza di anti-età, fragilità o gusti per sola età."
+    },
+    {
+      "id": "L08",
+      "category": "Lettura",
+      "group": "Base",
+      "label": "Preferenza destinatario women",
+      "reference": "L01",
+      "changed": "recipientPreference",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "women",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "La preferenza destinatario non inventa interessi, gusti o condizioni della pelle."
+    },
+    {
+      "id": "L09",
+      "category": "Lettura",
+      "group": "Base",
+      "label": "Preferenza destinatario men",
+      "reference": "L01",
+      "changed": "recipientPreference",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "men",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "La preferenza destinatario non inventa interessi, gusti o condizioni della pelle."
+    },
+    {
+      "id": "L10",
+      "category": "Lettura",
+      "group": "Base",
+      "label": "Riferimento affinamento",
+      "reference": "",
+      "changed": "",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "anniversary",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "",
+          "isRefinement": true
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Conservare budget e filtri; controllo per successive variazioni di un solo campo."
+    },
+    {
+      "id": "L11",
+      "category": "Lettura",
+      "group": "Occasioni",
+      "label": "birthday",
+      "reference": "",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Coerenza occasione senza rilassare categoria, budget ed esclusioni."
+    },
+    {
+      "id": "L12",
+      "category": "Lettura",
+      "group": "Occasioni",
+      "label": "anniversary",
+      "reference": "L01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "anniversary",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Priorità evento solo con evidenza. Il destinatario resta adulto; vietato forzare copertura con prodotti incongrui."
+    },
+    {
+      "id": "L13",
+      "category": "Lettura",
+      "group": "Occasioni",
+      "label": "christmas",
+      "reference": "L01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "christmas",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Coerenza occasione senza rilassare categoria, budget ed esclusioni."
+    },
+    {
+      "id": "L14",
+      "category": "Lettura",
+      "group": "Occasioni",
+      "label": "thanks",
+      "reference": "L01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "thanks",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Coerenza occasione senza rilassare categoria, budget ed esclusioni."
+    },
+    {
+      "id": "L15",
+      "category": "Lettura",
+      "group": "Occasioni",
+      "label": "graduation",
+      "reference": "L01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "graduation",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Coerenza occasione senza rilassare categoria, budget ed esclusioni."
+    },
+    {
+      "id": "L16",
+      "category": "Lettura",
+      "group": "Occasioni",
+      "label": "newhome",
+      "reference": "L01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "newhome",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Coerenza occasione senza rilassare categoria, budget ed esclusioni."
+    },
+    {
+      "id": "L17",
+      "category": "Lettura",
+      "group": "Occasioni",
+      "label": "wedding",
+      "reference": "L01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "wedding",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Priorità evento solo con evidenza. Il destinatario resta adulto; vietato forzare copertura con prodotti incongrui."
+    },
+    {
+      "id": "L18",
+      "category": "Lettura",
+      "group": "Occasioni",
+      "label": "newbaby",
+      "reference": "L01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "newbaby",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Priorità evento solo con evidenza. Il destinatario resta adulto; vietato forzare copertura con prodotti incongrui."
+    },
+    {
+      "id": "L19",
+      "category": "Lettura",
+      "group": "Occasioni",
+      "label": "event",
+      "reference": "L01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "event",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Coerenza occasione senza rilassare categoria, budget ed esclusioni."
+    },
+    {
+      "id": "L20",
+      "category": "Lettura",
+      "group": "Relazioni",
+      "label": "partner",
+      "reference": "L01",
+      "changed": "relation",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "partner",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "La relazione da sola non prova una proprietà: bonus solo con evidenza; assenza di mappatura va dichiarata."
+    },
+    {
+      "id": "L21",
+      "category": "Lettura",
+      "group": "Relazioni",
+      "label": "friend",
+      "reference": "",
+      "changed": "relation",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "La relazione da sola non prova una proprietà: bonus solo con evidenza; assenza di mappatura va dichiarata."
+    },
+    {
+      "id": "L22",
+      "category": "Lettura",
+      "group": "Relazioni",
+      "label": "family",
+      "reference": "L01",
+      "changed": "relation",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "family",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "La relazione da sola non prova una proprietà: bonus solo con evidenza; assenza di mappatura va dichiarata."
+    },
+    {
+      "id": "L23",
+      "category": "Lettura",
+      "group": "Relazioni",
+      "label": "colleague",
+      "reference": "L01",
+      "changed": "relation",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "colleague",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "La relazione da sola non prova una proprietà: bonus solo con evidenza; assenza di mappatura va dichiarata."
+    },
+    {
+      "id": "L24",
+      "category": "Lettura",
+      "group": "Relazioni",
+      "label": "couple",
+      "reference": "L01",
+      "changed": "relation",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "couple",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "La relazione da sola non prova una proprietà: bonus solo con evidenza; assenza di mappatura va dichiarata."
+    },
+    {
+      "id": "L25",
+      "category": "Lettura",
+      "group": "Effetti",
+      "label": "sentimental",
+      "reference": "L01",
+      "changed": "tone",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "sentimental",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Effetto sostenuto da proprietà concreta; non basta la parola regalo, elegante o divertente nella query."
+    },
+    {
+      "id": "L26",
+      "category": "Lettura",
+      "group": "Effetti",
+      "label": "useful",
+      "reference": "L01",
+      "changed": "tone",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "useful",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Effetto sostenuto da proprietà concreta; non basta la parola regalo, elegante o divertente nella query."
+    },
+    {
+      "id": "L27",
+      "category": "Lettura",
+      "group": "Effetti",
+      "label": "funny",
+      "reference": "L01",
+      "changed": "tone",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "funny",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Effetto sostenuto da proprietà concreta; non basta la parola regalo, elegante o divertente nella query."
+    },
+    {
+      "id": "L28",
+      "category": "Lettura",
+      "group": "Effetti",
+      "label": "surprising",
+      "reference": "L01",
+      "changed": "tone",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "surprising",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Effetto sostenuto da proprietà concreta; non basta la parola regalo, elegante o divertente nella query."
+    },
+    {
+      "id": "L29",
+      "category": "Lettura",
+      "group": "Effetti",
+      "label": "elegant",
+      "reference": "L01",
+      "changed": "tone",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "elegant",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Effetto sostenuto da proprietà concreta; non basta la parola regalo, elegante o divertente nella query."
+    },
+    {
+      "id": "L30",
+      "category": "Lettura",
+      "group": "Effetti",
+      "label": "neutral",
+      "reference": "",
+      "changed": "tone",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Nessun effetto specifico imposto."
+    },
+    {
+      "id": "L31",
+      "category": "Lettura",
+      "group": "Vincoli e note",
+      "label": "Esclusione genere",
+      "reference": "L01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Niente romanzi horror."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Niente romanzi horror.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": [
+              "vincolo_non_interpretato"
+            ]
+          },
+          "source": "local",
+          "needsClarification": true
+        }
+      },
+      "expected": "Escludere horror dichiarato; non equiparare tutti i thriller a horror."
+    },
+    {
+      "id": "L32",
+      "category": "Lettura",
+      "group": "Vincoli e note",
+      "label": "Lingua e formato",
+      "reference": "L01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Solo libri cartacei in italiano."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Solo libri cartacei in italiano.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [
+            "books"
+          ],
+          "requiredSignals": [
+            "books"
+          ],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Lingua e formato devono essere documentati; ebook esclusi."
+    },
+    {
+      "id": "L33",
+      "category": "Lettura",
+      "group": "Vincoli e note",
+      "label": "Opera già letta",
+      "reference": "L01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Ha già letto L’anno della lepre."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Ha già letto L’anno della lepre.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Escludere la stessa opera anche in altra edizione; registrare limite se opera non riconosciuta."
+    },
+    {
+      "id": "L34",
+      "category": "Lettura",
+      "group": "Vincoli e note",
+      "label": "Contenuto e relazione",
+      "reference": "L01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Cerco un romanzo che parli di amicizia."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Cerco un romanzo che parli di amicizia.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [
+            "books"
+          ],
+          "requiredSignals": [
+            "books"
+          ],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Tema nel contenuto, non semplice dedica per un amico."
+    },
+    {
+      "id": "L35",
+      "category": "Lettura",
+      "group": "Vincoli e note",
+      "label": "Proprietà esplicita",
+      "reference": "L01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Luce da lettura a luce calda con luminosità regolabile."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Luce da lettura a luce calda con luminosità regolabile.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [
+            "books"
+          ],
+          "requiredSignals": [
+            "books"
+          ],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Richiedere entrambe le proprietà; la fonte F02 non soddisfa luce calda."
+    },
+    {
+      "id": "L36",
+      "category": "Lettura",
+      "group": "Vincoli e note",
+      "label": "Nota insufficiente",
+      "reference": "L01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Qualcosa di bello."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Qualcosa di bello.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Non inventare un genere o un autore preferito."
+    },
+    {
+      "id": "L37",
+      "category": "Lettura",
+      "group": "Affinamenti",
+      "label": "Priorità personale",
+      "reference": "L10",
+      "changed": "refinementDirection",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "anniversary",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "",
+          "isRefinement": true,
+          "refinementDirection": "personal"
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Conservare i filtri; disattivare priorità evento nella modalità personale."
+    },
+    {
+      "id": "L38",
+      "category": "Lettura",
+      "group": "Affinamenti",
+      "label": "Rifiuto famiglia narrativa",
+      "reference": "L10",
+      "changed": "rejectedConcepts",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "anniversary",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "",
+          "isRefinement": true
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        },
+        "rejectedConcepts": [
+          "concept:culture:narrativa"
+        ]
+      },
+      "expected": "Escludere la famiglia rifiutata, mantenere le altre idee della categoria e tutti i vincoli."
+    },
+    {
+      "id": "L39",
+      "category": "Lettura",
+      "group": "Affinamenti",
+      "label": "Nuovo massimo esplicito 40 €",
+      "reference": "L10",
+      "changed": "budget",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "anniversary",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 40,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "",
+          "isRefinement": true
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Applicare il nuovo massimo esplicito di 40 € e conservare minimo 15 €, categoria e altri filtri."
+    },
+    {
+      "id": "L40",
+      "category": "Lettura",
+      "group": "Affinamenti",
+      "label": "Rifiuto ASIN simulato",
+      "reference": "L10",
+      "changed": "rejectedAsins",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "anniversary",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "",
+          "isRefinement": true
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        },
+        "rejectedAsins": [
+          "B000TEST01"
+        ]
+      },
+      "expected": "Escludere B000TEST01 e mantenere il resto dei vincoli. ASIN fittizio, pool da predisporre."
+    },
+    {
+      "id": "T01",
+      "category": "Tecnologia",
+      "group": "Base",
+      "label": "Riferimento adulto",
+      "reference": "",
+      "changed": "",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Risultati coerenti con la categoria e 15–60 €. Fino a 3 idee distinte; 0–2 ammesse con motivo."
+    },
+    {
+      "id": "T02",
+      "category": "Tecnologia",
+      "group": "Base",
+      "label": "Budget massimo 30 €",
+      "reference": "T01",
+      "changed": "budget",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 30,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Nessun prodotto fuori 15–30 €."
+    },
+    {
+      "id": "T03",
+      "category": "Tecnologia",
+      "group": "Base",
+      "label": "Budget massimo 100 €",
+      "reference": "T01",
+      "changed": "budget",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 100,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Nessun prodotto fuori 15–100 €."
+    },
+    {
+      "id": "T04",
+      "category": "Tecnologia",
+      "group": "Base",
+      "label": "Soglia premium 150 €",
+      "reference": "T01",
+      "changed": "budget",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 150,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Minimo effettivo 75 €, massimo 150 €; nessun aumento implicito del budget."
+    },
+    {
+      "id": "T05",
+      "category": "Tecnologia",
+      "group": "Base",
+      "label": "Minimo esplicito 40 €",
+      "reference": "T01",
+      "changed": "minBudget",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 40,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Mantenere intervallo 40–60 €."
+    },
+    {
+      "id": "T06",
+      "category": "Tecnologia",
+      "group": "Base",
+      "label": "Relax dichiarato",
+      "reference": "T01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Cerco qualcosa di rilassante."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Cerco qualcosa di rilassante.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Usare il relax dichiarato senza inventare proprietà o cambiare categoria; un termine nella query non basta."
+    },
+    {
+      "id": "T07",
+      "category": "Tecnologia",
+      "group": "Base",
+      "label": "Adulto maturo",
+      "reference": "T01",
+      "changed": "ageRange",
+      "request": {
+        "profile": {
+          "ageRange": "mature",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Nessuna inferenza di anti-età, fragilità o gusti per sola età."
+    },
+    {
+      "id": "T08",
+      "category": "Tecnologia",
+      "group": "Base",
+      "label": "Preferenza destinatario women",
+      "reference": "T01",
+      "changed": "recipientPreference",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "women",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "La preferenza destinatario non inventa interessi, gusti o condizioni della pelle."
+    },
+    {
+      "id": "T09",
+      "category": "Tecnologia",
+      "group": "Base",
+      "label": "Preferenza destinatario men",
+      "reference": "T01",
+      "changed": "recipientPreference",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "men",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "La preferenza destinatario non inventa interessi, gusti o condizioni della pelle."
+    },
+    {
+      "id": "T10",
+      "category": "Tecnologia",
+      "group": "Base",
+      "label": "Riferimento affinamento",
+      "reference": "",
+      "changed": "",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "anniversary",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "",
+          "isRefinement": true
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Conservare budget e filtri; controllo per successive variazioni di un solo campo."
+    },
+    {
+      "id": "T11",
+      "category": "Tecnologia",
+      "group": "Occasioni",
+      "label": "birthday",
+      "reference": "",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Coerenza occasione senza rilassare categoria, budget ed esclusioni."
+    },
+    {
+      "id": "T12",
+      "category": "Tecnologia",
+      "group": "Occasioni",
+      "label": "anniversary",
+      "reference": "T01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "anniversary",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Priorità evento solo con evidenza. Il destinatario resta adulto; vietato forzare copertura con prodotti incongrui."
+    },
+    {
+      "id": "T13",
+      "category": "Tecnologia",
+      "group": "Occasioni",
+      "label": "christmas",
+      "reference": "T01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "christmas",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Coerenza occasione senza rilassare categoria, budget ed esclusioni."
+    },
+    {
+      "id": "T14",
+      "category": "Tecnologia",
+      "group": "Occasioni",
+      "label": "thanks",
+      "reference": "T01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "thanks",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Coerenza occasione senza rilassare categoria, budget ed esclusioni."
+    },
+    {
+      "id": "T15",
+      "category": "Tecnologia",
+      "group": "Occasioni",
+      "label": "graduation",
+      "reference": "T01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "graduation",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Coerenza occasione senza rilassare categoria, budget ed esclusioni."
+    },
+    {
+      "id": "T16",
+      "category": "Tecnologia",
+      "group": "Occasioni",
+      "label": "newhome",
+      "reference": "T01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "newhome",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Coerenza occasione senza rilassare categoria, budget ed esclusioni."
+    },
+    {
+      "id": "T17",
+      "category": "Tecnologia",
+      "group": "Occasioni",
+      "label": "wedding",
+      "reference": "T01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "wedding",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Priorità evento solo con evidenza. Il destinatario resta adulto; vietato forzare copertura con prodotti incongrui."
+    },
+    {
+      "id": "T18",
+      "category": "Tecnologia",
+      "group": "Occasioni",
+      "label": "newbaby",
+      "reference": "T01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "newbaby",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Priorità evento solo con evidenza. Il destinatario resta adulto; vietato forzare copertura con prodotti incongrui."
+    },
+    {
+      "id": "T19",
+      "category": "Tecnologia",
+      "group": "Occasioni",
+      "label": "event",
+      "reference": "T01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "event",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Coerenza occasione senza rilassare categoria, budget ed esclusioni."
+    },
+    {
+      "id": "T20",
+      "category": "Tecnologia",
+      "group": "Relazioni",
+      "label": "partner",
+      "reference": "T01",
+      "changed": "relation",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "partner",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "La relazione da sola non prova una proprietà: bonus solo con evidenza; assenza di mappatura va dichiarata."
+    },
+    {
+      "id": "T21",
+      "category": "Tecnologia",
+      "group": "Relazioni",
+      "label": "friend",
+      "reference": "",
+      "changed": "relation",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "La relazione da sola non prova una proprietà: bonus solo con evidenza; assenza di mappatura va dichiarata."
+    },
+    {
+      "id": "T22",
+      "category": "Tecnologia",
+      "group": "Relazioni",
+      "label": "family",
+      "reference": "T01",
+      "changed": "relation",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "family",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "La relazione da sola non prova una proprietà: bonus solo con evidenza; assenza di mappatura va dichiarata."
+    },
+    {
+      "id": "T23",
+      "category": "Tecnologia",
+      "group": "Relazioni",
+      "label": "colleague",
+      "reference": "T01",
+      "changed": "relation",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "colleague",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "La relazione da sola non prova una proprietà: bonus solo con evidenza; assenza di mappatura va dichiarata."
+    },
+    {
+      "id": "T24",
+      "category": "Tecnologia",
+      "group": "Relazioni",
+      "label": "couple",
+      "reference": "T01",
+      "changed": "relation",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "couple",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "La relazione da sola non prova una proprietà: bonus solo con evidenza; assenza di mappatura va dichiarata."
+    },
+    {
+      "id": "T25",
+      "category": "Tecnologia",
+      "group": "Effetti",
+      "label": "sentimental",
+      "reference": "T01",
+      "changed": "tone",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "sentimental",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Effetto sostenuto da proprietà concreta; non basta la parola regalo, elegante o divertente nella query."
+    },
+    {
+      "id": "T26",
+      "category": "Tecnologia",
+      "group": "Effetti",
+      "label": "useful",
+      "reference": "T01",
+      "changed": "tone",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "useful",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Effetto sostenuto da proprietà concreta; non basta la parola regalo, elegante o divertente nella query."
+    },
+    {
+      "id": "T27",
+      "category": "Tecnologia",
+      "group": "Effetti",
+      "label": "funny",
+      "reference": "T01",
+      "changed": "tone",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "funny",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Effetto sostenuto da proprietà concreta; non basta la parola regalo, elegante o divertente nella query."
+    },
+    {
+      "id": "T28",
+      "category": "Tecnologia",
+      "group": "Effetti",
+      "label": "surprising",
+      "reference": "T01",
+      "changed": "tone",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "surprising",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Effetto sostenuto da proprietà concreta; non basta la parola regalo, elegante o divertente nella query."
+    },
+    {
+      "id": "T29",
+      "category": "Tecnologia",
+      "group": "Effetti",
+      "label": "elegant",
+      "reference": "T01",
+      "changed": "tone",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "elegant",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Effetto sostenuto da proprietà concreta; non basta la parola regalo, elegante o divertente nella query."
+    },
+    {
+      "id": "T30",
+      "category": "Tecnologia",
+      "group": "Effetti",
+      "label": "neutral",
+      "reference": "",
+      "changed": "tone",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Nessun effetto specifico imposto."
+    },
+    {
+      "id": "T31",
+      "category": "Tecnologia",
+      "group": "Vincoli e note",
+      "label": "Compatibilità",
+      "reference": "T01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Usa un iPhone 15."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Usa un iPhone 15.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [
+            "iphone15"
+          ],
+          "signals": [
+            "iphone15"
+          ],
+          "requiredSignals": [
+            "iphone15"
+          ],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Compatibilità del modello e accessorio documentata, non dedotta dal solo USB-C."
+    },
+    {
+      "id": "T32",
+      "category": "Tecnologia",
+      "group": "Vincoli e note",
+      "label": "Porta video",
+      "reference": "T01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Hub USB-C con HDMI per il suo computer, modello non indicato."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Hub USB-C con HDMI per il suo computer, modello non indicato.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [
+            "tech"
+          ],
+          "requiredSignals": [
+            "tech"
+          ],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": [
+              "vincolo_non_interpretato"
+            ]
+          },
+          "source": "local",
+          "needsClarification": true
+        }
+      },
+      "expected": "Segnalare compatibilità host ignota; non dare video per garantito."
+    },
+    {
+      "id": "T33",
+      "category": "Tecnologia",
+      "group": "Vincoli e note",
+      "label": "Abbonamenti",
+      "reference": "T01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Niente abbonamenti."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Niente abbonamenti.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [
+            "subscription"
+          ],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [
+              "subscription"
+            ],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Escludere funzioni richieste subordinate a canoni; nessun gratuito inventato."
+    },
+    {
+      "id": "T34",
+      "category": "Tecnologia",
+      "group": "Vincoli e note",
+      "label": "Microfono",
+      "reference": "T01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Cuffie con microfono per videochiamate."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Cuffie con microfono per videochiamate.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Controllare microfono, chiamate e connettore; nessuna equivalenza automatica con ANC."
+    },
+    {
+      "id": "T35",
+      "category": "Tecnologia",
+      "group": "Vincoli e note",
+      "label": "Foto personali",
+      "reference": "T01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Cornice per inviare le mie foto a distanza."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Cornice per inviare le mie foto a distanza.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [
+            "photo"
+          ],
+          "requiredSignals": [
+            "photo"
+          ],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "App, rete e cornice compatibile documentate; foto personali realmente caricabili."
+    },
+    {
+      "id": "T36",
+      "category": "Tecnologia",
+      "group": "Vincoli e note",
+      "label": "Contraddizione",
+      "reference": "T01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Voglio cuffie wireless ma niente Bluetooth."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Voglio cuffie wireless ma niente Bluetooth.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": [
+              "vincolo_non_interpretato"
+            ]
+          },
+          "source": "local",
+          "needsClarification": true
+        }
+      },
+      "expected": "Non ignorare uno dei vincoli; richiedere chiarimento o compatibilità alternativa provata."
+    },
+    {
+      "id": "T37",
+      "category": "Tecnologia",
+      "group": "Affinamenti",
+      "label": "Priorità personale",
+      "reference": "T10",
+      "changed": "refinementDirection",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "anniversary",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "",
+          "isRefinement": true,
+          "refinementDirection": "personal"
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Conservare i filtri; disattivare priorità evento nella modalità personale."
+    },
+    {
+      "id": "T38",
+      "category": "Tecnologia",
+      "group": "Affinamenti",
+      "label": "Rifiuto famiglia audio",
+      "reference": "T10",
+      "changed": "rejectedConcepts",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "anniversary",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "",
+          "isRefinement": true
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        },
+        "rejectedConcepts": [
+          "concept:techGaming:audio"
+        ]
+      },
+      "expected": "Escludere la famiglia rifiutata, mantenere le altre idee della categoria e tutti i vincoli."
+    },
+    {
+      "id": "T39",
+      "category": "Tecnologia",
+      "group": "Affinamenti",
+      "label": "Nuovo massimo esplicito 40 €",
+      "reference": "T10",
+      "changed": "budget",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "anniversary",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 40,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "",
+          "isRefinement": true
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Applicare il nuovo massimo esplicito di 40 € e conservare minimo 15 €, categoria e altri filtri."
+    },
+    {
+      "id": "T40",
+      "category": "Tecnologia",
+      "group": "Affinamenti",
+      "label": "Rifiuto ASIN simulato",
+      "reference": "T10",
+      "changed": "rejectedAsins",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "anniversary",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "",
+          "isRefinement": true
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        },
+        "rejectedAsins": [
+          "B000TEST01"
+        ]
+      },
+      "expected": "Escludere B000TEST01 e mantenere il resto dei vincoli. ASIN fittizio, pool da predisporre."
+    },
+    {
+      "id": "S01",
+      "category": "Skincare",
+      "group": "Base",
+      "label": "Riferimento adulto",
+      "reference": "",
+      "changed": "",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Risultati coerenti con la categoria e 15–60 €. Fino a 3 idee distinte; 0–2 ammesse con motivo."
+    },
+    {
+      "id": "S02",
+      "category": "Skincare",
+      "group": "Base",
+      "label": "Budget massimo 30 €",
+      "reference": "S01",
+      "changed": "budget",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 30,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Nessun prodotto fuori 15–30 €."
+    },
+    {
+      "id": "S03",
+      "category": "Skincare",
+      "group": "Base",
+      "label": "Budget massimo 100 €",
+      "reference": "S01",
+      "changed": "budget",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 100,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Nessun prodotto fuori 15–100 €."
+    },
+    {
+      "id": "S04",
+      "category": "Skincare",
+      "group": "Base",
+      "label": "Soglia premium 150 €",
+      "reference": "S01",
+      "changed": "budget",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 150,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Minimo effettivo 75 €, massimo 150 €; nessun aumento implicito del budget."
+    },
+    {
+      "id": "S05",
+      "category": "Skincare",
+      "group": "Base",
+      "label": "Minimo esplicito 40 €",
+      "reference": "S01",
+      "changed": "minBudget",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 40,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Mantenere intervallo 40–60 €."
+    },
+    {
+      "id": "S06",
+      "category": "Skincare",
+      "group": "Base",
+      "label": "Relax dichiarato",
+      "reference": "S01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Cerco qualcosa di rilassante."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Cerco qualcosa di rilassante.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Usare il relax dichiarato senza inventare proprietà o cambiare categoria; un termine nella query non basta."
+    },
+    {
+      "id": "S07",
+      "category": "Skincare",
+      "group": "Base",
+      "label": "Adulto maturo",
+      "reference": "S01",
+      "changed": "ageRange",
+      "request": {
+        "profile": {
+          "ageRange": "mature",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Nessuna inferenza di anti-età, fragilità o gusti per sola età."
+    },
+    {
+      "id": "S08",
+      "category": "Skincare",
+      "group": "Base",
+      "label": "Preferenza destinatario women",
+      "reference": "S01",
+      "changed": "recipientPreference",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "women",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "La preferenza destinatario non inventa interessi, gusti o condizioni della pelle."
+    },
+    {
+      "id": "S09",
+      "category": "Skincare",
+      "group": "Base",
+      "label": "Preferenza destinatario men",
+      "reference": "S01",
+      "changed": "recipientPreference",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "men",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "La preferenza destinatario non inventa interessi, gusti o condizioni della pelle."
+    },
+    {
+      "id": "S10",
+      "category": "Skincare",
+      "group": "Base",
+      "label": "Riferimento affinamento",
+      "reference": "",
+      "changed": "",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "anniversary",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "",
+          "isRefinement": true
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Conservare budget e filtri; controllo per successive variazioni di un solo campo."
+    },
+    {
+      "id": "S11",
+      "category": "Skincare",
+      "group": "Occasioni",
+      "label": "birthday",
+      "reference": "",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Coerenza occasione senza rilassare categoria, budget ed esclusioni."
+    },
+    {
+      "id": "S12",
+      "category": "Skincare",
+      "group": "Occasioni",
+      "label": "anniversary",
+      "reference": "S01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "anniversary",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Priorità evento solo con evidenza. Il destinatario resta adulto; vietato forzare copertura con prodotti incongrui."
+    },
+    {
+      "id": "S13",
+      "category": "Skincare",
+      "group": "Occasioni",
+      "label": "christmas",
+      "reference": "S01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "christmas",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Coerenza occasione senza rilassare categoria, budget ed esclusioni."
+    },
+    {
+      "id": "S14",
+      "category": "Skincare",
+      "group": "Occasioni",
+      "label": "thanks",
+      "reference": "S01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "thanks",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Coerenza occasione senza rilassare categoria, budget ed esclusioni."
+    },
+    {
+      "id": "S15",
+      "category": "Skincare",
+      "group": "Occasioni",
+      "label": "graduation",
+      "reference": "S01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "graduation",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Coerenza occasione senza rilassare categoria, budget ed esclusioni."
+    },
+    {
+      "id": "S16",
+      "category": "Skincare",
+      "group": "Occasioni",
+      "label": "newhome",
+      "reference": "S01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "newhome",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Coerenza occasione senza rilassare categoria, budget ed esclusioni."
+    },
+    {
+      "id": "S17",
+      "category": "Skincare",
+      "group": "Occasioni",
+      "label": "wedding",
+      "reference": "S01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "wedding",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Priorità evento solo con evidenza. Il destinatario resta adulto; vietato forzare copertura con prodotti incongrui."
+    },
+    {
+      "id": "S18",
+      "category": "Skincare",
+      "group": "Occasioni",
+      "label": "newbaby",
+      "reference": "S01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "newbaby",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Priorità evento solo con evidenza. Il destinatario resta adulto; vietato forzare copertura con prodotti incongrui."
+    },
+    {
+      "id": "S19",
+      "category": "Skincare",
+      "group": "Occasioni",
+      "label": "event",
+      "reference": "S01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "event",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Coerenza occasione senza rilassare categoria, budget ed esclusioni."
+    },
+    {
+      "id": "S20",
+      "category": "Skincare",
+      "group": "Relazioni",
+      "label": "partner",
+      "reference": "S01",
+      "changed": "relation",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "partner",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "La relazione da sola non prova una proprietà: bonus solo con evidenza; assenza di mappatura va dichiarata."
+    },
+    {
+      "id": "S21",
+      "category": "Skincare",
+      "group": "Relazioni",
+      "label": "friend",
+      "reference": "",
+      "changed": "relation",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "La relazione da sola non prova una proprietà: bonus solo con evidenza; assenza di mappatura va dichiarata."
+    },
+    {
+      "id": "S22",
+      "category": "Skincare",
+      "group": "Relazioni",
+      "label": "family",
+      "reference": "S01",
+      "changed": "relation",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "family",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "La relazione da sola non prova una proprietà: bonus solo con evidenza; assenza di mappatura va dichiarata."
+    },
+    {
+      "id": "S23",
+      "category": "Skincare",
+      "group": "Relazioni",
+      "label": "colleague",
+      "reference": "S01",
+      "changed": "relation",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "colleague",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "La relazione da sola non prova una proprietà: bonus solo con evidenza; assenza di mappatura va dichiarata."
+    },
+    {
+      "id": "S24",
+      "category": "Skincare",
+      "group": "Relazioni",
+      "label": "couple",
+      "reference": "S01",
+      "changed": "relation",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "couple",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "La relazione da sola non prova una proprietà: bonus solo con evidenza; assenza di mappatura va dichiarata."
+    },
+    {
+      "id": "S25",
+      "category": "Skincare",
+      "group": "Effetti",
+      "label": "sentimental",
+      "reference": "S01",
+      "changed": "tone",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "sentimental",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Effetto sostenuto da proprietà concreta; non basta la parola regalo, elegante o divertente nella query."
+    },
+    {
+      "id": "S26",
+      "category": "Skincare",
+      "group": "Effetti",
+      "label": "useful",
+      "reference": "S01",
+      "changed": "tone",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "useful",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Effetto sostenuto da proprietà concreta; non basta la parola regalo, elegante o divertente nella query."
+    },
+    {
+      "id": "S27",
+      "category": "Skincare",
+      "group": "Effetti",
+      "label": "funny",
+      "reference": "S01",
+      "changed": "tone",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "funny",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Effetto sostenuto da proprietà concreta; non basta la parola regalo, elegante o divertente nella query."
+    },
+    {
+      "id": "S28",
+      "category": "Skincare",
+      "group": "Effetti",
+      "label": "surprising",
+      "reference": "S01",
+      "changed": "tone",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "surprising",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Effetto sostenuto da proprietà concreta; non basta la parola regalo, elegante o divertente nella query."
+    },
+    {
+      "id": "S29",
+      "category": "Skincare",
+      "group": "Effetti",
+      "label": "elegant",
+      "reference": "S01",
+      "changed": "tone",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "elegant",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Effetto sostenuto da proprietà concreta; non basta la parola regalo, elegante o divertente nella query."
+    },
+    {
+      "id": "S30",
+      "category": "Skincare",
+      "group": "Effetti",
+      "label": "neutral",
+      "reference": "",
+      "changed": "tone",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Nessun effetto specifico imposto."
+    },
+    {
+      "id": "S31",
+      "category": "Skincare",
+      "group": "Vincoli e note",
+      "label": "Profumo",
+      "reference": "S01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Solo prodotti senza profumo."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Solo prodotti senza profumo.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [
+            "perfume"
+          ],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [
+              "perfume"
+            ],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Assenza di profumo dichiarata; delicato non basta."
+    },
+    {
+      "id": "S32",
+      "category": "Skincare",
+      "group": "Vincoli e note",
+      "label": "Ingrediente escluso",
+      "reference": "S01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Niente retinolo."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Niente retinolo.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": [
+              "vincolo_non_interpretato"
+            ]
+          },
+          "source": "local",
+          "needsClarification": true
+        }
+      },
+      "expected": "Escludere retinolo documentato; non inferire assenza da titolo incompleto."
+    },
+    {
+      "id": "S33",
+      "category": "Skincare",
+      "group": "Vincoli e note",
+      "label": "Pelle non indicata",
+      "reference": "S01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Non conosco il suo tipo di pelle."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Non conosco il suo tipo di pelle.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": [
+              "vincolo_non_interpretato"
+            ]
+          },
+          "source": "local",
+          "needsClarification": true
+        }
+      },
+      "expected": "Non dedurre tipo di pelle o necessità anti-età."
+    },
+    {
+      "id": "S34",
+      "category": "Skincare",
+      "group": "Vincoli e note",
+      "label": "Funzione",
+      "reference": "S01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Crema mani che si assorba rapidamente."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Crema mani che si assorba rapidamente.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [
+            "skincare"
+          ],
+          "requiredSignals": [
+            "skincare"
+          ],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Funzione e zona mani documentate; niente promessa clinica."
+    },
+    {
+      "id": "S35",
+      "category": "Skincare",
+      "group": "Vincoli e note",
+      "label": "Uso condiviso",
+      "reference": "S01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Due maschere viso da usare insieme."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Due maschere viso da usare insieme.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Due unità individuali e destinazione coerente; no prova dalla sola parola amica."
+    },
+    {
+      "id": "S36",
+      "category": "Skincare",
+      "group": "Vincoli e note",
+      "label": "Nota insufficiente",
+      "reference": "S01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Un regalo elegante."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Un regalo elegante.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Il prezzo o il marchio non sono evidenza di finitura elegante."
+    },
+    {
+      "id": "S37",
+      "category": "Skincare",
+      "group": "Affinamenti",
+      "label": "Priorità personale",
+      "reference": "S10",
+      "changed": "refinementDirection",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "anniversary",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "",
+          "isRefinement": true,
+          "refinementDirection": "personal"
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Conservare i filtri; disattivare priorità evento nella modalità personale."
+    },
+    {
+      "id": "S38",
+      "category": "Skincare",
+      "group": "Affinamenti",
+      "label": "Rifiuto famiglia creme_mani",
+      "reference": "S10",
+      "changed": "rejectedConcepts",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "anniversary",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "",
+          "isRefinement": true
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        },
+        "rejectedConcepts": [
+          "concept:styleBeauty:creme_mani"
+        ]
+      },
+      "expected": "Escludere la famiglia rifiutata, mantenere le altre idee della categoria e tutti i vincoli."
+    },
+    {
+      "id": "S39",
+      "category": "Skincare",
+      "group": "Affinamenti",
+      "label": "Nuovo massimo esplicito 40 €",
+      "reference": "S10",
+      "changed": "budget",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "anniversary",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 40,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "",
+          "isRefinement": true
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Applicare il nuovo massimo esplicito di 40 € e conservare minimo 15 €, categoria e altri filtri."
+    },
+    {
+      "id": "S40",
+      "category": "Skincare",
+      "group": "Affinamenti",
+      "label": "Rifiuto ASIN simulato",
+      "reference": "S10",
+      "changed": "rejectedAsins",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "anniversary",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "",
+          "isRefinement": true
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        },
+        "rejectedAsins": [
+          "B000TEST01"
+        ]
+      },
+      "expected": "Escludere B000TEST01 e mantenere il resto dei vincoli. ASIN fittizio, pool da predisporre."
+    }
+  ],
+  "invariants": [
+    "Prezzo e disponibilità documentati; intervallo effettivo rispettato.",
+    "Categoria, destinatario, esclusioni e compatibilità obbligatori.",
+    "Nessuna proprietà inventata o dedotta dalla query.",
+    "Nessun ASIN, variante, opera o funzione equivalente duplicato senza richiesta.",
+    "Con almeno tre prodotti validi distinti nel pool, selezionare tre; con meno, massimo ammissibile e motivo.",
+    "Predisporre nel pool anche offerte senza prezzo, indisponibili e duplicati; non ancora fornito."
+  ]
+}

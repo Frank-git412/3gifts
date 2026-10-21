@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-10-10T08:14:29.964640+00:00",
+  "passed": true,
+  "realAmazonCalls": 0,
+  "mainGatewayTests": 4,
+  "laboratoryTests": 55,
+  "builtWorkersTogether": true,
+  "sharedSqliteCounter": true,
+  "runtimeConfigRevisions": {
+    "3gifts": 10,
+    "lab": 6
+  },
+  "ownerConfirmedSharedQuota": "2026-10-10T10:07:19+02:00",
+  "logs": {
+    "gateway": "\u2714 Gateway fails closed without configuration or authentication; no catalogue traffic (8.337928ms)\n\u2714 Public transport and laboratory share quota; cached lab observations do not spend again (1105.061466ms)\n\u2714 Gateway constrains marketplace, partner, resource list and deadline (3.887415ms)\n{\"event\":\"amazon_recommendation\",\"durationMs\":1086,\"searched\":1,\"amazonCalls\":0,\"cacheHits\":0,\"stopReason\":\"upstream_error\",\"failureReasons\":[\"daily_quota_exhausted\"]}\n\u2714 Both built Workers use one counter; laboratory stops when the shared budget is exhausted (2387.401052ms)\n\u2139 tests 4\n\u2139 suites 0\n\u2139 pass 4\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 3584.879859\n",
+    "lab": "ch before expansion; the bounded plan discloses unsearched subcategories (20.874106ms)\n\u2714 Matching rejects accessory-only and unrelated listings (3.628168ms)\n\u2714 Candidate filtering produces three diverse ideas across three interests and rejects invalid offers (4.811329ms)\n\u2714 Variants of one parent are never selected twice, including matches found through shared words (1.606093ms)\n\u2714 Real configuration guard reports missing keys; diagnostic plans and taxonomy work without secrets (6.292193ms)\n\u2714 Full HTTP path with simulated Amazon responses covers new categories, price filters and affiliate URLs (8818.634616ms)\n\u2714 An empty initial search uses additional dictionary words, stays within 12 calls and never relaxes budget (8837.325155ms)\n\u2714 A balanced score prefers substantial good evidence over a tiny perfect sample (10.265466ms)\n\u2714 Rating then quantity both influence the result; relevance takes priority (0.275425ms)\n\u2714 Missing evidence neither excludes candidates nor pretends to rate them (0.356327ms)\n\u2714 Selection compares reviews only after price and matching subcategory filters (3.848105ms)\n\u2714 Questionnaire-supplied review evidence cannot change search or final policy (0.824984ms)\n\u2714 Reviewed technology words retain inspectable evidence, unique IDs and unknown volumes (1.84936ms)\n\u2714 Technology searches use verified wording while respecting explicit subcategory and exclusions (2.011555ms)\n\u2139 tests 55\n\u2139 suites 0\n\u2139 pass 55\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 16788.273141\n"
+  }
+}

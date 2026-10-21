@@ -1,0 +1,416 @@
+{
+  "scope": "Diagnostic scenarios declared before live observations; historical controls and three paired note variations; not acceptance holdout",
+  "createdAt": "2026-10-15",
+  "scenarios": [
+    {
+      "id": "L06",
+      "category": "Lettura",
+      "group": "Base",
+      "label": "Relax dichiarato",
+      "reference": "L01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Cerco qualcosa di rilassante."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Cerco qualcosa di rilassante.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Usare il relax dichiarato senza inventare proprietà o cambiare categoria; un termine nella query non basta."
+    },
+    {
+      "id": "L12",
+      "category": "Lettura",
+      "group": "Occasioni",
+      "label": "anniversary",
+      "reference": "L01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "anniversary",
+          "interests": [
+            "culture"
+          ],
+          "subinterests": [
+            "books"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Priorità evento solo con evidenza. Il destinatario resta adulto; vietato forzare copertura con prodotti incongrui."
+    },
+    {
+      "id": "T06",
+      "category": "Tecnologia",
+      "group": "Base",
+      "label": "Relax dichiarato",
+      "reference": "T01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Cerco qualcosa di rilassante."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Cerco qualcosa di rilassante.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Usare il relax dichiarato senza inventare proprietà o cambiare categoria; un termine nella query non basta."
+    },
+    {
+      "id": "T12",
+      "category": "Tecnologia",
+      "group": "Occasioni",
+      "label": "anniversary",
+      "reference": "T01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "anniversary",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Priorità evento solo con evidenza. Il destinatario resta adulto; vietato forzare copertura con prodotti incongrui."
+    },
+    {
+      "id": "S06",
+      "category": "Skincare",
+      "group": "Base",
+      "label": "Relax dichiarato",
+      "reference": "S01",
+      "changed": "note (+ constraints derivate)",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Cerco qualcosa di rilassante."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "Cerco qualcosa di rilassante.",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Usare il relax dichiarato senza inventare proprietà o cambiare categoria; un termine nella query non basta."
+    },
+    {
+      "id": "S12",
+      "category": "Skincare",
+      "group": "Occasioni",
+      "label": "anniversary",
+      "reference": "S01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "anniversary",
+          "interests": [
+            "styleBeauty"
+          ],
+          "subinterests": [
+            "skincare"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": ""
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Priorità evento solo con evidenza. Il destinatario resta adulto; vietato forzare copertura con prodotti incongrui."
+    },
+    {
+      "id": "N04",
+      "category": "Tecnologia",
+      "group": "Diagnostico nuovo",
+      "label": "anniversary",
+      "reference": "T01",
+      "changed": "occasion",
+      "request": {
+        "profile": {
+          "ageRange": "youngAdult",
+          "relation": "partner",
+          "occasion": "anniversary",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 100,
+          "minBudget": 30,
+          "recipientPreference": "unisex",
+          "note": "Il dispositivo supporta Bluetooth."
+        },
+        "constraints": {
+          "feedback": {
+            "cleanNote": "",
+            "changeCategory": false,
+            "mentioned": []
+          },
+          "requestedDevices": [],
+          "signals": [],
+          "requiredSignals": [],
+          "specificIntents": [],
+          "exclusions": [],
+          "requiredTypes": [],
+          "constraintReport": {
+            "applied": [],
+            "unsatisfied": [],
+            "unclear": []
+          },
+          "source": "local",
+          "needsClarification": false
+        }
+      },
+      "expected": "Priorità evento solo con evidenza. Il destinatario resta adulto; vietato forzare copertura con prodotti incongrui."
+    },
+    {
+      "id": "D01",
+      "category": "Tecnologia",
+      "group": "Diagnostico nuovo",
+      "label": "Relax dichiarato",
+      "reference": "T06",
+      "changed": "note e vincoli derivati",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "birthday",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Cerco qualcosa di rilassante. Il dispositivo supporta Bluetooth."
+        }
+      },
+      "expected": "Vincoli invariati; valutare alternative per uso, senza presumere nuove preferenze. Non è un campione indipendente di accettazione."
+    },
+    {
+      "id": "D02",
+      "category": "Tecnologia",
+      "group": "Diagnostico nuovo",
+      "label": "anniversary",
+      "reference": "T12",
+      "changed": "note e vincoli derivati",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "anniversary",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Il dispositivo supporta Bluetooth."
+        }
+      },
+      "expected": "Vincoli invariati; valutare alternative per uso, senza presumere nuove preferenze. Non è un campione indipendente di accettazione."
+    },
+    {
+      "id": "D03",
+      "category": "Tecnologia",
+      "group": "Diagnostico nuovo",
+      "label": "anniversary",
+      "reference": "T12",
+      "changed": "note e vincoli derivati",
+      "request": {
+        "profile": {
+          "ageRange": "adult",
+          "relation": "friend",
+          "occasion": "anniversary",
+          "interests": [
+            "techGaming"
+          ],
+          "subinterests": [
+            "tech"
+          ],
+          "tone": "neutral",
+          "budget": 60,
+          "minBudget": 15,
+          "recipientPreference": "unisex",
+          "note": "Ama la musica. Il dispositivo supporta Bluetooth."
+        }
+      },
+      "expected": "Vincoli invariati; valutare alternative per uso, senza presumere nuove preferenze. Non è un campione indipendente di accettazione."
+    }
+  ]
+}

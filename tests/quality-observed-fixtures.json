@@ -1,0 +1,766 @@
+[
+  {
+    "id": "C01",
+    "payload": {
+      "profile": {
+        "relation": "friend",
+        "occasion": "birthday",
+        "tone": "neutral",
+        "budget": 60,
+        "minBudget": 15,
+        "recipientPreference": "women",
+        "avoid": [],
+        "ageRange": "adult",
+        "childStage": "preschool",
+        "interests": [
+          "techGaming"
+        ],
+        "subinterests": [
+          "tech"
+        ]
+      },
+      "constraints": {}
+    },
+    "products": [
+      {
+        "asin": "B0HLGTR6RK",
+        "parentAsin": "B0HLW4ZVJ6",
+        "title": "XWP Visore Realtà Virtuale 3D Per Smartphone, Occhiali VR Con Lenti HD Anti Luce Blu, Compatibile Con iPhone&Android (4,7–6,8\"), Esperienza Di Gioco VR/Film, Regalo di compleanno Per Amici E Famiglia",
+        "price": 38.95,
+        "url": "https://www.amazon.it/dp/B0HLGTR6RK?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "image": "https://m.media-amazon.com/images/I/412kzGIpuYL._SL160_.jpg",
+        "areas": [
+          "techGaming"
+        ],
+        "status": "Da valutare",
+        "observedAt": "2026-10-08T17:54:21.797Z",
+        "id": "B0HLGTR6RK",
+        "name": "XWP Visore Realtà Virtuale 3D Per Smartphone, Occhiali VR Con Lenti HD Anti Luce Blu, Compatibile Con iPhone&Android (4,7–6,8\"), Esperienza Di Gioco VR/Film, Regalo di compleanno Per Amici E Famiglia",
+        "store": "Amazon",
+        "type": "product",
+        "tags": [
+          "techGaming",
+          "tech"
+        ],
+        "priceStatus": "amazon-api",
+        "amazonPrice": true,
+        "amazonCheckedAt": "2026-10-08T17:54:21.797Z",
+        "imageUrl": "https://m.media-amazon.com/images/I/412kzGIpuYL._SL160_.jpg",
+        "imageSource": "Amazon",
+        "directUrl": "https://www.amazon.it/dp/B0HLGTR6RK?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "why": "Coerente con tecnologia e gaming. Prezzo nella fascia richiesta.",
+        "query": "smartphone",
+        "macro": "Tecnologia e gaming",
+        "subcategory": "Tecnologia",
+        "conceptFamily": "techGaming:telefonia",
+        "recipientTarget": "unknown",
+        "preferenceScore": 4,
+        "contextMatches": [
+          "recipient",
+          "occasion"
+        ],
+        "reason": "Coerente con tecnologia e gaming. Prezzo nella fascia richiesta."
+      },
+      {
+        "asin": "B0HLLFYN4F",
+        "parentAsin": "B0HLW3PKC1",
+        "title": "XWP Visore VR Con Cuffie, Occhiali 3D Realtà Virtuale Per Giochi Smartphone, Film, Con Lenti HD Anti Luce Blu, Compatibile iPhone & Android 4,7–7,2\", Regalo Compleanno & Natale Per Amici E Famiglia",
+        "price": 58.95,
+        "url": "https://www.amazon.it/dp/B0HLLFYN4F?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "image": "https://m.media-amazon.com/images/I/41PYLQOkk2L._SL160_.jpg",
+        "areas": [
+          "techGaming"
+        ],
+        "status": "Da valutare",
+        "observedAt": "2026-10-08T17:54:21.797Z",
+        "id": "B0HLLFYN4F",
+        "name": "XWP Visore VR Con Cuffie, Occhiali 3D Realtà Virtuale Per Giochi Smartphone, Film, Con Lenti HD Anti Luce Blu, Compatibile iPhone & Android 4,7–7,2\", Regalo Compleanno & Natale Per Amici E Famiglia",
+        "store": "Amazon",
+        "type": "product",
+        "tags": [
+          "techGaming",
+          "tech"
+        ],
+        "priceStatus": "amazon-api",
+        "amazonPrice": true,
+        "amazonCheckedAt": "2026-10-08T17:54:21.797Z",
+        "imageUrl": "https://m.media-amazon.com/images/I/41PYLQOkk2L._SL160_.jpg",
+        "imageSource": "Amazon",
+        "directUrl": "https://www.amazon.it/dp/B0HLLFYN4F?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "why": "Coerente con tecnologia e gaming. Prezzo nella fascia richiesta.",
+        "query": "smartphone",
+        "macro": "Tecnologia e gaming",
+        "subcategory": "Tecnologia",
+        "conceptFamily": "techGaming:telefonia",
+        "recipientTarget": "unknown",
+        "preferenceScore": 4,
+        "contextMatches": [
+          "recipient",
+          "occasion"
+        ],
+        "reason": "Coerente con tecnologia e gaming. Prezzo nella fascia richiesta."
+      },
+      {
+        "asin": "B0DHRWVC8M",
+        "parentAsin": "B0FRGC4BT2",
+        "title": "Cornice digitale WLAN da 10,1 pollici, 32 GB di memoria Cornice digitale intelligente 1280 * 800 HD IPS touchscreen con rotazione automatica, condivisione di foto o video tramite l'app Frameo",
+        "price": 56.99,
+        "url": "https://www.amazon.it/dp/B0DHRWVC8M?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "image": "https://m.media-amazon.com/images/I/518EjdHHqGL._SL160_.jpg",
+        "areas": [
+          "techGaming"
+        ],
+        "status": "Da valutare",
+        "observedAt": "2026-10-08T17:54:32.989Z",
+        "id": "B0DHRWVC8M",
+        "name": "Cornice digitale WLAN da 10,1 pollici, 32 GB di memoria Cornice digitale intelligente 1280 * 800 HD IPS touchscreen con rotazione automatica, condivisione di foto o video tramite l'app Frameo",
+        "store": "Amazon",
+        "type": "product",
+        "tags": [
+          "techGaming",
+          "tech",
+          "personalized"
+        ],
+        "priceStatus": "amazon-api",
+        "amazonPrice": true,
+        "amazonCheckedAt": "2026-10-08T17:54:32.989Z",
+        "imageUrl": "https://m.media-amazon.com/images/I/518EjdHHqGL._SL160_.jpg",
+        "imageSource": "Amazon",
+        "directUrl": "https://www.amazon.it/dp/B0DHRWVC8M?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "why": "Coerente con tecnologia e gaming. Prezzo nella fascia richiesta.",
+        "query": "cornice digitale",
+        "macro": "Tecnologia e gaming",
+        "subcategory": "Tecnologia",
+        "conceptFamily": "techGaming:foto_ricordi",
+        "recipientTarget": "unknown",
+        "preferenceScore": 2,
+        "contextMatches": [
+          "recipient"
+        ],
+        "reason": "Coerente con tecnologia e gaming. Prezzo nella fascia richiesta."
+      }
+    ]
+  },
+  {
+    "id": "C03",
+    "payload": {
+      "profile": {
+        "relation": "friend",
+        "occasion": "birthday",
+        "tone": "neutral",
+        "budget": 60,
+        "minBudget": 15,
+        "recipientPreference": "women",
+        "avoid": [],
+        "ageRange": "adult",
+        "childStage": "preschool",
+        "interests": [
+          "mediaAudio"
+        ],
+        "subinterests": [
+          "music"
+        ]
+      },
+      "constraints": {}
+    },
+    "products": [
+      {
+        "asin": "B0BYN9J3PX",
+        "parentAsin": "B0GR52VD97",
+        "title": "Retrolife Giradischi Bluetooth 3-Velocità 33/45/78 Giri, Nero Vintage",
+        "price": 54.14,
+        "url": "https://www.amazon.it/dp/B0BYN9J3PX?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "image": "https://m.media-amazon.com/images/I/41b321sCw6L._SL160_.jpg",
+        "areas": [
+          "mediaAudio"
+        ],
+        "status": "Da valutare",
+        "observedAt": "2026-10-08T17:55:04.593Z",
+        "id": "B0BYN9J3PX",
+        "name": "Retrolife Giradischi Bluetooth 3-Velocità 33/45/78 Giri, Nero Vintage",
+        "store": "Amazon",
+        "type": "product",
+        "tags": [
+          "mediaAudio",
+          "music",
+          "calm"
+        ],
+        "priceStatus": "amazon-api",
+        "amazonPrice": true,
+        "amazonCheckedAt": "2026-10-08T17:55:04.593Z",
+        "imageUrl": "https://m.media-amazon.com/images/I/41b321sCw6L._SL160_.jpg",
+        "imageSource": "Amazon",
+        "directUrl": "https://www.amazon.it/dp/B0BYN9J3PX?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "why": "Coerente con musica, cinema e audio. Prezzo nella fascia richiesta.",
+        "query": "giradischi",
+        "macro": "Musica, cinema e audio",
+        "subcategory": "Musica",
+        "conceptFamily": "mediaAudio:giradischi",
+        "recipientTarget": "unknown",
+        "preferenceScore": 4,
+        "contextMatches": [
+          "recipient",
+          "occasion"
+        ],
+        "reason": "Coerente con musica, cinema e audio. Prezzo nella fascia richiesta."
+      },
+      {
+        "asin": "B0DXJQSX7L",
+        "parentAsin": "B0DR2PSJD6",
+        "title": "Lettore CD Portable hifi: Kegaudio Lettore CD Bluetooth con Altoparlante bianco",
+        "price": 35.14,
+        "url": "https://www.amazon.it/dp/B0DXJQSX7L?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "image": "https://m.media-amazon.com/images/I/513DuWtDy+L._SL160_.jpg",
+        "areas": [
+          "mediaAudio"
+        ],
+        "status": "Da valutare",
+        "observedAt": "2026-10-08T17:55:05.632Z",
+        "id": "B0DXJQSX7L",
+        "name": "Lettore CD Portable hifi: Kegaudio Lettore CD Bluetooth con Altoparlante bianco",
+        "store": "Amazon",
+        "type": "product",
+        "tags": [
+          "mediaAudio",
+          "music"
+        ],
+        "priceStatus": "amazon-api",
+        "amazonPrice": true,
+        "amazonCheckedAt": "2026-10-08T17:55:05.632Z",
+        "imageUrl": "https://m.media-amazon.com/images/I/513DuWtDy+L._SL160_.jpg",
+        "imageSource": "Amazon",
+        "directUrl": "https://www.amazon.it/dp/B0DXJQSX7L?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "why": "Coerente con musica, cinema e audio. Prezzo nella fascia richiesta.",
+        "query": "lettore cd",
+        "macro": "Musica, cinema e audio",
+        "subcategory": "Musica",
+        "conceptFamily": "mediaAudio:lettori_cd",
+        "recipientTarget": "unknown",
+        "preferenceScore": 2,
+        "contextMatches": [
+          "recipient"
+        ],
+        "reason": "Coerente con musica, cinema e audio. Prezzo nella fascia richiesta."
+      },
+      {
+        "asin": "B0F1775N3K",
+        "parentAsin": "B0F8QCQ745",
+        "title": "Gueray Lettore CD Portatile Personale con Cuffie Display LCD Protezione Anti-Skip HiFi Classic CD Music Player Supporto Funzione di Memoria PROG Lettore CD per Auto Casa",
+        "price": 28.04,
+        "url": "https://www.amazon.it/dp/B0F1775N3K?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "image": "https://m.media-amazon.com/images/I/41sbbPBXSyL._SL160_.jpg",
+        "areas": [
+          "mediaAudio"
+        ],
+        "status": "Da valutare",
+        "observedAt": "2026-10-08T17:55:05.632Z",
+        "id": "B0F1775N3K",
+        "name": "Gueray Lettore CD Portatile Personale con Cuffie Display LCD Protezione Anti-Skip HiFi Classic CD Music Player Supporto Funzione di Memoria PROG Lettore CD per Auto Casa",
+        "store": "Amazon",
+        "type": "product",
+        "tags": [
+          "mediaAudio",
+          "music",
+          "practical"
+        ],
+        "priceStatus": "amazon-api",
+        "amazonPrice": true,
+        "amazonCheckedAt": "2026-10-08T17:55:05.632Z",
+        "imageUrl": "https://m.media-amazon.com/images/I/41sbbPBXSyL._SL160_.jpg",
+        "imageSource": "Amazon",
+        "directUrl": "https://www.amazon.it/dp/B0F1775N3K?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "why": "Coerente con musica, cinema e audio. Prezzo nella fascia richiesta.",
+        "query": "lettore cd",
+        "macro": "Musica, cinema e audio",
+        "subcategory": "Musica",
+        "conceptFamily": "mediaAudio:lettori_cd",
+        "recipientTarget": "unknown",
+        "preferenceScore": 2,
+        "contextMatches": [
+          "recipient"
+        ],
+        "reason": "Coerente con musica, cinema e audio. Prezzo nella fascia richiesta."
+      }
+    ]
+  },
+  {
+    "id": "C06",
+    "payload": {
+      "profile": {
+        "relation": "friend",
+        "occasion": "birthday",
+        "tone": "neutral",
+        "budget": 60,
+        "minBudget": 15,
+        "recipientPreference": "men",
+        "avoid": [],
+        "ageRange": "adult",
+        "childStage": "preschool",
+        "interests": [
+          "sportFitness"
+        ],
+        "subinterests": [
+          "fitness"
+        ]
+      },
+      "constraints": {}
+    },
+    "products": [
+      {
+        "asin": "B0BNLF67GJ",
+        "parentAsin": null,
+        "title": "Gattablu Tazza mug 11oz Sudore dei miei allievi, bilanciere, pesi palestra, divertente idea regalo per personal trainer allenatore!",
+        "price": 16.9,
+        "url": "https://www.amazon.it/dp/B0BNLF67GJ?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "image": "https://m.media-amazon.com/images/I/41eGk-1eQNL._SL160_.jpg",
+        "areas": [
+          "sportFitness"
+        ],
+        "status": "Da valutare",
+        "observedAt": "2026-10-08T17:55:43.867Z",
+        "id": "B0BNLF67GJ",
+        "name": "Gattablu Tazza mug 11oz Sudore dei miei allievi, bilanciere, pesi palestra, divertente idea regalo per personal trainer allenatore!",
+        "store": "Amazon",
+        "type": "product",
+        "tags": [
+          "sportFitness",
+          "fitness",
+          "personalized"
+        ],
+        "priceStatus": "amazon-api",
+        "amazonPrice": true,
+        "amazonCheckedAt": "2026-10-08T17:55:43.867Z",
+        "imageUrl": "https://m.media-amazon.com/images/I/41eGk-1eQNL._SL160_.jpg",
+        "imageSource": "Amazon",
+        "directUrl": "https://www.amazon.it/dp/B0BNLF67GJ?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "why": "Coerente con sport e fitness. Prezzo nella fascia richiesta.",
+        "query": "pesi palestra",
+        "macro": "Sport e fitness",
+        "subcategory": "Fitness",
+        "conceptFamily": "sportFitness:pesi",
+        "recipientTarget": "unknown",
+        "preferenceScore": 4,
+        "contextMatches": [
+          "recipient",
+          "occasion"
+        ],
+        "reason": "Coerente con sport e fitness. Prezzo nella fascia richiesta."
+      },
+      {
+        "asin": "B0D1DV9NHZ",
+        "parentAsin": "B0GSYDHHP3",
+        "title": "Fokky 5 Livelli di Resistenza Elastici Fitness, 5-125 LBS Elastico Palestra",
+        "price": 22.29,
+        "url": "https://www.amazon.it/dp/B0D1DV9NHZ?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "image": "https://m.media-amazon.com/images/I/51ASK+EmlVL._SL160_.jpg",
+        "areas": [
+          "sportFitness"
+        ],
+        "status": "Da valutare",
+        "observedAt": "2026-10-08T17:55:48.402Z",
+        "id": "B0D1DV9NHZ",
+        "name": "Fokky 5 Livelli di Resistenza Elastici Fitness, 5-125 LBS Elastico Palestra",
+        "store": "Amazon",
+        "type": "product",
+        "tags": [
+          "sportFitness",
+          "fitness",
+          "calm"
+        ],
+        "priceStatus": "amazon-api",
+        "amazonPrice": true,
+        "amazonCheckedAt": "2026-10-08T17:55:48.402Z",
+        "imageUrl": "https://m.media-amazon.com/images/I/51ASK+EmlVL._SL160_.jpg",
+        "imageSource": "Amazon",
+        "directUrl": "https://www.amazon.it/dp/B0D1DV9NHZ?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "why": "Coerente con sport e fitness. Prezzo nella fascia richiesta.",
+        "query": "elastici fitness",
+        "macro": "Sport e fitness",
+        "subcategory": "Fitness",
+        "conceptFamily": "sportFitness:elastici",
+        "recipientTarget": "unisex",
+        "preferenceScore": 2,
+        "contextMatches": [
+          "recipient"
+        ],
+        "reason": "Coerente con sport e fitness. Prezzo nella fascia richiesta."
+      },
+      {
+        "asin": "B01MSZBD1B",
+        "parentAsin": null,
+        "title": "tectake® Panca Palestra Regolabile Multifunzione 125x34x129 cm, Panca Inclinata per Pesi Palestra, Attrezzi Home Gym per Addominali, Glutei e altro, Allenamento a Casa, Workout, Fitness - Nero",
+        "price": 51.99,
+        "url": "https://www.amazon.it/dp/B01MSZBD1B?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "image": "https://m.media-amazon.com/images/I/41M7Bdz2WsL._SL160_.jpg",
+        "areas": [
+          "sportFitness"
+        ],
+        "status": "Da valutare",
+        "observedAt": "2026-10-08T17:55:47.177Z",
+        "id": "B01MSZBD1B",
+        "name": "tectake® Panca Palestra Regolabile Multifunzione 125x34x129 cm, Panca Inclinata per Pesi Palestra, Attrezzi Home Gym per Addominali, Glutei e altro, Allenamento a Casa, Workout, Fitness - Nero",
+        "store": "Amazon",
+        "type": "product",
+        "tags": [
+          "sportFitness",
+          "fitness",
+          "practical"
+        ],
+        "priceStatus": "amazon-api",
+        "amazonPrice": true,
+        "amazonCheckedAt": "2026-10-08T17:55:47.177Z",
+        "imageUrl": "https://m.media-amazon.com/images/I/41M7Bdz2WsL._SL160_.jpg",
+        "imageSource": "Amazon",
+        "directUrl": "https://www.amazon.it/dp/B01MSZBD1B?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "why": "Coerente con sport e fitness. Prezzo nella fascia richiesta.",
+        "query": "panca palestra",
+        "macro": "Sport e fitness",
+        "subcategory": "Fitness",
+        "conceptFamily": "sportFitness:panche",
+        "recipientTarget": "unknown",
+        "preferenceScore": 0,
+        "contextMatches": [],
+        "reason": "Coerente con sport e fitness. Prezzo nella fascia richiesta."
+      }
+    ]
+  },
+  {
+    "id": "C13",
+    "payload": {
+      "profile": {
+        "relation": "child",
+        "occasion": "birthday",
+        "tone": "neutral",
+        "budget": 40,
+        "minBudget": 15,
+        "recipientPreference": "unisex",
+        "avoid": [],
+        "ageRange": "earlyChild",
+        "childStage": "preschool",
+        "interests": [
+          "earlySensory"
+        ],
+        "subinterests": [
+          "earlySensory_rattles"
+        ]
+      },
+      "constraints": {}
+    },
+    "products": [
+      {
+        "asin": "B088PLZ95Q",
+        "parentAsin": null,
+        "title": "LIHAO 20pz MINI Piccoli Chef Set Bambini Grembiuli da Cucina Costumi Gioco d'Imitazione Kit Regalo di Compleanno Natale Pasqua Festival Ragazza",
+        "price": 15.99,
+        "url": "https://www.amazon.it/dp/B088PLZ95Q?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "image": "https://m.media-amazon.com/images/I/51gyNosb1GL._SL160_.jpg",
+        "areas": [
+          "earlySensory"
+        ],
+        "status": "Da valutare",
+        "observedAt": "2026-10-08T17:57:19.944Z",
+        "id": "B088PLZ95Q",
+        "name": "LIHAO 20pz MINI Piccoli Chef Set Bambini Grembiuli da Cucina Costumi Gioco d'Imitazione Kit Regalo di Compleanno Natale Pasqua Festival Ragazza",
+        "store": "Amazon",
+        "type": "product",
+        "tags": [
+          "earlySensory",
+          "earlySensory_rattles",
+          "practical"
+        ],
+        "priceStatus": "amazon-api",
+        "amazonPrice": true,
+        "amazonCheckedAt": "2026-10-08T17:57:19.944Z",
+        "imageUrl": "https://m.media-amazon.com/images/I/51gyNosb1GL._SL160_.jpg",
+        "imageSource": "Amazon",
+        "directUrl": "https://www.amazon.it/dp/B088PLZ95Q?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "why": "Coerente con primi giochi e sensi. Prezzo nella fascia richiesta. Verifica l’età consigliata e le avvertenze del produttore prima dell’acquisto.",
+        "query": "gioco da afferrare",
+        "macro": "Primi giochi e sensi",
+        "subcategory": "Sonagli e giochi da afferrare",
+        "conceptFamily": "earlySensory:gioco_da_afferrare",
+        "recipientTarget": "unknown",
+        "preferenceScore": 2,
+        "contextMatches": [
+          "occasion"
+        ],
+        "ageNotice": "Verifica l’età consigliata e le avvertenze del produttore prima dell’acquisto.",
+        "reason": "Coerente con primi giochi e sensi. Prezzo nella fascia richiesta."
+      }
+    ]
+  },
+  {
+    "id": "C26",
+    "payload": {
+      "profile": {
+        "relation": "child",
+        "occasion": "birthday",
+        "tone": "neutral",
+        "budget": 40,
+        "minBudget": 15,
+        "recipientPreference": "unisex",
+        "avoid": [],
+        "ageRange": "child",
+        "childStage": "preschool",
+        "interests": [
+          "kidsSport"
+        ],
+        "subinterests": [
+          "kidsSport_ballGames"
+        ]
+      },
+      "constraints": {}
+    },
+    "products": [
+      {
+        "asin": "B071R99GLC",
+        "parentAsin": null,
+        "title": "MGM Grand Blue Sky - 6 Bocce Balls - Outdoor Game - 048047A - Multicolor - 2 to 6 Players - Wood - 22 cm x 17 cm - Children's Toy - Skill And Outdoor Game - from 5 Years Old",
+        "price": 15.42,
+        "url": "https://www.amazon.it/dp/B071R99GLC?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "image": "https://m.media-amazon.com/images/I/51wmL0y9y1L._SL160_.jpg",
+        "areas": [
+          "kidsSport"
+        ],
+        "status": "Da valutare",
+        "observedAt": "2026-10-08T18:01:14.593Z",
+        "id": "B071R99GLC",
+        "name": "MGM Grand Blue Sky - 6 Bocce Balls - Outdoor Game - 048047A - Multicolor - 2 to 6 Players - Wood - 22 cm x 17 cm - Children's Toy - Skill And Outdoor Game - from 5 Years Old",
+        "store": "Amazon",
+        "type": "product",
+        "tags": [
+          "kidsSport",
+          "kidsSport_ballGames"
+        ],
+        "priceStatus": "amazon-api",
+        "amazonPrice": true,
+        "amazonCheckedAt": "2026-10-08T18:01:14.593Z",
+        "imageUrl": "https://m.media-amazon.com/images/I/51wmL0y9y1L._SL160_.jpg",
+        "imageSource": "Amazon",
+        "directUrl": "https://www.amazon.it/dp/B071R99GLC?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "why": "Coerente con sport e gioco all’aperto. Prezzo nella fascia richiesta. Verifica l’età consigliata e le avvertenze del produttore prima dell’acquisto.",
+        "query": "gioco bocce bambini",
+        "macro": "Sport e gioco all’aperto",
+        "subcategory": "Palloni e giochi di squadra",
+        "conceptFamily": "kidsSport:bocce",
+        "recipientTarget": "unknown",
+        "preferenceScore": 2,
+        "contextMatches": [
+          "occasion"
+        ],
+        "ageNotice": "Verifica l’età consigliata e le avvertenze del produttore prima dell’acquisto.",
+        "reason": "Coerente con sport e gioco all’aperto. Prezzo nella fascia richiesta."
+      },
+      {
+        "asin": "B073JZ5F8V",
+        "parentAsin": "B0DSVY4R9K",
+        "title": "Chicco Basket League Canestro per Bambini Elettronico, da Camera con Effetti Sonori e Luminosi, Altezza Regolabile, Palla Leggera Inclusa - Giochi Bambini 18 Mesi - 5 Anni",
+        "price": 24.9,
+        "url": "https://www.amazon.it/dp/B073JZ5F8V?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "image": "https://m.media-amazon.com/images/I/41Ypd8EmhtL._SL160_.jpg",
+        "areas": [
+          "kidsSport"
+        ],
+        "status": "Da valutare",
+        "observedAt": "2026-10-08T18:01:20.954Z",
+        "id": "B073JZ5F8V",
+        "name": "Chicco Basket League Canestro per Bambini Elettronico, da Camera con Effetti Sonori e Luminosi, Altezza Regolabile, Palla Leggera Inclusa - Giochi Bambini 18 Mesi - 5 Anni",
+        "store": "Amazon",
+        "type": "product",
+        "tags": [
+          "kidsSport",
+          "kidsSport_ballGames"
+        ],
+        "priceStatus": "amazon-api",
+        "amazonPrice": true,
+        "amazonCheckedAt": "2026-10-08T18:01:20.954Z",
+        "imageUrl": "https://m.media-amazon.com/images/I/41Ypd8EmhtL._SL160_.jpg",
+        "imageSource": "Amazon",
+        "directUrl": "https://www.amazon.it/dp/B073JZ5F8V?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "why": "Coerente con sport e gioco all’aperto. Prezzo nella fascia richiesta. Verifica l’età consigliata e le avvertenze del produttore prima dell’acquisto.",
+        "query": "canestro basket bambini",
+        "macro": "Sport e gioco all’aperto",
+        "subcategory": "Palloni e giochi di squadra",
+        "conceptFamily": "kidsSport:canestri_basket",
+        "recipientTarget": "unknown",
+        "preferenceScore": 0,
+        "contextMatches": [],
+        "ageNotice": "Verifica l’età consigliata e le avvertenze del produttore prima dell’acquisto.",
+        "reason": "Coerente con sport e gioco all’aperto. Prezzo nella fascia richiesta."
+      },
+      {
+        "asin": "B07QDDDJZ3",
+        "parentAsin": null,
+        "title": "Dreamon Set di 2 Porte da Calcio per Bambini con Palla e Pompa, Porta da Calcio da Giardino Giocattolo Sportivo per Esterni Indoor Regalo di Natale per Bambini, Giochi Bambina 3 5 6 7 anni",
+        "price": 27.98,
+        "url": "https://www.amazon.it/dp/B07QDDDJZ3?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "image": "https://m.media-amazon.com/images/I/51WvYn+QXhS._SL160_.jpg",
+        "areas": [
+          "kidsSport"
+        ],
+        "status": "Da valutare",
+        "observedAt": "2026-10-08T18:01:19.874Z",
+        "id": "B07QDDDJZ3",
+        "name": "Dreamon Set di 2 Porte da Calcio per Bambini con Palla e Pompa, Porta da Calcio da Giardino Giocattolo Sportivo per Esterni Indoor Regalo di Natale per Bambini, Giochi Bambina 3 5 6 7 anni",
+        "store": "Amazon",
+        "type": "product",
+        "tags": [
+          "kidsSport",
+          "kidsSport_ballGames"
+        ],
+        "priceStatus": "amazon-api",
+        "amazonPrice": true,
+        "amazonCheckedAt": "2026-10-08T18:01:19.874Z",
+        "imageUrl": "https://m.media-amazon.com/images/I/51WvYn+QXhS._SL160_.jpg",
+        "imageSource": "Amazon",
+        "directUrl": "https://www.amazon.it/dp/B07QDDDJZ3?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "why": "Coerente con sport e gioco all’aperto. Prezzo nella fascia richiesta. Verifica l’età consigliata e le avvertenze del produttore prima dell’acquisto.",
+        "query": "porta calcio bambini",
+        "macro": "Sport e gioco all’aperto",
+        "subcategory": "Palloni e giochi di squadra",
+        "conceptFamily": "kidsSport:porte_calcio",
+        "recipientTarget": "unknown",
+        "preferenceScore": 0,
+        "contextMatches": [],
+        "ageNotice": "Verifica l’età consigliata e le avvertenze del produttore prima dell’acquisto.",
+        "reason": "Coerente con sport e gioco all’aperto. Prezzo nella fascia richiesta."
+      }
+    ]
+  },
+  {
+    "id": "A07",
+    "payload": {
+      "profile": {
+        "ageRange": "adult",
+        "relation": "friend",
+        "occasion": "birthday",
+        "interests": [
+          "techGaming"
+        ],
+        "subinterests": [
+          "tech"
+        ],
+        "tone": "neutral",
+        "budget": 500,
+        "minBudget": 0,
+        "recipientPreference": "unisex",
+        "avoid": []
+      },
+      "constraints": {}
+    },
+    "products": [
+      {
+        "asin": "B0FGD7NS4S",
+        "parentAsin": "B0HFRCHTGT",
+        "title": "realme P3 5G Smartphone 12+512 GB",
+        "price": 259,
+        "url": "https://www.amazon.it/dp/B0FGD7NS4S?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "image": "https://m.media-amazon.com/images/I/41-lFxst-eL._SL160_.jpg",
+        "areas": [
+          "techGaming"
+        ],
+        "status": "Da valutare",
+        "observedAt": "2026-10-08T20:08:39.539Z",
+        "id": "B0FGD7NS4S",
+        "name": "realme P3 5G Smartphone 12+512 GB",
+        "store": "Amazon",
+        "type": "product",
+        "tags": [
+          "techGaming",
+          "tech"
+        ],
+        "priceStatus": "amazon-api",
+        "amazonPrice": true,
+        "amazonCheckedAt": "2026-10-08T20:08:39.539Z",
+        "imageUrl": "https://m.media-amazon.com/images/I/41-lFxst-eL._SL160_.jpg",
+        "imageSource": "Amazon",
+        "directUrl": "https://www.amazon.it/dp/B0FGD7NS4S?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "why": "Coerente con tecnologia e gaming. Prezzo nella fascia richiesta.",
+        "query": "smartphone",
+        "macro": "Tecnologia e gaming",
+        "subcategory": "Tecnologia",
+        "conceptFamily": "techGaming:telefonia",
+        "recipientTarget": "unknown",
+        "preferenceScore": 2,
+        "contextMatches": [
+          "recipient"
+        ],
+        "reason": "Coerente con tecnologia e gaming. Prezzo nella fascia richiesta."
+      },
+      {
+        "asin": "B0FPDQ7RY8",
+        "parentAsin": "B0GQBG4BBG",
+        "title": "HP Laptop 15-fd0016sl, PC Portatile 15\", Display 15.6\" FHD Antiriflesso, Notebook, Intel Core i3-N305, RAM 8GB, SSD 256GB, 720p TNR Privacy Cam, Windows 11, Computer Portatile, Bianco, QWERTY",
+        "price": 479,
+        "url": "https://www.amazon.it/dp/B0FPDQ7RY8?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "image": "https://m.media-amazon.com/images/I/41C7KmNSSWL._SL160_.jpg",
+        "areas": [
+          "techGaming"
+        ],
+        "status": "Da valutare",
+        "observedAt": "2026-10-08T20:08:40.910Z",
+        "id": "B0FPDQ7RY8",
+        "name": "HP Laptop 15-fd0016sl, PC Portatile 15\", Display 15.6\" FHD Antiriflesso, Notebook, Intel Core i3-N305, RAM 8GB, SSD 256GB, 720p TNR Privacy Cam, Windows 11, Computer Portatile, Bianco, QWERTY",
+        "store": "Amazon",
+        "type": "product",
+        "tags": [
+          "techGaming",
+          "tech"
+        ],
+        "priceStatus": "amazon-api",
+        "amazonPrice": true,
+        "amazonCheckedAt": "2026-10-08T20:08:40.910Z",
+        "imageUrl": "https://m.media-amazon.com/images/I/41C7KmNSSWL._SL160_.jpg",
+        "imageSource": "Amazon",
+        "directUrl": "https://www.amazon.it/dp/B0FPDQ7RY8?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "why": "Coerente con tecnologia e gaming. Prezzo nella fascia richiesta.",
+        "query": "computer portatile",
+        "macro": "Tecnologia e gaming",
+        "subcategory": "Tecnologia",
+        "conceptFamily": "techGaming:computer",
+        "recipientTarget": "unknown",
+        "preferenceScore": 2,
+        "contextMatches": [
+          "recipient"
+        ],
+        "reason": "Coerente con tecnologia e gaming. Prezzo nella fascia richiesta."
+      },
+      {
+        "asin": "B0H7HYRYVC",
+        "parentAsin": null,
+        "title": "BMAX PC Portatile 15.6 Pollici, 12GB LPDDR4 512GB SSD Computer Portatile",
+        "price": 259.99,
+        "url": "https://www.amazon.it/dp/B0H7HYRYVC?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "image": "https://m.media-amazon.com/images/I/41LvJaS-UML._SL160_.jpg",
+        "areas": [
+          "techGaming"
+        ],
+        "status": "Da valutare",
+        "observedAt": "2026-10-08T20:08:40.910Z",
+        "id": "B0H7HYRYVC",
+        "name": "BMAX PC Portatile 15.6 Pollici, 12GB LPDDR4 512GB SSD Computer Portatile",
+        "store": "Amazon",
+        "type": "product",
+        "tags": [
+          "techGaming",
+          "tech"
+        ],
+        "priceStatus": "amazon-api",
+        "amazonPrice": true,
+        "amazonCheckedAt": "2026-10-08T20:08:40.910Z",
+        "imageUrl": "https://m.media-amazon.com/images/I/41LvJaS-UML._SL160_.jpg",
+        "imageSource": "Amazon",
+        "directUrl": "https://www.amazon.it/dp/B0H7HYRYVC?tag=3gifts-21&linkCode=osi&th=1&psc=1",
+        "why": "Coerente con tecnologia e gaming. Prezzo nella fascia richiesta.",
+        "query": "computer portatile",
+        "macro": "Tecnologia e gaming",
+        "subcategory": "Tecnologia",
+        "conceptFamily": "techGaming:computer",
+        "recipientTarget": "unknown",
+        "preferenceScore": 0,
+        "contextMatches": [],
+        "reason": "Coerente con tecnologia e gaming. Prezzo nella fascia richiesta."
+      }
+    ]
+  }
+]

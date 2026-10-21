@@ -1,0 +1,19 @@
+{
+  "name": "3gifts",
+  "version": "1.0.0",
+  "description": "Il catalogo include ora 13 prodotti Amazon con link diretto e adeguatezza d'età documentata per le fasce 0–6 e 7–12. Per 0–6 il dettaglio facoltativo del questionario continua a distinguere meno di un anno, 1–2 e 3–6 anni; nessun prodotto viene proposto fuori dall'intervallo verificato. Prezzi, disponibilità, immagini, recensioni e tempi non vengono presentati come correnti: i valori di prezzo sono esclusivamente editoriali per il filtro del budget e vanno confermati su Amazon. Il tracking ID `3gifts-21` viene aggiunto al clic.",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "wrangler": "^4.151.3"
+  }
+}

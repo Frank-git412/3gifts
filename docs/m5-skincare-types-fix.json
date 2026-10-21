@@ -1,0 +1,300 @@
+{
+  "revision": "20261015-m5-skincare-types",
+  "reason": "Frozen v140 evaluation found wrong skincare product types and unresolved fragrance contradiction.",
+  "blockingFindings": {
+    "decision": "v140_rejected_for_acceptance",
+    "findings": [
+      {
+        "id": "I-S19",
+        "note": "Solo crema mani senza profumo.",
+        "finding": "Richiesta esclusiva crema mani, restituiti crema viso e crema corpo.",
+        "candidate": "v140",
+        "products": [
+          {
+            "asin": "B07SC3JQ9M",
+            "title": "Paula's Choice Oil-Free Crema, Riduce i Punti Neri, Per Pelle Grassa, 60 ml"
+          },
+          {
+            "asin": "B086WPLC8G",
+            "title": "M. Asam Aqua Intense Crema corpo all'acido ialuronico (300 ml)"
+          }
+        ],
+        "objectiveGate": "mandatory_constraint_failure",
+        "humanRatingRequiredToDetect": false
+      },
+      {
+        "id": "I-S23",
+        "note": "Detergente viso per pelle sensibile, senza profumo.",
+        "finding": "Richiesto detergente viso, restituite crema viso e crema corpo.",
+        "candidate": "v140",
+        "products": [
+          {
+            "asin": "B0825QX28D",
+            "title": "L'Oreal Paris Revitalift crema viso di L'Oreal Paris Skin Care, Revitalift Triple Power, crema viso senza profumo con Pro retinolo, acido ialuronico e vitamina C, 50 ml"
+          },
+          {
+            "asin": "B086WPLC8G",
+            "title": "M. Asam Aqua Intense Crema corpo all'acido ialuronico (300 ml)"
+          }
+        ],
+        "objectiveGate": "mandatory_constraint_failure",
+        "humanRatingRequiredToDetect": false
+      },
+      {
+        "id": "I-S24",
+        "note": "Niente profumo, ma desidera un prodotto molto profumato.",
+        "finding": "Divieto di profumo e richiesta di prodotto profumato: manca chiarimento.",
+        "candidate": "v140",
+        "products": [
+          {
+            "asin": "B07SC3JQ9M",
+            "title": "Paula's Choice Oil-Free Crema, Riduce i Punti Neri, Per Pelle Grassa, 60 ml"
+          },
+          {
+            "asin": "B086WPLC8G",
+            "title": "M. Asam Aqua Intense Crema corpo all'acido ialuronico (300 ml)"
+          }
+        ],
+        "objectiveGate": "mandatory_constraint_failure",
+        "humanRatingRequiredToDetect": false
+      }
+    ],
+    "sampleStatusAfterFix": "exposed_calibration_and_regression_not_independent_for_new_candidate",
+    "ballotDecision": "Prepared first 43 cards not issued; no request for votes on rejected final candidate.",
+    "newHumanVotes": 0
+  },
+  "regression": {
+    "createdAt": "2026-10-15T21:29:29.029Z",
+    "scope": "exposed_regression_not_independent",
+    "realAmazonCalls": 0,
+    "passed": true,
+    "results": [
+      {
+        "id": "I-S19",
+        "note": "Solo crema mani senza profumo.",
+        "before": [
+          {
+            "asin": "B07SC3JQ9M",
+            "title": "Paula's Choice Oil-Free Crema, Riduce i Punti Neri, Per Pelle Grassa, 60 ml"
+          },
+          {
+            "asin": "B086WPLC8G",
+            "title": "M. Asam Aqua Intense Crema corpo all'acido ialuronico (300 ml)"
+          }
+        ],
+        "after": [],
+        "blocked": false,
+        "queries": [
+          "crema mani senza profumo"
+        ],
+        "request": {
+          "profile": {
+            "relation": "partner",
+            "occasion": "newhome",
+            "ageRange": "mature",
+            "recipientPreference": "unisex",
+            "interests": [
+              "styleBeauty"
+            ],
+            "subinterests": [
+              "skincare"
+            ],
+            "tone": "neutral",
+            "budget": 120,
+            "minBudget": 25
+          },
+          "constraints": {
+            "signals": [],
+            "requiredSignals": [],
+            "specificIntents": [
+              "m3:M5_HAND_TYPE"
+            ],
+            "optionalIntents": [],
+            "noteConstraints": [
+              {
+                "type": "requirement",
+                "value": "fragranceFree",
+                "scope": "selected_interests",
+                "origin": "note",
+                "language": "it",
+                "status": "interpreted"
+              },
+              {
+                "type": "request",
+                "value": "m3:M5_HAND_TYPE",
+                "scope": "selected_interests",
+                "origin": "note",
+                "language": "it",
+                "status": "interpreted"
+              }
+            ],
+            "exclusions": [
+              "fragranceFree"
+            ],
+            "requiredTypes": [],
+            "needsClarification": false,
+            "recipientContext": {
+              "connections": [],
+              "deviceModel": ""
+            }
+          },
+          "rejectedAsins": [],
+          "rejectedBookKeys": [],
+          "rejectedConcepts": [],
+          "seenConcepts": [],
+          "rejectedParentAsins": []
+        }
+      },
+      {
+        "id": "I-S23",
+        "note": "Detergente viso per pelle sensibile, senza profumo.",
+        "before": [
+          {
+            "asin": "B0825QX28D",
+            "title": "L'Oreal Paris Revitalift crema viso di L'Oreal Paris Skin Care, Revitalift Triple Power, crema viso senza profumo con Pro retinolo, acido ialuronico e vitamina C, 50 ml"
+          },
+          {
+            "asin": "B086WPLC8G",
+            "title": "M. Asam Aqua Intense Crema corpo all'acido ialuronico (300 ml)"
+          }
+        ],
+        "after": [],
+        "blocked": false,
+        "queries": [
+          "detergente viso senza profumo"
+        ],
+        "request": {
+          "profile": {
+            "relation": "partner",
+            "occasion": "birthday",
+            "ageRange": "mature",
+            "recipientPreference": "unisex",
+            "interests": [
+              "styleBeauty"
+            ],
+            "subinterests": [
+              "skincare"
+            ],
+            "tone": "useful",
+            "budget": 100,
+            "minBudget": 25
+          },
+          "constraints": {
+            "signals": [],
+            "requiredSignals": [],
+            "specificIntents": [
+              "m3:M5_CLEANSER_TYPE"
+            ],
+            "optionalIntents": [],
+            "noteConstraints": [
+              {
+                "type": "requirement",
+                "value": "fragranceFree",
+                "scope": "selected_interests",
+                "origin": "note",
+                "language": "it",
+                "status": "interpreted"
+              },
+              {
+                "type": "request",
+                "value": "m3:M5_CLEANSER_TYPE",
+                "scope": "selected_interests",
+                "origin": "note",
+                "language": "it",
+                "status": "interpreted"
+              }
+            ],
+            "exclusions": [
+              "fragranceFree"
+            ],
+            "requiredTypes": [],
+            "needsClarification": false,
+            "recipientContext": {
+              "connections": [],
+              "deviceModel": ""
+            }
+          },
+          "rejectedAsins": [],
+          "rejectedBookKeys": [],
+          "rejectedConcepts": [],
+          "seenConcepts": [],
+          "rejectedParentAsins": []
+        }
+      },
+      {
+        "id": "I-S24",
+        "note": "Niente profumo, ma desidera un prodotto molto profumato.",
+        "before": [
+          {
+            "asin": "B07SC3JQ9M",
+            "title": "Paula's Choice Oil-Free Crema, Riduce i Punti Neri, Per Pelle Grassa, 60 ml"
+          },
+          {
+            "asin": "B086WPLC8G",
+            "title": "M. Asam Aqua Intense Crema corpo all'acido ialuronico (300 ml)"
+          }
+        ],
+        "after": [],
+        "blocked": true,
+        "queries": [],
+        "request": {
+          "profile": {
+            "relation": "couple",
+            "occasion": "thanks",
+            "ageRange": "adult",
+            "recipientPreference": "unisex",
+            "interests": [
+              "styleBeauty"
+            ],
+            "subinterests": [
+              "skincare"
+            ],
+            "tone": "elegant",
+            "budget": 80,
+            "minBudget": 20
+          },
+          "constraints": {
+            "signals": [],
+            "requiredSignals": [],
+            "specificIntents": [],
+            "optionalIntents": [],
+            "noteConstraints": [
+              {
+                "type": "exclusion",
+                "value": "perfume",
+                "scope": "selected_interests",
+                "origin": "note",
+                "language": "it",
+                "status": "interpreted"
+              }
+            ],
+            "exclusions": [
+              "perfume"
+            ],
+            "requiredTypes": [],
+            "needsClarification": true,
+            "recipientContext": {
+              "connections": [],
+              "deviceModel": ""
+            }
+          },
+          "rejectedAsins": [],
+          "rejectedBookKeys": [],
+          "rejectedConcepts": [],
+          "seenConcepts": [],
+          "rejectedParentAsins": []
+        }
+      }
+    ]
+  },
+  "validation": {
+    "tests": 3169,
+    "clientWorkerChecks": 11,
+    "passed": true,
+    "browserQA": false,
+    "realAmazonCalls": 0
+  },
+  "interfaceChanged": false,
+  "rankingWeightsChanged": false,
+  "M5Acceptance": false
+}
