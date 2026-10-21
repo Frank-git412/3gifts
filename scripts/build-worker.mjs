@@ -98,7 +98,8 @@ function headersFor(assetPath,status){
 export default {
   async fetch(request,env){
     const url=new URL(request.url);
-    if(url.hostname.toLowerCase()==="www.3gifts.it"){
+    // www and the secondary 3regali.it domain redirect permanently, straight to HTTPS.
+    if(["www.3gifts.it","3regali.it","www.3regali.it"].includes(url.hostname.toLowerCase())){
       url.protocol="https:";
       url.hostname="3gifts.it";
       url.port="";
