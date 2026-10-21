@@ -15,7 +15,7 @@
     {
       "binding": "DB",
       "database_name": "3gifts",
-      "database_id": "DA_CONFIGURARE",
+      "database_id": "3ae9586c-8476-404c-b59a-393ffff0e5fc",
       "migrations_dir": "drizzle"
     }
   ]
