@@ -24,6 +24,7 @@ ogni giorno (le regole Amazon consentono di conservare quei dati al massimo 24 o
 | `pitch` | Una frase su che cos'è il regalo |
 | `whyItWorks` | Perché funziona come regalo: base per la spiegazione dell'AI e per le pagine SEO |
 | `ages` | Fasce d'età del questionario (`ageRange`) |
+| `stages` | Solo per 0–6 anni: fasi del questionario (`childStage`) adatte al concetto |
 | `relations` | Relazioni del questionario (`relation`) |
 | `gender` | `any`, `women` o `men` (`recipientPreference`) |
 | `interests` / `subinterests` | Aree e sottocategorie del questionario |

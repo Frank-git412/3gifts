@@ -17,6 +17,7 @@ const vocab = {
   avoidFlags: values("avoid"),
 };
 const genders = new Set(["any", ...values("recipientPreference")].filter(g => g !== "unisex"));
+const stages = values("childStage");
 const kinds = new Set(["object", "experience", "subscription", "consumable"]);
 const statuses = new Set(["draft", "approved", "rejected"]);
 
@@ -40,6 +41,9 @@ for (const c of concepts) {
   if (!genders.has(c.gender)) errors.push(`${where}: gender non valido`);
   if (!kinds.has(c.kind)) errors.push(`${where}: kind non valido`);
   if (typeof c.lastMinute !== "boolean") errors.push(`${where}: lastMinute deve essere true o false`);
+  // 0–6 concepts name the child stages they suit, so a newborn toy never reaches a five-year-old.
+  if (c.ages.includes("earlyChild") && !c.stages?.length) errors.push(`${where}: stages mancante per 0–6 anni`);
+  for (const s of c.stages || []) if (!stages.has(s) || s === "all") errors.push(`${where}: stages contiene "${s}"`);
   if (!(c.price?.min > 0 && c.price.max >= c.price.min)) errors.push(`${where}: fascia di prezzo non valida`);
 }
 

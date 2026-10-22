@@ -40,7 +40,7 @@
   },
   "kind": "object",
   "avoidFlags": [
-   "foodAlcohol"
+   "alcohol"
   ],
   "lastMinute": false,
   "amazonQuery": "set sommelier cofanetto legno"
@@ -82,7 +82,7 @@
   },
   "kind": "object",
   "avoidFlags": [
-   "foodAlcohol"
+   "alcohol"
   ],
   "lastMinute": false,
   "amazonQuery": "kit cocktail principianti shaker ricettario"
@@ -124,7 +124,7 @@
   },
   "kind": "object",
   "avoidFlags": [
-   "foodAlcohol",
+   "alcohol",
    "bulky"
   ],
   "lastMinute": false,
@@ -379,7 +379,7 @@
   },
   "kind": "consumable",
   "avoidFlags": [
-   "foodAlcohol"
+   "food"
   ],
   "lastMinute": false,
   "amazonQuery": "cofanetto tè pregiati regalo selezione"
@@ -2748,7 +2748,7 @@
   },
   "kind": "object",
   "avoidFlags": [
-   "foodAlcohol"
+   "alcohol"
   ],
   "lastMinute": false,
   "amazonQuery": "gioco di carte festa adulti sfide"
@@ -4050,7 +4050,10 @@
    "bulky"
   ],
   "lastMinute": false,
-  "amazonQuery": "palestrina neonato tappeto gioco"
+  "amazonQuery": "palestrina neonato tappeto gioco",
+  "stages": [
+   "infant"
+  ]
  },
  {
   "id": "c100-libro-tattile-di-stoffa",
@@ -4089,7 +4092,11 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "libro tattile stoffa neonato"
+  "amazonQuery": "libro tattile stoffa neonato",
+  "stages": [
+   "infant",
+   "toddler"
+  ]
  },
  {
   "id": "c101-torre-di-blocchi-impilabili",
@@ -4126,7 +4133,11 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "gioco impilabile bambini 12 mesi"
+  "amazonQuery": "gioco impilabile bambini 12 mesi",
+  "stages": [
+   "infant",
+   "toddler"
+  ]
  },
  {
   "id": "c102-cucina-giocattolo-in-legno",
@@ -4164,7 +4175,10 @@
    "bulky"
   ],
   "lastMinute": false,
-  "amazonQuery": "cucina giocattolo legno bambini 3 anni"
+  "amazonQuery": "cucina giocattolo legno bambini 3 anni",
+  "stages": [
+   "preschool"
+  ]
  },
  {
   "id": "c103-bici-senza-pedali",
@@ -4202,7 +4216,11 @@
    "bulky"
   ],
   "lastMinute": false,
-  "amazonQuery": "bici senza pedali bambini 2 anni"
+  "amazonQuery": "bici senza pedali bambini 2 anni",
+  "stages": [
+   "toddler",
+   "preschool"
+  ]
  },
  {
   "id": "c104-primi-strumenti-musicali",
@@ -4238,7 +4256,11 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "set strumenti musicali bambini 2 anni xilofono"
+  "amazonQuery": "set strumenti musicali bambini 2 anni xilofono",
+  "stages": [
+   "toddler",
+   "preschool"
+  ]
  },
  {
   "id": "c105-puzzle-in-legno-a-incastro",
@@ -4275,7 +4297,11 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "puzzle legno incastro pomelli bambini"
+  "amazonQuery": "puzzle legno incastro pomelli bambini",
+  "stages": [
+   "toddler",
+   "preschool"
+  ]
  },
  {
   "id": "c106-set-di-pastelli-e-album",
@@ -4312,7 +4338,11 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "pastelli cera bambini 2 anni album colorare"
+  "amazonQuery": "pastelli cera bambini 2 anni album colorare",
+  "stages": [
+   "toddler",
+   "preschool"
+  ]
  },
  {
   "id": "c107-set-di-coltelli-da-bistecca",
@@ -4436,7 +4466,7 @@
   },
   "kind": "consumable",
   "avoidFlags": [
-   "foodAlcohol"
+   "food"
   ],
   "lastMinute": false,
   "amazonQuery": "cioccolatini artigianali scatola regalo"
