@@ -63,7 +63,7 @@ main.wrap { padding-block: 18px 60px; display: grid; gap: 14px; }
 .why { margin: 0; color: var(--muted); font-size: 14px; }
 .tags { display: grid; gap: 6px; font-size: 13px; }
 .tagrow { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; }
-.tagrow > span:first-child { color: var(--muted); width: 84px; flex: none; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+.tagrow > span:first-child { color: var(--muted); width: 96px; flex: none; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
 .chip { background: var(--accent-soft); color: var(--ink); border-radius: 6px; padding: 1px 8px; }
 .chip.warn { background: var(--no-soft); }
 .query { font-size: 13px; color: var(--muted); }
@@ -152,7 +152,7 @@ function card(c) {
     chips("Effetto", c.tones, L.tones),
     chips("Occasioni", c.occasions, L.occasions),
     chips("Tipo", [c.kind].concat(c.lastMinute ? ["Ultimo minuto"] : []), L.kind),
-    chips("Escluso se", c.avoidFlags, L.avoid, "warn"),
+    chips("Nascosto se si evita", c.avoidFlags, L.avoid, "warn"),
   ].filter(Boolean);
   tags.append(...rows);
   const q = document.createElement("div"); q.className = "query";
