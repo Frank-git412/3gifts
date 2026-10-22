@@ -834,7 +834,9 @@ const window={};
     if(book&&avoid.has('bookSeries')&&!book.standalone)return true;
     if (avoid.has("bulky") && flags.bulky !== false) return true;
     if (avoid.has("sizes") && flags.sizes !== false) return true;
-    if (avoid.has("foodAlcohol") && tags.some(tag => ["food", "wine", "beer"].includes(tag))) return true;
+    // "foodAlcohol" is the former single choice, kept for requests built before the split.
+    if ((avoid.has("food") || avoid.has("foodAlcohol")) && tags.includes("food")) return true;
+    if ((avoid.has("alcohol") || avoid.has("foodAlcohol")) && tags.some(tag => ["wine", "beer"].includes(tag))) return true;
     if ((avoid.has("subscriptions") || avoid.has("subscription")) && ["subscription", "recurring"].includes(product.type)) return true;
     if ((avoid.has("experiences") || avoid.has("experience")) && ["experience", "service"].includes(product.type)) return true;
     if (avoid.has("gadgets") && (tags.includes("funny") || flags.tech)) return true;
