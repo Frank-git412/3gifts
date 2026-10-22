@@ -11,6 +11,9 @@
   "build": { "command": "node scripts/build-worker.mjs" },
   // Library product job: matches a few concepts and refreshes prices every hour.
   "triggers": { "crons": ["17 * * * *"] },
+  // Static files from dist/ are served by Cloudflare; every request reaches the Worker first
+  // for redirects, APIs, guides and headers, and it reads the files through the STATIC binding.
+  "assets": { "directory": "dist", "binding": "STATIC", "run_worker_first": true, "html_handling": "none", "not_found_handling": "none" },
   "vars": {
     "AMAZON_CREATORS_CLIENT_ID": "amzn1.application-oa2-client.cc4a0c116fe4405abbeec0dd5127e20a",
     "AMAZON_CREATORS_VERSION": "3.2",

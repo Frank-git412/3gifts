@@ -17,6 +17,7 @@ function collect(directory, prefix = "") {
   const assets = {};
   for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
     if (!prefix && excludedTopLevel.has(entry.name)) continue;
+    if (entry.name.startsWith(".")) continue;
     const absolute = path.join(directory, entry.name);
     const relative = path.posix.join(prefix, entry.name);
     if (entry.isDirectory()) Object.assign(assets, collect(absolute, relative));
@@ -57,7 +58,8 @@ for(const group of fs.readFileSync(path.join(root,'index.html'),'utf8').matchAll
 fs.appendFileSync(path.join(root,'server/research/public-rules.mjs'),'\nexport const CHILD_STAGE_RULES='+JSON.stringify(childStages)+';\n');
 const researchFiles=['reviews','weighted-ranking','technology-keywords','engine','age-policy','catalog-data','product-identity','product-requirements','research-engine','public-rules','pilot-context','pilot-expansion','pilot-closure-rules','pilot-lexicon-data','pilot-family-reviews','pilot-dictionary','expanded-data','expanded-context','relax-use-context','occasion-use-context','gift-context','intent-search','public-adapter'];
 const researchCode='const researchRuntime=(()=>{\n'+researchFiles.map(f=>fs.readFileSync(path.join(root,'server/research/'+f+'.mjs'),'utf8').replace(/^import .*?;\n/gm,'').replace(/\bexport (?=(?:const|function|async function))/g,'')).join('\n')+'\nreturn {publicRecommendation};})();\n';
-const worker = `${transportCode}\n${catalogueCode}\n${libraryCode}\n${engineV2Code}\n${guidesCode}\nconst LIBRARY_GUIDES=${JSON.stringify(libraryGuides)};\nconst LIBRARY_CONCEPTS=${JSON.stringify(libraryConcepts)};\nconst CURATED=${JSON.stringify(curated)};\n${amazonCode}\n${researchCode}\nconst ASSETS=${JSON.stringify(assets)};
+const worker = `${transportCode}\n${catalogueCode}\n${libraryCode}\n${engineV2Code}\n${guidesCode}\nconst LIBRARY_GUIDES=${JSON.stringify(libraryGuides)};\nconst LIBRARY_CONCEPTS=${JSON.stringify(libraryConcepts)};\nconst CURATED=${JSON.stringify(curated)};\n${amazonCode}\n${researchCode}\n// Static files are served by Cloudflare's asset storage; the Worker only keeps their paths for routing.
+const ASSET_PATHS=new Set(${JSON.stringify(Object.keys(assets))});
 const CONTENT_TYPES={
   ".html":"text/html; charset=utf-8",
   ".css":"text/css; charset=utf-8",
@@ -81,13 +83,12 @@ function route(pathname){
   if(path==="/")return "/index.html";
   if(path.endsWith("/")){
     const index=path+"index.html";
-    if(ASSETS[index])return index;
+    if(ASSET_PATHS.has(index))return index;
   }
-  if(ASSETS[path])return path;
-  if(!extension(path)&&ASSETS[path+".html"])return path+".html";
+  if(ASSET_PATHS.has(path))return path;
+  if(!extension(path)&&ASSET_PATHS.has(path+".html"))return path+".html";
   return null;
 }
-function bytes(base64){const raw=atob(base64),out=new Uint8Array(raw.length);for(let i=0;i<raw.length;i++)out[i]=raw.charCodeAt(i);return out}
 function headersFor(assetPath,status){
   const ext=extension(assetPath),headers=new Headers({
     "Content-Type":CONTENT_TYPES[ext]||"application/octet-stream",
@@ -123,10 +124,10 @@ export default {
     if(request.method!=="GET"&&request.method!=="HEAD")return new Response("Method Not Allowed",{status:405,headers:{Allow:"GET, HEAD"}});
     let assetPath=route(url.pathname),status=200;
     if(!assetPath){assetPath="/404.html";status=404}
-    const asset=ASSETS[assetPath];
-    if(!asset)return new Response("Not Found",{status:404});
-    const body=request.method==="HEAD"?null:(asset.binary?bytes(asset.body):asset.body);
-    return new Response(body,{status,headers:headersFor(assetPath,status)});
+    if(!ASSET_PATHS.has(assetPath))return new Response("Not Found",{status:404});
+    const stored=await env.STATIC.fetch(new Request(new URL(assetPath,url.origin)));
+    if(!stored.ok)return new Response("Not Found",{status:404});
+    return new Response(request.method==="HEAD"?null:stored.body,{status,headers:headersFor(assetPath,status)});
   },
   async scheduled(event,env,ctx){
     ctx.waitUntil(runLibraryJob(env,LIBRARY_CONCEPTS).then(report=>console.log("library job",JSON.stringify(report))));
@@ -137,9 +138,11 @@ export default {
 fs.rmSync(server, { recursive: true, force: true });
 fs.mkdirSync(server, { recursive: true });
 fs.writeFileSync(path.join(server, "index.js"), worker);
+// The Worker code and deployment metadata live in dist too: keep them out of the public assets.
+fs.writeFileSync(path.join(out, ".assetsignore"), "server\n.openai\n");
 fs.mkdirSync(path.join(out, ".openai"), { recursive: true });
 fs.copyFileSync(path.join(root, ".openai", "hosting.json"), path.join(out, ".openai", "hosting.json"));
 
-console.log(`Built Worker with ${Object.keys(assets).length} embedded assets.`);
+console.log(`Built Worker routing for ${Object.keys(assets).length} static assets.`);
 
 fs.cpSync(path.join(root,'drizzle'),path.join(out,'.openai','drizzle'),{recursive:true});
