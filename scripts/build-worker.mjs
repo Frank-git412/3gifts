@@ -36,6 +36,9 @@ const amazonCode = fs.readFileSync(path.join(root,"server/amazon-creators.mjs"),
 const transportCode = fs.readFileSync(path.join(root,"server/amazon-transport.mjs"),"utf8").replace(/^import .*?;\n/gm, "").replace(/\bexport (?=(?:const|function|async function))/g, "");
 const catalogueCode = fs.readFileSync(path.join(root,"server/amazon-catalog.mjs"),"utf8").replace(/^import .*?;\n/gm, "").replace("export async function", "async function").replace(/^export \{.*?\};\n/gm, "");
 const curated = JSON.parse(fs.readFileSync(path.join(root,"catalog-products.json"),"utf8")).products;
+const libraryCode=fs.readFileSync(path.join(root,'server/library-products.mjs'),'utf8').replace(/^import .*?;\n/gm,'').replace(/\bexport (?=(?:const|function|async function))/g,'');
+// Only approved concepts reach the Worker, with just the fields the product job needs.
+const libraryConcepts=JSON.parse(fs.readFileSync(path.join(root,'library/concepts.json'),'utf8')).filter(c=>c.status==='approved').map(({id,amazonQuery,price})=>({id,amazonQuery,price}));
 fs.writeFileSync(path.join(root,'server/research/public-rules.mjs'),'// Generated from recommendation-rules.js by build-worker.mjs.\nconst window={};\n'+fs.readFileSync(path.join(root,'recommendation-rules.js'),'utf8')+'\nexport const PUBLIC_RULES=window.TRE_REGALI_RULES;\n');
 // Mirror stage restrictions from the questionnaire instead of maintaining two lists.
 const childStages={};
@@ -51,7 +54,7 @@ for(const group of fs.readFileSync(path.join(root,'index.html'),'utf8').matchAll
 fs.appendFileSync(path.join(root,'server/research/public-rules.mjs'),'\nexport const CHILD_STAGE_RULES='+JSON.stringify(childStages)+';\n');
 const researchFiles=['reviews','weighted-ranking','technology-keywords','engine','age-policy','catalog-data','product-identity','product-requirements','research-engine','public-rules','pilot-context','pilot-expansion','pilot-closure-rules','pilot-lexicon-data','pilot-family-reviews','pilot-dictionary','expanded-data','expanded-context','relax-use-context','occasion-use-context','gift-context','intent-search','public-adapter'];
 const researchCode='const researchRuntime=(()=>{\n'+researchFiles.map(f=>fs.readFileSync(path.join(root,'server/research/'+f+'.mjs'),'utf8').replace(/^import .*?;\n/gm,'').replace(/\bexport (?=(?:const|function|async function))/g,'')).join('\n')+'\nreturn {publicRecommendation};})();\n';
-const worker = `${transportCode}\n${catalogueCode}\nconst CURATED=${JSON.stringify(curated)};\n${amazonCode}\n${researchCode}\nconst ASSETS=${JSON.stringify(assets)};
+const worker = `${transportCode}\n${catalogueCode}\n${libraryCode}\nconst LIBRARY_CONCEPTS=${JSON.stringify(libraryConcepts)};\nconst CURATED=${JSON.stringify(curated)};\n${amazonCode}\n${researchCode}\nconst ASSETS=${JSON.stringify(assets)};
 const CONTENT_TYPES={
   ".html":"text/html; charset=utf-8",
   ".css":"text/css; charset=utf-8",
@@ -108,6 +111,7 @@ export default {
     if(url.pathname==="/api/amazon/recommend")return researchRuntime.publicRecommendation(request,env);
     if(url.pathname==="/api/amazon/catalog")return amazonCatalogue(request,env,CURATED);
     if(url.pathname==="/api/amazon/status")return amazonConnection(request,env);
+    if(url.pathname==="/api/library/status")return libraryStatus(env,LIBRARY_CONCEPTS);
     if(request.method!=="GET"&&request.method!=="HEAD")return new Response("Method Not Allowed",{status:405,headers:{Allow:"GET, HEAD"}});
     let assetPath=route(url.pathname),status=200;
     if(!assetPath){assetPath="/404.html";status=404}
@@ -115,6 +119,9 @@ export default {
     if(!asset)return new Response("Not Found",{status:404});
     const body=request.method==="HEAD"?null:(asset.binary?bytes(asset.body):asset.body);
     return new Response(body,{status,headers:headersFor(assetPath,status)});
+  },
+  async scheduled(event,env,ctx){
+    ctx.waitUntil(runLibraryJob(env,LIBRARY_CONCEPTS).then(report=>console.log("library job",JSON.stringify(report))));
   }
 };
 `;

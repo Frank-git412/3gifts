@@ -9,6 +9,8 @@
   "compatibility_date": "2026-10-01",
   "workers_dev": true,
   "build": { "command": "node scripts/build-worker.mjs" },
+  // Library product job: matches a few concepts and refreshes prices every hour.
+  "triggers": { "crons": ["17 * * * *"] },
   "vars": {
     "AMAZON_CREATORS_CLIENT_ID": "amzn1.application-oa2-client.cc4a0c116fe4405abbeec0dd5127e20a",
     "AMAZON_CREATORS_VERSION": "3.2",
