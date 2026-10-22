@@ -391,3 +391,5 @@ Cerchiamo idee nella fascia di prezzo indicata. Prezzo finale, eventuali spese d
 La fascia di ricerca resta invariata. Per cercare prezzi inferiori, indica un nuovo massimo; il minimo che hai impostato resta valido. => Your search price range stays the same. To explore lower prices, enter a new maximum; your chosen minimum still applies.
 Cibo => Food
 Alcol => Alcohol
+Natale 2026 => Christmas 2026
+Idee regalo divise per persona, con prezzi aggiornati ogni giorno → => Gift ideas by recipient, with prices updated daily →
