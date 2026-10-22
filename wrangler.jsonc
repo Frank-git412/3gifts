@@ -1,13 +1,16 @@
 {
   // Configurazione Cloudflare Workers per 3gifts.it.
-  // I segreti (AMAZON_CREATORS_CLIENT_ID, AMAZON_CREATORS_CLIENT_SECRET) si impostano
-  // con `wrangler secret put` o dal pannello Cloudflare, mai in questo file.
+  // Il segreto AMAZON_CREATORS_CLIENT_SECRET si imposta con `wrangler secret put` o dal
+  // pannello Cloudflare (tipo Secret), mai in questo file. Il Client ID è un identificativo
+  // dell'applicazione, non una credenziale: sta qui perché ogni deploy rimuove le variabili
+  // in chiaro create dal pannello.
   "name": "3gifts",
   "main": "dist/server/index.js",
   "compatibility_date": "2026-10-01",
   "workers_dev": true,
   "build": { "command": "node scripts/build-worker.mjs" },
   "vars": {
+    "AMAZON_CREATORS_CLIENT_ID": "amzn1.application-oa2-client.cc4a0c116fe4405abbeec0dd5127e20a",
     "AMAZON_CREATORS_VERSION": "3.2",
     "AMAZON_PARTNER_TAG": "3gifts-21"
   },
