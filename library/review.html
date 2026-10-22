@@ -1,0 +1,258 @@
+<title>Libreria idee 3Gifts</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap">
+<style>
+/* Layout: one review column of concept cards under a sticky progress bar, the 3Gifts palette. */
+:root {
+  --bg: #f6f4fb;
+  --surface: #ffffff;
+  --ink: #17132f;
+  --muted: #615b7a;
+  --line: #e2ddf0;
+  --accent: #5b45d6;
+  --accent-soft: #ece8fd;
+  --coral: #f08a4b;
+  --ok: #1d7a4f;
+  --ok-soft: #e1f3e9;
+  --no: #b3364a;
+  --no-soft: #fbe6ea;
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
+  --body: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #14111f; --surface: #1e1a2e; --ink: #eeeaf8; --muted: #a9a2c2; --line: #332d4a;
+    --accent: #a594ff; --accent-soft: #2b2450; --coral: #f5a172;
+    --ok: #6fd3a0; --ok-soft: #173a2a; --no: #f08a9b; --no-soft: #3d1c24; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #14111f; --surface: #1e1a2e; --ink: #eeeaf8; --muted: #a9a2c2; --line: #332d4a;
+  --accent: #a594ff; --accent-soft: #2b2450; --coral: #f5a172;
+  --ok: #6fd3a0; --ok-soft: #173a2a; --no: #f08a9b; --no-soft: #3d1c24; color-scheme: dark;
+}
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.5; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+.wrap { max-width: 760px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+header.intro { padding-block: 28px 8px; }
+.brand { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; color: var(--ink); }
+.brand b { display: inline-grid; place-items: center; width: 26px; height: 26px; border: 2px solid var(--ink); border-radius: 7px; background: var(--coral); color: #17132f; font-size: 15px; }
+h1 { font-family: var(--display); font-size: clamp(1.7rem, 4vw, 2.3rem); line-height: 1.15; margin: 14px 0 8px; text-wrap: balance; }
+.lede { color: var(--muted); max-width: 62ch; margin: 0; }
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--surface); border-bottom: 1px solid var(--line); }
+.bar .wrap { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; padding-block: 12px; }
+.counts { display: flex; gap: 14px; font-variant-numeric: tabular-nums; font-size: 14px; }
+.counts span strong { font-size: 16px; }
+.c-ok strong { color: var(--ok); } .c-no strong { color: var(--no); } .c-todo strong { color: var(--accent); }
+.progress { flex: 1 1 160px; height: 6px; border-radius: 99px; background: var(--line); overflow: hidden; display: flex; }
+.progress i { display: block; height: 100%; }
+.progress .p-ok { background: var(--ok); } .progress .p-no { background: var(--no); }
+.filters { display: flex; flex-wrap: wrap; gap: 6px; width: 100%; }
+.filters button, .filters select { font: inherit; font-size: 13px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); border-radius: 99px; padding: 5px 12px; cursor: pointer; }
+.filters button[aria-pressed="true"] { background: var(--ink); color: var(--surface); border-color: var(--ink); }
+.filters select { border-radius: 8px; }
+main.wrap { padding-block: 18px 60px; display: grid; gap: 14px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px; display: grid; gap: 10px; min-width: 0; }
+.card[data-decision="approved"] { border-color: var(--ok); }
+.card[data-decision="rejected"] { border-color: var(--no); opacity: .82; }
+.card-top { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+.card h2 { font-family: var(--display); font-size: 1.25rem; line-height: 1.25; margin: 0; text-wrap: balance; }
+.price { font-variant-numeric: tabular-nums; font-weight: 700; white-space: nowrap; }
+.pitch { margin: 0; }
+.why { margin: 0; color: var(--muted); font-size: 14px; }
+.tags { display: grid; gap: 6px; font-size: 13px; }
+.tagrow { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; }
+.tagrow > span:first-child { color: var(--muted); width: 84px; flex: none; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+.chip { background: var(--accent-soft); color: var(--ink); border-radius: 6px; padding: 1px 8px; }
+.chip.warn { background: var(--no-soft); }
+.query { font-size: 13px; color: var(--muted); }
+.query code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 12.5px; color: var(--ink); overflow-wrap: anywhere; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.actions button { font: inherit; font-weight: 700; font-size: 14px; border-radius: 10px; padding: 8px 16px; cursor: pointer; border: 2px solid var(--line); background: var(--surface); color: var(--ink); }
+.actions .approve[aria-pressed="true"] { background: var(--ok-soft); border-color: var(--ok); color: var(--ok); }
+.actions .reject[aria-pressed="true"] { background: var(--no-soft); border-color: var(--no); color: var(--no); }
+.actions button:focus-visible, .filters button:focus-visible, textarea:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.saved { font-size: 12px; color: var(--muted); }
+textarea { font: inherit; font-size: 14px; width: 100%; box-sizing: border-box; min-height: 44px; resize: vertical; border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; background: var(--bg); color: var(--ink); }
+.state { background: var(--surface); border: 1px dashed var(--line); border-radius: 14px; padding: 28px 20px; text-align: center; color: var(--muted); }
+@media (prefers-reduced-motion: no-preference) { .card { transition: border-color .15s, opacity .15s; } }
+</style>
+
+<header class="intro wrap">
+  <span class="brand"><b>3</b> Gifts</span>
+  <h1>Libreria idee: revisione</h1>
+  <p class="lede">Ogni scheda è un concetto di regalo che il nuovo motore potrà proporre. Approva quelli che regaleresti davvero, scarta gli altri e scrivi un commento se qualcosa va cambiato: Claude legge le tue scelte e corregge la libreria.</p>
+</header>
+
+<div class="bar">
+  <div class="wrap">
+    <div class="counts" aria-live="polite">
+      <span class="c-todo"><strong id="nTodo">0</strong> da rivedere</span>
+      <span class="c-ok"><strong id="nOk">0</strong> approvati</span>
+      <span class="c-no"><strong id="nNo">0</strong> scartati</span>
+    </div>
+    <div class="progress" aria-hidden="true"><i class="p-ok" id="pOk"></i><i class="p-no" id="pNo"></i></div>
+    <div class="filters" role="group" aria-label="Filtra le schede">
+      <button type="button" data-filter="todo" aria-pressed="true">Da rivedere</button>
+      <button type="button" data-filter="all" aria-pressed="false">Tutti</button>
+      <button type="button" data-filter="approved" aria-pressed="false">Approvati</button>
+      <button type="button" data-filter="rejected" aria-pressed="false">Scartati</button>
+      <select id="areaFilter" aria-label="Filtra per area"><option value="">Tutte le aree</option></select>
+    </div>
+  </div>
+</div>
+
+<main class="wrap" id="list">
+  <div class="state" id="state">Caricamento della libreria…</div>
+</main>
+
+<script>
+const L = {
+  ages: { child: "7–12 anni", teen: "13–17", youngAdult: "18–34", adult: "35–54", mature: "55+", earlyChild: "0–6 anni", unknown: "età non indicata" },
+  relations: { partner: "Partner", friend: "Amico/a", family: "Familiare", colleague: "Collega", couple: "Coppia" },
+  gender: { any: "Per tutti", women: "Da donna", men: "Da uomo" },
+  tones: { sentimental: "Emozionare", useful: "Essere utile", funny: "Far sorridere", surprising: "Sorprendere", elegant: "Essere elegante", neutral: "Neutro" },
+  occasions: { any: "Ogni occasione", birthday: "Compleanno", anniversary: "Anniversario", christmas: "Natale", thanks: "Grazie", graduation: "Laurea", newhome: "Casa nuova", wedding: "Matrimonio", newbaby: "Nascita", event: "Altra ricorrenza" },
+  interests: { techGaming: "Tecnologia e gaming", culture: "Libri, fumetti e cultura", mediaAudio: "Musica, cinema e audio", foodDrink: "Cucina e degustazione", travelOutdoor: "Viaggi e outdoor", sportFitness: "Sport e fitness", artPhoto: "Creatività e fotografia", homeGarden: "Casa, design e giardinaggio", styleBeauty: "Moda, beauty e accessori", animalsNature: "Animali e natura", gamesCollecting: "Giochi, hobby e collezionismo", newsBusiness: "Lavoro, studio e attualità", kidsScience: "Bambini: scienza", kidsGames: "Bambini: giochi da tavolo" },
+  kind: { object: "Oggetto", experience: "Esperienza", subscription: "Abbonamento", consumable: "Da consumare" },
+  avoid: { bulky: "ingombrante", sizes: "taglie", foodAlcohol: "cibo o alcol", subscriptions: "abbonamento", experiences: "esperienza", gadgets: "gadget tecnologico" },
+};
+const $ = s => document.querySelector(s);
+const label = (map, v) => map[v] || v;
+let concepts = [], reviews = {}, filter = "todo", area = "", db = null, readOnly = false;
+const pending = new Map();
+
+function decisionOf(id) { return reviews[id]?.decision || ""; }
+
+function chips(title, values, map, cls = "") {
+  if (!values?.length) return "";
+  const row = document.createElement("div");
+  row.className = "tagrow";
+  const t = document.createElement("span"); t.textContent = title; row.append(t);
+  for (const v of values) { const c = document.createElement("span"); c.className = "chip " + cls; c.textContent = label(map, v); row.append(c); }
+  return row;
+}
+
+function card(c) {
+  const el = document.createElement("article");
+  el.className = "card"; el.dataset.id = c.id; el.dataset.decision = decisionOf(c.id);
+  const top = document.createElement("div"); top.className = "card-top";
+  const h = document.createElement("h2"); h.textContent = c.title;
+  const p = document.createElement("span"); p.className = "price"; p.textContent = `${c.price.min}–${c.price.max} €`;
+  top.append(h, p);
+  const pitch = document.createElement("p"); pitch.className = "pitch"; pitch.textContent = c.pitch;
+  const why = document.createElement("p"); why.className = "why"; why.textContent = c.whyItWorks;
+  const tags = document.createElement("div"); tags.className = "tags";
+  const rows = [
+    chips("Per chi", c.relations, L.relations),
+    chips("Età", c.ages, L.ages),
+    chips("Genere", [c.gender], L.gender),
+    chips("Aree", c.interests, L.interests),
+    chips("Effetto", c.tones, L.tones),
+    chips("Occasioni", c.occasions, L.occasions),
+    chips("Tipo", [c.kind].concat(c.lastMinute ? ["Ultimo minuto"] : []), L.kind),
+    chips("Escluso se", c.avoidFlags, L.avoid, "warn"),
+  ].filter(Boolean);
+  tags.append(...rows);
+  const q = document.createElement("div"); q.className = "query";
+  q.append("Ricerca Amazon: "); const code = document.createElement("code"); code.textContent = c.amazonQuery; q.append(code);
+  const actions = document.createElement("div"); actions.className = "actions";
+  const ok = document.createElement("button"); ok.type = "button"; ok.className = "approve"; ok.textContent = "Approva";
+  const no = document.createElement("button"); no.type = "button"; no.className = "reject"; no.textContent = "Scarta";
+  const saved = document.createElement("span"); saved.className = "saved";
+  ok.setAttribute("aria-pressed", String(decisionOf(c.id) === "approved"));
+  no.setAttribute("aria-pressed", String(decisionOf(c.id) === "rejected"));
+  ok.disabled = no.disabled = readOnly;
+  ok.addEventListener("click", () => decide(c.id, decisionOf(c.id) === "approved" ? "" : "approved", saved));
+  no.addEventListener("click", () => decide(c.id, decisionOf(c.id) === "rejected" ? "" : "rejected", saved));
+  actions.append(ok, no, saved);
+  const note = document.createElement("textarea");
+  note.id = "note-" + c.id; note.placeholder = "Commento (facoltativo): cosa cambieresti?"; note.value = reviews[c.id]?.comment || "";
+  note.setAttribute("aria-label", "Commento su " + c.title); note.disabled = readOnly;
+  let timer;
+  note.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(() => saveComment(c.id, note.value, saved), 800); });
+  el.append(top, pitch, why, tags, q, actions, note);
+  return el;
+}
+
+function visible(c) {
+  const d = decisionOf(c.id);
+  if (area && !c.interests.includes(area)) return false;
+  if (filter === "todo") return !d;
+  if (filter === "approved") return d === "approved";
+  if (filter === "rejected") return d === "rejected";
+  return true;
+}
+
+let deferred = false;
+function render() {
+  const list = $("#list");
+  // Never rebuild the list under someone who is typing a comment; catch up when they leave the field.
+  if (document.activeElement?.tagName === "TEXTAREA" && list.contains(document.activeElement)) { deferred = true; updateCounts(); return; }
+  deferred = false;
+  updateCounts();
+  const shown = concepts.filter(visible);
+  list.replaceChildren();
+  if (!concepts.length) { list.append(stateBox("La libreria è vuota per ora: le prime idee arrivano a breve.")); return; }
+  if (!shown.length) { list.append(stateBox(filter === "todo" ? "Hai rivisto tutte le idee di questa selezione." : "Nessuna idea in questa selezione.")); return; }
+  for (const c of shown) list.append(card(c));
+}
+
+function updateCounts() {
+  const ok = concepts.filter(c => decisionOf(c.id) === "approved").length;
+  const no = concepts.filter(c => decisionOf(c.id) === "rejected").length;
+  $("#nOk").textContent = ok; $("#nNo").textContent = no; $("#nTodo").textContent = concepts.length - ok - no;
+  const total = Math.max(concepts.length, 1);
+  $("#pOk").style.width = (ok / total * 100) + "%"; $("#pNo").style.width = (no / total * 100) + "%";
+}
+document.addEventListener("focusout", () => setTimeout(() => { if (deferred) render(); }, 0));
+
+function stateBox(text) { const d = document.createElement("div"); d.className = "state"; d.textContent = text; return d; }
+
+async function write(id, patch, saved) {
+  if (!db || readOnly) return;
+  const next = { ...(reviews[id] || {}), ...patch, updatedAt: new Date().toISOString() };
+  reviews[id] = next;
+  const prev = pending.get(id) || Promise.resolve();
+  const job = prev.then(() => db.doc("reviews/" + id).set(next)).then(
+    () => { saved.textContent = "Salvato"; },
+    e => { saved.textContent = e?.code === "invalid_argument" ? "Non hai i permessi per salvare." : "Non salvato: riprova tra poco."; if (e?.code === "invalid_argument") { readOnly = true; render(); } });
+  pending.set(id, job);
+  return job;
+}
+function decide(id, decision, saved) { write(id, { decision }, saved); render(); }
+function saveComment(id, comment, saved) { if ((reviews[id]?.comment || "") !== comment) write(id, { comment }, saved); }
+
+function fillAreas() {
+  const sel = $("#areaFilter"); const seen = new Set();
+  for (const c of concepts) for (const i of c.interests) seen.add(i);
+  for (const i of [...seen].sort((a, b) => label(L.interests, a).localeCompare(label(L.interests, b), "it"))) {
+    if (sel.querySelector(`option[value="${i}"]`)) continue;
+    const o = document.createElement("option"); o.value = i; o.textContent = label(L.interests, i); sel.append(o);
+  }
+}
+
+document.querySelectorAll("[data-filter]").forEach(b => b.addEventListener("click", () => {
+  filter = b.dataset.filter;
+  document.querySelectorAll("[data-filter]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+  render();
+}));
+$("#areaFilter").addEventListener("change", e => { area = e.target.value; render(); });
+
+(async () => {
+  db = await window.claude?.use?.("db");
+  if (!db) { $("#state").textContent = "Per vedere e salvare la revisione apri questa pagina su claude.ai con il tuo account."; return; }
+  const user = await window.claude.use("user");
+  if (user && (await user.can("data.write")) === false) readOnly = true;
+  db.collection("concepts").onSnapshot(s => {
+    concepts = s.docs.map(d => d.data()).filter(c => c && c.id && c.status !== "archived").sort((a, b) => a.id.localeCompare(b.id));
+    fillAreas(); render();
+  }, () => { $("#list").replaceChildren(stateBox("La libreria non si è caricata. Ricarica la pagina.")); });
+  db.collection("reviews").onSnapshot(s => {
+    const next = {};
+    for (const d of s.docs) next[d.id] = d.data();
+    reviews = next; render();
+  });
+})();
+</script>

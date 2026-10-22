@@ -1,0 +1,2398 @@
+[
+ {
+  "id": "c001-set-da-sommelier-in-legno",
+  "status": "draft",
+  "title": "Set da sommelier in legno",
+  "pitch": "Cofanetto con cavatappi, tappo salvavino, salvagoccia e versatore.",
+  "whyItWorks": "Si regala bene anche a chi non conosci a fondo: elegante da aprire e usato a ogni cena con un buon vino.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family",
+   "colleague",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "foodDrink"
+  ],
+  "subinterests": [
+   "wine"
+  ],
+  "tones": [
+   "elegant",
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "thanks",
+   "newhome"
+  ],
+  "price": {
+   "min": 20,
+   "max": 45
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "foodAlcohol"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "set sommelier cofanetto legno"
+ },
+ {
+  "id": "c002-kit-per-cocktail-fatti-in-casa",
+  "status": "draft",
+  "title": "Kit per cocktail fatti in casa",
+  "pitch": "Shaker, jigger, colino e cucchiaio da bar con un libretto di ricette.",
+  "whyItWorks": "Trasforma una serata a casa in un piccolo rito: diverte chi lo riceve e anche chi viene a cena.",
+  "ages": [
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "foodDrink"
+  ],
+  "subinterests": [
+   "wine"
+  ],
+  "tones": [
+   "funny",
+   "surprising"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "newhome"
+  ],
+  "price": {
+   "min": 25,
+   "max": 50
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "foodAlcohol"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "kit cocktail principianti shaker ricettario"
+ },
+ {
+  "id": "c003-kit-per-fare-la-birra-in-casa",
+  "status": "draft",
+  "title": "Kit per fare la birra in casa",
+  "pitch": "Tutto il necessario per la prima cotta di birra artigianale, con istruzioni passo passo.",
+  "whyItWorks": "È un regalo-progetto: settimane di curiosità e una birra da far assaggiare agli amici.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "foodDrink"
+  ],
+  "subinterests": [
+   "wine"
+  ],
+  "tones": [
+   "surprising",
+   "funny"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 35,
+   "max": 70
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "foodAlcohol",
+   "bulky"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "kit birra artigianale fatta in casa principianti"
+ },
+ {
+  "id": "c004-kit-per-la-pasta-fresca-fatta-a-mano",
+  "status": "draft",
+  "title": "Kit per la pasta fresca fatta a mano",
+  "pitch": "Rotelle, taglia-ravioli, spianatoia o mattarello per fare la pasta in casa.",
+  "whyItWorks": "Tocca chi ama cucinare e invita a passare del tempo insieme ai fornelli.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "foodDrink"
+  ],
+  "subinterests": [
+   "food"
+  ],
+  "tones": [
+   "useful",
+   "sentimental"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "newhome"
+  ],
+  "price": {
+   "min": 20,
+   "max": 45
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "kit pasta fresca fatta in casa rotella taglia ravioli"
+ },
+ {
+  "id": "c005-macchina-per-la-pasta-manuale",
+  "status": "draft",
+  "title": "Macchina per la pasta manuale",
+  "pitch": "Sfogliatrice a manovella in acciaio per lasagne, tagliatelle e tagliolini.",
+  "whyItWorks": "Un oggetto solido che dura anni e che chi cucina usa davvero, non solo a Natale.",
+  "ages": [
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "foodDrink"
+  ],
+  "subinterests": [
+   "food"
+  ],
+  "tones": [
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "newhome",
+   "wedding"
+  ],
+  "price": {
+   "min": 30,
+   "max": 70
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "macchina pasta manuale acciaio sfogliatrice"
+ },
+ {
+  "id": "c006-coltello-da-chef-di-qualita",
+  "status": "draft",
+  "title": "Coltello da chef di qualità",
+  "pitch": "Un coltello da cuoco ben bilanciato, con lama in acciaio e custodia.",
+  "whyItWorks": "Chi cucina sente subito la differenza: è un regalo pratico che fa sentire capiti.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "foodDrink"
+  ],
+  "subinterests": [
+   "food"
+  ],
+  "tones": [
+   "useful",
+   "elegant"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "newhome"
+  ],
+  "price": {
+   "min": 35,
+   "max": 100
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "coltello chef professionale acciaio lama 20 cm"
+ },
+ {
+  "id": "c007-termometro-smart-per-la-carne",
+  "status": "draft",
+  "title": "Termometro smart per la carne",
+  "pitch": "Sonda senza fili che manda al telefono la temperatura della cottura.",
+  "whyItWorks": "Perfetto per chi ama il barbecue o l'arrosto: toglie l'ansia della cottura giusta.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "foodDrink",
+   "techGaming"
+  ],
+  "subinterests": [
+   "food",
+   "tech"
+  ],
+  "tones": [
+   "useful",
+   "surprising"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 25,
+   "max": 70
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "gadgets"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "termometro carne wireless bluetooth sonda"
+ },
+ {
+  "id": "c008-kit-di-erbe-aromatiche-da-coltivare",
+  "status": "draft",
+  "title": "Kit di erbe aromatiche da coltivare in cucina",
+  "pitch": "Vasetti, semi e terriccio per basilico, prezzemolo e altre erbe sul davanzale.",
+  "whyItWorks": "Unisce cucina e verde: piccolo, economico, e regala qualcosa che cresce.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family",
+   "colleague",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "homeGarden",
+   "foodDrink"
+  ],
+  "subinterests": [
+   "garden",
+   "food"
+  ],
+  "tones": [
+   "surprising",
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "thanks",
+   "newhome",
+   "birthday"
+  ],
+  "price": {
+   "min": 15,
+   "max": 35
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "kit coltivazione erbe aromatiche cucina semi vasi"
+ },
+ {
+  "id": "c009-cofanetto-di-te-pregiati",
+  "status": "draft",
+  "title": "Cofanetto di tè pregiati",
+  "pitch": "Selezione di tè e tisane in confezione regalo, con diverse varietà da provare.",
+  "whyItWorks": "Un regalo caldo e sicuro anche per un collega: si apre e si condivide.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family",
+   "colleague",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "foodDrink"
+  ],
+  "subinterests": [
+   "coffeeTea"
+  ],
+  "tones": [
+   "elegant",
+   "neutral"
+  ],
+  "occasions": [
+   "christmas",
+   "thanks",
+   "birthday"
+  ],
+  "price": {
+   "min": 15,
+   "max": 35
+  },
+  "kind": "consumable",
+  "avoidFlags": [
+   "foodAlcohol"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "cofanetto tè pregiati regalo selezione"
+ },
+ {
+  "id": "c010-macinacaffe-manuale",
+  "status": "draft",
+  "title": "Macinacaffè manuale",
+  "pitch": "Macina a mano con macine regolabili per caffè sempre appena macinato.",
+  "whyItWorks": "Per chi il caffè lo ama davvero: un gesto lento al mattino e un aroma diverso.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "foodDrink"
+  ],
+  "subinterests": [
+   "coffeeTea"
+  ],
+  "tones": [
+   "useful",
+   "surprising"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 20,
+   "max": 50
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "macinacaffè manuale macine ceramica regolabile"
+ },
+ {
+  "id": "c011-set-per-caffe-filtro",
+  "status": "draft",
+  "title": "Set per caffè filtro",
+  "pitch": "Dripper, filtri e caraffa per preparare il caffè filtro a casa.",
+  "whyItWorks": "Apre un mondo nuovo a chi beve solo moka: curioso, bello da vedere in cucina.",
+  "ages": [
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "partner",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "foodDrink"
+  ],
+  "subinterests": [
+   "coffeeTea"
+  ],
+  "tones": [
+   "surprising",
+   "elegant"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 25,
+   "max": 55
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "set caffè filtro dripper caraffa v60"
+ },
+ {
+  "id": "c012-tazza-termica-da-viaggio",
+  "status": "draft",
+  "title": "Tazza termica da viaggio",
+  "pitch": "Tazza a doppia parete che tiene caldo il caffè per ore, con coperchio a tenuta.",
+  "whyItWorks": "Un regalo da Secret Santa che non finisce in un cassetto: si usa ogni giorno.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "colleague",
+   "friend",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "foodDrink",
+   "travelOutdoor"
+  ],
+  "subinterests": [
+   "coffeeTea",
+   "organization"
+  ],
+  "tones": [
+   "useful",
+   "neutral"
+  ],
+  "occasions": [
+   "christmas",
+   "thanks",
+   "birthday"
+  ],
+  "price": {
+   "min": 15,
+   "max": 30
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "tazza termica viaggio caffè acciaio coperchio"
+ },
+ {
+  "id": "c013-gioco-da-tavolo-per-serate-tra-amici",
+  "status": "draft",
+  "title": "Gioco da tavolo per serate tra amici",
+  "pitch": "Un party game veloce da spiegare, per gruppi da 4 a 10 persone.",
+  "whyItWorks": "Si apre la sera stessa: un regalo che crea un ricordo invece di occupare uno scaffale.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "friend",
+   "couple",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "gamesCollecting"
+  ],
+  "subinterests": [
+   "boardGames"
+  ],
+  "tones": [
+   "funny"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 15,
+   "max": 35
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "gioco da tavolo party gruppo amici"
+ },
+ {
+  "id": "c014-gioco-di-carte-tascabile-e-divertente",
+  "status": "draft",
+  "title": "Gioco di carte tascabile e divertente",
+  "pitch": "Un gioco di carte veloce e un po' folle, da portare ovunque.",
+  "whyItWorks": "Costa poco, fa ridere subito: ideale per uno scambio di regali tra amici.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "friend",
+   "colleague",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "gamesCollecting"
+  ],
+  "subinterests": [
+   "boardGames"
+  ],
+  "tones": [
+   "funny"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "thanks"
+  ],
+  "price": {
+   "min": 10,
+   "max": 25
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "gioco di carte divertente amici party"
+ },
+ {
+  "id": "c015-gioco-da-tavolo",
+  "status": "draft",
+  "title": "Gioco da tavolo per due",
+  "pitch": "Un gioco pensato per giocare in coppia, con partite da mezz'ora.",
+  "whyItWorks": "Un modo per passare del tempo insieme, senza schermi.",
+  "ages": [
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "partner",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "gamesCollecting"
+  ],
+  "subinterests": [
+   "boardGames"
+  ],
+  "tones": [
+   "funny",
+   "sentimental"
+  ],
+  "occasions": [
+   "christmas",
+   "anniversary",
+   "birthday"
+  ],
+  "price": {
+   "min": 15,
+   "max": 40
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "gioco da tavolo per due giocatori coppia"
+ },
+ {
+  "id": "c016-puzzle-da-1000-pezzi-illustrato",
+  "status": "draft",
+  "title": "Puzzle da 1000 pezzi illustrato",
+  "pitch": "Puzzle con illustrazione d'autore, da fare con calma e poi incorniciare.",
+  "whyItWorks": "Regala pomeriggi tranquilli: piace molto anche a chi dice di non volere niente.",
+  "ages": [
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "family",
+   "friend",
+   "colleague"
+  ],
+  "gender": "any",
+  "interests": [
+   "gamesCollecting"
+  ],
+  "subinterests": [
+   "puzzle"
+  ],
+  "tones": [
+   "neutral",
+   "elegant"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "thanks"
+  ],
+  "price": {
+   "min": 15,
+   "max": 30
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "puzzle 1000 pezzi illustrato adulti"
+ },
+ {
+  "id": "c017-set-di-costruzioni-con-fiori-e-piante",
+  "status": "draft",
+  "title": "Set di costruzioni con fiori e piante",
+  "pitch": "Bouquet o piantina da costruire mattoncino per mattoncino, che non appassisce.",
+  "whyItWorks": "Sorprende chi pensa che le costruzioni siano solo per bambini, e poi arreda casa.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "gamesCollecting",
+   "homeGarden"
+  ],
+  "subinterests": [
+   "puzzle",
+   "home"
+  ],
+  "tones": [
+   "surprising",
+   "elegant"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "anniversary"
+  ],
+  "price": {
+   "min": 30,
+   "max": 70
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "set costruzioni mattoncini fiori bouquet adulti"
+ },
+ {
+  "id": "c018-cuffie-con-cancellazione-del-rumore",
+  "status": "draft",
+  "title": "Cuffie con cancellazione del rumore",
+  "pitch": "Cuffie wireless che isolano dal rumore di treni, uffici e aerei.",
+  "whyItWorks": "Regala silenzio e concentrazione: chi viaggia o lavora in open space le usa ogni giorno.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "partner",
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "techGaming",
+   "mediaAudio"
+  ],
+  "subinterests": [
+   "tech",
+   "music"
+  ],
+  "tones": [
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "graduation"
+  ],
+  "price": {
+   "min": 50,
+   "max": 200
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "gadgets"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "cuffie bluetooth cancellazione rumore"
+ },
+ {
+  "id": "c019-altoparlante-bluetooth-impermeabile",
+  "status": "draft",
+  "title": "Altoparlante bluetooth impermeabile",
+  "pitch": "Cassa portatile resistente all'acqua, da doccia, spiaggia o gita.",
+  "whyItWorks": "Porta la musica ovunque: piccola, robusta, adatta a quasi ogni età.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "friend",
+   "family",
+   "partner"
+  ],
+  "gender": "any",
+  "interests": [
+   "mediaAudio",
+   "travelOutdoor"
+  ],
+  "subinterests": [
+   "music",
+   "outdoor"
+  ],
+  "tones": [
+   "funny",
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "graduation"
+  ],
+  "price": {
+   "min": 20,
+   "max": 60
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "gadgets"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "altoparlante bluetooth impermeabile portatile"
+ },
+ {
+  "id": "c020-giradischi-portatile",
+  "status": "draft",
+  "title": "Giradischi portatile",
+  "pitch": "Giradischi a valigetta con casse integrate, pronto da collegare.",
+  "whyItWorks": "Per chi ama la musica è un oggetto da tenere in vista, e ogni vinile diventa un nuovo regalo.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "mediaAudio"
+  ],
+  "subinterests": [
+   "music"
+  ],
+  "tones": [
+   "surprising",
+   "sentimental"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "anniversary"
+  ],
+  "price": {
+   "min": 50,
+   "max": 120
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "gadgets"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "giradischi valigetta casse integrate bluetooth"
+ },
+ {
+  "id": "c021-luci-smart-per-creare-atmosfera",
+  "status": "draft",
+  "title": "Luci smart per creare atmosfera",
+  "pitch": "Lampadina o striscia LED da controllare col telefono, con colori e scene.",
+  "whyItWorks": "Cambia l'aria di una stanza con un tocco: fa effetto subito e si installa in pochi minuti.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "friend",
+   "partner",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "techGaming",
+   "homeGarden"
+  ],
+  "subinterests": [
+   "smartHome",
+   "home"
+  ],
+  "tones": [
+   "surprising",
+   "funny"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "newhome"
+  ],
+  "price": {
+   "min": 15,
+   "max": 45
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "gadgets"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "striscia led smart wifi app lampadina colori"
+ },
+ {
+  "id": "c022-localizzatore-per-chiavi-e-borse",
+  "status": "draft",
+  "title": "Localizzatore per chiavi e borse",
+  "pitch": "Piccolo tag da agganciare a chiavi o zaino, si ritrova col telefono.",
+  "whyItWorks": "Perfetto per chi perde sempre tutto: utile, discreto, e strappa un sorriso.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family",
+   "colleague",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "techGaming",
+   "travelOutdoor"
+  ],
+  "subinterests": [
+   "tech",
+   "organization"
+  ],
+  "tones": [
+   "useful",
+   "funny"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "thanks"
+  ],
+  "price": {
+   "min": 20,
+   "max": 40
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "gadgets"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "localizzatore chiavi bluetooth tag tracker"
+ },
+ {
+  "id": "c023-power-bank-compatto",
+  "status": "draft",
+  "title": "Power bank compatto",
+  "pitch": "Batteria esterna sottile, con ricarica rapida, da tenere in borsa.",
+  "whyItWorks": "Un regalo da collega che toglie un problema vero: il telefono scarico fuori casa.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family",
+   "colleague",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "techGaming",
+   "travelOutdoor"
+  ],
+  "subinterests": [
+   "tech",
+   "travel"
+  ],
+  "tones": [
+   "useful",
+   "neutral"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "thanks"
+  ],
+  "price": {
+   "min": 15,
+   "max": 40
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "gadgets"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "power bank compatto ricarica rapida sottile"
+ },
+ {
+  "id": "c024-controller-wireless-per-giocare",
+  "status": "draft",
+  "title": "Controller wireless per giocare",
+  "pitch": "Controller compatibile con PC, telefono o console, con buona autonomia.",
+  "whyItWorks": "Per chi gioca è un upgrade immediato, apprezzato più di un videogioco a caso.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "friend",
+   "partner",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "techGaming"
+  ],
+  "subinterests": [
+   "gaming"
+  ],
+  "tones": [
+   "funny",
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 30,
+   "max": 70
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "gadgets"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "controller wireless pc smartphone bluetooth"
+ },
+ {
+  "id": "c025-e-reader-per-leggere-ovunque",
+  "status": "draft",
+  "title": "E-reader per leggere ovunque",
+  "pitch": "Lettore di libri digitali con schermo antiriflesso e luce regolabile.",
+  "whyItWorks": "Mette in tasca una libreria intera: chi legge molto non torna indietro.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "culture",
+   "techGaming"
+  ],
+  "subinterests": [
+   "books",
+   "tech"
+  ],
+  "tones": [
+   "useful",
+   "elegant"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "graduation"
+  ],
+  "price": {
+   "min": 90,
+   "max": 180
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "gadgets"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "ereader schermo antiriflesso luce regolabile"
+ },
+ {
+  "id": "c026-abbonamento-ad-audiolibri",
+  "status": "draft",
+  "title": "Abbonamento ad audiolibri",
+  "pitch": "Mesi di audiolibri e podcast da ascoltare in auto, in palestra o prima di dormire.",
+  "whyItWorks": "Per chi ama le storie ma non ha tempo di leggere. Arriva subito: salva i regali dell'ultimo minuto.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family",
+   "colleague",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "mediaAudio",
+   "culture"
+  ],
+  "subinterests": [
+   "audio",
+   "books"
+  ],
+  "tones": [
+   "useful",
+   "surprising"
+  ],
+  "occasions": [
+   "any"
+  ],
+  "price": {
+   "min": 10,
+   "max": 60
+  },
+  "kind": "subscription",
+  "avoidFlags": [
+   "subscriptions"
+  ],
+  "lastMinute": true,
+  "amazonQuery": "abbonamento audible regalo audiolibri"
+ },
+ {
+  "id": "c027-manga-o-graphic-novel-in-cofanetto",
+  "status": "draft",
+  "title": "Manga o graphic novel in cofanetto",
+  "pitch": "Serie completa o volume speciale di un fumetto amato, in edizione da collezione.",
+  "whyItWorks": "Per chi colleziona, completare una serie è un piccolo sogno che si avvera.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "friend",
+   "partner",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "culture"
+  ],
+  "subinterests": [
+   "comics"
+  ],
+  "tones": [
+   "surprising",
+   "funny"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 20,
+   "max": 60
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "cofanetto manga serie completa graphic novel"
+ },
+ {
+  "id": "c028-libro-di-ricette-di-cucina-del-mondo",
+  "status": "draft",
+  "title": "Libro di ricette di cucina del mondo",
+  "pitch": "Ricettario illustrato su una cucina specifica, dalla giapponese alla mediorientale.",
+  "whyItWorks": "Un viaggio da fare a casa: ispira nuove cene e si sfoglia volentieri.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family",
+   "colleague"
+  ],
+  "gender": "any",
+  "interests": [
+   "foodDrink",
+   "culture"
+  ],
+  "subinterests": [
+   "food",
+   "books"
+  ],
+  "tones": [
+   "surprising",
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "newhome"
+  ],
+  "price": {
+   "min": 15,
+   "max": 35
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "libro ricette cucina giapponese illustrato"
+ },
+ {
+  "id": "c029-diario-dei-ricordi-da-compilare",
+  "status": "draft",
+  "title": "Diario dei ricordi da compilare per i nonni",
+  "pitch": "Libro-intervista con domande sulla loro vita, da riempire e poi rileggere insieme.",
+  "whyItWorks": "Il regalo più emozionante per un nonno o un genitore: diventa un ricordo di famiglia.",
+  "ages": [
+   "mature"
+  ],
+  "relations": [
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "culture",
+   "newsBusiness"
+  ],
+  "subinterests": [
+   "books",
+   "writing"
+  ],
+  "tones": [
+   "sentimental"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "thanks"
+  ],
+  "price": {
+   "min": 12,
+   "max": 25
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "libro nonno raccontami diario ricordi da compilare"
+ },
+ {
+  "id": "c030-agenda-2027-di-qualita",
+  "status": "draft",
+  "title": "Agenda 2027 di qualità",
+  "pitch": "Agenda o planner settimanale con copertina rigida e carta spessa.",
+  "whyItWorks": "Si regala a dicembre e accompagna tutto l'anno: utile, elegante, adatta anche ai colleghi.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family",
+   "colleague",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "newsBusiness"
+  ],
+  "subinterests": [
+   "productivity",
+   "writing"
+  ],
+  "tones": [
+   "useful",
+   "elegant"
+  ],
+  "occasions": [
+   "christmas",
+   "graduation",
+   "thanks"
+  ],
+  "price": {
+   "min": 15,
+   "max": 35
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "agenda 2027 settimanale copertina rigida"
+ },
+ {
+  "id": "c031-penna-stilografica-per-iniziare",
+  "status": "draft",
+  "title": "Penna stilografica per iniziare",
+  "pitch": "Stilografica affidabile con cartucce, in confezione regalo.",
+  "whyItWorks": "Un piccolo lusso quotidiano: fa sentire importante chi scrive appunti o firma documenti.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "colleague",
+   "family",
+   "partner"
+  ],
+  "gender": "any",
+  "interests": [
+   "newsBusiness"
+  ],
+  "subinterests": [
+   "writing"
+  ],
+  "tones": [
+   "elegant"
+  ],
+  "occasions": [
+   "christmas",
+   "graduation",
+   "birthday"
+  ],
+  "price": {
+   "min": 20,
+   "max": 60
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "penna stilografica regalo confezione"
+ },
+ {
+  "id": "c032-taccuino-in-pelle",
+  "status": "draft",
+  "title": "Taccuino in pelle",
+  "pitch": "Taccuino rilegato in pelle con carta spessa, spesso personalizzabile con le iniziali.",
+  "whyItWorks": "Invita a scrivere idee, viaggi e pensieri: con le iniziali diventa unico.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family",
+   "colleague"
+  ],
+  "gender": "any",
+  "interests": [
+   "newsBusiness",
+   "travelOutdoor"
+  ],
+  "subinterests": [
+   "writing",
+   "travel"
+  ],
+  "tones": [
+   "elegant",
+   "sentimental"
+  ],
+  "occasions": [
+   "christmas",
+   "graduation",
+   "birthday"
+  ],
+  "price": {
+   "min": 20,
+   "max": 45
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "taccuino pelle personalizzabile iniziali"
+ },
+ {
+  "id": "c033-fotocamera-istantanea",
+  "status": "draft",
+  "title": "Fotocamera istantanea",
+  "pitch": "Fotocamera che stampa subito la foto in formato tascabile.",
+  "whyItWorks": "Ogni festa diventa un album da toccare: è il regalo che tutti vogliono provare.",
+  "ages": [
+   "teen",
+   "youngAdult"
+  ],
+  "relations": [
+   "friend",
+   "partner",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "artPhoto"
+  ],
+  "subinterests": [
+   "photo"
+  ],
+  "tones": [
+   "funny",
+   "surprising"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "graduation"
+  ],
+  "price": {
+   "min": 60,
+   "max": 110
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "gadgets"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "fotocamera istantanea instax mini"
+ },
+ {
+  "id": "c034-stampante-fotografica-tascabile",
+  "status": "draft",
+  "title": "Stampante fotografica tascabile",
+  "pitch": "Piccola stampante che stampa le foto del telefono su carta adesiva.",
+  "whyItWorks": "Riporta le foto fuori dal telefono: perfetta per diari, frigoriferi e lettere.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "friend",
+   "partner",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "artPhoto"
+  ],
+  "subinterests": [
+   "photo"
+  ],
+  "tones": [
+   "surprising",
+   "sentimental"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 50,
+   "max": 120
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "gadgets"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "stampante foto portatile smartphone"
+ },
+ {
+  "id": "c035-cornice-digitale-per-le-foto-di-famiglia",
+  "status": "draft",
+  "title": "Cornice digitale per le foto di famiglia",
+  "pitch": "Cornice che riceve via app le foto inviate da figli e nipoti.",
+  "whyItWorks": "Avvicina chi è lontano: i nonni vedono arrivare le foto nuove ogni settimana.",
+  "ages": [
+   "mature"
+  ],
+  "relations": [
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "artPhoto",
+   "techGaming"
+  ],
+  "subinterests": [
+   "photo",
+   "tech"
+  ],
+  "tones": [
+   "sentimental"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 50,
+   "max": 120
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "gadgets"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "cornice digitale wifi app foto"
+ },
+ {
+  "id": "c036-album-fotografico-da-riempire",
+  "status": "draft",
+  "title": "Album fotografico da riempire",
+  "pitch": "Album con pagine spesse per incollare foto, biglietti e ricordi.",
+  "whyItWorks": "Un regalo che si completa insieme: perfetto per raccontare un anno o un viaggio.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "artPhoto"
+  ],
+  "subinterests": [
+   "photo"
+  ],
+  "tones": [
+   "sentimental"
+  ],
+  "occasions": [
+   "anniversary",
+   "christmas",
+   "wedding",
+   "birthday"
+  ],
+  "price": {
+   "min": 15,
+   "max": 35
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "album fotografico da riempire pagine nere"
+ },
+ {
+  "id": "c037-kit-acquerello-per-principianti",
+  "status": "draft",
+  "title": "Kit acquerello per principianti",
+  "pitch": "Acquerelli, pennelli e carta di qualità per iniziare a dipingere.",
+  "whyItWorks": "Accende una passione nuova con poco: rilassa e dà soddisfazione già dai primi giorni.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "friend",
+   "partner",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "artPhoto"
+  ],
+  "subinterests": [
+   "creative"
+  ],
+  "tones": [
+   "surprising",
+   "sentimental"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 20,
+   "max": 45
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "kit acquerello principianti adulti pennelli carta"
+ },
+ {
+  "id": "c038-kit-di-ricamo-moderno",
+  "status": "draft",
+  "title": "Kit di ricamo moderno",
+  "pitch": "Telaio, fili e disegno moderno da ricamare, con istruzioni per chi parte da zero.",
+  "whyItWorks": "Un passatempo tranquillo e alla moda, che finisce in un quadretto da appendere.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "friend",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "artPhoto"
+  ],
+  "subinterests": [
+   "craft"
+  ],
+  "tones": [
+   "surprising"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 15,
+   "max": 30
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "kit ricamo principianti moderno telaio"
+ },
+ {
+  "id": "c039-kit-per-fare-candele-in-casa",
+  "status": "draft",
+  "title": "Kit per fare candele in casa",
+  "pitch": "Cera di soia, stoppini, profumi e contenitori per creare candele fatte a mano.",
+  "whyItWorks": "Diverte durante e profuma dopo: un regalo creativo che riempie una domenica.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "friend",
+   "partner",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "artPhoto",
+   "homeGarden"
+  ],
+  "subinterests": [
+   "craft",
+   "home"
+  ],
+  "tones": [
+   "surprising",
+   "funny"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 20,
+   "max": 40
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "kit fare candele cera soia fai da te"
+ },
+ {
+  "id": "c040-candela-profumata-di-qualita",
+  "status": "draft",
+  "title": "Candela profumata di qualità",
+  "pitch": "Candela in vaso di vetro con profumo naturale e lunga durata.",
+  "whyItWorks": "Il regalo elegante per eccellenza quando conosci poco la persona.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family",
+   "colleague",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "homeGarden"
+  ],
+  "subinterests": [
+   "home"
+  ],
+  "tones": [
+   "elegant",
+   "neutral"
+  ],
+  "occasions": [
+   "christmas",
+   "thanks",
+   "newhome",
+   "birthday"
+  ],
+  "price": {
+   "min": 15,
+   "max": 35
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "candela profumata vaso vetro cera di soia"
+ },
+ {
+  "id": "c041-coperta-morbida-per-il-divano",
+  "status": "draft",
+  "title": "Coperta morbida per il divano",
+  "pitch": "Plaid in pile o maglia, grande e caldo, per le serate d'inverno.",
+  "whyItWorks": "Il comfort fatto regalo: si usa subito, ogni sera, per tutto l'inverno.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "family",
+   "friend",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "homeGarden"
+  ],
+  "subinterests": [
+   "home"
+  ],
+  "tones": [
+   "useful",
+   "sentimental"
+  ],
+  "occasions": [
+   "christmas",
+   "newhome",
+   "birthday"
+  ],
+  "price": {
+   "min": 20,
+   "max": 50
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "coperta plaid divano morbida pile grande"
+ },
+ {
+  "id": "c042-kit-per-un-terrario",
+  "status": "draft",
+  "title": "Kit per un terrario",
+  "pitch": "Vaso in vetro, substrato e piccole piante per creare un giardino in miniatura.",
+  "whyItWorks": "Un pezzo di natura sulla scrivania, bello da costruire e facile da curare.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "friend",
+   "partner",
+   "colleague",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "homeGarden",
+   "animalsNature"
+  ],
+  "subinterests": [
+   "garden",
+   "nature"
+  ],
+  "tones": [
+   "surprising",
+   "elegant"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "newhome",
+   "thanks"
+  ],
+  "price": {
+   "min": 20,
+   "max": 50
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "kit terrario vetro piante succulente"
+ },
+ {
+  "id": "c043-set-per-una-spa-a-casa",
+  "status": "draft",
+  "title": "Set per una spa a casa",
+  "pitch": "Maschere, sali da bagno e accessori per una serata di relax.",
+  "whyItWorks": "Dice «prenditi del tempo per te» senza bisogno di altre parole.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family"
+  ],
+  "gender": "women",
+  "interests": [
+   "styleBeauty"
+  ],
+  "subinterests": [
+   "skincare"
+  ],
+  "tones": [
+   "sentimental",
+   "elegant"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "thanks"
+  ],
+  "price": {
+   "min": 20,
+   "max": 50
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "set spa regalo relax bagno maschere"
+ },
+ {
+  "id": "c044-sciarpa-in-lana-o-cashmere",
+  "status": "draft",
+  "title": "Sciarpa in lana o cashmere",
+  "pitch": "Sciarpa morbida e calda in tinta neutra, facile da abbinare.",
+  "whyItWorks": "Un classico che non sbaglia in inverno, sia per lei sia per lui.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "styleBeauty"
+  ],
+  "subinterests": [
+   "style"
+  ],
+  "tones": [
+   "elegant",
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 25,
+   "max": 80
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "sciarpa cashmere lana uomo donna"
+ },
+ {
+  "id": "c045-portafoglio-sottile-in-pelle",
+  "status": "draft",
+  "title": "Portafoglio sottile in pelle",
+  "pitch": "Portafoglio slim con protezione per le carte contactless.",
+  "whyItWorks": "Sostituisce il vecchio portafoglio gonfio: utile ogni giorno e semplice da scegliere.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "family"
+  ],
+  "gender": "men",
+  "interests": [
+   "styleBeauty"
+  ],
+  "subinterests": [
+   "style"
+  ],
+  "tones": [
+   "useful",
+   "elegant"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "graduation"
+  ],
+  "price": {
+   "min": 20,
+   "max": 50
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "portafoglio slim pelle rfid"
+ },
+ {
+  "id": "c046-collana-minimal-con-iniziale",
+  "status": "draft",
+  "title": "Collana minimal con iniziale",
+  "pitch": "Collana sottile con ciondolo a lettera, in acciaio o argento.",
+  "whyItWorks": "Personale senza essere impegnativa: perfetta per un'amica, una sorella o il primo Natale insieme.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family"
+  ],
+  "gender": "women",
+  "interests": [
+   "styleBeauty"
+  ],
+  "subinterests": [
+   "jewelry"
+  ],
+  "tones": [
+   "sentimental",
+   "elegant"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "anniversary"
+  ],
+  "price": {
+   "min": 20,
+   "max": 60
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "collana iniziale lettera argento donna"
+ },
+ {
+  "id": "c047-braccialetto-fitness",
+  "status": "draft",
+  "title": "Braccialetto fitness",
+  "pitch": "Contapassi con monitoraggio di sonno, battito e allenamenti.",
+  "whyItWorks": "Un aiuto discreto per muoversi di più, utile a qualsiasi livello di allenamento.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "sportFitness",
+   "techGaming"
+  ],
+  "subinterests": [
+   "wearable",
+   "tech"
+  ],
+  "tones": [
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 30,
+   "max": 70
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "gadgets"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "braccialetto fitness tracker sonno battito"
+ },
+ {
+  "id": "c048-pistola-massaggiante-compatta",
+  "status": "draft",
+  "title": "Pistola massaggiante compatta",
+  "pitch": "Massaggiatore a percussione per sciogliere i muscoli dopo lo sport o il lavoro.",
+  "whyItWorks": "Chi la prova non ne fa più a meno: utile per sportivi e per chi passa la giornata alla scrivania.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "sportFitness"
+  ],
+  "subinterests": [
+   "recovery"
+  ],
+  "tones": [
+   "useful",
+   "surprising"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 40,
+   "max": 100
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "gadgets"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "pistola massaggiante compatta percussione"
+ },
+ {
+  "id": "c049-tappetino-yoga-di-qualita",
+  "status": "draft",
+  "title": "Tappetino yoga di qualità",
+  "pitch": "Tappetino spesso e antiscivolo, con cinghia per portarlo.",
+  "whyItWorks": "Per chi fa yoga o pilates a casa o in palestra: si sente la differenza dal primo esercizio.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "sportFitness"
+  ],
+  "subinterests": [
+   "fitness"
+  ],
+  "tones": [
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 25,
+   "max": 60
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "tappetino yoga antiscivolo spesso"
+ },
+ {
+  "id": "c050-borraccia-termica-in-acciaio",
+  "status": "draft",
+  "title": "Borraccia termica in acciaio",
+  "pitch": "Borraccia che tiene fredde o calde le bevande per ore, senza plastica.",
+  "whyItWorks": "Utile ogni giorno, in ufficio o in montagna: un regalo sostenibile e sicuro.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family",
+   "colleague",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "sportFitness",
+   "travelOutdoor"
+  ],
+  "subinterests": [
+   "fitness",
+   "outdoor"
+  ],
+  "tones": [
+   "useful",
+   "neutral"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "thanks"
+  ],
+  "price": {
+   "min": 15,
+   "max": 35
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "borraccia termica acciaio 750 ml"
+ },
+ {
+  "id": "c051-lampada-frontale-ricaricabile",
+  "status": "draft",
+  "title": "Lampada frontale ricaricabile",
+  "pitch": "Frontale leggera e potente, ricaricabile via USB.",
+  "whyItWorks": "Per escursioni, campeggio o lavori in casa: piccola, ma sempre nello zaino.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "friend",
+   "family",
+   "partner"
+  ],
+  "gender": "any",
+  "interests": [
+   "travelOutdoor"
+  ],
+  "subinterests": [
+   "outdoor"
+  ],
+  "tones": [
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 15,
+   "max": 40
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "lampada frontale ricaricabile usb led"
+ },
+ {
+  "id": "c052-mappa-del-mondo-da-grattare",
+  "status": "draft",
+  "title": "Mappa del mondo da grattare",
+  "pitch": "Poster con la mappa del mondo da grattare nei Paesi già visitati.",
+  "whyItWorks": "Racconta i viaggi fatti e invoglia a farne di nuovi: bella da appendere.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "travelOutdoor"
+  ],
+  "subinterests": [
+   "travel"
+  ],
+  "tones": [
+   "funny",
+   "sentimental"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "anniversary",
+   "graduation"
+  ],
+  "price": {
+   "min": 15,
+   "max": 35
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "mappa del mondo da grattare poster viaggi"
+ },
+ {
+  "id": "c053-organizer-da-viaggio-per-cavi",
+  "status": "draft",
+  "title": "Organizer da viaggio per cavi",
+  "pitch": "Astuccio con scomparti per caricabatterie, cavi e piccoli accessori.",
+  "whyItWorks": "Mette ordine in valigia e in borsa: piace a chi viaggia spesso per lavoro.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family",
+   "colleague",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "travelOutdoor"
+  ],
+  "subinterests": [
+   "organization",
+   "travel"
+  ],
+  "tones": [
+   "useful",
+   "neutral"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "thanks"
+  ],
+  "price": {
+   "min": 12,
+   "max": 30
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "organizer cavi viaggio astuccio elettronica"
+ },
+ {
+  "id": "c054-binocolo-compatto",
+  "status": "draft",
+  "title": "Binocolo compatto",
+  "pitch": "Binocolo leggero per escursioni, birdwatching o concerti.",
+  "whyItWorks": "Fa scoprire dettagli che a occhio nudo sfuggono: un invito ad andare fuori.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "family",
+   "friend",
+   "partner"
+  ],
+  "gender": "any",
+  "interests": [
+   "animalsNature",
+   "travelOutdoor"
+  ],
+  "subinterests": [
+   "nature",
+   "outdoor"
+  ],
+  "tones": [
+   "surprising",
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 30,
+   "max": 80
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "binocolo compatto 10x25 escursioni birdwatching"
+ },
+ {
+  "id": "c055-gioco-interattivo-per-gatti",
+  "status": "draft",
+  "title": "Gioco interattivo per gatti",
+  "pitch": "Gioco che stimola il gatto a cacciare e muoversi anche quando è solo.",
+  "whyItWorks": "Per chi ama il suo gatto, un regalo all'animale è un regalo al padrone.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "friend",
+   "family",
+   "partner",
+   "colleague"
+  ],
+  "gender": "any",
+  "interests": [
+   "animalsNature"
+  ],
+  "subinterests": [
+   "pets"
+  ],
+  "tones": [
+   "funny"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "thanks"
+  ],
+  "price": {
+   "min": 15,
+   "max": 35
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "gioco interattivo gatti automatico"
+ },
+ {
+  "id": "c056-kit-di-esperimenti-scientifici",
+  "status": "draft",
+  "title": "Kit di esperimenti scientifici",
+  "pitch": "Scatola con materiali e istruzioni per esperimenti di chimica o fisica sicuri.",
+  "whyItWorks": "Unisce gioco e scoperta: i bambini curiosi lo usano per settimane.",
+  "ages": [
+   "child"
+  ],
+  "relations": [
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "kidsScience"
+  ],
+  "subinterests": [
+   "kidsScience_scienceKits"
+  ],
+  "tones": [
+   "surprising",
+   "funny"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 20,
+   "max": 40
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "kit esperimenti scientifici bambini 8 anni"
+ },
+ {
+  "id": "c057-gioco-da-tavolo-per-famiglie-con-bambini",
+  "status": "draft",
+  "title": "Gioco da tavolo per famiglie con bambini",
+  "pitch": "Gioco semplice da imparare, dove bambini e adulti giocano alla pari.",
+  "whyItWorks": "Riunisce la famiglia attorno al tavolo nelle serate di festa.",
+  "ages": [
+   "child"
+  ],
+  "relations": [
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "kidsGames"
+  ],
+  "subinterests": [
+   "kidsGames_familyGames"
+  ],
+  "tones": [
+   "funny"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 15,
+   "max": 35
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "gioco da tavolo famiglia bambini 7 anni"
+ }
+]
