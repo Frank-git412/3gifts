@@ -10,7 +10,8 @@ const robots=fs.readFileSync(path.join(ROOT,'robots.txt'),'utf8');
 const sitemap=fs.readFileSync(path.join(ROOT,'sitemap.xml'),'utf8');
 check(robots.includes('User-agent: *')&&robots.includes('Allow: /'),'robots permits crawling');
 check(robots.includes('Sitemap: https://3gifts.it/sitemap.xml'),'robots advertises canonical sitemap');
-check((sitemap.match(/<url>/g)||[]).length===21,'sitemap contains the 21 Italian pages');
+const ideaGuides=JSON.parse(fs.readFileSync(path.join(__dirname,'..','library','guides.json'),'utf8'));
+check((sitemap.match(/<url>/g)||[]).length===21+1+ideaGuides.length,'sitemap contains the 21 Italian pages and the idea guides');
 for(const canonical of expectedCanonicals)check((sitemap.match(new RegExp('<loc>'+canonical.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'<\\/loc>','g'))||[]).length===1,'sitemap contains '+canonical+' once');
 for(const file of files){
  const html=fs.readFileSync(file,'utf8'),relative=path.relative(ROOT,file),en=relative.startsWith('en/');

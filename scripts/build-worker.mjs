@@ -37,6 +37,8 @@ const transportCode = fs.readFileSync(path.join(root,"server/amazon-transport.mj
 const catalogueCode = fs.readFileSync(path.join(root,"server/amazon-catalog.mjs"),"utf8").replace(/^import .*?;\n/gm, "").replace("export async function", "async function").replace(/^export \{.*?\};\n/gm, "");
 const curated = JSON.parse(fs.readFileSync(path.join(root,"catalog-products.json"),"utf8")).products;
 const libraryCode=fs.readFileSync(path.join(root,'server/library-products.mjs'),'utf8').replace(/^import .*?;\n/gm,'').replace(/\bexport (?=(?:const|function|async function))/g,'');
+const guidesCode=fs.readFileSync(path.join(root,'server/library-guides.mjs'),'utf8').replace(/^import .*?;\n/gm,'').replace(/\bexport (?=(?:const|function|async function))/g,'');
+const libraryGuides=JSON.parse(fs.readFileSync(path.join(root,'library/guides.json'),'utf8'));
 const engineV2Code=fs.readFileSync(path.join(root,'server/engine-v2.mjs'),'utf8').replace(/^import .*?;\n/gm,'').replace(/\bexport (?=(?:const|function|async function))/g,'');
 // Only approved concepts reach the Worker; editorial fields used by neither the job nor engine v2 stay out.
 const libraryConcepts=JSON.parse(fs.readFileSync(path.join(root,'library/concepts.json'),'utf8')).filter(c=>c.status==='approved').map(({pitch,status,...c})=>c);
@@ -55,7 +57,7 @@ for(const group of fs.readFileSync(path.join(root,'index.html'),'utf8').matchAll
 fs.appendFileSync(path.join(root,'server/research/public-rules.mjs'),'\nexport const CHILD_STAGE_RULES='+JSON.stringify(childStages)+';\n');
 const researchFiles=['reviews','weighted-ranking','technology-keywords','engine','age-policy','catalog-data','product-identity','product-requirements','research-engine','public-rules','pilot-context','pilot-expansion','pilot-closure-rules','pilot-lexicon-data','pilot-family-reviews','pilot-dictionary','expanded-data','expanded-context','relax-use-context','occasion-use-context','gift-context','intent-search','public-adapter'];
 const researchCode='const researchRuntime=(()=>{\n'+researchFiles.map(f=>fs.readFileSync(path.join(root,'server/research/'+f+'.mjs'),'utf8').replace(/^import .*?;\n/gm,'').replace(/\bexport (?=(?:const|function|async function))/g,'')).join('\n')+'\nreturn {publicRecommendation};})();\n';
-const worker = `${transportCode}\n${catalogueCode}\n${libraryCode}\n${engineV2Code}\nconst LIBRARY_CONCEPTS=${JSON.stringify(libraryConcepts)};\nconst CURATED=${JSON.stringify(curated)};\n${amazonCode}\n${researchCode}\nconst ASSETS=${JSON.stringify(assets)};
+const worker = `${transportCode}\n${catalogueCode}\n${libraryCode}\n${engineV2Code}\n${guidesCode}\nconst LIBRARY_GUIDES=${JSON.stringify(libraryGuides)};\nconst LIBRARY_CONCEPTS=${JSON.stringify(libraryConcepts)};\nconst CURATED=${JSON.stringify(curated)};\n${amazonCode}\n${researchCode}\nconst ASSETS=${JSON.stringify(assets)};
 const CONTENT_TYPES={
   ".html":"text/html; charset=utf-8",
   ".css":"text/css; charset=utf-8",
@@ -114,6 +116,10 @@ export default {
     if(url.pathname==="/api/amazon/status")return amazonConnection(request,env);
     if(url.pathname==="/api/library/status")return libraryStatus(env,LIBRARY_CONCEPTS);
     if(url.pathname==="/api/v2/recommend")return recommendV2(request,env,LIBRARY_CONCEPTS);
+    if((request.method==="GET"||request.method==="HEAD")&&(url.pathname==="/idee"||url.pathname.startsWith("/idee/"))){
+      const page=await libraryGuidePage(url.pathname,env,LIBRARY_CONCEPTS,LIBRARY_GUIDES);
+      if(page)return request.method==="HEAD"?new Response(null,{status:page.status,headers:page.headers}):page;
+    }
     if(request.method!=="GET"&&request.method!=="HEAD")return new Response("Method Not Allowed",{status:405,headers:{Allow:"GET, HEAD"}});
     let assetPath=route(url.pathname),status=200;
     if(!assetPath){assetPath="/404.html";status=404}

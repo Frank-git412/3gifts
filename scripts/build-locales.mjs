@@ -101,6 +101,8 @@ const canonicalRoutes=files.flatMap(file=>{
  const clean=file==="index.html"?"":file.replace(/\.html$/,"");
  return [clean];
 });
+// Christmas idea guides are rendered by the Worker from the library; list them for search engines too.
+canonicalRoutes.push("idee",...JSON.parse(read("library/guides.json")).map(g=>"idee/"+g.slug));
 const sitemap='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+canonicalRoutes.map(route=>'  <url><loc>https://3gifts.it/'+route+'</loc></url>').join("\n")+'\n</urlset>\n';
 write("robots.txt","User-agent: *\nAllow: /\nSitemap: https://3gifts.it/sitemap.xml\n");
 write("sitemap.xml",sitemap);
