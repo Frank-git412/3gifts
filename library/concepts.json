@@ -2380,5 +2380,2238 @@
   "avoidFlags": [],
   "lastMinute": false,
   "amazonQuery": "gioco da tavolo famiglia bambini 7 anni"
+ },
+ {
+  "id": "c058-lampada-con-foto-personalizzata",
+  "status": "draft",
+  "title": "Lampada con foto personalizzata",
+  "pitch": "Lampada LED con una vostra foto incisa che si illumina al buio.",
+  "whyItWorks": "Trasforma un ricordo in un oggetto che si accende ogni sera: commuove senza essere eccessivo.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "couple",
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "homeGarden",
+   "artPhoto"
+  ],
+  "subinterests": [
+   "home",
+   "photo"
+  ],
+  "tones": [
+   "sentimental"
+  ],
+  "occasions": [
+   "anniversary",
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 20,
+   "max": 45
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "lampada led foto personalizzata incisa"
+ },
+ {
+  "id": "c059-mappa-stellare-della-vostra-data",
+  "status": "draft",
+  "title": "Mappa stellare della vostra data",
+  "pitch": "Poster con il cielo stellato di una notte importante: il giorno in cui vi siete conosciuti, sposati o è nato un figlio.",
+  "whyItWorks": "Racconta una data che conta solo per voi: è personale e bella da appendere.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "couple",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "homeGarden"
+  ],
+  "subinterests": [
+   "home"
+  ],
+  "tones": [
+   "sentimental",
+   "elegant"
+  ],
+  "occasions": [
+   "anniversary",
+   "wedding",
+   "newbaby",
+   "christmas"
+  ],
+  "price": {
+   "min": 20,
+   "max": 50
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "poster mappa stellare personalizzata data"
+ },
+ {
+  "id": "c060-libro-da-completare-in-coppia",
+  "status": "draft",
+  "title": "Libro da completare in coppia",
+  "pitch": "Diario con domande e spazi da riempire insieme, per raccontarsi e ricordare.",
+  "whyItWorks": "Diventa un rito di coppia e, col tempo, il racconto della vostra storia.",
+  "ages": [
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "partner",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "culture"
+  ],
+  "subinterests": [
+   "books"
+  ],
+  "tones": [
+   "sentimental",
+   "funny"
+  ],
+  "occasions": [
+   "anniversary",
+   "christmas",
+   "birthday",
+   "wedding"
+  ],
+  "price": {
+   "min": 12,
+   "max": 25
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "libro di coppia da compilare domande"
+ },
+ {
+  "id": "c061-barattolo-dei-messaggi",
+  "status": "draft",
+  "title": "Barattolo dei messaggi",
+  "pitch": "Barattolo con bigliettini da scrivere: un pensiero, un ricordo o un buono da leggere quando serve.",
+  "whyItWorks": "Costa poco ma vale molto: il valore lo mettete voi, con le vostre parole.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "artPhoto"
+  ],
+  "subinterests": [
+   "craft"
+  ],
+  "tones": [
+   "sentimental"
+  ],
+  "occasions": [
+   "anniversary",
+   "birthday",
+   "christmas",
+   "thanks"
+  ],
+  "price": {
+   "min": 10,
+   "max": 25
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "barattolo messaggi bigliettini regalo coppia"
+ },
+ {
+  "id": "c062-bracciali-di-coppia",
+  "status": "draft",
+  "title": "Bracciali di coppia",
+  "pitch": "Due bracciali abbinati, uno per ciascuno, discreti e da portare ogni giorno.",
+  "whyItWorks": "Un legame da indossare: semplice, simbolico, adatto anche alle prime ricorrenze.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "partner",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "styleBeauty"
+  ],
+  "subinterests": [
+   "jewelry"
+  ],
+  "tones": [
+   "sentimental"
+  ],
+  "occasions": [
+   "anniversary",
+   "christmas"
+  ],
+  "price": {
+   "min": 15,
+   "max": 45
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "bracciali di coppia abbinati"
+ },
+ {
+  "id": "c063-profumo-per-ambienti-con-bastoncini",
+  "status": "draft",
+  "title": "Profumo per ambienti con bastoncini",
+  "pitch": "Diffusore elegante per la casa, con fragranza delicata e lunga durata.",
+  "whyItWorks": "Profuma ogni giorno la casa di chi lo riceve e la fa sentire curata.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family",
+   "colleague",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "homeGarden"
+  ],
+  "subinterests": [
+   "home"
+  ],
+  "tones": [
+   "elegant"
+  ],
+  "occasions": [
+   "christmas",
+   "newhome",
+   "thanks",
+   "birthday"
+  ],
+  "price": {
+   "min": 18,
+   "max": 45
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "diffusore bastoncini profumo ambiente regalo"
+ },
+ {
+  "id": "c064-tazza-con-frase-divertente",
+  "status": "draft",
+  "title": "Tazza con frase divertente",
+  "pitch": "Tazza in ceramica con una battuta su lavoro, caffè o lunedì mattina.",
+  "whyItWorks": "Strappa un sorriso ogni mattina ed è perfetta per uno scambio tra colleghi.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "colleague",
+   "friend",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "foodDrink"
+  ],
+  "subinterests": [
+   "coffeeTea"
+  ],
+  "tones": [
+   "funny"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "thanks"
+  ],
+  "price": {
+   "min": 10,
+   "max": 20
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "tazza divertente frase ironica ufficio"
+ },
+ {
+  "id": "c065-calze-natalizie-buffe",
+  "status": "draft",
+  "title": "Calze natalizie buffe",
+  "pitch": "Calzini colorati con disegni divertenti a tema natalizio o animali.",
+  "whyItWorks": "Piccolo, allegro, perfetto da mettere sotto l'albero o nel Secret Santa.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family",
+   "colleague",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "styleBeauty"
+  ],
+  "subinterests": [
+   "style"
+  ],
+  "tones": [
+   "funny"
+  ],
+  "occasions": [
+   "christmas"
+  ],
+  "price": {
+   "min": 8,
+   "max": 20
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "sizes"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "calze divertenti natale uomo donna"
+ },
+ {
+  "id": "c066-gioco-di-sfide-da-bere-tra-amici",
+  "status": "draft",
+  "title": "Gioco di carte con sfide per adulti",
+  "pitch": "Gioco di carte con prove e domande per le serate tra amici adulti.",
+  "whyItWorks": "Garantisce risate alla prima serata ed è un regalo da condividere.",
+  "ages": [
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "friend",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "gamesCollecting"
+  ],
+  "subinterests": [
+   "boardGames"
+  ],
+  "tones": [
+   "funny"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "graduation"
+  ],
+  "price": {
+   "min": 12,
+   "max": 25
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "foodAlcohol"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "gioco di carte festa adulti sfide"
+ },
+ {
+  "id": "c067-kit-per-fare-il-sushi-a-casa",
+  "status": "draft",
+  "title": "Kit per fare il sushi a casa",
+  "pitch": "Stuoino, bacchette e strumenti per preparare il sushi con gli amici.",
+  "whyItWorks": "Una serata diversa: si ride, si sbaglia e alla fine si mangia insieme.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "friend",
+   "partner",
+   "couple",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "foodDrink"
+  ],
+  "subinterests": [
+   "food"
+  ],
+  "tones": [
+   "funny",
+   "surprising"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "newhome"
+  ],
+  "price": {
+   "min": 15,
+   "max": 35
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "kit sushi fai da te stuoino bambù"
+ },
+ {
+  "id": "c068-cuscino-a-forma-di-cibo",
+  "status": "draft",
+  "title": "Cuscino a forma di cibo",
+  "pitch": "Peluche morbido a forma di cibo o di animale buffo, da divano o letto.",
+  "whyItWorks": "È un regalo che fa ridere appena si scarta e poi resta sul divano.",
+  "ages": [
+   "teen",
+   "youngAdult"
+  ],
+  "relations": [
+   "friend",
+   "partner",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "homeGarden"
+  ],
+  "subinterests": [
+   "home"
+  ],
+  "tones": [
+   "funny"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 12,
+   "max": 30
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "cuscino peluche forma cibo divertente"
+ },
+ {
+  "id": "c069-mini-macchina-per-popcorn",
+  "status": "draft",
+  "title": "Mini macchina per popcorn",
+  "pitch": "Macchina compatta per fare i popcorn in casa, ad aria calda.",
+  "whyItWorks": "Trasforma ogni film in una piccola serata al cinema.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "friend",
+   "family",
+   "couple",
+   "partner"
+  ],
+  "gender": "any",
+  "interests": [
+   "mediaAudio",
+   "foodDrink"
+  ],
+  "subinterests": [
+   "cinema",
+   "food"
+  ],
+  "tones": [
+   "funny",
+   "surprising"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "newhome"
+  ],
+  "price": {
+   "min": 25,
+   "max": 45
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "bulky"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "macchina popcorn aria calda casa"
+ },
+ {
+  "id": "c070-zaino-per-il-computer",
+  "status": "draft",
+  "title": "Zaino per il computer",
+  "pitch": "Zaino resistente con scomparto imbottito per il portatile e tasca antifurto.",
+  "whyItWorks": "Accompagna il passaggio dallo studio al lavoro: utile ogni giorno, per anni.",
+  "ages": [
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "family",
+   "friend",
+   "partner"
+  ],
+  "gender": "any",
+  "interests": [
+   "newsBusiness",
+   "travelOutdoor"
+  ],
+  "subinterests": [
+   "productivity",
+   "organization"
+  ],
+  "tones": [
+   "useful",
+   "elegant"
+  ],
+  "occasions": [
+   "graduation",
+   "birthday",
+   "christmas"
+  ],
+  "price": {
+   "min": 30,
+   "max": 80
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "zaino porta pc antifurto impermeabile"
+ },
+ {
+  "id": "c071-supporto-per-il-portatile",
+  "status": "draft",
+  "title": "Supporto per il portatile",
+  "pitch": "Supporto pieghevole in alluminio che alza lo schermo all'altezza degli occhi.",
+  "whyItWorks": "Fa bene alla schiena di chi lavora o studia al computer molte ore.",
+  "ages": [
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "colleague",
+   "friend",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "newsBusiness"
+  ],
+  "subinterests": [
+   "studyTech"
+  ],
+  "tones": [
+   "useful"
+  ],
+  "occasions": [
+   "graduation",
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 20,
+   "max": 45
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "supporto portatile alluminio regolabile pieghevole"
+ },
+ {
+  "id": "c072-portabiglietti-da-visita-in-metallo",
+  "status": "draft",
+  "title": "Portabiglietti da visita in metallo",
+  "pitch": "Porta biglietti da visita elegante, da tasca o da scrivania.",
+  "whyItWorks": "Un piccolo segno di inizio carriera, che dice «adesso fai sul serio».",
+  "ages": [
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "family",
+   "colleague"
+  ],
+  "gender": "any",
+  "interests": [
+   "newsBusiness"
+  ],
+  "subinterests": [
+   "productivity"
+  ],
+  "tones": [
+   "elegant"
+  ],
+  "occasions": [
+   "graduation"
+  ],
+  "price": {
+   "min": 12,
+   "max": 30
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "porta biglietti da visita acciaio elegante"
+ },
+ {
+  "id": "c073-lampada-da-scrivania",
+  "status": "draft",
+  "title": "Lampada da scrivania a LED",
+  "pitch": "Lampada regolabile con luce calda o fredda e ricarica wireless per il telefono.",
+  "whyItWorks": "Rende più comoda la scrivania di chi studia o lavora da casa.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "family",
+   "friend",
+   "partner"
+  ],
+  "gender": "any",
+  "interests": [
+   "newsBusiness",
+   "homeGarden"
+  ],
+  "subinterests": [
+   "studyTech",
+   "home"
+  ],
+  "tones": [
+   "useful"
+  ],
+  "occasions": [
+   "graduation",
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 25,
+   "max": 55
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "lampada scrivania led ricarica wireless"
+ },
+ {
+  "id": "c074-set-di-bicchieri-da-vino",
+  "status": "draft",
+  "title": "Set di bicchieri da vino",
+  "pitch": "Calici in vetro sottile, in confezione regalo.",
+  "whyItWorks": "Il primo brindisi nella casa nuova si fa con questi.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "friend",
+   "family",
+   "colleague",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "foodDrink",
+   "homeGarden"
+  ],
+  "subinterests": [
+   "wine",
+   "home"
+  ],
+  "tones": [
+   "elegant",
+   "useful"
+  ],
+  "occasions": [
+   "newhome",
+   "wedding",
+   "christmas"
+  ],
+  "price": {
+   "min": 20,
+   "max": 50
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "set calici vino cristallo confezione regalo"
+ },
+ {
+  "id": "c075-tagliere-in-legno-da-servizio",
+  "status": "draft",
+  "title": "Tagliere in legno da servizio",
+  "pitch": "Tagliere grande in legno massello per aperitivi e formaggi.",
+  "whyItWorks": "Bello da mettere in tavola: inaugura la casa nuova con la prima cena tra amici.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "friend",
+   "family",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "foodDrink",
+   "homeGarden"
+  ],
+  "subinterests": [
+   "food",
+   "home"
+  ],
+  "tones": [
+   "useful",
+   "elegant"
+  ],
+  "occasions": [
+   "newhome",
+   "wedding",
+   "christmas"
+  ],
+  "price": {
+   "min": 20,
+   "max": 45
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "tagliere legno da portata aperitivo"
+ },
+ {
+  "id": "c076-pianta-da-appartamento-facile",
+  "status": "draft",
+  "title": "Pianta da appartamento facile",
+  "pitch": "Pianta verde resistente in vaso decorativo, che non chiede troppe cure.",
+  "whyItWorks": "Porta vita nella casa nuova e sopravvive anche a chi non ha il pollice verde.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family",
+   "colleague",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "homeGarden"
+  ],
+  "subinterests": [
+   "garden"
+  ],
+  "tones": [
+   "elegant",
+   "useful"
+  ],
+  "occasions": [
+   "newhome",
+   "thanks",
+   "birthday"
+  ],
+  "price": {
+   "min": 20,
+   "max": 45
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "bulky"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "pianta da appartamento vera vaso facile"
+ },
+ {
+  "id": "c077-zerbino-divertente",
+  "status": "draft",
+  "title": "Zerbino divertente",
+  "pitch": "Zerbino con una scritta ironica di benvenuto.",
+  "whyItWorks": "Accoglie gli ospiti con un sorriso fin dalla porta.",
+  "ages": [
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "friend",
+   "family",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "homeGarden"
+  ],
+  "subinterests": [
+   "home"
+  ],
+  "tones": [
+   "funny"
+  ],
+  "occasions": [
+   "newhome"
+  ],
+  "price": {
+   "min": 15,
+   "max": 30
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "zerbino divertente scritta benvenuto"
+ },
+ {
+  "id": "c078-album-dei-primi-anni-del-bambino",
+  "status": "draft",
+  "title": "Album dei primi anni del bambino",
+  "pitch": "Libro da compilare con foto e tappe del primo anno di vita.",
+  "whyItWorks": "I genitori lo riempiono con calma e diventa un ricordo per tutta la famiglia.",
+  "ages": [
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "friend",
+   "family",
+   "colleague",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "artPhoto"
+  ],
+  "subinterests": [
+   "photo"
+  ],
+  "tones": [
+   "sentimental"
+  ],
+  "occasions": [
+   "newbaby"
+  ],
+  "price": {
+   "min": 15,
+   "max": 35
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "album nascita primo anno bambino da compilare"
+ },
+ {
+  "id": "c079-kit-per-le-impronte-del-neonato",
+  "status": "draft",
+  "title": "Kit per le impronte del neonato",
+  "pitch": "Kit sicuro per conservare l'impronta di mani e piedi del neonato in una cornice.",
+  "whyItWorks": "Ferma un momento che passa in fretta: i genitori lo terranno per sempre.",
+  "ages": [
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "friend",
+   "family",
+   "colleague",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "artPhoto"
+  ],
+  "subinterests": [
+   "craft"
+  ],
+  "tones": [
+   "sentimental"
+  ],
+  "occasions": [
+   "newbaby"
+  ],
+  "price": {
+   "min": 15,
+   "max": 40
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "kit impronte neonato cornice"
+ },
+ {
+  "id": "c080-copertina-in-mussola-per-neonato",
+  "status": "draft",
+  "title": "Copertina in mussola per neonato",
+  "pitch": "Copertine in mussola di cotone, morbide e traspiranti.",
+  "whyItWorks": "Un regalo utile davvero nei primi mesi, che i genitori usano ogni giorno.",
+  "ages": [
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "friend",
+   "family",
+   "colleague",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "homeGarden"
+  ],
+  "subinterests": [
+   "home"
+  ],
+  "tones": [
+   "useful",
+   "sentimental"
+  ],
+  "occasions": [
+   "newbaby"
+  ],
+  "price": {
+   "min": 15,
+   "max": 35
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "copertina mussola neonato cotone"
+ },
+ {
+  "id": "c081-cuscino-lombare-per-la-sedia",
+  "status": "draft",
+  "title": "Cuscino lombare per la sedia",
+  "pitch": "Cuscino in memory foam che sostiene la schiena in auto o in ufficio.",
+  "whyItWorks": "Un pensiero premuroso per chi passa ore seduto: il sollievo si sente subito.",
+  "ages": [
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "family",
+   "colleague",
+   "partner"
+  ],
+  "gender": "any",
+  "interests": [
+   "sportFitness"
+  ],
+  "subinterests": [
+   "recovery"
+  ],
+  "tones": [
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "thanks"
+  ],
+  "price": {
+   "min": 20,
+   "max": 40
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "cuscino lombare memory foam sedia auto"
+ },
+ {
+  "id": "c082-radio-retro-con-bluetooth",
+  "status": "draft",
+  "title": "Radio retrò con Bluetooth",
+  "pitch": "Radio dal design vintage con Bluetooth per la musica dal telefono.",
+  "whyItWorks": "Unisce il fascino della vecchia radio alla comodità di oggi.",
+  "ages": [
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "family",
+   "partner"
+  ],
+  "gender": "any",
+  "interests": [
+   "mediaAudio"
+  ],
+  "subinterests": [
+   "music"
+  ],
+  "tones": [
+   "sentimental",
+   "elegant"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 30,
+   "max": 70
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "radio vintage bluetooth design retro"
+ },
+ {
+  "id": "c083-lente-d-ingrandimento-con-luce",
+  "status": "draft",
+  "title": "Lente d'ingrandimento con luce",
+  "pitch": "Lente da lettura con LED integrato per libri, giornali e lavori di precisione.",
+  "whyItWorks": "Rende più facile leggere le scritte piccole: un aiuto concreto e gentile.",
+  "ages": [
+   "mature"
+  ],
+  "relations": [
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "culture"
+  ],
+  "subinterests": [
+   "books"
+  ],
+  "tones": [
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 12,
+   "max": 30
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "lente ingrandimento con luce led lettura"
+ },
+ {
+  "id": "c084-libro-fotografico-di-famiglia",
+  "status": "draft",
+  "title": "Libro fotografico di famiglia",
+  "pitch": "Fotolibro da comporre online con le foto di famiglia dell'anno.",
+  "whyItWorks": "I nonni lo sfogliano e lo mostrano a tutti: vale più di qualsiasi oggetto.",
+  "ages": [
+   "mature",
+   "adult"
+  ],
+  "relations": [
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "artPhoto"
+  ],
+  "subinterests": [
+   "photo"
+  ],
+  "tones": [
+   "sentimental"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "anniversary"
+  ],
+  "price": {
+   "min": 20,
+   "max": 60
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "fotolibro personalizzato copertina rigida"
+ },
+ {
+  "id": "c085-kit-per-la-cura-della-barba",
+  "status": "draft",
+  "title": "Kit per la cura della barba",
+  "pitch": "Olio, balsamo, pettine e spazzola per barba in confezione regalo.",
+  "whyItWorks": "Per chi cura la barba è un regalo che si usa ogni mattina.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "family",
+   "friend"
+  ],
+  "gender": "men",
+  "interests": [
+   "styleBeauty"
+  ],
+  "subinterests": [
+   "skincare"
+  ],
+  "tones": [
+   "useful",
+   "elegant"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 20,
+   "max": 40
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "kit cura barba olio balsamo pettine regalo"
+ },
+ {
+  "id": "c086-orologio-minimal",
+  "status": "draft",
+  "title": "Orologio minimal",
+  "pitch": "Orologio da polso dal design pulito, con cinturino in pelle o maglia.",
+  "whyItWorks": "Un accessorio che si indossa ogni giorno e si ricorda.",
+  "ages": [
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "partner",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "styleBeauty"
+  ],
+  "subinterests": [
+   "jewelry"
+  ],
+  "tones": [
+   "elegant",
+   "sentimental"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "graduation",
+   "anniversary"
+  ],
+  "price": {
+   "min": 40,
+   "max": 120
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "orologio minimal uomo donna cinturino pelle"
+ },
+ {
+  "id": "c087-borsa-a-tracolla-in-pelle",
+  "status": "draft",
+  "title": "Borsa a tracolla in pelle",
+  "pitch": "Borsa piccola a tracolla, pratica e curata, per tutti i giorni.",
+  "whyItWorks": "Elegante senza essere impegnativa: si abbina a quasi tutto.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "family"
+  ],
+  "gender": "women",
+  "interests": [
+   "styleBeauty"
+  ],
+  "subinterests": [
+   "style"
+  ],
+  "tones": [
+   "elegant",
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 30,
+   "max": 90
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "borsa tracolla pelle donna piccola"
+ },
+ {
+  "id": "c088-set-manicure-da-viaggio",
+  "status": "draft",
+  "title": "Set manicure da viaggio",
+  "pitch": "Astuccio con forbicine, lime e strumenti per unghie in acciaio.",
+  "whyItWorks": "Ordinato, utile e ben fatto: un regalo che si porta in ogni viaggio.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family",
+   "colleague",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "styleBeauty",
+   "travelOutdoor"
+  ],
+  "subinterests": [
+   "beauty",
+   "travel"
+  ],
+  "tones": [
+   "useful",
+   "elegant"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "thanks"
+  ],
+  "price": {
+   "min": 12,
+   "max": 30
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "set manicure acciaio astuccio viaggio"
+ },
+ {
+  "id": "c089-lampada-a-nuvola-o-neon-per-la-cameretta",
+  "status": "draft",
+  "title": "Lampada a nuvola o neon per la cameretta",
+  "pitch": "Luce decorativa a LED dalla forma particolare, per personalizzare la stanza.",
+  "whyItWorks": "I ragazzi amano rendere la camera loro: è un regalo che si vede subito.",
+  "ages": [
+   "teen"
+  ],
+  "relations": [
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "homeGarden"
+  ],
+  "subinterests": [
+   "home"
+  ],
+  "tones": [
+   "funny",
+   "surprising"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 15,
+   "max": 35
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "lampada neon led cameretta ragazzi"
+ },
+ {
+  "id": "c090-cuffie-wireless",
+  "status": "draft",
+  "title": "Cuffie wireless in-ear",
+  "pitch": "Auricolari senza fili con custodia di ricarica.",
+  "whyItWorks": "Per un ragazzo sono il regalo più usato: scuola, sport, autobus.",
+  "ages": [
+   "teen",
+   "youngAdult"
+  ],
+  "relations": [
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "techGaming",
+   "mediaAudio"
+  ],
+  "subinterests": [
+   "tech",
+   "music"
+  ],
+  "tones": [
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 25,
+   "max": 60
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "gadgets"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "auricolari wireless bluetooth custodia ricarica"
+ },
+ {
+  "id": "c091-gioco-di-carte-strategico-da-collezione",
+  "status": "draft",
+  "title": "Gioco di carte strategico da collezione",
+  "pitch": "Mazzo iniziale di un gioco di carte strategico, per imparare e sfidare gli amici.",
+  "whyItWorks": "Apre un hobby da condividere con gli amici, fatto di strategia e collezione.",
+  "ages": [
+   "teen",
+   "child"
+  ],
+  "relations": [
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "gamesCollecting"
+  ],
+  "subinterests": [
+   "collecting",
+   "boardGames"
+  ],
+  "tones": [
+   "funny",
+   "surprising"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 15,
+   "max": 35
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "mazzo introduttivo gioco carte collezionabili"
+ },
+ {
+  "id": "c092-kit-di-disegno-manga",
+  "status": "draft",
+  "title": "Kit di disegno manga",
+  "pitch": "Pennarelli, matite e manuale per imparare a disegnare in stile manga.",
+  "whyItWorks": "Per chi ama i fumetti giapponesi è il modo per passare da lettore a disegnatore.",
+  "ages": [
+   "teen",
+   "child"
+  ],
+  "relations": [
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "artPhoto",
+   "culture"
+  ],
+  "subinterests": [
+   "creative",
+   "comics"
+  ],
+  "tones": [
+   "surprising"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 20,
+   "max": 45
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "kit disegno manga pennarelli manuale"
+ },
+ {
+  "id": "c093-set-di-costruzioni-a-tema",
+  "status": "draft",
+  "title": "Set di costruzioni a tema",
+  "pitch": "Set di mattoncini con un veicolo, un edificio o un mondo da costruire.",
+  "whyItWorks": "Ore di concentrazione e gioco, prima costruendo e poi inventando storie.",
+  "ages": [
+   "child"
+  ],
+  "relations": [
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "kidsBuilding"
+  ],
+  "subinterests": [
+   "kidsBuilding_buildingSets"
+  ],
+  "tones": [
+   "funny",
+   "surprising"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 20,
+   "max": 60
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "set costruzioni mattoncini bambini 8 anni"
+ },
+ {
+  "id": "c094-robot-da-programmare-per-bambini",
+  "status": "draft",
+  "title": "Robot da programmare per bambini",
+  "pitch": "Robot che si programma con l'app a blocchi, per imparare i primi passi del coding.",
+  "whyItWorks": "Unisce gioco e logica: il bambino scopre che può dare ordini a una macchina.",
+  "ages": [
+   "child"
+  ],
+  "relations": [
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "kidsScience"
+  ],
+  "subinterests": [
+   "kidsScience_codingRobots"
+  ],
+  "tones": [
+   "surprising",
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 30,
+   "max": 80
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "robot programmabile bambini coding 8 anni"
+ },
+ {
+  "id": "c095-kit-per-creare-braccialetti",
+  "status": "draft",
+  "title": "Kit per creare braccialetti",
+  "pitch": "Perline, elastici e fili colorati per inventare braccialetti da regalare.",
+  "whyItWorks": "Creatività e amicizia insieme: i braccialetti diventano regali per gli amici.",
+  "ages": [
+   "child"
+  ],
+  "relations": [
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "kidsCreative"
+  ],
+  "subinterests": [
+   "kidsCreative_jewelleryMaking"
+  ],
+  "tones": [
+   "funny"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 12,
+   "max": 30
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "kit braccialetti perline bambina"
+ },
+ {
+  "id": "c096-libro-gioco-di-avventura",
+  "status": "draft",
+  "title": "Libro gioco di avventura",
+  "pitch": "Libro in cui il lettore sceglie come continua la storia, con enigmi da risolvere.",
+  "whyItWorks": "Fa leggere anche chi legge poco, perché la storia la decide lui.",
+  "ages": [
+   "child"
+  ],
+  "relations": [
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "kidsBooks"
+  ],
+  "subinterests": [
+   "kidsBooks_kidsStories"
+  ],
+  "tones": [
+   "funny",
+   "surprising"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 10,
+   "max": 20
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "libro gioco avventura bambini scegli tu"
+ },
+ {
+  "id": "c097-monopattino-per-bambini",
+  "status": "draft",
+  "title": "Monopattino per bambini",
+  "pitch": "Monopattino a due o tre ruote regolabile in altezza, con freno posteriore.",
+  "whyItWorks": "Porta i bambini all'aperto e cresce insieme a loro.",
+  "ages": [
+   "child"
+  ],
+  "relations": [
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "kidsSport"
+  ],
+  "subinterests": [
+   "kidsSport_kidsWheels"
+  ],
+  "tones": [
+   "funny",
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 30,
+   "max": 70
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "bulky"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "monopattino bambini regolabile 8 anni freno"
+ },
+ {
+  "id": "c098-kit-di-magia-per-bambini",
+  "status": "draft",
+  "title": "Kit di magia per bambini",
+  "pitch": "Scatola con trucchi di magia e istruzioni per il primo spettacolo.",
+  "whyItWorks": "Dà ai bambini un palcoscenico: sorprendono la famiglia e prendono sicurezza.",
+  "ages": [
+   "child"
+  ],
+  "relations": [
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "kidsMusic"
+  ],
+  "subinterests": [
+   "kidsMusic_kidsMagic"
+  ],
+  "tones": [
+   "funny",
+   "surprising"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 15,
+   "max": 35
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "kit magia bambini trucchi 8 anni"
+ },
+ {
+  "id": "c099-palestrina-per-neonati",
+  "status": "draft",
+  "title": "Palestrina per neonati",
+  "pitch": "Tappeto morbido con archi e giochini appesi da guardare e toccare.",
+  "whyItWorks": "Accompagna i primi mesi di scoperta: i genitori la usano ogni giorno.",
+  "ages": [
+   "earlyChild"
+  ],
+  "relations": [
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "earlySensory"
+  ],
+  "subinterests": [
+   "earlySensory_playMats"
+  ],
+  "tones": [
+   "useful",
+   "sentimental"
+  ],
+  "occasions": [
+   "newbaby",
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 30,
+   "max": 70
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "bulky"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "palestrina neonato tappeto gioco"
+ },
+ {
+  "id": "c100-libro-tattile-di-stoffa",
+  "status": "draft",
+  "title": "Libro tattile di stoffa",
+  "pitch": "Libro morbido con pagine da toccare, far scrocchiare e lavabile.",
+  "whyItWorks": "Il primo libro: sicuro da mordere e pieno di sorprese per le manine.",
+  "ages": [
+   "earlyChild"
+  ],
+  "relations": [
+   "family",
+   "friend",
+   "colleague"
+  ],
+  "gender": "any",
+  "interests": [
+   "earlyBooks"
+  ],
+  "subinterests": [
+   "earlyBooks_softBooks"
+  ],
+  "tones": [
+   "sentimental",
+   "useful"
+  ],
+  "occasions": [
+   "newbaby",
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 10,
+   "max": 25
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "libro tattile stoffa neonato"
+ },
+ {
+  "id": "c101-torre-di-blocchi-impilabili",
+  "status": "draft",
+  "title": "Torre di blocchi impilabili",
+  "pitch": "Blocchi o anelli colorati da impilare, incastrare e far cadere.",
+  "whyItWorks": "Un classico che insegna forme e colori e diverte all'infinito.",
+  "ages": [
+   "earlyChild"
+  ],
+  "relations": [
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "earlyBuilding"
+  ],
+  "subinterests": [
+   "earlyBuilding_stacking"
+  ],
+  "tones": [
+   "funny",
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 10,
+   "max": 25
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "gioco impilabile bambini 12 mesi"
+ },
+ {
+  "id": "c102-cucina-giocattolo-in-legno",
+  "status": "draft",
+  "title": "Cucina giocattolo in legno",
+  "pitch": "Cucina con fornelli, pentoline e accessori per giocare a fare i cuochi.",
+  "whyItWorks": "Il gioco di imitazione per eccellenza: i bambini cucinano per tutta la famiglia.",
+  "ages": [
+   "earlyChild"
+  ],
+  "relations": [
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "earlyPretend"
+  ],
+  "subinterests": [
+   "earlyPretend_playKitchen"
+  ],
+  "tones": [
+   "funny",
+   "surprising"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 40,
+   "max": 100
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "bulky"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "cucina giocattolo legno bambini 3 anni"
+ },
+ {
+  "id": "c103-bici-senza-pedali",
+  "status": "draft",
+  "title": "Bici senza pedali",
+  "pitch": "Bicicletta senza pedali per imparare l'equilibrio prima della bici vera.",
+  "whyItWorks": "Il primo passo verso la bici: i bambini guadagnano sicurezza e autonomia.",
+  "ages": [
+   "earlyChild"
+  ],
+  "relations": [
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "earlyMovement"
+  ],
+  "subinterests": [
+   "earlyMovement_balanceBikes"
+  ],
+  "tones": [
+   "useful",
+   "surprising"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 40,
+   "max": 90
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "bulky"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "bici senza pedali bambini 2 anni"
+ },
+ {
+  "id": "c104-primi-strumenti-musicali",
+  "status": "draft",
+  "title": "Primi strumenti musicali",
+  "pitch": "Set con xilofono, maracas e tamburello pensati per i più piccoli.",
+  "whyItWorks": "Fanno rumore, certo, ma anche ritmo: un primo gioco con la musica.",
+  "ages": [
+   "earlyChild"
+  ],
+  "relations": [
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "earlyMusic"
+  ],
+  "subinterests": [
+   "earlyMusic_firstInstruments"
+  ],
+  "tones": [
+   "funny"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 15,
+   "max": 35
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "set strumenti musicali bambini 2 anni xilofono"
+ },
+ {
+  "id": "c105-puzzle-in-legno-a-incastro",
+  "status": "draft",
+  "title": "Puzzle in legno a incastro",
+  "pitch": "Puzzle con pezzi grandi e pomelli, con animali o veicoli.",
+  "whyItWorks": "Allena le manine e la pazienza, con pezzi sicuri e resistenti.",
+  "ages": [
+   "earlyChild"
+  ],
+  "relations": [
+   "family",
+   "friend",
+   "colleague"
+  ],
+  "gender": "any",
+  "interests": [
+   "earlyLearning"
+  ],
+  "subinterests": [
+   "earlyLearning_firstPuzzles"
+  ],
+  "tones": [
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 10,
+   "max": 25
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "puzzle legno incastro pomelli bambini"
+ },
+ {
+  "id": "c106-set-di-pastelli-e-album",
+  "status": "draft",
+  "title": "Set di pastelli e album per i più piccoli",
+  "pitch": "Pastelli a cera grandi e sicuri con un album da colorare.",
+  "whyItWorks": "Il primo kit da artista: libera la fantasia senza fare danni.",
+  "ages": [
+   "earlyChild"
+  ],
+  "relations": [
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "earlyCreative"
+  ],
+  "subinterests": [
+   "earlyCreative_firstDrawing"
+  ],
+  "tones": [
+   "funny",
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 10,
+   "max": 25
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "pastelli cera bambini 2 anni album colorare"
+ },
+ {
+  "id": "c107-set-di-coltelli-da-bistecca",
+  "status": "draft",
+  "title": "Set di coltelli da bistecca",
+  "pitch": "Coltelli da tavola in confezione elegante, per le cene con gli ospiti.",
+  "whyItWorks": "Un regalo da lista nozze che si usa davvero, non resta in un cassetto.",
+  "ages": [
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "couple",
+   "friend",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "foodDrink",
+   "homeGarden"
+  ],
+  "subinterests": [
+   "food",
+   "home"
+  ],
+  "tones": [
+   "useful",
+   "elegant"
+  ],
+  "occasions": [
+   "wedding",
+   "newhome"
+  ],
+  "price": {
+   "min": 30,
+   "max": 70
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "set coltelli bistecca confezione regalo"
+ },
+ {
+  "id": "c108-cornice-multi-foto",
+  "status": "draft",
+  "title": "Cornice multi foto",
+  "pitch": "Cornice da parete o da mobile con spazi per più foto.",
+  "whyItWorks": "Racconta una storia in più scatti: perfetta per una coppia che inizia a vivere insieme.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "couple",
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "homeGarden",
+   "artPhoto"
+  ],
+  "subinterests": [
+   "home",
+   "photo"
+  ],
+  "tones": [
+   "sentimental"
+  ],
+  "occasions": [
+   "wedding",
+   "newhome",
+   "anniversary"
+  ],
+  "price": {
+   "min": 15,
+   "max": 40
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "cornice multi foto parete collage"
+ },
+ {
+  "id": "c109-cioccolatini-artigianali",
+  "status": "draft",
+  "title": "Cioccolatini artigianali",
+  "pitch": "Scatola di cioccolatini assortiti in confezione elegante.",
+  "whyItWorks": "Il grazie più semplice e apprezzato: si apre e si condivide in ufficio.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family",
+   "colleague",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "foodDrink"
+  ],
+  "subinterests": [
+   "food"
+  ],
+  "tones": [
+   "elegant",
+   "neutral"
+  ],
+  "occasions": [
+   "thanks",
+   "christmas"
+  ],
+  "price": {
+   "min": 12,
+   "max": 30
+  },
+  "kind": "consumable",
+  "avoidFlags": [
+   "foodAlcohol"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "cioccolatini artigianali scatola regalo"
+ },
+ {
+  "id": "c110-pianta-grassa-in-vaso-di-design",
+  "status": "draft",
+  "title": "Pianta grassa in vaso di design",
+  "pitch": "Piccola pianta succulenta in vaso decorativo da scrivania.",
+  "whyItWorks": "Porta un po' di verde in ufficio e non chiede quasi nessuna cura.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "colleague",
+   "friend",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "homeGarden"
+  ],
+  "subinterests": [
+   "garden"
+  ],
+  "tones": [
+   "neutral",
+   "elegant"
+  ],
+  "occasions": [
+   "thanks",
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 10,
+   "max": 25
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "pianta grassa vaso design scrivania"
+ },
+ {
+  "id": "c111-set-di-penne-colorate",
+  "status": "draft",
+  "title": "Set di penne colorate",
+  "pitch": "Penne o fineliner di qualità in tanti colori, per appunti e agende.",
+  "whyItWorks": "Un regalo piccolo ma usato ogni giorno da chi scrive e prende appunti.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "colleague",
+   "friend",
+   "family"
+  ],
+  "gender": "any",
+  "interests": [
+   "newsBusiness"
+  ],
+  "subinterests": [
+   "writing"
+  ],
+  "tones": [
+   "useful",
+   "funny"
+  ],
+  "occasions": [
+   "christmas",
+   "thanks",
+   "birthday",
+   "graduation"
+  ],
+  "price": {
+   "min": 10,
+   "max": 25
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "set penne fineliner colori"
+ },
+ {
+  "id": "c112-gift-card-amazon",
+  "status": "draft",
+  "title": "Gift card Amazon",
+  "pitch": "Buono regalo digitale da spendere su Amazon, con biglietto da stampare.",
+  "whyItWorks": "Quando non hai tempo o non sei sicuro: arriva subito e lascia la scelta a chi lo riceve.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family",
+   "colleague",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "styleBeauty",
+   "techGaming",
+   "culture"
+  ],
+  "subinterests": [
+   "style",
+   "tech",
+   "books"
+  ],
+  "tones": [
+   "neutral",
+   "useful"
+  ],
+  "occasions": [
+   "any"
+  ],
+  "price": {
+   "min": 10,
+   "max": 100
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": true,
+  "amazonQuery": "buono regalo amazon"
+ },
+ {
+  "id": "c113-abbonamento-a-kindle-unlimited",
+  "status": "draft",
+  "title": "Abbonamento a Kindle Unlimited",
+  "pitch": "Mesi di lettura illimitata di ebook su app o e-reader.",
+  "whyItWorks": "Per chi divora libri: una biblioteca infinita, regalata in un minuto.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family",
+   "colleague",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "culture"
+  ],
+  "subinterests": [
+   "books"
+  ],
+  "tones": [
+   "useful",
+   "surprising"
+  ],
+  "occasions": [
+   "any"
+  ],
+  "price": {
+   "min": 10,
+   "max": 60
+  },
+  "kind": "subscription",
+  "avoidFlags": [
+   "subscriptions"
+  ],
+  "lastMinute": true,
+  "amazonQuery": "kindle unlimited abbonamento regalo"
  }
 ]
