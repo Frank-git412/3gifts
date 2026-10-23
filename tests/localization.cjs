@@ -11,7 +11,7 @@ const robots=fs.readFileSync(path.join(ROOT,'robots.txt'),'utf8');
 const sitemap=fs.readFileSync(path.join(ROOT,'sitemap.xml'),'utf8');
 check(robots.includes('User-agent: *')&&robots.includes('Allow: /'),'robots permits crawling');
 check(robots.includes('Sitemap: https://3gifts.it/sitemap.xml'),'robots advertises canonical sitemap');
-check((sitemap.match(/<url>/g)||[]).length===21+1+ideaGuides.length,'sitemap contains the 21 Italian pages and the idea guides');
+check((sitemap.match(/<url>/g)||[]).length===21+2+ideaGuides.length,'sitemap contains the 21 Italian pages and the idea guides');
 for(const canonical of expectedCanonicals)check((sitemap.match(new RegExp('<loc>'+canonical.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'<\\/loc>','g'))||[]).length===1,'sitemap contains '+canonical+' once');
 for(const file of files){
  const html=fs.readFileSync(file,'utf8'),relative=path.relative(ROOT,file),en=relative.startsWith('en/');
@@ -30,7 +30,7 @@ for(const file of files){
   const href=m[1];if(/^(?:https?:|mailto:|data:|#)/.test(href)||!href)continue;
   const clean=href.split(/[?#]/)[0];
   // The Worker renders the Christmas idea guides; they have no file in dist.
-  if(clean==='/idee'||ideaGuides.some(g=>clean==='/idee/'+g.slug)){assertions++;continue;}
+  if(clean==='/idee'||clean==='/idee/come-scegliamo'||ideaGuides.some(g=>clean==='/idee/'+g.slug)){assertions++;continue;}
   const target=clean.startsWith('/')?path.resolve(ROOT,'.'+clean):path.resolve(path.dirname(file),clean);
   check(target.startsWith(ROOT+path.sep)&&fs.existsSync(target),relative+' target exists: '+href);
  }

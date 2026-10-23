@@ -4,87 +4,292 @@
   "title": "Regali di Natale per lei sotto 30 euro",
   "description": "Idee regalo di Natale per lei sotto i 30 euro, scelte una per una: per una compagna, un'amica, una sorella o una collega.",
   "intro": "Trenta euro bastano per un regalo che sembri pensato, non preso al volo. Qui trovi idee scelte una per una, con il motivo per cui funzionano e il prezzo aggiornato.",
-  "filter": { "gender": "women", "ages": ["youngAdult", "adult", "mature"], "maxPrice": 30 },
-  "prefer": { "interests": ["styleBeauty", "homeGarden", "artPhoto", "culture"], "tones": ["sentimental", "elegant"] }
+  "filter": {
+   "gender": "women",
+   "ages": [
+    "youngAdult",
+    "adult",
+    "mature"
+   ],
+   "maxPrice": 30
+  },
+  "prefer": {
+   "interests": [
+    "styleBeauty",
+    "homeGarden",
+    "artPhoto",
+    "culture"
+   ],
+   "tones": [
+    "sentimental",
+    "elegant"
+   ]
+  }
  },
  {
   "slug": "regali-natale-per-lui-sotto-30-euro",
   "title": "Regali di Natale per lui sotto 30 euro",
   "description": "Idee regalo di Natale per lui sotto i 30 euro: utili, divertenti o curiose, con prezzi Amazon aggiornati ogni giorno.",
   "intro": "Per lui funzionano meglio i regali che si usano davvero o che fanno ridere. Ecco idee sotto i 30 euro scelte con questo criterio.",
-  "filter": { "gender": "men", "ages": ["youngAdult", "adult", "mature"], "maxPrice": 30 },
-  "prefer": { "interests": ["techGaming", "travelOutdoor", "foodDrink", "gamesCollecting", "sportFitness"], "tones": ["useful", "funny"] }
+  "filter": {
+   "gender": "men",
+   "ages": [
+    "youngAdult",
+    "adult",
+    "mature"
+   ],
+   "maxPrice": 30
+  },
+  "prefer": {
+   "interests": [
+    "techGaming",
+    "travelOutdoor",
+    "foodDrink",
+    "gamesCollecting",
+    "sportFitness"
+   ],
+   "tones": [
+    "useful",
+    "funny"
+   ]
+  }
  },
  {
   "slug": "regali-natale-per-la-mamma",
   "title": "Regali di Natale per la mamma",
   "description": "Idee regalo di Natale per la mamma: pensieri che emozionano, oggetti belli e regali utili, con il perché di ogni scelta.",
   "intro": "La mamma dice sempre che non le serve niente. Queste idee puntano su ciò che le fa piacere davvero: tempo per sé, ricordi, piccoli lussi quotidiani.",
-  "filter": { "gender": "women", "relations": ["family"], "ages": ["adult", "mature"] },
-  "prefer": { "interests": ["homeGarden", "styleBeauty", "artPhoto", "culture", "foodDrink"], "tones": ["sentimental", "elegant"] }
+  "filter": {
+   "gender": "women",
+   "relations": [
+    "family"
+   ],
+   "ages": [
+    "adult",
+    "mature"
+   ]
+  },
+  "prefer": {
+   "interests": [
+    "homeGarden",
+    "styleBeauty",
+    "artPhoto",
+    "culture",
+    "foodDrink"
+   ],
+   "tones": [
+    "sentimental",
+    "elegant"
+   ]
+  }
  },
  {
   "slug": "regali-natale-per-il-papa",
   "title": "Regali di Natale per il papà",
   "description": "Idee regalo di Natale per il papà: oggetti utili, passioni da coltivare e qualche sorpresa, scelti uno per uno.",
   "intro": "Per il papà vince il regalo che entra subito nella sua routine o che alimenta una passione. Ecco idee con cui è difficile sbagliare.",
-  "filter": { "gender": "men", "relations": ["family"], "ages": ["adult", "mature"] },
-  "prefer": { "interests": ["foodDrink", "techGaming", "travelOutdoor", "sportFitness", "newsBusiness"], "tones": ["useful", "surprising"] }
+  "filter": {
+   "gender": "men",
+   "relations": [
+    "family"
+   ],
+   "ages": [
+    "adult",
+    "mature"
+   ]
+  },
+  "prefer": {
+   "interests": [
+    "foodDrink",
+    "techGaming",
+    "travelOutdoor",
+    "sportFitness",
+    "newsBusiness"
+   ],
+   "tones": [
+    "useful",
+    "surprising"
+   ]
+  }
  },
  {
   "slug": "regali-natale-per-i-nonni",
   "title": "Regali di Natale per i nonni",
   "description": "Idee regalo di Natale per i nonni: ricordi da custodire, comodità quotidiane e passatempi, con prezzi aggiornati.",
   "intro": "Ai nonni non servono altri oggetti: servono ricordi, comodità e qualcosa da fare insieme. Le idee qui sotto vanno in questa direzione.",
-  "filter": { "relations": ["family"], "ages": ["mature"] },
-  "prefer": { "interests": ["artPhoto", "culture", "homeGarden", "gamesCollecting"], "tones": ["sentimental", "useful"] }
+  "filter": {
+   "relations": [
+    "family"
+   ],
+   "ages": [
+    "mature"
+   ]
+  },
+  "prefer": {
+   "interests": [
+    "artPhoto",
+    "culture",
+    "homeGarden",
+    "gamesCollecting"
+   ],
+   "tones": [
+    "sentimental",
+    "useful"
+   ]
+  }
  },
  {
   "slug": "regali-natale-colleghi-secret-santa",
   "title": "Regali di Natale per colleghi e Secret Santa",
   "description": "Idee regalo per colleghi e Secret Santa sotto i 30 euro: utili, eleganti o simpatiche, adatte anche a chi conosci poco.",
   "intro": "Con i colleghi il regalo giusto è curato ma non troppo personale. Queste idee funzionano anche con chi conosci poco e restano nel budget dello scambio.",
-  "filter": { "relations": ["colleague"], "maxPrice": 30 },
-  "prefer": { "tones": ["useful", "neutral", "elegant", "funny"] }
+  "filter": {
+   "relations": [
+    "colleague"
+   ],
+   "maxPrice": 30
+  },
+  "prefer": {
+   "tones": [
+    "useful",
+    "neutral",
+    "elegant",
+    "funny"
+   ]
+  }
  },
  {
   "slug": "regali-natale-per-amici-sotto-30-euro",
   "title": "Regali di Natale per amici sotto 30 euro",
   "description": "Idee regalo di Natale per amici e amiche sotto i 30 euro: giochi, passioni e regali che fanno ridere, con prezzi aggiornati.",
   "intro": "Tra amici il regalo migliore è quello che crea un momento insieme o che fa ridere appena si scarta. Ecco idee sotto i 30 euro.",
-  "filter": { "relations": ["friend"], "maxPrice": 30 },
-  "prefer": { "interests": ["gamesCollecting", "foodDrink", "mediaAudio", "artPhoto"], "tones": ["funny", "surprising"] }
+  "filter": {
+   "relations": [
+    "friend"
+   ],
+   "maxPrice": 30
+  },
+  "prefer": {
+   "interests": [
+    "gamesCollecting",
+    "foodDrink",
+    "mediaAudio",
+    "artPhoto"
+   ],
+   "tones": [
+    "funny",
+    "surprising"
+   ]
+  }
  },
  {
   "slug": "regali-natale-per-il-partner",
   "title": "Regali di Natale per il partner",
   "description": "Idee regalo di Natale per il partner: regali che emozionano, momenti da vivere insieme e oggetti curati, scelti uno per uno.",
   "intro": "Al partner si regala un segno di attenzione: qualcosa che parli di lui o di lei, o di voi due. Le idee qui sotto partono da questo.",
-  "filter": { "relations": ["partner"] },
-  "prefer": { "tones": ["sentimental", "elegant", "surprising"] }
+  "filter": {
+   "relations": [
+    "partner"
+   ]
+  },
+  "prefer": {
+   "tones": [
+    "sentimental",
+    "elegant",
+    "surprising"
+   ]
+  }
  },
  {
   "slug": "regali-natale-per-chi-ama-cucinare",
   "title": "Regali di Natale per chi ama cucinare",
   "description": "Idee regalo di Natale per chi ama cucinare, il caffè, il tè o il vino: strumenti, libri e kit scelti con cura.",
   "intro": "Chi ama cucinare riconosce subito un regalo pensato per la sua passione. Ecco strumenti, kit e libri che finiscono in cucina, non in un cassetto.",
-  "filter": { "interests": ["foodDrink"] },
-  "prefer": { "tones": ["useful", "surprising"] }
+  "filter": {
+   "interests": [
+    "foodDrink"
+   ]
+  },
+  "prefer": {
+   "tones": [
+    "useful",
+    "surprising"
+   ]
+  }
  },
  {
   "slug": "regali-natale-per-chi-ha-gia-tutto",
   "title": "Regali di Natale per chi ha già tutto",
   "description": "Idee regalo di Natale per chi ha già tutto: regali originali che sorprendono o fanno ridere, con il perché di ogni scelta.",
   "intro": "Quando una persona ha già tutto, l'oggetto conta meno della sorpresa. Queste idee puntano su curiosità, divertimento e piccole passioni nuove.",
-  "filter": { "tones": ["surprising", "funny"], "ages": ["youngAdult", "adult", "mature"] },
-  "prefer": { "tones": ["surprising", "funny"] }
+  "filter": {
+   "tones": [
+    "surprising",
+    "funny"
+   ],
+   "ages": [
+    "youngAdult",
+    "adult",
+    "mature"
+   ]
+  },
+  "prefer": {
+   "tones": [
+    "surprising",
+    "funny"
+   ]
+  }
  },
  {
   "slug": "regali-natale-per-ragazzi",
   "title": "Regali di Natale per ragazzi e ragazze",
   "description": "Idee regalo di Natale per ragazzi e ragazze dai 13 ai 17 anni: tecnologia, giochi, fumetti e creatività.",
   "intro": "Ai ragazzi piace un regalo che usano subito con gli amici o che rende la loro stanza più loro. Ecco idee pensate per la fascia 13–17 anni.",
-  "filter": { "ages": ["teen"] },
-  "prefer": { "interests": ["techGaming", "culture", "artPhoto", "gamesCollecting", "mediaAudio"], "tones": ["funny", "surprising"] }
+  "filter": {
+   "ages": [
+    "teen"
+   ]
+  },
+  "prefer": {
+   "interests": [
+    "techGaming",
+    "culture",
+    "artPhoto",
+    "gamesCollecting",
+    "mediaAudio"
+   ],
+   "tones": [
+    "funny",
+    "surprising"
+   ]
+  }
+ },
+ {
+  "slug": "regali-natale-black-friday",
+  "title": "Regali di Natale da comprare al Black Friday",
+  "description": "Idee regalo di Natale da comprare durante il Black Friday 2026 (27 novembre) e il Cyber Monday: cosa conviene anticipare e cosa controllare.",
+  "intro": "Il Black Friday 2026 cade venerdì 27 novembre, il Cyber Monday il 30: è il momento giusto per anticipare i regali che si spediscono bene e non scadono. Qui trovi idee che reggono un mese nell’armadio, con il prezzo aggiornato. Uno sconto conviene solo se il regalo è giusto: confronta il prezzo con quello delle settimane prima.",
+  "filter": {
+   "ages": [
+    "youngAdult",
+    "adult",
+    "mature"
+   ],
+   "kinds": [
+    "object"
+   ]
+  },
+  "prefer": {
+   "interests": [
+    "techGadgets",
+    "sportWellness",
+    "homeGarden",
+    "foodDrink"
+   ],
+   "tones": [
+    "useful",
+    "elegant"
+   ]
+  }
  }
 ]

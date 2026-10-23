@@ -43,7 +43,9 @@
    "alcohol"
   ],
   "lastMinute": false,
-  "amazonQuery": "set sommelier cofanetto legno"
+  "amazonQuery": "set sommelier cofanetto legno",
+  "notFor": "Chi non beve vino o lo beve di rado.",
+  "checkBefore": "Che il cavatappi sia a leva o a due tempi: è il più comodo per chi non è esperto."
  },
  {
   "id": "c002-kit-per-cocktail-fatti-in-casa",
@@ -85,7 +87,9 @@
    "alcohol"
   ],
   "lastMinute": false,
-  "amazonQuery": "kit cocktail principianti shaker ricettario"
+  "amazonQuery": "kit cocktail principianti shaker ricettario",
+  "notFor": "Chi non beve alcolici: meglio un kit per mocktail.",
+  "checkBefore": "Che lo shaker sia in acciaio inox e il kit includa un ricettario in italiano."
  },
  {
   "id": "c003-kit-per-fare-la-birra-in-casa",
@@ -128,7 +132,9 @@
    "bulky"
   ],
   "lastMinute": false,
-  "amazonQuery": "kit birra artigianale fatta in casa principianti"
+  "amazonQuery": "kit birra artigianale fatta in casa principianti",
+  "notFor": "Chi ha poco spazio in casa o non ha pazienza: servono alcune settimane.",
+  "checkBefore": "Quanti litri produce e se il malto per la prima cotta è incluso."
  },
  {
   "id": "c004-kit-per-la-pasta-fresca-fatta-a-mano",
@@ -169,7 +175,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "kit pasta fresca fatta in casa rotella taglia ravioli"
+  "amazonQuery": "kit pasta fresca fatta in casa rotella taglia ravioli",
+  "notFor": "Chi in cucina cerca solo la velocità.",
+  "checkBefore": "Che il legno sia trattato per alimenti e gli accessori siano facili da lavare."
  },
  {
   "id": "c005-macchina-per-la-pasta-manuale",
@@ -208,7 +216,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "macchina pasta manuale acciaio sfogliatrice"
+  "amazonQuery": "macchina pasta manuale acciaio sfogliatrice",
+  "notFor": "Chi cucina poco o ha una cucina molto piccola.",
+  "checkBefore": "Larghezza dei rulli (almeno 15 cm) e che il morsetto si adatti al piano di lavoro."
  },
  {
   "id": "c006-coltello-da-chef-di-qualita",
@@ -291,7 +301,9 @@
    "gadgets"
   ],
   "lastMinute": false,
-  "amazonQuery": "termometro carne wireless bluetooth sonda"
+  "amazonQuery": "termometro carne wireless bluetooth sonda",
+  "notFor": "Chi non cucina carne o non usa lo smartphone in cucina.",
+  "checkBefore": "Portata del Bluetooth e numero di sonde, utile se cucina più pezzi insieme."
  },
  {
   "id": "c008-kit-di-erbe-aromatiche-da-coltivare",
@@ -337,7 +349,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "kit coltivazione erbe aromatiche cucina semi vasi"
+  "amazonQuery": "kit coltivazione erbe aromatiche cucina semi vasi",
+  "notFor": "Chi non ha un davanzale luminoso.",
+  "checkBefore": "Se i semi sono biologici e quante varietà contiene la confezione."
  },
  {
   "id": "c009-cofanetto-di-te-pregiati",
@@ -382,7 +396,9 @@
    "food"
   ],
   "lastMinute": false,
-  "amazonQuery": "cofanetto tè pregiati regalo selezione"
+  "amazonQuery": "cofanetto tè pregiati regalo selezione",
+  "notFor": "Chi beve solo caffè.",
+  "checkBefore": "La scadenza e se il cofanetto include anche tisane senza teina."
  },
  {
   "id": "c010-macinacaffe-manuale",
@@ -422,7 +438,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "macinacaffè manuale macine ceramica regolabile"
+  "amazonQuery": "macinacaffè manuale macine ceramica regolabile",
+  "notFor": "Chi usa solo capsule o macchine automatiche.",
+  "checkBefore": "Che le macine siano in ceramica o acciaio e la macinatura regolabile per moka ed espresso."
  },
  {
   "id": "c011-set-per-caffe-filtro",
@@ -460,7 +478,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "set caffè filtro dripper caraffa v60"
+  "amazonQuery": "set caffè filtro dripper caraffa v60",
+  "notFor": "Chi è affezionato solo alla moka.",
+  "checkBefore": "Che il kit includa i filtri di carta della misura giusta."
  },
  {
   "id": "c012-tazza-termica-da-viaggio",
@@ -503,7 +523,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "tazza termica viaggio caffè acciaio coperchio"
+  "amazonQuery": "tazza termica viaggio caffè acciaio coperchio",
+  "notFor": "Chi beve il caffè solo al bar.",
+  "checkBefore": "Che il coperchio sia a tenuta e la tazza entri nel portabicchieri dell'auto."
  },
  {
   "id": "c013-gioco-da-tavolo-per-serate-tra-amici",
@@ -542,7 +564,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "gioco da tavolo party gruppo amici"
+  "amazonQuery": "gioco da tavolo party gruppo amici",
+  "notFor": "Chi non ama i giochi di gruppo o è timido con gli sconosciuti.",
+  "checkBefore": "Numero di giocatori, durata della partita ed età consigliata sulla scatola."
  },
  {
   "id": "c014-gioco-di-carte-tascabile-e-divertente",
@@ -582,7 +606,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "gioco di carte divertente amici party"
+  "amazonQuery": "gioco di carte divertente amici party",
+  "notFor": "Chi preferisce giochi tranquilli e di strategia.",
+  "checkBefore": "L'età minima e che il regolamento sia in italiano."
  },
  {
   "id": "c015-gioco-da-tavolo",
@@ -621,7 +647,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "gioco da tavolo per due giocatori coppia"
+  "amazonQuery": "gioco da tavolo per due giocatori coppia",
+  "notFor": "Chi vive da solo o ama le partite affollate.",
+  "checkBefore": "Che sia pensato per 2 giocatori e la durata media di una partita."
  },
  {
   "id": "c016-puzzle-da-1000-pezzi-illustrato",
@@ -661,7 +689,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "puzzle 1000 pezzi illustrato adulti"
+  "amazonQuery": "puzzle 1000 pezzi illustrato adulti",
+  "notFor": "Chi non ha un tavolo libero per qualche giorno.",
+  "checkBefore": "Le dimensioni del puzzle finito e la qualità del cartone."
  },
  {
   "id": "c017-set-di-costruzioni-con-fiori-e-piante",
@@ -704,7 +734,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "set costruzioni mattoncini fiori bouquet adulti"
+  "amazonQuery": "set costruzioni mattoncini fiori bouquet adulti",
+  "notFor": "Chi non ama i lavori di pazienza.",
+  "checkBefore": "Il numero di pezzi e le dimensioni finali, per capire dove esporlo."
  },
  {
   "id": "c018-cuffie-con-cancellazione-del-rumore",
@@ -746,7 +778,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "cuffie bluetooth cancellazione rumore"
+  "amazonQuery": "cuffie bluetooth cancellazione rumore",
+  "notFor": "Chi ascolta musica solo in casa, a basso volume.",
+  "checkBefore": "Autonomia della batteria e comfort sulle orecchie per molte ore."
  },
  {
   "id": "c019-altoparlante-bluetooth-impermeabile",
@@ -791,7 +825,9 @@
    "gadgets"
   ],
   "lastMinute": false,
-  "amazonQuery": "altoparlante bluetooth impermeabile portatile"
+  "amazonQuery": "altoparlante bluetooth impermeabile portatile",
+  "notFor": "Chi ha già una cassa che usa poco.",
+  "checkBefore": "Il grado di impermeabilità (almeno IPX7) e l'autonomia."
  },
  {
   "id": "c020-giradischi-portatile",
@@ -832,7 +868,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "giradischi valigetta casse integrate bluetooth"
+  "amazonQuery": "giradischi valigetta casse integrate bluetooth",
+  "notFor": "Chi non ha vinili e non ha intenzione di comprarne.",
+  "checkBefore": "Che abbia casse integrate e, se serve, l'uscita per collegarne altre."
  },
  {
   "id": "c021-luci-smart-per-creare-atmosfera",
@@ -877,7 +915,9 @@
    "gadgets"
   ],
   "lastMinute": false,
-  "amazonQuery": "striscia led smart wifi app lampadina colori"
+  "amazonQuery": "striscia led smart wifi app lampadina colori",
+  "notFor": "Chi non ama le app o vive in una casa in affitto senza voglia di sperimentare.",
+  "checkBefore": "Compatibilità con il suo telefono o assistente vocale e la lunghezza della striscia."
  },
  {
   "id": "c022-localizzatore-per-chiavi-e-borse",
@@ -924,7 +964,9 @@
    "gadgets"
   ],
   "lastMinute": false,
-  "amazonQuery": "localizzatore chiavi bluetooth tag tracker"
+  "amazonQuery": "localizzatore chiavi bluetooth tag tracker",
+  "notFor": "Chi non perde mai niente.",
+  "checkBefore": "Che sia compatibile con il suo telefono (iPhone o Android): non tutti funzionano con entrambi."
  },
  {
   "id": "c023-power-bank-compatto",
@@ -972,7 +1014,9 @@
    "gadgets"
   ],
   "lastMinute": false,
-  "amazonQuery": "power bank compatto ricarica rapida sottile"
+  "amazonQuery": "power bank compatto ricarica rapida sottile",
+  "notFor": "Chi ha già un power bank recente.",
+  "checkBefore": "Capacità in mAh, connettori (USB-C) e peso."
  },
  {
   "id": "c024-controller-wireless-per-giocare",
@@ -1014,7 +1058,9 @@
    "gadgets"
   ],
   "lastMinute": false,
-  "amazonQuery": "controller wireless pc smartphone bluetooth"
+  "amazonQuery": "controller wireless pc smartphone bluetooth",
+  "notFor": "Chi gioca solo su una console con il suo controller originale.",
+  "checkBefore": "Compatibilità con la piattaforma su cui gioca davvero."
  },
  {
   "id": "c025-e-reader-per-leggere-ovunque",
@@ -1057,7 +1103,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "ereader schermo antiriflesso luce regolabile"
+  "amazonQuery": "ereader schermo antiriflesso luce regolabile",
+  "notFor": "Chi ama la carta e legge pochi libri l'anno.",
+  "checkBefore": "Se ha luce regolabile e quale formato di libri supporta."
  },
  {
   "id": "c026-abbonamento-ad-audiolibri",
@@ -1102,7 +1150,9 @@
    "subscriptions"
   ],
   "lastMinute": true,
-  "amazonQuery": "abbonamento audible regalo audiolibri"
+  "amazonQuery": "abbonamento audible regalo audiolibri",
+  "notFor": "Chi preferisce leggere su carta o non ascolta mai in cuffia.",
+  "checkBefore": "Durata dell'abbonamento regalato e se si rinnova da solo alla scadenza."
  },
  {
   "id": "c027-manga-o-graphic-novel-in-cofanetto",
@@ -1142,7 +1192,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "cofanetto manga serie completa graphic novel"
+  "amazonQuery": "cofanetto manga serie completa graphic novel",
+  "notFor": "Chi non legge fumetti.",
+  "checkBefore": "Che sia la serie giusta e l'edizione italiana; controlla se ha già qualche volume."
  },
  {
   "id": "c028-libro-di-ricette-di-cucina-del-mondo",
@@ -1186,7 +1238,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "libro ricette cucina giapponese illustrato"
+  "amazonQuery": "libro ricette cucina giapponese illustrato",
+  "notFor": "Chi cucina solo piatti tradizionali e non ama sperimentare.",
+  "checkBefore": "Che le ricette usino ingredienti facili da trovare in Italia."
  },
  {
   "id": "c029-diario-dei-ricordi-da-compilare",
@@ -1268,7 +1322,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "agenda 2027 settimanale copertina rigida"
+  "amazonQuery": "agenda 2027 settimanale copertina rigida",
+  "notFor": "Chi usa solo il calendario sul telefono.",
+  "checkBefore": "Formato (settimanale o giornaliero) e dimensioni per la borsa."
  },
  {
   "id": "c031-penna-stilografica-per-iniziare",
@@ -1308,7 +1364,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "penna stilografica regalo confezione"
+  "amazonQuery": "penna stilografica regalo confezione",
+  "notFor": "Chi scrive poco a mano.",
+  "checkBefore": "Il tipo di pennino (fine o medio) e che usi cartucce standard."
  },
  {
   "id": "c032-taccuino-in-pelle",
@@ -1352,7 +1410,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "taccuino pelle personalizzabile iniziali"
+  "amazonQuery": "taccuino pelle personalizzabile iniziali",
+  "notFor": "Chi non scrive appunti né diari.",
+  "checkBefore": "Se l'incisione delle iniziali allunga i tempi di consegna."
  },
  {
   "id": "c033-fotocamera-istantanea",
@@ -1394,7 +1454,9 @@
    "gadgets"
   ],
   "lastMinute": false,
-  "amazonQuery": "fotocamera istantanea instax mini"
+  "amazonQuery": "fotocamera istantanea instax mini",
+  "notFor": "Chi non vuole spendere per le pellicole.",
+  "checkBefore": "Il costo delle pellicole e che siano incluse almeno le prime."
  },
  {
   "id": "c034-stampante-fotografica-tascabile",
@@ -1436,7 +1498,9 @@
    "gadgets"
   ],
   "lastMinute": false,
-  "amazonQuery": "stampante foto portatile smartphone"
+  "amazonQuery": "stampante foto portatile smartphone",
+  "notFor": "Chi stampa raramente le foto.",
+  "checkBefore": "Il costo della carta di ricambio e la compatibilità con l'app del telefono."
  },
  {
   "id": "c035-cornice-digitale-per-le-foto-di-famiglia",
@@ -1473,7 +1537,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "cornice digitale wifi app foto"
+  "amazonQuery": "cornice digitale wifi app foto",
+  "notFor": "Chi non ha il Wi-Fi in casa.",
+  "checkBefore": "Che funzioni con un'app semplice e possa ricevere foto da più familiari."
  },
  {
   "id": "c036-album-fotografico-da-riempire",
@@ -1514,7 +1580,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "album fotografico da riempire pagine nere"
+  "amazonQuery": "album fotografico da riempire pagine nere",
+  "notFor": "Chi non stampa mai le foto.",
+  "checkBefore": "Formato delle pagine e se servono adesivi o angolini."
  },
  {
   "id": "c037-kit-acquerello-per-principianti",
@@ -1554,7 +1622,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "kit acquerello principianti adulti pennelli carta"
+  "amazonQuery": "kit acquerello principianti adulti pennelli carta",
+  "notFor": "Chi ha già un'attrezzatura da pittore.",
+  "checkBefore": "La qualità della carta: per l'acquerello serve carta spessa."
  },
  {
   "id": "c038-kit-di-ricamo-moderno",
@@ -1593,7 +1663,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "kit ricamo principianti moderno telaio"
+  "amazonQuery": "kit ricamo principianti moderno telaio",
+  "notFor": "Chi non ha pazienza per i lavori manuali.",
+  "checkBefore": "Che il disegno sia stampato sul tessuto e le istruzioni chiare."
  },
  {
   "id": "c039-kit-per-fare-candele-in-casa",
@@ -1635,7 +1707,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "kit fare candele cera soia fai da te"
+  "amazonQuery": "kit fare candele cera soia fai da te",
+  "notFor": "Chi ha bambini piccoli in casa e poco spazio per lavorare con la cera calda.",
+  "checkBefore": "Il tipo di cera (soia o d'api) e quante candele permette di fare."
  },
  {
   "id": "c040-candela-profumata-di-qualita",
@@ -1679,7 +1753,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "candela profumata vaso vetro cera di soia"
+  "amazonQuery": "candela profumata vaso vetro cera di soia",
+  "notFor": "Chi soffre i profumi intensi.",
+  "checkBefore": "La fragranza e il tipo di cera; meglio profumi delicati se non conosci i gusti."
  },
  {
   "id": "c041-coperta-morbida-per-il-divano",
@@ -1766,7 +1842,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "kit terrario vetro piante succulente"
+  "amazonQuery": "kit terrario vetro piante succulente",
+  "notFor": "Chi non ama prendersi cura delle piante.",
+  "checkBefore": "Se le piante sono incluse o vanno comprate a parte."
  },
  {
   "id": "c043-set-per-una-spa-a-casa",
@@ -1808,7 +1886,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "set spa regalo relax bagno maschere"
+  "amazonQuery": "set spa regalo relax bagno maschere",
+  "notFor": "Chi ha la pelle molto sensibile o allergie.",
+  "checkBefore": "L'elenco degli ingredienti e che i prodotti non siano già aperti o scaduti."
  },
  {
   "id": "c044-sciarpa-in-lana-o-cashmere",
@@ -1847,7 +1927,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "sciarpa cashmere lana uomo donna"
+  "amazonQuery": "sciarpa cashmere lana uomo donna",
+  "notFor": "Chi vive dove fa caldo tutto l'anno.",
+  "checkBefore": "La composizione: il cashmere puro costa di più di una lana mista."
  },
  {
   "id": "c045-portafoglio-sottile-in-pelle",
@@ -1888,7 +1970,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "portafoglio slim pelle rfid"
+  "amazonQuery": "portafoglio slim pelle rfid",
+  "notFor": "Chi usa solo il telefono per pagare.",
+  "checkBefore": "Quante carte contiene e se c'è spazio per le monete."
  },
  {
   "id": "c046-collana-minimal-con-iniziale",
@@ -1929,7 +2013,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "collana iniziale lettera argento donna"
+  "amazonQuery": "collana iniziale lettera argento donna",
+  "notFor": "Chi non indossa gioielli o ha allergie ai metalli.",
+  "checkBefore": "Il metallo (argento 925 o acciaio) e la lunghezza della catena."
  },
  {
   "id": "c047-braccialetto-fitness",
@@ -1971,7 +2057,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "braccialetto fitness tracker sonno battito"
+  "amazonQuery": "braccialetto fitness tracker sonno battito",
+  "notFor": "Chi ha già uno smartwatch.",
+  "checkBefore": "Compatibilità con il suo telefono e durata della batteria."
  },
  {
   "id": "c048-pistola-massaggiante-compatta",
@@ -2011,7 +2099,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "pistola massaggiante compatta percussione"
+  "amazonQuery": "pistola massaggiante compatta percussione",
+  "notFor": "Chi non fa sport e non ha dolori muscolari.",
+  "checkBefore": "Rumorosità, peso e numero di testine incluse."
  },
  {
   "id": "c049-tappetino-yoga-di-qualita",
@@ -2050,7 +2140,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "tappetino yoga antiscivolo spesso"
+  "amazonQuery": "tappetino yoga antiscivolo spesso",
+  "notFor": "Chi non pratica attività a terra.",
+  "checkBefore": "Spessore (almeno 6 mm per il pilates) e che sia antiscivolo."
  },
  {
   "id": "c050-borraccia-termica-in-acciaio",
@@ -2096,7 +2188,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "borraccia termica acciaio 750 ml"
+  "amazonQuery": "borraccia termica acciaio 750 ml",
+  "notFor": "Chi ha già una borraccia che usa ogni giorno.",
+  "checkBefore": "Capacità e che sia lavabile in lavastoviglie."
  },
  {
   "id": "c051-lampada-frontale-ricaricabile",
@@ -2136,7 +2230,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "lampada frontale ricaricabile usb led"
+  "amazonQuery": "lampada frontale ricaricabile usb led",
+  "notFor": "Chi non fa attività all'aperto.",
+  "checkBefore": "Luminosità in lumen e la ricarica via USB-C."
  },
  {
   "id": "c052-mappa-del-mondo-da-grattare",
@@ -2178,7 +2274,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "mappa del mondo da grattare poster viaggi"
+  "amazonQuery": "mappa del mondo da grattare poster viaggi",
+  "notFor": "Chi non viaggia e non ha intenzione di farlo.",
+  "checkBefore": "Le dimensioni del poster e se include una cornice."
  },
  {
   "id": "c053-organizer-da-viaggio-per-cavi",
@@ -2222,7 +2320,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "organizer cavi viaggio astuccio elettronica"
+  "amazonQuery": "organizer cavi viaggio astuccio elettronica",
+  "notFor": "Chi viaggia raramente.",
+  "checkBefore": "Le dimensioni rispetto ai suoi cavi e caricabatterie."
  },
  {
   "id": "c054-binocolo-compatto",
@@ -2264,7 +2364,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "binocolo compatto 10x25 escursioni birdwatching"
+  "amazonQuery": "binocolo compatto 10x25 escursioni birdwatching",
+  "notFor": "Chi non va mai in montagna o in natura.",
+  "checkBefore": "L'ingrandimento (8x o 10x) e il peso."
  },
  {
   "id": "c055-gioco-interattivo-per-gatti",
@@ -2306,7 +2408,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "gioco interattivo gatti automatico"
+  "amazonQuery": "gioco interattivo gatti automatico",
+  "notFor": "Chi ha un gatto anziano e poco attivo.",
+  "checkBefore": "Materiali sicuri e se funziona a batterie o ricaricabile."
  },
  {
   "id": "c056-kit-di-esperimenti-scientifici",
@@ -2343,7 +2447,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "kit esperimenti scientifici bambini 8 anni"
+  "amazonQuery": "kit esperimenti scientifici bambini 8 anni",
+  "notFor": "Bambini che non amano le attività guidate.",
+  "checkBefore": "L'età consigliata e che gli esperimenti siano sicuri senza adulti."
  },
  {
   "id": "c057-gioco-da-tavolo-per-famiglie-con-bambini",
@@ -2379,7 +2485,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "gioco da tavolo famiglia bambini 7 anni"
+  "amazonQuery": "gioco da tavolo famiglia bambini 7 anni",
+  "notFor": "Famiglie che giocano raramente insieme.",
+  "checkBefore": "Età minima, numero di giocatori e durata della partita."
  },
  {
   "id": "c058-lampada-con-foto-personalizzata",
@@ -2423,7 +2531,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "lampada led foto personalizzata incisa"
+  "amazonQuery": "lampada led foto personalizzata incisa",
+  "notFor": "Chi non ama gli oggetti personalizzati in casa.",
+  "checkBefore": "Tempi di personalizzazione e consegna, che possono essere lunghi a dicembre."
  },
  {
   "id": "c059-mappa-stellare-della-vostra-data",
@@ -2465,7 +2575,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "poster mappa stellare personalizzata data"
+  "amazonQuery": "poster mappa stellare personalizzata data",
+  "notFor": "Chi preferisce regali pratici.",
+  "checkBefore": "Che la data e il luogo siano corretti prima dell'ordine e i tempi di stampa."
  },
  {
   "id": "c060-libro-da-completare-in-coppia",
@@ -2505,7 +2617,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "libro di coppia da compilare domande"
+  "amazonQuery": "libro di coppia da compilare domande",
+  "notFor": "Chi non ama scrivere o rispondere a domande personali.",
+  "checkBefore": "Che sia in italiano e il tono delle domande, leggero o profondo."
  },
  {
   "id": "c061-barattolo-dei-messaggi",
@@ -2546,7 +2660,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "barattolo messaggi bigliettini regalo coppia"
+  "amazonQuery": "barattolo messaggi bigliettini regalo coppia",
+  "notFor": "Chi non ama i gesti romantici o sentimentali.",
+  "checkBefore": "Che ci siano abbastanza bigliettini e il tempo per scriverli prima di regalarlo."
  },
  {
   "id": "c062-bracciali-di-coppia",
@@ -2584,7 +2700,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "bracciali di coppia abbinati"
+  "amazonQuery": "bracciali di coppia abbinati",
+  "notFor": "Chi non porta accessori o è all'inizio di una relazione.",
+  "checkBefore": "Le misure regolabili e il materiale."
  },
  {
   "id": "c063-profumo-per-ambienti-con-bastoncini",
@@ -2627,7 +2745,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "diffusore bastoncini profumo ambiente regalo"
+  "amazonQuery": "diffusore bastoncini profumo ambiente regalo",
+  "notFor": "Chi soffre i profumi forti o ha animali sensibili.",
+  "checkBefore": "La fragranza e la durata indicata."
  },
  {
   "id": "c064-tazza-con-frase-divertente",
@@ -2668,7 +2788,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "tazza divertente frase ironica ufficio"
+  "amazonQuery": "tazza divertente frase ironica ufficio",
+  "notFor": "Chi non ama l'ironia o non beve bevande calde.",
+  "checkBefore": "Che la frase sia adatta al rapporto che avete, soprattutto con i colleghi."
  },
  {
   "id": "c065-calze-natalizie-buffe",
@@ -2711,7 +2833,9 @@
    "sizes"
   ],
   "lastMinute": false,
-  "amazonQuery": "calze divertenti natale uomo donna"
+  "amazonQuery": "calze divertenti natale uomo donna",
+  "notFor": "Chi preferisce regali utili e seri.",
+  "checkBefore": "La taglia: molte calze sono taglia unica."
  },
  {
   "id": "c066-gioco-di-sfide-da-bere-tra-amici",
@@ -2751,7 +2875,9 @@
    "alcohol"
   ],
   "lastMinute": false,
-  "amazonQuery": "gioco di carte festa adulti sfide"
+  "amazonQuery": "gioco di carte festa adulti sfide",
+  "notFor": "Chi non beve o non ama i giochi di gruppo.",
+  "checkBefore": "Che sia adatto al gruppo: alcune sfide sono molto spinte."
  },
  {
   "id": "c067-kit-per-fare-il-sushi-a-casa",
@@ -2793,7 +2919,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "kit sushi fai da te stuoino bambù"
+  "amazonQuery": "kit sushi fai da te stuoino bambù",
+  "notFor": "Chi non mangia pesce crudo.",
+  "checkBefore": "Che contenga stuoino e istruzioni in italiano."
  },
  {
   "id": "c068-cuscino-a-forma-di-cibo",
@@ -2831,7 +2959,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "cuscino peluche forma cibo divertente"
+  "amazonQuery": "cuscino peluche forma cibo divertente",
+  "notFor": "Chi preferisce un arredamento sobrio.",
+  "checkBefore": "Le dimensioni e se la fodera è lavabile."
  },
  {
   "id": "c069-mini-macchina-per-popcorn",
@@ -2877,7 +3007,9 @@
    "bulky"
   ],
   "lastMinute": false,
-  "amazonQuery": "macchina popcorn aria calda casa"
+  "amazonQuery": "macchina popcorn aria calda casa",
+  "notFor": "Chi ha poco spazio in cucina.",
+  "checkBefore": "Che funzioni ad aria calda, senza olio, e sia facile da pulire."
  },
  {
   "id": "c070-zaino-per-il-computer",
@@ -2919,7 +3051,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "zaino porta pc antifurto impermeabile"
+  "amazonQuery": "zaino porta pc antifurto impermeabile",
+  "notFor": "Chi va al lavoro in auto e usa poco lo zaino.",
+  "checkBefore": "La misura dello scomparto per il portatile, in pollici."
  },
  {
   "id": "c071-supporto-per-il-portatile",
@@ -2958,7 +3092,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "supporto portatile alluminio regolabile pieghevole"
+  "amazonQuery": "supporto portatile alluminio regolabile pieghevole",
+  "notFor": "Chi lavora al computer fisso.",
+  "checkBefore": "Che si regoli in altezza e regga il peso del suo portatile."
  },
  {
   "id": "c072-portabiglietti-da-visita-in-metallo",
@@ -2994,7 +3130,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "porta biglietti da visita acciaio elegante"
+  "amazonQuery": "porta biglietti da visita acciaio elegante",
+  "notFor": "Chi non usa biglietti da visita.",
+  "checkBefore": "Le dimensioni e se si può incidere."
  },
  {
   "id": "c073-lampada-da-scrivania",
@@ -3036,7 +3174,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "lampada scrivania led ricarica wireless"
+  "amazonQuery": "lampada scrivania led ricarica wireless",
+  "notFor": "Chi ha già una buona luce sulla scrivania.",
+  "checkBefore": "Se ha luce regolabile e se la ricarica wireless è compatibile con il suo telefono."
  },
  {
   "id": "c074-set-di-bicchieri-da-vino",
@@ -3080,7 +3220,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "set calici vino cristallo confezione regalo"
+  "amazonQuery": "set calici vino cristallo confezione regalo",
+  "notFor": "Chi non beve vino.",
+  "checkBefore": "Il numero di calici e se sono lavabili in lavastoviglie."
  },
  {
   "id": "c075-tagliere-in-legno-da-servizio",
@@ -3123,7 +3265,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "tagliere legno da portata aperitivo"
+  "amazonQuery": "tagliere legno da portata aperitivo",
+  "notFor": "Chi non organizza mai cene o aperitivi.",
+  "checkBefore": "Le dimensioni e che il legno sia trattato per alimenti."
  },
  {
   "id": "c076-pianta-da-appartamento-facile",
@@ -3168,7 +3312,9 @@
    "bulky"
   ],
   "lastMinute": false,
-  "amazonQuery": "pianta da appartamento vera vaso facile"
+  "amazonQuery": "pianta da appartamento vera vaso facile",
+  "notFor": "Chi viaggia spesso e non può curarla.",
+  "checkBefore": "Quanta luce richiede e se arriva con il vaso decorativo."
  },
  {
   "id": "c077-zerbino-divertente",
@@ -3205,7 +3351,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "zerbino divertente scritta benvenuto"
+  "amazonQuery": "zerbino divertente scritta benvenuto",
+  "notFor": "Chi vive in condominio con regole sull'ingresso o non ama l'ironia.",
+  "checkBefore": "Le misure rispetto allo spazio davanti alla porta."
  },
  {
   "id": "c078-album-dei-primi-anni-del-bambino",
@@ -3243,7 +3391,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "album nascita primo anno bambino da compilare"
+  "amazonQuery": "album nascita primo anno bambino da compilare",
+  "notFor": "Genitori che hanno già ricevuto un album simile.",
+  "checkBefore": "Che sia neutro o adatto al nome e al sesso del bambino, se già noto."
  },
  {
   "id": "c079-kit-per-le-impronte-del-neonato",
@@ -3281,7 +3431,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "kit impronte neonato cornice"
+  "amazonQuery": "kit impronte neonato cornice",
+  "notFor": "Genitori che preferiscono non usare inchiostri o paste sul neonato.",
+  "checkBefore": "Che i materiali siano atossici e adatti ai neonati."
  },
  {
   "id": "c080-copertina-in-mussola-per-neonato",
@@ -3320,7 +3472,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "copertina mussola neonato cotone"
+  "amazonQuery": "copertina mussola neonato cotone",
+  "notFor": "Chi ne ha già ricevute molte.",
+  "checkBefore": "Che il cotone sia certificato per neonati e le dimensioni."
  },
  {
   "id": "c081-cuscino-lombare-per-la-sedia",
@@ -3397,7 +3551,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "radio vintage bluetooth design retro"
+  "amazonQuery": "radio vintage bluetooth design retro",
+  "notFor": "Chi ascolta musica solo dal telefono con le cuffie.",
+  "checkBefore": "Che riceva anche la radio FM o DAB, non solo il Bluetooth."
  },
  {
   "id": "c083-lente-d-ingrandimento-con-luce",
@@ -3469,7 +3625,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "fotolibro personalizzato copertina rigida"
+  "amazonQuery": "fotolibro personalizzato copertina rigida",
+  "notFor": "Chi preferisce un regalo pronto da comprare: serve tempo per comporlo.",
+  "checkBefore": "I tempi di stampa e consegna, più lunghi a dicembre."
  },
  {
   "id": "c085-kit-per-la-cura-della-barba",
@@ -3509,7 +3667,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "kit cura barba olio balsamo pettine regalo"
+  "amazonQuery": "kit cura barba olio balsamo pettine regalo",
+  "notFor": "Chi non porta la barba.",
+  "checkBefore": "Gli ingredienti, se ha la pelle sensibile."
  },
  {
   "id": "c086-orologio-minimal",
@@ -3549,7 +3709,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "orologio minimal uomo donna cinturino pelle"
+  "amazonQuery": "orologio minimal uomo donna cinturino pelle",
+  "notFor": "Chi non porta orologi.",
+  "checkBefore": "Il diametro della cassa e il tipo di cinturino."
  },
  {
   "id": "c087-borsa-a-tracolla-in-pelle",
@@ -3588,7 +3750,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "borsa tracolla pelle donna piccola"
+  "amazonQuery": "borsa tracolla pelle donna piccola",
+  "notFor": "Chi usa solo zaini o borse grandi.",
+  "checkBefore": "Le misure e la lunghezza regolabile della tracolla."
  },
  {
   "id": "c088-set-manicure-da-viaggio",
@@ -3633,7 +3797,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "set manicure acciaio astuccio viaggio"
+  "amazonQuery": "set manicure acciaio astuccio viaggio",
+  "notFor": "Chi ha già un set completo.",
+  "checkBefore": "La qualità dell'acciaio e se l'astuccio è compatto."
  },
  {
   "id": "c089-lampada-a-nuvola-o-neon-per-la-cameretta",
@@ -3670,7 +3836,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "lampada neon led cameretta ragazzi"
+  "amazonQuery": "lampada neon led cameretta ragazzi",
+  "notFor": "Chi preferisce una cameretta sobria.",
+  "checkBefore": "Che si colleghi alla presa USB e la luminosità regolabile."
  },
  {
   "id": "c090-cuffie-wireless",
@@ -3711,7 +3879,9 @@
    "gadgets"
   ],
   "lastMinute": false,
-  "amazonQuery": "auricolari wireless bluetooth custodia ricarica"
+  "amazonQuery": "auricolari wireless bluetooth custodia ricarica",
+  "notFor": "Chi ha già auricolari recenti.",
+  "checkBefore": "L'autonomia e la compatibilità con il suo telefono."
  },
  {
   "id": "c091-gioco-di-carte-strategico-da-collezione",
@@ -3750,7 +3920,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "mazzo introduttivo gioco carte collezionabili"
+  "amazonQuery": "mazzo introduttivo gioco carte collezionabili",
+  "notFor": "Chi non ha amici con cui giocare.",
+  "checkBefore": "Che sia il mazzo introduttivo e l'età consigliata."
  },
  {
   "id": "c092-kit-di-disegno-manga",
@@ -3789,7 +3961,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "kit disegno manga pennarelli manuale"
+  "amazonQuery": "kit disegno manga pennarelli manuale",
+  "notFor": "Chi non disegna.",
+  "checkBefore": "Il tipo di pennarelli (a base d'alcol) e che il manuale sia in italiano."
  },
  {
   "id": "c093-set-di-costruzioni-a-tema",
@@ -3826,7 +4000,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "set costruzioni mattoncini bambini 8 anni"
+  "amazonQuery": "set costruzioni mattoncini bambini 8 anni",
+  "notFor": "Bambini che preferiscono giochi di movimento.",
+  "checkBefore": "L'età indicata sulla scatola e il numero di pezzi."
  },
  {
   "id": "c094-robot-da-programmare-per-bambini",
@@ -3862,7 +4038,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "robot programmabile bambini coding 8 anni"
+  "amazonQuery": "robot programmabile bambini coding 8 anni",
+  "notFor": "Bambini sotto l'età consigliata.",
+  "checkBefore": "L'età minima, che l'app sia in italiano e il tipo di batterie."
  },
  {
   "id": "c095-kit-per-creare-braccialetti",
@@ -3898,7 +4076,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "kit braccialetti perline bambina"
+  "amazonQuery": "kit braccialetti perline bambina",
+  "notFor": "Bambini piccoli che mettono gli oggetti in bocca.",
+  "checkBefore": "L'età consigliata: le perline sono pezzi piccoli."
  },
  {
   "id": "c096-libro-gioco-di-avventura",
@@ -3935,7 +4115,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "libro gioco avventura bambini scegli tu"
+  "amazonQuery": "libro gioco avventura bambini scegli tu",
+  "notFor": "Bambini che non amano leggere.",
+  "checkBefore": "L'età di lettura indicata dall'editore."
  },
  {
   "id": "c097-monopattino-per-bambini",
@@ -3973,7 +4155,9 @@
    "bulky"
   ],
   "lastMinute": false,
-  "amazonQuery": "monopattino bambini regolabile 8 anni freno"
+  "amazonQuery": "monopattino bambini regolabile 8 anni freno",
+  "notFor": "Bambini che non hanno spazi sicuri all'aperto.",
+  "checkBefore": "Il peso massimo, l'altezza regolabile e il freno."
  },
  {
   "id": "c098-kit-di-magia-per-bambini",
@@ -4010,7 +4194,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "kit magia bambini trucchi 8 anni"
+  "amazonQuery": "kit magia bambini trucchi 8 anni",
+  "notFor": "Bambini troppo piccoli per seguire le istruzioni.",
+  "checkBefore": "L'età consigliata e che i trucchi abbiano istruzioni semplici."
  },
  {
   "id": "c099-palestrina-per-neonati",
@@ -4053,7 +4239,9 @@
   "amazonQuery": "palestrina neonato tappeto gioco",
   "stages": [
    "infant"
-  ]
+  ],
+  "notFor": "Case con pochissimo spazio libero.",
+  "checkBefore": "Che sia lavabile e l'età indicata dal produttore."
  },
  {
   "id": "c100-libro-tattile-di-stoffa",
@@ -4096,7 +4284,9 @@
   "stages": [
    "infant",
    "toddler"
-  ]
+  ],
+  "notFor": "Chi ne ha già uno simile.",
+  "checkBefore": "Che sia lavabile e senza parti staccabili."
  },
  {
   "id": "c101-torre-di-blocchi-impilabili",
@@ -4137,7 +4327,9 @@
   "stages": [
    "infant",
    "toddler"
-  ]
+  ],
+  "notFor": "Bambini già più grandi della fascia indicata.",
+  "checkBefore": "L'età indicata dal produttore e la misura dei pezzi."
  },
  {
   "id": "c102-cucina-giocattolo-in-legno",
@@ -4178,7 +4370,9 @@
   "amazonQuery": "cucina giocattolo legno bambini 3 anni",
   "stages": [
    "preschool"
-  ]
+  ],
+  "notFor": "Case con poco spazio per un gioco ingombrante.",
+  "checkBefore": "Le dimensioni da montato e l'età consigliata."
  },
  {
   "id": "c103-bici-senza-pedali",
@@ -4220,7 +4414,9 @@
   "stages": [
    "toddler",
    "preschool"
-  ]
+  ],
+  "notFor": "Bambini che hanno già la bici con le rotelle.",
+  "checkBefore": "L'altezza della sella rispetto al bambino e il peso della bici."
  },
  {
   "id": "c104-primi-strumenti-musicali",
@@ -4260,7 +4456,9 @@
   "stages": [
    "toddler",
    "preschool"
-  ]
+  ],
+  "notFor": "Genitori che non sopportano i giochi rumorosi.",
+  "checkBefore": "L'età consigliata e che i pezzi non siano piccoli."
  },
  {
   "id": "c105-puzzle-in-legno-a-incastro",
@@ -4301,7 +4499,9 @@
   "stages": [
    "toddler",
    "preschool"
-  ]
+  ],
+  "notFor": "Bambini già abili con i puzzle a più pezzi.",
+  "checkBefore": "L'età indicata e che i pomelli siano ben fissati."
  },
  {
   "id": "c106-set-di-pastelli-e-album",
@@ -4342,7 +4542,9 @@
   "stages": [
    "toddler",
    "preschool"
-  ]
+  ],
+  "notFor": "Bambini sotto l'età indicata dal produttore.",
+  "checkBefore": "Che i colori siano atossici e lavabili."
  },
  {
   "id": "c107-set-di-coltelli-da-bistecca",
@@ -4383,7 +4585,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "set coltelli bistecca confezione regalo"
+  "amazonQuery": "set coltelli bistecca confezione regalo",
+  "notFor": "Chi non mangia carne.",
+  "checkBefore": "Il numero di coltelli e se sono lavabili in lavastoviglie."
  },
  {
   "id": "c108-cornice-multi-foto",
@@ -4426,7 +4630,9 @@
   "avoidFlags": [],
   "lastMinute": false,
   "amazonQuery": "cornice multi foto parete collage",
-  "boost": -2
+  "boost": -2,
+  "notFor": "Chi non stampa le foto.",
+  "checkBefore": "Il numero e il formato delle foto che contiene."
  },
  {
   "id": "c109-cioccolatini-artigianali",
@@ -4470,7 +4676,9 @@
    "food"
   ],
   "lastMinute": false,
-  "amazonQuery": "cioccolatini artigianali scatola regalo"
+  "amazonQuery": "cioccolatini artigianali scatola regalo",
+  "notFor": "Chi ha allergie o segue una dieta: controlla con discrezione.",
+  "checkBefore": "Gli ingredienti e gli allergeni, oltre alla scadenza."
  },
  {
   "id": "c110-pianta-grassa-in-vaso-di-design",
@@ -4511,7 +4719,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "pianta grassa vaso design scrivania"
+  "amazonQuery": "pianta grassa vaso design scrivania",
+  "notFor": "Chi non ha luce naturale vicino alla scrivania.",
+  "checkBefore": "Le dimensioni e se la pianta è vera o artificiale."
  },
  {
   "id": "c111-set-di-penne-colorate",
@@ -4553,7 +4763,9 @@
   "kind": "object",
   "avoidFlags": [],
   "lastMinute": false,
-  "amazonQuery": "set penne fineliner colori"
+  "amazonQuery": "set penne fineliner colori",
+  "notFor": "Chi scrive solo al computer.",
+  "checkBefore": "Il tipo di punta e che l'inchiostro non trapassi la carta sottile."
  },
  {
   "id": "c112-gift-card-amazon",
@@ -4643,6 +4855,8 @@
    "subscriptions"
   ],
   "lastMinute": true,
-  "amazonQuery": "kindle unlimited abbonamento regalo"
+  "amazonQuery": "kindle unlimited abbonamento regalo",
+  "notFor": "Chi preferisce i libri di carta.",
+  "checkBefore": "Durata dell'abbonamento regalato e se si rinnova da solo alla scadenza."
  }
 ]

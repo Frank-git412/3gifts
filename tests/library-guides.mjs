@@ -26,6 +26,8 @@ test('every guide has at least six ideas and respects its price limit', () => {
 test('guide pages show fresh prices with time, otherwise a search link, and carry share previews', async () => {
   const now=Date.now();
   const fresh=await (await libraryGuidePage('/idee/regali-natale-per-chi-ama-cucinare',{DB:await withProduct(id('c001'),now)},concepts,guides,now)).text();
+  assert.match(fresh,/Non è adatto a<\/dt><dd>Chi non beve vino/);assert.match(fresh,/Prima di comprare controlla/);
+  assert.match(fresh,/href="\/idee\/come-scegliamo"/);
   assert.match(fresh,/29,00/);assert.match(fresh,/Prezzo Amazon aggiornato il/);
   assert.match(fresh,/<meta property="og:image" content="https:\/\/3gifts.it\/og-image.png">/);
   assert.doesNotMatch(fresh,/noindex/);
@@ -43,4 +45,11 @@ test('a shared selection shows only library ideas and stays out of search result
   assert.equal((html.match(/class="idea"/g)||[]).length,2,'unknown ids are ignored');
   assert.match(html,/<meta name="robots" content="noindex">/);
   assert.equal(await libraryShareSelection(new URL('https://3gifts.it/scelta?idee=nulla'),{DB:db},concepts,now),null);
+});
+
+test('the method page explains how ideas, products and prices are chosen; Black Friday keeps only objects', async () => {
+  const page=await (await libraryGuidePage('/idee/come-scegliamo',{},concepts,guides)).text();
+  assert.match(page,/Come scegliamo le idee regalo/);assert.match(page,/24 ore/);assert.match(page,/commission/);
+  const bf=guides.find(g=>g.slug==='regali-natale-black-friday');
+  assert.ok(guideConcepts(bf,concepts,new Map()).every(x=>x.concept.kind==='object'));
 });
