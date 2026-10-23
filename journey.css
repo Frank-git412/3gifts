@@ -75,3 +75,8 @@
 @media(max-width:380px){.budget-pair{grid-template-columns:1fr;gap:12px}}
 
 .gift-card .age-review-notice{background:#fff4cc;color:#553b08;border-left:3px solid #916400;padding:.75rem;font-size:.95rem;line-height:1.5}.age-review-notice strong{font-size:1rem}
+.share-results{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;margin:18px 0 6px;padding:16px 18px;border:1px solid var(--line);border-radius:16px;background:var(--panel)}
+.share-results p{margin:0;flex:1 1 220px;font-weight:700}
+.share-results a,.share-results button{font:inherit;font-weight:700;font-size:.92rem;border-radius:999px;padding:9px 16px;cursor:pointer;text-decoration:none;border:2px solid #17132f}
+.share-results a{background:#17132f;color:#fff}
+.share-results button{background:transparent;color:#17132f}

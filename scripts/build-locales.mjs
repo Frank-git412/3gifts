@@ -54,7 +54,9 @@ function decorate(html,file,en) {
  const clean=file==="index.html"?"":file.replace(/\.html$/,"");
  const canonical="https://3gifts.it/"+(en?"en/":"")+clean;
  const domainRedirect='<script>(function(){if(location.hostname==="www.3gifts.it"){var u=new URL(location.href);u.hostname="3gifts.it";location.replace(u.href)}})();</script>';
- html=html.replace("</head>",domainRedirect+'<link rel="canonical" href="'+canonical+'"><link rel="stylesheet" href="'+asset+'language.css"><script defer src="'+asset+'language.js"></script>'+(en?'<meta name="robots" content="noindex">':'')+'</head>');
+ const pageTitle=(html.match(/<title>([^<]*)<\/title>/)||[])[1]||"3Gifts",pageDescription=(html.match(/<meta name="description" content="([^"]*)"/)||[])[1]||"";
+ const sharePreview='<meta property="og:type" content="website"><meta property="og:site_name" content="3Gifts"><meta property="og:locale" content="'+(en?'en_US':'it_IT')+'"><meta property="og:title" content="'+pageTitle+'"><meta property="og:description" content="'+pageDescription+'"><meta property="og:url" content="'+canonical+'"><meta property="og:image" content="https://3gifts.it/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">';
+ html=html.replace("</head>",domainRedirect+sharePreview+'<link rel="canonical" href="'+canonical+'"><link rel="stylesheet" href="'+asset+'language.css"><script defer src="'+asset+'language.js"></script>'+(en?'<meta name="robots" content="noindex">':'')+'</head>');
  if(en) {
   html=html.replace(/(<html\b[^>]*\s)lang="[^"]*"/i,'$1lang="en-US"');
   // Shared assets move up one level; HTML links stay within the selected language.

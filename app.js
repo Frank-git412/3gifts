@@ -97,6 +97,7 @@ function normalizeProduct(p){
   const price=Number(p.price?.amount??p.price);
   const result={id:String(p.id||""),asin:String(p.asin||""),name:String(p.title||p.name||"Prodotto"),store:String(p.store||"Amazon"),type:String(p.type||"product"),instant:Boolean(p.instant),price:Number.isFinite(price)?price:0,priceStatus:String(p.priceStatus||"unknown"),rating:Number(p.rating)||0,reviewCount:Number(p.reviewCount)||0,imageUrl:String(p.imageUrl||""),imageSource:String(p.imageSource||p.store||""),imageUpdatedAt:String(p.imageUpdatedAt||""),url:String(p.url||""),directUrl:String(p.directUrl||""),emoji:p.emoji||"🎁",tags:Array.isArray(p.tags)?p.tags.filter(x=>typeof x==="string"):[],why:String(p.why||"Una proposta da valutare per gli interessi indicati."),query:String(p.query||p.title||p.name||"idea regalo"),macro:String(p.macro||""),subcategory:String(p.subcategory||""),availabilityStatus:String(p.availabilityStatus||p.availability||""),monitorStatus:String(p.monitorStatus||p.status||""),catalogStatus:String(p.catalogStatus||""),checkedAt:String(p.checkedAt||p.lastChecked||""),monitorEligible:p.monitorEligible!==false,isLive:Boolean(p.asin||p.url),linkStatus:String(p.linkStatus||""),offer:p.offer&&typeof p.offer==="object"?p.offer:null};
   result.parentAsin=/^[A-Z0-9]{10}$/.test(p.parentAsin||'')?p.parentAsin:null;
+  result.conceptId=/^c\d{3}-[a-z0-9-]+$/.test(p.conceptId||'')?p.conceptId:'';
   // Keep listing facts for the same exclusion checks after server selection.
   result.features=String(p.features||'');
   result.productGroup=String(p.productGroup||'');
@@ -351,9 +352,20 @@ function renderProductCards(selected,profile,reasonIntro=""){
     const shortName=shortProductName(p),fullName=displayText(p.name);
     const ageReview=p.ageVerification==="required"?'<p class="age-review-notice"><strong>Età consigliata da verificare</strong><br>La scheda non indica chiaramente l’età consigliata. Controllala su Amazon o sul sito dell’editore prima dell’acquisto.</p>':"";
     return `<article class="gift-card" data-no-image="${!safeUrl(p.imageUrl,"")}"><div class="gift-visual">${productVisual(p,url)}</div><div class="gift-body"><div class="card-top"><span class="match">${esc(p.ageVerification==="required"?"Idea da verificare":["La nostra scelta","Ottima alternativa","Un’idea diversa"][i])}</span><span class="store-badge ${storeClass}">${esc(p.store)}</span></div><h3 title="${esc(fullName)}">${esc(shortName)}</h3>${ageReview}<p>${esc(reason)}</p>${p.amazonPrice?"":`<p>${esc(conditions)}</p>`}<div class="gift-meta"><strong>${esc(priceText)}</strong>${p.amazonPrice?`<small class="price-time">${esc(priceTime(p))}</small>`:""}${delivery?`<span class="delivery">${esc(delivery)}</span>`:""}</div><a href="${esc(url)}" target="_blank" rel="nofollow noopener noreferrer" data-product="${esc(fullName)}" data-position="${i+1}" data-area="${esc(p.tags[0]||"")}">${verified?"Verifica l’offerta sul venditore":"Verifica prezzo e opzioni"}</a>${p.imageUrl?"":'<span class="product-photo-note">Foto disponibili sulla pagina del venditore.</span>'}</div></article>`;
-  }).join("");bindProductImageFallbacks();
+  }).join("");bindProductImageFallbacks();renderShare(selected);
 }
 function priceTime(p){const en=document.documentElement.lang==='en-US';return (en?'Updated ':'Aggiornato ')+new Date(p.amazonCheckedAt).toLocaleString(en?'en-GB':'it-IT',{dateStyle:'short',timeStyle:'short'})}
+// Shares a 3gifts.it page with the same ideas (never an Amazon link, never the answers or the note).
+function renderShare(selected){
+  let box=$("#shareResults");
+  const ids=selected.map(p=>p.conceptId).filter(Boolean);
+  if(!box){box=document.createElement("div");box.id="shareResults";box.className="share-results";$("#resultGrid").after(box);}
+  box.hidden=ids.length<1;if(box.hidden)return;
+  const url="https://3gifts.it/scelta?idee="+ids.join(",");
+  box.innerHTML='<p>Regalo di gruppo? Manda le idee agli altri.</p><a class="share-whatsapp" target="_blank" rel="noopener" href="https://wa.me/?text='+encodeURIComponent("Guarda queste idee regalo: "+url)+'">Manda su WhatsApp</a><button type="button" class="share-copy">Copia il link</button>';
+  box.querySelector(".share-whatsapp").addEventListener("click",()=>track("results_shared",{channel:"whatsapp"}));
+  box.querySelector(".share-copy").addEventListener("click",async e=>{const b=e.currentTarget;try{await navigator.clipboard.writeText(url);b.textContent="Link copiato";track("results_shared",{channel:"copy"})}catch{b.textContent=url}});
+}
 function setResultSummary(profile){
   if(profile.researchMethod){
     $('#resultSummary').textContent=budgetDescription(profile)+' '+deliveryLabel(profile)+' I prezzi Amazon possono cambiare: fa fede il prezzo al momento dell’acquisto. Controlla anche la consegna.';
@@ -509,7 +521,7 @@ document.addEventListener("click",e=>{const a=e.target.closest("a[data-product]"
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="hidden")pauseStepTiming();else resumeStepTiming()});
 window.addEventListener("pagehide",()=>{if(!$(".finder").hidden)trackStepTiming("exit")});
 window.addEventListener("pageshow",event=>{if(event.persisted&&!$(".finder").hidden){stepEnteredAt=null;stepActiveMs=0;stepTimerOpen=true;resumeStepTiming()}});
- const analyticsFields={questionnaire_started:["visible_steps"],questionnaire_step_completed:["step_key","position","visible_steps"],questionnaire_step_timing:["step_key","seconds","direction","position","visible_steps"],questionnaire_completed:[],recommendation_zero_results:["candidate_count"],zero_results_recovery:["choice"],recommendations_viewed:[],refinement_started:["round"],recommendations_refined:["round"],external_link_click:["position","area","engine"],product_image_error:[]};
+ const analyticsFields={questionnaire_started:["visible_steps"],questionnaire_step_completed:["step_key","position","visible_steps"],questionnaire_step_timing:["step_key","seconds","direction","position","visible_steps"],questionnaire_completed:[],recommendation_zero_results:["candidate_count"],zero_results_recovery:["choice"],recommendations_viewed:[],refinement_started:["round"],recommendations_refined:["round"],external_link_click:["position","area","engine"],results_shared:["channel"],product_image_error:[]};
  function track(event,data={}){
    if(!window.GiftsPrivacy?.hasAnalyticsConsent()||!window.umami?.track||!Object.hasOwn(analyticsFields,event))return;
    const safe=Object.fromEntries(analyticsFields[event].filter(key=>typeof data[key]==="string"||typeof data[key]==="number").map(key=>[key,data[key]]));

@@ -117,6 +117,11 @@ export default {
     if(url.pathname==="/api/amazon/status")return amazonConnection(request,env);
     if(url.pathname==="/api/library/status")return libraryStatus(env,LIBRARY_CONCEPTS);
     if(url.pathname==="/api/v2/recommend")return recommendV2(request,env,LIBRARY_CONCEPTS);
+    if((request.method==="GET"||request.method==="HEAD")&&url.pathname==="/scelta"){
+      const page=await libraryShareSelection(url,env,LIBRARY_CONCEPTS);
+      if(page)return request.method==="HEAD"?new Response(null,{status:page.status,headers:page.headers}):page;
+      return Response.redirect(url.origin+"/",302);
+    }
     if((request.method==="GET"||request.method==="HEAD")&&(url.pathname==="/idee"||url.pathname.startsWith("/idee/"))){
       const page=await libraryGuidePage(url.pathname,env,LIBRARY_CONCEPTS,LIBRARY_GUIDES);
       if(page)return request.method==="HEAD"?new Response(null,{status:page.status,headers:page.headers}):page;

@@ -33,9 +33,9 @@ function ideaHtml({concept,product},i){
  return `<li class="idea"><div class="idea-visual">${visual}</div><div><h2>${guideEscape(concept.title)}</h2><p>${guideEscape(concept.whyItWorks)}</p>${buy}</div></li>`;
 }
 
-function guideShell({title,description,canonical,body,jsonLd}){
+function guideShell({title,description,canonical,body,jsonLd,noindex=false}){
  return `<!doctype html>
-<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${guideEscape(title)} | 3Gifts</title><meta name="description" content="${guideEscape(description)}"><link rel="canonical" href="${canonical}"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/fonts.css"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/editorial.css"><link rel="stylesheet" href="/idee.css"><link rel="stylesheet" href="/footer.css"><link rel="stylesheet" href="/consent.css"><script defer src="/consent.js"></script>${jsonLd?`<script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g,'\\u003c')}</script>`:''}</head>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${guideEscape(title)} | 3Gifts</title><meta name="description" content="${guideEscape(description)}"><link rel="canonical" href="${canonical}">${noindex?'<meta name="robots" content="noindex">':''}<meta property="og:type" content="website"><meta property="og:site_name" content="3Gifts"><meta property="og:locale" content="it_IT"><meta property="og:title" content="${guideEscape(title)}"><meta property="og:description" content="${guideEscape(description)}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="https://3gifts.it/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/fonts.css"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/editorial.css"><link rel="stylesheet" href="/idee.css"><link rel="stylesheet" href="/footer.css"><link rel="stylesheet" href="/consent.css"><script defer src="/consent.js"></script>${jsonLd?`<script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g,'\\u003c')}</script>`:''}</head>
 <body class="editorial-body"><header class="editorial-topbar"><div class="topbar"><a class="back-link" href="/idee">← Idee di Natale</a><a class="brand" href="/" aria-label="3Gifts"><span>3</span> Gifts</a><span class="section-name">Natale 2026</span></div></header>
 <main class="article-page">${body}<p class="article-disclosure">Le idee sono scelte dalla redazione di 3Gifts; i prodotti sono proposte da Amazon aggiornate ogni giorno. Alcuni collegamenti sono affiliati: in qualità di Affiliato Amazon io ricevo un guadagno dagli acquisti idonei. Le commissioni non determinano le idee o il loro ordine.</p></main>
 <footer><span>© 2026 3Gifts</span><a href="/privacy">Privacy</a><a href="/cookie">Cookie</a><a href="/terms">Termini</a><a href="/affiliate">Link e affiliazioni</a><button type="button" data-privacy-preferences>Preferenze privacy</button></footer></body></html>`;
@@ -67,3 +67,15 @@ export async function libraryGuidePage(pathname,env,concepts,guides,now=Date.now
 }
 
 function quizCta(){return '<div class="quiz-cta"><p>Vuoi tre idee pensate solo per la tua persona?</p><a href="/">Fai il questionario: 2 minuti</a></div>';}
+
+// A selection shared from the questionnaire: /scelta?idee=c001-...,c010-... (library concept ids only).
+export async function libraryShareSelection(url,env,concepts,now=Date.now()){
+ const ids=[...new Set(String(url.searchParams.get('idee')||'').split(',').map(s=>s.trim()))].slice(0,3);
+ const picked=ids.map(id=>concepts.find(c=>c.id===id)).filter(Boolean);
+ if(!picked.length)return null;
+ const fresh=await freshProducts(env,now);
+ const ideas=picked.map(c=>({concept:c,product:(fresh.get(c.id)||[])[0]||null}));
+ const canonical='https://3gifts.it/scelta?idee='+picked.map(c=>c.id).join(',');
+ return guideResponse(guideShell({title:'Ecco '+(picked.length===1?'un’idea regalo':picked.length+' idee regalo')+' da valutare insieme',description:'Idee scelte con il questionario di 3Gifts: guardale e decidete insieme quale regalare.',canonical,noindex:true,
+  body:`<span class="category">Idee condivise</span><h1>Le idee da valutare insieme</h1><p class="lead">Qualcuno ha fatto il questionario di 3Gifts e ti ha mandato queste proposte. Ognuna ha il motivo per cui può funzionare.</p><ol class="idea-list">${ideas.map(ideaHtml).join('')}</ol>${quizCta()}`}));
+}
