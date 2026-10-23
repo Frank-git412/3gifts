@@ -4,6 +4,8 @@ import {amazonApi} from './amazon-transport.mjs';
 // cleared once older than 24 hours, as the Associates policies require.
 const LIBRARY_DAY=86400000;
 const MATCH_EVERY=7*LIBRARY_DAY,REFRESH_AFTER=20*3600000;
+// A concept whose search fails is retried a day later instead of blocking the queue.
+const RETRY_AFTER_ERROR=LIBRARY_DAY;
 const MATCHES_PER_RUN=12,REFRESH_BATCHES_PER_RUN=6,PRODUCTS_PER_CONCEPT=3;
 const LIBRARY_RESOURCES=['itemInfo.title','images.primary.large','parentASIN','offersV2.listings.price','offersV2.listings.availability','offersV2.listings.isBuyBoxWinner'];
 // Accessories, spare parts and second-hand listings are not gifts in their own right.
@@ -65,14 +67,23 @@ async function refreshProducts(asins,env,now){
 // One run: clear expired Amazon content, match a few concepts, refresh the oldest products.
 // Quota and rate limiting stay with amazonApi, shared with the public questionnaire.
 export async function runLibraryJob(env,concepts,now=Date.now()){
+ if(!env.DB)return {matched:0,empty:0,refreshed:0,errors:['quota_storage_unavailable']};
+ const report=await libraryJobSteps(env,concepts,now);
+ await env.DB.prepare('INSERT INTO library_runs (id,ran_at,report) VALUES (1,?,?) ON CONFLICT(id) DO UPDATE SET ran_at=excluded.ran_at,report=excluded.report').bind(now,JSON.stringify({...report,errors:report.errors.slice(0,10)})).run();
+ return report;
+}
+async function libraryJobSteps(env,concepts,now){
  const report={matched:0,empty:0,refreshed:0,errors:[]};
- if(!env.DB)return {...report,errors:['quota_storage_unavailable']};
  await env.DB.prepare('UPDATE library_products SET title=NULL,price=NULL,image_url=NULL,available=0 WHERE checked_at<=?').bind(now-LIBRARY_DAY).run();
  const done=new Map(((await env.DB.prepare('SELECT concept_id,matched_at FROM library_matches').all()).results||[]).map(r=>[r.concept_id,r.matched_at]));
  const due=concepts.filter(c=>!(done.get(c.id)>now-MATCH_EVERY)).slice(0,MATCHES_PER_RUN);
  for(const concept of due){
   try{(await matchConcept(concept,env,now))?report.matched++:report.empty++;}
-  catch(e){report.errors.push(concept.id+':'+e.message);if(/429|quota|timeout|Authentication|Configuration/.test(e.message))return report;}
+  catch(e){
+   report.errors.push(concept.id+':'+e.message);
+   if(/429|quota|Authentication|Configuration/.test(e.message))return report;
+   await env.DB.prepare("INSERT INTO library_matches (concept_id,matched_at,outcome,products) VALUES (?,?,'error',0) ON CONFLICT(concept_id) DO UPDATE SET matched_at=excluded.matched_at,outcome='error',products=0").bind(concept.id,now-MATCH_EVERY+RETRY_AFTER_ERROR).run();
+  }
  }
  const stale=((await env.DB.prepare('SELECT DISTINCT asin FROM library_products WHERE checked_at<=? ORDER BY checked_at LIMIT ?').bind(now-REFRESH_AFTER,REFRESH_BATCHES_PER_RUN*10).all()).results||[]).map(r=>r.asin);
  for(let i=0;i<stale.length;i+=10){
@@ -85,7 +96,9 @@ export async function runLibraryJob(env,concepts,now=Date.now()){
 export async function libraryStatus(env,concepts,now=Date.now()){
  const json=(body,status=200)=>new Response(JSON.stringify(body),{status,headers:{'Content-Type':'application/json','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
  if(!env.DB)return json({ok:false,code:'quota_storage_unavailable'},503);
- const m=await env.DB.prepare("SELECT COUNT(*) AS runs, SUM(outcome='matched') AS matched, SUM(outcome='empty') AS empty, MAX(matched_at) AS last FROM library_matches").first();
+ const m=await env.DB.prepare("SELECT SUM(outcome!='error') AS runs, SUM(outcome='error') AS failed, SUM(outcome='matched') AS matched, SUM(outcome='empty') AS empty, MAX(CASE WHEN outcome!='error' THEN matched_at END) AS last FROM library_matches").first();
+ const run=await env.DB.prepare('SELECT ran_at,report FROM library_runs WHERE id=1').first();
+ const p2=await env.DB.prepare('SELECT MAX(checked_at) AS checked FROM library_products').first();
  const p=await env.DB.prepare('SELECT COUNT(*) AS products, SUM(available=1 AND checked_at>?) AS fresh FROM library_products').bind(now-LIBRARY_DAY).first();
- return json({ok:true,approvedConcepts:concepts.length,conceptsSearched:m?.runs||0,conceptsWithProducts:m?.matched||0,conceptsWithoutProducts:m?.empty||0,products:p?.products||0,availableAndFresh:p?.fresh||0,lastMatchAt:m?.last?new Date(m.last).toISOString():null});
+ return json({ok:true,approvedConcepts:concepts.length,conceptsSearched:m?.runs||0,conceptsWithProducts:m?.matched||0,conceptsWithoutProducts:m?.empty||0,products:p?.products||0,availableAndFresh:p?.fresh||0,conceptsFailed:m?.failed||0,lastMatchAt:m?.last?new Date(m.last).toISOString():null,lastRefreshAt:p2?.checked?new Date(p2.checked).toISOString():null,lastRun:run?{at:new Date(run.ran_at).toISOString(),...JSON.parse(run.report)}:null});
 }

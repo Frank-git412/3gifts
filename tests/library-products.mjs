@@ -54,3 +54,23 @@ test('matches concepts, refreshes the next day and clears Amazon content after 2
   assert.ok(rows.every(r=>r.title===null&&r.price===null&&r.image_url===null&&r.available===0));
   assert.equal(rows.length,2);
 });
+
+test('a concept whose search fails is retried later and does not block the others', async () => {
+  const {binding}=database();
+  const other={...concept,id:'c002-kit-cocktail',amazonQuery:'kit cocktail'};
+  globalThis.fetch=async(url,init)=>{
+    if(String(url).includes('/auth/o2/token'))return new Response(JSON.stringify({access_token:'t',expires_in:3600}),{status:200});
+    const body=JSON.parse(init.body);
+    if(body.keywords===concept.amazonQuery)return new Response(JSON.stringify({errors:[{code:'InvalidParameterValue'}]}),{status:400});
+    return new Response(JSON.stringify({searchResult:{items:[item('B000000009','Kit cocktail',30)]}}),{status:200});
+  };
+  const now=Date.now();
+  const e={...env(binding),AMAZON_CREATORS_CLIENT_ID:'retry'};
+  const report=await runLibraryJob(e,[concept,other],now);
+  assert.equal(report.matched,1);assert.equal(report.errors.length,1);
+  const again=await runLibraryJob(e,[concept,other],now+3600000);
+  assert.equal(again.matched+again.empty+again.errors.length,0,'neither is searched again within the day');
+  const {libraryStatus}=await import('../server/library-products.mjs');
+  const status=await (await libraryStatus({DB:binding},[concept,other],now+3600000)).json();
+  assert.equal(status.conceptsSearched,1);assert.equal(status.conceptsFailed,1);assert.equal(status.lastRun.matched,0);
+});

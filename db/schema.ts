@@ -17,6 +17,10 @@ export const libraryProducts=sqliteTable('library_products',{
  available:integer('available').notNull().default(0),matchedAt:integer('matched_at').notNull(),checkedAt:integer('checked_at').notNull()
 },table=>[primaryKey({columns:[table.conceptId,table.asin]}),index('library_products_checked_at').on(table.checkedAt)]);
 
+// Outcome of the latest library job run (one row), shown by /api/library/status.
+export const libraryRuns=sqliteTable('library_runs',{
+ id:integer('id').primaryKey(),ranAt:integer('ran_at').notNull(),report:text('report').notNull()
+});
 export const libraryMatches=sqliteTable('library_matches',{
  conceptId:text('concept_id').primaryKey(),matchedAt:integer('matched_at').notNull(),outcome:text('outcome').notNull(),products:integer('products').notNull().default(0)
 });
