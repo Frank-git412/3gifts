@@ -67,8 +67,8 @@
 
     <section class="finder" id="questionnaire" aria-label="Questionario trova regalo" hidden>
       <div class="progress-wrap" aria-live="polite">
-        <div class="progress-meta"><span id="stepLabel">Domanda 1 di 7</span><span id="progressPct">14%</span></div>
-        <div class="progress" id="progressTrack" role="progressbar" aria-label="Avanzamento del questionario" aria-valuemin="0" aria-valuemax="100" aria-valuenow="14"><span id="progressBar"></span></div>
+        <div class="progress-meta"><span id="stepLabel">Domanda 1 di 5</span><span id="progressPct">20%</span></div>
+        <div class="progress" id="progressTrack" role="progressbar" aria-label="Avanzamento del questionario" aria-valuemin="0" aria-valuemax="100" aria-valuenow="20"><span id="progressBar"></span></div>
       </div>
 
       <form id="giftForm">
@@ -106,31 +106,22 @@
           </div>
         </fieldset>
 
-        <fieldset class="step" data-step="2" data-step-key="relation">
-          <legend>Per chi stai cercando?</legend>
-          <p class="hint">Ci aiuta a calibrare il tono del regalo.</p>
-          <div class="choice-grid compact">
+        <fieldset class="step" data-step="2" data-step-key="relation_occasion">
+          <legend id="relationOccasionLegend">Per chi è e per quale occasione?</legend>
+          <p class="hint">Il rapporto e l’occasione cambiano molto il tono del regalo.</p>
+          <div class="quick-question" id="relationQuestion" role="radiogroup" aria-labelledby="relationLabel">
+            <strong id="relationLabel">Chi è per te?</strong>
+            <div class="choice-grid compact">
             <label><input type="radio" name="relation" value="partner" required><span>💞 Partner</span></label>
             <label><input type="radio" name="relation" value="friend"><span>🤝 Amico/a</span></label>
             <label><input type="radio" name="relation" value="family"><span>🏡 Familiare</span></label>
             <label><input type="radio" name="relation" value="colleague"><span>💼 Collega</span></label>
             <label><input type="radio" name="relation" value="couple"><span>💑 Una coppia</span></label>
           </div>
-        </fieldset>
-
-        <fieldset class="step" data-step="3" data-step-key="perspective">
-          <legend>Che prospettiva deve avere il regalo?</legend>
-          <p class="hint">Ora che sappiamo per chi è, scegli da quale punto di vista partire.</p>
-          <div class="choice-grid perspective-grid">
-            <label><input type="radio" name="perspective" value="recipient" required><span><b>🎯 Su misura per chi lo riceve</b><small>Partiamo da ciò che ama e dall’effetto che vuoi ottenere.</small></span></label>
-            <label><input type="radio" name="perspective" value="giver"><span><b>✍️ Deve parlare anche di me</b><small>Il regalo deve far pensare subito a chi lo ha scelto.</small></span></label>
           </div>
-        </fieldset>
-
-        <fieldset class="step" data-step="4" data-step-key="occasion">
-          <legend>Qual è l’occasione?</legend>
-          <p class="hint">Il contesto cambia molto il tono del regalo.</p>
-          <div class="choice-grid compact">
+          <div class="quick-question" role="radiogroup" aria-labelledby="occasionLabel">
+            <strong id="occasionLabel">Qual è l’occasione?</strong>
+            <div class="choice-grid compact">
             <label><input type="radio" name="occasion" value="birthday" required><span>🎂 Compleanno</span></label>
             <label id="occasion-anniversary"><input type="radio" name="occasion" value="anniversary"><span>💌 Anniversario</span></label>
             <label><input type="radio" name="occasion" value="christmas"><span>🎄 Natale</span></label>
@@ -141,10 +132,18 @@
             <label id="occasion-newbaby"><input type="radio" name="occasion" value="newbaby"><span id="newbabyLabel">🍼 Nascita: regalo per un genitore</span></label>
             <label><input type="radio" name="occasion" value="event"><span>🎟️ Altra ricorrenza</span></label>
           </div>
+          </div>
         </fieldset>
 
-        <fieldset class="step" data-step="5" data-step-key="interests">
+        <fieldset class="step" data-step="3" data-step-key="interests">
           <legend id="interestsLegend">Cosa ama davvero?</legend>
+          <div class="quick-question perspective-question" id="perspectiveQuestion" role="radiogroup" aria-labelledby="perspectiveLabel">
+            <strong id="perspectiveLabel">Il regalo deve parlare di…</strong>
+            <div class="choice-grid compact perspective-grid">
+            <label><input type="radio" name="perspective" value="recipient" checked><span>🎯 Chi lo riceve</span></label>
+            <label><input type="radio" name="perspective" value="giver"><span>✍️ Anche di me</span></label>
+          </div>
+          </div>
           <p class="hint">Scegli fino a due aree principali e fino a quattro sottocategorie in totale.</p>
           <p class="hint" id="childInterestHint" hidden>Le scelte cambiano con l’età. L’età indicata dal produttore resta decisiva per ogni singolo regalo.</p>
           <div class="interest-groups">
@@ -179,7 +178,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="step" data-step="6" data-step-key="tone">
+        <fieldset class="step" data-step="4" data-step-key="tone">
           <legend>Che effetto vuoi ottenere?</legend>
           <p class="hint">Scegli la reazione che vorresti vedere quando aprirà il regalo.</p>
           <div class="choice-grid traits">
@@ -192,7 +191,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="step" data-step="7" data-step-key="budget_timing_details">
+        <fieldset class="step" data-step="5" data-step-key="budget_timing_details">
           <legend>Budget, tempi e ultimi dettagli</legend>
           <p class="hint">Cerchiamo idee nella fascia di prezzo indicata. Prezzo finale, eventuali spese di spedizione e consegna vanno verificati su Amazon.</p>
           <div class="quick-question" id="budgetQuestion">

@@ -38,11 +38,12 @@ function syncInterestFlow(){
 }
 function syncAgeFlow(){
   const age=$('input[name="ageRange"]:checked')?.value,minor=RULES.isMinor(age);
-  for(const key of ["relation","perspective"]){
-    const section=$(`.step[data-step-key="${key}"]`);section.hidden=minor;
-    $$(`input[name="${key}"]`).forEach(input=>{input.disabled=minor;input.required=!minor&&input.value===(key==="relation"?"partner":"recipient");if(minor)input.checked=key==="perspective"&&input.value==="recipient"});
-  }
+  // Minors skip the relationship and perspective questions; the screens that hold them stay.
+  $("#relationQuestion").hidden=minor;$("#perspectiveQuestion").hidden=minor;
+  $$('input[name="relation"]').forEach(input=>{input.disabled=minor;input.required=!minor&&input.value==="partner";if(minor)input.checked=false});
+  $$('input[name="perspective"]').forEach(input=>{input.disabled=minor;if(minor)input.checked=input.value==="recipient"});
   if(minor)currentMode="recipient";
+  $("#relationOccasionLegend").textContent=minor?"Per quale occasione?":"Per chi è e per quale occasione?";
   $("#womenPreferenceText").textContent=minor?"Bambina / ragazza":"Da donna";
   $("#menPreferenceText").textContent=minor?"Bambino / ragazzo":"Da uomo";
   $("#childCatalogNotice").hidden=!["earlyChild","child"].includes(age);
