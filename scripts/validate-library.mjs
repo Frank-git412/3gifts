@@ -45,6 +45,7 @@ for (const c of concepts) {
   if (c.ages.includes("earlyChild") && !c.stages?.length) errors.push(`${where}: stages mancante per 0–6 anni`);
   for (const s of c.stages || []) if (!stages.has(s) || s === "all") errors.push(`${where}: stages contiene "${s}"`);
   if (!(c.price?.min > 0 && c.price.max >= c.price.min)) errors.push(`${where}: fascia di prezzo non valida`);
+  if (c.boost !== undefined && !Number.isFinite(c.boost)) errors.push(`${where}: boost deve essere un numero`);
 }
 
 const count = (field) => {

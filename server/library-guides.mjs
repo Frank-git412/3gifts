@@ -15,7 +15,7 @@ export function guideConcepts(guide,concepts,productsByConcept){
   if(!overlaps(c.relations,f.relations)||!overlaps(c.ages,f.ages)||!overlaps(c.interests,f.interests)||!overlaps(c.tones,f.tones))continue;
   if(f.maxPrice&&c.price.min>f.maxPrice)continue;
   const product=(productsByConcept.get(c.id)||[]).find(p=>!f.maxPrice||p.price<=f.maxPrice)||null;
-  const score=c.interests.filter(i=>(prefer.interests||[]).includes(i)).length*2+c.tones.filter(t=>(prefer.tones||[]).includes(t)).length+(product?3:0);
+  const score=c.interests.filter(i=>(prefer.interests||[]).includes(i)).length*2+c.tones.filter(t=>(prefer.tones||[]).includes(t)).length+(product?3:0)+(Number(c.boost)||0);
   ideas.push({concept:c,product,score});
  }
  return ideas.sort((a,b)=>b.score-a.score||a.concept.id.localeCompare(b.concept.id)).slice(0,guide.limit||GUIDE_LIMIT);

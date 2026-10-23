@@ -32,7 +32,9 @@ export function v2Score(concept,profile){
  const interest=Math.min(2,subHits)*3+Math.min(2,areaHits)*2;
  const tone=profile.tone&&profile.tone!=='neutral'&&concept.tones.includes(profile.tone)?2:0;
  const occasion=concept.occasions.includes(profile.occasion)?1.5:concept.occasions.includes('any')?1:0;
- return {score:interest+tone+occasion,interestMatch:interest>0,toneMatch:tone>0};
+ // With two days or less, gifts that can arrive instantly (digital, subscriptions) come first.
+ const urgent=profile.timing==='urgent2'&&concept.lastMinute?4:0;
+ return {score:interest+tone+occasion+urgent+(Number(concept.boost)||0),interestMatch:interest>0,toneMatch:tone>0};
 }
 
 // Stable per-profile tie-break, so equal scores do not always surface the same ideas.

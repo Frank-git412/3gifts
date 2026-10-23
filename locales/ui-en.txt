@@ -389,7 +389,7 @@ La scheda non indica chiaramente l’età consigliata. Controllala su Amazon o s
 Idea da verificare => Idea to check
 Cerchiamo idee nella fascia di prezzo indicata. Prezzo finale, eventuali spese di spedizione e consegna vanno verificati su Amazon. => We look for ideas within your price range. Check the final price, any delivery charges and delivery date on Amazon.
 La fascia di ricerca resta invariata. Per cercare prezzi inferiori, indica un nuovo massimo; il minimo che hai impostato resta valido. => Your search price range stays the same. To explore lower prices, enter a new maximum; your chosen minimum still applies.
-Cibo => Food
-Alcol => Alcohol
+Cose da mangiare => Things to eat
+Alcolici => Alcoholic drinks
 Natale 2026 => Christmas 2026
 Idee regalo divise per persona, con prezzi aggiornati ogni giorno → => Gift ideas by recipient, with prices updated daily →

@@ -126,7 +126,7 @@ async function fetchJSON(endpoint,options={}){
 }
 function researchRequest(profile,analysis=analyseNote(profile.note),rejectConcepts=false){
   const safeProfile={};
-  for(const key of ['relation','occasion','ageRange','childStage','recipientPreference','interests','subinterests','avoid','tone','budget','minBudget','excludedInterests','isRefinement','refinementDirection','refinementReason','refinementSurprise','searchPriority','allowTypeBroadening'])safeProfile[key]=profile[key];
+  for(const key of ['relation','occasion','ageRange','childStage','recipientPreference','interests','subinterests','avoid','tone','timing','budget','minBudget','excludedInterests','isRefinement','refinementDirection','refinementReason','refinementSurprise','searchPriority','allowTypeBroadening'])safeProfile[key]=profile[key];
   const constraints={};for(const key of ['signals','requiredSignals','specificIntents','optionalIntents','noteConstraints','exclusions','requiredTypes','needsClarification'])constraints[key]=analysis[key];
   // Relationship and occasion are controlled choices; raw notes, names and the exact deadline stay local.
   const note=String(profile.note||''),connections=[];

@@ -35,5 +35,6 @@ ogni giorno (le regole Amazon consentono di conservare quei dati al massimo 24 o
 | `avoidFlags` | Esclusioni del questionario che scartano il concetto (`avoid`) |
 | `lastMinute` | `true` se esiste anche in versione digitale o con consegna rapida tipica |
 | `amazonQuery` | Ricerca Amazon con cui il job notturno trova i prodotti |
+| `boost` | Facoltativo: correzione di priorità (negativa per idee approvate ma poco originali) |
 
 `node scripts/validate-library.mjs` controlla che ogni etichetta appartenga al vocabolario del questionario.

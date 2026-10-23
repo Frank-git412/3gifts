@@ -66,3 +66,12 @@ test('endpoint answers in the shape the questionnaire reads', async () => {
   const foreign=await recommendV2(new Request('https://3gifts.it/api/v2/recommend',{method:'POST',headers:{Origin:'https://evil.example'},body:'{}'}),{DB:binding},library,now);
   assert.equal(foreign.status,403);
 });
+
+test('a short delivery window favours instant gifts; a negative boost ranks an idea last', () => {
+  const base={relation:'friend',occasion:'birthday',ageRange:'adult',recipientPreference:'unisex',interests:['culture'],subinterests:['books'],tone:'neutral',budget:60,minBudget:0,avoid:[]};
+  const urgent=v2Select(library,products,{...base,timing:'urgent2'});
+  assert.ok(urgent[0].concept.lastMinute,'an instant gift comes first with two days left');
+  const boosted=library.map(c=>c.id.startsWith('c016')?{...c,boost:-20}:c);
+  const picks=v2Select(boosted,products,{...base,interests:['gamesCollecting'],subinterests:['puzzle'],relation:'family',ageRange:'mature',budget:60});
+  assert.ok(!picks.slice(0,1).some(p=>p.concept.id.startsWith('c016')),'a heavily lowered idea does not lead');
+});
