@@ -407,3 +407,6 @@ Utile se non vuoi proposte troppo economiche. Il minimo resta sempre entro il ma
 Facoltativo: cose da evitare => Optional: things to avoid
 Per quale occasione? => What’s the occasion?
 Riprova la ricerca => Try the search again
+Niente scroll infiniti, niente dubbi. Dicci per chi è, cosa ama e quanto vuoi spendere: pensiamo noi al resto. => Skip the endless scrolling. Tell us who it’s for, what they love, and your budget. We’ll help you narrow it down.
+Per ogni budget => For every budget
+Budget e ultimi dettagli => Budget and final details

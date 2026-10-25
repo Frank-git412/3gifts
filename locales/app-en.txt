@@ -299,3 +299,5 @@ Quanti anni hanno, più o meno? => Roughly how old are they?
 Quanti anni ha? => How old are they?
 Indica se ha 7–9 o 10–12 anni: molti prodotti sono adatti solo a una delle due fasce. => Tell us whether they are 7–9 or 10–12: many products suit only one of the two ranges.
 Nessun prodotto documentato è adatto a tutta la fascia 7–12 con questi interessi e questo budget. Indica se ha 7–9 o 10–12 anni: molti giochi sono pensati per una sola delle due fasce. => No documented product suits the whole 7–12 range with these interests and this budget. Tell us whether they are 7–9 or 10–12: many toys are designed for only one of the two ranges.
+Periodo di feste: i tempi di consegna si allungano, controlla la data stimata su Amazon prima di acquistare. => Holiday season: delivery times get longer, so check the estimated date on Amazon before you buy.
+Controlla su Amazon la data di consegna stimata prima di acquistare. => Check the estimated delivery date on Amazon before you buy.

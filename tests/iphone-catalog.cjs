@@ -7,7 +7,7 @@ const { createRuntime } = require('./published-runtime.cjs');
     const note = language === 'it'
       ? 'Ama la tecnologia e cerca un iPhone 15 ricondizionato oppure una cover MagSafe compatibile.'
       : 'Loves technology and wants a refurbished iPhone 15 or a compatible MagSafe phone case.';
-    for (const [key, value] of Object.entries({ interest: ['techGaming'], subinterest: ['tech'], tone: 'useful', budgetChoice: '500', timing: 'none', note })) r.set(key, value);
+    for (const [key, value] of Object.entries({ interest: ['techGaming'], subinterest: ['tech'], tone: 'useful', budgetChoice: '500', note })) r.set(key, value);
     await r.a.showResults();
     const html = r.el('#resultGrid').innerHTML;
     assert.equal((html.match(/class="gift-card"/g) || []).length, 3);

@@ -43,7 +43,7 @@
       <div class="intro">
         <p class="eyebrow">3 idee, niente caos</p>
         <h1 id="main-title">Tre idee.<br>Un regalo.<br><em>Zero stress.</em></h1>
-        <p>Niente scroll infiniti, niente dubbi. Dicci per chi è, quanto vuoi spendere e quando ti serve: pensiamo noi al resto.</p>
+        <p>Niente scroll infiniti, niente dubbi. Dicci per chi è, cosa ama e quanto vuoi spendere: pensiamo noi al resto.</p>
         <div class="hero-actions">
           <a class="hero-primary" id="startQuestionnaire" href="#questionnaire">Trova i 3 regali <span>→</span></a>
           <a class="hero-secondary" href="guide.html">Esplora le idee regalo</a>
@@ -58,7 +58,7 @@
         </div>
         <div class="universe-grid" aria-label="Tipologie di regalo disponibili">
           <span><b>✦</b> Fatti su misura</span><span><b>⌁</b> Da vivere</span>
-          <span><b>◫</b> Che durano nel tempo</span><span><b>↗</b> Corsa contro il tempo</span>
+          <span><b>◫</b> Che durano nel tempo</span><span><b>↗</b> Per ogni budget</span>
           <span><b>♡</b> Che dicono qualcosa</span><span><b>◌</b> Da assaporare</span>
           <span><b>＋</b> Un aiuto concreto</span><span><b>◇</b> Gift card</span>
         </div>
@@ -201,7 +201,7 @@
         </fieldset>
 
         <fieldset class="step" data-step="5" data-step-key="budget_timing_details">
-          <legend>Budget, tempi e ultimi dettagli</legend>
+          <legend>Budget e ultimi dettagli</legend>
           <p class="hint">Cerchiamo idee nella fascia di prezzo indicata. Prezzo finale, eventuali spese di spedizione e consegna vanno verificati su Amazon.</p>
           <div class="quick-question" id="budgetQuestion">
             <div class="budget-control">
@@ -218,19 +218,6 @@
               </div>
               <p class="hint" id="minBudgetHint">Utile se non vuoi proposte troppo economiche. Il minimo resta sempre entro il massimo.</p>
             </details>
-          </div>
-          <div class="quick-question" id="timingQuestion">
-            <strong>Quando ti serve?</strong>
-            <div class="choice-grid compact quick-grid">
-              <label><input type="radio" name="timing" value="urgent2" required><span>Entro 2 giorni</span></label>
-              <label><input type="radio" name="timing" value="week" checked><span>Entro una settimana</span></label>
-              <label><input type="radio" name="timing" value="month"><span>Entro un mese</span></label>
-              <label><input type="radio" name="timing" value="exact"><span>Ho una data precisa</span></label>
-              <label><input type="radio" name="timing" value="none"><span>Nessuna scadenza precisa</span></label>
-            </div>
-            <div class="conditional-panel compact-panel" id="exactDatePanel" hidden>
-              <label class="date-field">Data del regalo<input id="deadline" name="deadline" type="date"></label>
-            </div>
           </div>
           <details class="constraints-details" id="avoidDetails">
             <summary>Facoltativo: cose da evitare</summary>
@@ -270,10 +257,8 @@
           <p id="zeroRecoveryText">Puoi rivedere i vincoli o esplorare idee con condizioni da verificare.</p>
           <div class="zero-recovery-actions">
             <button class="primary" id="retryRecovery" type="button" hidden>Riprova la ricerca</button>
-            <button class="primary" id="checkDeliveryRecovery" type="button" hidden>Mostra le idee: controllerò la consegna sul venditore</button>
             <button class="quiet" id="specifyAgeRecovery" type="button" hidden>Precisa l’età della bambina o del bambino</button>
             <button class="primary" id="increaseBudgetRecovery" type="button">Aumenta leggermente il budget</button>
-            <button class="quiet" id="changeDateRecovery" type="button">Modifica la data</button>
             <button class="quiet" id="editConstraintsRecovery" type="button">Rivedi dettagli e vincoli</button>
             <button class="quiet" id="exploreUnverifiedRecovery" type="button">Esplora idee senza garanzia di budget o consegna</button>
             <button class="quiet" id="broadenTypeRecovery" type="button" hidden>Includi anche oggetti coerenti</button>

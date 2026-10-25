@@ -5,8 +5,7 @@ const products=(window.TRE_REGALI_CATALOG||[]).filter(RULES.marketplaceEligible)
 const displayText=value=>window.GiftsEnglishCatalog?.[value]||value;
 let displayedProducts=[];
 let step=1,currentMode="recipient",currentJourney="direct",lastProfile=null,refinementCount=0,rejectedProductKeys=new Set(),rejectedConceptKeys=new Set(),rejectedParentAsins=new Set(),stepEnteredAt=null,stepActiveMs=0,stepTimerOpen=false;const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
-const form=$("#giftForm"),deadline=$("#deadline"),budget=$("#budget"),budgetOut=$("#budgetOut");
-deadline.min=RULES.localDate();
+const form=$("#giftForm"),budget=$("#budget"),budgetOut=$("#budgetOut");
 function syncBudget(changed){
   const minimum=$("#minBudget");
   if(changed===minimum&&Number(minimum.value)>Number(budget.value))budget.value=minimum.value;
@@ -72,7 +71,6 @@ form.addEventListener("change",event=>{showError("");if(["relation","ageRange","
 form.addEventListener("input",()=>showError(""));
 $$('input[name="interest"]').forEach(x=>x.addEventListener("change",()=>{limit(x,"interest",2);syncInterestFlow()}));
 $$('input[name="subinterest"]').forEach(x=>x.addEventListener("change",()=>limit(x,"subinterest",4)));
-$$('input[name="timing"]').forEach(x=>x.addEventListener("change",()=>{const exact=x.checked&&x.value==="exact";$("#exactDatePanel").hidden=!exact;deadline.required=exact;if(!exact)deadline.value=""}));
 function limit(input,name,max){const chosen=new Set($$(`input[name="${name}"]:checked`).map(x=>x.value));if(chosen.size>max){input.checked=false;showError(name==="subinterest"?"Puoi scegliere al massimo 4 sottocategorie.":`Puoi sceglierne al massimo ${max}.`)}else showError("")}
 function showError(t){$("#formError").textContent=t}
 function visibleSteps(){return $$('.step').filter(x=>!x.hidden)}
@@ -85,7 +83,6 @@ function valid(){
   if(current?.dataset.stepKey==="budget_timing_details"){
     if(!RULES.validBudget(budget.value)){showError("Indica un budget da 15 a 500 €, a incrementi di 5 €.");budget.focus?.();return false}
     if(!RULES.validBudgetRange(budget.value,$("#minBudget").value)){showError("La spesa minima deve essere tra 0 € e il massimo scelto, a incrementi di 5 €.");$("#minBudget").focus?.();return false}
-    if(deadline.required&&(!Number.isFinite(RULES.calendarDay(deadline.value))||RULES.calendarDay(deadline.value)<RULES.calendarDay(RULES.localDate()))){showError("Indica una data valida, non precedente a oggi.");deadline.focus?.();return false}
   }
   const invalid=required.find(input=>input.checkValidity&&!input.checkValidity());
   if(invalid){showError("Controlla il valore inserito prima di continuare.");invalid.reportValidity?.();return false}
@@ -101,7 +98,7 @@ $("#nextBtn").addEventListener("click",()=>{if(!valid())return;const steps=visib
 $("#backBtn").addEventListener("click",()=>{const steps=visibleSteps(),current=currentStep(),position=steps.indexOf(current);if(position>0){invalidateResults();trackStepTiming("back");step=+steps[position-1].dataset.step;renderStep()}});
 form.addEventListener("keydown",event=>{if(event.key!=="Enter"||event.target.matches("textarea"))return;event.preventDefault();$("#nextBtn").click()});
 function dateAfter(days){return RULES.dateAfter(days)}
-function formData(){const fd=new FormData(form),timing=fd.get("timing"),ageRange=fd.get("ageRange"),minor=RULES.isMinor(ageRange);currentMode=minor?"recipient":fd.get("perspective")||currentMode;currentJourney=fd.get("journey")||"direct";const deadlineByTiming={urgent2:dateAfter(2),week:dateAfter(7),month:dateAfter(30),none:dateAfter(3650)};return{mode:currentMode,journey:currentJourney,relation:minor?"child":fd.get("relation"),recipientPreference:fd.get("recipientPreference")||"unisex",occasion:fd.get("occasion"),ageRange,childStage:ageRange==="earlyChild"?fd.get("childStage")||"all":ageRange==="child"?fd.get("childBand")||"all":null,interests:fd.getAll("interest"),subinterests:[...new Set(fd.getAll("subinterest"))],tone:fd.get("tone"),avoid:fd.getAll("avoid"),budget:+fd.get("budgetChoice"),minBudget:+fd.get("minBudget"),timing,deadline:timing==="exact"?fd.get("deadline"):deadlineByTiming[timing],note:fd.get("note")}}
+function formData(){const fd=new FormData(form),timing="none",ageRange=fd.get("ageRange"),minor=RULES.isMinor(ageRange);currentMode=minor?"recipient":fd.get("perspective")||currentMode;currentJourney=fd.get("journey")||"direct";const deadlineByTiming={urgent2:dateAfter(2),week:dateAfter(7),month:dateAfter(30),none:dateAfter(3650)};return{mode:currentMode,journey:currentJourney,relation:minor?"child":fd.get("relation"),recipientPreference:fd.get("recipientPreference")||"unisex",occasion:fd.get("occasion"),ageRange,childStage:ageRange==="earlyChild"?fd.get("childStage")||"all":ageRange==="child"?fd.get("childBand")||"all":null,interests:fd.getAll("interest"),subinterests:[...new Set(fd.getAll("subinterest"))],tone:fd.get("tone"),avoid:fd.getAll("avoid"),budget:+fd.get("budgetChoice"),minBudget:+fd.get("minBudget"),timing,deadline:timing==="exact"?fd.get("deadline"):deadlineByTiming[timing],note:fd.get("note")}}
 function analyseNote(note,origin='note'){const fd=new FormData(form);return RULES.analyseNote(note,{areas:fd.getAll('interest'),subIds:fd.getAll('subinterest'),language:document.documentElement.lang==='en'?'en':'it',origin})}
 function normalizeProduct(p){
   if(!p||typeof p!=="object"||Array.isArray(p))p={};
@@ -321,8 +318,6 @@ function showZeroRecovery(profile,candidateCount,analysis=analyseNote(profile.no
   const strictBudget=suggestedBudget(profile.budget,profile,analysis);
   const exploratoryBudget=!profile.allowUnverified&&strictBudget===null?suggestedBudget(profile.budget,{...profile,allowUnverified:true},analysis):null;
   const budget=strictBudget??exploratoryBudget,canIncrease=budget!==null,budgetNeedsExploration=strictBudget===null&&exploratoryBudget!==null;
-  const canChangeDate=profile.timing!=="none"&&rankProducts(activeCatalogProducts,{...profile,timing:"none",allowUnverified:true},analysis).length>0;
-  const canCheckDelivery=profile.timing!=="none"&&!profile.allowUnknownDelivery&&rankProducts(activeCatalogProducts,{...profile,allowUnverified:true,allowUnknownDelivery:true},analysis).length>0;
   const canExplore=!profile.allowUnverified&&rankProducts(activeCatalogProducts,{...profile,allowUnverified:true},analysis).length>0;
   const typeRestricted=(analysis.requiredTypes||[]).length>0&&!profile.allowTypeBroadening;
   const canBroadenType=typeRestricted&&rankProducts(activeCatalogProducts,{...profile,allowTypeBroadening:true},analysis).length>0;
@@ -332,8 +327,7 @@ function showZeroRecovery(profile,candidateCount,analysis=analyseNote(profile.no
   $("#resultsTitle").textContent="Rivediamo la ricerca";
   $("#resultSummary").textContent=budgetDescription(profile)+" "+deliveryLabel(profile);
   const title=$("#zeroRecoveryTitle"),text=$("#zeroRecoveryText");
-  if(canCheckDelivery){title.textContent="Abbiamo idee compatibili, ma la consegna va verificata.";text.textContent="Non possiamo confermare l’arrivo entro la data richiesta. Puoi vedere le idee e controllare disponibilità, prezzo finale e consegna sul venditore. Età, interessi e fascia di spesa restano applicati.";$("#recommendationStatus").textContent="La consegna entro la scadenza scelta non è confermata. Scegli se verificarla personalmente sul venditore."}
-  else if(["earlyChild","child"].includes(profile.ageRange)){title.textContent="Non restano prodotti verificati per questa ricerca.";text.textContent=profile.ageRange==="earlyChild"&&profile.childStage==="all"?"Per la fascia 0–6 serve indicare una fase più precisa: meno di 1 anno, 1–2 anni oppure 3–6 anni. Evitiamo di proporre un gioco non adatto all’età reale.":profile.ageRange==="child"&&profile.childStage==="all"?"Nessun prodotto documentato è adatto a tutta la fascia 7–12 con questi interessi e questo budget. Indica se ha 7–9 o 10–12 anni: molti giochi sono pensati per una sola delle due fasce.":"Il catalogo bambini è attivo, ma nessun prodotto documentato rispetta insieme età, interessi, budget e tempi indicati. Non lo sostituiamo con articoli per adulti."}
+  if(["earlyChild","child"].includes(profile.ageRange)){title.textContent="Non restano prodotti verificati per questa ricerca.";text.textContent=profile.ageRange==="earlyChild"&&profile.childStage==="all"?"Per la fascia 0–6 serve indicare una fase più precisa: meno di 1 anno, 1–2 anni oppure 3–6 anni. Evitiamo di proporre un gioco non adatto all’età reale.":profile.ageRange==="child"&&profile.childStage==="all"?"Nessun prodotto documentato è adatto a tutta la fascia 7–12 con questi interessi e questo budget. Indica se ha 7–9 o 10–12 anni: molti giochi sono pensati per una sola delle due fasce.":"Il catalogo bambini è attivo, ma nessun prodotto documentato rispetta insieme età, interessi, budget e tempi indicati. Non lo sostituiamo con articoli per adulti."}
   else if(report.unsatisfied.length){title.textContent="Serve una verifica prima di proporre i regali.";text.textContent="Abbiamo riconosciuto un vincolo di sicurezza, ma il catalogo non contiene dati sufficienti per verificarlo. Precisalo o usa i filtri disponibili: non lo ignoriamo e non proponiamo prodotti potenzialmente incompatibili."}
   else if(report.unclear.length){title.textContent="Serve un chiarimento sul vincolo inserito.";text.textContent="Un vincolo nei dettagli non è interpretabile con sicurezza. Precisalo nella nota o usa i filtri disponibili: finché resta ambiguo non mostriamo proposte che potrebbero contraddirlo."}
   else if(profile.minBudget>0){title.textContent="Non abbiamo idee compatibili in questa fascia di spesa.";text.textContent="Il minimo e il massimo restano entrambi vincolanti. Puoi rivedere la fascia o gli interessi: non mostriamo articoli fuori fascia per riempire i risultati."}
@@ -344,8 +338,6 @@ function showZeroRecovery(profile,candidateCount,analysis=analyseNote(profile.no
   else if(isFirstHighBudget(profile,analysis)){title.textContent="Mancano idee nella fascia di spesa desiderata.";text.textContent="Per la prima ricerca partiamo dalla metà del massimale. Il catalogo non contiene idee compatibili in questa fascia: puoi abbassare il massimo o rivedere gli interessi."}
   else{title.textContent="Con questi vincoli non abbiamo tre proposte affidabili.";text.textContent="Con i dati e i vincoli attuali non restano tre proposte ammissibili. Rivedi i dettagli e le esclusioni: non li allentiamo automaticamente."}
   const increase=$("#increaseBudgetRecovery");increase.hidden=!canIncrease;increase.dataset.budget=canIncrease?String(budget):"";increase.dataset.allowUnverified=String(profile.allowUnverified||budgetNeedsExploration);increase.textContent=canIncrease?`Porta il budget${profile.allowUnverified||budgetNeedsExploration?" indicativo":""} a ${budget} €`:"";
-  $("#changeDateRecovery").hidden=!canChangeDate;$("#changeDateRecovery").textContent="Rivedi la scadenza";
-  $("#checkDeliveryRecovery").hidden=!canCheckDelivery;
   $("#specifyAgeRecovery").hidden=!(["earlyChild","child"].includes(profile.ageRange)&&(!profile.childStage||profile.childStage==="all"));$("#retryRecovery").hidden=true;
   $("#exploreUnverifiedRecovery").hidden=!canExplore;
   $("#broadenTypeRecovery").hidden=!canBroadenType;
@@ -360,7 +352,7 @@ function renderProductCards(selected,profile,reasonIntro=""){
     const priceText=`${verified?"Totale verificato: ":p.amazonPrice?"Prezzo Amazon: ":"Prezzo indicativo: "}${price.toLocaleString("it-IT",{style:"currency",currency:"EUR"})}`;
     const amazonNote=p.amazonPrice?`Amazon · ${new Date(p.amazonCheckedAt).toLocaleString(document.documentElement.lang==='en-US'?'en-GB':'it-IT',{dateStyle:'short',timeStyle:'short'})}. ${document.documentElement.lang==='en-US'?'Prices and availability may change. The price on Amazon at purchase applies. Shipping and delivery must be checked on Amazon.':'Prezzi e disponibilità possono cambiare. Fa fede il prezzo su Amazon al momento dell’acquisto. Spedizione e consegna da verificare su Amazon.'}`:"";
     const conditions=amazonNote|| (verified?"Variante e costi inclusi nella verifica; conferma sul venditore prima dell’acquisto.":"Totale da verificare: spedizione, variante e personalizzazione possono aumentare il costo.");
-    const delivery=profile.timing==="none"?"":RULES.deliveryEligible(p,profile)?`Consegna verificata entro ${p.offer.delivery.by}`:"Controlla la consegna su Amazon";
+    const delivery=profile.timing!=="none"&&RULES.deliveryEligible(p,profile)?`Consegna verificata entro ${p.offer.delivery.by}`:"Controlla la consegna su Amazon";
     const reason=reasonIntro+(p.aiReason||(profile.mode==="giver"?giverReason(p,profile):displayText(p.why)));
     const storeClass=p.store.toLowerCase().replace(/[^a-z0-9]+/g,"-");
     const shortName=shortProductName(p),fullName=displayText(p.name);
@@ -382,12 +374,12 @@ function renderShare(selected){
 }
 function setResultSummary(profile){
   if(profile.researchMethod){
-    $('#resultSummary').textContent=budgetDescription(profile)+' '+deliveryLabel(profile)+' I prezzi Amazon possono cambiare: fa fede il prezzo al momento dell’acquisto. Controlla anche la consegna.';
+    $('#resultSummary').textContent=budgetDescription(profile)+' '+deliveryLabel(profile)+' I prezzi Amazon possono cambiare: fa fede il prezzo al momento dell’acquisto.';
     if(profile.budget>=150)$('#resultSummary').textContent+=' Ricerca da '+Math.max(profile.minBudget||0,profile.budget*.5)+' € al massimale.';
     if((profile.interests||[]).some(a=>!(profile.excludedInterests||[]).includes(a)&&!displayedProducts.some(p=>p.tags.includes(a))))$('#resultSummary').textContent+=' Una categoria selezionata non ha prodotti compatibili disponibili.';
     return;
   }
-  $("#resultSummary").textContent=budgetDescription(profile)+" "+(profile.allowUnverified?`Il prezzo indicativo non è il totale garantito. ${deliveryLabel(profile)} La consegna resta da verificare.`:`Costo totale verificato per le proposte mostrate. ${deliveryLabel(profile)}`);
+  $("#resultSummary").textContent=budgetDescription(profile)+" "+(profile.allowUnverified?`Il prezzo indicativo non è il totale garantito. ${deliveryLabel(profile)}`:`Costo totale verificato per le proposte mostrate. ${deliveryLabel(profile)}`);
   const missing=(profile.interests||[]).filter(area=>!(profile.excludedInterests||[]).includes(area)&&!displayedProducts.some(p=>p.tags.includes(area)));
   if(missing.length)$("#resultSummary").textContent+=" Per una delle categorie scelte non abbiamo proposte compatibili con questi vincoli.";
   if(profile.allowUnknownDelivery)$("#resultSummary").textContent+=" Hai scelto di controllare la consegna sul venditore: l’arrivo entro la scadenza non è confermato.";
@@ -452,11 +444,6 @@ $("#retryRecovery").addEventListener("click",()=>{
   if($("#retryRecovery").hidden||resultsBusy)return;
   track("zero_results_recovery",{choice:"retry"});showResults(...lastSearchArgs);
 });
-$("#checkDeliveryRecovery").addEventListener("click",()=>{
-  if($("#checkDeliveryRecovery").hidden||resultsBusy)return;
-  track("zero_results_recovery",{choice:"check_delivery"});showResults(true,lastProfile?.allowTypeBroadening===true,true);
-});
-$("#changeDateRecovery").addEventListener("click",()=>editRecovery("#timingQuestion","date"));
 $("#editConstraintsRecovery").addEventListener("click",()=>editRecovery("#avoidDetails","constraints"));
 $("#exploreUnverifiedRecovery").addEventListener("click",()=>{
   if($("#exploreUnverifiedRecovery").hidden||resultsBusy)return;
@@ -521,10 +508,13 @@ function labelTag(tag){return({tech:"tecnologia",gaming:"gaming",food:"cucina",t
 function giverReason(product,data){const effects={sentimental:"sensibile",useful:"concreto",funny:"ironico",surprising:"inaspettato",elegant:"ricercato",neutral:"personale"};return`Fa pensare al tuo gusto ${effects[data.tone]||"personale"}: chi lo riceve riconoscerà qualcosa di te nella scelta.`}
 function label(r){return({partner:"il tuo partner",friend:"un amico o un'amica",family:"un familiare",colleague:"un collega",couple:"una coppia"})[r]||"questa persona"}
 function labelAge(value){return({earlyChild:"0–6 anni",child:"7–12 anni",teen:"13–17 anni",youngAdult:"18–34 anni",adult:"35–54 anni",mature:"55+ anni",unknown:"non indicata"})[value]||"non indicata"}
-function deliveryLabel(profile){return({urgent2:"Serve entro 2 giorni.",week:"Serve entro una settimana.",month:"Serve entro un mese.",none:"Non hai indicato una scadenza precisa."})[profile.timing]||`Serve entro il ${new Date(profile.deadline+"T12:00:00").toLocaleDateString("it-IT",{day:"numeric",month:"long",year:"numeric"})}.`}
+// Amazon gives no delivery date, so the questionnaire no longer asks for one.
+// Around Christmas delivery times stretch: say so instead of promising a deadline.
+function peakSeason(now=new Date()){const m=now.getMonth(),d=now.getDate();return m===10&&d>=15||m===11&&d<=24}
+function deliveryLabel(){return peakSeason()?"Periodo di feste: i tempi di consegna si allungano, controlla la data stimata su Amazon prima di acquistare.":"Controlla su Amazon la data di consegna stimata prima di acquistare."}
 $("#restartBtn").addEventListener("click",()=>{
   invalidateResults();if(!$(".finder").hidden)trackStepTiming("restart");
-  form.reset();deadline.value="";deadline.required=false;syncBudget();
+  form.reset();syncBudget();
   currentMode="recipient";currentJourney="direct";syncPerspective();refinementCount=0;displayedProducts=[];rejectedProductKeys=new Set();rejectedConceptKeys=new Set();rejectedParentAsins=new Set();lastProfile=null;
   activeCatalogProducts=products.map(normalizeProduct);activeHealthMeta={active:false,matched:0,excluded:0,pricesUpdated:0,staleOrMissing:products.length};
   $("#refinementForm").reset();configureRefinement("");$("#refinementForm").hidden=true;$("#refinementError").textContent="";

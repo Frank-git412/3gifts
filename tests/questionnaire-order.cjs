@@ -34,6 +34,12 @@ for(const language of ['it','en']){
   change('ageRange','adult');
   assert.ok(!r.el('#wineInterest').hidden,language+': wine available for adults');
 
+  // No delivery question: Amazon gives no delivery date, so the search never claims a deadline.
+  assert.ok(!r.inputs.some(i=>['timing','deadline'].includes(i.name)),language+': no delivery inputs');
+  assert.equal(r.a.formData().timing,'none',language+': searches without a deadline');
+  assert.equal(r.eval('peakSeason(new Date(2026,11,10))'),true,language+': December is peak season');
+  assert.equal(r.eval('peakSeason(new Date(2026,6,10))'),false,language+': July is not');
+  assert.ok(/Amazon/.test(r.eval('deliveryLabel()')),language+': results tell people to check delivery on Amazon');
   r.set('interest',['travelOutdoor','homeGarden']);r.eval('syncInterestFlow()');r.set('subinterest',['organization']);
   assert.equal(JSON.stringify(r.a.formData().subinterests),'["organization"]',language+': shared subcategory sent once');
 }

@@ -50,7 +50,7 @@ function createRuntime(language='it'){
   vm.createContext(context);for(const file of ['config.js','catalog.js','catalog-health.js','recommendation-rules.js',...(language==='en'?['en/catalog-labels.js','en/app.js']:['app.js'])])vm.runInContext(fs.readFileSync(path.join(ROOT,file),'utf8'),context,{filename:file});
   const api=vm.runInContext('({formData,rankProducts,normalizeProduct,analyseNote,showResults,valid,track,renderStep,showZeroRecovery,storeUrl,renderProductCards,fetchCatalogHealth,fetchMarketplaceProducts,applyCatalogHealth,fetchJSON,trackStepTiming,suggestedBudget})',context);
   const set=(name,value)=>{const group=inputs.filter(x=>x.name===name);if(!group.length)throw Error('Unknown input '+name);if(['radio','checkbox'].includes(group[0].type)){for(const x of group)x.checked=Array.isArray(value)?value.includes(x.value):x.value===value;}else group[0].value=String(value);return group.find(x=>x.checked)||group[0]};
-  const seed=()=>{for(const [k,v]of Object.entries({relation:'friend',perspective:'recipient',occasion:'birthday',ageRange:'adult',interest:['techGaming','culture'],tone:'neutral',budgetChoice:'50',timing:'week',note:''}))set(k,v)};
+  const seed=()=>{for(const [k,v]of Object.entries({relation:'friend',perspective:'recipient',occasion:'birthday',ageRange:'adult',interest:['techGaming','culture'],tone:'neutral',budgetChoice:'50',note:''}))set(k,v)};
   return{c:context,a:api,R:context.window.TRE_REGALI_RULES,H:context.window.TRE_REGALI_HEALTH,el,inputs,steps,set,seed,events,clock,windowEvents,documentEvents,eval:code=>vm.runInContext(code,context),products:context.window.TRE_REGALI_CATALOG.map(api.normalizeProduct)};
 }
 module.exports={createRuntime,ROOT};

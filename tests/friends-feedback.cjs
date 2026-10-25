@@ -25,7 +25,7 @@ async function main(){
   check(r.steps.filter(s=>!s.hidden).length===5&&!r.el('#relationQuestion').hidden,language+': adults also answer five screens, relationship included');
   check(!r.a.valid()===false,language+': age answer remains valid');
   r.el('#nextBtn').click();check(r.eval('step')===2&&r.a.formData().relation==='friend',language+': relationship chosen first survives an age change');
-  r.seed();r.set('recipientPreference','women');r.set('interest',['styleBeauty','artPhoto']);r.set('subinterest',['beauty','photo']);r.set('budgetChoice','300');r.set('timing','month');r.set('relation','partner');r.set('occasion','anniversary');
+  r.seed();r.set('recipientPreference','women');r.set('interest',['styleBeauty','artPhoto']);r.set('subinterest',['beauty','photo']);r.set('budgetChoice','300');r.set('relation','partner');r.set('occasion','anniversary');
   const base={...r.a.formData(),allowUnverified:true};
   for(const note of ['ha poco spazio in casa','has little space at home']){
    const p={...base,note},picks=r.a.rankProducts(r.products,p,r.a.analyseNote(note));
@@ -68,7 +68,7 @@ async function main(){
   for(const m of html.matchAll(/<h3>(.*?)<\/h3>/g))check(m[1].length<=140,language+': product headings stay concise');
   const long=fixture('long','Una collana personalizzata, '+('dettaglio '.repeat(50)));
   r.a.renderProductCards([long],base);check(r.el('#resultGrid').innerHTML.includes('<details class="product-details">'),language+': full original name remains accessible');
-  r.seed();r.set('budgetChoice','300');r.set('timing','none');
+  r.seed();r.set('budgetChoice','300');
   for(const age of ['earlyChild','child']){
    r.set('ageRange',age).dispatchEvent({type:'change'});await r.a.showResults();
    check(r.eval('displayedProducts').every(p=>p.ageSuitability?.verified&&r.R.ageEligible(p,{ageRange:age})),language+': only documented age-compatible products are recommended to children');
