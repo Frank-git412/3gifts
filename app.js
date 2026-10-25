@@ -11,7 +11,7 @@ function syncBudget(changed){
   const minimum=$("#minBudget");
   if(changed===minimum&&Number(minimum.value)>Number(budget.value))budget.value=minimum.value;
   if(changed===budget&&Number(budget.value)<Number(minimum.value))minimum.value=budget.value;
-  budgetOut.value=String(Number(budget.value));$("#minBudgetOut").value=String(Number(minimum.value));
+  budgetOut.value=String(Number(budget.value));$("#minBudgetOut").value=String(Number(minimum.value));$("#minBudgetSummary").value=String(Number(minimum.value));
   for(const slider of [minimum,budget]){
     const fill=`${(Number(slider.value)-Number(slider.min))/(Number(slider.max)-Number(slider.min))*100}%`;
     if(slider.style.setProperty)slider.style.setProperty("--budget-fill",fill);else slider.style["--budget-fill"]=fill;
@@ -29,7 +29,7 @@ function syncInterestFlow(){
     group.hidden=!visible;input.disabled=!visible;if(!visible)input.checked=false;
     panel.hidden=!visible||!input.checked;
     panel.querySelectorAll("input").forEach(sub=>{
-      const allowed=visible&&stageAllowed(sub)&&!(sub.value==="wine"&&RULES.isMinor(age));
+      const allowed=visible&&stageAllowed(sub)&&!(sub.value==="wine"&&(RULES.isMinor(age)||age==="unknown"));
       sub.closest("label").hidden=!allowed;sub.disabled=!allowed;
       if(!allowed||!input.checked)sub.checked=false;
     });
@@ -37,33 +37,43 @@ function syncInterestFlow(){
   $("#childInterestHint").hidden=audience==="general";
 }
 function syncAgeFlow(){
+  const relation=$('input[name="relation"]:checked')?.value,adultOnly=["partner","couple","colleague"].includes(relation),couple=relation==="couple";
+  // Partners, couples and colleagues are adults: the minor bands are hidden before the age is chosen.
+  for(const value of ["earlyChild","child","teen"]){
+    $("#age-"+value).hidden=adultOnly;
+    const input=$(`input[name="ageRange"][value="${value}"]`);input.disabled=adultOnly;if(adultOnly)input.checked=false;
+  }
   const age=$('input[name="ageRange"]:checked')?.value,minor=RULES.isMinor(age);
-  // Minors skip the relationship and perspective questions; the screens that hold them stay.
-  $("#relationQuestion").hidden=minor;$("#perspectiveQuestion").hidden=minor;
-  $$('input[name="relation"]').forEach(input=>{input.disabled=minor;input.required=!minor&&input.value==="partner";if(minor)input.checked=false});
+  $("#ageLabel").textContent=couple?"Quanti anni hanno, più o meno?":"Quanti anni ha?";
+  // A couple shares one gift: no per-person product preference.
+  $("#recipientPreferenceQuestion").hidden=couple;
+  $$('input[name="recipientPreference"]').forEach(input=>{input.disabled=couple;if(couple)input.checked=input.value==="unisex"});
+  $("#perspectiveQuestion").hidden=minor;
   $$('input[name="perspective"]').forEach(input=>{input.disabled=minor;if(minor)input.checked=input.value==="recipient"});
   if(minor)currentMode="recipient";
-  $("#relationOccasionLegend").textContent=minor?"Per quale occasione?":"Per chi è e per quale occasione?";
   $("#womenPreferenceText").textContent=minor?"Bambina / ragazza":"Da donna";
   $("#menPreferenceText").textContent=minor?"Bambino / ragazzo":"Da uomo";
   $("#childCatalogNotice").hidden=!["earlyChild","child"].includes(age);
   $("#childStageQuestion").hidden=age!=="earlyChild";
   $$('input[name="childStage"]').forEach(input=>{input.disabled=age!=="earlyChild";if(age!=="earlyChild")input.checked=input.value==="all"});
-  const wine=$('input[name="subinterest"][value="wine"]');wine.disabled=minor;if(minor)wine.checked=false;$("#wineInterest").hidden=minor;
-  for(const value of ["anniversary","graduation","newhome","wedding","newbaby"]){
-    const hide=value==="newbaby"?age==="teen":minor;
+  $("#childBandQuestion").hidden=age!=="child";
+  $$('input[name="childBand"]').forEach(input=>{input.disabled=age!=="child";if(age!=="child")input.checked=input.value==="all"});
+  // Wine products are excluded for minors and for an undisclosed age, so the choice is hidden for both.
+  const noWine=minor||age==="unknown",wine=$('input[name="subinterest"][value="wine"]');wine.disabled=noWine;if(noWine)wine.checked=false;$("#wineInterest").hidden=noWine;
+  for(const value of ["anniversary","graduation","newhome","wedding","newbaby","thanks"]){
+    const hide=value==="newbaby"?age==="teen":value==="thanks"?age==="earlyChild":minor;
     $("#occasion-"+value).hidden=hide;
     const input=$(`input[name="occasion"][value="${value}"]`);input.disabled=hide;if(hide)input.checked=false;
   }
   $("#newbabyLabel").textContent=age==="earlyChild"?"🍼 Nascita / battesimo":age==="child"?"Battesimo / comunione":"🍼 Nascita: regalo per un genitore";
   syncInterestFlow();syncPerspective();
 }
-form.addEventListener("change",event=>{showError("");if(["ageRange","childStage"].includes(event.target.name)){invalidateResults();syncAgeFlow();renderStep();return}if(event.target.name!=="perspective")return;currentMode=event.target.value;syncPerspective()});
+form.addEventListener("change",event=>{showError("");if(["relation","ageRange","childStage","childBand"].includes(event.target.name)){invalidateResults();syncAgeFlow();renderStep();return}if(event.target.name!=="perspective")return;currentMode=event.target.value;syncPerspective()});
 form.addEventListener("input",()=>showError(""));
 $$('input[name="interest"]').forEach(x=>x.addEventListener("change",()=>{limit(x,"interest",2);syncInterestFlow()}));
 $$('input[name="subinterest"]').forEach(x=>x.addEventListener("change",()=>limit(x,"subinterest",4)));
 $$('input[name="timing"]').forEach(x=>x.addEventListener("change",()=>{const exact=x.checked&&x.value==="exact";$("#exactDatePanel").hidden=!exact;deadline.required=exact;if(!exact)deadline.value=""}));
-function limit(input,name,max){const chosen=$$(`input[name="${name}"]:checked`);if(chosen.length>max){input.checked=false;showError(name==="subinterest"?"Puoi scegliere al massimo 4 sottocategorie.":`Puoi sceglierne al massimo ${max}.`)}else showError("")}
+function limit(input,name,max){const chosen=new Set($$(`input[name="${name}"]:checked`).map(x=>x.value));if(chosen.size>max){input.checked=false;showError(name==="subinterest"?"Puoi scegliere al massimo 4 sottocategorie.":`Puoi sceglierne al massimo ${max}.`)}else showError("")}
 function showError(t){$("#formError").textContent=t}
 function visibleSteps(){return $$('.step').filter(x=>!x.hidden)}
 function currentStep(){return visibleSteps().find(x=>+x.dataset.step===step)}
@@ -86,12 +96,12 @@ function resumeStepTiming(){if(stepTimerOpen&&!$(".finder").hidden&&document.vis
 function trackStepTiming(direction){const current=currentStep();if(!current||!stepTimerOpen)return;pauseStepTiming();const steps=visibleSteps(),position=steps.indexOf(current)+1;track("questionnaire_step_timing",{step_key:current.dataset.stepKey,seconds:Math.round(stepActiveMs/1000),direction,position,visible_steps:steps.length});stepTimerOpen=false;stepActiveMs=0}
 function motionBehavior(){return window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches?"auto":"smooth"}
 function focusHeading(node){node?.setAttribute?.("tabindex","-1");node?.focus?.({preventScroll:true})}
-function renderStep(){syncAgeFlow();const steps=visibleSteps();let current=steps.find(x=>+x.dataset.step===step);if(!current){current=steps[0];if(!current)return;step=+current.dataset.step}$$('.step').forEach(x=>x.classList.toggle("active",x===current));const position=steps.indexOf(current)+1,pct=Math.round(position/steps.length*100);$("#stepLabel").textContent=`Domanda ${position} di ${steps.length}`;$("#progressPct").textContent=`${pct}%`;$("#progressBar").style.width=`${pct}%`;$("#progressTrack").setAttribute("aria-valuenow",String(pct));$("#backBtn").hidden=position===1;$("#nextBtn").innerHTML=position===steps.length?'Trova i tre regali <span>✨</span>':'Continua <span>→</span>';stepEnteredAt=null;stepActiveMs=0;stepTimerOpen=!$(".finder").hidden;resumeStepTiming();showError("");if(!$(".finder").hidden){focusHeading(current.querySelector("legend"));$(".finder").scrollIntoView({behavior:motionBehavior(),block:"start"})}}
+function renderStep(){syncAgeFlow();const steps=visibleSteps();let current=steps.find(x=>+x.dataset.step===step);if(!current){current=steps[0];if(!current)return;step=+current.dataset.step}$$('.step').forEach(x=>x.classList.toggle("active",x===current));const position=steps.indexOf(current)+1,pct=Math.round(position/steps.length*100);$("#stepLabel").textContent=`Passo ${position} di ${steps.length}`;$("#progressPct").textContent=`${pct}%`;$("#progressBar").style.width=`${pct}%`;$("#progressTrack").setAttribute("aria-valuenow",String(pct));$("#backBtn").hidden=position===1;$("#nextBtn").innerHTML=position===steps.length?'Trova i tre regali <span>✨</span>':'Continua <span>→</span>';stepEnteredAt=null;stepActiveMs=0;stepTimerOpen=!$(".finder").hidden;resumeStepTiming();showError("");if(!$(".finder").hidden){focusHeading(current.querySelector("legend"));$(".finder").scrollIntoView({behavior:motionBehavior(),block:"start"})}}
 $("#nextBtn").addEventListener("click",()=>{if(!valid())return;const steps=visibleSteps(),current=currentStep(),position=steps.indexOf(current);trackStepTiming("forward");track("questionnaire_step_completed",{step_key:current.dataset.stepKey,position:position+1,visible_steps:steps.length});if(position<steps.length-1){step=+steps[position+1].dataset.step;renderStep()}else showResults()});
 $("#backBtn").addEventListener("click",()=>{const steps=visibleSteps(),current=currentStep(),position=steps.indexOf(current);if(position>0){invalidateResults();trackStepTiming("back");step=+steps[position-1].dataset.step;renderStep()}});
 form.addEventListener("keydown",event=>{if(event.key!=="Enter"||event.target.matches("textarea"))return;event.preventDefault();$("#nextBtn").click()});
 function dateAfter(days){return RULES.dateAfter(days)}
-function formData(){const fd=new FormData(form),timing=fd.get("timing"),ageRange=fd.get("ageRange"),minor=RULES.isMinor(ageRange);currentMode=minor?"recipient":fd.get("perspective")||currentMode;currentJourney=fd.get("journey")||"direct";const deadlineByTiming={urgent2:dateAfter(2),week:dateAfter(7),month:dateAfter(30),none:dateAfter(3650)};return{mode:currentMode,journey:currentJourney,relation:minor?"child":fd.get("relation"),recipientPreference:fd.get("recipientPreference")||"unisex",occasion:fd.get("occasion"),ageRange,childStage:ageRange==="earlyChild"?fd.get("childStage")||"all":null,interests:fd.getAll("interest"),subinterests:fd.getAll("subinterest"),tone:fd.get("tone"),avoid:fd.getAll("avoid"),budget:+fd.get("budgetChoice"),minBudget:+fd.get("minBudget"),timing,deadline:timing==="exact"?fd.get("deadline"):deadlineByTiming[timing],note:fd.get("note")}}
+function formData(){const fd=new FormData(form),timing=fd.get("timing"),ageRange=fd.get("ageRange"),minor=RULES.isMinor(ageRange);currentMode=minor?"recipient":fd.get("perspective")||currentMode;currentJourney=fd.get("journey")||"direct";const deadlineByTiming={urgent2:dateAfter(2),week:dateAfter(7),month:dateAfter(30),none:dateAfter(3650)};return{mode:currentMode,journey:currentJourney,relation:minor?"child":fd.get("relation"),recipientPreference:fd.get("recipientPreference")||"unisex",occasion:fd.get("occasion"),ageRange,childStage:ageRange==="earlyChild"?fd.get("childStage")||"all":ageRange==="child"?fd.get("childBand")||"all":null,interests:fd.getAll("interest"),subinterests:[...new Set(fd.getAll("subinterest"))],tone:fd.get("tone"),avoid:fd.getAll("avoid"),budget:+fd.get("budgetChoice"),minBudget:+fd.get("minBudget"),timing,deadline:timing==="exact"?fd.get("deadline"):deadlineByTiming[timing],note:fd.get("note")}}
 function analyseNote(note,origin='note'){const fd=new FormData(form);return RULES.analyseNote(note,{areas:fd.getAll('interest'),subIds:fd.getAll('subinterest'),language:document.documentElement.lang==='en'?'en':'it',origin})}
 function normalizeProduct(p){
   if(!p||typeof p!=="object"||Array.isArray(p))p={};
@@ -430,7 +440,7 @@ function editRecovery(focusSelector,choice){
   if(resultsBusy)return;
   $("#zeroRecovery").hidden=true;$("#results").hidden=true;$(".finder").hidden=false;
   step=choice==="age"?1:+$('.step[data-step-key="budget_timing_details"]').dataset.step;renderStep();
-  if(choice==="constraints")$(".constraints-details").open=true;
+  if(choice==="constraints")$("#avoidDetails").open=true;
   $(focusSelector).scrollIntoView({behavior:motionBehavior(),block:"center"});track("zero_results_recovery",{choice});
 }
 $("#specifyAgeRecovery").addEventListener("click",()=>editRecovery("#childStageQuestion","age"));
@@ -439,7 +449,7 @@ $("#checkDeliveryRecovery").addEventListener("click",()=>{
   track("zero_results_recovery",{choice:"check_delivery"});showResults(true,lastProfile?.allowTypeBroadening===true,true);
 });
 $("#changeDateRecovery").addEventListener("click",()=>editRecovery("#timingQuestion","date"));
-$("#editConstraintsRecovery").addEventListener("click",()=>editRecovery(".constraints-details","constraints"));
+$("#editConstraintsRecovery").addEventListener("click",()=>editRecovery("#avoidDetails","constraints"));
 $("#exploreUnverifiedRecovery").addEventListener("click",()=>{
   if($("#exploreUnverifiedRecovery").hidden||resultsBusy)return;
   track("zero_results_recovery",{choice:"explore_unverified"});showResults(true,lastProfile?.allowTypeBroadening===true);
@@ -512,7 +522,7 @@ $("#restartBtn").addEventListener("click",()=>{
   $("#refinementForm").reset();configureRefinement("");$("#refinementForm").hidden=true;$("#refinementError").textContent="";
   $("#refinementTitle").textContent="Nessuno ti ha convinto?";$("#refinementText").textContent="Aiutaci a capire meglio: bastano altre 2–3 domande.";
   $("#refineBtn").hidden=false;$("#refineBtn").textContent="Non sono convinto";
-  $("#exactDatePanel").hidden=true;$(".constraints-details").open=false;$("#zeroRecovery").hidden=true;
+  $("#exactDatePanel").hidden=true;$("#avoidDetails").open=false;$("#minBudgetDetails").open=false;$("#zeroRecovery").hidden=true;
   $$('.subinterests').forEach(x=>x.hidden=true);$("#resultGrid").innerHTML="";$("#recommendationStatus").textContent="";$("#resultSummary").textContent="";
   $("#results").hidden=true;$(".finder").hidden=true;$("#categoryExploration").hidden=true;$("#productSelection").hidden=false;$("#revealProducts").hidden=false;
   step=1;renderStep();$(".hero-concept").hidden=false;$("#giftUniverse").hidden=false;focusHeading($("#main-title"));scrollTo({top:0,behavior:motionBehavior()});

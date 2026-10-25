@@ -28,7 +28,7 @@ export function publicPlan(data={}){
  // Accept only normalized enums and recognized signal values, never note text.
  const knownValues=new Set([...analysis.signals,...analysis.requiredSignals,...analysis.specificIntents,...analysis.optionalIntents,...analysis.exclusions,'preference_unknown']);
  analysis.noteConstraints=(Array.isArray(c.noteConstraints)?c.noteConstraints:[]).slice(0,80).filter(x=>x&&knownValues.has(x.value)&&['preference','request','requirement','exclusion','context','uncertain'].includes(x.type)).map(x=>({type:x.type,value:x.value,scope:'selected_interests',origin:x.origin==='refinement'?'refinement':'note',language:['it','en'].includes(x.language)?x.language:'und',status:x.status==='unknown'?'unknown':'interpreted'}));
- const profile={ageRange:p.ageRange,childStage:['infant','toddler','preschool','all'].includes(p.childStage)?p.childStage:'all',budget:Number(p.budget),minBudget:Number(p.minBudget||0),interests,subinterests:subs,avoid:list(p.avoid),recipientPreference:['women','men'].includes(p.recipientPreference)?p.recipientPreference:'unisex',allowTypeBroadening:p.allowTypeBroadening===true};
+ const profile={ageRange:p.ageRange,childStage:(p.ageRange==='child'?['middle','preteen','all']:['infant','toddler','preschool','all']).includes(p.childStage)?p.childStage:'all',budget:Number(p.budget),minBudget:Number(p.minBudget||0),interests,subinterests:subs,avoid:list(p.avoid),recipientPreference:['women','men'].includes(p.recipientPreference)?p.recipientPreference:'unisex',allowTypeBroadening:p.allowTypeBroadening===true};
  const effect=p.isRefinement&&p.refinementSurprise==='safe'?'useful':p.isRefinement&&p.refinementSurprise==='bold'?'surprising':analysis.signals.includes('calm')?'relax':['useful','sentimental','funny','surprising','elegant'].includes(p.tone)?p.tone:'any';
  // Public adult labels differ from the pilot's labels. No demographic inference.
  const age=['earlyChild','child','teen'].includes(p.ageRange)?p.ageRange:p.ageRange==='mature'?'senior':'adult';
@@ -93,7 +93,7 @@ export function publicPlan(data={}){
   }
   if(!['earlyChild','child'].includes(profile.ageRange))return q;
   const words=q.searchKeywords||q.keywords;
-  const agePhrase=profile.ageRange==='child'?'dai 7 anni':{infant:'dalla nascita',toddler:'da 12 mesi',preschool:'dai 3 anni'}[profile.childStage];
+  const agePhrase=profile.ageRange==='child'?(profile.childStage==='preteen'?'dai 10 anni':'dai 7 anni'):{infant:'dalla nascita',toddler:'da 12 mesi',preschool:'dai 3 anni'}[profile.childStage];
   return agePhrase&&!/\b\d+\s*(?:anni|mesi)\b|neonat|nascita/i.test(words)?{...q,searchKeywords:words+' '+agePhrase,ageTargeted:true}:q;
  });
  plan.queries=blocked?[]:queries.slice(0,RESEARCH_LIMITS.initialQueries);
@@ -132,8 +132,8 @@ export function publicCandidate(product,ctx,diagnostics=null){
  // Product-card age notes describe evidence; they never manufacture a verified
  // ageSuitability object from an Amazon title.
  if(['earlyChild','child'].includes(ctx.profile.ageRange)){
-  const lower=ctx.profile.ageRange==='child'?7:{infant:0,toddler:1,preschool:3}[ctx.profile.childStage];
-  const upper=ctx.profile.ageRange==='child'?12:{infant:1,toddler:2,preschool:6}[ctx.profile.childStage];
+  const lower=ctx.profile.ageRange==='child'?(ctx.profile.childStage==='preteen'?10:7):{infant:0,toddler:1,preschool:3}[ctx.profile.childStage];
+  const upper=ctx.profile.ageRange==='child'?(ctx.profile.childStage==='middle'?9:12):{infant:1,toddler:2,preschool:6}[ctx.profile.childStage];
   const range=declaredAgeRange(product);
   if(range.conflict)return reject('age_evidence_conflict');
   if(range.maximumMonths!==null&&range.maximumMonths<upper*12)return reject('age_range_too_young');

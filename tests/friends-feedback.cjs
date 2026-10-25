@@ -8,12 +8,12 @@ function distinct(r,picks){const keys=picks.flatMap(p=>r.R.productConceptKeys(p)
 async function main(){
  for(const language of ['it','en']){
   const r=createRuntime(language);r.seed();
-  check(r.steps[0].dataset.stepKey==='age',language+': age is first');
+  check(r.steps[0].dataset.stepKey==='relation_age',language+': relationship and age come first');
   for(const age of ['earlyChild','child','teen']){
    r.set('ageRange',age).dispatchEvent({type:'change'});
-   check(r.steps.filter(s=>!s.hidden).map(s=>s.dataset.stepKey).join(',')==='age,relation_occasion,interests,tone,budget_timing_details',language+': five-step minor journey');
-   check(r.el('#relationQuestion').hidden&&r.el('#perspectiveQuestion').hidden,language+': relationship and perspective hidden for minors');
-   check(r.inputs.filter(i=>['relation','perspective'].includes(i.name)).every(i=>i.disabled&&!i.required),language+': adult questions cannot block minors');
+   check(r.steps.filter(s=>!s.hidden).map(s=>s.dataset.stepKey).join(',')==='relation_age,occasion,interests,tone,budget_timing_details',language+': five-step minor journey');
+   check(r.el('#perspectiveQuestion').hidden,language+': perspective hidden for minors');
+   check(r.inputs.filter(i=>i.name==='perspective').every(i=>i.disabled),language+': perspective cannot block minors');
    check(r.a.formData().relation==='child'&&r.a.formData().mode==='recipient',language+': no stale partner/giver answers');
    check(r.el('#stepLabel').textContent.includes('5'),language+': actual progress denominator');
    check(r.el('#wineInterest').hidden&&r.inputs.find(i=>i.name==='subinterest'&&i.value==='wine').disabled,language+': alcohol choice is hidden for minors');
@@ -24,7 +24,7 @@ async function main(){
   r.set('ageRange','adult').dispatchEvent({type:'change'});
   check(r.steps.filter(s=>!s.hidden).length===5&&!r.el('#relationQuestion').hidden,language+': adults also answer five screens, relationship included');
   check(!r.a.valid()===false,language+': age answer remains valid');
-  r.el('#nextBtn').click();check(r.eval('step')===2&&!r.a.valid(),language+': relationship must be newly answered');
+  r.el('#nextBtn').click();check(r.eval('step')===2&&r.a.formData().relation==='friend',language+': relationship chosen first survives an age change');
   r.seed();r.set('recipientPreference','women');r.set('interest',['styleBeauty','artPhoto']);r.set('subinterest',['beauty','photo']);r.set('budgetChoice','300');r.set('timing','month');r.set('relation','partner');r.set('occasion','anniversary');
   const base={...r.a.formData(),allowUnverified:true};
   for(const note of ['ha poco spazio in casa','has little space at home']){
