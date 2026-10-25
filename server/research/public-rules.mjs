@@ -889,7 +889,8 @@ const window={};
   const isMinor = ageRange => ["earlyChild", "child", "teen"].includes(ageRange);
   function ageEligible(product, profile = {}) {
     const earlyRange = {infant:[0,1],toddler:[1,2],preschool:[3,6]}[profile.childStage] || [0,6];
-    const range = {earlyChild:earlyRange,child:[7,12],teen:[13,17]}[profile.ageRange];
+    const childRange = {middle:[7,9],preteen:[10,12]}[profile.childStage] || [7,12];
+    const range = {earlyChild:earlyRange,child:childRange,teen:[13,17]}[profile.ageRange];
     const flags = product.constraints || productConstraints(product), tags = product.tags || [];
     if ((range || profile.ageRange === "unknown") && flags.wine) return false;
     if (!range) return true;

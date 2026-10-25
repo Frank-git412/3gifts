@@ -121,7 +121,7 @@ L'affinamento distingue i commenti sulle proposte (es. “mi proponi solo libri�
 
 ### Verifica personale della consegna
 
-Quando esistono idee compatibili ma manca la conferma della consegna urgente, il recupero offre un pulsante esplicito per controllarla sul venditore. Solo quel clic imposta `allowUnknownDelivery` insieme a `allowUnverified`; la scadenza richiesta resta nel profilo e nel riepilogo. I tempi già verificati e incompatibili restano esclusi, così come età, interessi, fascia di spesa ed esclusioni non rispettati. Una nuova ricerca azzera la scelta; gli affinamenti della ricerca corrente la mantengono. Per 0–6 senza fase precisa è disponibile il ritorno diretto alla domanda sull'età. Verifiche: `tests/delivery-choice.cjs` (DOM/rete simulati, IT/EN).
+La domanda sulla scadenza di consegna è stata rimossa: la Creators API restituisce prezzo e disponibilità ma nessuna data di consegna, quindi il questionario non poteva verificarla. Le ricerche usano `timing: 'none'`; i risultati invitano a controllare la data stimata su Amazon, con un avviso rafforzato dal 15 novembre al 24 dicembre. La logica di consegna verificata in `recommendation-rules.js` resta per offerte future con data certificata. Per 0–6 e 7–12 senza fascia precisa il recupero riporta alla domanda sull'età; se Amazon non risponde compare "Riprova la ricerca". Verifiche: `tests/questionnaire-order.cjs` (DOM/rete simulati, IT/EN).
 
 ### Inserimento candidati Amazon — 21 settembre 2026
 

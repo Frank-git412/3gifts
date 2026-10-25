@@ -106,7 +106,7 @@ async function main(){
  check(!reset.el('.step[data-step-key="interests"] .hint').textContent.includes('parlano di te'),'reset restores recipient hint');
  check(reset.eval('stepTimerOpen')===false&&reset.clock.focus==='#main-title','reset stops timer and focuses home');
  // Accessible focus, reduced motion and labels.
- const ui=createRuntime();ui.el('#startQuestionnaire').click();check(ui.clock.focus==='legend-age','start focuses first question');ui.set('ageRange','adult');ui.el('#nextBtn').click();check(ui.clock.focus==='legend-relation_occasion','next focuses new question');
+ const ui=createRuntime();ui.el('#startQuestionnaire').click();check(ui.clock.focus==='legend-relation_age','start focuses first question');ui.set('relation','friend');ui.set('ageRange','adult');ui.el('#nextBtn').click();check(ui.clock.focus==='legend-occasion','next focuses new question');
  ui.c.window.matchMedia=()=>({matches:true});check(ui.eval('motionBehavior()')==='auto','reduced motion applies to programmatic scrolling');
  const html=fs.readFileSync(path.join(ROOT,'index.html'),'utf8');for(const name of ['refineReason','refineDirection','refineSurprise','refineBudget','refineDetail']){
   const control=html.match(new RegExp('<(?:select|input|textarea)\\b[^>]*name="'+name+'"[^>]*>'))[0],label=control.match(/aria-labelledby="([^"]+)"/)[1];check(html.includes('id="'+label+'"'),'accessible label resolves: '+name);

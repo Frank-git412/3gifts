@@ -3,7 +3,7 @@ const {createRuntime}=require('./published-runtime.cjs');
 let checks=0;function check(ok,label){assert.ok(ok,label);checks++}
 async function main(){for(const lang of ['it','en']){
  const r=createRuntime(lang);r.seed();
- for(const [key,value]of Object.entries({relation:'family',recipientPreference:'women',ageRange:'mature',interest:['culture','styleBeauty'],subinterest:['books','beauty'],tone:'neutral',budgetChoice:'50',timing:'month'}))r.set(key,value);
+ for(const [key,value]of Object.entries({relation:'family',recipientPreference:'women',ageRange:'mature',interest:['culture','styleBeauty'],subinterest:['books','beauty'],tone:'neutral',budgetChoice:'50'}))r.set(key,value);
  const base={...r.a.formData(),allowUnverified:true};
  for(const budget of [30,50,100])for(const tone of ['neutral','sentimental','useful']){
   const p={...base,budget,tone},picks=r.a.rankProducts(r.products,p,r.a.analyseNote(''));

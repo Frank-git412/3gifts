@@ -43,7 +43,7 @@
       <div class="intro">
         <p class="eyebrow">3 idee, niente caos</p>
         <h1 id="main-title">Tre idee.<br>Un regalo.<br><em>Zero stress.</em></h1>
-        <p>Niente scroll infiniti, niente dubbi. Dicci per chi è, quanto vuoi spendere e quando ti serve: pensiamo noi al resto.</p>
+        <p>Niente scroll infiniti, niente dubbi. Dicci per chi è, cosa ama e quanto vuoi spendere: pensiamo noi al resto.</p>
         <div class="hero-actions">
           <a class="hero-primary" id="startQuestionnaire" href="#questionnaire">Trova i 3 regali <span>→</span></a>
           <a class="hero-secondary" href="guide.html">Esplora le idee regalo</a>
@@ -58,7 +58,7 @@
         </div>
         <div class="universe-grid" aria-label="Tipologie di regalo disponibili">
           <span><b>✦</b> Fatti su misura</span><span><b>⌁</b> Da vivere</span>
-          <span><b>◫</b> Che durano nel tempo</span><span><b>↗</b> Corsa contro il tempo</span>
+          <span><b>◫</b> Che durano nel tempo</span><span><b>↗</b> Per ogni budget</span>
           <span><b>♡</b> Che dicono qualcosa</span><span><b>◌</b> Da assaporare</span>
           <span><b>＋</b> Un aiuto concreto</span><span><b>◇</b> Gift card</span>
         </div>
@@ -67,22 +67,35 @@
 
     <section class="finder" id="questionnaire" aria-label="Questionario trova regalo" hidden>
       <div class="progress-wrap" aria-live="polite">
-        <div class="progress-meta"><span id="stepLabel">Domanda 1 di 5</span><span id="progressPct">20%</span></div>
+        <div class="progress-meta"><span id="stepLabel">Passo 1 di 5</span><span id="progressPct">20%</span></div>
         <div class="progress" id="progressTrack" role="progressbar" aria-label="Avanzamento del questionario" aria-valuemin="0" aria-valuemax="100" aria-valuenow="20"><span id="progressBar"></span></div>
       </div>
 
       <form id="giftForm">
-        <fieldset class="step active" data-step="1" data-step-key="age">
-          <legend>Quanti anni ha chi riceve il regalo?</legend>
-          <p class="hint">Partiamo dall’età, per mostrarti un percorso adatto.</p>
-          <div class="choice-grid compact">
-            <label><input type="radio" name="ageRange" value="earlyChild" required><span>0–6 anni</span></label>
-            <label><input type="radio" name="ageRange" value="child"><span>7–12 anni</span></label>
-            <label><input type="radio" name="ageRange" value="teen"><span>13–17 anni</span></label>
-            <label><input type="radio" name="ageRange" value="youngAdult"><span>18–34 anni</span></label>
-            <label><input type="radio" name="ageRange" value="adult"><span>35–54 anni</span></label>
-            <label><input type="radio" name="ageRange" value="mature"><span>55+ anni</span></label>
-            <label><input type="radio" name="ageRange" value="unknown"><span>Preferisco non indicarla</span></label>
+        <fieldset class="step active" data-step="1" data-step-key="relation_age">
+          <legend>Per chi è il regalo?</legend>
+          <p class="hint">Partiamo da chi lo riceve: rapporto ed età cambiano molto il tipo di regalo.</p>
+          <div class="quick-question" id="relationQuestion" role="radiogroup" aria-labelledby="relationLabel">
+            <strong id="relationLabel">Chi è per te?</strong>
+            <div class="choice-grid compact">
+            <label><input type="radio" name="relation" value="partner" required><span>💞 Partner</span></label>
+            <label><input type="radio" name="relation" value="friend"><span>🤝 Amico/a</span></label>
+            <label><input type="radio" name="relation" value="family"><span>🏡 Familiare</span></label>
+            <label><input type="radio" name="relation" value="colleague"><span>💼 Collega</span></label>
+            <label><input type="radio" name="relation" value="couple"><span>💑 Una coppia</span></label>
+            </div>
+          </div>
+          <div class="quick-question" id="ageQuestion" role="radiogroup" aria-labelledby="ageLabel">
+            <strong id="ageLabel">Quanti anni ha?</strong>
+            <div class="choice-grid compact">
+              <label id="age-earlyChild"><input type="radio" name="ageRange" value="earlyChild" required><span>0–6 anni</span></label>
+              <label id="age-child"><input type="radio" name="ageRange" value="child"><span>7–12 anni</span></label>
+              <label id="age-teen"><input type="radio" name="ageRange" value="teen"><span>13–17 anni</span></label>
+              <label id="age-youngAdult"><input type="radio" name="ageRange" value="youngAdult"><span>18–34 anni</span></label>
+              <label id="age-adult"><input type="radio" name="ageRange" value="adult"><span>35–54 anni</span></label>
+              <label id="age-mature"><input type="radio" name="ageRange" value="mature"><span>55+ anni</span></label>
+              <label id="age-unknown"><input type="radio" name="ageRange" value="unknown"><span>Preferisco non indicarla</span></label>
+            </div>
           </div>
           <div class="quick-question" id="childStageQuestion" role="radiogroup" aria-labelledby="childStageLabel" hidden>
             <strong id="childStageLabel">In quale fase si trova?</strong>
@@ -94,9 +107,18 @@
               <label><input type="radio" name="childStage" value="all" checked disabled><span>Non so con precisione</span></label>
             </div>
           </div>
+          <div class="quick-question" id="childBandQuestion" role="radiogroup" aria-labelledby="childBandLabel" hidden>
+            <strong id="childBandLabel">Più precisamente?</strong>
+            <p class="hint">Facoltativo: molti giochi sono indicati dai 10 anni in su. Con l’età più precisa possiamo proporli.</p>
+            <div class="choice-grid compact">
+              <label><input type="radio" name="childBand" value="middle" disabled><span>7–9 anni</span></label>
+              <label><input type="radio" name="childBand" value="preteen" disabled><span>10–12 anni</span></label>
+              <label><input type="radio" name="childBand" value="all" checked disabled><span>Non so con precisione</span></label>
+            </div>
+          </div>
           <p class="hint catalog-age-notice" id="childCatalogNotice" hidden>Il catalogo bambini include prodotti Amazon con fascia d’età documentata. Per 0–6 indica la fase quando possibile: senza un’età più precisa manteniamo un filtro prudente.</p>
-          <div class="quick-question recipient-preference" role="radiogroup" aria-labelledby="recipientPreferenceLabel" aria-describedby="recipientPreferenceHint">
-            <strong id="recipientPreferenceLabel">Preferenza per gli articoli</strong>
+          <div class="quick-question recipient-preference" id="recipientPreferenceQuestion" role="radiogroup" aria-labelledby="recipientPreferenceLabel" aria-describedby="recipientPreferenceHint">
+            <strong id="recipientPreferenceLabel">Articoli pensati per…</strong>
             <p class="hint" id="recipientPreferenceHint">Facoltativo. La scelta riguarda chi riceve il regalo. Gli articoli unisex sono sempre inclusi.</p>
             <div class="choice-grid compact">
               <label><input type="radio" name="recipientPreference" value="women"><span id="womenPreferenceText">Da donna</span></label>
@@ -106,37 +128,20 @@
           </div>
         </fieldset>
 
-        <fieldset class="step" data-step="2" data-step-key="relation_occasion">
-          <legend id="relationOccasionLegend">Per chi è e per quale occasione?</legend>
-          <p class="hint">Il rapporto e l’occasione cambiano molto il tono del regalo.</p>
-          <div class="quick-question" id="relationQuestion" role="radiogroup" aria-labelledby="relationLabel">
-            <strong id="relationLabel">Chi è per te?</strong>
-            <div class="choice-grid compact">
-            <label><input type="radio" name="relation" value="partner" required><span>💞 Partner</span></label>
-            <label><input type="radio" name="relation" value="friend"><span>🤝 Amico/a</span></label>
-            <label><input type="radio" name="relation" value="family"><span>🏡 Familiare</span></label>
-            <label><input type="radio" name="relation" value="colleague"><span>💼 Collega</span></label>
-            <label><input type="radio" name="relation" value="couple"><span>💑 Una coppia</span></label>
-          </div>
-          </div>
-          <div class="quick-question" role="radiogroup" aria-labelledby="occasionLabel">
-            <strong id="occasionLabel">Qual è l’occasione?</strong>
-            <div class="choice-grid compact">
+        <fieldset class="step" data-step="2" data-step-key="occasion">
+          <legend>Per quale occasione?</legend>
+          <p class="hint">L’occasione cambia molto il tono del regalo.</p>
+          <div class="choice-grid compact">
             <label><input type="radio" name="occasion" value="birthday" required><span>🎂 Compleanno</span></label>
             <label id="occasion-anniversary"><input type="radio" name="occasion" value="anniversary"><span>💌 Anniversario</span></label>
             <label><input type="radio" name="occasion" value="christmas"><span>🎄 Natale</span></label>
-            <label><input type="radio" name="occasion" value="thanks"><span>✨ Grazie / sorpresa</span></label>
+            <label id="occasion-thanks"><input type="radio" name="occasion" value="thanks"><span>✨ Grazie / sorpresa</span></label>
             <label id="occasion-graduation"><input type="radio" name="occasion" value="graduation"><span>🎓 Laurea</span></label>
             <label id="occasion-newhome"><input type="radio" name="occasion" value="newhome"><span>🔑 Casa nuova</span></label>
             <label id="occasion-wedding"><input type="radio" name="occasion" value="wedding"><span>💍 Matrimonio / convivenza</span></label>
             <label id="occasion-newbaby"><input type="radio" name="occasion" value="newbaby"><span id="newbabyLabel">🍼 Nascita: regalo per un genitore</span></label>
             <label><input type="radio" name="occasion" value="event"><span>🎟️ Altra ricorrenza</span></label>
           </div>
-          </div>
-        </fieldset>
-
-        <fieldset class="step" data-step="3" data-step-key="interests">
-          <legend id="interestsLegend">Cosa ama davvero?</legend>
           <div class="quick-question perspective-question" id="perspectiveQuestion" role="radiogroup" aria-labelledby="perspectiveLabel">
             <strong id="perspectiveLabel">Il regalo deve parlare di…</strong>
             <div class="choice-grid compact perspective-grid">
@@ -144,6 +149,10 @@
             <label><input type="radio" name="perspective" value="giver"><span>✍️ Anche di me</span></label>
           </div>
           </div>
+        </fieldset>
+
+        <fieldset class="step" data-step="3" data-step-key="interests">
+          <legend id="interestsLegend">Cosa ama davvero?</legend>
           <p class="hint">Scegli fino a due aree principali e fino a quattro sottocategorie in totale.</p>
           <p class="hint" id="childInterestHint" hidden>Le scelte cambiano con l’età. L’età indicata dal produttore resta decisiva per ogni singolo regalo.</p>
           <div class="interest-groups">
@@ -179,8 +188,8 @@
         </fieldset>
 
         <fieldset class="step" data-step="4" data-step-key="tone">
-          <legend>Che effetto vuoi ottenere?</legend>
-          <p class="hint">Scegli la reazione che vorresti vedere quando aprirà il regalo.</p>
+          <legend>Cosa deve fare il tuo regalo?</legend>
+          <p class="hint">Scegli l’effetto principale che cerchi.</p>
           <div class="choice-grid traits">
             <label><input type="radio" name="tone" value="sentimental" required><span>💞 Emozionare</span></label>
             <label><input type="radio" name="tone" value="useful"><span>🧰 Essere utile</span></label>
@@ -192,38 +201,26 @@
         </fieldset>
 
         <fieldset class="step" data-step="5" data-step-key="budget_timing_details">
-          <legend>Budget, tempi e ultimi dettagli</legend>
+          <legend>Budget e ultimi dettagli</legend>
           <p class="hint">Cerchiamo idee nella fascia di prezzo indicata. Prezzo finale, eventuali spese di spedizione e consegna vanno verificati su Amazon.</p>
           <div class="quick-question" id="budgetQuestion">
-            <div class="budget-pair">
+            <div class="budget-control">
+              <div class="budget-display"><label for="budget">Budget massimo</label><strong><output id="budgetOut" for="budget">50</output> €</strong></div>
+              <input class="budget-slider" id="budget" name="budgetChoice" type="range" min="15" max="500" step="5" value="50" aria-label="Budget massimo" required>
+              <div class="range-labels" aria-hidden="true"><span>15 €</span><span>500 €</span></div>
+            </div>
+            <details class="constraints-details min-budget-details" id="minBudgetDetails">
+              <summary>Facoltativo: imposta anche una spesa minima <span>(ora <output id="minBudgetSummary" for="minBudget">0</output> €)</span></summary>
               <div class="budget-control">
                 <div class="budget-display"><label for="minBudget">Budget minimo</label><strong><output id="minBudgetOut" for="minBudget">0</output> €</strong></div>
                 <input class="budget-slider" id="minBudget" name="minBudget" type="range" min="0" max="500" step="5" value="0" aria-label="Budget minimo" aria-describedby="minBudgetHint">
                 <div class="range-labels" aria-hidden="true"><span>0 €</span><span>500 €</span></div>
               </div>
-              <div class="budget-control">
-                <div class="budget-display"><label for="budget">Budget massimo</label><strong><output id="budgetOut" for="budget">50</output> €</strong></div>
-                <input class="budget-slider" id="budget" name="budgetChoice" type="range" min="15" max="500" step="5" value="50" aria-label="Budget massimo" required>
-                <div class="range-labels" aria-hidden="true"><span>15 €</span><span>500 €</span></div>
-              </div>
-            </div>
-            <p class="hint" id="minBudgetHint">Lascia il minimo a 0 € se vuoi soltanto un tetto di spesa. Le due barre mantengono il minimo entro il massimo.</p>
+              <p class="hint" id="minBudgetHint">Utile se non vuoi proposte troppo economiche. Il minimo resta sempre entro il massimo.</p>
+            </details>
           </div>
-          <div class="quick-question" id="timingQuestion">
-            <strong>Quando ti serve?</strong>
-            <div class="choice-grid compact quick-grid">
-              <label><input type="radio" name="timing" value="urgent2" required><span>Entro 2 giorni</span></label>
-              <label><input type="radio" name="timing" value="week" checked><span>Entro una settimana</span></label>
-              <label><input type="radio" name="timing" value="month"><span>Entro un mese</span></label>
-              <label><input type="radio" name="timing" value="exact"><span>Ho una data precisa</span></label>
-              <label><input type="radio" name="timing" value="none"><span>Nessuna scadenza precisa</span></label>
-            </div>
-            <div class="conditional-panel compact-panel" id="exactDatePanel" hidden>
-              <label class="date-field">Data del regalo<input id="deadline" name="deadline" type="date"></label>
-            </div>
-          </div>
-          <details class="constraints-details">
-            <summary>Facoltativo: aggiungi gusti, passioni o cose da evitare</summary>
+          <details class="constraints-details" id="avoidDetails">
+            <summary>Facoltativo: cose da evitare</summary>
             <div class="avoid-grid">
               <label><input type="checkbox" name="avoid" value="bulky"><span>Oggetti ingombranti</span></label>
               <label><input type="checkbox" name="avoid" value="sizes"><span>Taglie e misure</span></label>
@@ -236,13 +233,6 @@
           </details>
           <label class="note-field">Un dettaglio che può fare la differenza <span>(facoltativo)</span><textarea name="note" maxlength="240" aria-describedby="noteHelp" placeholder="Es. colleziona vinili, ama il Giappone, ha poco spazio in casa, non usa profumi…"></textarea></label>
           <p class="hint" id="noteHelp"><strong>Privacy:</strong> non inserire nomi, recapiti, dati sulla salute o altre informazioni personali o sensibili. Riconosciamo alcune preferenze ed esclusioni, non ogni vincolo scritto; verifica sempre con il venditore le esigenze di sicurezza.</p>
-          <div class="result-path">
-            <strong>Come vuoi vedere il risultato?</strong>
-            <div class="choice-grid compact">
-              <label><input type="radio" name="journey" value="direct" required checked><span>✨ Direttamente le 3 proposte</span></label>
-              <label><input type="radio" name="journey" value="explore"><span>🧭 Prima la categoria più adatta</span></label>
-            </div>
-          </div>
         </fieldset>
 
         <div class="form-actions">
@@ -266,10 +256,9 @@
           <h3 id="zeroRecoveryTitle">Con questi vincoli non abbiamo tre proposte affidabili.</h3>
           <p id="zeroRecoveryText">Puoi rivedere i vincoli o esplorare idee con condizioni da verificare.</p>
           <div class="zero-recovery-actions">
-            <button class="primary" id="checkDeliveryRecovery" type="button" hidden>Mostra le idee: controllerò la consegna sul venditore</button>
+            <button class="primary" id="retryRecovery" type="button" hidden>Riprova la ricerca</button>
             <button class="quiet" id="specifyAgeRecovery" type="button" hidden>Precisa l’età della bambina o del bambino</button>
             <button class="primary" id="increaseBudgetRecovery" type="button">Aumenta leggermente il budget</button>
-            <button class="quiet" id="changeDateRecovery" type="button">Modifica la data</button>
             <button class="quiet" id="editConstraintsRecovery" type="button">Rivedi dettagli e vincoli</button>
             <button class="quiet" id="exploreUnverifiedRecovery" type="button">Esplora idee senza garanzia di budget o consegna</button>
             <button class="quiet" id="broadenTypeRecovery" type="button" hidden>Includi anche oggetti coerenti</button>
