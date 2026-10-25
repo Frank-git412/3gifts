@@ -5,13 +5,13 @@ const ideaGuides=JSON.parse(fs.readFileSync(path.join(__dirname,'..','library','
 const check=(value,message)=>{assert.ok(value,message);assertions++};
 const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);
 const files=walk(ROOT).filter(f=>f.endsWith('.html'));
-check(files.length===42,'21 Italian and 21 English pages');
+check(files.length===54,'27 Italian and 27 English pages');
 const expectedCanonicals=files.filter(file=>!path.relative(ROOT,file).startsWith('en/')).map(file=>'https://3gifts.it/'+path.relative(ROOT,file).replace(/(^|\/)index\.html$/,'$1').replace(/\.html$/,''));
 const robots=fs.readFileSync(path.join(ROOT,'robots.txt'),'utf8');
 const sitemap=fs.readFileSync(path.join(ROOT,'sitemap.xml'),'utf8');
 check(robots.includes('User-agent: *')&&robots.includes('Allow: /'),'robots permits crawling');
 check(robots.includes('Sitemap: https://3gifts.it/sitemap.xml'),'robots advertises canonical sitemap');
-check((sitemap.match(/<url>/g)||[]).length===21+2+ideaGuides.length,'sitemap contains the 21 Italian pages and the idea guides');
+check((sitemap.match(/<url>/g)||[]).length===27+2+ideaGuides.length,'sitemap contains the 27 Italian pages and the idea guides');
 for(const canonical of expectedCanonicals)check((sitemap.match(new RegExp('<loc>'+canonical.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'<\\/loc>','g'))||[]).length===1,'sitemap contains '+canonical+' once');
 for(const file of files){
  const html=fs.readFileSync(file,'utf8'),relative=path.relative(ROOT,file),en=relative.startsWith('en/');
