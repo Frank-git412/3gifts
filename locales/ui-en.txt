@@ -406,3 +406,4 @@ Facoltativo: imposta anche una spesa minima => Optional: set a minimum spend too
 Utile se non vuoi proposte troppo economiche. Il minimo resta sempre entro il massimo. => Useful if you don’t want ideas that feel too cheap. The minimum always stays within the maximum.
 Facoltativo: cose da evitare => Optional: things to avoid
 Per quale occasione? => What’s the occasion?
+Riprova la ricerca => Try the search again

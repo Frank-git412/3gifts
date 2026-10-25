@@ -37,4 +37,23 @@ for(const language of ['it','en']){
   r.set('interest',['travelOutdoor','homeGarden']);r.eval('syncInterestFlow()');r.set('subinterest',['organization']);
   assert.equal(JSON.stringify(r.a.formData().subinterests),'["organization"]',language+': shared subcategory sent once');
 }
+(async()=>{for(const language of ['it','en']){
+  // Service failure: a retry button repeats the same search; other recoveries keep it hidden.
+  const r=createRuntime(language);r.seed();r.set('relation','family');r.set('ageRange','child');r.eval('syncAgeFlow()');
+  r.set('interest',['kidsGames']);r.eval('syncInterestFlow()');
+  let calls=0;r.c.fetch=async()=>{calls++;throw new Error('down')};
+  await r.a.showResults();
+  assert.ok(!r.el('#retryRecovery').hidden,language+': retry offered when the service fails');
+  assert.ok(!r.el('#specifyAgeRecovery').hidden,language+': undetermined 7–12 offers the age band');
+  const before=calls;r.el('#retryRecovery').click();await new Promise(x=>setTimeout(x,50));
+  assert.ok(calls>before,language+': retry runs the search again');
+  r.el('#specifyAgeRecovery').click();
+  assert.equal(r.c.step??r.eval('step'),1,language+': age recovery returns to the first screen');
+  assert.equal(r.clock.scroll,'#childBandQuestion',language+': age recovery points at the 7–12 band');
+  r.a.showZeroRecovery({...r.a.formData(),allowUnverified:true},0,r.a.analyseNote(''));
+  assert.ok(r.el('#retryRecovery').hidden,language+': no retry for an ordinary zero result');
+  r.a.renderProductCards([r.products.find(p=>p.asin)],{...r.a.formData(),allowUnverified:true});
+  assert.ok(r.el('#resultGrid').innerHTML.includes('rel="sponsored nofollow noopener noreferrer"'),language+': product links are marked sponsored');
+}
+console.log('Recovery IT/EN: retry, 7–12 band and sponsored links passed.')})().catch(e=>{console.error(e);process.exit(1)});
 console.log('Questionnaire order IT/EN: relationship first, adult-only ages, couple preference, child bands, wine and duplicates passed.');
