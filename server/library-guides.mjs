@@ -1,3 +1,4 @@
+import {productAllowed} from './library-products.mjs';
 // Christmas idea guides (/idee/...): editorial pages built from approved library concepts and
 // the products the hourly job keeps fresh. Amazon content older than 24 hours is never shown;
 // without a fresh product the idea links to an Amazon search instead.
@@ -15,7 +16,7 @@ export function guideConcepts(guide,concepts,productsByConcept){
   if(!overlaps(c.relations,f.relations)||!overlaps(c.ages,f.ages)||!overlaps(c.interests,f.interests)||!overlaps(c.tones,f.tones))continue;
   if(f.maxPrice&&c.price.min>f.maxPrice)continue;
   if(f.kinds&&!f.kinds.includes(c.kind))continue;
-  const product=(productsByConcept.get(c.id)||[]).find(p=>!f.maxPrice||p.price<=f.maxPrice)||null;
+  const product=(productsByConcept.get(c.id)||[]).find(p=>(!f.maxPrice||p.price<=f.maxPrice)&&productAllowed(p.title,c,f.gender))||null;
   const score=c.interests.filter(i=>(prefer.interests||[]).includes(i)).length*2+c.tones.filter(t=>(prefer.tones||[]).includes(t)).length+(product?3:0)+(Number(c.boost)||0);
   ideas.push({concept:c,product,score});
  }
@@ -89,7 +90,7 @@ export async function libraryShareSelection(url,env,concepts,now=Date.now()){
  const picked=ids.map(id=>concepts.find(c=>c.id===id)).filter(Boolean);
  if(!picked.length)return null;
  const fresh=await freshProducts(env,now);
- const ideas=picked.map(c=>({concept:c,product:(fresh.get(c.id)||[])[0]||null}));
+ const ideas=picked.map(c=>({concept:c,product:(fresh.get(c.id)||[]).find(p=>productAllowed(p.title,c))||null}));
  const canonical='https://3gifts.it/scelta?idee='+picked.map(c=>c.id).join(',');
  return guideResponse(guideShell({title:'Ecco '+(picked.length===1?'un’idea regalo':picked.length+' idee regalo')+' da valutare insieme',description:'Idee scelte con il questionario di 3Gifts: guardale e decidete insieme quale regalare.',canonical,noindex:true,
   body:`<span class="category">Idee condivise</span><h1>Le idee da valutare insieme</h1><p class="lead">Qualcuno ha fatto il questionario di 3Gifts e ti ha mandato queste proposte. Ognuna ha il motivo per cui può funzionare.</p><ol class="idea-list">${ideas.map(ideaHtml).join('')}</ol>${quizCta()}`}));

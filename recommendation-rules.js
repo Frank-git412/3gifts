@@ -6,8 +6,10 @@
   // invisible joiners inside pasted words. Bidi controls are handled as unclear.
   const normalizeNote = value => String(value || "").normalize("NFKC")
     .replace(/[\u00ad\u200b-\u200d\u2060\ufeff]/g, "");
-  const normalizeText = value => String(value || "").toLocaleLowerCase("it-IT")
-    .normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[’']/g, " ");
+  // Pure and called thousands of times per request on the same strings: remember recent results.
+  const memo = (fn, limit = 20000) => { const seen = new Map(); return value => { const key = String(value || ""); let out = seen.get(key); if (out === undefined) { if (seen.size >= limit) seen.clear(); out = fn(key); seen.set(key, out); } return out; }; };
+  const normalizeText = memo(value => value.toLocaleLowerCase("it-IT")
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[’']/g, " "));
   const vocabulary = {
     tech: ["tech", "tecnologia", "tecnologico", "tecnologica", "tecnologici", "tecnologiche", "smart", "gadget", "computer"],
     smartphone: ["smartphone", "smartphones", "telefono", "telefoni", "iphone"],
@@ -485,11 +487,11 @@
   // END GENERATED M3 BILINGUAL TERMS
   const pilotTermMap=new Map(M3_BILINGUAL_TERMS);
   const pilotTermPattern=M3_BILINGUAL_TERMS.length?new RegExp('(?<![a-z0-9])(?:'+[...pilotTermMap.keys()].sort((a,b)=>b.length-a.length).map(s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&').replace(/ /g,"[ ,/'’–-]+")).join('|')+')(?![a-z0-9])','gi'):null;
-  function pilotTranslateTerms(value){
-    // Preserve punctuation and accented negations; translate only reviewed terms.
+  // Preserve punctuation and accented negations; translate only reviewed terms.
+  const pilotTranslateTerms=memo(value=>{
     const text=normalizeNote(value);
     return pilotTermPattern?text.replace(pilotTermPattern,term=>pilotTermMap.get(term.toLowerCase().replace(/[^a-z0-9%]+/g,' '))||term):text;
-  }
+  });
   function pilotBookNoteTerms(value){
     const text=normalizeNote(value);
     return pilotTermPattern?text.replace(pilotTermPattern,term=>{

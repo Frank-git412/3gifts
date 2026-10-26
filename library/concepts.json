@@ -1215,12 +1215,10 @@
   ],
   "gender": "any",
   "interests": [
-   "foodDrink",
-   "culture"
+   "foodDrink"
   ],
   "subinterests": [
-   "food",
-   "books"
+   "food"
   ],
   "tones": [
    "surprising",
@@ -2595,10 +2593,10 @@
   ],
   "gender": "any",
   "interests": [
-   "culture"
+   "newsBusiness"
   ],
   "subinterests": [
-   "books"
+   "writing"
   ],
   "tones": [
    "sentimental",

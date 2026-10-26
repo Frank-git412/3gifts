@@ -2,7 +2,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import {database} from './d1-fixture.mjs';
-import {selectLibraryProducts,runLibraryJob} from '../server/library-products.mjs';
+import {selectLibraryProducts,runLibraryJob,productAllowed} from '../server/library-products.mjs';
 
 const item=(asin,title,price,extra={})=>({asin,detailPageURL:`https://www.amazon.it/dp/${asin}?tag=3gifts-21`,itemInfo:{title:{displayValue:title}},images:{primary:{large:{url:`https://m.media-amazon.com/images/I/${asin}.jpg`}}},offersV2:{listings:[{isBuyBoxWinner:true,price:{money:{amount:price,currency:'EUR'}},availability:{type:'IN_STOCK'}}]},...extra});
 const concept={id:'c001-set-da-sommelier-in-legno',amazonQuery:'set sommelier cofanetto legno',price:{min:20,max:45}};
@@ -19,8 +19,23 @@ test('keeps Amazon order and drops non-gifts, out-of-budget, unavailable and dup
     item('B000000007','Cofanetto vino con cavatappi',22),
     item('B000000008','Kit sommelier professionale',40),
   ],concept);
-  assert.deepEqual(picked.map(p=>p.asin),['B000000001','B000000005','B000000007']);
+  assert.deepEqual(picked.map(p=>p.asin),['B000000001','B000000005','B000000007','B000000008']);
   assert.equal(picked[1].parentAsin,'B0000000P1');
+});
+
+test('drops listings made for someone else: kids items for adults, drinking games, the other gender', () => {
+  const adultIdea={...concept,ages:['adult'],occasions:['christmas'],avoidFlags:[],gender:'women'};
+  const picked=selectLibraryProducts([
+    item('B000000011','Macchina Fotografica Bambini Istantanea',29),
+    item('B000000012','Carte per bere - gioco alcolico per adulti',25),
+    item('B000000013','Festina Orologio Uomo in pelle',30),
+    item('B000000014','Bracciali coppia lui lei',30),
+    item('B000000015','Binocolo compatto per bambini e adulti',30),
+  ],adultIdea);
+  assert.deepEqual(picked.map(p=>p.asin),['B000000014','B000000015']);
+  assert.equal(productAllowed('Festina Orologio Uomo',{...adultIdea,gender:'any'},'women'),false,'a man\'s watch is not offered to her');
+  assert.equal(productAllowed('Festina Orologio Uomo',{...adultIdea,gender:'any'},'unisex'),true,'unknown recipient: allowed, ranked after neutral items');
+  assert.equal(productAllowed('Copertina mussola neonato',{...adultIdea,gender:'any',occasions:['newbaby']}),true,'baby items are the point of a new-baby idea');
 });
 
 test('matches concepts, refreshes the next day and clears Amazon content after 24 hours', async () => {

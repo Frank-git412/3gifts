@@ -6,7 +6,9 @@ const LIBRARY_DAY=86400000;
 const MATCH_EVERY=7*LIBRARY_DAY,REFRESH_AFTER=20*3600000;
 // A concept whose search fails is retried a day later instead of blocking the queue.
 const RETRY_AFTER_ERROR=LIBRARY_DAY;
-const MATCHES_PER_RUN=12,REFRESH_BATCHES_PER_RUN=6,PRODUCTS_PER_CONCEPT=3;
+// Matches made before the current selection rules are redone (recipient and drinking filters, 5 products).
+const MATCH_RULES_SINCE=Date.parse('2026-10-26T22:00:00Z');
+const MATCHES_PER_RUN=12,REFRESH_BATCHES_PER_RUN=6,PRODUCTS_PER_CONCEPT=5;
 const LIBRARY_RESOURCES=['itemInfo.title','images.primary.large','parentASIN','offersV2.listings.price','offersV2.listings.availability','offersV2.listings.isBuyBoxWinner'];
 // Accessories, spare parts and second-hand listings are not gifts in their own right.
 const NOT_A_GIFT=/\b(?:ricambi?|sostituzione|di ricambio|compatibile con|pellicola|adesiv[oi]|usat[oa]|ricondizionat[oa]|cover per|custodia per)\b/i;
@@ -26,12 +28,33 @@ function libraryDetailUrl(item){
  try{const u=new URL(item.detailPageURL);if(u.protocol==='https:'&&u.hostname==='www.amazon.it'&&!u.username&&!u.password)return u.href;}catch{}
  return null;
 }
+// Who a listing is made for, read from its title. A title naming both ("lui e lei") targets neither.
+const FOR_MEN=/\b(?:uomo|uomini|maschile|maschio|per lui|men'?s?)\b/i;
+const FOR_WOMEN=/\b(?:donna|donne|femminile|per lei|ragazza|women'?s?|lady)\b/i;
+const FOR_KIDS=/\b(?:bambin[oie]|bimb[oie]|neonat[oie]|kids?|junior|infanzia|cameretta)\b/i;
+const ALSO_ADULTS=/\b(?:adult[oie]?|adults?|tutta la famiglia)\b/i;
+const DRINKING=/\b(?:bere|alcolic[io]|alcol|drinking|drink|shot|ubriac\w*|sbronz\w*)\b/i;
+export function productTarget(title){
+ const t=String(title||''),men=FOR_MEN.test(t),women=FOR_WOMEN.test(t);
+ return {gender:men&&!women?'men':women&&!men?'women':null,kids:FOR_KIDS.test(t)&&!ALSO_ADULTS.test(t),drinking:DRINKING.test(t)};
+}
+// The same rules decide at matching time, in engine v2 and in the guides, so products already stored
+// before a rule existed are held back too. recipient is 'women', 'men' or anything else for unknown.
+export function productAllowed(title,concept,recipient){
+ const target=productTarget(title);
+ const ages=concept.ages||[],childIdea=ages.some(a=>a==='earlyChild'||a==='child'||a==='teen')||(concept.occasions||[]).includes('newbaby');
+ if(target.kids&&!childIdea)return false;
+ if(target.drinking&&!(concept.avoidFlags||[]).includes('alcohol'))return false;
+ const wanted=concept.gender&&concept.gender!=='any'?concept.gender:recipient==='women'||recipient==='men'?recipient:null;
+ if(wanted&&target.gender&&target.gender!==wanted)return false;
+ return true;
+}
 // Amazon's relevance order is kept; we only drop what is not a giftable, available, in-budget product.
 export function selectLibraryProducts(items,concept){
  const min=concept.price.min*0.8,max=concept.price.max*1.2,seen=new Set(),out=[];
  for(const item of items||[]){
   const title=String(item.itemInfo?.title?.displayValue||'').trim();
-  if(!/^[A-Z0-9]{10}$/.test(item.asin||'')||!title||NOT_A_GIFT.test(title))continue;
+  if(!/^[A-Z0-9]{10}$/.test(item.asin||'')||!title||NOT_A_GIFT.test(title)||!productAllowed(title,concept))continue;
   const offer=libraryOffer(item),detailUrl=libraryDetailUrl(item);
   if(!offer?.available||offer.price<min||offer.price>max||!detailUrl)continue;
   const family=/^[A-Z0-9]{10}$/.test(item.parentASIN||'')?item.parentASIN:item.asin;
@@ -75,8 +98,10 @@ export async function runLibraryJob(env,concepts,now=Date.now()){
 async function libraryJobSteps(env,concepts,now){
  const report={matched:0,empty:0,refreshed:0,errors:[]};
  await env.DB.prepare('UPDATE library_products SET title=NULL,price=NULL,image_url=NULL,available=0 WHERE checked_at<=?').bind(now-LIBRARY_DAY).run();
- const done=new Map(((await env.DB.prepare('SELECT concept_id,matched_at FROM library_matches').all()).results||[]).map(r=>[r.concept_id,r.matched_at]));
- const due=concepts.filter(c=>!(done.get(c.id)>now-MATCH_EVERY)).slice(0,MATCHES_PER_RUN);
+ const done=new Map(((await env.DB.prepare('SELECT concept_id,matched_at,outcome FROM library_matches').all()).results||[]).map(r=>[r.concept_id,r]));
+ // A failed search waits its retry time; a real match is redone weekly and after a rules change.
+ const fresh=row=>row&&row.matched_at>(row.outcome==='error'?now-MATCH_EVERY:Math.max(now-MATCH_EVERY,MATCH_RULES_SINCE));
+ const due=concepts.filter(c=>!fresh(done.get(c.id))).slice(0,MATCHES_PER_RUN);
  for(const concept of due){
   try{(await matchConcept(concept,env,now))?report.matched++:report.empty++;}
   catch(e){

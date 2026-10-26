@@ -1,3 +1,4 @@
+import {productAllowed,productTarget} from './library-products.mjs';
 // Engine v2: picks three gift ideas from the approved library and the products matched to it.
 // It answers in the same shape as /api/amazon/recommend, so the questionnaire needs no changes,
 // and it never calls Amazon while the visitor waits: prices come from the hourly library job.
@@ -41,6 +42,10 @@ export function v2Score(concept,profile){
 // Stable per-profile tie-break, so equal scores do not always surface the same ideas.
 function tieBreak(text){let h=2166136261;for(let i=0;i<text.length;i++){h^=text.charCodeAt(i);h=Math.imul(h,16777619);}return h>>>0;}
 
+const TITLE_STOP=new Set(['per','con','set','regalo','idea','idee','della','delle','degli','dalla','nero','bianco','pezzi','gioco','giochi']);
+function titleWords(title){return new Set(String(title).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').split(/[^a-z0-9]+/).filter(w=>w.length>3&&!TITLE_STOP.has(w)));}
+export function similarTitles(a,b){const x=titleWords(a),y=titleWords(b);let both=0;for(const w of x)if(y.has(w))both++;return both/Math.max(1,Math.min(x.size,y.size))>=0.5;}
+
 export function v2Select(concepts,productsByConcept,profile,rejectedAsins=[]){
  const max=Number(profile.budget)||50,min=Math.max(0,Number(profile.minBudget)||0);
  const rejected=new Set(rejectedAsins);
@@ -50,10 +55,17 @@ export function v2Select(concepts,productsByConcept,profile,rejectedAsins=[]){
  const candidates=[];
  for(const concept of concepts){
   if(seen.has(concept.id)||!v2Eligible(concept,profile))continue;
-  const product=(productsByConcept.get(concept.id)||[]).find(p=>p.price>=min&&p.price<=max&&!rejected.has(p.asin));
-  if(!product)continue;
+  const usable=(productsByConcept.get(concept.id)||[]).filter(p=>p.price>=min&&p.price<=max&&!rejected.has(p.asin)&&productAllowed(p.title,concept,profile.recipientPreference));
+  if(!usable.length)continue;
+  // Amazon's order stands, but a product for anyone comes first when we do not know who receives it,
+  // and one that uses at least half the budget comes before a much cheaper one.
+  const unknown=profile.recipientPreference!=='women'&&profile.recipientPreference!=='men';
+  const rank=p=>(unknown&&productTarget(p.title).gender?2:0)+(p.price<max*0.5?1:0);
+  const product=usable.reduce((best,p)=>rank(p)<rank(best)?p:best);
   const fit=v2Score(concept,profile);
-  candidates.push({concept,product,...fit,tie:tieBreak(concept.id+key)});
+  // Gifts far below the budget read as careless: a small bonus for using it.
+  const budgetFit=product.price>=max*0.5?1.5:0;
+  candidates.push({concept,product,...fit,score:fit.score+budgetFit,tie:tieBreak(concept.id+key)});
  }
  const wantsInterests=list(profile.interests).length>0;
  // Ideas outside the chosen interests are used only to complete the three, never ahead of a match.
@@ -65,6 +77,8 @@ export function v2Select(concepts,productsByConcept,profile,rejectedAsins=[]){
   for(const c of ordered){
    if(picked.length===3)break;
    if(picked.includes(c)||!allowed(c))continue;
+   // Two listings with nearly the same title are one idea shown twice.
+   if(allowed!==passes[passes.length-1]&&picked.some(p=>similarTitles(p.product.title,c.product.title)))continue;
    picked.push(c);c.concept.interests.forEach(i=>usedAreas.add(i));
   }
  }

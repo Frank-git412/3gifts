@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import fs from 'node:fs';
 import {database} from './d1-fixture.mjs';
-import {v2Eligible,v2Select,recommendV2} from '../server/engine-v2.mjs';
+import {v2Eligible,v2Select,recommendV2,similarTitles} from '../server/engine-v2.mjs';
 
 const library=JSON.parse(fs.readFileSync('library/concepts.json','utf8')).filter(c=>c.status==='approved'||c.status==='draft');
 const byId=id=>library.find(c=>c.id.startsWith(id));
@@ -81,4 +81,22 @@ test('every age range gets three ideas, minors included', () => {
   const kids={relation:'child',occasion:'christmas',recipientPreference:'unisex',tone:'neutral',budget:40,minBudget:0,avoid:[]};
   for(const p of [{...kids,ageRange:'earlyChild',childStage:'toddler',interests:['earlyBuilding']},{...kids,ageRange:'child',interests:['kidsScience']},{...kids,ageRange:'teen',interests:['techGaming'],subinterests:['gaming']}])
     assert.equal(v2Select(library.filter(c=>c.status==='approved'),products,p).length,3,p.ageRange);
+});
+
+test('the recipient decides between gendered listings, near-identical titles are not shown twice, the budget is used', () => {
+  const base={relation:'partner',occasion:'anniversary',ageRange:'youngAdult',recipientPreference:'women',interests:['styleBeauty'],subinterests:['jewelry'],tone:'elegant',budget:80,minBudget:0,avoid:[]};
+  const watch=library.find(c=>c.id.startsWith('c086'));
+  const only=new Map([[watch.id,[{asin:'B0WATCHMEN',title:'Festina Orologio Uomo in pelle',price:75,detailUrl:'https://www.amazon.it/dp/B0WATCHMEN',checkedAt:Date.now()}]]]);
+  assert.equal(v2Select([watch],only,base).length,0,'a man\'s watch never reaches her');
+  const both=new Map([[watch.id,[{asin:'B0WATCHMEN',title:'Festina Orologio Uomo',price:75,checkedAt:1},{asin:'B0WATCHANY',title:'Orologio minimal cinturino pelle',price:70,checkedAt:1}]]]);
+  assert.equal(v2Select([watch],both,{...base,recipientPreference:'unisex'})[0].product.asin,'B0WATCHANY','unknown recipient: the neutral listing first');
+  const games=library.filter(c=>['c013','c014','c015'].some(p=>c.id.startsWith(p)));
+  const same=new Map(games.map((c,i)=>[c.id,[{asin:'B00000G00'+i,title:'Party game carte serate tra amici edizione '+i,price:20,checkedAt:1}]]));
+  const picks=v2Select(games,same,{...base,relation:'friend',occasion:'christmas',ageRange:'adult',recipientPreference:'unisex',interests:['gamesCollecting'],subinterests:['boardGames'],tone:'funny',budget:40});
+  assert.ok(picks.length<=3);
+  assert.ok(similarTitles('Magma Games CARTE PER BERE Giochi da Tavolo Adulti','GLOP 400 Carte Pack Giochi da Tavolo Adulti per Bere'),'two drinking card packs are the same idea');
+  assert.ok(!similarTitles('Set sommelier in legno','Macinacaffè manuale in ceramica'));
+  const cheap=library.find(c=>c.id.startsWith('c046'));
+  const prices=new Map([[cheap.id,[{asin:'B0CHEAP001',title:'Collana argento',price:15,checkedAt:1},{asin:'B0FAIR0001',title:'Collana argento 925',price:55,checkedAt:1}]]]);
+  assert.equal(v2Select([cheap],prices,base)[0].product.asin,'B0FAIR0001','with an 80 € budget the 55 € listing beats the 15 € one');
 });
