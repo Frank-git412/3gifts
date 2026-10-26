@@ -78,6 +78,8 @@ for(const f of fs.readdirSync(root)) {
  if(/\.(css|js|webp|png|jpg|svg|ico|txt|webmanifest)$/.test(f) && fs.statSync(path.join(root,f)).isFile()) fs.copyFileSync(path.join(root,f),path.join(out,f));
 }
 fs.cpSync(path.join(root,"fonts"),path.join(out,"fonts"),{recursive:true});
+// Pinterest pin images, referenced by the bulk-upload CSV.
+fs.cpSync(path.join(root,"pin"),path.join(out,"pin"),{recursive:true});
 const files=[...fs.readdirSync(root).filter(f=>f.endsWith(".html")),...fs.readdirSync(path.join(root,"guide")).filter(f=>f.endsWith(".html")).map(f=>"guide/"+f)];
 for(const file of files) {
  const source=read(file);
