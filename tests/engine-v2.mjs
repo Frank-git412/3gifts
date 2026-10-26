@@ -22,6 +22,7 @@ test('hard constraints: age, child stage, relation, gender and exclusions', () =
   assert.equal(v2Eligible(byId('c099'),{...adult,ageRange:'earlyChild',childStage:'infant',relation:'family'}),true);
   assert.equal(v2Eligible(byId('c001'),{...adult,ageRange:'child'}),false,'adult idea never for a child');
   assert.equal(v2Eligible(byId('c026'),{...adult,avoid:['subscriptions']}),false);
+  assert.equal(v2Eligible(byId('c099'),{...adult,ageRange:'earlyChild',childStage:'infant',relation:'child'}),true,'minors are sent with relation child');
 });
 
 const products=new Map(library.map((c,i)=>[c.id,[{asin:'B'+String(i).padStart(9,'0'),title:c.title+' prodotto',price:Math.min(c.price.max,Math.max(c.price.min,30)),detailUrl:'https://www.amazon.it/dp/B'+String(i).padStart(9,'0')+'?tag=3gifts-21',checkedAt:Date.now()}]]));
@@ -74,4 +75,10 @@ test('a short delivery window favours instant gifts; a negative boost ranks an i
   const boosted=library.map(c=>c.id.startsWith('c016')?{...c,boost:-20}:c);
   const picks=v2Select(boosted,products,{...base,interests:['gamesCollecting'],subinterests:['puzzle'],relation:'family',ageRange:'mature',budget:60});
   assert.ok(!picks.slice(0,1).some(p=>p.concept.id.startsWith('c016')),'a heavily lowered idea does not lead');
+});
+
+test('every age range gets three ideas, minors included', () => {
+  const kids={relation:'child',occasion:'christmas',recipientPreference:'unisex',tone:'neutral',budget:40,minBudget:0,avoid:[]};
+  for(const p of [{...kids,ageRange:'earlyChild',childStage:'toddler',interests:['earlyBuilding']},{...kids,ageRange:'child',interests:['kidsScience']},{...kids,ageRange:'teen',interests:['techGaming'],subinterests:['gaming']}])
+    assert.equal(v2Select(library.filter(c=>c.status==='approved'),products,p).length,3,p.ageRange);
 });

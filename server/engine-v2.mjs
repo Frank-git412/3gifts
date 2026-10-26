@@ -12,7 +12,8 @@ export function v2Eligible(concept,profile){
  const age=profile.ageRange&&profile.ageRange!=='unknown'?profile.ageRange:null;
  if(age?!concept.ages.includes(age):!concept.ages.some(a=>ADULT_AGES.includes(a)))return false;
  if(age==='earlyChild'&&['infant','toddler','preschool'].includes(profile.childStage)&&!(concept.stages||[]).includes(profile.childStage))return false;
- if(profile.relation&&!concept.relations.includes(profile.relation))return false;
+ // Minors skip the relationship question: the questionnaire sends relation 'child' for them.
+ if(profile.relation&&profile.relation!=='child'&&!concept.relations.includes(profile.relation))return false;
  const sex=profile.recipientPreference;
  if(concept.gender!=='any'&&concept.gender!==sex)return false;
  const avoid=new Set(list(profile.avoid));
