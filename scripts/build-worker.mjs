@@ -41,6 +41,7 @@ const libraryCode=fs.readFileSync(path.join(root,'server/library-products.mjs'),
 const guidesCode=fs.readFileSync(path.join(root,'server/library-guides.mjs'),'utf8').replace(/^import .*?;\n/gm,'').replace(/\bexport (?=(?:const|function|async function))/g,'');
 const libraryGuides=JSON.parse(fs.readFileSync(path.join(root,'library/guides.json'),'utf8'));
 const claudeCode=fs.readFileSync(path.join(root,'server/claude.mjs'),'utf8').replace(/^import .*?;\n/gm,'').replace(/\bexport (?=(?:const|function|async function))/g,'');
+const evalCode=fs.readFileSync(path.join(root,'server/eval.mjs'),'utf8').replace(/^import .*?;\n/gm,'').replace(/\bexport (?=(?:const|function|async function))/g,'');
 const engineV3Code=fs.readFileSync(path.join(root,'server/engine-v3.mjs'),'utf8').replace(/^import .*?;\n/gm,'').replace(/\bexport (?=(?:const|function|async function))/g,'');
 // Questionnaire labels, so Claude reads "Videogiochi" instead of an internal id.
 const questionnaireLabels={};
@@ -65,7 +66,7 @@ for(const group of fs.readFileSync(path.join(root,'index.html'),'utf8').matchAll
 fs.appendFileSync(path.join(root,'server/research/public-rules.mjs'),'\nexport const CHILD_STAGE_RULES='+JSON.stringify(childStages)+';\n');
 const researchFiles=['reviews','weighted-ranking','technology-keywords','engine','age-policy','catalog-data','product-identity','product-requirements','research-engine','public-rules','pilot-context','pilot-expansion','pilot-closure-rules','pilot-lexicon-data','pilot-family-reviews','pilot-dictionary','expanded-data','expanded-context','relax-use-context','occasion-use-context','gift-context','intent-search','public-adapter'];
 const researchCode='const researchRuntime=(()=>{\n'+researchFiles.map(f=>fs.readFileSync(path.join(root,'server/research/'+f+'.mjs'),'utf8').replace(/^import .*?;\n/gm,'').replace(/\bexport (?=(?:const|function|async function))/g,'')).join('\n')+'\nreturn {publicRecommendation};})();\n';
-const worker = `import Anthropic from "@anthropic-ai/sdk";\n${transportCode}\n${catalogueCode}\n${claudeCode}\n${libraryCode}\n${engineV2Code}\n${engineV3Code}\n${guidesCode}\nconst QUESTIONNAIRE_LABELS=${JSON.stringify(questionnaireLabels)};\nconst LIBRARY_GUIDES=${JSON.stringify(libraryGuides)};\nconst LIBRARY_CONCEPTS=${JSON.stringify(libraryConcepts)};\nconst CURATED=${JSON.stringify(curated)};\n${amazonCode}\n${researchCode}\n// Static files are served by Cloudflare's asset storage; the Worker only keeps their paths for routing.
+const worker = `import Anthropic from "@anthropic-ai/sdk";\n${transportCode}\n${catalogueCode}\n${claudeCode}\n${libraryCode}\n${engineV2Code}\n${engineV3Code}\n${evalCode}\n${guidesCode}\nconst QUESTIONNAIRE_LABELS=${JSON.stringify(questionnaireLabels)};\nconst LIBRARY_GUIDES=${JSON.stringify(libraryGuides)};\nconst LIBRARY_CONCEPTS=${JSON.stringify(libraryConcepts)};\nconst CURATED=${JSON.stringify(curated)};\n${amazonCode}\n${researchCode}\n// Static files are served by Cloudflare's asset storage; the Worker only keeps their paths for routing.
 const ASSET_PATHS=new Set(${JSON.stringify(Object.keys(assets))});
 const CONTENT_TYPES={
   ".html":"text/html; charset=utf-8",
@@ -126,6 +127,7 @@ export default {
     // Aggregate Claude usage for this month: calls and estimated cost only, never prompts or answers.
     if(url.pathname==="/api/claude/costs")return new Response(JSON.stringify(env.DB?await claudeCosts(env):{}),{headers:{"Content-Type":"application/json","Cache-Control":"no-store","X-Content-Type-Options":"nosniff"}});
     if(url.pathname==="/api/v2/recommend")return recommendV2(request,env,LIBRARY_CONCEPTS);
+    if(url.pathname==="/api/eval/judge")return evalJudge(request,env);
     if(url.pathname==="/api/v3/recommend")return recommendV3(request,env,LIBRARY_CONCEPTS,{labels:QUESTIONNAIRE_LABELS,runV1:req=>researchRuntime.publicRecommendation(req,env,{withCandidates:true})});
     if((request.method==="GET"||request.method==="HEAD")&&url.pathname==="/scelta"){
       const page=await libraryShareSelection(url,env,LIBRARY_CONCEPTS);
