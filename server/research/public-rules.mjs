@@ -8,8 +8,9 @@ const window={};
   // invisible joiners inside pasted words. Bidi controls are handled as unclear.
   const normalizeNote = value => String(value || "").normalize("NFKC")
     .replace(/[\u00ad\u200b-\u200d\u2060\ufeff]/g, "");
-  // Pure and called thousands of times per request on the same strings: remember recent results.
-  const memo = (fn, limit = 20000) => { const seen = new Map(); return value => { const key = String(value || ""); let out = seen.get(key); if (out === undefined) { if (seen.size >= limit) seen.clear(); out = fn(key); seen.set(key, out); } return out; }; };
+  // Pure and called thousands of times per request on the same short strings (vocabulary terms):
+  // remember recent results. Long product texts are not kept, so the Worker's memory stays small.
+  const memo = (fn, limit = 3000, longest = 160) => { const seen = new Map(); return value => { const key = String(value || ""); if (key.length > longest) return fn(key); let out = seen.get(key); if (out === undefined) { if (seen.size >= limit) seen.clear(); out = fn(key); seen.set(key, out); } return out; }; };
   const normalizeText = memo(value => value.toLocaleLowerCase("it-IT")
     .normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[’']/g, " "));
   const vocabulary = {
