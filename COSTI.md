@@ -17,6 +17,15 @@ Ultimo aggiornamento: 27 ottobre 2026.
 
 **Totale fisso noto: 5 $ al mese**, più il consumo di Claude e i domini.
 
+## Costi già sostenuti (sviluppo)
+
+| Voce | Importo | Note |
+|---|---|---|
+| ChatGPT, primo mese | 24 | Valuta e mese da confermare. |
+| ChatGPT, secondo mese | 124 | Valuta e mese da confermare. |
+| ChatGPT, crediti aggiuntivi | 80 | Valuta da confermare. |
+| **Totale ChatGPT** | **228** | Spesa una tantum per la prima versione del sito: non è un costo mensile ricorrente. |
+
 ## Claude: come si misura
 
 - Il sito conta da solo le chiamate e i token usati ogni giorno. Il totale del mese, con il costo stimato a prezzi di listino, è su **https://3gifts.it/api/claude/costs**.
@@ -28,8 +37,8 @@ Ultimo aggiornamento: 27 ottobre 2026.
 
 | Uso | Costo stimato |
 |---|---|
-| Un questionario con il motore v3 | circa 2–3 centesimi |
-| Controllo AI di tutti i prodotti della libreria (circa 500, una volta) | circa 1,5 $ |
+| Un questionario con il motore v3 | **misurato: circa 2,7 centesimi** (27/10) |
+| Controllo AI di tutti i prodotti della libreria (circa 500, una volta) | **misurato: circa 1 centesimo per idea**, quindi circa 1 $ per tutte le 107 idee |
 | Controllo dei prodotti nuovi nei giorni successivi | pochi centesimi al giorno |
 | 1.000 questionari v3 al mese | circa 25 $ |
 
@@ -40,3 +49,4 @@ Ultimo aggiornamento: 27 ottobre 2026.
 | 27/10/2026 | Anthropic, crediti prepagati | 20,00 $ | Ricarica iniziale. |
 | 27/10/2026 | Cloudflare Workers Paid | 5,00 $/mese | Attivato per eliminare gli errori "Worker exceeded resource limits". |
 | 27/10/2026 | Claude, prova del motore v3 | circa 0,75 $ (stima) | Circa 30 risposte del v3 sui profili di prova, prima che il conteggio dei token fosse attivo. |
+| 27/10/2026 | Claude, misurato dal sito | 0,33 $ | 19 chiamate contate (9 del v3, 10 del controllo prodotti): totale del giorno circa 1,10 $ con la stima sopra. |
