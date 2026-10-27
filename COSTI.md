@@ -40,6 +40,7 @@ Ultimo aggiornamento: 27 ottobre 2026, sera.
 | Controllo AI di tutti i prodotti della libreria (circa 500, una volta) | **misurato: circa 1 centesimo per idea**, quindi circa 1 $ per tutte le 107 idee |
 | Controllo dei prodotti nuovi nei giorni successivi | pochi centesimi al giorno |
 | 1.000 questionari v3 al mese | circa 25 $ |
+| Un giudizio del giudice automatico (due ordini) | **misurato: circa 1,5 centesimi** |
 
 ## Movimenti
 
@@ -49,3 +50,4 @@ Ultimo aggiornamento: 27 ottobre 2026, sera.
 | 27/10/2026 | Cloudflare Workers Paid | 5,00 $/mese | Attivato per eliminare gli errori "Worker exceeded resource limits". |
 | 27/10/2026 | Claude, prova del motore v3 | circa 0,75 $ (stima) | Circa 30 risposte del v3 sui profili di prova, prima che il conteggio dei token fosse attivo. |
 | 27/10/2026 | Claude, misurato dal sito | 0,33 $ | 19 chiamate contate (9 del v3, 10 del controllo prodotti): totale del giorno circa 1,10 $ con la stima sopra. |
+| 27/10/2026 | Claude, taratura del giudice | circa 1,03 $ | 140 giudizi (70 confronti × 2 ordini): circa 0,7 centesimi a giudizio. Totale Claude del mese misurato: 1,36 $. |
