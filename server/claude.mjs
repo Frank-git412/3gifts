@@ -14,6 +14,22 @@ export async function reserveClaudeCall(env,now=Date.now()){
  if(!row)throw Error('claude_quota_exhausted');
 }
 
+// Tokens per day, so the monthly cost is measured, not guessed (see claudeCosts and COSTI.md).
+async function recordClaudeTokens(env,usage={}){
+ const day=new Date().toISOString().slice(0,10),n=v=>Number(v)||0;
+ try{await env.DB.prepare('UPDATE claude_usage SET input_tokens=input_tokens+?,output_tokens=output_tokens+?,cache_read_tokens=cache_read_tokens+?,cache_write_tokens=cache_write_tokens+? WHERE day=?')
+  .bind(n(usage.input_tokens),n(usage.output_tokens),n(usage.cache_read_input_tokens),n(usage.cache_creation_input_tokens),day).run();}catch{}
+}
+// Claude Opus 5.5 list prices in USD per million tokens; cache writes cost 1.25x input.
+const CLAUDE_PRICES={input:4,output:20,cacheRead:0.2,cacheWrite:5};
+export async function claudeCosts(env,now=Date.now()){
+ const month=new Date(now).toISOString().slice(0,7);
+ const rows=(await env.DB.prepare("SELECT day,calls,input_tokens,output_tokens,cache_read_tokens,cache_write_tokens FROM claude_usage WHERE day LIKE ? ORDER BY day").bind(month+'%').all()).results||[];
+ const usd=r=>(r.input_tokens*CLAUDE_PRICES.input+r.output_tokens*CLAUDE_PRICES.output+r.cache_read_tokens*CLAUDE_PRICES.cacheRead+r.cache_write_tokens*CLAUDE_PRICES.cacheWrite)/1e6;
+ const days=rows.map(r=>({day:r.day,calls:r.calls,estimatedUsd:Math.round(usd(r)*100)/100}));
+ return {month,calls:days.reduce((s,d)=>s+d.calls,0),estimatedUsd:Math.round(rows.reduce((s,r)=>s+usd(r),0)*100)/100,days};
+}
+
 function claudeClient(env){
  if(env.ANTHROPIC_CLIENT)return env.ANTHROPIC_CLIENT;
  if(!env.ANTHROPIC_API_KEY)throw Error('claude_not_configured');
@@ -33,6 +49,6 @@ export async function claudeJson(env,{system,user,schema,effort='low',maxTokens=
  if(response.stop_reason==='refusal')throw Error('claude_refusal');
  if(response.stop_reason==='max_tokens')throw Error('claude_truncated');
  const text=response.content.filter(b=>b.type==='text').map(b=>b.text).join('');
- console.log('claude usage',JSON.stringify({input:response.usage?.input_tokens,cached:response.usage?.cache_read_input_tokens,output:response.usage?.output_tokens}));
+ await recordClaudeTokens(env,response.usage);
  return JSON.parse(text);
 }

@@ -123,6 +123,8 @@ export default {
     if(url.pathname==="/api/amazon/catalog")return amazonCatalogue(request,env,CURATED);
     if(url.pathname==="/api/amazon/status")return amazonConnection(request,env);
     if(url.pathname==="/api/library/status")return libraryStatus(env,LIBRARY_CONCEPTS);
+    // Aggregate Claude usage for this month: calls and estimated cost only, never prompts or answers.
+    if(url.pathname==="/api/claude/costs")return new Response(JSON.stringify(env.DB?await claudeCosts(env):{}),{headers:{"Content-Type":"application/json","Cache-Control":"no-store","X-Content-Type-Options":"nosniff"}});
     if(url.pathname==="/api/v2/recommend")return recommendV2(request,env,LIBRARY_CONCEPTS);
     if(url.pathname==="/api/v3/recommend")return recommendV3(request,env,LIBRARY_CONCEPTS,{labels:QUESTIONNAIRE_LABELS,runV1:req=>researchRuntime.publicRecommendation(req,env,{withCandidates:true})});
     if((request.method==="GET"||request.method==="HEAD")&&url.pathname==="/scelta"){

@@ -52,3 +52,12 @@ test('the profile reads as plain Italian for Claude', () => {
   const text=describeProfile({...profile,avoid:['alcohol'],minBudget:10},{culture:'Libri, fumetti e cultura'});
   assert.match(text,/Rapporto: amico o amica/);assert.match(text,/Genere: donna/);assert.match(text,/Budget: da 10 fino a 30 euro/);assert.match(text,/Da evitare: alcolici/);
 });
+
+test('Claude tokens are counted per day and priced for the month', async () => {
+  const {binding}=database();
+  const client={beta:{messages:{create:async()=>({stop_reason:'end_turn',usage:{input_tokens:1000,output_tokens:500,cache_read_input_tokens:2000,cache_creation_input_tokens:0},content:[{type:'text',text:'{"scelte":[],"domanda":""}'}]})}}};
+  const {claudeJson,claudeCosts}=await import('../server/claude.mjs');
+  await claudeJson({DB:binding,ANTHROPIC_CLIENT:client},{system:'s',user:'u',schema:{type:'object'}});
+  const costs=await claudeCosts({DB:binding});
+  assert.equal(costs.calls,1);assert.equal(costs.estimatedUsd,0.01,'1000×4 + 500×20 + 2000×0.2 per million = 0.0144 $');
+});

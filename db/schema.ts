@@ -28,4 +28,6 @@ export const libraryMatches=sqliteTable('library_matches',{
 });
 
 // Claude calls per UTC day, capped by CLAUDE_DAILY_CALL_LIMIT.
-export const claudeUsage=sqliteTable('claude_usage',{day:text('day').primaryKey(),calls:integer('calls').notNull().default(0)});
+export const claudeUsage=sqliteTable('claude_usage',{day:text('day').primaryKey(),calls:integer('calls').notNull().default(0),
+ inputTokens:integer('input_tokens').notNull().default(0),outputTokens:integer('output_tokens').notNull().default(0),
+ cacheReadTokens:integer('cache_read_tokens').notNull().default(0),cacheWriteTokens:integer('cache_write_tokens').notNull().default(0)});
