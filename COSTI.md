@@ -1,30 +1,29 @@
 # Costi di 3Gifts
 
 Registro dei costi del sito, aggiornato a ogni cambiamento. Importi in dollari dove il fornitore fattura in dollari.
-Ultimo aggiornamento: 27 ottobre 2026.
+Ultimo aggiornamento: 27 ottobre 2026, sera.
 
 ## Riepilogo mensile
 
 | Voce | Tipo | Costo al mese | Note |
 |---|---|---|---|
 | Cloudflare Workers Paid | fisso | 5,00 $ | Attivo dal 27/10/2026. Include 10 M richieste e 30 M ms di calcolo al mese: oggi ne usiamo una piccola frazione. |
-| Anthropic (Claude) | a consumo | 0–20 $ | Crediti prepagati: 20 $ caricati il 27/10/2026. Limite di spesa mensile e ricarica automatica spenta: da confermare nella Console. |
+| Anthropic (Claude) | a consumo | 0–20 $ | Crediti prepagati: 20 $ caricati il 27/10/2026. Ricarica automatica spenta (confermato): a credito finito la spesa si ferma e il sito usa il motore senza AI. |
 | Amazon Creators API | gratuito | 0 $ | Resta gratuita finché l'account fa almeno 10 vendite idonee in 30 giorni. |
 | GitHub | gratuito | 0 $ | |
-| Umami Cloud (analytics) | da confermare | ? | Indicare il piano attivo. |
-| Dominio 3gifts.it (Aruba) | annuale | ? | Indicare importo e data di rinnovo. |
-| Dominio 3regali.it (Aruba) | annuale | ? | Indicare importo e data di rinnovo. |
+| Umami Cloud (analytics) | gratuito | 0 € | Piano gratuito. |
+| Domini Aruba (3gifts.it, 3regali.it) | annuale | 19 € all'anno (circa 1,60 € al mese) | Importo indicato da Francesco; data di rinnovo da annotare. |
 
-**Totale fisso noto: 5 $ al mese**, più il consumo di Claude e i domini.
+**Totale fisso: circa 5 $ + 1,60 € al mese** (Cloudflare e domini), più il consumo di Claude.
 
 ## Costi già sostenuti (sviluppo)
 
 | Voce | Importo | Note |
 |---|---|---|
-| ChatGPT, primo mese | 24 | Valuta e mese da confermare. |
-| ChatGPT, secondo mese | 124 | Valuta e mese da confermare. |
-| ChatGPT, crediti aggiuntivi | 80 | Valuta da confermare. |
-| **Totale ChatGPT** | **228** | Spesa una tantum per la prima versione del sito: non è un costo mensile ricorrente. |
+| ChatGPT, primo mese | 24 € | |
+| ChatGPT, secondo mese | 124 € | |
+| ChatGPT, crediti aggiuntivi | 80 € | |
+| **Totale ChatGPT** | **228 €** | Spesa una tantum per la prima versione del sito: non è un costo mensile ricorrente. |
 
 ## Claude: come si misura
 
