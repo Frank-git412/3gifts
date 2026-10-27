@@ -17,6 +17,8 @@ function syncBudget(changed){
   }
 }
 budget.addEventListener("input",()=>syncBudget(budget));$("#minBudget").addEventListener("input",()=>syncBudget($("#minBudget")));syncBudget();
+// With engine v3 the note leaves the browser: the notice says so before anyone types.
+if(String(CONFIG.amazonProductsEndpoint||"").includes("/v3/")){const help=$("#noteHelp");if(help){help.textContent="";const b=document.createElement("strong");b.textContent="Privacy: ";help.append(b,"il dettaglio che scrivi viene inviato al nostro fornitore di intelligenza artificiale (Anthropic) solo per scegliere i regali e non viene salvato da 3Gifts. Non inserire nomi, recapiti, dati sulla salute o altre informazioni personali o sensibili.")}}
 $("#startQuestionnaire").addEventListener("click",event=>{event.preventDefault();$(".hero-concept").hidden=true;$(".finder").hidden=false;step=1;renderStep();$(".finder").scrollIntoView({behavior:motionBehavior(),block:"start"});track("questionnaire_started",{visible_steps:visibleSteps().length})});
 function syncPerspective(){const child=["earlyChild","child"].includes($('input[name="ageRange"]:checked')?.value);$("#interestsLegend").textContent=child?"Con cosa ama giocare o cosa ama scoprire?":currentMode==="giver"?"Cosa ti piace davvero?":"Cosa ama davvero?";document.querySelector('.step[data-step-key="interests"] .hint').textContent=child?"Scegli fino a due categorie per bambini e fino a quattro sottocategorie in totale.":currentMode==="giver"?"Scegli fino a due aree che parlano di te e fino a quattro sottocategorie in totale.":"Scegli fino a due aree principali e fino a quattro sottocategorie in totale.";}
 function syncInterestFlow(){
@@ -143,7 +145,9 @@ function researchRequest(profile,analysis=analyseNote(profile.note),rejectConcep
     if(/bluetooth/i.test(sentence))connections.push('bluetooth');if(/usb[ -]?c/i.test(sentence))connections.push('usb_c');if(/usb[ -]?a/i.test(sentence))connections.push('usb_a');
   }
   constraints.recipientContext={connections:[...new Set(connections)],deviceModel:analysis.requestedDevices?.[0]||''};
-  return {profile:safeProfile,constraints,rejectedAsins:profile.isRefinement?[...rejectedProductKeys].filter(x=>x.startsWith('amazon:')).map(x=>x.slice(7)):[],rejectedBookKeys:profile.isRefinement?[...rejectedProductKeys].filter(x=>/^book(?:work|series|isbn|title):/.test(x)):[],rejectedConcepts:rejectConcepts?[...rejectedConceptKeys]:[],seenConcepts:profile.isRefinement?[...rejectedConceptKeys]:[],rejectedParentAsins:profile.isRefinement?[...rejectedParentAsins]:[]};
+  // Engine v3 reads the note to choose and explain; the other engines never receive it.
+  const aiEngine=String(CONFIG.amazonProductsEndpoint||'').includes('/v3/');
+  return {profile:safeProfile,...(aiEngine&&note.trim()?{note:note.trim().slice(0,240)}:{}),constraints,rejectedAsins:profile.isRefinement?[...rejectedProductKeys].filter(x=>x.startsWith('amazon:')).map(x=>x.slice(7)):[],rejectedBookKeys:profile.isRefinement?[...rejectedProductKeys].filter(x=>/^book(?:work|series|isbn|title):/.test(x)):[],rejectedConcepts:rejectConcepts?[...rejectedConceptKeys]:[],seenConcepts:profile.isRefinement?[...rejectedConceptKeys]:[],rejectedParentAsins:profile.isRefinement?[...rejectedParentAsins]:[]};
 }
 async function fetchResearchSelection(profile,analysis=analyseNote(profile.note),rejectConcepts=false){
   const payload=await fetchJSON(CONFIG.amazonProductsEndpoint,{method:'POST',timeoutMs:85000,headers:{'Content-Type':'application/json'},body:JSON.stringify(researchRequest(profile,analysis,rejectConcepts))});
@@ -409,7 +413,7 @@ async function showResults(allowUnverified=false,allowTypeBroadening=false,allow
     if(!isCurrent())return;
     const resultProfile={...d,researchMethod:true,allowUnverified:true},selected=live.products;
     lastProfile=resultProfile;activeCatalogProducts=selected;
-    $('#recommendationStatus').textContent=live.partial?'Ricerca parziale: mostriamo i prodotti compatibili ricevuti da Amazon.':'Scelti in base alle tue risposte.';
+    $('#recommendationStatus').textContent=live.partial?'Ricerca parziale: mostriamo i prodotti compatibili ricevuti da Amazon.':'Scelti in base alle tue risposte.';if(live.question)$('#recommendationStatus').textContent+=' Per idee più precise: '+live.question;
     track('questionnaire_completed');
     if(!selected.length){showResearchRecovery(resultProfile,analysis);return}
     $("#zeroRecovery").hidden=true;$("#refinementForm").hidden=true;

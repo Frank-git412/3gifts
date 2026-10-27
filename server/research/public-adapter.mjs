@@ -232,7 +232,8 @@ export function occasionCoverage(products,context,searches=[]){
  return {status:!products.length?'no_products':supported===products.length?'supported':supported?'partial':'absent',occasion:context.occasion,selected:products.length,supported,targetedSearches:searches.filter(s=>s.eventTargeted).length,source:'listing_title_features',humanValidated:false};
 }
 const respond=(body,status=200)=>new Response(JSON.stringify(body),{status,headers:{'Content-Type':'application/json','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
-export async function publicRecommendation(request,env){
+// withCandidates: engine v3 also receives every listing that passed the public filters, for Claude to judge.
+export async function publicRecommendation(request,env,{withCandidates=false}={}){
  if(request.method!=='POST')return respond({code:'MethodNotAllowed'},405);
  if(request.headers.get('Origin')!==new URL(request.url).origin)return respond({code:'OriginNotAllowed'},403);
  if(!request.headers.get('Content-Type')?.startsWith('application/json'))return respond({code:'InvalidContentType'},415);
@@ -269,6 +270,8 @@ export async function publicRecommendation(request,env){
   const diagnosticEligible=merged.map(p=>{const reasons={};const candidate=publicCandidate(p,finalContext,reasons);for(const [reason,n] of Object.entries(reasons))filterRejections[reason]=(filterRejections[reason]||0)+n;if(!candidate)publicDecisions.push({asin:p.asin,status:'rejected',stage:'public_filters',reason:Object.keys(reasons)[0]});return candidate;}).filter(Boolean);
   const diagnostics={durationMs:Date.now()-started,normalization,failureReasons,receivedRows:received,normalizedRows:groups.reduce((n,g)=>n+g.length,0),uniqueCandidates:merged.length,eligibleAfterPublicFilters:diagnosticEligible.length,finalSelection:[...publicDecisions,...selected.finalSelection],ageReviewCandidates:diagnosticEligible.filter(p=>p.ageVerification==='required').length,filterRejections};
   const products=selected.products.map(p=>publicCandidate({...merged.find(x=>x.asin===p.asin),...p},finalContext)).filter(Boolean).map(({queries,researchQueryIds,checks,verifiedListingChecks,requirementsToVerify,...p})=>({...p,why:p.reason+(p.ageNotice?' '+p.ageNotice:''),url:(()=>{const u=new URL(p.url);u.searchParams.set('tag',env.AMAZON_PARTNER_TAG);return u.href;})()}));
-  return respond({...base,products,searched,received,searches,occasionCoverage:occasionCoverage(products,ctx.gift,searches),context:{relation:ctx.gift.relation,occasion:ctx.gift.originalOccasion,searchPriority:ctx.gift.searchPriority},missingAreas:selected.missing,partial:failures>0||stopReason==='deadline',efficiency:{...metrics,diversitySearches,stopReason},diagnostics,checkedAt:new Date().toISOString(),code:failures&&!products.length?'AmazonTemporarilyUnavailable':products.length?'Results':'NoCompatibleProducts'},failures&&!products.length?503:200);
+  const tagged=u=>{const x=new URL(u);x.searchParams.set('tag',env.AMAZON_PARTNER_TAG);return x.href;};
+  const candidates=withCandidates?diagnosticEligible.slice(0,30).map(({queries,researchQueryIds,checks,verifiedListingChecks,requirementsToVerify,...p})=>({...p,why:p.reason+(p.ageNotice?' '+p.ageNotice:''),url:tagged(p.url)})):undefined;
+  return respond({...base,products,...(candidates?{candidates}:{}),searched,received,searches,occasionCoverage:occasionCoverage(products,ctx.gift,searches),context:{relation:ctx.gift.relation,occasion:ctx.gift.originalOccasion,searchPriority:ctx.gift.searchPriority},missingAreas:selected.missing,partial:failures>0||stopReason==='deadline',efficiency:{...metrics,diversitySearches,stopReason},diagnostics,checkedAt:new Date().toISOString(),code:failures&&!products.length?'AmazonTemporarilyUnavailable':products.length?'Results':'NoCompatibleProducts'},failures&&!products.length?503:200);
  }finally{active--;}
 }

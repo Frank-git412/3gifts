@@ -89,3 +89,24 @@ test('a concept whose search fails is retried later and does not block the other
   const status=await (await libraryStatus({DB:binding},[concept,other],now+3600000)).json();
   assert.equal(status.conceptsSearched,1);assert.equal(status.conceptsFailed,1);assert.equal(status.lastRun.matched,0);
 });
+
+test('Claude reviews new listings once; rejected ones disappear, the daily ceiling holds', async () => {
+  const {binding}=database();
+  const now=Date.now();
+  const idea={...concept,id:'c086-orologio-minimal',title:'Orologio minimal',whyItWorks:'Si indossa ogni giorno.',ages:['adult'],gender:'any',interests:['styleBeauty'],subinterests:['jewelry'],occasions:['christmas'],avoidFlags:[]};
+  for(const [asin,title] of [['B0000000W1','Orologio minimal cinturino pelle'],['B0000000W2','Orologio giocattolo per bambine']])
+    await binding.prepare('INSERT INTO library_products (concept_id,asin,rank,title,price,detail_url,available,matched_at,checked_at) VALUES (?,?,1,?,40,?,1,?,?)').bind(idea.id,asin,title,'https://www.amazon.it/dp/'+asin,now,now).run();
+  await binding.prepare("INSERT INTO library_matches (concept_id,matched_at,outcome,products) VALUES (?,?,'matched',2)").bind(idea.id,now).run();
+  const prompts=[];
+  const client={beta:{messages:{create:async params=>{prompts.push(params);return {stop_reason:'end_turn',usage:{},content:[{type:'text',text:JSON.stringify({products:[{asin:'B0000000W1',fits:true,reason:'Classico e adatto.'},{asin:'B0000000W2',fits:false,reason:'È un giocattolo per bambine.'}]})}]};}}}};
+  const report=await runLibraryJob({...env(binding),ANTHROPIC_CLIENT:client},[idea],now+60000);
+  assert.equal(report.reviewed,1);assert.equal(report.rejectedByReview,1);
+  assert.equal(prompts[0].model,'claude-opus-5-5');assert.equal(prompts[0].output_config.format.type,'json_schema');
+  assert.match(prompts[0].messages[0].content,/Orologio giocattolo per bambine/);
+  const rows=(await binding.prepare('SELECT asin,ai_verdict FROM library_products ORDER BY asin').all()).results;
+  assert.deepEqual(rows.map(r=>[r.asin,r.ai_verdict]),[['B0000000W1',1],['B0000000W2',0]]);
+  await runLibraryJob({...env(binding),ANTHROPIC_CLIENT:client},[idea],now+120000);
+  assert.equal(prompts.length,1,'a reviewed listing is not sent again');
+  const {reserveClaudeCall}=await import('../server/claude.mjs');
+  await assert.rejects(()=>reserveClaudeCall({DB:binding,CLAUDE_DAILY_CALL_LIMIT:1},now),/claude_quota_exhausted/,'the day already used its one call');
+});

@@ -6,7 +6,8 @@ window.TRE_REGALI_CONFIG = {
   // Endpoint server-side autorizzato che interroga Amazon Creators API.
   // Ricerca per criteri strutturati; note e data precisa restano nel browser.
   // Engine v2 (idea library) is opt-in with ?engine=v2 until it replaces the keyword engine.
-  amazonProductsEndpoint: typeof location !== "undefined" && /(?:^|[?&])engine=v2(?:&|$)/.test(location.search) ? "/api/v2/recommend" : "/api/amazon/recommend",
+  // Engine v3 (Claude picks among real candidates) is opt-in with ?engine=ai: only it receives the note.
+  amazonProductsEndpoint: typeof location === "undefined" ? "/api/amazon/recommend" : /(?:^|[?&])engine=ai(?:&|$)/.test(location.search) ? "/api/v3/recommend" : /(?:^|[?&])engine=v2(?:&|$)/.test(location.search) ? "/api/v2/recommend" : "/api/amazon/recommend",
   // Endpoint catalogo unificato (Amazon, Etsy e altri partner autorizzati).
   // Ogni prodotto può includere imageUrl, imageSource e imageUpdatedAt.
   catalogProductsEndpoint: "",

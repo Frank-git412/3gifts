@@ -40,6 +40,13 @@ const curated = JSON.parse(fs.readFileSync(path.join(root,"catalog-products.json
 const libraryCode=fs.readFileSync(path.join(root,'server/library-products.mjs'),'utf8').replace(/^import .*?;\n/gm,'').replace(/\bexport (?=(?:const|function|async function))/g,'');
 const guidesCode=fs.readFileSync(path.join(root,'server/library-guides.mjs'),'utf8').replace(/^import .*?;\n/gm,'').replace(/\bexport (?=(?:const|function|async function))/g,'');
 const libraryGuides=JSON.parse(fs.readFileSync(path.join(root,'library/guides.json'),'utf8'));
+const claudeCode=fs.readFileSync(path.join(root,'server/claude.mjs'),'utf8').replace(/^import .*?;\n/gm,'').replace(/\bexport (?=(?:const|function|async function))/g,'');
+const engineV3Code=fs.readFileSync(path.join(root,'server/engine-v3.mjs'),'utf8').replace(/^import .*?;\n/gm,'').replace(/\bexport (?=(?:const|function|async function))/g,'');
+// Questionnaire labels, so Claude reads "Videogiochi" instead of an internal id.
+const questionnaireLabels={};
+{const page=fs.readFileSync(path.join(root,'index.html'),'utf8');
+ for(const m of page.matchAll(/name="interest" value="([^"]+)"[^>]*><span>([^<]+)<\/span>/g))questionnaireLabels[m[1]]=m[2].replace(/^[^\p{L}]+/u,'').trim();
+ for(const m of page.matchAll(/name="subinterest" value="([^"]+)"[^>]*>([^<]+)<\/label>/g))questionnaireLabels[m[1]]=m[2].trim();}
 const engineV2Code=fs.readFileSync(path.join(root,'server/engine-v2.mjs'),'utf8').replace(/^import .*?;\n/gm,'').replace(/\bexport (?=(?:const|function|async function))/g,'');
 // Only approved concepts reach the Worker; editorial fields used by neither the job nor engine v2 stay out.
 const libraryConcepts=JSON.parse(fs.readFileSync(path.join(root,'library/concepts.json'),'utf8')).filter(c=>c.status==='approved').map(({pitch,status,...c})=>c);
@@ -58,7 +65,7 @@ for(const group of fs.readFileSync(path.join(root,'index.html'),'utf8').matchAll
 fs.appendFileSync(path.join(root,'server/research/public-rules.mjs'),'\nexport const CHILD_STAGE_RULES='+JSON.stringify(childStages)+';\n');
 const researchFiles=['reviews','weighted-ranking','technology-keywords','engine','age-policy','catalog-data','product-identity','product-requirements','research-engine','public-rules','pilot-context','pilot-expansion','pilot-closure-rules','pilot-lexicon-data','pilot-family-reviews','pilot-dictionary','expanded-data','expanded-context','relax-use-context','occasion-use-context','gift-context','intent-search','public-adapter'];
 const researchCode='const researchRuntime=(()=>{\n'+researchFiles.map(f=>fs.readFileSync(path.join(root,'server/research/'+f+'.mjs'),'utf8').replace(/^import .*?;\n/gm,'').replace(/\bexport (?=(?:const|function|async function))/g,'')).join('\n')+'\nreturn {publicRecommendation};})();\n';
-const worker = `${transportCode}\n${catalogueCode}\n${libraryCode}\n${engineV2Code}\n${guidesCode}\nconst LIBRARY_GUIDES=${JSON.stringify(libraryGuides)};\nconst LIBRARY_CONCEPTS=${JSON.stringify(libraryConcepts)};\nconst CURATED=${JSON.stringify(curated)};\n${amazonCode}\n${researchCode}\n// Static files are served by Cloudflare's asset storage; the Worker only keeps their paths for routing.
+const worker = `import Anthropic from "@anthropic-ai/sdk";\n${transportCode}\n${catalogueCode}\n${claudeCode}\n${libraryCode}\n${engineV2Code}\n${engineV3Code}\n${guidesCode}\nconst QUESTIONNAIRE_LABELS=${JSON.stringify(questionnaireLabels)};\nconst LIBRARY_GUIDES=${JSON.stringify(libraryGuides)};\nconst LIBRARY_CONCEPTS=${JSON.stringify(libraryConcepts)};\nconst CURATED=${JSON.stringify(curated)};\n${amazonCode}\n${researchCode}\n// Static files are served by Cloudflare's asset storage; the Worker only keeps their paths for routing.
 const ASSET_PATHS=new Set(${JSON.stringify(Object.keys(assets))});
 const CONTENT_TYPES={
   ".html":"text/html; charset=utf-8",
@@ -117,6 +124,7 @@ export default {
     if(url.pathname==="/api/amazon/status")return amazonConnection(request,env);
     if(url.pathname==="/api/library/status")return libraryStatus(env,LIBRARY_CONCEPTS);
     if(url.pathname==="/api/v2/recommend")return recommendV2(request,env,LIBRARY_CONCEPTS);
+    if(url.pathname==="/api/v3/recommend")return recommendV3(request,env,LIBRARY_CONCEPTS,{labels:QUESTIONNAIRE_LABELS,runV1:req=>researchRuntime.publicRecommendation(req,env,{withCandidates:true})});
     if((request.method==="GET"||request.method==="HEAD")&&url.pathname==="/scelta"){
       const page=await libraryShareSelection(url,env,LIBRARY_CONCEPTS);
       if(page)return request.method==="HEAD"?new Response(null,{status:page.status,headers:page.headers}):page;

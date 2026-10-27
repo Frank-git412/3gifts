@@ -49,7 +49,7 @@ function guideResponse(html,status=200){return new Response(html,{status,headers
 async function freshProducts(env,now){
  const map=new Map();
  if(!env.DB)return map;
- const rows=(await env.DB.prepare('SELECT concept_id,asin,title,price,image_url,detail_url,checked_at FROM library_products WHERE available=1 AND price IS NOT NULL AND checked_at>? ORDER BY concept_id,rank').bind(now-GUIDE_DAY).all()).results||[];
+ const rows=(await env.DB.prepare('SELECT concept_id,asin,title,price,image_url,detail_url,checked_at FROM library_products WHERE available=1 AND price IS NOT NULL AND checked_at>? AND (ai_verdict IS NULL OR ai_verdict=1) ORDER BY concept_id,rank').bind(now-GUIDE_DAY).all()).results||[];
  for(const r of rows){if(!map.has(r.concept_id))map.set(r.concept_id,[]);map.get(r.concept_id).push({asin:r.asin,title:r.title,price:r.price,imageUrl:r.image_url,detailUrl:r.detail_url,checkedAt:r.checked_at});}
  return map;
 }

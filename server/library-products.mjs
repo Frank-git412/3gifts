@@ -1,4 +1,5 @@
 import {amazonApi} from './amazon-transport.mjs';
+import {claudeJson} from './claude.mjs';
 // Matches approved library concepts to Amazon products and keeps their data fresh.
 // Only ASINs are durable: Amazon titles, prices and images are refreshed daily and
 // cleared once older than 24 hours, as the Associates policies require.
@@ -8,6 +9,7 @@ const MATCH_EVERY=7*LIBRARY_DAY,REFRESH_AFTER=20*3600000;
 const RETRY_AFTER_ERROR=LIBRARY_DAY;
 // Matches made before the current selection rules are redone (recipient and drinking filters, 5 products).
 const MATCH_RULES_SINCE=Date.parse('2026-10-26T22:00:00Z');
+const REVIEWS_PER_RUN=10;
 const MATCHES_PER_RUN=12,REFRESH_BATCHES_PER_RUN=6,PRODUCTS_PER_CONCEPT=5;
 const LIBRARY_RESOURCES=['itemInfo.title','images.primary.large','parentASIN','offersV2.listings.price','offersV2.listings.availability','offersV2.listings.isBuyBoxWinner'];
 // Accessories, spare parts and second-hand listings are not gifts in their own right.
@@ -96,7 +98,7 @@ export async function runLibraryJob(env,concepts,now=Date.now()){
  return report;
 }
 async function libraryJobSteps(env,concepts,now){
- const report={matched:0,empty:0,refreshed:0,errors:[]};
+ const report={matched:0,empty:0,refreshed:0,reviewed:0,rejectedByReview:0,errors:[]};
  await env.DB.prepare('UPDATE library_products SET title=NULL,price=NULL,image_url=NULL,available=0 WHERE checked_at<=?').bind(now-LIBRARY_DAY).run();
  const done=new Map(((await env.DB.prepare('SELECT concept_id,matched_at,outcome FROM library_matches').all()).results||[]).map(r=>[r.concept_id,r]));
  // A failed search waits its retry time; a real match is redone weekly and after a rules change.
@@ -115,7 +117,35 @@ async function libraryJobSteps(env,concepts,now){
   try{await refreshProducts(stale.slice(i,i+10),env,now);report.refreshed+=Math.min(10,stale.length-i);}
   catch(e){report.errors.push('refresh:'+e.message);break;}
  }
+ await reviewProducts(env,concepts,report);
  return report;
+}
+// Claude reads each idea with its matched listings and marks the ones that do not fit the idea or the
+// person it is meant for (a children's camera for an adult, a coffee grinder for a tea idea).
+const REVIEW_SYSTEM=`Sei il redattore di 3Gifts, un sito italiano che propone idee regalo.
+Ricevi un'idea regalo della nostra libreria e alcuni prodotti Amazon trovati per quell'idea.
+Per ogni prodotto decidi se è un buon esempio di quell'idea per le persone a cui l'idea è destinata.
+Scarta un prodotto se: è per un'età diversa (per bambini quando l'idea è per adulti o il contrario), è per un genere diverso da quello dell'idea, è un accessorio o un ricambio invece del regalo, riguarda un altro argomento, è di qualità o aspetto chiaramente scadente per un regalo, oppure ha a che fare con l'alcol quando l'idea non lo prevede.
+Nel dubbio tienilo: scarta solo quando l'errore è evidente dal titolo.
+Per ogni prodotto scrivi un motivo breve in italiano, al massimo 12 parole.`;
+const REVIEW_SCHEMA={type:'object',additionalProperties:false,required:['products'],properties:{products:{type:'array',items:{type:'object',additionalProperties:false,required:['asin','fits','reason'],properties:{asin:{type:'string'},fits:{type:'boolean'},reason:{type:'string'}}}}}};
+async function reviewConcept(concept,rows,env){
+ const idea={idea:concept.title,perche:concept.whyItWorks,nonAdattoA:concept.notFor||'',eta:concept.ages,genere:concept.gender,interessi:[...concept.interests,...concept.subinterests],prezzo:concept.price};
+ const user=`<idea>${JSON.stringify(idea)}</idea>\n<prodotti>${JSON.stringify(rows.map(r=>({asin:r.asin,titolo:r.title,prezzo:r.price})))}</prodotti>`;
+ const {products}=await claudeJson(env,{system:REVIEW_SYSTEM,user,schema:REVIEW_SCHEMA,effort:'low',maxTokens:3000});
+ const verdicts=new Map(products.map(p=>[p.asin,p]));
+ await env.DB.batch(rows.filter(r=>verdicts.has(r.asin)).map(r=>env.DB.prepare('UPDATE library_products SET ai_verdict=?,ai_reason=? WHERE concept_id=? AND asin=?').bind(verdicts.get(r.asin).fits?1:0,String(verdicts.get(r.asin).reason).slice(0,160),concept.id,r.asin)));
+ return products.filter(p=>!p.fits).length;
+}
+async function reviewProducts(env,concepts,report){
+ if(!env.ANTHROPIC_API_KEY&&!env.ANTHROPIC_CLIENT)return;
+ const pending=((await env.DB.prepare('SELECT DISTINCT concept_id FROM library_products WHERE ai_verdict IS NULL AND title IS NOT NULL LIMIT ?').bind(REVIEWS_PER_RUN).all()).results||[]).map(r=>r.concept_id);
+ for(const id of pending){
+  const concept=concepts.find(c=>c.id===id);if(!concept)continue;
+  const rows=(await env.DB.prepare('SELECT asin,title,price FROM library_products WHERE concept_id=? AND ai_verdict IS NULL AND title IS NOT NULL').bind(id).all()).results||[];
+  try{report.rejectedByReview+=await reviewConcept(concept,rows,env);report.reviewed++;}
+  catch(e){report.errors.push('review:'+e.message);if(/quota|not_configured|401|403/.test(e.message))break;}
+ }
 }
 // Aggregate counts only: no Amazon content, no visitor data.
 export async function libraryStatus(env,concepts,now=Date.now()){
@@ -123,7 +153,7 @@ export async function libraryStatus(env,concepts,now=Date.now()){
  if(!env.DB)return json({ok:false,code:'quota_storage_unavailable'},503);
  const m=await env.DB.prepare("SELECT SUM(outcome!='error') AS runs, SUM(outcome='error') AS failed, SUM(outcome='matched') AS matched, SUM(outcome='empty') AS empty, MAX(CASE WHEN outcome!='error' THEN matched_at END) AS last FROM library_matches").first();
  const run=await env.DB.prepare('SELECT ran_at,report FROM library_runs WHERE id=1').first();
- const p2=await env.DB.prepare('SELECT MAX(checked_at) AS checked FROM library_products').first();
+ const p2=await env.DB.prepare('SELECT MAX(checked_at) AS checked, SUM(ai_verdict IS NOT NULL) AS reviewed, SUM(ai_verdict=0) AS rejected FROM library_products').first();
  const p=await env.DB.prepare('SELECT COUNT(*) AS products, SUM(available=1 AND checked_at>?) AS fresh FROM library_products').bind(now-LIBRARY_DAY).first();
- return json({ok:true,approvedConcepts:concepts.length,conceptsSearched:m?.runs||0,conceptsWithProducts:m?.matched||0,conceptsWithoutProducts:m?.empty||0,products:p?.products||0,availableAndFresh:p?.fresh||0,conceptsFailed:m?.failed||0,lastMatchAt:m?.last?new Date(m.last).toISOString():null,lastRefreshAt:p2?.checked?new Date(p2.checked).toISOString():null,lastRun:run?{at:new Date(run.ran_at).toISOString(),...JSON.parse(run.report)}:null});
+ return json({ok:true,approvedConcepts:concepts.length,conceptsSearched:m?.runs||0,conceptsWithProducts:m?.matched||0,conceptsWithoutProducts:m?.empty||0,products:p?.products||0,availableAndFresh:p?.fresh||0,conceptsFailed:m?.failed||0,productsReviewed:p2?.reviewed||0,productsRejectedByReview:p2?.rejected||0,lastMatchAt:m?.last?new Date(m.last).toISOString():null,lastRefreshAt:p2?.checked?new Date(p2.checked).toISOString():null,lastRun:run?{at:new Date(run.ran_at).toISOString(),...JSON.parse(run.report)}:null});
 }

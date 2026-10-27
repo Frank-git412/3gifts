@@ -85,7 +85,7 @@ export function v2Select(concepts,productsByConcept,profile,rejectedAsins=[]){
  return picked.map(c=>({...c,outsideInterests:wantsInterests&&!c.interestMatch}));
 }
 
-function v2Product(pick,checkedAt){
+export function v2Product(pick,checkedAt){
  const {concept,product}=pick;
  const minor=concept.ages.some(a=>a==='earlyChild'||a==='child');
  const why=pick.outsideInterests?'Un’idea fuori dagli interessi indicati, scelta per l’occasione e la persona. '+concept.whyItWorks:concept.whyItWorks;
@@ -98,6 +98,14 @@ function v2Product(pick,checkedAt){
   ...(minor?{ageVerification:'required'}:{})};
 }
 
+// Products the hourly job checked within 24 hours and Claude's review did not reject, by concept.
+export async function freshLibraryProducts(env,now=Date.now()){
+ const rows=(await env.DB.prepare('SELECT concept_id,asin,parent_asin,title,price,image_url,detail_url,checked_at FROM library_products WHERE available=1 AND price IS NOT NULL AND checked_at>? AND (ai_verdict IS NULL OR ai_verdict=1) ORDER BY concept_id,rank').bind(now-V2_DAY).all()).results||[];
+ const productsByConcept=new Map();
+ for(const r of rows){if(!productsByConcept.has(r.concept_id))productsByConcept.set(r.concept_id,[]);productsByConcept.get(r.concept_id).push({asin:r.asin,parentAsin:r.parent_asin,title:r.title,price:r.price,imageUrl:r.image_url,detailUrl:r.detail_url,checkedAt:r.checked_at});}
+ return productsByConcept;
+}
+
 export async function recommendV2(request,env,concepts,now=Date.now()){
  if(request.method!=='POST')return v2Json({code:'MethodNotAllowed'},405);
  if(request.headers.get('Origin')!==new URL(request.url).origin)return v2Json({code:'OriginNotAllowed'},403);
@@ -105,9 +113,7 @@ export async function recommendV2(request,env,concepts,now=Date.now()){
  const profile=body?.profile;
  if(!profile||typeof profile!=='object'||!profile.relation||!profile.occasion)return v2Json({code:'InvalidProfile'},400);
  if(!env.DB)return v2Json({code:'LibraryUnavailable'},503);
- const rows=(await env.DB.prepare('SELECT concept_id,asin,parent_asin,title,price,image_url,detail_url,checked_at FROM library_products WHERE available=1 AND price IS NOT NULL AND checked_at>? ORDER BY concept_id,rank').bind(now-V2_DAY).all()).results||[];
- const productsByConcept=new Map();
- for(const r of rows){if(!productsByConcept.has(r.concept_id))productsByConcept.set(r.concept_id,[]);productsByConcept.get(r.concept_id).push({asin:r.asin,parentAsin:r.parent_asin,title:r.title,price:r.price,imageUrl:r.image_url,detailUrl:r.detail_url,checkedAt:r.checked_at});}
+ const productsByConcept=await freshLibraryProducts(env,now);
  const picks=v2Select(concepts,productsByConcept,profile,list(body.rejectedAsins));
  const checkedAt=p=>new Date(p.checkedAt).toISOString();
  return v2Json({method:'research-20261007',methodRevision:'library-v2',engine:'library-v2',products:picks.map(p=>v2Product(p,checkedAt)),partial:picks.length<3,checkedAt:new Date(now).toISOString()});

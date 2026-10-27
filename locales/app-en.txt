@@ -301,3 +301,6 @@ Indica se ha 7–9 o 10–12 anni: molti prodotti sono adatti solo a una delle d
 Nessun prodotto documentato è adatto a tutta la fascia 7–12 con questi interessi e questo budget. Indica se ha 7–9 o 10–12 anni: molti giochi sono pensati per una sola delle due fasce. => No documented product suits the whole 7–12 range with these interests and this budget. Tell us whether they are 7–9 or 10–12: many toys are designed for only one of the two ranges.
 Periodo di feste: i tempi di consegna si allungano, controlla la data stimata su Amazon prima di acquistare. => Holiday season: delivery times get longer, so check the estimated date on Amazon before you buy.
 Controlla su Amazon la data di consegna stimata prima di acquistare. => Check the estimated delivery date on Amazon before you buy.
+Privacy:  => Privacy: 
+il dettaglio che scrivi viene inviato al nostro fornitore di intelligenza artificiale (Anthropic) solo per scegliere i regali e non viene salvato da 3Gifts. Non inserire nomi, recapiti, dati sulla salute o altre informazioni personali o sensibili. => the detail you write is sent to our AI provider (Anthropic) only to choose the gifts and is not stored by 3Gifts. Do not include names, contact details, health data or other personal or sensitive information.
+ Per idee più precise:  =>  For more precise ideas: 
