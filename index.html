@@ -83,6 +83,7 @@
             <label><input type="radio" name="relation" value="friend"><span>🤝 Amico/a</span></label>
             <label><input type="radio" name="relation" value="family"><span>🏡 Familiare</span></label>
             <label><input type="radio" name="relation" value="colleague"><span>💼 Collega</span></label>
+            <label><input type="radio" name="relation" value="acquaintance"><span>👋 Conoscente</span></label>
             <label><input type="radio" name="relation" value="couple"><span>💑 Una coppia</span></label>
             </div>
           </div>
@@ -186,6 +187,15 @@
             <div class="interest-group"><label><input type="checkbox" name="interest" value="gamesCollecting"><span>🎲 Giochi, hobby e collezionismo</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="boardGames">Giochi da tavolo</label><label><input type="checkbox" name="subinterest" value="puzzle">Puzzle e modellismo</label><label><input type="checkbox" name="subinterest" value="collecting">Collezionismo</label></div></div>
             <div class="interest-group"><label><input type="checkbox" name="interest" value="newsBusiness"><span>📰 Lavoro, studio e attualità</span></label><div class="subinterests" hidden><label><input type="checkbox" name="subinterest" value="writing">Scrittura e note</label><label><input type="checkbox" name="subinterest" value="productivity">Produttività</label><label><input type="checkbox" name="subinterest" value="studyTech">Tecnologia per lo studio</label></div></div>
           </div>
+          <div class="quick-question" id="interestLevelQuestion" role="radiogroup" aria-labelledby="interestLevelLabel">
+            <strong id="interestLevelLabel">Con queste passioni, a che punto è?</strong>
+            <div class="choice-grid compact level-grid">
+              <label><input type="radio" name="interestLevel" value="start"><span>🌱 Vuole iniziare</span></label>
+              <label><input type="radio" name="interestLevel" value="regular" checked><span>🔁 Le coltiva spesso</span></label>
+              <label><input type="radio" name="interestLevel" value="expert"><span>🏆 È esperto/a, ha già tutto</span></label>
+              <label><input type="radio" name="interestLevel" value="friction"><span>😤 Qualcosa non gli/le funziona</span></label>
+            </div>
+          </div>
         </fieldset>
 
         <fieldset class="step" data-step="4" data-step-key="tone">
@@ -193,7 +203,7 @@
           <p class="hint">Scegli l’effetto principale che cerchi.</p>
           <div class="choice-grid traits">
             <label><input type="radio" name="tone" value="sentimental" required><span>💞 Emozionare</span></label>
-            <label><input type="radio" name="tone" value="useful"><span>🧰 Essere utile</span></label>
+            <label><input type="radio" name="tone" value="useful"><span>🧰 Che userà davvero</span></label>
             <label><input type="radio" name="tone" value="funny"><span>😄 Far sorridere</span></label>
             <label><input type="radio" name="tone" value="surprising"><span>🎉 Sorprendere</span></label>
             <label><input type="radio" name="tone" value="elegant"><span>✨ Essere elegante</span></label>
@@ -232,7 +242,7 @@
               <label><input type="checkbox" name="avoid" value="gadgets"><span>Gadget</span></label>
             </div>
           </details>
-          <label class="note-field">Un dettaglio che può fare la differenza <span>(facoltativo)</span><textarea name="note" maxlength="240" aria-describedby="noteHelp" placeholder="Es. colleziona vinili, ama il Giappone, ha poco spazio in casa, non usa profumi…"></textarea></label>
+          <label class="note-field">Una cosa che solo tu sai <span>(facoltativo)</span><textarea name="note" maxlength="240" aria-describedby="noteHelp" placeholder="Es. cosa si è comprato di recente, di cosa si lamenta, cosa dice che farà prima o poi…"></textarea></label>
           <p class="hint" id="noteHelp"><strong>Privacy:</strong> non inserire nomi, recapiti, dati sulla salute o altre informazioni personali o sensibili. Riconosciamo alcune preferenze ed esclusioni, non ogni vincolo scritto; verifica sempre con il venditore le esigenze di sicurezza.</p>
         </fieldset>
 

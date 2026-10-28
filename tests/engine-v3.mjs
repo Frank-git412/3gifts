@@ -61,3 +61,11 @@ test('Claude tokens are counted per day and priced for the month', async () => {
   const costs=await claudeCosts({DB:binding});
   assert.equal(costs.calls,1);assert.equal(costs.estimatedUsd,0.01,'1000×4 + 500×20 + 2000×0.2 per million = 0.0144 $');
 });
+
+test('the new answers reach Claude in plain words; v1 and the library read "conoscente" as a colleague', async () => {
+  const {binding,now}=await setup();const calls=[],v1Bodies=[];
+  const runV1=async r=>{v1Bodies.push(await r.json());return Response.json(v1Answer);};
+  await recommendV3(request({profile:{...profile,relation:'acquaintance',interestLevel:'expert'},rejectedAsins:[]}),{DB:binding,ANTHROPIC_CLIENT:claude({scelte:[{id:'A1',perche:'ok'}],domanda:''},calls)},concepts,{runV1,now});
+  assert.equal(v1Bodies[0].profile.relation,'colleague');
+  assert.match(calls[0].messages[0].content,/Rapporto: conoscente/);assert.match(calls[0].messages[0].content,/Con queste passioni: è esperto, ha già tutto/);
+});

@@ -17,6 +17,16 @@ function syncBudget(changed){
   }
 }
 budget.addEventListener("input",()=>syncBudget(budget));$("#minBudget").addEventListener("input",()=>syncBudget($("#minBudget")));syncBudget();
+// The note placeholder suggests what only the giver knows; with a problem to solve it asks for that.
+const NOTE_EXAMPLES=["Es. cosa si è comprato di recente, di cosa si lamenta, cosa dice che farà prima o poi…","Es. di cosa si lamenta spesso, cosa usa ogni giorno, cosa ha già…","Es. cosa dice che farà prima o poi, un ricordo che vi lega, cosa non sopporta…"];
+const FRICTION_EXAMPLE="Es. cosa non gli funziona: la moka perde, le cuffie gli fanno male dopo un’ora…";
+function syncNoteExample(){const note=$('textarea[name="note"]');if(!note)return;note.placeholder=$('input[name="interestLevel"]:checked')?.value==="friction"?FRICTION_EXAMPLE:NOTE_EXAMPLES[Math.floor(Date.now()/86400000)%NOTE_EXAMPLES.length]}
+syncNoteExample();
+$$('input[name="interestLevel"]').forEach(x=>x.addEventListener("change",syncNoteExample));
+// Per-card feedback: one tap, recorded with the card's position and area only (never the product).
+document.addEventListener("click",e=>{const b=e.target.closest(".card-feedback button");if(!b)return;const box=b.closest(".card-feedback");if(box.dataset.done)return;box.dataset.done="1";b.setAttribute("aria-pressed","true");box.querySelectorAll("button").forEach(x=>x.disabled=true);
+  const thanks=document.createElement("span");thanks.className="card-feedback-thanks";thanks.textContent=b.dataset.vote==="up"?"Grazie!":"Grazie, ne terremo conto.";box.append(thanks);
+  track("card_feedback",{position:Number(b.dataset.position)||0,vote:b.dataset.vote,area:b.dataset.area||"",engine:String(CONFIG.amazonProductsEndpoint||"").includes("/v3/")?"v3":String(CONFIG.amazonProductsEndpoint||"").includes("/v2/")?"v2":"v1"})});
 // With engine v3 the note leaves the browser: the notice says so before anyone types.
 if(String(CONFIG.amazonProductsEndpoint||"").includes("/v3/")){const help=$("#noteHelp");if(help){help.textContent="";const b=document.createElement("strong");b.textContent="Privacy: ";help.append(b,"il dettaglio che scrivi viene inviato al nostro fornitore di intelligenza artificiale (Anthropic) solo per scegliere i regali e non viene salvato da 3Gifts. Non inserire nomi, recapiti, dati sulla salute o altre informazioni personali o sensibili.")}}
 $("#startQuestionnaire").addEventListener("click",event=>{event.preventDefault();$(".hero-concept").hidden=true;$(".finder").hidden=false;step=1;renderStep();$(".finder").scrollIntoView({behavior:motionBehavior(),block:"start"});track("questionnaire_started",{visible_steps:visibleSteps().length})});
@@ -36,6 +46,11 @@ function syncInterestFlow(){
     });
   });
   $("#childInterestHint").hidden=audience==="general";
+}
+function syncInterestLevel(){
+  const young=["earlyChild","child"].includes($('input[name="ageRange"]:checked')?.value);
+  const q=$("#interestLevelQuestion");if(q)q.hidden=young;
+  $$('input[name="interestLevel"]').forEach(x=>{x.disabled=young});
 }
 function syncAgeFlow(){
   const relation=$('input[name="relation"]:checked')?.value,adultOnly=["partner","couple","colleague"].includes(relation),couple=relation==="couple";
@@ -67,7 +82,7 @@ function syncAgeFlow(){
     const input=$(`input[name="occasion"][value="${value}"]`);input.disabled=hide;if(hide)input.checked=false;
   }
   $("#newbabyLabel").textContent=age==="earlyChild"?"🍼 Nascita / battesimo":age==="child"?"Battesimo / comunione":"🍼 Nascita: regalo per un genitore";
-  syncInterestFlow();syncPerspective();
+  syncInterestFlow();syncPerspective();syncInterestLevel();
 }
 form.addEventListener("change",event=>{showError("");if(["relation","ageRange","childStage","childBand"].includes(event.target.name)){invalidateResults();syncAgeFlow();renderStep();return}if(event.target.name!=="perspective")return;currentMode=event.target.value;syncPerspective()});
 form.addEventListener("input",()=>showError(""));
@@ -100,7 +115,7 @@ $("#nextBtn").addEventListener("click",()=>{if(!valid())return;const steps=visib
 $("#backBtn").addEventListener("click",()=>{const steps=visibleSteps(),current=currentStep(),position=steps.indexOf(current);if(position>0){invalidateResults();trackStepTiming("back");step=+steps[position-1].dataset.step;renderStep()}});
 form.addEventListener("keydown",event=>{if(event.key!=="Enter"||event.target.matches("textarea"))return;event.preventDefault();$("#nextBtn").click()});
 function dateAfter(days){return RULES.dateAfter(days)}
-function formData(){const fd=new FormData(form),timing="none",ageRange=fd.get("ageRange"),minor=RULES.isMinor(ageRange);currentMode=minor?"recipient":fd.get("perspective")||currentMode;currentJourney=fd.get("journey")||"direct";const deadlineByTiming={urgent2:dateAfter(2),week:dateAfter(7),month:dateAfter(30),none:dateAfter(3650)};return{mode:currentMode,journey:currentJourney,relation:minor?"child":fd.get("relation"),recipientPreference:fd.get("recipientPreference")||"unisex",occasion:fd.get("occasion"),ageRange,childStage:ageRange==="earlyChild"?fd.get("childStage")||"all":ageRange==="child"?fd.get("childBand")||"all":null,interests:fd.getAll("interest"),subinterests:[...new Set(fd.getAll("subinterest"))],tone:fd.get("tone"),avoid:fd.getAll("avoid"),budget:+fd.get("budgetChoice"),minBudget:+fd.get("minBudget"),timing,deadline:timing==="exact"?fd.get("deadline"):deadlineByTiming[timing],note:fd.get("note")}}
+function formData(){const fd=new FormData(form),timing="none",ageRange=fd.get("ageRange"),minor=RULES.isMinor(ageRange);currentMode=minor?"recipient":fd.get("perspective")||currentMode;currentJourney=fd.get("journey")||"direct";const deadlineByTiming={urgent2:dateAfter(2),week:dateAfter(7),month:dateAfter(30),none:dateAfter(3650)};return{mode:currentMode,journey:currentJourney,relation:minor?"child":fd.get("relation"),recipientPreference:fd.get("recipientPreference")||"unisex",occasion:fd.get("occasion"),ageRange,childStage:ageRange==="earlyChild"?fd.get("childStage")||"all":ageRange==="child"?fd.get("childBand")||"all":null,interests:fd.getAll("interest"),subinterests:[...new Set(fd.getAll("subinterest"))],tone:fd.get("tone"),interestLevel:["earlyChild","child"].includes(ageRange)?null:fd.get("interestLevel")||"regular",avoid:fd.getAll("avoid"),budget:+fd.get("budgetChoice"),minBudget:+fd.get("minBudget"),timing,deadline:timing==="exact"?fd.get("deadline"):deadlineByTiming[timing],note:fd.get("note")}}
 function analyseNote(note,origin='note'){const fd=new FormData(form);return RULES.analyseNote(note,{areas:fd.getAll('interest'),subIds:fd.getAll('subinterest'),language:document.documentElement.lang==='en'?'en':'it',origin})}
 function normalizeProduct(p){
   if(!p||typeof p!=="object"||Array.isArray(p))p={};
@@ -147,6 +162,9 @@ function researchRequest(profile,analysis=analyseNote(profile.note),rejectConcep
   constraints.recipientContext={connections:[...new Set(connections)],deviceModel:analysis.requestedDevices?.[0]||''};
   // Engine v3 reads the note to choose and explain; the other engines never receive it.
   const aiEngine=String(CONFIG.amazonProductsEndpoint||'').includes('/v3/');
+  if(aiEngine)safeProfile.interestLevel=profile.interestLevel;
+  // "Conoscente" is new: engines without it read it as the closest known relationship.
+  else if(safeProfile.relation==="acquaintance")safeProfile.relation="colleague";
   return {profile:safeProfile,...(aiEngine&&note.trim()?{note:note.trim().slice(0,240)}:{}),constraints,rejectedAsins:profile.isRefinement?[...rejectedProductKeys].filter(x=>x.startsWith('amazon:')).map(x=>x.slice(7)):[],rejectedBookKeys:profile.isRefinement?[...rejectedProductKeys].filter(x=>/^book(?:work|series|isbn|title):/.test(x)):[],rejectedConcepts:rejectConcepts?[...rejectedConceptKeys]:[],seenConcepts:profile.isRefinement?[...rejectedConceptKeys]:[],rejectedParentAsins:profile.isRefinement?[...rejectedParentAsins]:[]};
 }
 async function fetchResearchSelection(profile,analysis=analyseNote(profile.note),rejectConcepts=false){
@@ -361,7 +379,7 @@ function renderProductCards(selected,profile,reasonIntro=""){
     const storeClass=p.store.toLowerCase().replace(/[^a-z0-9]+/g,"-");
     const shortName=shortProductName(p),fullName=displayText(p.name);
     const ageReview=p.ageVerification==="required"?'<p class="age-review-notice"><strong>Età consigliata da verificare</strong><br>La scheda non indica chiaramente l’età consigliata. Controllala su Amazon o sul sito dell’editore prima dell’acquisto.</p>':"";
-    return `<article class="gift-card" data-no-image="${!safeUrl(p.imageUrl,"")}"><div class="gift-visual">${productVisual(p,url)}</div><div class="gift-body"><div class="card-top"><span class="match">${esc(p.ageVerification==="required"?"Idea da verificare":["La nostra scelta","Ottima alternativa","Un’idea diversa"][i])}</span><span class="store-badge ${storeClass}">${esc(p.store)}</span></div><h3 title="${esc(fullName)}">${esc(shortName)}</h3>${ageReview}<p>${esc(reason)}</p>${p.amazonPrice?"":`<p>${esc(conditions)}</p>`}<div class="gift-meta"><strong>${esc(priceText)}</strong>${p.amazonPrice?`<small class="price-time">${esc(priceTime(p))}</small>`:""}${delivery?`<span class="delivery">${esc(delivery)}</span>`:""}</div><a href="${esc(url)}" target="_blank" rel="sponsored nofollow noopener noreferrer" data-product="${esc(fullName)}" data-position="${i+1}" data-area="${esc(p.tags[0]||"")}">${verified?"Verifica l’offerta sul venditore":"Verifica prezzo e opzioni"}</a>${p.imageUrl?"":'<span class="product-photo-note">Foto disponibili sulla pagina del venditore.</span>'}</div></article>`;
+    return `<article class="gift-card" data-no-image="${!safeUrl(p.imageUrl,"")}"><div class="gift-visual">${productVisual(p,url)}</div><div class="gift-body"><div class="card-top"><span class="match">${esc(p.ageVerification==="required"?"Idea da verificare":["La nostra scelta","Ottima alternativa","Un’idea diversa"][i])}</span><span class="store-badge ${storeClass}">${esc(p.store)}</span></div><h3 title="${esc(fullName)}">${esc(shortName)}</h3>${ageReview}<p>${esc(reason)}</p>${p.amazonPrice?"":`<p>${esc(conditions)}</p>`}<div class="gift-meta"><strong>${esc(priceText)}</strong>${p.amazonPrice?`<small class="price-time">${esc(priceTime(p))}</small>`:""}${delivery?`<span class="delivery">${esc(delivery)}</span>`:""}</div><a href="${esc(url)}" target="_blank" rel="sponsored nofollow noopener noreferrer" data-product="${esc(fullName)}" data-position="${i+1}" data-area="${esc(p.tags[0]||"")}">${verified?"Verifica l’offerta sul venditore":"Verifica prezzo e opzioni"}</a>${p.imageUrl?"":'<span class="product-photo-note">Foto disponibili sulla pagina del venditore.</span>'}<div class="card-feedback" role="group" aria-label="Lo userebbe davvero?"><span>Lo userebbe davvero?</span><button type="button" data-vote="up" data-position="${i+1}" data-area="${esc(p.tags[0]||"")}" aria-pressed="false" aria-label="Sì, lo userebbe">👍</button><button type="button" data-vote="down" data-position="${i+1}" data-area="${esc(p.tags[0]||"")}" aria-pressed="false" aria-label="No, non lo userebbe">👎</button></div></div></article>`;
   }).join("");bindProductImageFallbacks();renderShare(selected);
 }
 function priceTime(p){const en=document.documentElement.lang==='en-US';return (en?'Updated ':'Aggiornato ')+new Date(p.amazonCheckedAt).toLocaleString(en?'en-GB':'it-IT',{dateStyle:'short',timeStyle:'short'})}
@@ -505,7 +523,7 @@ $("#refinementForm").addEventListener("submit",async event=>{
   alternatives=alternatives.slice(0,3);rememberProducts(alternatives);refinementCount+=1;
   const reasonIntro={banal:"Una nuova idea tra gli interessi scelti. ",impersonal:"Una nuova proposta basata sui dettagli indicati. ",price:profile.allowUnverified?"Prezzo indicativo più contenuto; totale da verificare. ":"Dentro il nuovo limite di spesa. ",unsuitable:"Una direzione diversa dalle proposte scartate. ",owned:"Un’alternativa alle proposte già viste. "}[reason]||"Una proposta ricalibrata. ";
   renderProductCards(alternatives,profile,reasonIntro);setResultSummary(profile);
-  lastProfile=profile;$("#recommendationStatus").textContent=`Affinamento ${refinementCount} di 3: esclusi i prodotti già visti e mantenuti i vincoli.${profile.allowTypeBroadening?" Hai scelto di includere anche oggetti coerenti.":""}${profile.allowUnverified?" Restano idee da verificare: costo totale e consegna non sono garantiti.":""}`;refinementForm.reset();configureRefinement("");refinementForm.hidden=true;const finished=refinementCount>=3;$("#refineBtn").hidden=finished;$("#refineBtn").textContent="Affina ancora";if(finished){$("#refinementTitle").textContent="Hai completato i 3 affinamenti";$("#refinementText").textContent="Per esplorare una direzione completamente nuova, rifai il test modificando una risposta."}$("#resultGrid").scrollIntoView({behavior:motionBehavior(),block:"start"});track("recommendations_refined",{round:refinementCount})
+  lastProfile=profile;$("#recommendationStatus").textContent=`Affinamento ${refinementCount} di 3: esclusi i prodotti già visti e mantenuti i vincoli.${profile.allowTypeBroadening?" Hai scelto di includere anche oggetti coerenti.":""}${profile.allowUnverified?" Restano idee da verificare: costo totale e consegna non sono garantiti.":""}`;refinementForm.reset();configureRefinement("");refinementForm.hidden=true;const finished=refinementCount>=3;$("#refineBtn").hidden=finished;$("#refineBtn").textContent="Affina ancora";if(finished){$("#refinementTitle").textContent="Hai completato i 3 affinamenti";$("#refinementText").textContent="Per esplorare una direzione completamente nuova, rifai il test modificando una risposta."}$("#resultGrid").scrollIntoView({behavior:motionBehavior(),block:"start"});track("recommendations_refined",{round:refinementCount,reason:String($("#refineReason")?.value||"")})
 });
 $("#revealProducts").addEventListener("click",()=>{$("#productSelection").hidden=false;$("#revealProducts").hidden=true;$("#productSelection").scrollIntoView({behavior:motionBehavior(),block:"start"});track("recommendations_viewed")});
 function labelTag(tag){return({tech:"tecnologia",gaming:"gaming",food:"cucina",travel:"viaggi",books:"lettura",news:"attualità",audio:"audiolibri e podcast",wellness:"benessere",sport:"sport",music:"musica",photo:"fotografia",home:"casa",garden:"giardinaggio",pets:"animali",style:"stile e beauty",creative:"creatività",social:"socialità",calm:"relax",adventurous:"avventura",funny:"regali divertenti"})[tag]||tag}
@@ -534,7 +552,7 @@ document.addEventListener("click",e=>{const a=e.target.closest("a[data-product]"
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="hidden")pauseStepTiming();else resumeStepTiming()});
 window.addEventListener("pagehide",()=>{if(!$(".finder").hidden)trackStepTiming("exit")});
 window.addEventListener("pageshow",event=>{if(event.persisted&&!$(".finder").hidden){stepEnteredAt=null;stepActiveMs=0;stepTimerOpen=true;resumeStepTiming()}});
- const analyticsFields={questionnaire_started:["visible_steps"],questionnaire_step_completed:["step_key","position","visible_steps"],questionnaire_step_timing:["step_key","seconds","direction","position","visible_steps"],questionnaire_completed:[],recommendation_zero_results:["candidate_count"],zero_results_recovery:["choice"],recommendations_viewed:[],refinement_started:["round"],recommendations_refined:["round"],external_link_click:["position","area","engine"],results_shared:["channel"],product_image_error:[]};
+ const analyticsFields={questionnaire_started:["visible_steps"],questionnaire_step_completed:["step_key","position","visible_steps"],questionnaire_step_timing:["step_key","seconds","direction","position","visible_steps"],questionnaire_completed:[],recommendation_zero_results:["candidate_count"],zero_results_recovery:["choice"],recommendations_viewed:[],refinement_started:["round"],card_feedback:["position","vote","area","engine"],recommendations_refined:["round","reason"],external_link_click:["position","area","engine"],results_shared:["channel"],product_image_error:[]};
  function track(event,data={}){
    if(!window.GiftsPrivacy?.hasAnalyticsConsent()||!window.umami?.track||!Object.hasOwn(analyticsFields,event))return;
    const safe=Object.fromEntries(analyticsFields[event].filter(key=>typeof data[key]==="string"||typeof data[key]==="number").map(key=>[key,data[key]]));

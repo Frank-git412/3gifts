@@ -81,3 +81,10 @@
 .share-results button{background:transparent;color:#17132f}
 /* Screens with several short questions: on phones the choices sit in two compact columns. */
 @media(max-width:750px){[data-step-key="relation_age"] .choice-grid,[data-step-key="occasion"] .choice-grid,.perspective-grid{grid-template-columns:1fr 1fr;gap:9px}[data-step-key="relation_age"] .choice-grid span,[data-step-key="occasion"] .choice-grid span,.perspective-grid span{min-height:52px;padding:10px 12px;font-size:.9rem;border-radius:13px}}
+/* Per-card feedback: one quiet line under the purchase link. */
+.card-feedback{display:flex;align-items:center;gap:8px;margin-top:12px;font-size:.82rem;color:var(--muted);flex-wrap:wrap}
+.card-feedback button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 10px;font-size:1rem;cursor:pointer}
+.card-feedback button[aria-pressed="true"]{border-color:var(--violet);background:#f0edff}
+.card-feedback button:disabled{cursor:default}
+.card-feedback-thanks{font-weight:600;color:var(--violet2)}
+.level-grid{grid-template-columns:1fr 1fr}
