@@ -34,7 +34,7 @@ Scegli i 3 prodotti migliori, uno per posizione (sicura, colpisce, diversa) quan
 - Scarta i prodotti il cui titolo non corrisponde davvero all'idea, che sono per un altro destinatario (per bambini a un adulto, da uomo per una donna), accessori o ricambi, o fuori budget.
 - Tre regali diversi tra loro: mai due varianti della stessa cosa.
 - A parità di adeguatezza, preferisci prodotti tra metà e il massimo del budget.
-- Se meno di tre prodotti sono davvero adatti, scegli solo quelli e scrivi in "domanda" una sola domanda breve che aiuterebbe; altrimenti lascia "domanda" vuota.
+- Scegli sempre tre prodotti, a meno che nella lista ce ne siano meno di tre senza errori evidenti. Se un dettaglio in più ti avrebbe permesso idee migliori, scrivilo in "domanda" come una sola domanda breve; altrimenti lascia "domanda" vuota.
 
 Per ogni scelta scrivi:
 - "perche": una o due frasi in italiano, al massimo 30 parole, rivolte a chi regala, con un riferimento concreto alla persona o alla nota. Niente superlativi, niente prezzo, niente caratteristiche che non risultino dal titolo.

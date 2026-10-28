@@ -303,7 +303,6 @@ Periodo di feste: i tempi di consegna si allungano, controlla la data stimata su
 Controlla su Amazon la data di consegna stimata prima di acquistare. => Check the estimated delivery date on Amazon before you buy.
 Privacy:  => Privacy: 
 il dettaglio che scrivi viene inviato al nostro fornitore di intelligenza artificiale (Anthropic) solo per scegliere i regali e non viene salvato da 3Gifts. Non inserire nomi, recapiti, dati sulla salute o altre informazioni personali o sensibili. => the detail you write is sent to our AI provider (Anthropic) only to choose the gifts and is not stored by 3Gifts. Do not include names, contact details, health data or other personal or sensitive information.
- Per idee più precise:  =>  For more precise ideas: 
 Es. di cosa si lamenta spesso, cosa usa ogni giorno, cosa ha già… => E.g. what they often complain about, what they use every day, what they already have…
 Es. cosa dice che farà prima o poi, un ricordo che vi lega, cosa non sopporta… => E.g. what they keep saying they’ll do, a memory you share, what they can’t stand…
 Es. cosa non gli funziona: la moka perde, le cuffie gli fanno male dopo un’ora… => E.g. what isn’t working: the coffee pot leaks, the headphones hurt after an hour…
@@ -317,3 +316,5 @@ Quella che colpisce => The one that wows
 Per il biglietto: => For the card:
 Copiato => Copied
 Copia => Copy
+Ecco le idee più adatte che abbiamo trovato. => Here are the best-matching ideas we found.
+ Per idee più precise, dicci nella nota:  =>  For more precise ideas, tell us in the note: 

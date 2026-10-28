@@ -35,7 +35,7 @@ Scegli i 3 prodotti migliori per quella persona. Regole:
 
 Per ogni scelta scrivi "perche": una o due frasi in italiano, al massimo 30 parole, rivolte a chi fa il regalo. Spiega perché quel prodotto è adatto a questa persona, con un riferimento concreto alle risposte o alla nota. Non ripetere il titolo, non citare il prezzo, niente superlativi o frasi pubblicitarie, nessuna caratteristica che non risulti dal titolo.
 
-Se meno di tre prodotti sono davvero adatti, scegli solo quelli adatti e scrivi in "domanda" una sola domanda breve che aiuterebbe a trovare idee migliori. Altrimenti lascia "domanda" vuota.`;
+Scegli sempre tre prodotti, a meno che nella lista ce ne siano meno di tre senza errori evidenti (destinatario sbagliato, fuori tema, accessori). Se un dettaglio in più ti avrebbe permesso idee migliori, scrivilo in "domanda" come una sola domanda breve; altrimenti lascia "domanda" vuota.`;
 const V3_SCHEMA={type:'object',additionalProperties:false,required:['scelte','domanda'],properties:{
  scelte:{type:'array',items:{type:'object',additionalProperties:false,required:['id','perche'],properties:{id:{type:'string'},perche:{type:'string'}}}},
  domanda:{type:'string'}}};

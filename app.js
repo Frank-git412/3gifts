@@ -435,7 +435,7 @@ async function showResults(allowUnverified=false,allowTypeBroadening=false,allow
     if(!isCurrent())return;
     const resultProfile={...d,researchMethod:true,allowUnverified:true},selected=live.products;
     lastProfile=resultProfile;activeCatalogProducts=selected;
-    $('#recommendationStatus').textContent=live.partial?'Ricerca parziale: mostriamo i prodotti compatibili ricevuti da Amazon.':'Scelti in base alle tue risposte.';if(live.question)$('#recommendationStatus').textContent+=' Per idee più precise: '+live.question;
+    $('#recommendationStatus').textContent=live.partial?'Ricerca parziale: mostriamo i prodotti compatibili ricevuti da Amazon.':'Scelti in base alle tue risposte.';if(live.question)$('#recommendationStatus').textContent=(live.partial?'Ecco le idee più adatte che abbiamo trovato.':'Scelti in base alle tue risposte.')+' Per idee più precise, dicci nella nota: '+live.question;
     track('questionnaire_completed');
     if(!selected.length){showResearchRecovery(resultProfile,analysis);return}
     $("#zeroRecovery").hidden=true;$("#refinementForm").hidden=true;
