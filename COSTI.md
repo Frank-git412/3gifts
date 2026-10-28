@@ -41,6 +41,8 @@ Ultimo aggiornamento: 28 ottobre 2026.
 | Controllo dei prodotti nuovi nei giorni successivi | pochi centesimi al giorno |
 | 1.000 questionari v3 al mese | circa 25 $ |
 | Un giudizio del giudice automatico (due ordini) | **misurato: circa 1,5 centesimi** |
+| Un questionario con il motore v4 (due chiamate) | **misurato: circa 3,2 centesimi** (28/10) |
+| Un controllo degli errori oggettivi (una proposta) | **misurato: circa 0,4 centesimi** |
 
 ## Movimenti
 
@@ -52,3 +54,4 @@ Ultimo aggiornamento: 28 ottobre 2026.
 | 27/10/2026 | Claude, misurato dal sito | 0,33 $ | 19 chiamate contate (9 del v3, 10 del controllo prodotti): totale del giorno circa 1,10 $ con la stima sopra. |
 | 27/10/2026 | Claude, taratura del giudice | circa 1,03 $ | 140 giudizi (70 confronti × 2 ordini): circa 0,7 centesimi a giudizio. Totale Claude del mese misurato: 1,36 $. |
 | 28/10/2026 | Claude, controllo dei 505 prodotti della libreria e giudice v2 | 1,49 $ | Misurato dal sito. Totale Claude del mese: 3,20 $ su 20 $ di crediti. |
+| 28/10/2026 | Claude, prova di v3 e v4 sui 40 profili e controllo errori | 2,68 $ | Misurato dal sito. Totale Claude del mese: 5,88 $ su 20 $ di crediti. |
