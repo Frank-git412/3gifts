@@ -11,7 +11,7 @@ const RETRY_AFTER_ERROR=LIBRARY_DAY;
 const MATCH_RULES_SINCE=Date.parse('2026-10-26T22:00:00Z');
 const REVIEWS_PER_RUN=10;
 const MATCHES_PER_RUN=12,REFRESH_BATCHES_PER_RUN=6,PRODUCTS_PER_CONCEPT=5;
-const LIBRARY_RESOURCES=['itemInfo.title','images.primary.large','parentASIN','offersV2.listings.price','offersV2.listings.availability','offersV2.listings.isBuyBoxWinner'];
+export const LIBRARY_RESOURCES=['itemInfo.title','images.primary.large','parentASIN','offersV2.listings.price','offersV2.listings.availability','offersV2.listings.isBuyBoxWinner'];
 // Accessories, spare parts and second-hand listings are not gifts in their own right.
 const NOT_A_GIFT=/\b(?:ricambi?|sostituzione|di ricambio|compatibile con|pellicola|adesiv[oi]|usat[oa]|ricondizionat[oa]|cover per|custodia per)\b/i;
 

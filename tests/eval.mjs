@@ -24,3 +24,12 @@ test('a verdict counts only when it survives swapping A and B', async () => {
   body=await (await evalJudge(req('secret',{pairs:[pair]}),{DB:binding,EVAL_TOKEN:'secret',ANTHROPIC_CLIENT:fair})).json();
   assert.equal(body.results[0].verdict,'A');assert.equal(body.results[0].consistent,true);
 });
+
+test('the checker counts budget and missing products in code and needs the token', async () => {
+  const {evalCheck}=await import('../server/eval.mjs');const {binding}=database();
+  const client={beta:{messages:{create:async()=>({stop_reason:'end_turn',usage:{},content:[{type:'text',text:'{"eta_sbagliata":1,"genere_sbagliato":0,"doppioni":0,"fuori_tema":0,"accessorio":0,"nota":"un prodotto per bambini"}'}]})}}};
+  const r=req=>new Request('https://3gifts.it/api/eval/check',{method:'POST',headers:{'Content-Type':'application/json','X-Eval-Token':req},body:JSON.stringify({proposals:[{id:'x',label:'Adulto',budget:30,products:[{title:'Macchina fotografica bambini',price:25},{title:'Libro',price:40}]}]})});
+  assert.equal((await evalCheck(r('wrong'),{EVAL_TOKEN:'s'})).status,404);
+  const body=await (await evalCheck(r('s'),{DB:binding,EVAL_TOKEN:'s',ANTHROPIC_CLIENT:client})).json();
+  assert.equal(body.results[0].fuori_budget,1);assert.equal(body.results[0].prodotti,2);assert.equal(body.results[0].errori,3,'1 age + 1 over budget + 1 missing');
+});

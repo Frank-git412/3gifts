@@ -88,3 +88,7 @@
 .card-feedback button:disabled{cursor:default}
 .card-feedback-thanks{font-weight:600;color:var(--violet2)}
 .level-grid{grid-template-columns:1fr 1fr}
+/* Engine v4: a suggested line for the gift card. */
+.card-message{font-size:.86rem;background:#f7f5fb;border-radius:12px;padding:8px 10px}
+.card-message span{font-weight:700;color:var(--ink)}
+.copy-message{border:0;background:none;color:var(--violet2);font-weight:700;cursor:pointer;padding:0 0 0 4px}

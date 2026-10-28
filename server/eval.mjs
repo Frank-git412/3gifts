@@ -57,3 +57,32 @@ export async function evalJudge(request,env){
  }));
  return evalJson({results});
 }
+
+// Objective checker: one proposal at a time, only questions with a clear answer. Budget and the number
+// of products are counted in code; Claude reads titles for the rest. Taste stays with Francesco's votes.
+const CHECK_SYSTEM=`Sei il controllore di qualità di 3Gifts. Ricevi la descrizione di una persona e una proposta di fino a tre prodotti Amazon (titolo e prezzo). Non giudichi i gusti: rispondi solo a domande oggettive leggendo i titoli.
+- eta_sbagliata: quanti prodotti sono chiaramente per un'età diversa (per bambini a un adulto, per adulti a un bambino)?
+- genere_sbagliato: quanti prodotti sono chiaramente per il genere opposto a quello indicato? Se il genere non è indicato, 0.
+- doppioni: quanti prodotti sono una variante di un altro prodotto della stessa proposta (stessa cosa, modello o colore diverso)?
+- fuori_tema: quanti prodotti non c'entrano con nessuno degli interessi, della nota o dell'occasione indicati?
+- accessorio: quanti prodotti sono ricambi, accessori di servizio o articoli che non sembrano un regalo?
+Conta solo i casi evidenti dal titolo. Aggiungi una nota breve in italiano (massimo 20 parole).`;
+const CHECK_SCHEMA={type:'object',additionalProperties:false,required:['eta_sbagliata','genere_sbagliato','doppioni','fuori_tema','accessorio','nota'],properties:{eta_sbagliata:{type:'integer'},genere_sbagliato:{type:'integer'},doppioni:{type:'integer'},fuori_tema:{type:'integer'},accessorio:{type:'integer'},nota:{type:'string'}}};
+
+export async function evalCheck(request,env){
+ if(!env.EVAL_TOKEN||request.headers.get('X-Eval-Token')!==env.EVAL_TOKEN)return evalJson({code:'NotFound'},404);
+ if(request.method!=='POST')return evalJson({code:'MethodNotAllowed'},405);
+ let body;try{body=await request.json();}catch{return evalJson({code:'InvalidBody'},400);}
+ const proposals=(Array.isArray(body?.proposals)?body.proposals:[]).slice(0,10);
+ const results=await Promise.all(proposals.map(async x=>{
+  const items=(x.products||[]).slice(0,3),budget=Number(x.budget)||0;
+  const counted={prodotti:items.length,fuori_budget:budget?items.filter(p=>Number(p.price)>budget).length:0};
+  if(!items.length)return {id:x.id,...counted,errori:3};
+  try{
+   const c=await claudeJson(env,{system:CHECK_SYSTEM,user:`<persona>${String(x.label||'').slice(0,400)}</persona>\n${sideText('A',items)}`,schema:CHECK_SCHEMA,effort:'low',maxTokens:3000});
+   const errori=c.eta_sbagliata+c.genere_sbagliato+c.doppioni+c.fuori_tema+c.accessorio+counted.fuori_budget+(3-items.length);
+   return {id:x.id,...counted,...c,errori};
+  }catch(e){return {id:x.id,error:e.message};}
+ }));
+ return evalJson({results});
+}
