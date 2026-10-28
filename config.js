@@ -4,10 +4,10 @@ window.TRE_REGALI_CONFIG = {
   locale: "it-IT",
   currency: "EUR",
   // Endpoint server-side autorizzato che interroga Amazon Creators API.
-  // Ricerca per criteri strutturati; note e data precisa restano nel browser.
+  // Motore predefinito: v3 (Claude sceglie tra prodotti reali e riceve la nota facoltativa).
+  // ?engine=v1 usa il motore senza AI, dove la nota resta nel browser; ?engine=v2 e ?engine=v4 servono ai confronti.
   // Engine v2 (idea library) is opt-in with ?engine=v2 until it replaces the keyword engine.
-  // Engine v3 (Claude picks among real candidates, ?engine=ai) and v4 (ideas first, ?engine=v4) are opt-in: only they receive the note.
-  amazonProductsEndpoint: typeof location === "undefined" ? "/api/amazon/recommend" : /(?:^|[?&])engine=v4(?:&|$)/.test(location.search) ? "/api/v4/recommend" : /(?:^|[?&])engine=ai(?:&|$)/.test(location.search) ? "/api/v3/recommend" : /(?:^|[?&])engine=v2(?:&|$)/.test(location.search) ? "/api/v2/recommend" : "/api/amazon/recommend",
+  amazonProductsEndpoint: typeof location === "undefined" ? "/api/amazon/recommend" : /(?:^|[?&])engine=v1(?:&|$)/.test(location.search) ? "/api/amazon/recommend" : /(?:^|[?&])engine=v4(?:&|$)/.test(location.search) ? "/api/v4/recommend" : /(?:^|[?&])engine=ai(?:&|$)/.test(location.search) ? "/api/v3/recommend" : /(?:^|[?&])engine=v2(?:&|$)/.test(location.search) ? "/api/v2/recommend" : "/api/v3/recommend",
   // Endpoint catalogo unificato (Amazon, Etsy e altri partner autorizzati).
   // Ogni prodotto può includere imageUrl, imageSource e imageUpdatedAt.
   catalogProductsEndpoint: "",
