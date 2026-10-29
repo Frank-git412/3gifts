@@ -422,7 +422,12 @@ function setResultSummary(profile){
   }
 }
 let resultsBusy=false,resultRequestVersion=0;
-function invalidateResults(){resultRequestVersion+=1;resultsBusy=false;$("#nextBtn").disabled=false}
+// While the engine works, show the real stages of the search, a few seconds each.
+const PROGRESS_STEPS=["Leggo le tue risposte…","Cerco su Amazon i prodotti adatti…","Scarto quelli fuori tema o fuori budget…","Scelgo le tre idee migliori e scrivo perché…","Ultimi controlli su prezzi e disponibilità…"];
+let progressTimer=null;
+function startProgress(){const box=$("#searchProgress");if(!box)return;let i=0;box.hidden=false;box.textContent=PROGRESS_STEPS[0];clearTimeout(progressTimer);const step=()=>{if(i>=PROGRESS_STEPS.length-1)return;progressTimer=setTimeout(()=>{i+=1;box.textContent=PROGRESS_STEPS[i];step()},3500)};step()}
+function stopProgress(){clearTimeout(progressTimer);progressTimer=null;const box=$("#searchProgress");if(box){box.hidden=true;box.textContent=""}}
+function invalidateResults(){resultRequestVersion+=1;resultsBusy=false;$("#nextBtn").disabled=false;stopProgress()}
 async function showResults(allowUnverified=false,allowTypeBroadening=false,allowUnknownDelivery=false){
   if(resultsBusy)return;
   lastSearchArgs=[allowUnverified,allowTypeBroadening,allowUnknownDelivery];
@@ -431,7 +436,7 @@ async function showResults(allowUnverified=false,allowTypeBroadening=false,allow
   if(!RULES.validBudgetRange(d.budget,d.minBudget)){showError("La spesa minima deve essere tra 0 € e il massimo scelto, a incrementi di 5 €.");return}
   lastProfile=d;displayedProducts=[];refinementCount=0;rejectedProductKeys=new Set();rejectedConceptKeys=new Set();rejectedParentAsins=new Set();
   const requestVersion=++resultRequestVersion,isCurrent=()=>requestVersion===resultRequestVersion;
-  const next=$("#nextBtn");resultsBusy=true;next.disabled=true;next.textContent="Cerco le idee migliori…";
+  const next=$("#nextBtn");resultsBusy=true;next.disabled=true;next.textContent="Cerco le idee migliori…";startProgress();
   try{
     const analysis=analyseNote(d.note),live=await fetchResearchSelection(d,analysis);
     if(!isCurrent())return;
@@ -451,7 +456,7 @@ async function showResults(allowUnverified=false,allowTypeBroadening=false,allow
     if(!isCurrent())return;
     $("#recommendationStatus").textContent="Non siamo riusciti a completare la verifica. Rivedi i dettagli e riprova.";
     showResearchRecovery(d,analyseNote(d.note),true);
-  }finally{if(isCurrent()){resultsBusy=false;next.disabled=false;next.innerHTML='Trova i tre regali <span>✨</span>'}}
+  }finally{if(isCurrent()){resultsBusy=false;next.disabled=false;next.innerHTML='Trova i tre regali <span>✨</span>';stopProgress()}}
 }
 $("#increaseBudgetRecovery").addEventListener("click",event=>{
   if(event.currentTarget.hidden||resultsBusy)return;

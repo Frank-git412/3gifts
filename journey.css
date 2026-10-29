@@ -92,3 +92,8 @@
 .card-message{font-size:.86rem;background:#f7f5fb;border-radius:12px;padding:8px 10px}
 .card-message span{font-weight:700;color:var(--ink)}
 .copy-message{border:0;background:none;color:var(--violet2);font-weight:700;cursor:pointer;padding:0 0 0 4px}
+/* Search progress: the current stage of the engine while the visitor waits. */
+.search-progress{margin:12px 0 0;font-size:.92rem;font-weight:600;color:var(--violet2)}
+.search-progress::before{content:"";display:inline-block;width:.7em;height:.7em;margin-right:8px;border-radius:50%;background:var(--violet);vertical-align:middle;animation:progress-pulse 1.2s ease-in-out infinite}
+@keyframes progress-pulse{50%{opacity:.25}}
+@media (prefers-reduced-motion:reduce){.search-progress::before{animation:none}}
