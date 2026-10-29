@@ -42,7 +42,7 @@ function syncInterestFlow(){
     group.hidden=!visible;input.disabled=!visible;if(!visible)input.checked=false;
     panel.hidden=!visible||!input.checked;
     panel.querySelectorAll("input").forEach(sub=>{
-      const allowed=visible&&stageAllowed(sub)&&!(sub.value==="wine"&&(RULES.isMinor(age)||age==="unknown"));
+      const allowed=visible&&stageAllowed(sub)&&!(["wine","beer"].includes(sub.value)&&(RULES.isMinor(age)||age==="unknown"));
       sub.closest("label").hidden=!allowed;sub.disabled=!allowed;
       if(!allowed||!input.checked)sub.checked=false;
     });
@@ -77,7 +77,7 @@ function syncAgeFlow(){
   $("#childBandQuestion").hidden=age!=="child";
   $$('input[name="childBand"]').forEach(input=>{input.disabled=age!=="child";if(age!=="child")input.checked=input.value==="all"});
   // Wine products are excluded for minors and for an undisclosed age, so the choice is hidden for both.
-  const noWine=minor||age==="unknown",wine=$('input[name="subinterest"][value="wine"]');wine.disabled=noWine;if(noWine)wine.checked=false;$("#wineInterest").hidden=noWine;
+  const noWine=minor||age==="unknown";for(const value of ["wine","beer"]){const x=$(`input[name="subinterest"][value="${value}"]`);x.disabled=noWine;if(noWine)x.checked=false;$("#"+value+"Interest").hidden=noWine}
   for(const value of ["anniversary","graduation","newhome","wedding","newbaby","thanks"]){
     const hide=value==="newbaby"?age==="teen":value==="thanks"?age==="earlyChild":minor;
     $("#occasion-"+value).hidden=hide;
@@ -154,6 +154,8 @@ async function fetchJSON(endpoint,options={}){
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),options.timeoutMs||4500);
   try{const response=await fetch(endpoint,{...options,signal:controller.signal});if(!response.ok)throw new Error("service_unavailable");return await response.json()}finally{clearTimeout(timer)}
 }
+// v1 and v2 know one choice for coffee and tea and one for wine and beer.
+function legacySubinterests(list){return [...new Set((list||[]).map(s=>s==="coffee"||s==="tea"?"coffeeTea":s==="beer"?"wine":s))]}
 function researchRequest(profile,analysis=analyseNote(profile.note),rejectConcepts=false){
   const safeProfile={};
   for(const key of ['relation','occasion','ageRange','childStage','recipientPreference','interests','subinterests','avoid','tone','timing','budget','minBudget','excludedInterests','isRefinement','refinementDirection','refinementReason','refinementSurprise','searchPriority','allowTypeBroadening'])safeProfile[key]=profile[key];
@@ -168,7 +170,7 @@ function researchRequest(profile,analysis=analyseNote(profile.note),rejectConcep
   const aiEngine=/\/v[34]\//.test(String(CONFIG.amazonProductsEndpoint||''));
   if(aiEngine)safeProfile.interestLevel=profile.interestLevel;
   // "Conoscente" is new: engines without it read it as the closest known relationship.
-  else if(safeProfile.relation==="acquaintance")safeProfile.relation="colleague";
+  else{if(safeProfile.relation==="acquaintance")safeProfile.relation="colleague";safeProfile.subinterests=legacySubinterests(safeProfile.subinterests)}
   return {profile:safeProfile,...(aiEngine&&note.trim()?{note:note.trim().slice(0,240)}:{}),constraints,rejectedAsins:profile.isRefinement?[...rejectedProductKeys].filter(x=>x.startsWith('amazon:')).map(x=>x.slice(7)):[],rejectedBookKeys:profile.isRefinement?[...rejectedProductKeys].filter(x=>/^book(?:work|series|isbn|title):/.test(x)):[],rejectedConcepts:rejectConcepts?[...rejectedConceptKeys]:[],seenConcepts:profile.isRefinement?[...rejectedConceptKeys]:[],rejectedParentAsins:profile.isRefinement?[...rejectedParentAsins]:[]};
 }
 async function fetchResearchSelection(profile,analysis=analyseNote(profile.note),rejectConcepts=false){
@@ -218,7 +220,7 @@ async function fetchCatalogHealth(){
 }
 async function applyCatalogHealth(candidates){const snapshot=await fetchCatalogHealth();if(!snapshot)return{products:candidates,meta:{active:false,matched:0,excluded:0,pricesUpdated:0,staleOrMissing:candidates.length}};return HEALTH.merge(candidates,snapshot,{maxAgeHours:Number(CONFIG.catalogHealthMaxAgeHours)||192})}
 async function enrichWithAI(profile,candidates,localSignals){if(!CONFIG.aiRankingEndpoint)return{signals:localSignals,rankedAsins:[],reasons:{},source:"local"};const payload=await fetchJSON(CONFIG.aiRankingEndpoint,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({profile,candidates:candidates.map(({asin,name,price,rating,reviewCount,tags})=>({asin,name,price,rating,reviewCount,tags}))})});return{signals:Array.isArray(payload.signals)?payload.signals.filter(x=>typeof x==="string"):localSignals,rankedAsins:Array.isArray(payload.rankedAsins)?payload.rankedAsins.map(String):[],reasons:payload.reasons&&typeof payload.reasons==="object"?payload.reasons:{},source:"ai"}}
-const interestSignals={techGaming:["tech","gaming"],culture:["books","comics","culture"],mediaAudio:["music","cinema","audio"],foodDrink:["food","wine","coffeeTea"],travelOutdoor:["travel","outdoor","autoMoto"],sportFitness:["sport","fitness","running"],artPhoto:["creative","photo","craft"],homeGarden:["home","garden","organization"],styleBeauty:["style","beauty","jewelry"],animalsNature:["pets","nature","sustainable"],gamesCollecting:["boardGames","puzzle","collecting"],newsBusiness:["news","finance","learning"]};
+const interestSignals={techGaming:["tech","gaming"],culture:["books","comics","culture"],mediaAudio:["music","cinema","audio"],foodDrink:["food","wine","beer","coffee","tea","coffeeTea"],travelOutdoor:["travel","outdoor","autoMoto"],sportFitness:["sport","fitness","running"],artPhoto:["creative","photo","craft"],homeGarden:["home","garden","organization"],styleBeauty:["style","beauty","jewelry"],animalsNature:["pets","nature","sustainable"],gamesCollecting:["boardGames","puzzle","collecting"],newsBusiness:["news","finance","learning"]};
 const toneSignals={sentimental:["personalized","partner","family","photo","symbolic"],useful:["practical","tech","home","service"],elegant:["style","beauty","home","craft"],funny:["funny","social","gaming"],surprising:["adventurous","creative","experience","recurring","symbolic"],neutral:[]};
 // Editorial soft tie-breakers, never eligibility or guarantees about a person.
 // Explicit interests/notes and hard constraints remain the primary signals.

@@ -2,7 +2,7 @@ import {claudeJson} from './claude.mjs';
 import {amazonApi} from './amazon-transport.mjs';
 import {selectLibraryProducts,LIBRARY_RESOURCES} from './library-products.mjs';
 import {v2Product,freshLibraryProducts} from './engine-v2.mjs';
-import {describeProfile,libraryCandidates} from './engine-v3.mjs';
+import {describeProfile,libraryCandidates,legacyProfile} from './engine-v3.mjs';
 // Engine v4, "ideas first": Claude plans gift ideas for this person following the gift strategy
 // manual (docs/strategia-regali.md) and writes one precise Amazon search per idea; the site runs the
 // searches; Claude then picks three of the listings Amazon actually returned (or library ideas) and
@@ -81,7 +81,7 @@ export async function recommendV4(request,env,concepts,{runV1,labels={},now=Date
   console.log('engine v4 fallback',reason);
   if(!runV1)return v4Json({...base,engine:'v4-failed',products:[],partial:true});
   const {note:_n,...rest}=body;
-  if(rest.profile?.relation==='acquaintance')rest.profile={...rest.profile,relation:'colleague'};
+  rest.profile=legacyProfile(rest.profile);
   const v1=await runV1(new Request(request.url,{method:'POST',headers:{Origin:request.headers.get('Origin'),'Content-Type':'application/json'},body:JSON.stringify(rest)}));
   const data=await v1.json().catch(()=>({products:[]}));
   return v4Json({...data,...base,engine:'v1-fallback'});

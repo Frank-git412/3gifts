@@ -441,3 +441,7 @@ Con queste passioni, a che punto è? => With these interests, where are they at?
 🧰 Che userà davvero => 🧰 Something they’ll really use
 Una cosa che solo tu sai => Something only you know
 Es. cosa si è comprato di recente, di cosa si lamenta, cosa dice che farà prima o poi… => E.g. what they bought recently, what they complain about, what they keep saying they’ll do…
+Vino => Wine
+Birra => Beer
+Caffè => Coffee
+Tè => Tea

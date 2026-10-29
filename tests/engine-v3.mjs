@@ -69,3 +69,14 @@ test('the new answers reach Claude in plain words; v1 and the library read "cono
   assert.equal(v1Bodies[0].profile.relation,'colleague');
   assert.match(calls[0].messages[0].content,/Rapporto: conoscente/);assert.match(calls[0].messages[0].content,/Con queste passioni: è esperto, ha già tutto/);
 });
+
+test('separate coffee/tea and wine/beer choices reach Claude as chosen; v1 still receives its combined choices', async () => {
+  const {legacyProfile}=await import('../server/engine-v3.mjs');
+  assert.deepEqual(legacyProfile({relation:'acquaintance',subinterests:['coffee','tea','beer','books']}),{relation:'colleague',subinterests:['coffeeTea','wine','books']});
+  const {binding,now}=await setup();const calls=[],v1Bodies=[];
+  const runV1=async r=>{v1Bodies.push(await r.json());return Response.json(v1Answer);};
+  await recommendV3(request({profile:{...profile,subinterests:['tea']},rejectedAsins:[]}),{DB:binding,ANTHROPIC_CLIENT:claude({scelte:[{id:'L1',perche:'ok'}],domanda:''},calls)},concepts,{runV1,labels:{tea:'Tè'},now});
+  assert.deepEqual(v1Bodies[0].profile.subinterests,['coffeeTea']);
+  assert.match(calls[0].messages[0].content,/Dettagli degli interessi: Tè/);
+  assert.match(calls[0].messages[0].content,/Cofanetto tè pregiati/,'the tea library idea is a candidate');
+});

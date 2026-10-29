@@ -28,7 +28,7 @@ export function v2Eligible(concept,profile){
 
 // Soft preferences: interests weigh most, then the effect wanted, then the occasion.
 export function v2Score(concept,profile){
- const subs=list(profile.subinterests),areas=list(profile.interests);
+ const subs=list(profile.subinterests).flatMap(s=>s==='coffeeTea'?['coffee','tea']:s==='wine'?['wine','beer']:[s]),areas=list(profile.interests);
  const subHits=concept.subinterests.filter(s=>subs.includes(s)).length;
  const areaHits=concept.interests.filter(i=>areas.includes(i)).length;
  const interest=Math.min(2,subHits)*3+Math.min(2,areaHits)*2;

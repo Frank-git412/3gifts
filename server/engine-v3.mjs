@@ -73,10 +73,16 @@ export function libraryCandidates(concepts,productsByConcept,profile,rejectedAsi
  return out.sort((a,b)=>(b.interestMatch-a.interestMatch)||(b.score-a.score)).slice(0,V3_LIBRARY_CANDIDATES);
 }
 
+// v1 knows neither "conoscente" nor separate coffee/tea and wine/beer choices.
+export function legacyProfile(profile){
+ if(!profile||typeof profile!=='object')return profile;
+ const subinterests=[...new Set(v3List(profile.subinterests).map(s=>s==='coffee'||s==='tea'?'coffeeTea':s==='beer'?'wine':s))];
+ return {...profile,relation:profile.relation==='acquaintance'?'colleague':profile.relation,subinterests};
+}
 async function v1Search(request,body,runV1){
  // v1 never receives the note: it keeps working on the controlled answers only.
  const {note,...rest}=body;
- if(rest.profile?.relation==='acquaintance')rest.profile={...rest.profile,relation:'colleague'};
+ rest.profile=legacyProfile(rest.profile);
  const v1Request=new Request(request.url,{method:'POST',headers:{Origin:request.headers.get('Origin'),'Content-Type':'application/json'},body:JSON.stringify(rest)});
  try{const response=await runV1(v1Request);return await response.json();}catch{return {products:[],candidates:[]};}
 }

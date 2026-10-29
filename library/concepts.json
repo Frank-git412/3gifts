@@ -67,7 +67,8 @@
    "foodDrink"
   ],
   "subinterests": [
-   "wine"
+   "wine",
+   "beer"
   ],
   "tones": [
    "funny",
@@ -112,7 +113,7 @@
    "foodDrink"
   ],
   "subinterests": [
-   "wine"
+   "beer"
   ],
   "tones": [
    "surprising",
@@ -376,7 +377,7 @@
    "foodDrink"
   ],
   "subinterests": [
-   "coffeeTea"
+   "tea"
   ],
   "tones": [
    "elegant",
@@ -421,7 +422,7 @@
    "foodDrink"
   ],
   "subinterests": [
-   "coffeeTea"
+   "coffee"
   ],
   "tones": [
    "useful",
@@ -461,7 +462,7 @@
    "foodDrink"
   ],
   "subinterests": [
-   "coffeeTea"
+   "coffee"
   ],
   "tones": [
    "surprising",
@@ -504,7 +505,8 @@
    "travelOutdoor"
   ],
   "subinterests": [
-   "coffeeTea",
+   "coffee",
+   "tea",
    "organization"
   ],
   "tones": [
@@ -2769,7 +2771,8 @@
    "foodDrink"
   ],
   "subinterests": [
-   "coffeeTea"
+   "coffee",
+   "tea"
   ],
   "tones": [
    "funny"
