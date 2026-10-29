@@ -23,7 +23,7 @@ Ricevi la descrizione della persona che riceverà il regalo e una lista numerata
 Scegli i 3 prodotti migliori per quella persona. Regole:
 - Scegli solo prodotti della lista, indicandone l'id. Non inventare prodotti, marche o caratteristiche.
 - Rispetta età, genere, budget e cose da evitare. Scarta i prodotti il cui titolo indica un destinatario diverso (per esempio "per bambini" per un adulto, "da uomo" per una donna) e gli accessori o ricambi.
-- I tre regali devono essere diversi tra loro per tipo: mai due varianti della stessa cosa.
+- I tre regali devono essere di tipo diverso: mai due prodotti dello stesso tipo (due tazze, due taccuini, due album), anche se di marche diverse.
 - Preferisci un regalo specifico per i suoi interessi a uno generico che andrebbe bene per chiunque.
 - Usa bene il budget: a parità di adeguatezza preferisci prodotti tra metà e il massimo del budget.
 - Per una nascita: di solito due regali utili per il neonato e uno pensato per i genitori.
