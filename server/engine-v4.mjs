@@ -1,4 +1,4 @@
-import {claudeJson} from './claude.mjs';
+import {claudeJson,CLAUDE_FAST_MODELS} from './claude.mjs';
 import {amazonApi} from './amazon-transport.mjs';
 import {selectLibraryProducts,LIBRARY_RESOURCES} from './library-products.mjs';
 import {v2Product,freshLibraryProducts} from './engine-v2.mjs';
@@ -78,6 +78,9 @@ export async function recommendV4(request,env,concepts,{runV1,labels={},now=Date
  const note=typeof body.note==='string'?body.note.trim().slice(0,240).replace(/[<>]/g,''):'';
  const rejected=new Set(v4List(body.rejectedAsins));
  const started=Date.now(),base={method:'research-20261007',methodRevision:'ai-v4',checkedAt:new Date(now).toISOString()};
+ // Only the evaluation channel may try a faster planning model; visitors always get the default.
+ const evalCall=Boolean(env.EVAL_TOKEN)&&request.headers.get('X-Eval-Token')===env.EVAL_TOKEN;
+ const planModel=evalCall&&CLAUDE_FAST_MODELS.includes(body.planModel)?body.planModel:undefined;
  const persona=`<persona>\n${describeProfile(profile,labels)}\n</persona>\n${note?`<nota>${note}</nota>\n`:''}`;
  const fallback=async reason=>{
   console.log('engine v4 fallback',reason);
@@ -91,7 +94,7 @@ export async function recommendV4(request,env,concepts,{runV1,labels={},now=Date
  // 1. Plan ideas and searches; library ideas load meanwhile.
  const libraryProfile=profile.relation==='acquaintance'?{...profile,relation:'colleague'}:profile;
  let plan,productsByConcept;
- try{[plan,productsByConcept]=await Promise.all([claudeJson(env,{system:V4_PLAN_SYSTEM,user:persona,schema:V4_PLAN_SCHEMA,effort:'low',maxTokens:3000,timeoutMs:20000}),env.DB?freshLibraryProducts(env,now):new Map()]);}
+ try{[plan,productsByConcept]=await Promise.all([claudeJson(env,{system:V4_PLAN_SYSTEM,user:persona,schema:V4_PLAN_SCHEMA,effort:'low',maxTokens:3000,timeoutMs:20000,...(planModel?{model:planModel}:{})}),env.DB?freshLibraryProducts(env,now):new Map()]);}
  catch(e){return fallback('plan:'+e.message);}
  const ideas=(plan.idee||[]).filter(i=>i.ricerca).slice(0,V4_MAX_SEARCHES);
  const planned=Date.now();
@@ -124,5 +127,5 @@ export async function recommendV4(request,env,concepts,{runV1,labels={},now=Date
  if(!picked.length)return fallback('no_valid_picks');
  const products=picked.map(({p,s})=>({...p,why:String(s.perche||'').trim().slice(0,320)||p.why,cardMessage:String(s.biglietto||'').trim().slice(0,200),slot:s.posizione,slotLabel:V4_SLOT_LABELS[s.posizione]||'',aiExplained:true}));
  console.log('engine v4',JSON.stringify({ms:Date.now()-started,searches:groups.length,amazonCalls:metrics.amazonCalls||0,candidates:byId.size}));
- return v4Json({...base,engine:'ai-v4',products,question:String(answer.domanda||'').trim().slice(0,200)||null,partial:products.length<3,plan:ideas.map(i=>({posizione:i.posizione,archetipo:i.archetipo,idea:i.idea,ricerca:i.ricerca})),timing:{ms:Date.now()-started,planMs:planned-started,searchMs:searched-planned,pickMs:chosen-searched,amazonCalls:metrics.amazonCalls||0,thinIdeas:groups.filter(g=>g.items.length<3).length,candidates:byId.size}});
+ return v4Json({...base,engine:'ai-v4',products,question:String(answer.domanda||'').trim().slice(0,200)||null,partial:products.length<3,plan:ideas.map(i=>({posizione:i.posizione,archetipo:i.archetipo,idea:i.idea,ricerca:i.ricerca})),timing:{ms:Date.now()-started,planMs:planned-started,searchMs:searched-planned,pickMs:chosen-searched,amazonCalls:metrics.amazonCalls||0,thinIdeas:groups.filter(g=>g.items.length<3).length,candidates:byId.size,...(planModel?{planModel}:{})}});
 }

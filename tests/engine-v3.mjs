@@ -80,3 +80,14 @@ test('separate coffee/tea and wine/beer choices reach Claude as chosen; v1 still
   assert.match(calls[0].messages[0].content,/Dettagli degli interessi: Tè/);
   assert.match(calls[0].messages[0].content,/Cofanetto tè pregiati/,'the tea library idea is a candidate');
 });
+
+test('tokens are priced per model', async () => {
+  const {binding}=database();
+  const client={beta:{messages:{create:async()=>({stop_reason:'end_turn',usage:{input_tokens:100000,output_tokens:10000},content:[{type:'text',text:'{}'}]})}}};
+  const {claudeJson,claudeCosts}=await import('../server/claude.mjs');
+  await claudeJson({DB:binding,ANTHROPIC_CLIENT:client},{system:'s',user:'u',schema:{type:'object'},model:'claude-haiku-5-5'});
+  await claudeJson({DB:binding,ANTHROPIC_CLIENT:client},{system:'s',user:'u',schema:{type:'object'}});
+  const costs=await claudeCosts({DB:binding});
+  // Haiku 0.1×0.1 + 0.01×0.5 = 0.015 $; Opus 0.1×4 + 0.01×20 = 0.6 $.
+  assert.equal(costs.calls,2);assert.equal(costs.estimatedUsd,0.62);assert.deepEqual(costs.days[0].models,{'claude-haiku-5-5':0.02,'claude-opus-5-5':0.6});
+});

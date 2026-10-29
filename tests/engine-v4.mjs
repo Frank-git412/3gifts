@@ -49,3 +49,18 @@ test('if planning fails the v1 answer is served, without the note', async () => 
   assert.equal(body.engine,'v1-fallback');assert.equal(body.products[0].asin,'B0000000V1');
   assert.ok(!('note' in v1Bodies[0]));assert.equal(v1Bodies[0].profile.relation,'colleague');
 });
+
+test('a faster planning model is used only on the evaluation channel; picking stays on Opus', async () => {
+  const plan={idee:[{posizione:'sicura',archetipo:'kit d\'inizio',idea:'Fascia',ricerca:'fascia braccio porta telefono corsa'}]};
+  const pick={scelte:[{id:'I1P1',posizione:'sicura',perche:'ok',biglietto:'ok'}],domanda:''};
+  const run=async headers=>{amazon();const {binding}=database();const calls=[];
+    const req=new Request('https://3gifts.it/api/v4/recommend',{method:'POST',headers:{Origin:'https://3gifts.it','Content-Type':'application/json',...headers},body:JSON.stringify({profile,planModel:'claude-haiku-5-5',rejectedAsins:[]})});
+    const body=await (await recommendV4(req,{...env(binding,claude(calls,{plan,pick})),EVAL_TOKEN:'segreto'},concepts,{now:Date.now()})).json();
+    return {calls,body};};
+  const visitor=await run({});
+  assert.equal(visitor.calls[0].model,'claude-opus-5-5');assert.ok(!('planModel' in visitor.body.timing));
+  const wrong=await run({'X-Eval-Token':'no'});assert.equal(wrong.calls[0].model,'claude-opus-5-5');
+  const evaluation=await run({'X-Eval-Token':'segreto'});
+  assert.equal(evaluation.calls[0].model,'claude-haiku-5-5');assert.ok(!('fallbacks' in evaluation.calls[0]),'Haiku has no server-side fallback');
+  assert.equal(evaluation.calls[1].model,'claude-opus-5-5');assert.equal(evaluation.body.timing.planModel,'claude-haiku-5-5');
+});

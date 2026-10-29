@@ -31,3 +31,8 @@ export const libraryMatches=sqliteTable('library_matches',{
 export const claudeUsage=sqliteTable('claude_usage',{day:text('day').primaryKey(),calls:integer('calls').notNull().default(0),
  inputTokens:integer('input_tokens').notNull().default(0),outputTokens:integer('output_tokens').notNull().default(0),
  cacheReadTokens:integer('cache_read_tokens').notNull().default(0),cacheWriteTokens:integer('cache_write_tokens').notNull().default(0)});
+
+// Claude tokens per day and model, priced per model by claudeCosts (claude_usage keeps the daily call cap).
+export const claudeModelUsage=sqliteTable('claude_model_usage',{day:text('day').notNull(),model:text('model').notNull(),calls:integer('calls').notNull().default(0),
+ inputTokens:integer('input_tokens').notNull().default(0),outputTokens:integer('output_tokens').notNull().default(0),
+ cacheReadTokens:integer('cache_read_tokens').notNull().default(0),cacheWriteTokens:integer('cache_write_tokens').notNull().default(0)},table=>[primaryKey({columns:[table.day,table.model]})]);
