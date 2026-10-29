@@ -30,7 +30,7 @@ Ultimo aggiornamento: 29 ottobre 2026.
 - Il sito conta da solo le chiamate e i token usati ogni giorno. Il totale del mese, con il costo stimato a prezzi di listino, è su **https://3gifts.it/api/claude/costs**.
 - Il dato ufficiale resta la pagina **Costi** della Console Anthropic (platform.claude.com).
 - Tetto di sicurezza: 400 chiamate al giorno (`CLAUDE_DAILY_CALL_LIMIT`). Superato il tetto, il sito usa il motore senza AI.
-- Prezzi di listino di Claude Opus 5.5: 4 $ per milione di token in ingresso, 20 $ per milione in uscita, 0,20 $ per milione letti dalla cache.
+- Prezzi di listino per milione di token (ingresso / uscita): Claude Opus 5.5 4 $ / 20 $; Claude Sonnet 5.5 2 $ / 10 $; Claude Haiku 5.5 0,10 $ / 0,50 $. Dal 29/10 il sito registra i token separati per modello.
 
 ### Stime per voce
 
@@ -42,6 +42,7 @@ Ultimo aggiornamento: 29 ottobre 2026.
 | 1.000 questionari v3 al mese | circa 25 $ |
 | Un giudizio del giudice automatico (due ordini) | **misurato: circa 1,5 centesimi** |
 | Un questionario con il motore v4 (due chiamate) | **misurato: circa 3,2 centesimi** (28/10) |
+| Pianificazione del v4 con Haiku invece di Opus | **misurato: circa 0,05 centesimi** invece di circa 1 centesimo (Sonnet: circa 0,5 centesimi) |
 | Un controllo degli errori oggettivi (una proposta) | **misurato: circa 0,4 centesimi** |
 
 ## Movimenti
@@ -56,3 +57,4 @@ Ultimo aggiornamento: 29 ottobre 2026.
 | 28/10/2026 | Claude, controllo dei 505 prodotti della libreria e giudice v2 | 1,49 $ | Misurato dal sito. Totale Claude del mese: 3,20 $ su 20 $ di crediti. |
 | 28/10/2026 | Claude, prova di v3 e v4 sui 40 profili e controllo errori | 2,68 $ | Misurato dal sito. Totale Claude del mese: 5,88 $ su 20 $ di crediti. |
 | 29/10/2026 | Claude, miglioramenti v4 e nuova prova sui 40 profili | 1,97 $ | Misurato dal sito. Totale Claude del mese: 7,96 $ su 20 $ di crediti. |
+| 29/10/2026 | Claude, prova della pianificazione v4 con Haiku e Sonnet sui 40 profili | circa 2,60 $ | Misurato dal sito (80 questionari: la scelta resta su Opus, ed è la parte che costa). Totale Claude del mese: 10,67 $ su 20 $ di crediti. |
