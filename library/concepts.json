@@ -6636,5 +6636,724 @@
   "amazonQuery": "cofanetto esperienza adrenalina avventura",
   "notFor": "Chi soffre di vertigini o ha limiti fisici.",
   "checkBefore": "Requisiti di età, peso e salute per le attività."
+ },
+ {
+  "id": "c153-kit-pulizia-auto",
+  "status": "draft",
+  "title": "Kit per la pulizia dell'auto",
+  "pitch": "Shampoo, cera, panni in microfibra e spugne in una borsa.",
+  "whyItWorks": "Per chi lava l'auto da sé la domenica: tutto il necessario, di qualità, in un regalo.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "couple",
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "autoMoto"
+  ],
+  "subinterests": [
+   "car",
+   "vehicleCare"
+  ],
+  "tones": [
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 25,
+   "max": 50
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "kit pulizia auto cera microfibra regalo",
+  "notFor": "Chi porta sempre l'auto all'autolavaggio.",
+  "checkBefore": "Che i prodotti siano adatti anche alla vernice opaca o alla pelle degli interni, se servono."
+ },
+ {
+  "id": "c154-aspirapolvere-portatile-auto",
+  "status": "draft",
+  "title": "Aspirapolvere portatile per l'auto",
+  "pitch": "Aspirapolvere senza fili compatto, con bocchette per sedili e tappetini.",
+  "whyItWorks": "Risolve un fastidio quotidiano: briciole, sabbia e peli spariscono in un minuto.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family",
+   "colleague",
+   "acquaintance",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "autoMoto"
+  ],
+  "subinterests": [
+   "car",
+   "vehicleCare"
+  ],
+  "tones": [
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 25,
+   "max": 60
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "aspirapolvere portatile auto senza fili potente",
+  "notFor": "Chi non ha l'auto o la usa raramente.",
+  "checkBefore": "Potenza di aspirazione e autonomia della batteria."
+ },
+ {
+  "id": "c155-organizer-bagagliaio",
+  "status": "draft",
+  "title": "Organizer per il bagagliaio",
+  "pitch": "Contenitore pieghevole con scomparti per tenere in ordine il bagagliaio.",
+  "whyItWorks": "Mette fine alla spesa che rotola: un regalo pratico che si usa ogni settimana.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family",
+   "colleague",
+   "acquaintance",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "autoMoto"
+  ],
+  "subinterests": [
+   "car"
+  ],
+  "tones": [
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 15,
+   "max": 35
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "organizer bagagliaio auto pieghevole",
+  "notFor": "Chi ha un'auto molto piccola.",
+  "checkBefore": "Misure rispetto al bagagliaio."
+ },
+ {
+  "id": "c156-interfono-casco-moto",
+  "status": "draft",
+  "title": "Interfono per casco moto",
+  "pitch": "Dispositivo Bluetooth da fissare al casco per musica, navigatore e chiamate.",
+  "whyItWorks": "Per chi viaggia in moto, soprattutto in coppia: si parla e si ascolta senza fermarsi.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "couple",
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "autoMoto"
+  ],
+  "subinterests": [
+   "motorbike"
+  ],
+  "tones": [
+   "useful",
+   "surprising"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 40,
+   "max": 120
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "gadgets"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "interfono moto bluetooth casco",
+  "notFor": "Chi usa la moto solo per brevi tratti in città.",
+  "checkBefore": "Compatibilità con il casco e portata dell'interfono tra passeggero e pilota."
+ },
+ {
+  "id": "c157-coprimoto-impermeabile",
+  "status": "draft",
+  "title": "Coprimoto impermeabile",
+  "pitch": "Telo resistente all'acqua e ai raggi UV, con fori per il lucchetto.",
+  "whyItWorks": "Protegge la moto parcheggiata fuori: chi la ama apprezza.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "couple",
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "autoMoto"
+  ],
+  "subinterests": [
+   "motorbike",
+   "vehicleCare"
+  ],
+  "tones": [
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 20,
+   "max": 45
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "telo coprimoto impermeabile antifurto",
+  "notFor": "Chi tiene la moto in garage.",
+  "checkBefore": "Taglia rispetto al modello di moto."
+ },
+ {
+  "id": "c158-set-cacciaviti-precisione",
+  "status": "draft",
+  "title": "Set di cacciaviti di precisione",
+  "pitch": "Cacciavite con decine di punte magnetiche in una custodia compatta.",
+  "whyItWorks": "Ripara occhiali, telefoni e giocattoli: chi aggiusta tutto lo userà per anni.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family",
+   "colleague",
+   "acquaintance",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "diyTools"
+  ],
+  "subinterests": [
+   "tools",
+   "homeRepair"
+  ],
+  "tones": [
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 15,
+   "max": 40
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "set cacciaviti precisione punte magnetiche custodia",
+  "notFor": "Chi ha già un set completo.",
+  "checkBefore": "Numero e tipo di punte incluse."
+ },
+ {
+  "id": "c159-trapano-avvitatore-batteria",
+  "status": "draft",
+  "title": "Trapano avvitatore a batteria",
+  "pitch": "Trapano compatto con due batterie, caricatore e valigetta.",
+  "whyItWorks": "Lo strumento base di ogni casa: per chi ha appena traslocato o inizia a fare da sé.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "couple",
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "diyTools"
+  ],
+  "subinterests": [
+   "tools",
+   "homeRepair"
+  ],
+  "tones": [
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "newhome"
+  ],
+  "price": {
+   "min": 45,
+   "max": 110
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "bulky"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "trapano avvitatore batteria valigetta due batterie",
+  "notFor": "Chi ha già un trapano buono.",
+  "checkBefore": "Che le batterie siano due e il caricatore incluso."
+ },
+ {
+  "id": "c160-metro-laser",
+  "status": "draft",
+  "title": "Metro laser",
+  "pitch": "Misuratore laser tascabile che calcola distanze, aree e volumi.",
+  "whyItWorks": "Fa sentire professionisti: misure precise senza scale né aiutanti.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family",
+   "colleague",
+   "acquaintance",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "diyTools"
+  ],
+  "subinterests": [
+   "tools",
+   "homeRepair"
+  ],
+  "tones": [
+   "surprising",
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 20,
+   "max": 45
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "gadgets"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "metro laser misuratore distanza 40 metri",
+  "notFor": "Chi misura raramente.",
+  "checkBefore": "Portata massima e se ha la livella integrata."
+ },
+ {
+  "id": "c161-set-sgorbie-intaglio-legno",
+  "status": "draft",
+  "title": "Set di sgorbie per intaglio",
+  "pitch": "Sgorbie e coltellini per intagliare il legno, con pezzi da esercitarsi.",
+  "whyItWorks": "Un hobby lento e creativo: in poche sere si intaglia il primo cucchiaio.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "couple",
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "diyTools",
+   "artPhoto"
+  ],
+  "subinterests": [
+   "woodwork",
+   "craft"
+  ],
+  "tones": [
+   "surprising"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 20,
+   "max": 45
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "set sgorbie intaglio legno principianti",
+  "notFor": "Chi ha poca manualità o poco spazio per lavorare.",
+  "checkBefore": "Che siano incluse istruzioni e guanti antitaglio."
+ },
+ {
+  "id": "c162-cassetta-attrezzi-completa",
+  "status": "draft",
+  "title": "Cassetta degli attrezzi completa",
+  "pitch": "Valigetta con martello, pinze, chiavi, cacciaviti e metro.",
+  "whyItWorks": "Il regalo giusto per la prima casa: risolve il 90% dei lavoretti.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "couple",
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "diyTools"
+  ],
+  "subinterests": [
+   "homeRepair",
+   "tools"
+  ],
+  "tones": [
+   "useful"
+  ],
+  "occasions": [
+   "newhome",
+   "christmas",
+   "birthday",
+   "graduation"
+  ],
+  "price": {
+   "min": 30,
+   "max": 70
+  },
+  "kind": "object",
+  "avoidFlags": [
+   "bulky"
+  ],
+  "lastMinute": false,
+  "amazonQuery": "cassetta attrezzi completa valigetta casa",
+  "notFor": "Chi ha già un'attrezzatura completa.",
+  "checkBefore": "Qualità dei materiali, non solo numero di pezzi."
+ },
+ {
+  "id": "c163-ukulele-per-iniziare",
+  "status": "draft",
+  "title": "Ukulele per iniziare",
+  "pitch": "Ukulele soprano con custodia, accordatore e corde di ricambio.",
+  "whyItWorks": "Lo strumento più facile per cominciare: in un weekend si suonano i primi accordi.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "couple",
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "mediaAudio"
+  ],
+  "subinterests": [
+   "instruments",
+   "music"
+  ],
+  "tones": [
+   "surprising",
+   "funny"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 30,
+   "max": 70
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "ukulele soprano principianti kit custodia accordatore",
+  "notFor": "Chi suona già uno strumento a corda.",
+  "checkBefore": "Che il kit includa accordatore e custodia."
+ },
+ {
+  "id": "c164-accordatore-e-accessori-chitarra",
+  "status": "draft",
+  "title": "Kit di accessori per la chitarra",
+  "pitch": "Accordatore a clip, capotasto, plettri e corde di ricambio.",
+  "whyItWorks": "Piccole cose che chi suona usa ogni volta: un regalo sicuro per un chitarrista.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family",
+   "colleague",
+   "acquaintance",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "mediaAudio"
+  ],
+  "subinterests": [
+   "instruments"
+  ],
+  "tones": [
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 15,
+   "max": 35
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "kit accessori chitarra accordatore capotasto plettri",
+  "notFor": "Chi non suona la chitarra.",
+  "checkBefore": "Se la chitarra è classica o acustica, per le corde giuste."
+ },
+ {
+  "id": "c165-tastiera-midi-compatta",
+  "status": "draft",
+  "title": "Tastiera MIDI compatta",
+  "pitch": "Piccola tastiera da collegare al computer per comporre musica.",
+  "whyItWorks": "Per chi fa musica al computer: trasforma le idee in note.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult"
+  ],
+  "relations": [
+   "partner",
+   "couple",
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "mediaAudio"
+  ],
+  "subinterests": [
+   "instruments",
+   "music"
+  ],
+  "tones": [
+   "surprising"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 50,
+   "max": 110
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "tastiera midi 25 tasti usb",
+  "notFor": "Chi non usa programmi di musica.",
+  "checkBefore": "Compatibilità con il programma che usa la persona."
+ },
+ {
+  "id": "c166-cuscino-da-meditazione",
+  "status": "draft",
+  "title": "Cuscino da meditazione",
+  "pitch": "Cuscino rotondo imbottito di pula di grano saraceno.",
+  "whyItWorks": "Rende comoda la pratica quotidiana: un segno di rispetto per un'abitudine preziosa.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "couple",
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "sportFitness"
+  ],
+  "subinterests": [
+   "mindfulness"
+  ],
+  "tones": [
+   "useful",
+   "elegant"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 25,
+   "max": 50
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "cuscino meditazione zafu grano saraceno",
+  "notFor": "Chi non medita.",
+  "checkBefore": "Altezza del cuscino e fodera lavabile."
+ },
+ {
+  "id": "c167-diffusore-oli-essenziali",
+  "status": "draft",
+  "title": "Diffusore di oli essenziali",
+  "pitch": "Diffusore a ultrasuoni con luce soffusa e qualche olio da provare.",
+  "whyItWorks": "Crea un'atmosfera di calma nella stanza: piace anche a chi inizia a rilassarsi.",
+  "ages": [
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "friend",
+   "family",
+   "colleague",
+   "acquaintance",
+   "couple"
+  ],
+  "gender": "any",
+  "interests": [
+   "sportFitness",
+   "homeGarden"
+  ],
+  "subinterests": [
+   "mindfulness",
+   "home"
+  ],
+  "tones": [
+   "elegant",
+   "sentimental"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday",
+   "thanks"
+  ],
+  "price": {
+   "min": 20,
+   "max": 45
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "diffusore oli essenziali ultrasuoni set oli",
+  "notFor": "Chi soffre di allergie o ha animali sensibili agli oli.",
+  "checkBefore": "Capacità del serbatoio e spegnimento automatico."
+ },
+ {
+  "id": "c168-set-blocchi-cinghia-yoga",
+  "status": "draft",
+  "title": "Set di blocchi e cinghia per lo yoga",
+  "pitch": "Due blocchi in sughero e una cinghia per le posizioni più difficili.",
+  "whyItWorks": "Aiuta a progredire senza forzare: utile a chi pratica da poco e a chi pratica da anni.",
+  "ages": [
+   "teen",
+   "youngAdult",
+   "adult",
+   "mature"
+  ],
+  "relations": [
+   "partner",
+   "couple",
+   "family",
+   "friend"
+  ],
+  "gender": "any",
+  "interests": [
+   "sportFitness"
+  ],
+  "subinterests": [
+   "mindfulness",
+   "fitness"
+  ],
+  "tones": [
+   "useful"
+  ],
+  "occasions": [
+   "christmas",
+   "birthday"
+  ],
+  "price": {
+   "min": 15,
+   "max": 35
+  },
+  "kind": "object",
+  "avoidFlags": [],
+  "lastMinute": false,
+  "amazonQuery": "blocchi yoga sughero cinghia set",
+  "notFor": "Chi non fa yoga.",
+  "checkBefore": "Materiale dei blocchi (sughero o schiuma)."
  }
 ]

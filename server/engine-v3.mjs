@@ -79,11 +79,16 @@ export function libraryCandidates(concepts,productsByConcept,profile,rejectedAsi
  return pool.sort((a,b)=>(b.interestMatch-a.interestMatch)||(b.score-a.score)).slice(0,V3_LIBRARY_CANDIDATES);
 }
 
-// v1 knows neither "conoscente" nor separate coffee/tea and wine/beer choices.
+// v1 knows neither "conoscente", nor separate coffee/tea and wine/beer choices, nor the areas added later:
+// each new choice becomes the nearest one it does know.
+const V1_AREAS={autoMoto:'travelOutdoor',diyTools:'homeGarden'};
+const V1_SUBS={coffee:'coffeeTea',tea:'coffeeTea',beer:'wine',instruments:'music',mindfulness:'recovery',car:'organization',motorbike:'organization',vehicleCare:'organization',tools:'organization',woodwork:'home',homeRepair:'organization'};
 export function legacyProfile(profile){
  if(!profile||typeof profile!=='object')return profile;
- const subinterests=[...new Set(v3List(profile.subinterests).map(s=>s==='coffee'||s==='tea'?'coffeeTea':s==='beer'?'wine':s))];
- return {...profile,relation:profile.relation==='acquaintance'?'colleague':profile.relation,subinterests};
+ const subinterests=[...new Set(v3List(profile.subinterests).map(s=>V1_SUBS[s]||s))];
+ const out={...profile,relation:profile.relation==='acquaintance'?'colleague':profile.relation,subinterests};
+ if(Array.isArray(profile.interests))out.interests=[...new Set(profile.interests.map(i=>V1_AREAS[i]||i))];
+ return out;
 }
 async function v1Search(request,body,runV1){
  // v1 never receives the note: it keeps working on the controlled answers only.

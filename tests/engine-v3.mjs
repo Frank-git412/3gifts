@@ -110,3 +110,9 @@ test('an idea shows any of its checked products, not always the first', async ()
   assert.equal(libraryCandidates([tea],products,p,[],()=>0.99)[0].product.asin,'T3');
   assert.equal(libraryCandidates([tea],products,p,['T3'],()=>0.99)[0].product.asin,'T2','rejected products stay out');
 });
+
+test('areas added after v1 reach it as the nearest area it knows', async () => {
+  const {legacyProfile}=await import('../server/engine-v3.mjs');
+  assert.deepEqual(legacyProfile({relation:'friend',interests:['autoMoto','diyTools'],subinterests:['car','woodwork','instruments']}),{relation:'friend',interests:['travelOutdoor','homeGarden'],subinterests:['organization','home','music']});
+  assert.deepEqual(legacyProfile({relation:'friend',interests:['autoMoto','travelOutdoor'],subinterests:[]}).interests,['travelOutdoor'],'no duplicate area');
+});
