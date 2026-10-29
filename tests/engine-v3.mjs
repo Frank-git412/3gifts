@@ -100,3 +100,13 @@ test('library ideas outside the chosen interests are left out when enough matchi
   assert.ok(picked.length>=3);assert.ok(picked.every(c=>c.interestMatch),picked.filter(c=>!c.interestMatch).map(c=>c.concept.id).join());
   assert.ok(libraryCandidates(concepts,products,{...travelBeauty,interests:[]}).length>0,'without interests the library still answers');
 });
+
+test('an idea shows any of its checked products, not always the first', async () => {
+  const {libraryCandidates}=await import('../server/engine-v3.mjs');
+  const tea=concepts.find(c=>c.id.startsWith('c009'));
+  const products=new Map([[tea.id,[{asin:'T1',title:'Tè verde',price:20},{asin:'T2',title:'Tè nero',price:22},{asin:'T3',title:'Tè bianco',price:24}]]]);
+  const p={...profile,subinterests:['tea']};
+  assert.equal(libraryCandidates([tea],products,p,[],()=>0)[0].product.asin,'T1');
+  assert.equal(libraryCandidates([tea],products,p,[],()=>0.99)[0].product.asin,'T3');
+  assert.equal(libraryCandidates([tea],products,p,['T3'],()=>0.99)[0].product.asin,'T2','rejected products stay out');
+});

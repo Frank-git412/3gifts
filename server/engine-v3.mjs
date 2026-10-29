@@ -61,12 +61,14 @@ export function describeProfile(profile,labels={}){
 }
 
 // The library ideas worth showing Claude: eligible, with a fresh in-budget product, best first.
-export function libraryCandidates(concepts,productsByConcept,profile,rejectedAsins=[]){
+export function libraryCandidates(concepts,productsByConcept,profile,rejectedAsins=[],random=Math.random){
  const max=Number(profile.budget)||50,min=Math.max(0,Number(profile.minBudget)||0),rejected=new Set(rejectedAsins);
  const out=[];
  for(const concept of concepts){
   if(!v2Eligible(concept,profile))continue;
-  const product=(productsByConcept.get(concept.id)||[]).find(p=>p.price>=min&&p.price<=max&&!rejected.has(p.asin)&&productAllowed(p.title,concept,profile.recipientPreference));
+  // Any of the idea's checked products may be shown, so the same idea does not always bring the same listing.
+  const fitting=(productsByConcept.get(concept.id)||[]).filter(p=>p.price>=min&&p.price<=max&&!rejected.has(p.asin)&&productAllowed(p.title,concept,profile.recipientPreference));
+  const product=fitting[Math.floor(random()*fitting.length)];
   if(!product)continue;
   out.push({concept,product,...v2Score(concept,profile)});
  }
