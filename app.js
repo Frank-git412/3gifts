@@ -424,8 +424,8 @@ function setResultSummary(profile){
 let resultsBusy=false,resultRequestVersion=0;
 // While the engine works, show the real stages of the search, a few seconds each.
 const PROGRESS_STEPS=["Leggo le tue risposte…","Cerco su Amazon i prodotti adatti…","Scarto quelli fuori tema o fuori budget…","Scelgo le tre idee migliori e scrivo perché…","Ultimi controlli su prezzi e disponibilità…"];
-let progressTimer=null;
-function startProgress(){const box=$("#searchProgress"),overlay=$("#searchOverlay");if(!box)return;let i=0;if(overlay)overlay.hidden=false;box.textContent=PROGRESS_STEPS[0];clearTimeout(progressTimer);const step=()=>{if(i>=PROGRESS_STEPS.length-1)return;progressTimer=setTimeout(()=>{i+=1;box.textContent=PROGRESS_STEPS[i];step()},3500)};step()}
+let progressTimer=null,progressRuns=0;
+function startProgress(){const box=$("#searchProgress"),overlay=$("#searchOverlay");if(!box)return;let i=0;if(overlay){overlay.classList.toggle("replay",progressRuns>0);overlay.classList.toggle("xmas",$('input[name="occasion"]:checked')?.value==="christmas");overlay.hidden=false}progressRuns+=1;box.textContent=PROGRESS_STEPS[0];clearTimeout(progressTimer);const step=()=>{if(i>=PROGRESS_STEPS.length-1)return;progressTimer=setTimeout(()=>{i+=1;box.textContent=PROGRESS_STEPS[i];step()},3500)};step()}
 function stopProgress(){clearTimeout(progressTimer);progressTimer=null;const box=$("#searchProgress"),overlay=$("#searchOverlay");if(overlay)overlay.hidden=true;if(box)box.textContent=""}
 function invalidateResults(){resultRequestVersion+=1;resultsBusy=false;$("#nextBtn").disabled=false;stopProgress()}
 async function showResults(allowUnverified=false,allowTypeBroadening=false,allowUnknownDelivery=false){
