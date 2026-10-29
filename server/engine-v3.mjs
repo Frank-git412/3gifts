@@ -70,7 +70,11 @@ export function libraryCandidates(concepts,productsByConcept,profile,rejectedAsi
   if(!product)continue;
   out.push({concept,product,...v2Score(concept,profile)});
  }
- return out.sort((a,b)=>(b.interestMatch-a.interestMatch)||(b.score-a.score)).slice(0,V3_LIBRARY_CANDIDATES);
+ // Ideas outside the chosen interests only fill in when the matching ones are too few to choose from:
+ // otherwise Claude sees, and sometimes picks, a kitchen set for someone who loves travel and beauty.
+ const matching=out.filter(c=>c.interestMatch);
+ const pool=matching.length>=3?matching:out;
+ return pool.sort((a,b)=>(b.interestMatch-a.interestMatch)||(b.score-a.score)).slice(0,V3_LIBRARY_CANDIDATES);
 }
 
 // v1 knows neither "conoscente" nor separate coffee/tea and wine/beer choices.

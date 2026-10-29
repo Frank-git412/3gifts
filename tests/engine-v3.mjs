@@ -91,3 +91,12 @@ test('tokens are priced per model', async () => {
   // Haiku 0.1×0.1 + 0.01×0.5 = 0.015 $; Opus 0.1×4 + 0.01×20 = 0.6 $.
   assert.equal(costs.calls,2);assert.equal(costs.estimatedUsd,0.62);assert.deepEqual(costs.days[0].models,{'claude-haiku-5-5':0.02,'claude-opus-5-5':0.6});
 });
+
+test('library ideas outside the chosen interests are left out when enough matching ones exist', async () => {
+  const {libraryCandidates}=await import('../server/engine-v3.mjs');
+  const products=new Map(concepts.map(c=>[c.id,[{asin:c.id,title:c.id,price:20}]]));
+  const travelBeauty={relation:'friend',occasion:'birthday',ageRange:'adult',recipientPreference:'women',interests:['travelOutdoor','styleBeauty'],subinterests:[],tone:'useful',budget:50,minBudget:0,avoid:[]};
+  const picked=libraryCandidates(concepts,products,travelBeauty);
+  assert.ok(picked.length>=3);assert.ok(picked.every(c=>c.interestMatch),picked.filter(c=>!c.interestMatch).map(c=>c.concept.id).join());
+  assert.ok(libraryCandidates(concepts,products,{...travelBeauty,interests:[]}).length>0,'without interests the library still answers');
+});
