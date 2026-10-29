@@ -1,7 +1,7 @@
 # Costi di 3Gifts
 
 Registro dei costi del sito, aggiornato a ogni cambiamento. Importi in dollari dove il fornitore fattura in dollari.
-Ultimo aggiornamento: 28 ottobre 2026.
+Ultimo aggiornamento: 29 ottobre 2026.
 
 ## Riepilogo mensile
 
@@ -55,3 +55,4 @@ Ultimo aggiornamento: 28 ottobre 2026.
 | 27/10/2026 | Claude, taratura del giudice | circa 1,03 $ | 140 giudizi (70 confronti × 2 ordini): circa 0,7 centesimi a giudizio. Totale Claude del mese misurato: 1,36 $. |
 | 28/10/2026 | Claude, controllo dei 505 prodotti della libreria e giudice v2 | 1,49 $ | Misurato dal sito. Totale Claude del mese: 3,20 $ su 20 $ di crediti. |
 | 28/10/2026 | Claude, prova di v3 e v4 sui 40 profili e controllo errori | 2,68 $ | Misurato dal sito. Totale Claude del mese: 5,88 $ su 20 $ di crediti. |
+| 29/10/2026 | Claude, miglioramenti v4 e nuova prova sui 40 profili | 1,97 $ | Misurato dal sito. Totale Claude del mese: 7,96 $ su 20 $ di crediti. |
