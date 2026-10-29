@@ -31,7 +31,7 @@ Origine: proposta di Francesco del 28 ottobre 2026, rivista insieme. Le regole m
 | Insider | Oggetto o battuta che capisce solo chi ha quella passione |
 | Oggetto di design | La versione bella di un oggetto quotidiano |
 | Adiacente | Un interesse vicino che non ha ancora esplorato |
-| Esperienza | Corso, evento, degustazione (serve un partner non Amazon: oggi non disponibile) |
+| Esperienza | Cofanetto regalo su Amazon (Smartbox e simili): notte fuori, cena, spa, degustazione, corso, avventura. Solo per rapporti stretti, mai se l'utente ha escluso le esperienze |
 
 ## 3. Le tre posizioni
 
@@ -58,7 +58,7 @@ Le tre proposte sono tre ipotesi diverse, non tre varianti dello stesso prodotto
 "Nessuna preferenza" si comporta come "che userà davvero".
 
 **Diversa**, nell'ordine, la prima disponibile:
-1. Esperienza (se non esclusa e se c'è un partner: oggi no);
+1. Esperienza con un cofanetto (se non esclusa e se il rapporto è stretto: partner, coppia, famiglia, amico);
 2. l'archetipo della posizione sicura applicato alla seconda area di interesse;
 3. Adiacente.
 

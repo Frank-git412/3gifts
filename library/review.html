@@ -66,6 +66,8 @@ main.wrap { padding-block: 18px 60px; display: grid; gap: 14px; }
 .tagrow > span:first-child { color: var(--muted); width: 96px; flex: none; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
 .chip { background: var(--accent-soft); color: var(--ink); border-radius: 6px; padding: 1px 8px; }
 .chip.warn { background: var(--no-soft); }
+.caveats { margin: 0; display: grid; gap: 4px; font-size: 13.5px; }
+.caveats b { color: var(--muted); font-weight: 700; }
 .query { font-size: 13px; color: var(--muted); }
 .query code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 12.5px; color: var(--ink); overflow-wrap: anywhere; }
 .actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
@@ -110,7 +112,7 @@ textarea { font: inherit; font-size: 14px; width: 100%; box-sizing: border-box; 
 <script>
 const L = {
   ages: { child: "7–12 anni", teen: "13–17", youngAdult: "18–34", adult: "35–54", mature: "55+", earlyChild: "0–6 anni", unknown: "età non indicata" },
-  relations: { partner: "Partner", friend: "Amico/a", family: "Familiare", colleague: "Collega", couple: "Coppia" },
+  relations: { partner: "Partner", friend: "Amico/a", family: "Familiare", colleague: "Collega", acquaintance: "Conoscente", couple: "Coppia" },
   gender: { any: "Per tutti", women: "Da donna", men: "Da uomo" },
   tones: { sentimental: "Emozionare", useful: "Essere utile", funny: "Far sorridere", surprising: "Sorprendere", elegant: "Essere elegante", neutral: "Neutro" },
   occasions: { any: "Ogni occasione", birthday: "Compleanno", anniversary: "Anniversario", christmas: "Natale", thanks: "Grazie", graduation: "Laurea", newhome: "Casa nuova", wedding: "Matrimonio", newbaby: "Nascita", event: "Altra ricorrenza" },
@@ -155,6 +157,11 @@ function card(c) {
     chips("Nascosto se si evita", c.avoidFlags, L.avoid, "warn"),
   ].filter(Boolean);
   tags.append(...rows);
+  const caveats = document.createElement("div"); caveats.className = "caveats";
+  for (const [t, v] of [["Non adatto a: ", c.notFor], ["Da verificare: ", c.checkBefore]]) {
+    if (!v) continue;
+    const line = document.createElement("p"); line.style.margin = "0"; const b = document.createElement("b"); b.textContent = t; line.append(b, v); caveats.append(line);
+  }
   const q = document.createElement("div"); q.className = "query";
   q.append("Ricerca Amazon: "); const code = document.createElement("code"); code.textContent = c.amazonQuery; q.append(code);
   const actions = document.createElement("div"); actions.className = "actions";
@@ -172,7 +179,7 @@ function card(c) {
   note.setAttribute("aria-label", "Commento su " + c.title); note.disabled = readOnly;
   let timer;
   note.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(() => saveComment(c.id, note.value, saved), 800); });
-  el.append(top, pitch, why, tags, q, actions, note);
+  el.append(top, pitch, why, tags, caveats, q, actions, note);
   return el;
 }
 
