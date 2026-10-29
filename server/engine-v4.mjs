@@ -92,12 +92,14 @@ export async function recommendV4(request,env,concepts,{runV1,labels={},now=Date
  try{[plan,productsByConcept]=await Promise.all([claudeJson(env,{system:V4_PLAN_SYSTEM,user:persona,schema:V4_PLAN_SCHEMA,effort:'low',maxTokens:3000,timeoutMs:20000}),env.DB?freshLibraryProducts(env,now):new Map()]);}
  catch(e){return fallback('plan:'+e.message);}
  const ideas=(plan.idee||[]).filter(i=>i.ricerca).slice(0,V4_MAX_SEARCHES);
+ const planned=Date.now();
  // 2. One Amazon search per idea, through the shared rate limiter and cache.
  const metrics={},groups=[];
  for(const idea of ideas){
   try{groups.push({idea,items:(await searchIdea(idea,profile,env,metrics)).filter(p=>!rejected.has(p.asin))});}
   catch(e){groups.push({idea,items:[],error:e.message});if(/quota|Authentication|Configuration/.test(e.message))break;}
  }
+ const searched=Date.now();
  const library=libraryCandidates(concepts,productsByConcept,libraryProfile,[...rejected]).slice(0,V4_LIBRARY);
  // 3. Claude picks among real listings only, referenced by short ids.
  const byId=new Map(),seen=new Set(),lines=[];
@@ -111,6 +113,7 @@ export async function recommendV4(request,env,concepts,{runV1,labels={},now=Date
  let answer;
  try{answer=await claudeJson(env,{system:V4_PICK_SYSTEM,user:`${persona}<candidati>\n${lines.join('\n')}\n</candidati>`,schema:V4_PICK_SCHEMA,effort:'low',maxTokens:4000,timeoutMs:25000});}
  catch(e){return fallback('pick:'+e.message);}
+ const chosen=Date.now();
  const picked=[];
  for(const s of answer.scelte||[]){
   const p=byId.get(s.id);if(!p||picked.some(x=>x.p===p))continue;
@@ -119,5 +122,5 @@ export async function recommendV4(request,env,concepts,{runV1,labels={},now=Date
  if(!picked.length)return fallback('no_valid_picks');
  const products=picked.map(({p,s})=>({...p,why:String(s.perche||'').trim().slice(0,320)||p.why,cardMessage:String(s.biglietto||'').trim().slice(0,200),slot:s.posizione,slotLabel:V4_SLOT_LABELS[s.posizione]||'',aiExplained:true}));
  console.log('engine v4',JSON.stringify({ms:Date.now()-started,searches:groups.length,amazonCalls:metrics.amazonCalls||0,candidates:byId.size}));
- return v4Json({...base,engine:'ai-v4',products,question:String(answer.domanda||'').trim().slice(0,200)||null,partial:products.length<3,plan:ideas.map(i=>({posizione:i.posizione,archetipo:i.archetipo,idea:i.idea,ricerca:i.ricerca})),timing:{ms:Date.now()-started,amazonCalls:metrics.amazonCalls||0}});
+ return v4Json({...base,engine:'ai-v4',products,question:String(answer.domanda||'').trim().slice(0,200)||null,partial:products.length<3,plan:ideas.map(i=>({posizione:i.posizione,archetipo:i.archetipo,idea:i.idea,ricerca:i.ricerca})),timing:{ms:Date.now()-started,planMs:planned-started,searchMs:searched-planned,pickMs:chosen-searched,amazonCalls:metrics.amazonCalls||0,thinIdeas:groups.filter(g=>g.items.length<3).length,candidates:byId.size}});
 }
