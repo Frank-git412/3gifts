@@ -110,3 +110,10 @@ test('Claude reviews new listings once; rejected ones disappear, the daily ceili
   const {reserveClaudeCall}=await import('../server/claude.mjs');
   await assert.rejects(()=>reserveClaudeCall({DB:binding,CLAUDE_DAILY_CALL_LIMIT:1},now),/claude_quota_exhausted/,'the day already used its one call');
 });
+
+test('listings marked for adults never reach a children\'s idea', () => {
+  const kidsIdea={...concept,ages:['child'],occasions:['christmas'],avoidFlags:[],gender:'any'};
+  assert.equal(productAllowed('Puzzle 3D legno per adulti, betta',kidsIdea),false);
+  assert.equal(productAllowed('Puzzle 3D per bambini e adulti',kidsIdea),true);
+  assert.equal(productAllowed('Puzzle 3D legno per adulti',{...kidsIdea,ages:['adult']}),true);
+});

@@ -35,10 +35,11 @@ const FOR_MEN=/\b(?:uomo|uomini|maschile|maschio|per lui|men'?s?)\b/i;
 const FOR_WOMEN=/\b(?:donna|donne|femminile|per lei|ragazza|women'?s?|lady)\b/i;
 const FOR_KIDS=/\b(?:bambin[oie]|bimb[oie]|neonat[oie]|kids?|junior|infanzia|cameretta)\b/i;
 const ALSO_ADULTS=/\b(?:adult[oie]?|adults?|tutta la famiglia)\b/i;
+const FOR_ADULTS_ONLY=/\b(?:per adulti|for adults|adult only|vietato ai minori|18\+)\b/i;
 const DRINKING=/\b(?:bere|alcolic[io]|alcol|drinking|drink|shot|ubriac\w*|sbronz\w*)\b/i;
 export function productTarget(title){
  const t=String(title||''),men=FOR_MEN.test(t),women=FOR_WOMEN.test(t);
- return {gender:men&&!women?'men':women&&!men?'women':null,kids:FOR_KIDS.test(t)&&!ALSO_ADULTS.test(t),drinking:DRINKING.test(t)};
+ return {gender:men&&!women?'men':women&&!men?'women':null,kids:FOR_KIDS.test(t)&&!ALSO_ADULTS.test(t),adultsOnly:FOR_ADULTS_ONLY.test(t)&&!FOR_KIDS.test(t),drinking:DRINKING.test(t)};
 }
 // The same rules decide at matching time, in engine v2 and in the guides, so products already stored
 // before a rule existed are held back too. recipient is 'women', 'men' or anything else for unknown.
@@ -46,6 +47,8 @@ export function productAllowed(title,concept,recipient){
  const target=productTarget(title);
  const ages=concept.ages||[],childIdea=ages.some(a=>a==='earlyChild'||a==='child'||a==='teen')||(concept.occasions||[]).includes('newbaby');
  if(target.kids&&!childIdea)return false;
+ const minorsOnly=ages.length>0&&ages.every(a=>a==='earlyChild'||a==='child'||a==='teen');
+ if(target.adultsOnly&&minorsOnly)return false;
  if(target.drinking&&!(concept.avoidFlags||[]).includes('alcohol'))return false;
  const wanted=concept.gender&&concept.gender!=='any'?concept.gender:recipient==='women'||recipient==='men'?recipient:null;
  if(wanted&&target.gender&&target.gender!==wanted)return false;
