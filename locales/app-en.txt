@@ -1,5 +1,5 @@
 Cosa ti piace davvero? => What do you really enjoy?
-Scegli fino a due aree che parlano di te e fino a quattro sottocategorie in totale. => Choose up to two interests that reflect you and up to four subcategories in total.
+Scegli una o due aree che parlano di te. Le sottocategorie non sono obbligatorie: se vuoi essere più preciso, puoi indicarne fino a quattro. => Choose one or two interests that reflect you. Subcategories are optional: to be more specific, you can pick up to four.
 Puoi scegliere al massimo 4 sottocategorie. => You can choose up to 4 subcategories.
 Puoi sceglierne al massimo ${max}. => You can choose up to ${max}.
 Scegli almeno un’area di interesse. => Choose at least one interest.
