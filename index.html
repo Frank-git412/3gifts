@@ -252,13 +252,13 @@
         </div>
         <div class="search-overlay" id="searchOverlay" hidden>
           <svg class="search-scene" viewBox="0 0 200 120" aria-hidden="true" focusable="false">
-            <path class="line" d="M112 100V76H136V58H158V76H178V100H200"/>
-            <path class="line pile-detail" d="M136 76V100M158 76V100M136 76H158M124 76c-7-9-12-1 0 0c7-9 12-1 0 0M147 58c-7-9-12-1 0 0c7-9 12-1 0 0M168 76c-7-9-12-1 0 0c7-9 12-1 0 0"/>
-            <path class="line ground-left" d="M0 100H74M88 100H112"/>
-            <path class="line body" d="M74 100 80 78 92 60 84 79 88 100"/>
-            <circle class="line head" cx="99" cy="48" r="7"/>
-            <path class="line dust" d="M116 66l-6-5M120 60l-2-8M126 54l2-7"/>
-            <rect class="line flying f1" x="128" y="66" width="10" height="10"/><rect class="line flying f2" x="130" y="68" width="8" height="8"/><rect class="line flying f3" x="127" y="65" width="11" height="11"/>
+            <path class="line" d="M0 100H112M178 100H200"/>
+            <g class="runner"><path class="line" d="M0 78 6 61"/><circle class="line" cx="11" cy="51" r="6"/><path class="line leg-a" d="M0 78-8 100M0 78l9 19"/><path class="line leg-b" d="M0 78l6 22M0 78l-7 18"/></g>
+            <path class="line kick" d="M147 66 138 32l-6 2M147 66l11-31 6 3"/>
+            <path class="line pile" d="M112 100V76H136V58H158V76H178V100Z"/>
+            <path class="line" d="M136 76V100M158 76V100M136 76H158M124 76c-7-9-12-1 0 0c7-9 12-1 0 0M168 76c-7-9-12-1 0 0c7-9 12-1 0 0"/>
+            <path class="line dust" d="M128 52l-6-5M134 46l-2-8M162 46l3-7M168 52l6-4"/>
+            <rect class="line flying t1" x="142" y="50" width="10" height="10"/><rect class="line flying t2" x="143" y="51" width="8" height="8"/><rect class="line flying t3" x="142" y="50" width="11" height="11"/><rect class="line flying t1 d4" x="143" y="51" width="9" height="9"/><rect class="line flying t2 d5" x="142" y="50" width="10" height="10"/>
           </svg>
           <p class="search-progress" id="searchProgress" role="status" aria-live="polite"></p>
         </div>

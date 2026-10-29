@@ -98,20 +98,29 @@
 @keyframes progress-pulse{50%{opacity:.25}}
 @media (prefers-reduced-motion:reduce){.search-progress::before{animation:none}}
 
-/* Search screen, in the one-line style: the ground rises into a figure with a floating head that digs frantically through a pile of gifts. */
+/* Search screen, in the one-line style: a figure with a floating head runs, dives head first into a pile of gifts and throws them out frantically. */
 .search-overlay{position:fixed;inset:0;z-index:60;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding:16px;background:var(--violet);color:#fff;text-align:center}
 .search-overlay[hidden]{display:none}
 .search-overlay .search-progress{margin:0;max-width:30ch;min-height:2.8em;color:#fff}
 .search-overlay .search-progress::before{display:none}
 .search-scene{width:min(340px,86vw);height:auto;overflow:visible;fill:none;stroke:#fff;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
-.search-scene .body{transform-box:view-box;transform-origin:81px 100px;animation:dig-body .3s ease-in-out infinite alternate}
-.search-scene .head{animation:head-float .6s ease-in-out infinite alternate}
-.search-scene .dust{animation:dust .3s steps(2) infinite}
-.search-scene .flying{transform-box:fill-box;transform-origin:center;opacity:0;animation:toss 1.35s cubic-bezier(.3,.6,.5,1) infinite}
-.search-scene .f2{animation-delay:.45s}
-.search-scene .f3{animation-delay:.9s}
-@keyframes dig-body{from{transform:rotate(-4deg)}to{transform:rotate(7deg)}}
-@keyframes head-float{from{transform:translate(0,-3px)}to{transform:translate(3px,1px)}}
+.search-scene .pile{fill:var(--violet)}
+.search-scene .runner{transform-box:view-box;transform-origin:0 78px;animation:run-dive 1.6s cubic-bezier(.4,0,.7,1) forwards}
+.search-scene .leg-a{animation:stride .22s steps(1) infinite}
+.search-scene .leg-b{animation:stride .22s steps(1) -.11s infinite}
+.search-scene .kick{transform-box:view-box;transform-origin:147px 64px;opacity:0;animation:appear 0s 1.6s forwards,kick .12s 1.6s ease-in-out infinite alternate}
+.search-scene .dust{opacity:0;animation:appear 0s 1.6s forwards,dust .16s 1.6s steps(2) infinite}
+.search-scene .flying{transform-box:fill-box;transform-origin:center;opacity:0;animation:toss-left .8s 1.6s cubic-bezier(.3,.6,.5,1) infinite}
+.search-scene .t2{animation-name:toss-high;animation-delay:1.76s}
+.search-scene .t3{animation-name:toss-right;animation-delay:1.92s}
+.search-scene .d4{animation-delay:2.08s}
+.search-scene .d5{animation-delay:2.24s}
+@keyframes run-dive{0%{transform:translate(-20px,0)}68%{transform:translate(92px,0) rotate(0)}82%{transform:translate(120px,-36px) rotate(60deg)}99%{opacity:1;transform:translate(142px,-16px) rotate(105deg)}100%{opacity:0;transform:translate(142px,-16px) rotate(105deg)}}
+@keyframes stride{50%{opacity:0}}
+@keyframes appear{to{opacity:1}}
+@keyframes kick{from{transform:rotate(-14deg)}to{transform:rotate(14deg)}}
 @keyframes dust{50%{opacity:0}}
-@keyframes toss{0%{opacity:1;transform:translate(0,0) rotate(0)}45%{transform:translate(-50px,-62px) rotate(-220deg)}88%{opacity:1}100%{opacity:0;transform:translate(-108px,26px) rotate(-430deg)}}
-@media (prefers-reduced-motion:reduce){.search-scene .body,.search-scene .head,.search-scene .dust,.search-scene .flying{animation:none}.search-scene .f1{opacity:1;transform:translate(-50px,-62px) rotate(-30deg)}}
+@keyframes toss-left{0%{opacity:1;transform:translate(0,0) rotate(0)}45%{transform:translate(-60px,-50px) rotate(-240deg)}90%{opacity:1}100%{opacity:0;transform:translate(-118px,40px) rotate(-460deg)}}
+@keyframes toss-high{0%{opacity:1;transform:translate(0,0) rotate(0)}50%{transform:translate(-20px,-70px) rotate(200deg)}90%{opacity:1}100%{opacity:0;transform:translate(-64px,44px) rotate(400deg)}}
+@keyframes toss-right{0%{opacity:1;transform:translate(0,0) rotate(0)}45%{transform:translate(34px,-52px) rotate(220deg)}90%{opacity:1}100%{opacity:0;transform:translate(52px,42px) rotate(440deg)}}
+@media (prefers-reduced-motion:reduce){.search-scene .runner{animation:none;opacity:0}.search-scene .leg-a,.search-scene .leg-b,.search-scene .flying,.search-scene .dust{animation:none}.search-scene .kick,.search-scene .dust{animation:none;opacity:1}}
