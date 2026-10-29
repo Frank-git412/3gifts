@@ -64,3 +64,11 @@ test('a faster planning model is used only on the evaluation channel; picking st
   assert.equal(evaluation.calls[0].model,'claude-haiku-5-5');assert.ok(!('fallbacks' in evaluation.calls[0]),'Haiku has no server-side fallback');
   assert.equal(evaluation.calls[1].model,'claude-opus-5-5');assert.equal(evaluation.body.timing.planModel,'claude-haiku-5-5');
 });
+
+test('a note about a cat keeps dog products out, and the other way round', async () => {
+  const {speciesAllowed}=await import('../server/engine-v4.mjs');
+  const cat=speciesAllowed('ha un gatto che adora');
+  assert.equal(cat('Tappetino da leccare per cani'),false);assert.equal(cat('Fontanella per gatti'),true);assert.equal(cat('Gioco per cani e gatti'),true);assert.equal(cat('Tazza in ceramica'),true);
+  assert.equal(speciesAllowed('ha un cane')('Tiragraffi per gatti'),false);
+  assert.equal(speciesAllowed('')('Tiragraffi per gatti'),true,'no note, no filter');
+});

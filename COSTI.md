@@ -29,7 +29,7 @@ Ultimo aggiornamento: 29 ottobre 2026.
 
 - Il sito conta da solo le chiamate e i token usati ogni giorno. Il totale del mese, con il costo stimato a prezzi di listino, è su **https://3gifts.it/api/claude/costs**.
 - Il dato ufficiale resta la pagina **Costi** della Console Anthropic (platform.claude.com).
-- Tetto di sicurezza: 400 chiamate al giorno (`CLAUDE_DAILY_CALL_LIMIT`). Superato il tetto, il sito usa il motore senza AI.
+- Tetto di sicurezza: 400 chiamate al giorno (`CLAUDE_DAILY_CALL_LIMIT`). Il v4 usa 2 chiamate a questionario, quindi circa 200 questionari al giorno. Superato il tetto, il sito usa il motore senza AI.
 - Prezzi di listino per milione di token (ingresso / uscita): Claude Opus 5.5 4 $ / 20 $; Claude Sonnet 5.5 2 $ / 10 $; Claude Haiku 5.5 0,10 $ / 0,50 $. Dal 29/10 il sito registra i token separati per modello.
 
 ### Stime per voce
@@ -40,6 +40,7 @@ Ultimo aggiornamento: 29 ottobre 2026.
 | Controllo AI di tutti i prodotti della libreria (circa 500, una volta) | **misurato: circa 1 centesimo per idea**, quindi circa 1 $ per tutte le 107 idee |
 | Controllo dei prodotti nuovi nei giorni successivi | pochi centesimi al giorno |
 | 1.000 questionari v3 al mese | circa 25 $ |
+| 1.000 questionari v4 al mese (motore predefinito dal 29/10) | circa 32 $ |
 | Un giudizio del giudice automatico (due ordini) | **misurato: circa 1,5 centesimi** |
 | Un questionario con il motore v4 (due chiamate) | **misurato: circa 3,2 centesimi** (28/10) |
 | Pianificazione del v4 con Haiku invece di Opus | **misurato: circa 0,05 centesimi** invece di circa 1 centesimo (Sonnet: circa 0,5 centesimi) |

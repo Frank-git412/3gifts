@@ -15,7 +15,7 @@ Tre posizioni, tre ipotesi diverse:
 - sicura, dal rapporto con le passioni: vuole iniziare → kit d'inizio; le coltiva spesso → upgrade; esperto o ha già tutto → consumabile pregiato; qualcosa non funziona → soluzione (senza nota: upgrade).
 - che colpisce, dal rapporto e dall'effetto voluto: emozionare → personalizzato o pezzo raro (per un esperto); far sorridere → ironico ma usabile o insider; sorprendere → adiacente o pezzo raro; elegante → oggetto di design; che userà davvero → upgrade, strumento chiave o accessorio del rituale.
 - diversa: l'archetipo della posizione sicura applicato alla seconda area di interesse, oppure un'idea adiacente. Sempre legata alla persona, mai a caso.
-Modificatori: con un conoscente niente personalizzati, pezzi rari, insider o soluzioni; meglio un consumabile pregiato o un oggetto di design. Se il regalo deve parlare anche di chi lo fa, un ricordo condiviso. Per casa nuova, nascita e matrimonio la posizione sicura riguarda l'occasione (la casa, il neonato e i genitori, la casa di coppia). Con budget stretto, il meglio di una categoria piccola, mai il peggio di una grande. Niente set con aggiunte economiche. Per un esperto niente attrezzatura base. Gli oggetti devono essere usati davvero: niente gadget da poche volte. Se manca il dettaglio per scegliere un oggetto specifico (per esempio "caffè" senza dire moka, espresso o filtro), scegli qualcosa che vada bene in tutti i casi.`;
+Modificatori: con un conoscente niente personalizzati, pezzi rari, insider o soluzioni; meglio un consumabile pregiato o un oggetto di design. Se il regalo deve parlare anche di chi lo fa, un ricordo condiviso. Per casa nuova, nascita e matrimonio la posizione sicura riguarda l'occasione (la casa, il neonato e i genitori, la casa di coppia). Con budget stretto, il meglio di una categoria piccola, mai il peggio di una grande. Niente set con aggiunte economiche. Per un esperto niente attrezzatura base. Gli oggetti devono essere usati davvero: niente gadget da poche volte. Se la nota indica un animale preciso (gatto, cane), niente prodotti per altri animali. Se la passione riguarda persone care o ricordi (per esempio le foto dei nipoti), si regala il ricordo (album, cornice, fotolibro), non l'attrezzatura di un hobby. Se manca il dettaglio per scegliere un oggetto specifico (per esempio "caffè" senza dire moka, espresso o filtro), scegli qualcosa che vada bene in tutti i casi.`;
 
 const V4_PLAN_SYSTEM=`Sei il consulente regali di 3Gifts, un sito italiano. Ricevi la descrizione di una persona e devi pensare alle idee regalo prima di cercare i prodotti, come farebbe una persona bravissima a fare regali.
 
@@ -49,6 +49,14 @@ const v4List=v=>Array.isArray(v)?v.filter(x=>typeof x==='string'):[];
 const V4_SLOT_LABELS={sicura:'La scelta sicura',colpisce:'Quella che colpisce',diversa:'Un’idea diversa'};
 
 // The person's limits as a pseudo-idea, so Amazon listings go through the same filters as the library.
+// When the note names only cats or only dogs, listings for the other animal never reach Claude.
+export function speciesAllowed(note){
+ const cat=/\bgatt[aoie]/i.test(note),dog=/\bcan[ei]\b|\bcagnolin/i.test(note);
+ if(cat===dog)return ()=>true;
+ const other=cat?/\bcan[ei]\b|\bcucciol|\bcagnolin|\bdog\b/i:/\bgatt[aoie]|\bfelin|\bcat\b/i,own=cat?/\bgatt[aoie]|\bfelin|\bcat\b/i:/\bcan[ei]\b|\bdog\b/i;
+ return title=>!other.test(title)||own.test(title);
+}
+
 function personFilter(profile){
  const max=Number(profile.budget)||50,min=Math.max(Number(profile.minBudget)||0,max*0.2);
  const avoid=new Set(v4List(profile.avoid));
@@ -99,13 +107,13 @@ export async function recommendV4(request,env,concepts,{runV1,labels={},now=Date
  const ideas=(plan.idee||[]).filter(i=>i.ricerca).slice(0,V4_MAX_SEARCHES);
  const planned=Date.now();
  // 2. One Amazon search per idea, through the shared rate limiter and cache.
- const metrics={},groups=[];
+ const metrics={},groups=[],species=speciesAllowed(note);
  for(const idea of ideas){
-  try{groups.push({idea,items:(await searchIdea(idea,profile,env,metrics)).filter(p=>!rejected.has(p.asin))});}
+  try{groups.push({idea,items:(await searchIdea(idea,profile,env,metrics)).filter(p=>!rejected.has(p.asin)&&species(p.title))});}
   catch(e){groups.push({idea,items:[],error:e.message});if(/quota|Authentication|Configuration/.test(e.message))break;}
  }
  const searched=Date.now();
- const library=libraryCandidates(concepts,productsByConcept,libraryProfile,[...rejected]).slice(0,V4_LIBRARY);
+ const library=libraryCandidates(concepts,productsByConcept,libraryProfile,[...rejected]).filter(c=>species(c.product.title)).slice(0,V4_LIBRARY);
  // 3. Claude picks among real listings only, referenced by short ids.
  const byId=new Map(),seen=new Set(),lines=[];
  groups.forEach((g,gi)=>{
