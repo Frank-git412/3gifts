@@ -7,10 +7,13 @@ export const CLAUDE_FAST_MODELS=['claude-sonnet-5-5','claude-haiku-5-5'];
 
 // A daily ceiling on Claude calls, counted in D1 like the Amazon quota, so a traffic spike or a bug
 // cannot run up the bill. Past the ceiling callers fall back to the engines that need no AI.
-export async function reserveClaudeCall(env,now=Date.now()){
+// Visitors' searches and background work (product review, evaluation) have separate ceilings, so the
+// nightly review of new ideas can never use up the searches: 500 site calls are 250 v4 questionnaires.
+export async function reserveClaudeCall(env,now=Date.now(),budget='site'){
  if(!env.DB)throw Error('quota_storage_unavailable');
- const limit=Number(env.CLAUDE_DAILY_CALL_LIMIT??400);
- const day=new Date(now).toISOString().slice(0,10);
+ const background=budget==='background';
+ const limit=Number(background?env.CLAUDE_BACKGROUND_DAILY_CALL_LIMIT??150:env.CLAUDE_DAILY_CALL_LIMIT??500);
+ const day=new Date(now).toISOString().slice(0,10)+(background?'#bg':'');
  const row=await env.DB.prepare(`INSERT INTO claude_usage (day,calls) VALUES (?,1)
   ON CONFLICT(day) DO UPDATE SET calls=calls+1 WHERE calls<? RETURNING calls`).bind(day,limit).first();
  if(!row)throw Error('claude_quota_exhausted');
@@ -32,7 +35,7 @@ export async function claudeCosts(env,now=Date.now()){
  const byModel=(await env.DB.prepare("SELECT day,model,input_tokens,output_tokens,cache_read_tokens,cache_write_tokens FROM claude_model_usage WHERE day LIKE ?").bind(month+'%').all()).results||[];
  const usd=r=>{const p=CLAUDE_PRICES[r.model]||CLAUDE_PRICES['claude-opus-5-5'];return (r.input_tokens*p.input+r.output_tokens*p.output+r.cache_read_tokens*p.cacheRead+r.cache_write_tokens*p.cacheWrite)/1e6;};
  const days=new Map();
- for(const r of legacy)days.set(r.day,{day:r.day,calls:r.calls,usd:usd(r),models:{}});
+ for(const r of legacy){const day=r.day.slice(0,10),d=days.get(day)||{day,calls:0,usd:0,models:{}};d.calls+=r.calls;d.usd+=usd(r);days.set(day,d);}
  for(const r of byModel){const d=days.get(r.day)||{day:r.day,calls:0,usd:0,models:{}};d.usd+=usd(r);d.models[r.model]=Math.round(usd(r)*100)/100;days.set(r.day,d);}
  const list=[...days.values()].sort((a,b)=>a.day.localeCompare(b.day)).map(d=>({day:d.day,calls:d.calls,estimatedUsd:Math.round(d.usd*100)/100,...(Object.keys(d.models).length?{models:d.models}:{})}));
  return {month,calls:list.reduce((s,d)=>s+d.calls,0),estimatedUsd:Math.round([...days.values()].reduce((s,d)=>s+d.usd,0)*100)/100,days:list};
@@ -45,8 +48,8 @@ function claudeClient(env){
 }
 
 // One structured call: the stable instructions are cached, the answer must match the JSON schema.
-export async function claudeJson(env,{system,user,schema,effort='low',maxTokens=4000,timeoutMs=30000,model=CLAUDE_MODEL}){
- await reserveClaudeCall(env);
+export async function claudeJson(env,{system,user,schema,effort='low',maxTokens=4000,timeoutMs=30000,model=CLAUDE_MODEL,budget='site'}){
+ await reserveClaudeCall(env,Date.now(),budget);
  const response=await claudeClient(env).beta.messages.create({
   model,max_tokens:maxTokens,
   // Haiku has no server-side fallback; Opus and Sonnet re-run a refused request on Anthropic's recommended model.

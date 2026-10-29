@@ -38,7 +38,7 @@ const sideText=(name,items)=>`<proposta_${name}>\n${(items||[]).length?items.map
 
 export async function judgePair(env,pair,version='v2'){
  const user=`<persona>${String(pair.label||'').slice(0,400)}</persona>\n${sideText('A',pair.A)}\n${sideText('B',pair.B)}`;
- return claudeJson(env,{system:JUDGES[version]||JUDGES.v2,user,schema:JUDGE_SCHEMA,effort:'medium',maxTokens:6000});
+ return claudeJson(env,{system:JUDGES[version]||JUDGES.v2,user,schema:JUDGE_SCHEMA,effort:'medium',maxTokens:6000,budget:'background'});
 }
 
 // Each pair is judged twice with A and B swapped: the judge must not favour the first proposal it reads.
@@ -79,7 +79,7 @@ export async function evalCheck(request,env){
   const counted={prodotti:items.length,fuori_budget:budget?items.filter(p=>Number(p.price)>budget).length:0};
   if(!items.length)return {id:x.id,...counted,errori:3};
   try{
-   const c=await claudeJson(env,{system:CHECK_SYSTEM,user:`<persona>${String(x.label||'').slice(0,400)}</persona>\n${sideText('A',items)}`,schema:CHECK_SCHEMA,effort:'low',maxTokens:3000});
+   const c=await claudeJson(env,{system:CHECK_SYSTEM,user:`<persona>${String(x.label||'').slice(0,400)}</persona>\n${sideText('A',items)}`,schema:CHECK_SCHEMA,effort:'low',maxTokens:3000,budget:'background'});
    const errori=c.eta_sbagliata+c.genere_sbagliato+c.doppioni+c.fuori_tema+c.accessorio+counted.fuori_budget+(3-items.length);
    return {id:x.id,...counted,...c,errori};
   }catch(e){return {id:x.id,error:e.message};}

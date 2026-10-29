@@ -135,7 +135,7 @@ const REVIEW_SCHEMA={type:'object',additionalProperties:false,required:['product
 async function reviewConcept(concept,rows,env){
  const idea={idea:concept.title,perche:concept.whyItWorks,nonAdattoA:concept.notFor||'',eta:concept.ages,genere:concept.gender,interessi:[...concept.interests,...concept.subinterests],prezzo:concept.price};
  const user=`<idea>${JSON.stringify(idea)}</idea>\n<prodotti>${JSON.stringify(rows.map(r=>({asin:r.asin,titolo:r.title,prezzo:r.price})))}</prodotti>`;
- const {products}=await claudeJson(env,{system:REVIEW_SYSTEM,user,schema:REVIEW_SCHEMA,effort:'low',maxTokens:3000});
+ const {products}=await claudeJson(env,{system:REVIEW_SYSTEM,user,schema:REVIEW_SCHEMA,effort:'low',maxTokens:3000,budget:'background'});
  const verdicts=new Map(products.map(p=>[p.asin,p]));
  await env.DB.batch(rows.filter(r=>verdicts.has(r.asin)).map(r=>env.DB.prepare('UPDATE library_products SET ai_verdict=?,ai_reason=? WHERE concept_id=? AND asin=?').bind(verdicts.get(r.asin).fits?1:0,String(verdicts.get(r.asin).reason).slice(0,160),concept.id,r.asin)));
  return products.filter(p=>!p.fits).length;

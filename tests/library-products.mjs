@@ -108,7 +108,8 @@ test('Claude reviews new listings once; rejected ones disappear, the daily ceili
   await runLibraryJob({...env(binding),ANTHROPIC_CLIENT:client},[idea],now+120000);
   assert.equal(prompts.length,1,'a reviewed listing is not sent again');
   const {reserveClaudeCall}=await import('../server/claude.mjs');
-  await assert.rejects(()=>reserveClaudeCall({DB:binding,CLAUDE_DAILY_CALL_LIMIT:1},now),/claude_quota_exhausted/,'the day already used its one call');
+  await assert.rejects(()=>reserveClaudeCall({DB:binding,CLAUDE_BACKGROUND_DAILY_CALL_LIMIT:1},now,'background'),/claude_quota_exhausted/,'the review used the day\'s one background call');
+  await reserveClaudeCall({DB:binding,CLAUDE_DAILY_CALL_LIMIT:1},now);
 });
 
 test('listings marked for adults never reach a children\'s idea', () => {
@@ -116,4 +117,14 @@ test('listings marked for adults never reach a children\'s idea', () => {
   assert.equal(productAllowed('Puzzle 3D legno per adulti, betta',kidsIdea),false);
   assert.equal(productAllowed('Puzzle 3D per bambini e adulti',kidsIdea),true);
   assert.equal(productAllowed('Puzzle 3D legno per adulti',{...kidsIdea,ages:['adult']}),true);
+});
+
+test('background work and visitors have separate daily Claude ceilings', async () => {
+  const {reserveClaudeCall}=await import('../server/claude.mjs');
+  const {binding}=database();const now=Date.now();
+  const env={DB:binding,CLAUDE_DAILY_CALL_LIMIT:2,CLAUDE_BACKGROUND_DAILY_CALL_LIMIT:1};
+  await reserveClaudeCall(env,now,'background');
+  await assert.rejects(()=>reserveClaudeCall(env,now,'background'),/claude_quota_exhausted/,'the background ceiling is reached');
+  await reserveClaudeCall(env,now);await reserveClaudeCall(env,now);
+  await assert.rejects(()=>reserveClaudeCall(env,now),/claude_quota_exhausted/,'visitors keep their own two calls');
 });
