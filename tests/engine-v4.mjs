@@ -72,3 +72,19 @@ test('a note about a cat keeps dog products out, and the other way round', async
   assert.equal(speciesAllowed('ha un cane')('Tiragraffi per gatti'),false);
   assert.equal(speciesAllowed('')('Tiragraffi per gatti'),true,'no note, no filter');
 });
+
+test('when Amazon refuses the account, the ideas still arrive as budget-filtered Amazon searches', async () => {
+  globalThis.fetch=async(url)=>String(url).includes('/auth/o2/token')?new Response(JSON.stringify({access_token:'t',expires_in:3600}),{status:200}):new Response(JSON.stringify({message:'Your account does not currently meet the eligibility requirements'}),{status:403});
+  const {binding}=database();const calls=[];
+  const plan={idee:[{posizione:'sicura',archetipo:'kit d\'inizio',idea:'Fascia porta telefono per correre',ricerca:'fascia braccio porta telefono corsa'},{posizione:'colpisce',archetipo:'strumento chiave',idea:'Calze tecniche',ricerca:'calze tecniche running'}]};
+  const client={beta:{messages:{create:async p=>{calls.push(p);const planning=p.system[0].text.includes('Proponi da 3');
+    return {stop_reason:'end_turn',usage:{},content:[{type:'text',text:JSON.stringify(planning?plan:{scelte:[{idea:2,titolo:'Calze tecniche da corsa',perche:'Niente vesciche.',biglietto:'Corri leggero.'},{idea:9,titolo:'x',perche:'x',biglietto:'x'},{idea:1,titolo:'Fascia porta telefono',perche:'Telefono fermo.',biglietto:'Primi chilometri.'}]})}]};}}}};
+  const body=await (await recommendV4(request({profile:{...profile,budget:40,minBudget:10},rejectedAsins:[]}),env(binding,client),concepts,{now:Date.now()})).json();
+  assert.equal(body.engine,'ai-v4-offline');assert.equal(body.offline,true);assert.equal(body.method,'research-20261007');
+  assert.deepEqual(body.products.map(p=>p.title),['Calze tecniche da corsa','Fascia porta telefono'],'an invented idea number is ignored');
+  const url=new URL(body.products[0].url);
+  assert.equal(url.hostname,'www.amazon.it');assert.equal(url.pathname,'/s');assert.equal(url.searchParams.get('k'),'calze tecniche running');
+  assert.equal(url.searchParams.get('rh'),'p_36:1000-4000');assert.equal(url.searchParams.get('tag'),'3gifts-21');
+  assert.equal(body.products[0].type,'amazonSearch');assert.equal(body.products[0].price,null);assert.equal(body.products[0].slotLabel,'Quella che colpisce');
+  assert.equal(calls.length,2,'one plan and one offline choice');assert.match(calls[1].system[0].text,/Oggi non vediamo i prodotti/);
+});

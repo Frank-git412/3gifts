@@ -341,3 +341,7 @@ Accessori per l’auto => Car accessories
 Accessori per la moto => Motorbike accessories
 Attrezzi e progetti per chi fa da sé => Tools and projects for do-it-yourselfers
 Utensili di qualità => Quality tools
+Prezzo e modello li scegli su Amazon => Choose the model and price on Amazon
+Ti portiamo su Amazon con la ricerca già filtrata per il tuo budget: scegli il modello che preferisci. => We take you to an Amazon search already filtered to your budget: pick the model you prefer.
+Scegli il modello su Amazon => Choose the model on Amazon
+Le idee sono scelte per questa persona; il modello e il prezzo li scegli su Amazon, con la ricerca già filtrata per il tuo budget. => The ideas are chosen for this person; you pick the model and price on Amazon, with the search already filtered to your budget.
