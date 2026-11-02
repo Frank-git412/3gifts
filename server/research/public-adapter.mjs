@@ -259,7 +259,7 @@ export async function publicRecommendation(request,env,{withCandidates=false}={}
    try{const observation=await searchAmazon(q,ctx,env,deadline,metrics);if(observation.partial){failures++;failureReasons.push('upstream_item_errors');}received+=observation.data.searchResult.items?.length||0;groups.push(normalizeCandidates(observation.data,q,ctx.plan.profile,normalization).map(p=>({...p,observedAt:observation.observedAt})));selected=select();
     const gained=selected.products.some(p=>!before.has(p.asin));observations.push({query:q,gained});trace.selectionChanged=gained;trace.selectedAfter=selected.products.length;
    }
-   catch(e){failures++;failureReasons.push(/^(upstream_\d{3}|invalid_response|ConfigurationMissing|AuthenticationFailed|daily_quota_exhausted|request_quota_exhausted|quota_storage_unavailable|quota_configuration_invalid)$/.test(e.message)?e.message:/timeout/i.test(e.message)?'timeout':'upstream_unavailable');stopReason='upstream_error';break;}
+   catch(e){failures++;failureReasons.push(/^(upstream_\d{3}(?::[A-Za-z]{3,40})?|invalid_response|ConfigurationMissing|AuthenticationFailed|daily_quota_exhausted|request_quota_exhausted|quota_storage_unavailable|quota_configuration_invalid)$/.test(e.message)?e.message:/timeout/i.test(e.message)?'timeout':'upstream_unavailable');stopReason='upstream_error';break;}
   }
   console.info(JSON.stringify({event:'amazon_recommendation',durationMs:Date.now()-started,searched,...metrics,stopReason,failureReasons}));
   // Exhaust the bounded search for age-documented ideas before allowing book alternatives.

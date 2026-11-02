@@ -77,7 +77,9 @@ export async function amazonApi(path,body,env,deadline=Date.now()+12000,metrics=
      const until=Date.now()+Math.max(1,retry)*1000;
      if(env.DB)await env.DB.prepare("UPDATE amazon_gate SET blocked_until=MAX(blocked_until,?) WHERE id='catalog'").bind(until).run();
     }
-    throw Error('upstream_'+response.status);
+    // Amazon's own error code (e.g. AssociateNotEligible, AccessDenied) tells an account problem from a credentials one.
+    const code=codes.find(c=>/^[A-Za-z]{3,40}$/.test(String(c||'')));
+    throw Error('upstream_'+response.status+(code?':'+code:''));
    }
    if(!data||(path==='searchItems'?!data.searchResult:!data.itemsResult))throw Error('invalid_response');
    // Do not cache partial/error payloads as complete catalogue observations.
