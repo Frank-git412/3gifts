@@ -9,7 +9,7 @@ Ultimo aggiornamento: 29 ottobre 2026.
 |---|---|---|---|
 | Cloudflare Workers Paid | fisso | 5,00 $ | Attivo dal 27/10/2026. Include 10 M richieste e 30 M ms di calcolo al mese: oggi ne usiamo una piccola frazione. |
 | Anthropic (Claude) | a consumo | 0–20 $ | Crediti prepagati: 20 $ caricati il 27/10/2026. Ricarica automatica spenta (confermato): a credito finito la spesa si ferma e il sito usa il motore senza AI. |
-| Amazon Creators API | gratuito | 0 $ | Resta gratuita finché l'account fa almeno 10 vendite idonee in 30 giorni. |
+| Amazon Creators API | gratuito | 0 $ | Resta disponibile finché l'account fa almeno 10 vendite idonee in 30 giorni. **Sospesa dal 1/11/2026** per mancanza di vendite: il sito usa la modalità senza API (idee di Claude + ricerca Amazon filtrata per budget, senza prezzi né foto) finché l'accesso non torna. |
 | GitHub | gratuito | 0 $ | |
 | Umami Cloud (analytics) | gratuito | 0 € | Piano gratuito. |
 | Domini Aruba (3gifts.it, 3regali.it) | annuale | 19 € all'anno (circa 1,60 € al mese) | Importo indicato da Francesco; data di rinnovo da annotare. |
@@ -60,3 +60,4 @@ Ultimo aggiornamento: 29 ottobre 2026.
 | 28/10/2026 | Claude, prova di v3 e v4 sui 40 profili e controllo errori | 2,68 $ | Misurato dal sito. Totale Claude del mese: 5,88 $ su 20 $ di crediti. |
 | 29/10/2026 | Claude, miglioramenti v4 e nuova prova sui 40 profili | 1,97 $ | Misurato dal sito. Totale Claude del mese: 7,96 $ su 20 $ di crediti. |
 | 29/10/2026 | Claude, prova della pianificazione v4 con Haiku e Sonnet sui 40 profili | circa 2,60 $ | Misurato dal sito (80 questionari: la scelta resta su Opus, ed è la parte che costa). Totale Claude del mese: 10,67 $ su 20 $ di crediti. |
+| 02/11/2026 | Claude, diagnosi del blocco Amazon e prova della modalità senza API | circa 0,20 $ | Misurato dal sito (17 chiamate, una parte per un controllo ripetuto per errore mentre il deploy era fallito). Totale Claude di novembre: circa 0,20 $. |
