@@ -2,25 +2,154 @@
   "note": "Pin prodotto v4 (novembre 2026). Immagini disegnate da 3Gifts, senza foto o prezzi Amazon. Link diretti con il tag affiliato.",
   "tag": "3gifts-21",
   "personas": {
-    "lei": {"label": "Per lei", "board": "Regali per lei", "bg": "#fff1e6", "accent": "#e8793a"},
-    "lui": {"label": "Per lui", "board": "Regali per lui", "bg": "#eef0fb", "accent": "#4a5bd4"},
-    "mamma": {"label": "Per la mamma", "board": "Regali per la mamma", "bg": "#fdeef3", "accent": "#c4467a"},
-    "papa": {"label": "Per il papà", "board": "Regali per il papà", "bg": "#eaf5ef", "accent": "#2f8a5f"},
-    "colleghi": {"label": "Secret Santa in ufficio", "board": "Secret Santa e colleghi", "bg": "#f3effd", "accent": "#6952e8"}
+    "lei": {
+      "label": "Per lei",
+      "board": "Regali per lei",
+      "bg": "#fff1e6",
+      "accent": "#e8793a"
+    },
+    "lui": {
+      "label": "Per lui",
+      "board": "Regali per lui",
+      "bg": "#eef0fb",
+      "accent": "#4a5bd4"
+    },
+    "mamma": {
+      "label": "Per la mamma",
+      "board": "Regali per la mamma",
+      "bg": "#fdeef3",
+      "accent": "#c4467a"
+    },
+    "papa": {
+      "label": "Per il papà",
+      "board": "Regali per il papà",
+      "bg": "#eaf5ef",
+      "accent": "#2f8a5f"
+    },
+    "colleghi": {
+      "label": "Secret Santa in ufficio",
+      "board": "Secret Santa e colleghi",
+      "bg": "#f3effd",
+      "accent": "#6952e8"
+    }
   },
   "products": [
-    {"id": "01-lei-candele-yankee", "persona": "lei", "asin": "B0BYJVZKLB", "icon": "candle", "title": "Set di candele profumate Yankee Candle", "line": "Dieci candeline e un portacandele: la casa profuma di Natale per settimane.", "keywords": "regali per lei, idee regalo natale, candele profumate, yankee candle"},
-    {"id": "02-lei-fiori-lego", "persona": "lei", "asin": "B08G4KJGG3", "icon": "flower", "title": "Bouquet di fiori LEGO", "line": "Fiori che non appassiscono: un pomeriggio di costruzioni e un vaso sempre bello.", "keywords": "regali per lei, lego fiori, lego botanicals, regalo originale"},
-    {"id": "03-lei-calendario-nivea", "persona": "lei", "asin": "B0H33JGZ8Z", "icon": "calendar", "title": "Calendario dell'Avvento beauty NIVEA", "line": "Una piccola coccola ogni mattina, dal primo dicembre a Natale.", "keywords": "calendario avvento beauty 2026, regali per lei, nivea, natale"},
-    {"id": "04-lui-fire-tv-stick", "persona": "lui", "asin": "B0CN41GMDK", "icon": "tv", "title": "Fire TV Stick 4K Select", "line": "Film, serie e partite in 4K su qualsiasi televisore, pronto in cinque minuti.", "keywords": "regali per lui, fire tv stick, idee regalo tecnologia, natale"},
-    {"id": "05-lui-stanley-quencher", "persona": "lui", "asin": "B0CNTT6QNP", "icon": "tumbler", "title": "Borraccia termica Stanley Quencher", "line": "Il ghiaccio resta per ore: la porta in palestra, in ufficio e in macchina.", "keywords": "regali per lui, stanley quencher, borraccia termica, regalo utile"},
-    {"id": "06-lui-philips-oneblade", "persona": "lui", "asin": "B0C815WY3Z", "icon": "razor", "title": "Philips OneBlade 360", "line": "Rade, rifinisce e regola la barba con un solo attrezzo.", "keywords": "regali per lui, regolabarba, philips oneblade, cura barba"},
-    {"id": "07-mamma-kindle", "persona": "mamma", "asin": "B0CFPXBJ9Y", "icon": "reader", "title": "Kindle Paperwhite", "line": "Migliaia di libri in un oggetto leggero, che si legge anche sotto il sole.", "keywords": "regali per la mamma, kindle paperwhite, ebook reader, regalo lettrice"},
-    {"id": "08-mamma-cornice-digitale", "persona": "mamma", "asin": "B09J1DZPJY", "icon": "frame", "title": "Cornice digitale WiFi", "line": "I figli mandano le foto dal telefono e lei le vede comparire in salotto.", "keywords": "regali per la mamma, cornice digitale, regalo nonni, foto di famiglia"},
-    {"id": "09-papa-termometro-meater", "persona": "papa", "asin": "B07DZB6XZ6", "icon": "thermometer", "title": "Termometro senza fili MEATER", "line": "La carne come la vuole lui: avvisa sul telefono quando è pronta.", "keywords": "regali per il papà, termometro carne, barbecue, meater"},
-    {"id": "10-papa-echo-dot", "persona": "papa", "asin": "B09B9CX8PW", "icon": "speaker", "title": "Echo Dot con Alexa", "line": "Musica, meteo e promemoria a voce, senza cercare il telefono.", "keywords": "regali per il papà, echo dot, alexa, regalo tecnologia"},
-    {"id": "11-colleghi-exploding-kittens", "persona": "colleghi", "asin": "B077L3RV2B", "icon": "cards", "title": "Exploding Kittens", "line": "Il gioco di carte più assurdo della pausa pranzo: si impara in due minuti.", "keywords": "secret santa, regali colleghi, exploding kittens, gioco di carte"},
-    {"id": "12-colleghi-uno-liars", "persona": "colleghi", "asin": "B0F979GZ8B", "icon": "cards", "title": "UNO Liar's", "line": "Il solito UNO, ma si può bluffare: perfetto per la cena di Natale dell'ufficio.", "keywords": "secret santa, regali colleghi, uno, gioco di carte natale"},
-    {"id": "13-colleghi-candele-yankee", "persona": "colleghi", "asin": "B09GV4VSBY", "icon": "candle", "title": "Tris di candele Yankee Candle", "line": "Piccolo, elegante e adatto a chiunque: il regalo per un collega che non sbaglia.", "keywords": "secret santa, regali colleghi, candele profumate, regalo sotto 20 euro"}
+    {
+      "id": "01-lei-candele-yankee",
+      "persona": "lei",
+      "asin": "B0BYJVZKLB",
+      "title": "Set di candele profumate Yankee Candle",
+      "line": "Dieci candeline e un portacandele: la casa profuma di Natale per settimane.",
+      "keywords": "regali per lei, idee regalo natale, candele profumate, yankee candle",
+      "hook": "La casa che profuma di Natale. Da subito."
+    },
+    {
+      "id": "02-lei-fiori-lego",
+      "persona": "lei",
+      "asin": "B08G4KJGG3",
+      "title": "Bouquet di fiori LEGO",
+      "line": "Un pomeriggio di costruzioni, poi un bouquet da tenere in vista tutto l'anno.",
+      "keywords": "regali per lei, lego fiori, lego botanicals, regalo originale",
+      "hook": "Fiori che non appassiscono mai."
+    },
+    {
+      "id": "03-lei-calendario-nivea",
+      "persona": "lei",
+      "asin": "B0H33JGZ8Z",
+      "title": "Calendario dell'Avvento beauty NIVEA",
+      "line": "Una piccola coccola ogni mattina, dal primo dicembre a Natale.",
+      "keywords": "calendario avvento beauty 2026, regali per lei, nivea, natale",
+      "hook": "24 mattine di sorprese, dal primo dicembre."
+    },
+    {
+      "id": "04-lui-fire-tv-stick",
+      "persona": "lui",
+      "asin": "B0CN41GMDK",
+      "title": "Fire TV Stick 4K Select",
+      "line": "Film, serie e partite in 4K su qualsiasi televisore, pronto in cinque minuti.",
+      "keywords": "regali per lui, fire tv stick, idee regalo tecnologia, natale",
+      "hook": "Trasforma qualsiasi TV in un cinema 4K."
+    },
+    {
+      "id": "05-lui-stanley-quencher",
+      "persona": "lui",
+      "asin": "B0CNTT6QNP",
+      "title": "Borraccia termica Stanley Quencher",
+      "line": "Il ghiaccio resta per ore: la porta in palestra, in ufficio e in macchina.",
+      "keywords": "regali per lui, stanley quencher, borraccia termica, regalo utile",
+      "hook": "La borraccia che vedi ovunque. Ora è sua."
+    },
+    {
+      "id": "06-lui-philips-oneblade",
+      "persona": "lui",
+      "asin": "B0C815WY3Z",
+      "title": "Philips OneBlade 360",
+      "line": "Rade, rifinisce e regola la barba con un solo attrezzo.",
+      "keywords": "regali per lui, regolabarba, philips oneblade, cura barba",
+      "hook": "Barba perfetta con un solo attrezzo."
+    },
+    {
+      "id": "07-mamma-kindle",
+      "persona": "mamma",
+      "asin": "B0CFPXBJ9Y",
+      "title": "Kindle Paperwhite",
+      "line": "Migliaia di libri in un oggetto leggero, che si legge anche sotto il sole.",
+      "keywords": "regali per la mamma, kindle paperwhite, ebook reader, regalo lettrice",
+      "hook": "Una libreria intera in una mano."
+    },
+    {
+      "id": "08-mamma-cornice-digitale",
+      "persona": "mamma",
+      "asin": "B09J1DZPJY",
+      "title": "Cornice digitale WiFi",
+      "line": "I figli mandano le foto dal telefono e lei le vede comparire in salotto.",
+      "keywords": "regali per la mamma, cornice digitale, regalo nonni, foto di famiglia",
+      "hook": "Le foto dei figli, in salotto, appena scattate."
+    },
+    {
+      "id": "09-papa-termometro-meater",
+      "persona": "papa",
+      "asin": "B07DZB6XZ6",
+      "title": "Termometro senza fili MEATER",
+      "line": "La carne come la vuole lui: avvisa sul telefono quando è pronta.",
+      "keywords": "regali per il papà, termometro carne, barbecue, meater",
+      "hook": "Mai più carne troppo cotta."
+    },
+    {
+      "id": "10-papa-echo-dot",
+      "persona": "papa",
+      "asin": "B09B9CX8PW",
+      "title": "Echo Dot con Alexa",
+      "line": "Musica, meteo e promemoria a voce, senza cercare il telefono.",
+      "keywords": "regali per il papà, echo dot, alexa, regalo tecnologia",
+      "hook": "Basta dirlo: «Alexa, metti la musica»."
+    },
+    {
+      "id": "11-colleghi-exploding-kittens",
+      "persona": "colleghi",
+      "asin": "B077L3RV2B",
+      "title": "Exploding Kittens",
+      "line": "Il gioco di carte più assurdo della pausa pranzo: si impara in due minuti.",
+      "keywords": "secret santa, regali colleghi, exploding kittens, gioco di carte",
+      "hook": "Il gioco che fa urlare tutto l'ufficio."
+    },
+    {
+      "id": "12-colleghi-uno-liars",
+      "persona": "colleghi",
+      "asin": "B0F979GZ8B",
+      "title": "UNO Liar's",
+      "line": "Il solito UNO, ma si può bluffare: perfetto per la cena di Natale dell'ufficio.",
+      "keywords": "secret santa, regali colleghi, uno, gioco di carte natale",
+      "hook": "Il solito UNO. Ma con le bugie."
+    },
+    {
+      "id": "13-colleghi-candele-yankee",
+      "persona": "colleghi",
+      "asin": "B09GV4VSBY",
+      "title": "Tris di candele Yankee Candle",
+      "line": "Tre candele profumate in confezione: piccolo, elegante e adatto a chiunque.",
+      "keywords": "secret santa, regali colleghi, candele profumate, regalo sotto 20 euro",
+      "hook": "Il regalo per il collega che non sbaglia mai."
+    }
   ]
 }
