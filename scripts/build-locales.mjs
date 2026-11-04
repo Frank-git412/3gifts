@@ -49,7 +49,7 @@ function decorate(html,file,en) {
  const depth=file.split("/").length-1, asset="../".repeat(depth+(en?1:0));
  const other=path.posix.relative(path.posix.dirname((en?"en/":"")+file),(en?"":"en/")+file);
  const link='<a class="language-switch" href="'+other+'" hreflang="'+(en?"it":"en-US")+'" lang="'+(en?"it":"en")+'" title="'+(en?"Passa a Italiano":"Switch to English (United States)")+'"><span aria-hidden="true">'+(en?"🇮🇹":"🇺🇸")+'</span><span>'+(en?"IT":"EN")+'</span><span class="sr-only">'+(en?" — Italiano":" — English (United States)")+'</span></a>';
- if(file==="index.html") html=html.replace(/(<button class="quiet" id="howBtn"[^>]*>[\s\S]*?<\/button>)/,'<div class="topbar-actions">$1'+link+'</div>');
+ if(file==="index.html") html=html.replace(/((?:<button class="quiet favorites-btn"[\s\S]*?<\/button>\s*)?<button class="quiet" id="howBtn"[^>]*>[\s\S]*?<\/button>)/,'<div class="topbar-actions">$1'+link+'</div>');
  else html=html.replace(/<span class="section-name">[^<]*<\/span>/,link);
  const clean=file==="index.html"?"":file.replace(/\.html$/,"");
  const canonical="https://3gifts.it/"+(en?"en/":"")+clean;

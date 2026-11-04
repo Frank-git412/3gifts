@@ -131,3 +131,36 @@
 @keyframes toss-high{0%{opacity:1;transform:translate(0,0) rotate(0)}50%{transform:translate(-20px,-70px) rotate(200deg)}90%{opacity:1}100%{opacity:0;transform:translate(-64px,44px) rotate(400deg)}}
 @keyframes toss-right{0%{opacity:1;transform:translate(0,0) rotate(0)}45%{transform:translate(34px,-52px) rotate(220deg)}90%{opacity:1}100%{opacity:0;transform:translate(52px,42px) rotate(440deg)}}
 @media (prefers-reduced-motion:reduce){.search-scene .runner{animation:none;opacity:0}.search-scene .leg-a,.search-scene .leg-b,.search-scene .flying,.search-scene .dust{animation:none}.search-scene .kick,.search-scene .dust,.search-scene .hat-dropped{animation:none;opacity:1}}
+
+/* Countdown to the next gift occasions, above the header. */
+.holiday-banner{display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:center;align-items:center;padding:9px 16px;background:var(--ink);color:#fff;font-size:.88rem;text-decoration:none;text-align:center}
+.holiday-banner[hidden]{display:none}
+.holiday-banner strong{color:var(--peach);font-weight:700;white-space:nowrap}
+.holiday-banner:hover strong,.holiday-banner:focus-visible strong{text-decoration:underline}
+/* Saved gifts list. */
+.favorites-btn{display:inline-flex;align-items:center;gap:6px}
+.favorites-btn span[aria-hidden]{color:var(--violet)}
+.favorites-btn.has-items span[aria-hidden]{color:#e2463f}
+.favorites-count{min-width:1.4em;padding:0 6px;border-radius:999px;background:var(--line);font-size:.78rem;font-weight:700;text-align:center;font-variant-numeric:tabular-nums}
+.favorites-btn.has-items .favorites-count{background:#e2463f;color:#fff}
+.card-top-right{display:inline-flex;align-items:center;gap:8px}
+.save-gift{font:inherit;font-size:1.25rem;line-height:1;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:#fff;color:#e2463f;cursor:pointer;display:inline-grid;place-items:center}
+.save-gift[aria-pressed="true"]{background:#fdecec;border-color:#e2463f}
+.save-gift:focus-visible{outline:3px solid var(--violet);outline-offset:2px}
+.favorites-list{list-style:none;margin:12px 0;padding:0;display:grid;gap:12px}
+.favorites-list li{display:grid;gap:8px;padding:12px 14px;border:1px solid var(--line);border-radius:14px}
+.favorites-list small{display:block;color:var(--violet);font-weight:700;font-size:.78rem}
+.favorites-list p{margin:4px 0 0;color:var(--muted);font-size:.9rem}
+.favorites-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.favorites-actions a{font-weight:700;color:var(--violet2)}
+.favorites-actions button{font:inherit;background:none;border:0;color:var(--muted);text-decoration:underline;cursor:pointer;padding:0}
+.favorites-privacy{font-size:.8rem;color:var(--muted)}
+/* One-tap budget change on the results. */
+.budget-switch{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;margin:0 0 18px;font-size:.9rem;color:var(--muted)}
+.budget-switch[hidden]{display:none}
+.budget-chips{display:flex;flex-wrap:wrap;gap:6px}
+.budget-chips button{font:inherit;font-size:.85rem;font-weight:600;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;font-variant-numeric:tabular-nums}
+.budget-chips button[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink);cursor:default}
+.budget-chips button:focus-visible{outline:3px solid var(--violet);outline-offset:2px}
+/* On phones the header keeps only the list button, as a compact heart with the count. */
+@media(max-width:600px){.topbar-actions .quiet.favorites-btn{display:inline-flex;padding:6px 10px}.favorites-btn .favorites-label{display:none}}

@@ -390,9 +390,71 @@ function renderProductCards(selected,profile,reasonIntro=""){
     const storeClass=p.store.toLowerCase().replace(/[^a-z0-9]+/g,"-");
     const shortName=shortProductName(p),fullName=displayText(p.name);
     const ageReview=p.ageVerification==="required"?'<p class="age-review-notice"><strong>Età consigliata da verificare</strong><br>La scheda non indica chiaramente l’età consigliata. Controllala su Amazon o sul sito dell’editore prima dell’acquisto.</p>':"";
-    return `<article class="gift-card" data-no-image="${!safeUrl(p.imageUrl,"")}"><div class="gift-visual">${productVisual(p,url)}</div><div class="gift-body"><div class="card-top"><span class="match">${esc(p.ageVerification==="required"?"Idea da verificare":p.slotLabel||["La nostra scelta","Ottima alternativa","Un’idea diversa"][i])}</span><span class="store-badge ${storeClass}">${esc(p.store)}</span></div><h3 title="${esc(fullName)}">${esc(shortName)}</h3>${ageReview}<p>${esc(reason)}</p>${p.cardMessage?`<p class="card-message"><span>Per il biglietto:</span> «${esc(p.cardMessage)}» <button type="button" class="copy-message" data-message="${esc(p.cardMessage)}">Copia</button></p>`:""}${p.amazonPrice?"":`<p>${esc(conditions)}</p>`}<div class="gift-meta"><strong>${esc(priceText)}</strong>${p.amazonPrice?`<small class="price-time">${esc(priceTime(p))}</small>`:""}${delivery?`<span class="delivery">${esc(delivery)}</span>`:""}</div><a href="${esc(url)}" target="_blank" rel="sponsored nofollow noopener noreferrer" data-product="${esc(fullName)}" data-position="${i+1}" data-area="${esc(p.tags[0]||"")}">${search?"Scegli il modello su Amazon":verified?"Verifica l’offerta sul venditore":"Verifica prezzo e opzioni"}</a>${p.imageUrl||search?"":'<span class="product-photo-note">Foto disponibili sulla pagina del venditore.</span>'}<div class="card-feedback" role="group" aria-label="Lo userebbe davvero?"><span>Lo userebbe davvero?</span><button type="button" data-vote="up" data-position="${i+1}" data-area="${esc(p.tags[0]||"")}" aria-pressed="false" aria-label="Sì, lo userebbe">👍</button><button type="button" data-vote="down" data-position="${i+1}" data-area="${esc(p.tags[0]||"")}" aria-pressed="false" aria-label="No, non lo userebbe">👎</button></div></div></article>`;
+    return `<article class="gift-card" data-no-image="${!safeUrl(p.imageUrl,"")}"><div class="gift-visual">${productVisual(p,url)}</div><div class="gift-body"><div class="card-top"><span class="match">${esc(p.ageVerification==="required"?"Idea da verificare":p.slotLabel||["La nostra scelta","Ottima alternativa","Un’idea diversa"][i])}</span><span class="card-top-right"><button type="button" class="save-gift" data-index="${i}" aria-pressed="${isFavorite(p)}" aria-label="${isFavorite(p)?"Togli dalla lista":"Salva nella lista"}">${isFavorite(p)?"♥":"♡"}</button><span class="store-badge ${storeClass}">${esc(p.store)}</span></span></div><h3 title="${esc(fullName)}">${esc(shortName)}</h3>${ageReview}<p>${esc(reason)}</p>${p.cardMessage?`<p class="card-message"><span>Per il biglietto:</span> «${esc(p.cardMessage)}» <button type="button" class="copy-message" data-message="${esc(p.cardMessage)}">Copia</button></p>`:""}${p.amazonPrice?"":`<p>${esc(conditions)}</p>`}<div class="gift-meta"><strong>${esc(priceText)}</strong>${p.amazonPrice?`<small class="price-time">${esc(priceTime(p))}</small>`:""}${delivery?`<span class="delivery">${esc(delivery)}</span>`:""}</div><a href="${esc(url)}" target="_blank" rel="sponsored nofollow noopener noreferrer" data-product="${esc(fullName)}" data-position="${i+1}" data-area="${esc(p.tags[0]||"")}">${search?"Scegli il modello su Amazon":verified?"Verifica l’offerta sul venditore":"Verifica prezzo e opzioni"}</a>${p.imageUrl||search?"":'<span class="product-photo-note">Foto disponibili sulla pagina del venditore.</span>'}<div class="card-feedback" role="group" aria-label="Lo userebbe davvero?"><span>Lo userebbe davvero?</span><button type="button" data-vote="up" data-position="${i+1}" data-area="${esc(p.tags[0]||"")}" aria-pressed="false" aria-label="Sì, lo userebbe">👍</button><button type="button" data-vote="down" data-position="${i+1}" data-area="${esc(p.tags[0]||"")}" aria-pressed="false" aria-label="No, non lo userebbe">👎</button></div></div></article>`;
   }).join("");bindProductImageFallbacks();renderShare(selected);
 }
+// The list of saved gifts lives only in this browser (local storage): never sent to 3Gifts or anyone else.
+const FAVORITES_KEY="3gifts-lista",FAVORITES_MAX=30;
+function readFavorites(){try{const list=JSON.parse(localStorage.getItem(FAVORITES_KEY)||"[]");return Array.isArray(list)?list.filter(x=>x&&typeof x.key==="string"&&typeof x.name==="string"&&typeof x.url==="string").slice(0,FAVORITES_MAX):[]}catch{return[]}}
+function writeFavorites(list){try{localStorage.setItem(FAVORITES_KEY,JSON.stringify(list.slice(0,FAVORITES_MAX)))}catch{}updateFavoritesCount()}
+function favoriteKey(p){return String(p.asin||p.directUrl||p.url||p.name)}
+function isFavorite(p){const key=favoriteKey(p);return readFavorites().some(x=>x.key===key)}
+function updateFavoritesCount(){const n=readFavorites().length,c=$("#favoritesCount");if(c)c.textContent=String(n);$("#favoritesBtn")?.classList.toggle("has-items",n>0)}
+function toggleFavorite(p){
+  const key=favoriteKey(p),list=readFavorites(),at=list.findIndex(x=>x.key===key);
+  if(at>=0){list.splice(at,1);writeFavorites(list);return false}
+  const url=storeUrl(p);if(!url)return false;
+  list.unshift({key,name:shortProductName(p),url,label:String(p.slotLabel||""),note:displayText(p.aiReason||p.why||"").slice(0,160),savedAt:new Date().toISOString()});
+  writeFavorites(list);track("favorite_saved");return true;
+}
+document.addEventListener("click",e=>{const b=e.target.closest(".save-gift");if(!b)return;const p=displayedProducts[Number(b.dataset.index)];if(!p)return;const saved=toggleFavorite(p);b.setAttribute("aria-pressed",String(saved));b.textContent=saved?"♥":"♡";b.setAttribute("aria-label",saved?"Togli dalla lista":"Salva nella lista")});
+function renderFavorites(){
+  const list=readFavorites();
+  if(!list.length)return '<h2>La tua lista</h2><p>È vuota per ora. Tocca il cuore ♡ su una proposta per salvarla qui e confrontarla con calma.</p><p class="favorites-privacy">La lista resta solo su questo dispositivo.</p>';
+  return '<h2>La tua lista</h2><p>'+list.length+(list.length===1?' regalo salvato.':' regali salvati.')+'</p><ul class="favorites-list">'+list.map(x=>`<li><div><strong>${esc(x.name)}</strong>${x.label?`<small>${esc(x.label)}</small>`:""}${x.note?`<p>${esc(x.note)}</p>`:""}</div><div class="favorites-actions"><a href="${esc(RULES.httpsUrl(x.url)||"#")}" target="_blank" rel="sponsored nofollow noopener noreferrer">Apri su Amazon</a><button type="button" data-remove-favorite="${esc(x.key)}">Togli</button></div></li>`).join("")+'</ul><p class="favorites-privacy">La lista resta solo su questo dispositivo. Link affiliati Amazon.</p>';
+}
+function openFavorites(){const dialog=$("#infoDialog"),content=$("#dialogContent");if(!dialog||!content)return;content.innerHTML=renderFavorites();if(!dialog.open)dialog.showModal()}
+$("#favoritesBtn")?.addEventListener("click",openFavorites);
+document.addEventListener("click",e=>{const b=e.target.closest("[data-remove-favorite]");if(!b)return;const key=b.dataset.removeFavorite;writeFavorites(readFavorites().filter(x=>x.key!==key));openFavorites();$$(".save-gift").forEach(btn=>{const p=displayedProducts[Number(btn.dataset.index)];if(p&&favoriteKey(p)===key){btn.setAttribute("aria-pressed","false");btn.textContent="♡";btn.setAttribute("aria-label","Salva nella lista")}})});
+updateFavoritesCount();
+
+// One tap on a budget repeats the same search with that budget.
+const BUDGET_STEPS=[20,30,50,75,100,150,250];
+function renderBudgetSwitch(profile){
+  const box=$("#budgetSwitch"),chips=$("#budgetChips");if(!box||!chips)return;
+  const current=Number(profile.budget);
+  chips.innerHTML=BUDGET_STEPS.map(v=>`<button type="button" data-budget-switch="${v}" aria-pressed="${v===current}">${v===20?"fino a 20 €":v+" €"}</button>`).join("");
+  box.hidden=false;
+}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-budget-switch]");if(!b||resultsBusy||b.getAttribute("aria-pressed")==="true")return;const value=Number(b.dataset.budgetSwitch);if(!RULES.validBudget(value))return;$("#budget").value=String(value);syncBudget($("#budget"));track("budget_switched");showResults(...lastSearchArgs)});
+
+// Countdown to the next gift occasions, shown above the page.
+function easterSunday(y){const a=y%19,b=Math.floor(y/100),c=y%100,d=Math.floor(b/4),e=b%4,f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),h=(19*a+b-d-g+15)%30,i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7,m=Math.floor((a+11*h+22*l)/451),month=Math.floor((h+l-7*m+114)/31),day=((h+l-7*m+114)%31)+1;return new Date(y,month-1,day)}
+function nthWeekday(y,month,weekday,n){const d=new Date(y,month,1);d.setDate(1+((weekday-d.getDay()+7)%7)+7*(n-1));return d}
+function lastWeekday(y,month,weekday){const d=new Date(y,month+1,0);d.setDate(d.getDate()-((d.getDay()-weekday+7)%7));return d}
+function giftOccasions(y){return[
+  {key:"blackfriday",it:"al Black Friday",en:"Black Friday",emoji:"🛍️",date:lastWeekday(y,10,5),window:21},
+  {key:"christmas",it:"a Natale",en:"Christmas",emoji:"🎄",date:new Date(y,11,25),window:60,occasion:"christmas"},
+  {key:"valentine",it:"a San Valentino",en:"Valentine's Day",emoji:"❤️",date:new Date(y,1,14),window:30},
+  {key:"womensday",it:"alla Festa della donna",en:"Women's Day",emoji:"🌼",date:new Date(y,2,8),window:21},
+  {key:"fathersday",it:"alla Festa del papà",en:"Father's Day",emoji:"👔",date:new Date(y,2,19),window:30},
+  {key:"easter",it:"a Pasqua",en:"Easter",emoji:"🐣",date:easterSunday(y),window:30},
+  {key:"mothersday",it:"alla Festa della mamma",en:"Mother's Day",emoji:"💐",date:nthWeekday(y,4,0,2),window:30}
+]}
+function upcomingOccasions(now=new Date()){
+  const today=new Date(now.getFullYear(),now.getMonth(),now.getDate());
+  return [...giftOccasions(today.getFullYear()),...giftOccasions(today.getFullYear()+1)].map(o=>({...o,days:Math.round((o.date-today)/86400000)})).filter(o=>o.days>=0&&o.days<=o.window).sort((a,b)=>a.days-b.days).slice(0,2);
+}
+function renderHolidayBanner(now=new Date()){
+  const banner=$("#holidayBanner");if(!banner)return;const list=upcomingOccasions(now);if(!list.length){banner.hidden=true;return}
+  const en=document.documentElement.lang==="en-US";
+  const part=o=>en?(o.days===0?`${o.emoji} ${o.en} is today`:`${o.emoji} ${o.days} ${o.days===1?"day":"days"} to ${o.en}`):(o.days===0?`${o.emoji} Oggi: ${o.it.replace(/^(al|alla|a) /,"")}`:`${o.emoji} ${o.days===1?"Manca 1 giorno":"Mancano "+o.days+" giorni"} ${o.it}`);
+  banner.innerHTML=`<span>${esc(list.map(part).join(" · "))}</span><strong>${en?"Find the gift in 2 minutes →":"Trova il regalo in 2 minuti →"}</strong>`;
+  banner.dataset.holiday=list[0].key;banner.dataset.occasion=list.find(o=>o.occasion)?.occasion||"";banner.hidden=false;
+}
+$("#holidayBanner")?.addEventListener("click",e=>{e.preventDefault();const b=e.currentTarget;track("holiday_banner_click",{holiday:b.dataset.holiday||""});const occasion=b.dataset.occasion&&$(`input[name="occasion"][value="${b.dataset.occasion}"]`);if(occasion){occasion.checked=true;occasion.dispatchEvent(new Event("change",{bubbles:true}))}$("#startQuestionnaire")?.click()});
+renderHolidayBanner();
+
 function priceTime(p){const en=document.documentElement.lang==='en-US';return (en?'Updated ':'Aggiornato ')+new Date(p.amazonCheckedAt).toLocaleString(en?'en-GB':'it-IT',{dateStyle:'short',timeStyle:'short'})}
 // Shares a 3gifts.it page with the same ideas (never an Amazon link, never the answers or the note).
 function renderShare(selected){
@@ -455,7 +517,7 @@ async function showResults(allowUnverified=false,allowTypeBroadening=false,allow
     $("#zeroRecovery").hidden=true;$("#refinementForm").hidden=true;
     $("#resultsEyebrow").textContent=resultProfile.allowUnverified?"Le 3 idee scelte per te":"Le 3 offerte più adatte e verificate";
     if(selected.length<3)$("#resultsEyebrow").textContent="Le proposte disponibili";
-    renderProductCards(selected,resultProfile);setResultSummary(resultProfile);rememberProducts(selected);
+    renderProductCards(selected,resultProfile);setResultSummary(resultProfile);rememberProducts(selected);renderBudgetSwitch(resultProfile);
     const exploring=resultProfile.journey==="explore";$("#categoryExploration").hidden=!exploring;$("#productSelection").hidden=exploring;$("#revealProducts").hidden=false;
     if(exploring){const category=categoryFor(resultProfile);$("#categoryIcon").textContent=category.icon;$("#categoryTitle").textContent=category.title;$("#categoryReason").textContent=category.reason;$("#categoryOptions").innerHTML=category.options.map((item,i)=>`<div><span>0${i+1}</span><strong>${esc(item)}</strong></div>`).join("")}
     $("#refinementTitle").textContent="Nessuno ti ha convinto?";$("#refinementText").textContent="Aiutaci a capire meglio: bastano altre 2–3 domande.";$("#refineBtn").hidden=false;$("#refineBtn").textContent="Non sono convinto";openResultsShell();if(!exploring)track("recommendations_viewed");
@@ -570,7 +632,7 @@ document.addEventListener("click",e=>{const a=e.target.closest("a[data-product]"
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="hidden")pauseStepTiming();else resumeStepTiming()});
 window.addEventListener("pagehide",()=>{if(!$(".finder").hidden)trackStepTiming("exit")});
 window.addEventListener("pageshow",event=>{if(event.persisted&&!$(".finder").hidden){stepEnteredAt=null;stepActiveMs=0;stepTimerOpen=true;resumeStepTiming()}});
- const analyticsFields={questionnaire_started:["visible_steps"],questionnaire_step_completed:["step_key","position","visible_steps","areas","area_count","subcategory_count"],questionnaire_step_timing:["step_key","seconds","direction","position","visible_steps"],questionnaire_completed:[],recommendation_zero_results:["candidate_count"],zero_results_recovery:["choice"],recommendations_viewed:[],refinement_started:["round"],card_feedback:["position","vote","area","engine"],recommendations_refined:["round","reason"],external_link_click:["position","area","engine"],results_shared:["channel"],product_image_error:[]};
+ const analyticsFields={questionnaire_started:["visible_steps"],questionnaire_step_completed:["step_key","position","visible_steps","areas","area_count","subcategory_count"],questionnaire_step_timing:["step_key","seconds","direction","position","visible_steps"],questionnaire_completed:[],recommendation_zero_results:["candidate_count"],zero_results_recovery:["choice"],recommendations_viewed:[],refinement_started:["round"],card_feedback:["position","vote","area","engine"],recommendations_refined:["round","reason"],favorite_saved:[],budget_switched:[],holiday_banner_click:["holiday"],external_link_click:["position","area","engine"],results_shared:["channel"],product_image_error:[]};
  function track(event,data={}){
    if(!window.GiftsPrivacy?.hasAnalyticsConsent()||!window.umami?.track||!Object.hasOwn(analyticsFields,event))return;
    const safe=Object.fromEntries(analyticsFields[event].filter(key=>typeof data[key]==="string"||typeof data[key]==="number").map(key=>[key,data[key]]));

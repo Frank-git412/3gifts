@@ -455,3 +455,7 @@ Legno e restauro => Woodwork and restoration
 Lavoretti di casa => Home repairs
 Strumenti musicali => Musical instruments
 Meditazione e yoga => Meditation and yoga
+La mia lista dei regali salvati => My list of saved gifts
+Cambia budget: => Change budget:
+Cambia il budget e rifai la ricerca => Change the budget and search again
+Lista => List

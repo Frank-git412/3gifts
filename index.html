@@ -26,6 +26,7 @@
 </head>
 <body>
   <noscript><p class="noscript-notice">Per usare il questionario attiva JavaScript nel browser. Puoi comunque <a href="guide.html">leggere le guide ai regali</a>.</p></noscript>
+  <a class="holiday-banner" id="holidayBanner" href="#questionnaire" hidden></a>
   <header class="topbar">
     <div class="menu-wrap">
       <button class="menu-trigger" id="menuBtn" type="button" aria-label="Apri il menu" aria-expanded="false" aria-controls="siteMenu"><span>•••</span></button>
@@ -36,6 +37,7 @@
       </nav>
     </div>
     <a class="brand" href="#" aria-label="3Gifts, torna all'inizio"><span>3</span> Gifts</a>
+    <button class="quiet favorites-btn" id="favoritesBtn" type="button" aria-label="La mia lista dei regali salvati"><span aria-hidden="true">♥</span><span class="favorites-label">Lista</span><span class="favorites-count" id="favoritesCount">0</span></button>
     <button class="quiet" id="howBtn" type="button">Come funziona</button>
   </header>
 
@@ -276,6 +278,7 @@
       </div>
       <p class="result-summary" id="resultSummary"></p>
       <div class="recommendation-status" id="recommendationStatus"></div>
+      <div class="budget-switch" id="budgetSwitch" role="group" aria-label="Cambia il budget e rifai la ricerca" hidden><span>Cambia budget:</span><div class="budget-chips" id="budgetChips"></div></div>
       <section class="zero-recovery" id="zeroRecovery" hidden aria-labelledby="zeroRecoveryTitle">
         <span class="zero-recovery-icon" aria-hidden="true">↻</span>
         <div>
