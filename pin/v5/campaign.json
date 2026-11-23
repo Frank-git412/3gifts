@@ -1,0 +1,243 @@
+{
+  "note": "Pin e post v5 (novembre 2026): campagna Black Friday e Natale. Portano al questionario su 3gifts.it, non ad Amazon: sono adatti anche alle inserzioni. Nessuna foto o prezzo Amazon; i budget sono quelli che il questionario filtra.",
+  "link": "https://3gifts.it/",
+  "campaign": "natale2026",
+  "themes": {
+    "notte": {
+      "bg": "#15122b",
+      "ink": "#ffffff",
+      "muted": "#c9c4e6",
+      "accent": "#ffb37d",
+      "box": [
+        "#ffb37d",
+        "#8f7cf5",
+        "#ff7aa8"
+      ]
+    },
+    "pesca": {
+      "bg": "#fff1e6",
+      "ink": "#17132f",
+      "muted": "#5d5873",
+      "accent": "#e8793a",
+      "box": [
+        "#e8793a",
+        "#6952e8",
+        "#ffb37d"
+      ]
+    },
+    "lilla": {
+      "bg": "#f3effd",
+      "ink": "#17132f",
+      "muted": "#5d5873",
+      "accent": "#6952e8",
+      "box": [
+        "#6952e8",
+        "#ffb37d",
+        "#c4467a"
+      ]
+    },
+    "rosa": {
+      "bg": "#fdeef3",
+      "ink": "#17132f",
+      "muted": "#5d5873",
+      "accent": "#c4467a",
+      "box": [
+        "#c4467a",
+        "#6952e8",
+        "#ffb37d"
+      ]
+    },
+    "verde": {
+      "bg": "#eaf5ef",
+      "ink": "#17132f",
+      "muted": "#5d5873",
+      "accent": "#2f8a5f",
+      "box": [
+        "#2f8a5f",
+        "#ffb37d",
+        "#6952e8"
+      ]
+    },
+    "blu": {
+      "bg": "#eef0fb",
+      "ink": "#17132f",
+      "muted": "#5d5873",
+      "accent": "#4a5bd4",
+      "box": [
+        "#4a5bd4",
+        "#ffb37d",
+        "#c4467a"
+      ]
+    }
+  },
+  "pins": [
+    {
+      "id": "01-black-friday",
+      "theme": "notte",
+      "tag": "Black Friday",
+      "headline": "Black Friday senza scroll infinito.",
+      "sub": "Dici per chi è e quanto vuoi spendere. Ti diamo tre idee regalo, non tremila.",
+      "board": "Regali di Natale 2026",
+      "title": "Black Friday: tre idee regalo invece di tremila",
+      "description": "Il Black Friday è pieno di offerte e vuoto di idee. Su 3gifts.it rispondi a poche domande (per chi è, budget, passioni) e ricevi tre idee regalo su misura. Gratis, senza registrazione.",
+      "keywords": "black friday 2026, idee regalo natale, regali natale, black friday regali",
+      "publish": "2026-11-23T20:00:00",
+      "instagram": "Il Black Friday è pieno di offerte e vuoto di idee. 🛍️\n\nInvece di scorrere tremila prodotti, rispondi a poche domande: per chi è, quanto vuoi spendere, cosa gli piace. 3Gifts ti propone tre idee regalo. Solo tre, scelte per quella persona.\n\nGratis, senza registrazione. Link in bio 🎁\n\n#blackfriday #blackfriday2026 #ideeregalo #regalidinatale #natale2026 #regalinatale #shoppingnatale",
+      "facebook": "Il Black Friday è pieno di offerte e vuoto di idee. 🛍️\n\nInvece di scorrere tremila prodotti, rispondi a poche domande: per chi è, quanto vuoi spendere, cosa gli piace. 3Gifts ti propone tre idee regalo. Solo tre, scelte per quella persona.\n\n👉 Prova gratis: https://3gifts.it"
+    },
+    {
+      "id": "04-secret-santa",
+      "theme": "lilla",
+      "tag": "Secret Santa · fino a 20 €",
+      "headline": "Ti è uscito il collega che conosci meno.",
+      "sub": "Tre idee per il Secret Santa in ufficio, sotto i 20 €.",
+      "board": "Secret Santa e colleghi",
+      "title": "Secret Santa in ufficio: tre idee sotto 20 euro",
+      "description": "Il collega che conosci appena, il budget fisso, la scadenza vicina. Su 3gifts.it trovi tre idee regalo per il Secret Santa in due minuti. Gratis, senza registrazione.",
+      "keywords": "secret santa ufficio, regali colleghi, regali sotto 20 euro, secret santa idee",
+      "publish": "2026-11-24T20:00:00",
+      "instagram": "Ti è uscito il collega che conosci meno. Budget: 20 €. Scadenza: venerdì. 😅\n\nRispondi a poche domande su di lui o lei e ricevi tre idee per il Secret Santa in ufficio.\n\nTagga il collega che organizza 👇 Link in bio 🎁\n\n#secretsanta #secretsantaufficio #regalicolleghi #ideeregalo #regalidinatale #natale2026",
+      "facebook": "Ti è uscito il collega che conosci meno. Budget: 20 €. Scadenza: venerdì. 😅\n\nRispondi a poche domande su di lui o lei e ricevi tre idee per il Secret Santa in ufficio.\n\n👉 Prova gratis: https://3gifts.it"
+    },
+    {
+      "id": "02-per-lei-sotto-30",
+      "theme": "pesca",
+      "tag": "Per lei · fino a 30 €",
+      "headline": "Non sai cosa regalarle?",
+      "sub": "Tre idee pensate per lei, dentro il tuo budget. In due minuti.",
+      "board": "Regali per lei",
+      "title": "Regali per lei sotto 30 euro: tre idee su misura",
+      "description": "Mamma, sorella, amica o compagna: rispondi a poche domande su di lei e 3gifts.it ti propone tre idee regalo entro il budget che scegli. Gratis, senza registrazione.",
+      "keywords": "regali per lei, regali per lei sotto 30 euro, idee regalo donna, regali natale lei",
+      "publish": "2026-11-25T20:00:00",
+      "instagram": "Mamma, sorella, amica, compagna: per lei, con meno di 30 €. 💛\n\nDicci com'è e cosa ama, scegli il budget. Ti proponiamo tre idee regalo che ci stanno dentro.\n\nProva gratis, link in bio 🎁\n\n#regaliperlei #ideeregalo #regalidinatale #regalisotto30euro #natale2026 #ideeregalodonna",
+      "facebook": "Mamma, sorella, amica, compagna: per lei, con meno di 30 €. 💛\n\nDicci com'è e cosa ama, scegli il budget. Ti proponiamo tre idee regalo che ci stanno dentro.\n\n👉 Prova gratis: https://3gifts.it"
+    },
+    {
+      "id": "03-per-lui-sotto-30",
+      "theme": "blu",
+      "tag": "Per lui · fino a 30 €",
+      "headline": "Lui dice che non vuole niente.",
+      "sub": "Non è vero. Tre idee regalo per lui, dentro il tuo budget.",
+      "board": "Regali per lui",
+      "title": "Regali per lui sotto 30 euro: tre idee su misura",
+      "description": "Per lui, che dice sempre che non gli serve niente. Su 3gifts.it scegli budget e passioni e ricevi tre idee regalo su misura. Gratis, senza registrazione.",
+      "keywords": "regali per lui, regali uomo sotto 30 euro, idee regalo uomo, regali natale lui",
+      "publish": "2026-11-26T20:00:00",
+      "instagram": "\"Non mi serve niente.\" Certo. 🙃\n\nScegli budget e passioni: 3Gifts ti dà tre idee regalo per lui, sotto i 30 € se vuoi.\n\nDue minuti, gratis. Link in bio 🎁\n\n#regaliperlui #ideeregalo #regalidinatale #ideeregalouomo #natale2026 #regaliuomo",
+      "facebook": "\"Non mi serve niente.\" Certo. 🙃\n\nScegli budget e passioni: 3Gifts ti dà tre idee regalo per lui, sotto i 30 € se vuoi.\n\n👉 Prova gratis: https://3gifts.it"
+    },
+    {
+      "id": "07-chi-ha-gia-tutto",
+      "theme": "notte",
+      "tag": "Il caso difficile",
+      "headline": "Per chi ha già tutto.",
+      "sub": "Scrivi cosa ama in una riga. Noi troviamo tre idee che non ha.",
+      "board": "Regali di Natale 2026",
+      "title": "Regali per chi ha già tutto: tre idee in due minuti",
+      "description": "C'è sempre qualcuno che ha già tutto. Su 3gifts.it descrivi la persona in una riga e ricevi tre idee regalo su misura. Gratis, senza registrazione.",
+      "keywords": "regali per chi ha tutto, idee regalo originali, regali natale originali, regalo difficile",
+      "publish": "2026-11-27T08:00:00",
+      "instagram": "Tutti ne abbiamo uno: quello che ha già tutto. 🫠\n\nScrivi in una riga cosa ama (\"cucina, montagna, odia i soprammobili\") e ricevi tre idee regalo pensate su di lui o lei.\n\nBlack Friday è oggi. Link in bio 🎁\n\n#regaliperchihatutto #ideeregalooriginali #blackfriday #regalidinatale #natale2026 #ideeregalo",
+      "facebook": "Tutti ne abbiamo uno: quello che ha già tutto. 🫠\n\nScrivi in una riga cosa ama (\"cucina, montagna, odia i soprammobili\") e ricevi tre idee regalo pensate su di lui o lei.\n\n👉 Prova gratis: https://3gifts.it"
+    },
+    {
+      "id": "05-mamma",
+      "theme": "rosa",
+      "tag": "Per la mamma",
+      "headline": "Quest'anno niente pigiama.",
+      "sub": "Tre idee regalo per la mamma, pensate su di lei.",
+      "board": "Regali per la mamma",
+      "title": "Regali di Natale per la mamma: tre idee su misura",
+      "description": "Raccontaci com'è tua madre e cosa le piace: 3gifts.it ti propone tre idee regalo nel budget che scegli. Gratis, senza registrazione.",
+      "keywords": "regali per la mamma, regalo natale mamma, idee regalo mamma, regali mamma originali",
+      "publish": "2026-11-28T20:00:00",
+      "instagram": "Quest'anno niente pigiama (a meno che non lo voglia davvero). 💐\n\nRaccontaci com'è tua mamma, cosa le piace, quanto vuoi spendere: ti proponiamo tre idee regalo pensate su di lei.\n\nLink in bio 🎁\n\n#regaliperlamamma #regalonatalemamma #ideeregalo #regalidinatale #natale2026 #mamma",
+      "facebook": "Quest'anno niente pigiama (a meno che non lo voglia davvero). 💐\n\nRaccontaci com'è tua mamma, cosa le piace, quanto vuoi spendere: ti proponiamo tre idee regalo pensate su di lei.\n\n👉 Prova gratis: https://3gifts.it"
+    },
+    {
+      "id": "06-papa",
+      "theme": "verde",
+      "tag": "Per il papà",
+      "headline": "Il papà ha già tutto. Quasi.",
+      "sub": "Tre idee regalo che non ha ancora, nel budget che decidi tu.",
+      "board": "Regali per il papà",
+      "title": "Regali di Natale per il papà: tre idee che non ha",
+      "description": "Per il papà che ha già tutto: rispondi a poche domande sulle sue passioni e 3gifts.it ti propone tre idee regalo. Gratis, senza registrazione.",
+      "keywords": "regali per il papà, regalo natale papà, idee regalo uomo, regali papà che ha tutto",
+      "publish": "2026-11-29T20:00:00",
+      "instagram": "Il papà ha già tutto. Quasi. 🔧📚⚽\n\nScegli le sue passioni e il budget: 3Gifts trova tre idee regalo che non ha ancora.\n\nGratis, senza registrazione. Link in bio 🎁\n\n#regaliperilpapa #regalonatalepapa #ideeregalo #regalidinatale #natale2026 #papà",
+      "facebook": "Il papà ha già tutto. Quasi. 🔧📚⚽\n\nScegli le sue passioni e il budget: 3Gifts trova tre idee regalo che non ha ancora.\n\n👉 Prova gratis: https://3gifts.it"
+    },
+    {
+      "id": "08-partner",
+      "theme": "rosa",
+      "tag": "Per il partner",
+      "headline": "Il regalo che dice: ti conosco.",
+      "sub": "Tre idee per il partner, partendo da quello che ama davvero.",
+      "board": "Regali di Natale 2026",
+      "title": "Regalo di Natale per il partner: tre idee su misura",
+      "description": "Per lui o per lei: racconta le sue passioni e 3gifts.it ti propone tre idee regalo pensate sulla persona, nel tuo budget. Gratis, senza registrazione.",
+      "keywords": "regalo fidanzato, regalo fidanzata, regalo natale partner, idee regalo coppia",
+      "publish": "2026-11-30T20:00:00",
+      "instagram": "Il regalo migliore dice una cosa sola: ti conosco. ❤️\n\nRacconta le sue passioni e 3Gifts ti propone tre idee per il partner, nel budget che scegli.\n\nLink in bio 🎁\n\n#regalofidanzato #regalofidanzata #regalodicoppia #ideeregalo #regalidinatale #natale2026",
+      "facebook": "Il regalo migliore dice una cosa sola: ti conosco. ❤️\n\nRacconta le sue passioni e 3Gifts ti propone tre idee per il partner, nel budget che scegli.\n\n👉 Prova gratis: https://3gifts.it"
+    },
+    {
+      "id": "12-sotto-50",
+      "theme": "blu",
+      "tag": "Fino a 50 €",
+      "headline": "50 € e nessuna idea?",
+      "sub": "Diccelo tu il budget: ti proponiamo tre regali che ci stanno dentro.",
+      "board": "Regali di Natale 2026",
+      "title": "Regali di Natale sotto 50 euro: tre idee su misura",
+      "description": "Scegli il budget e la persona: 3gifts.it ti propone tre idee regalo che restano nella cifra che hai deciso. Gratis, senza registrazione.",
+      "keywords": "regali sotto 50 euro, regali natale economici, idee regalo budget, regali natale 2026",
+      "publish": "2026-12-01T20:00:00",
+      "instagram": "50 € e nessuna idea? 💸\n\nDicci per chi è e cosa ama: ti proponiamo tre regali che restano dentro il budget che hai deciso.\n\nLink in bio 🎁\n\n#regalisotto50euro #regalieconomici #ideeregalo #regalidinatale #natale2026",
+      "facebook": "50 € e nessuna idea? 💸\n\nDicci per chi è e cosa ama: ti proponiamo tre regali che restano dentro il budget che hai deciso.\n\n👉 Prova gratis: https://3gifts.it"
+    },
+    {
+      "id": "09-nonni",
+      "theme": "verde",
+      "tag": "Per i nonni",
+      "headline": "I nonni meritano di più di un'agenda.",
+      "sub": "Tre idee regalo per nonna e nonno, semplici da usare.",
+      "board": "Regali di Natale 2026",
+      "title": "Regali di Natale per i nonni: tre idee su misura",
+      "description": "Per nonna e nonno: scegli budget e interessi e 3gifts.it ti propone tre idee regalo semplici e pensate. Gratis, senza registrazione.",
+      "keywords": "regali per i nonni, regalo nonna, regalo nonno, regali natale nonni",
+      "publish": "2026-12-02T20:00:00",
+      "instagram": "I nonni meritano di più di un'agenda. 👵👴\n\nTre idee regalo per nonna e nonno, semplici da usare, dentro il tuo budget.\n\nProva gratis, link in bio 🎁\n\n#regaliperinonni #regaloperlanonna #regalonatalenonni #ideeregalo #regalidinatale #natale2026",
+      "facebook": "I nonni meritano di più di un'agenda. 👵👴\n\nTre idee regalo per nonna e nonno, semplici da usare, dentro il tuo budget.\n\n👉 Prova gratis: https://3gifts.it"
+    },
+    {
+      "id": "11-come-funziona",
+      "theme": "lilla",
+      "tag": "Come funziona",
+      "headline": "Per chi è. Quanto spendi. Cosa ama.",
+      "sub": "Tre risposte, tre idee regalo. Gratis, senza registrazione.",
+      "board": "Regali di Natale 2026",
+      "title": "Come trovare il regalo giusto in due minuti",
+      "description": "Tre domande: per chi è, quanto vuoi spendere, cosa ama. 3gifts.it ti propone tre idee regalo su misura. Gratis, senza registrazione.",
+      "keywords": "come scegliere un regalo, idee regalo, regali natale, trova regalo",
+      "publish": "2026-12-03T20:00:00",
+      "instagram": "Come funziona 3Gifts, in tre passi:\n\n1️⃣ Per chi è\n2️⃣ Quanto vuoi spendere\n3️⃣ Cosa ama\n\nTi diamo tre idee regalo. Non tremila. Gratis, senza registrazione.\n\nLink in bio 🎁\n\n#ideeregalo #regalidinatale #comescegliereunregalo #natale2026 #regali",
+      "facebook": "Come funziona 3Gifts, in tre passi:\n\n1️⃣ Per chi è\n2️⃣ Quanto vuoi spendere\n3️⃣ Cosa ama\n\nTi diamo tre idee regalo. Non tremila. Gratis, senza registrazione.\n\n👉 Prova gratis: https://3gifts.it"
+    },
+    {
+      "id": "10-ultimo-minuto",
+      "theme": "pesca",
+      "tag": "Ultimo minuto",
+      "headline": "Te ne sei ricordato adesso?",
+      "sub": "Tre idee regalo in due minuti. Poi controlli la consegna su Amazon.",
+      "board": "Regali di Natale 2026",
+      "title": "Regali dell'ultimo minuto: tre idee in due minuti",
+      "description": "Natale si avvicina e manca ancora un regalo? Su 3gifts.it rispondi a poche domande e ricevi tre idee. La data di consegna la verifichi direttamente su Amazon. Gratis, senza registrazione.",
+      "keywords": "regali ultimo minuto, regali natale veloci, idee regalo last minute, regali natale 2026",
+      "publish": "2026-12-04T20:00:00",
+      "instagram": "Te ne sei ricordato adesso? Succede. ⏰\n\nTre idee regalo in due minuti, poi controlli la data di consegna direttamente su Amazon prima di ordinare.\n\nLink in bio 🎁\n\n#regaliultimominuto #regalilastminute #ideeregalo #regalidinatale #natale2026",
+      "facebook": "Te ne sei ricordato adesso? Succede. ⏰\n\nTre idee regalo in due minuti, poi controlli la data di consegna direttamente su Amazon prima di ordinare.\n\n👉 Prova gratis: https://3gifts.it"
+    }
+  ]
+}
